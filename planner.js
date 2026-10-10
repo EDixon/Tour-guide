@@ -1,0 +1,492 @@
+// Dynamic tour planner. Pure functions, no DOM, so it runs in the browser and in Node tests.
+//
+// Model in one paragraph: every stop has an ordered list of bullet points. Each bullet has a
+// value (importance x how well its topics match the family's interests) and a cost (seconds to
+// read aloud and chat about it). Walking legs have a scenic value. The family's engagement
+// drains with time and is restored by a café break; there is also a small chance of having to
+// leave early at any moment, so value later in the day is discounted. Given "now", where we
+// are and the deadline, the planner picks which stops to visit, in what order, which bullets
+// to read at each (always keeping their original order), which walking route to take, and
+// whether a café break is worth it. Everything competes against "going home", so when energy
+// is low it will happily finish early.
+
+export const IMP_WEIGHT = [0, 0.35, 0.55, 0.8, 1.0, 1.25];
+export const BREAK_ID = '__break__';
+const MUST_BONUS = 50;
+const EARTH = 6371000;
+
+export function defaultSettings(tour) {
+  return {
+    weights: { ...(tour.defaultWeights || {}) },
+    siteInterest: tour.significance ?? 0.5, // 0..1: how much this place grips the family
+    wpm: 150,              // reading-aloud speed
+    talkFactor: 1.5,       // reading + chatting about it
+    speed: 0.85,           // walking m/s with a toddler
+    volatility: 'normal',  // calm | normal | chaotic: chance of having to leave early
+    chrono: false,         // prefer visiting in order of development
+    scenicRate: 0.35,      // value per minute of fully scenic walking, at views weight 1
+    leaveRate: 0.25,       // value per minute of "doing something else" (scaled down for gripping sites)
+    allowBreaks: true,
+  };
+}
+
+const HAZARD = { calm: 0.001, normal: 0.0025, chaotic: 0.006 }; // per minute
+export const ENERGY_MIN = 0.25;
+
+export function drainPerMin(settings, drainMult = 1) {
+  return 0.0035 * (1.7 - settings.siteInterest) * drainMult;
+}
+
+export function energyAt(energy, nowMs, settings) {
+  const mins = Math.max(0, (nowMs - energy.at) / 60000);
+  return Math.max(ENERGY_MIN, Math.min(1, energy.E - drainPerMin(settings, energy.drainMult || 1) * mins));
+}
+
+// ---------- geometry ----------
+export function haversine(a, b) {
+  const toR = Math.PI / 180;
+  const dLat = (b[0] - a[0]) * toR, dLon = (b[1] - a[1]) * toR;
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(a[0] * toR) * Math.cos(b[0] * toR) * Math.sin(dLon / 2) ** 2;
+  return 2 * EARTH * Math.asin(Math.sqrt(s));
+}
+export function bearing(a, b) {
+  const toR = Math.PI / 180;
+  const y = Math.sin((b[1] - a[1]) * toR) * Math.cos(b[0] * toR);
+  const x = Math.cos(a[0] * toR) * Math.sin(b[0] * toR) - Math.sin(a[0] * toR) * Math.cos(b[0] * toR) * Math.cos((b[1] - a[1]) * toR);
+  return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+}
+export function compassWord(deg) {
+  const w = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'];
+  return w[Math.round(deg / 45) % 8];
+}
+
+// ---------- content valuation ----------
+export function interestOf(tags, weights) {
+  let max = 0, sum = 0, n = 0;
+  for (const [t, s] of Object.entries(tags || {})) {
+    const w = weights[t] ?? 0.5;
+    max = Math.max(max, s * w);
+    sum += s * w; n += s;
+  }
+  if (!n) return 0.5;
+  return 0.6 * max + 0.4 * (sum / n);
+}
+export function bulletValue(b, weights) {
+  // Convex in interest: topics you don't care about (furniture, fabrics…) are worth very little.
+  return (IMP_WEIGHT[b.imp] ?? 0.5) * (0.05 + 0.95 * Math.pow(interestOf(b.tags, weights), 1.5));
+}
+export function wordCount(text) { return (text.match(/\S+/g) || []).length; }
+export function bulletSeconds(b, settings) {
+  return (4 + wordCount(b.t) / (settings.wpm / 60)) * settings.talkFactor; // 4 s to get everyone's attention
+}
+
+// Per-stop value curve: the lead bullet is always read if the stop is visited. The rest are
+// grouped greedily by value/time, where picking a bullet also picks any unpicked bullets it
+// `needs`. Ratios are then "ironed" to be non-increasing so a stop's groups are always
+// taken in sequence (keeps prerequisite chains intact).
+export function stopCurve(stop, weights, settings) {
+  const bs = stop.bullets || [];
+  const byId = new Map(bs.map(b => [b.id, b]));
+  const val = new Map(bs.map(b => [b.id, bulletValue(b, weights)]));
+  const sec = new Map(bs.map(b => [b.id, bulletSeconds(b, settings)]));
+  const lead = bs[0];
+  const picked = new Set(lead ? [lead.id] : []);
+  const chain = (b) => {
+    const out = [];
+    let cur = b, guard = 0;
+    while (cur && !picked.has(cur.id) && guard++ < 50) {
+      out.push(cur.id);
+      cur = cur.needs != null ? byId.get(cur.needs) : null;
+    }
+    return out;
+  };
+  const groups = [];
+  for (;;) {
+    let best = null;
+    for (const b of bs) {
+      if (picked.has(b.id)) continue;
+      const ids = chain(b);
+      const v = ids.reduce((s, id) => s + val.get(id), 0);
+      const t = ids.reduce((s, id) => s + sec.get(id), 0);
+      const r = v / t;
+      if (!best || r > best.r) best = { ids, v, t, r };
+    }
+    if (!best) break;
+    best.ids.forEach(id => picked.add(id));
+    groups.push(best);
+  }
+  // Attention span: each extra bullet at the same stop is worth a bit less than the last.
+  const attn = 0.8 + 0.12 * (settings.siteInterest ?? 0.5);
+  let before = 1;
+  for (const g of groups) {
+    const f = Math.pow(attn, before);
+    g.v *= f; g.r *= f; before += g.ids.length;
+  }
+  for (let i = 1; i < groups.length; i++) groups[i].r = Math.min(groups[i].r, groups[i - 1].r);
+  // Just seeing the place is worth something too ("wow" 0-5, scaled by the views weighting).
+  const sight = (IMP_WEIGHT[stop.wow ?? 0] ?? 0) * (0.3 + 0.7 * (weights.views ?? 0.5)) * 0.8;
+  return {
+    id: stop.id,
+    sight,
+    lead: lead ? { ids: [lead.id], v: val.get(lead.id), t: sec.get(lead.id) } : { ids: [], v: 0, t: 0 },
+    groups,
+    dwell: stop.dwell ?? 60,
+    date: stop.date ?? 0,
+    order: bs.map(b => b.id),
+  };
+}
+
+// ---------- graph & legs ----------
+export function buildModel(tour) {
+  const nodes = new Map();
+  for (const w of tour.waypoints || []) nodes.set(w.id, { id: w.id, pos: w.pos, name: w.name, waypoint: true });
+  for (const s of tour.stops) nodes.set(s.id, { id: s.id, pos: s.pos, name: s.name, stop: s, building: s.building || null });
+  const adj = new Map([...nodes.keys()].map(k => [k, []]));
+  const edges = [];
+  for (const p of tour.paths || []) {
+    const [a, b, scenic = 0.3, name = '', door = null] = p;
+    if (!nodes.has(a) || !nodes.has(b)) throw new Error(`path refers to unknown node ${a}-${b}`);
+    const e = { a, b, scenic, name, door, len: haversine(nodes.get(a).pos, nodes.get(b).pos) };
+    edges.push(e);
+    adj.get(a).push({ to: b, e });
+    adj.get(b).push({ to: a, e });
+  }
+  return { tour, nodes, adj, edges, stopsById: new Map(tour.stops.map(s => [s.id, s])), legCache: new Map(), legKey: '' };
+}
+
+function edgeSeconds(model, from, to, e, settings) {
+  const walk = model.tour.walk || {};
+  const A = model.nodes.get(from), B = model.nodes.get(to);
+  const inA = !!A.building, inB = !!B.building;
+  if (inA && inB) return (e.len * (walk.indoorFactor ?? 1.4)) / settings.speed + 8;
+  let t = (e.len * (walk.detour ?? 1.15)) / settings.speed;
+  const bld = model.tour.buildings || {};
+  if (!inA && inB) t += (bld[B.building]?.entrySeconds ?? 90);
+  if (inA && !inB) t += (bld[A.building]?.exitSeconds ?? 45);
+  return t;
+}
+
+// Dijkstra from `src` with a cost that can favour scenic edges.
+function dijkstra(model, src, settings, scenicBias) {
+  const dist = new Map(), time = new Map(), scen = new Map(), prev = new Map();
+  const done = new Set();
+  dist.set(src, 0); time.set(src, 0); scen.set(src, 0);
+  for (;;) {
+    let u = null, best = Infinity;
+    for (const [k, d] of dist) if (!done.has(k) && d < best) { best = d; u = k; }
+    if (u == null) break;
+    done.add(u);
+    for (const { to, e } of model.adj.get(u)) {
+      const t = edgeSeconds(model, u, to, e, settings);
+      const cost = t * (1 - scenicBias * e.scenic);
+      const nd = best + cost;
+      if (nd < (dist.get(to) ?? Infinity)) {
+        dist.set(to, nd); time.set(to, time.get(u) + t); scen.set(to, scen.get(u) + t * e.scenic); prev.set(to, u);
+      }
+    }
+  }
+  return { time, scen, prev };
+}
+
+function pathTo(prev, src, dst) {
+  const out = [dst];
+  let cur = dst, guard = 0;
+  while (cur !== src && guard++ < 500) { cur = prev.get(cur); if (cur == null) return null; out.push(cur); }
+  return out.reverse();
+}
+
+export function legs(model, settings) {
+  const key = `${settings.speed}`;
+  if (model.legKey !== key) { model.legCache = new Map(); model.legKey = key; }
+  return function leg(a, b) {
+    const k = a + '>' + b;
+    let L = model.legCache.get(k);
+    if (L) return L;
+    if (a === b) {
+      L = { fast: { time: 0, scenicSec: 0, path: [a] }, scenic: null };
+    } else {
+      const f = model._dj?.[key]?.[a] ?? cacheDj(model, key, a, settings);
+      const ft = f.fast.time.get(b), st = f.scenic.time.get(b);
+      if (ft == null) {
+        const d = haversine(model.nodes.get(a).pos, model.nodes.get(b).pos) * 1.4 / settings.speed;
+        L = { fast: { time: d, scenicSec: 0, path: [a, b] }, scenic: null };
+      } else {
+        const fast = { time: ft, scenicSec: f.fast.scen.get(b), path: pathTo(f.fast.prev, a, b) };
+        let scenic = { time: st, scenicSec: f.scenic.scen.get(b), path: pathTo(f.scenic.prev, a, b) };
+        if (scenic.path.join() === fast.path.join() || scenic.time <= fast.time + 1) scenic = null;
+        L = { fast, scenic };
+      }
+    }
+    model.legCache.set(k, L);
+    return L;
+  };
+}
+function cacheDj(model, key, a, settings) {
+  model._dj = model._dj || {};
+  model._dj[key] = model._dj[key] || {};
+  const r = { fast: dijkstra(model, a, settings, 0), scenic: dijkstra(model, a, settings, 0.75) };
+  model._dj[key][a] = r;
+  return r;
+}
+
+// ---------- evaluation ----------
+// ctx: t0 (s), from, deadline (s), exit, E0, drain (/s), hazard (/s), lambda (value/s), leg(),
+//      curves{id:curve}, chrono, chronoMax, mustSee:Set, scenicPerSec, breakSec, breakAt, breakRestore
+export function evaluate(route, ctx, detail = false) {
+  let t = ctx.t0, at = ctx.from, E0 = ctx.E0, eT = ctx.t0;
+  const E = (time) => Math.max(ENERGY_MIN, E0 - ctx.drain * (time - eT));
+  const S = (time) => Math.exp(-ctx.hazard * (time - ctx.t0));
+  const M = (time) => (0.4 + 0.6 * E(time)) * S(time); // value multiplier
+  let base = 0, chronoMax = ctx.chronoMax;
+  const items = [];
+  const steps = detail ? [] : null;
+  const legAt = (i, a, b, time) => {
+    const L = ctx.leg(a, b);
+    const m = M(time);
+    base += L.fast.scenicSec * ctx.scenicPerSec * m;
+    if (L.scenic) {
+      const dv = (L.scenic.scenicSec - L.fast.scenicSec) * ctx.scenicPerSec * m;
+      const dt = L.scenic.time - L.fast.time;
+      if (dv > 0 && dt > 0) items.push({ kind: 'leg', i, seq: 0, v: dv, t: dt, r: dv / dt });
+    }
+    return L;
+  };
+  for (let i = 0; i < route.length; i++) {
+    const id = route[i];
+    const stopNode = id === BREAK_ID ? ctx.breakAt : id;
+    const L = legAt(i, at, stopNode, t);
+    const leaveFrom = t;
+    t += L.fast.time; at = stopNode;
+    if (id === BREAK_ID) {
+      const arrive = t;
+      t += ctx.breakSec;
+      E0 = Math.min(1, Math.max(E(arrive), ctx.breakRestore)); eT = t;
+      if (detail) steps.push({ id, node: stopNode, leg: L, legStart: leaveFrom, arrive, leave: t });
+      continue;
+    }
+    const c = ctx.curves[id];
+    let m = M(t);
+    if (ctx.chrono) {
+      if (c.date < chronoMax - 10) m *= 0.7;
+      chronoMax = Math.max(chronoMax, c.date);
+    }
+    base += (c.lead.v + c.sight) * m + (ctx.mustSee.has(id) ? MUST_BONUS : 0);
+    const arrive = t;
+    t += c.dwell + c.lead.t;
+    c.groups.forEach((g, k) => items.push({ kind: 'b', i, seq: k, v: g.v * m, t: g.t, r: g.r * m, ids: g.ids }));
+    if (detail) steps.push({ id, node: id, leg: L, legStart: leaveFrom, arrive, mult: m, energy: E(arrive) });
+  }
+  const back = legAt(route.length, at, ctx.exit, t);
+  const backStart = t;
+  t += back.fast.time;
+  let slack = ctx.deadline - t;
+  if (slack < 0) {
+    return { feasible: false, score: base - 1000 + slack * 0.05 - ctx.lambda * (t - ctx.t0), finish: t, slack, steps, back };
+  }
+  items.sort((a, b) => b.r - a.r || a.i - b.i || a.seq - b.seq);
+  const nextSeq = new Map(), blocked = new Set();
+  let gained = 0, extra = 0;
+  const chosen = [];
+  for (const it of items) {
+    if (it.r <= ctx.lambda) break; // not worth more than going home
+    const key = it.kind + it.i;
+    if (it.kind === 'b' && (blocked.has(key) || (nextSeq.get(key) ?? 0) !== it.seq)) continue;
+    if (it.t > slack) { if (it.kind === 'b') blocked.add(key); continue; }
+    slack -= it.t; extra += it.t; gained += it.v;
+    if (it.kind === 'b') nextSeq.set(key, it.seq + 1);
+    chosen.push(it);
+  }
+  const finish = t + extra;
+  const score = base + gained - ctx.lambda * (finish - ctx.t0);
+  return { feasible: true, score, finish, slack, chosen, steps, back, backStart };
+}
+
+// ---------- search ----------
+export function buildContext(model, state, settings, nowS) {
+  const tour = model.tour;
+  const curves = {};
+  for (const s of tour.stops) if (s.kind !== 'facility') curves[s.id] = stopCurve(s, settings.weights, settings);
+  const brk = tour.breaks?.cafe || { minutes: 20, restore: 1, at: tour.exit };
+  const visitedDates = Object.keys(state.visited || {}).map(id => model.stopsById.get(id)?.date ?? 0);
+  return {
+    t0: nowS,
+    from: state.from || tour.start,
+    deadline: state.deadlineS,
+    exit: tour.exit,
+    E0: state.E0 ?? 1,
+    drain: drainPerMin(settings, state.drainMult || 1) / 60,
+    hazard: (HAZARD[settings.volatility] ?? HAZARD.normal) / 60,
+    lambda: settings.leaveRate * (1.2 - settings.siteInterest) * (state.lambdaMult || 1) / 60,
+    scenicPerSec: settings.scenicRate * (settings.weights.views ?? 0.5) / 60,
+    leg: legs(model, settings),
+    curves,
+    chrono: !!settings.chrono,
+    chronoMax: visitedDates.length ? Math.max(...visitedDates) : 0,
+    mustSee: new Set(tour.stops.filter(s => (state.pinned || {})[s.id] ?? s.mustSee).map(s => s.id)),
+    breakSec: (brk.minutes ?? 20) * 60,
+    breakAt: brk.at || tour.exit,
+    breakRestore: brk.restore ?? 1,
+  };
+}
+
+export function candidates(model, state) {
+  return model.tour.stops
+    .filter(s => s.kind !== 'facility')
+    .filter(s => !(state.visited || {})[s.id] && !(state.skipped || {})[s.id])
+    .map(s => s.id);
+}
+
+// Local search. Phase A builds the route by best insertion (stops, or whole building blocks so
+// the one-off cost of entering the house is shared). Phase B polishes with first-improvement
+// moves (remove, swap-in, relocate, 2-opt, insert) until nothing helps or time runs out.
+function improve(route, pool, ctx, fixedPrefix, deadlineMs, blocks) {
+  let cur = evaluate(route, ctx);
+  const free = () => { const s = new Set(route); return pool.filter(id => !s.has(id)); };
+  const insertMoves = function* () {
+    const f = free();
+    for (const c of f) for (let p = fixedPrefix; p <= route.length; p++) yield [...route.slice(0, p), c, ...route.slice(p)];
+    for (const blk of blocks) {
+      const b = blk.filter(id => f.includes(id));
+      if (b.length < 2) continue;
+      for (let p = fixedPrefix; p <= route.length; p++) yield [...route.slice(0, p), ...b, ...route.slice(p)];
+    }
+  };
+  // Phase A: best insertion until no gain
+  for (let guard = 0; guard < 60 && Date.now() < deadlineMs; guard++) {
+    let best = null, bestR = null;
+    for (const r of insertMoves()) {
+      const e = evaluate(r, ctx);
+      if (e.score > cur.score + 1e-6 && (!best || e.score > best.score)) { best = e; bestR = r; }
+    }
+    if (!best) break;
+    route = bestR; cur = best;
+  }
+  // Phase B: first improvement over a wider neighbourhood
+  const moves = function* () {
+    const n = route.length, f = free();
+    for (let i = fixedPrefix; i < n; i++) yield [...route.slice(0, i), ...route.slice(i + 1)];
+    for (let i = fixedPrefix; i < n; i++) for (let j = fixedPrefix; j < n; j++) {
+      if (i === j) continue;
+      const r = route.slice(); const [x] = r.splice(i, 1); r.splice(j, 0, x); yield r;
+    }
+    for (let i = fixedPrefix; i < n - 1; i++) for (let j = i + 1; j < n; j++)
+      yield [...route.slice(0, i), ...route.slice(i, j + 1).reverse(), ...route.slice(j + 1)];
+    for (let i = fixedPrefix; i < n; i++) for (const c of f) { const r = route.slice(); r[i] = c; yield r; }
+    yield* insertMoves();
+  };
+  let improved = true, rounds = 0;
+  while (improved && rounds++ < 400 && Date.now() < deadlineMs) {
+    improved = false;
+    for (const r of moves()) {
+      const e = evaluate(r, ctx);
+      if (e.score > cur.score + 1e-6) { route = r; cur = e; improved = true; break; }
+    }
+  }
+  return { route, ev: cur };
+}
+
+function buildingBlocks(model, pool) {
+  const by = new Map();
+  for (const s of model.tour.stops) {
+    if (!s.building || !pool.includes(s.id)) continue;
+    if (!by.has(s.building)) by.set(s.building, []);
+    by.get(s.building).push(s.id);
+  }
+  return [...by.values()];
+}
+
+// Main entry. state: { from, deadlineS, E0, drainMult, visited, skipped, pinned, forceFirst, onBreak, noBreak }
+export function plan(model, state, settings, nowS, opts = {}) {
+  const t0 = Date.now();
+  const budget = opts.budgetMs ?? 1200;
+  const ctx = buildContext(model, state, settings, nowS);
+  const pool = candidates(model, state);
+  const blocks = buildingBlocks(model, pool);
+  let fixed = 0, route = [];
+  if (state.forceFirst && pool.includes(state.forceFirst)) { route = [state.forceFirst]; fixed = 1; }
+
+  const { route: r1, ev: e1 } = improve(route, pool, ctx, fixed, t0 + budget * 0.6, blocks);
+  let bestRoute = r1, bestEv = e1;
+
+  if (settings.allowBreaks && !state.onBreak && !state.noBreak) {
+    // Put a break at its best position in the current route, then let the search rebuild around it.
+    let seed = null, seedEv = null;
+    for (let p = fixed; p <= r1.length; p++) {
+      const r = [...r1.slice(0, p), BREAK_ID, ...r1.slice(p)];
+      const e = evaluate(r, ctx);
+      if (!seedEv || e.score > seedEv.score) { seed = r; seedEv = e; }
+    }
+    if (seed) {
+      const { route: r2, ev: e2 } = improve(seed, [...pool, BREAK_ID], ctx, fixed, t0 + budget, blocks);
+      if (e2.score > bestEv.score + 1e-6) { bestRoute = r2; bestEv = e2; }
+    }
+  }
+  return describe(model, bestRoute, ctx, settings, state, pool);
+}
+
+function describe(model, route, ctx, settings, state, pool) {
+  const ev = evaluate(route, ctx, true);
+  const chosenBy = new Map();
+  const scenicLegs = new Set();
+  for (const it of ev.chosen || []) {
+    if (it.kind === 'leg') scenicLegs.add(it.i);
+    else { if (!chosenBy.has(it.i)) chosenBy.set(it.i, []); chosenBy.get(it.i).push(...it.ids); }
+  }
+  // Rebuild an accurate timeline with the chosen bullets and scenic legs.
+  let t = ctx.t0;
+  const steps = [];
+  (ev.steps || []).forEach((s, i) => {
+    const useScenic = scenicLegs.has(i) && s.leg.scenic;
+    const leg = useScenic ? s.leg.scenic : s.leg.fast;
+    const legStart = t;
+    t += leg.time;
+    if (s.id === BREAK_ID) {
+      const arrive = t; t += ctx.breakSec;
+      steps.push({ type: 'break', id: BREAK_ID, node: s.node, legStart, arrive, leave: t, leg: { ...leg, scenic: !!useScenic } });
+      return;
+    }
+    const c = ctx.curves[s.id];
+    const ids = new Set([...c.lead.ids, ...(chosenBy.get(i) || [])]);
+    const stop = model.stopsById.get(s.id);
+    const bullets = c.order.filter(id => ids.has(id));
+    const readSec = bullets.reduce((sum, id) => sum + bulletSeconds(stop.bullets.find(b => b.id === id), settings), 0);
+    const arrive = t;
+    t += c.dwell + readSec;
+    steps.push({ type: 'stop', id: s.id, node: s.id, legStart, arrive, leave: t, bullets, total: c.order.length, energy: s.energy, leg: { ...leg, scenic: !!useScenic } });
+  });
+  const backScenic = scenicLegs.has(route.length) && ev.back?.scenic;
+  const backLeg = backScenic ? ev.back.scenic : ev.back?.fast;
+  const backStart = t;
+  if (backLeg) t += backLeg.time;
+
+  // Why were things left out?
+  const inRoute = new Set(route);
+  const dropped = [];
+  for (const id of pool) {
+    if (inRoute.has(id)) continue;
+    let bestIns = null;
+    for (let p = state.forceFirst ? 1 : 0; p <= route.length; p++) {
+      const e = evaluate([...route.slice(0, p), id, ...route.slice(p)], ctx);
+      if (!bestIns || e.score > bestIns.score) bestIns = e;
+    }
+    const reason = !bestIns || !bestIns.feasible ? 'No time left for it' : 'Not worth the time for your interests and energy';
+    dropped.push({ id, reason });
+  }
+  return {
+    feasible: ev.feasible,
+    route,
+    steps,
+    back: { leg: backLeg ? { ...backLeg, scenic: !!backScenic } : null, legStart: backStart, arrive: t },
+    finish: t,
+    slack: ctx.deadline - t,
+    score: ev.score,
+    dropped,
+    energyNow: ctx.E0,
+  };
+}
+
+// Convenience: choose which bullets to show at a stop we've just arrived at.
+export function bulletsForArrival(planResult, stopId) {
+  const s = planResult.steps.find(x => x.type === 'stop' && x.id === stopId);
+  return s ? s.bullets : null;
+}
