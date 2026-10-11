@@ -19,15 +19,15 @@
 </head>
 <body>
   <header id="top"><div class="top-row"><div class="title">Prompt builder</div><a class="icon-btn" href="prompts.html" style="color:inherit;text-decoration:none">✕</a></div>
-    <div class="status">Builds the prompt the assistant would send for any question, using the same code and knowledge files as the app.</div></header>
+    <div class="status">Builds exactly the prompt the assistant would send, using the same code and knowledge files as the app. Questions in a conversation carry on from each other, as they will in the app.</div></header>
   <main>
     <div class="card">
+      <div id="convo" class="small"></div>
       <label for="q">Question</label>
       <input type="text" id="q" placeholder="e.g. Who made the river?">
-      <label for="prev">Previous question (optional, for follow-ups)</label>
-      <input type="text" id="prev" placeholder="e.g. Who made the river?">
       <div class="chips" id="examples"></div>
-      <button class="btn block" id="build" style="margin-top:12px">Build prompt</button>
+      <button class="btn block" id="build" style="margin-top:12px">Ask</button>
+      <button class="btn ghost block" id="reset" style="margin-top:8px">New conversation</button>
     </div>
     <div class="card hidden" id="out">
       <p class="small muted" id="meta"></p>
@@ -39,7 +39,7 @@
   </main>
   <div id="toast" class="toast hidden"></div>
   <script type="module">
-    import { buildPrompt } from './assistant/prompt.mjs';
+    import { createSession } from './assistant/prompt.mjs';
     import { parseSections } from './assistant/retrieve.mjs';
     const $ = (s) => document.querySelector(s);
     const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.remove('hidden'); setTimeout(() => t.classList.add('hidden'), 1500); };
@@ -48,20 +48,28 @@
       fetch('knowledge/wrest-park-dates.json', { cache: 'no-store' }).then(r => r.json()),
     ]);
     const sections = parseSections(md);
-    const EX = [
-      ['Who made the river?', ''], ['Who is Capability Brown?', 'Who made the river?'], ['Who is Jemima?', 'Who made the river?'],
-      ['Was the orangery built before or after the house?', ''], ['Why did he do that?', 'Why would a duke put up a statue of a king who had been dead for decades?'],
-    ];
-    $('#examples').innerHTML = EX.map(([q, p], i) => `<button data-i="${i}">${q}${p ? ' (follow-up)' : ''}</button>`).join('');
-    $('#examples').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; const [q, p] = EX[+b.dataset.i]; $('#q').value = q; $('#prev').value = p; build(); });
+    const session = createSession({ sections, dates });
+    const EX = ['Who made the river?', 'Who is Capability Brown?', 'Who is Jemima?', 'Was the orangery built before or after the house?',
+      'Why would a duke put up a statue of a king who had been dead for decades?', 'Why did he do that?'];
+    $('#examples').innerHTML = EX.map((q, i) => `<button data-i="${i}">${q}</button>`).join('');
+    $('#examples').addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; $('#q').value = EX[+b.dataset.i]; });
+    const esc = (s) => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+    function showConvo() {
+      $('#convo').innerHTML = session.asked.length
+        ? `<b>This conversation so far:</b><ol style="margin:4px 0 0;padding-left:1.2em">${session.asked.map(q => `<li>${esc(q)}</li>`).join('')}</ol>`
+        : '<span class="muted">New conversation.</span>';
+    }
     function build() {
       const question = $('#q').value.trim(); if (!question) return toast('Type a question.');
-      const prev = $('#prev').value.trim();
-      const r = buildPrompt({ question, sections, dates, previous: prev ? [prev] : [] });
+      const r = session.prompt(question);
       $('#prompt').value = r.text;
-      $('#meta').textContent = `${r.text.split(/\s+/).length} words · ${r.facts.length} facts · notes: ${r.picked.join('; ') || 'none matched'}`;
+      $('#meta').textContent = `Prompt for “${question}”: ${r.text.split(/\s+/).length} words · ${r.facts.length} facts · notes: ${r.picked.join('; ') || 'none matched'}`;
       $('#out').classList.remove('hidden');
+      $('#q').value = '';
+      showConvo();
     }
+    $('#reset').addEventListener('click', () => { session.reset(); $('#out').classList.add('hidden'); showConvo(); toast('New conversation'); });
+    showConvo();
     $('#build').addEventListener('click', build);
     $('#q').addEventListener('keydown', (e) => { if (e.key === 'Enter') build(); });
     $('#copy').addEventListener('click', async () => {

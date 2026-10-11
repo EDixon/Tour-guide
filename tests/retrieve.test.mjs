@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
 import { mentions } from '../assistant/maths.mjs';
-import { buildPrompt, plainDates } from '../assistant/prompt.mjs';
+import { buildPrompt, plainDates, createSession } from '../assistant/prompt.mjs';
 const secs = parseSections(fs.readFileSync(new URL('../knowledge/wrest-park-sample.md', import.meta.url), 'utf8'));
 const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
@@ -26,5 +26,17 @@ ok('a follow-up that names nothing inherits the previous question', () => {
   assert.ok(p.picked.includes('The statue of William III'));
   assert.match(p.text, /EARLIER QUESTION: Why would a duke/);
   assert.ok(!/^A:/m.test(p.text), 'no earlier answers carried');
+});
+ok('a conversation carries its subject through chained follow-ups', () => {
+  const s = createSession({ sections: secs, dates, nowYear: 2026 });
+  const a = s.prompt('Who made the river?');
+  assert.ok(!/EARLIER QUESTION/.test(a.text));
+  const b = s.prompt('Who is Capability Brown?');
+  assert.match(b.text, /EARLIER QUESTION: Who made the river\?/);
+  s.prompt('Why would a duke put up a statue of a king who had been dead for decades?');
+  s.prompt('Why did he do that?');
+  const e = s.prompt('When did he die?');
+  assert.match(e.text, /EARLIER QUESTION: Why would a duke/);
+  assert.ok(!/worked out by the app|^- Who:/m.test(e.text));
 });
 console.log(`\n${n} passed`);

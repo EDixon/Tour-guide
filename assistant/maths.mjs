@@ -72,7 +72,7 @@ export function personFacts(p) {
   const [by, bm] = p.born, [dy, dm] = p.died || [];
   const ageAt = (y) => y - by - (bm && bm > 6 ? 1 : 0);
   const lines = [];
-  if (p.who) lines.push(`Who: ${p.name} was ${p.who}.`);
+  if (p.who) lines.push(`${p.name} was ${p.who}.`);
   if (dy) {
     const age = bm && dm ? dy - by - (dm < bm ? 1 : 0) : null;
     lines.push(`${p.name}: born ${by}, died ${dy}${age != null ? `, aged ${age}` : `, aged about ${dy - by}`}.`);
@@ -97,7 +97,7 @@ export function calculatedFacts(dates, { things = [], related = [], people = [],
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
   for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p));
-  for (const t of [...T, ...R]) if (t.who) lines.push(`Who: ${t.name} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
+  for (const t of [...T, ...R]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
   if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
   else {
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);

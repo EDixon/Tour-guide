@@ -15,7 +15,7 @@ export function plainDates(text) {
     .replace(/\b(1\d|20)(\d\d)\s?[–-]\s?(\d\d)\b(?![\d.,]\d)/g, (m, cc, yy, zz) => (+zz > +yy ? `${cc}${yy}–${cc}${zz}` : m));
 }
 
-// previous: earlier questions in this conversation, most recent last. Only the questions (and what they were
+// previous: earlier questions in this conversation, most recent last (createSession manages this as the app will). Only the questions (and what they were
 // about) are carried forward, never the model's own answers, so a mistake in one answer can't feed the next.
 export function buildPrompt({ question, sections, dates, nowYear = new Date().getFullYear(), topK = 3, previous = [] }) {
   const last = previous[previous.length - 1];
@@ -35,7 +35,27 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   const nameOf = (id) => (dates.things.find(t => t.id === id) || dates.people.find(p => p.id === id))?.name;
   const prev = last ? `EARLIER QUESTION: ${last}` + (lastM.things.length || lastM.people.length ? ` (about ${[...lastM.things, ...lastM.related, ...lastM.people].map(nameOf).filter(Boolean).join('; ')})` : '') + '\n\n' : '';
   const text = `${RULES}\n\nQUESTION: ${question}\n\n${prev}` +
-    `FACTS (worked out by the app):\n${facts.length ? facts.map(f => '- ' + plainDates(f)).join('\n') : '- (none for this question)'}\n\n` +
+    `FACTS:\n${facts.length ? facts.map(f => '- ' + plainDates(f)).join('\n') : '- (none for this question)'}\n\n` +
     `NOTES:\n${picked.map(s => `## ${s.title}\n${plainDates(s.text)}`).join('\n\n')}\n\nQUESTION: ${question}`;
   return { text, picked: picked.map(s => s.title), facts };
+}
+
+// A conversation, exactly as the app runs it: each question gets a fresh prompt; the earlier question carried
+// forward is the most recent one that named something, so chains like "Why did he do that?" then "When did he die?"
+// keep their subject. Only questions are remembered, never the model's answers.
+export function createSession({ sections, dates, nowYear }) {
+  const asked = [];
+  let subject = null;
+  return {
+    get asked() { return [...asked]; },
+    get subject() { return subject; },
+    prompt(question) {
+      const r = buildPrompt({ question, sections, dates, nowYear, previous: subject ? [subject] : [] });
+      const m = mentions(dates, question);
+      if (m.things.length || m.named.length) subject = question;
+      asked.push(question);
+      return r;
+    },
+    reset() { asked.length = 0; subject = null; },
+  };
 }

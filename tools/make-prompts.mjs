@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import { calculatedFacts, mentions } from '../assistant/maths.mjs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
-import { buildPrompt } from '../assistant/prompt.mjs';
+import { buildPrompt, createSession } from '../assistant/prompt.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const read = (p) => fs.readFileSync(root + p, 'utf8');
@@ -54,10 +54,11 @@ console.log('3b picked:', picked.map(x => x.title).join(' | '), '| things:', m.t
 const Q4 = ['Who made the river?', 'Why would a duke put up a statue of a king who had been dead for decades?', 'Was the orangery built before or after the house?'];
 const T4 = Q4.map(q => buildPrompt({ question: q, sections, dates }));
 // Follow-ups: the app carries forward the previous question and what it was about (not the model's answer).
+const conv = (qs) => { const s = createSession({ sections, dates }); return qs.map(q => s.prompt(q)).pop(); };
 Q4.push('Who is Jemima? (after the river question)');
-T4.push(buildPrompt({ question: 'Who is Jemima?', sections, dates, previous: ['Who made the river?'] }));
+T4.push(conv(['Who made the river?', 'Who is Jemima?']));
 Q4.push('Why did he do that? (after the statue question)');
-T4.push(buildPrompt({ question: 'Why did he do that?', sections, dates, previous: ['Why would a duke put up a statue of a king who had been dead for decades?'] }));
+T4.push(conv(['Why would a duke put up a statue of a king who had been dead for decades?', 'Why did he do that?']));
 T4.forEach((t, i) => console.log('4:', Q4[i], '|', t.picked.join(' | '), '|', words(t.text), 'words'));
 
 const FULL3 = `${RULES}\n\nCALCULATED FACTS (worked out by the app; exact):\n${facts.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${notes}\n\nQUESTION: ${Q3[0]}`;
