@@ -63,7 +63,8 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   const query = about === 'previous' ? `${question} ${last}` : question;
   const hereNote = here ? (here.section || here.tourText) : null;
   const ranked = rank(sections, query, { boost }).filter(s => s.score > 0 && s.title !== hereNote?.title);
-  const order = about === 'question' && ranked.length ? [ranked[0], hereNote, ...ranked.slice(1)] : [hereNote, ...ranked];
+  const namesSomething = asked.things.length || asked.named.length;
+  const order = namesSomething && ranked.length ? [ranked[0], hereNote, ...ranked.slice(1)] : [hereNote, ...ranked];
   const picked = order.filter(Boolean).slice(0, topK);
   // Facts: what the question is about, plus the things where we are (so "was this built before the house?" works).
   const uniq = (a) => [...new Set(a)];

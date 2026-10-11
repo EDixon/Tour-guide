@@ -1,1 +1,14 @@
-{ "tours": [ { "id": "wrest-park", "name": "Wrest Park", "file": "wrest-park.json" } ] }
+{
+ "tours": [
+  {
+   "id": "wrest-park",
+   "name": "Wrest Park",
+   "file": "wrest-park.json",
+   "pos": [
+    52.0072,
+    -0.4157
+   ],
+   "operator": "English Heritage"
+  }
+ ]
+}

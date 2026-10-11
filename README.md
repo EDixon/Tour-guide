@@ -15,7 +15,8 @@ This repository is the whole project, and its top level is also the website:
 | `knowledge/` | Knowledge for the assistant: `knowledge/<site>/notes.md` (sections with sources) and `dates.json`, plus shared packs in `knowledge/reference/`. Format: `docs/KNOWLEDGE_FORMAT.md` |
 | `assistant/` | Assistant code (not yet in the app). `maths.mjs` works out every date relationship (before/after/during, reigns, ages, years ago) so the model never does sums; `retrieve.mjs` picks the notes; `prompt.mjs` builds each question's prompt, with where you are and the earlier question |
 | `docs/` | Tour file format |
-| `prep/` | Brief for preparing a new site with Claude |
+| `sites/` | Working files while preparing a site (brief, status, research drafts, fact-check report) |
+| `.claude/`, `CLAUDE.md` | Instructions for Claude: the site-preparation skills and helper agents |
 | `tools/` | Tour file checker (`node tools/validate-tour.mjs tours/<id>.json 120`); `ask.mjs` prints the assistant's prompt for a conversation (`node tools/ask.mjs --at orangery "Who built this?"`) |
 | `tests/` | Planner and date-maths tests (`npm test`) |
 
@@ -77,10 +78,13 @@ Limitations:
 
 ## Adding another site
 
-See `prep/PREP_PROMPT.md` for the brief to give Claude, and `docs/TOUR_FORMAT.md` for the file format. Check a new file with:
+Start a Claude chat (Opus) with this repository connected and say **"add <site>"**. The `new-site` skill takes it from there through a chain of skills:
+- **site-survey:** sources, stops, paths, timeline
+- **site-research:** the stops are researched in batches by Sonnet helper agents
+- **reference-packs:** shared background
+- **site-check:** a Haiku helper does mechanical fixes, and an Opus fact-checker reports on accuracy
+- **site-publish:** the site goes into the app
 
-```
-node tools/validate-tour.mjs tours/<id>.json 120
-```
+Progress is kept in `sites/<id>/STATUS.md`, so if a chat gets long, start a new one and say **"continue <site>"**. After a visit, **"we're back from <site>"** (with notes or a GPX) runs `site-update`.
 
-Then add it to `tours/index.json` and to the `FILES` list in `sw.js`. Open a specific tour with `?tour=<id>`.
+Formats: `docs/TOUR_FORMAT.md` (tour) and `docs/KNOWLEDGE_FORMAT.md` (assistant knowledge). Checks: `npm test`, `node tools/validate-tour.mjs tours/<id>.json 120`, `node tools/check-knowledge.mjs <id>`.
