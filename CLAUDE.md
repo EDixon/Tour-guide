@@ -14,7 +14,7 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 - App (served as-is): `index.html`, `app.js`, `planner.js`, `style.css`, `sw.js`, `tours/`, `assistant/`, `knowledge/`, `icons/`.
 - `tours/<id>.json`: stops, bullets, paths, map, timeline (format: `docs/TOUR_FORMAT.md`). `tours/index.json` lists the sites.
 - `knowledge/<id>/notes.md` and `dates.json`, plus shared packs in `knowledge/reference/<pack>/` (format: `docs/KNOWLEDGE_FORMAT.md`).
-- `assistant/`: the prompt pipeline. `maths.mjs` works out all date facts so the model never calculates, `retrieve.mjs` picks the notes, `prompt.mjs` builds each question's prompt, `knowledge.mjs` loads the files, `llm.js` talks to the Android app.
+- `assistant/`: the prompt pipeline. `maths.js` works out all date facts so the model never calculates, `retrieve.js` picks the notes, `prompt.js` builds each question's prompt, `knowledge.js` loads the files, `llm.js` talks to the Android app.
 - `android/`: the Android wrapper app (a WebView of the site plus on-device Gemma). It is built by GitHub Actions and published as the `android-latest` release.
 - `sites/<id>/`: working files for preparing a site (brief, status, research drafts). These are not served to the app.
 - `tools/`: `validate-tour.mjs`, `check-knowledge.mjs`, `merge-research.mjs`, `ask.mjs` (prints the exact prompt for a question).

@@ -1,7 +1,7 @@
 // Loads a site's knowledge: its own notes and dates, plus the shared reference packs it lists.
 // tour.knowledge = { site: "knowledge/<id>", reference: ["rulers", ...] }
 // Each folder may hold notes.md (sections, see docs/KNOWLEDGE_FORMAT.md) and dates.json (things, people, rulers).
-import { parseSections } from './retrieve.mjs';
+import { parseSections } from './retrieve.js';
 
 export function knowledgeFiles(tour) {
   const k = tour.knowledge || {};

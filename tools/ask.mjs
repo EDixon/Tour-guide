@@ -2,8 +2,8 @@
 // Usage: node tools/ask.mjs [--tour <id>] [--at <stopId>] "First question" [--at <stopId>] "Next question" ...
 // Each --at sets where the family is for the questions after it. Prints the last prompt (--all for every one).
 import fs from 'node:fs';
-import { createSession } from '../assistant/prompt.mjs';
-import { loadKnowledge } from '../assistant/knowledge.mjs';
+import { createSession } from '../assistant/prompt.js';
+import { loadKnowledge } from '../assistant/knowledge.js';
 const root = new URL('..', import.meta.url).pathname;
 const args0 = process.argv.slice(2);
 const tourId = args0.includes('--tour') ? args0[args0.indexOf('--tour') + 1] : 'wrest-park';

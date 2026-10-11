@@ -1,7 +1,7 @@
 // Builds the prompt for one question: a fresh, short prompt each time (rules, where the family is, the
 // facts the app works out, the best-matching notes, the question), rather than one ever-growing chat.
-import { calculatedFacts, mentions, expand } from './maths.mjs';
-import { rank } from './retrieve.mjs';
+import { calculatedFacts, mentions, expand } from './maths.js';
+import { rank } from './retrieve.js';
 
 export const RULES = `You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words of plain British English prose (no lists).
 - Answer the question directly, then add the most interesting detail from the NOTES, ideally something to do with WHERE WE ARE.

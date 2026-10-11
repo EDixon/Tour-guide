@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { compare, rulersDuring, personAt, calculatedFacts, mentions, label } from '../assistant/maths.mjs';
+import { compare, rulersDuring, personAt, calculatedFacts, mentions, label } from '../assistant/maths.js';
 import { dates } from './load.mjs';
 const T = (id) => dates.things.find(t => t.id === id), P = (id) => dates.people.find(p => p.id === id);
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };

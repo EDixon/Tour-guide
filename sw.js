@@ -4,7 +4,7 @@ const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',
   'tours/index.json', 'tours/wrest-park.json',
-  'assistant/llm.js', 'assistant/prompt.mjs', 'assistant/maths.mjs', 'assistant/retrieve.mjs', 'assistant/knowledge.mjs',
+  'assistant/llm.js', 'assistant/prompt.js', 'assistant/maths.js', 'assistant/retrieve.js', 'assistant/knowledge.js',
   'knowledge/wrest-park/notes.md', 'knowledge/wrest-park/dates.json', 'knowledge/reference/rulers/notes.md', 'knowledge/reference/rulers/dates.json',
 ];
 self.addEventListener('install', (e) => {

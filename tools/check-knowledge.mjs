@@ -2,7 +2,7 @@
 // Usage: node tools/check-knowledge.mjs <site-id>
 // Exit code 1 if there are errors; warnings are printed but don't fail.
 import fs from 'node:fs';
-import { loadKnowledge, knowledgeFiles } from '../assistant/knowledge.mjs';
+import { loadKnowledge, knowledgeFiles } from '../assistant/knowledge.js';
 
 const root = new URL('..', import.meta.url).pathname;
 const id = process.argv[2];

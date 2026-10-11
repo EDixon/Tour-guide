@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { rank, parseSections } from '../assistant/retrieve.mjs';
-import { mentions } from '../assistant/maths.mjs';
-import { buildPrompt, plainDates, createSession, hereContext } from '../assistant/prompt.mjs';
+import { rank, parseSections } from '../assistant/retrieve.js';
+import { mentions } from '../assistant/maths.js';
+import { buildPrompt, plainDates, createSession, hereContext } from '../assistant/prompt.js';
 import { secs, dates, tour } from './load.mjs';
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
 ok('sections parsed with sources', () => { assert.ok(secs.length >= 14); assert.ok(secs.every(s => s.text && !/^Sources:/m.test(s.text))); });

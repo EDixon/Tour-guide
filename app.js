@@ -1,7 +1,7 @@
 import * as P from './planner.js';
 import { llm } from './assistant/llm.js';
-import { createSession } from './assistant/prompt.mjs';
-import { loadKnowledge, knowledgeFiles } from './assistant/knowledge.mjs';
+import { createSession } from './assistant/prompt.js';
+import { loadKnowledge, knowledgeFiles } from './assistant/knowledge.js';
 
 // ---------------------------------------------------------------- state
 const LS = 'tourguide:v1';
