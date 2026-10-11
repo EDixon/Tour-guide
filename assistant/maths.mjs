@@ -73,18 +73,23 @@ export function yearsAgo(t, nowYear) {
   return `${cap(t.name)} (${label(t)}): ${ago} (counting from ${nowYear}).`;
 }
 
-// Build the CALCULATED FACTS block for the things and people relevant to a question.
-// compare: optional list of [thingId, thingId] to compare; by default every pair of the things given.
-export function calculatedFacts(dates, { things = [], people = [], pairs = [], compare: only = null, nowYear = new Date().getFullYear() } = {}) {
-  const T = things.map(id => dates.things.find(t => t.id === id)).filter(Boolean);
+// Build the CALCULATED FACTS block. `things` are what the question is about; `related` are linked
+// things (e.g. later alterations) that are compared with them and named, but not given full detail.
+// compare: optional explicit list of [thingId, thingId] pairs instead of the default.
+export function calculatedFacts(dates, { things = [], related = [], people = [], pairs = [], compare: only = null, nowYear = new Date().getFullYear() } = {}) {
+  const byId = (id) => dates.things.find(t => t.id === id);
+  const T = things.map(byId).filter(Boolean), R = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
-  const byId = (id) => dates.things.find(t => t.id === id);
-  if (only) for (const [x, y] of only) { if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
-  else for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);
+  for (const t of [...T, ...R]) if (t.who) lines.push(`Who: ${t.name} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
+  if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
+  else {
+    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);
+    for (const t of T) for (const r of R) lines.push(compare(r, t).text);
+  }
   for (const t of T) { const r = rulersDuring(t, dates.rulers); if (r) lines.push(r); }
   // Ages and 'after their death' only for people linked to the thing (builder, owner, subject) or explicitly paired.
-  for (const p of P) for (const t of T) {
+  for (const p of P) for (const t of [...T, ...R]) {
     if ((t.people || []).includes(p.id) || pairs.some(([x, y]) => x === p.id && y === t.id)) lines.push(personAt(p, t));
   }
   for (const t of T) lines.push(yearsAgo(t, nowYear));
@@ -96,11 +101,12 @@ export function calculatedFacts(dates, { things = [], people = [], pairs = [], c
 export function mentions(dates, question, { expand = true } = {}) {
   const q = ' ' + question.toLowerCase().replace(/[^a-z0-9' -]/g, ' ') + ' ';
   const hit = (names) => names.some(n => q.includes(' ' + n + ' ') || q.includes(' ' + n + 's ') || q.includes(' ' + n + "'s "));
-  const things = new Set(dates.things.filter(t => hit(t.names)).map(t => t.id));
+  const things = dates.things.filter(t => hit(t.names)).map(t => t.id);
   const people = new Set(dates.people.filter(p => hit(p.names)).map(p => p.id));
+  const related = new Set();
   if (expand) {
-    for (const id of [...things]) (dates.things.find(x => x.id === id).related || []).forEach(r => things.add(r));
-    for (const id of things) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
+    for (const id of things) (dates.things.find(x => x.id === id).related || []).forEach(r => { if (!things.includes(r)) related.add(r); });
+    for (const id of [...things, ...related]) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
   }
-  return { things: [...things], people: [...people] };
+  return { things, related: [...related], people: [...people] };
 }

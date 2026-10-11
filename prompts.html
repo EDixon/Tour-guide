@@ -19,10 +19,156 @@
     <div class="status">For testing on-phone AI apps (e.g. AI Edge Gallery) with the material the assistant would use.</div></header>
   <main>
     <div class="card">
+      <h2>Test 4: a fresh prompt for each question</h2>
+      <ol class="small">
+        <li>This is how the app would really ask: each question gets a <b>new chat</b> with its own short prompt (about 1,000 words): rules, facts the app worked out (dates and who made what), the best-matching notes, and the question.</li>
+        <li>For each prompt below: start a <b>new AI Chat</b>, paste it, note the answer and time.</li>
+        <li>If you have time, repeat one with <b>Gemma 4 E4B</b> to compare quality and speed.</li>
+      </ol>
+    </div>
+    
+    <div class="card">
+      <h2>Question 1: Who made the river?</h2>
+      <p class="small muted">965 words. Notes picked: The boundary canals ("the river"); Henry Grey, Duke of Kent; Lancelot "Capability" Brown. New chat.</p>
+      <textarea id="p1" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words, in British English, written to be read aloud (no lists).
+- For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself.
+- For anything else about Wrest Park, use the NOTES.
+- If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.
+
+QUESTION: Who made the river?
+
+FACTS (worked out by the app):
+- Who: the 'river' canals (c.1706–29) were dug for Henry Grey, Duke of Kent; reshaped in 1758–60 by Lancelot 'Capability' Brown for Jemima, Marchioness Grey, and her husband Philip Yorke.
+- Who: Capability Brown's reshaping of the canals (1758–60) was carried out by Lancelot 'Capability' Brown for Jemima, Marchioness Grey, and her husband Philip Yorke.
+- Who: the Capability Brown column (1760) was attributed to the architect Edward Stevens.
+- Capability Brown's reshaping of the canals (1758–60) was carried out AFTER the 'river' canals (c.1706–29): about 29 years later.
+- The Capability Brown column (1760) was put up AFTER the 'river' canals (c.1706–29): about 31 years later.
+- When the 'river' canals were dug (c.1706–29), the rulers were — England/Britain: Anne (1702–1714), then George I (1714–1727), then George II (1727–1760); France: Louis XIV (1643–1715), then Louis XV (1715–1774).
+- Henry Grey, Duke of Kent (born 1671) was about 35–58 when the 'river' canals were dug (c.1706–29).
+- Lancelot 'Capability' Brown (born 1716) was 41 when Capability Brown's reshaping of the canals was begun (1758) and 43 when it was finished (1760).
+- Jemima, Marchioness Grey (born 1723) was 34 when Capability Brown's reshaping of the canals was begun (1758) and 36 when it was finished (1760).
+- The 'river' canals (c.1706–29): about 297–320 years ago (counting from 2026).
+
+NOTES:
+## The boundary canals ("the river")
+The water that runs round the west, south and east edges of the old garden, which visitors often call the river, is a chain of canals. It began as straight, formal canals dug for Henry Grey, Duke of Kent, as part of his Great Garden in the early 1700s, enclosing the woodland garden on three sides, with more canals at right angles to the Long Water. The canals were altered in the 1720s, and a serpentine canal was made in 1729. To the south, the garden ended at the Old Brook, a line that is still the boundary between the parishes of Silsoe and Gravenhurst.
+
+In 1758–60 the Duke's granddaughter Jemima, Marchioness Grey, and her husband Philip Yorke brought in Lancelot "Capability" Brown. Jemima valued her grandfather's garden, so Brown's changes were limited: he linked up the waters round the garden and made the straight perimeter canals meander in a more natural way, softening the edges while leaving the formal core alone. That is why the "river" curves while the Long Water stays straight.
+
+A Doric column about 6 metres tall, put up in 1760 and attributed to the architect Edward Stevens, records the work: "These gardens originally laid out by Henry Duke of Kent, were altered by Philip Earl of Hardwicke and Jemima Marchioness Grey, with the professional assistance of Lancelot Brown Esq. in the years 1758, 1759, 1760." It was first placed to be seen from the Bath House and was moved to its present spot in 1828. The Bath House itself (about 1769–71, also by Stevens, for Jemima) stands beside a pond made as an arm of the canal, with a cascade at its north end fed from a lead-lined tank.
+
+## Henry Grey, Duke of Kent
+Henry Grey (1671–1740) made Wrest's great formal garden. His parents, Anthony, 11th Earl of Kent, and Mary, Baroness Lucas, had made the Long Water in the 1680s, and he inherited in 1702. He became Marquess of Kent in 1706, and in 1710 was made Duke of Kent in exchange for giving up his post as Lord Chamberlain, which he had held since 1704. He was made a Knight of the Garter in 1712, and later served as Lord Steward (1716–18), Lord Privy Seal (1719–20) and Lord Lieutenant of Bedfordshire (1711–40).
+
+Contemporaries thought him lacking in talent, and he was unpopular: he was nicknamed "Bug", reputedly because of his body odour. He was a loyal servant of the Protestant succession and the new Hanoverian kings. Between 1706 and the 1720s he laid out the Great Garden, a rare English example of a French-style formal woodland garden, employing Nicholas Hawksmoor, Thomas Archer, Batty Langley and William Kent.
+
+None of his sons outlived him. Shortly before he died he was made Marquess Grey, with the title passing to his granddaughter Jemima Campbell, who inherited Wrest. Another grandson, through his daughter Anne and Lord Charles Cavendish, was the scientist Henry Cavendish (1731–1810), who discovered hydrogen and in 1797–98 "weighed the Earth" by measuring the tiny gravitational pull between lead spheres.
+
+## Lancelot "Capability" Brown
+Lancelot Brown (1716–83) was the most famous English landscape designer of the 18th century. Born at Kirkharle in Northumberland, he made his name as head gardener at Stowe in Buckinghamshire in the 1740s, then worked all over England, reshaping more than 170 parks. His nickname came from telling clients their land had "capability" for improvement. His style swept away straight lines for rolling grass, clumps and belts of trees, and serpentine lakes made by damming streams, as at Blenheim. In 1764 he became the King's Master Gardener at Hampton Court. At Wrest, unusually, he was held back, which is why the formal garden survives.
+
+Earth-moving in his day was done by hand: gangs of labourers with spades and wheelbarrows, and horses and carts to move the soil.
+
+QUESTION: Who made the river?</textarea>
+      <button class="btn block" data-copy="p1">Copy</button>
+    </div>
+    <div class="card">
+      <h2>Question 2: Why would a duke put up a statue of a king who had been dead for decades?</h2>
+      <p class="small muted">994 words. Notes picked: The Archer Pavilion; The boundary canals ("the river"); The statue of William III. New chat.</p>
+      <textarea id="p2" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words, in British English, written to be read aloud (no lists).
+- For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself.
+- For anything else about Wrest Park, use the NOTES.
+- If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.
+
+QUESTION: Why would a duke put up a statue of a king who had been dead for decades?
+
+FACTS (worked out by the app):
+- Who: the statue of William III (c.1737–39) was thought to be by the sculptor John Cheere, put up while Henry Grey, Duke of Kent, owned Wrest.
+- The Glorious Revolution (1688–89) happened BEFORE the statue of William III (c.1737–39): about 48 years earlier.
+- When the statue of William III was put up (c.1737–39), the rulers were — England/Britain: George II (1727–1760); France: Louis XV (1715–1774).
+- Henry Grey, Duke of Kent (born 1671) was about 66–68 when the statue of William III was put up (c.1737–39).
+- The statue of William III (c.1737–39) was put up about 35 years after William III died (1702).
+- The statue of William III (c.1737–39): about 287–289 years ago (counting from 2026).
+
+NOTES:
+## The Archer Pavilion
+The Archer Pavilion was designed by Thomas Archer and built in 1709–11 for Henry Grey, then Marquess of Kent, who became Duke of Kent in 1710 while it was going up. It cost £1,809. It is a garden pavilion or banqueting house at the south end of the Long Water, both closing the view from the house and giving a view back along the garden.
+
+Its plan is borrowed from Borromini's church of Sant'Ivo alla Sapienza in Rome: a six-pointed star made of two interlocking triangles. Archer made three of the points semicircular and three rectangular. It is built of red and yellow brick with stone dressings, was originally rendered, and has a lead-covered dome topped by a lantern. The keystone of the north porch carries a coronet and the Grey family's staff badge.
+
+The Great Room inside is circular and open to the dome. In 1712 it was painted in trompe-l'œil by Hauduroy (sources differ on his first name, Louis or Mark Anthony), a painter of French Huguenot descent: a coffered dome, fluted Corinthian columns, urns and statues, Grey family badges flanked by cherubs, and family portraits. An 1831 drawing shows a Garter emblem over the smaller doors that has since been lost; the Duke was made a Knight of the Garter in 1712, the year the room was painted. The scheme has been restored several times.
+
+Doors hidden in the painting lead to spiral stairs: up to two small rooms used as servants' bedrooms, and down to a brick-lined kitchen and a double privy in the basement. The pavilion was used for hunting parties, teas and "occasional suppers". The Great Room had twelve chairs covered in scarlet Morocco leather, and the alcoves held a table and chairs. It is listed Grade I.
+
+## The boundary canals ("the river")
+The water that runs round the west, south and east edges of the old garden, which visitors often call the river, is a chain of canals. It began as straight, formal canals dug for Henry Grey, Duke of Kent, as part of his Great Garden in the early 1700s, enclosing the woodland garden on three sides, with more canals at right angles to the Long Water. The canals were altered in the 1720s, and a serpentine canal was made in 1729. To the south, the garden ended at the Old Brook, a line that is still the boundary between the parishes of Silsoe and Gravenhurst.
+
+In 1758–60 the Duke's granddaughter Jemima, Marchioness Grey, and her husband Philip Yorke brought in Lancelot "Capability" Brown. Jemima valued her grandfather's garden, so Brown's changes were limited: he linked up the waters round the garden and made the straight perimeter canals meander in a more natural way, softening the edges while leaving the formal core alone. That is why the "river" curves while the Long Water stays straight.
+
+A Doric column about 6 metres tall, put up in 1760 and attributed to the architect Edward Stevens, records the work: "These gardens originally laid out by Henry Duke of Kent, were altered by Philip Earl of Hardwicke and Jemima Marchioness Grey, with the professional assistance of Lancelot Brown Esq. in the years 1758, 1759, 1760." It was first placed to be seen from the Bath House and was moved to its present spot in 1828. The Bath House itself (about 1769–71, also by Stevens, for Jemima) stands beside a pond made as an arm of the canal, with a cascade at its north end fed from a lead-lined tank.
+
+## The statue of William III
+The lead statue of King William III stands about 30 metres north of the Archer Pavilion, on the garden's main axis. It is thought to be by John Cheere (1709–87), a leading maker of lead garden statues. It is believed to date from the 1730s, probably after 1737, since it does not appear in John Rocque's 1737 views of the garden.
+
+William is shown as a Roman emperor: in armour, crowned with a victor's laurel wreath, holding a baton, with a cloak. The straps of his armour alternate thistles and roses, for Scotland and England. The pedestal is of Ketton stone on a Portland stone plinth, with a white marble panel reading: "KING WILLIAM the 3 of GLORIOUS and Immortell Memory". The wording echoes the toast to William's "glorious and immortal memory" drunk by his supporters, a way of declaring loyalty to the Protestant settlement. It is listed Grade II*.
+
+QUESTION: Why would a duke put up a statue of a king who had been dead for decades?</textarea>
+      <button class="btn block" data-copy="p2">Copy</button>
+    </div>
+    <div class="card">
+      <h2>Question 3: Was the orangery built before or after the house?</h2>
+      <p class="small muted">1081 words. Notes picked: The Orangery; Growing oranges in England; Thomas Philip, 2nd Earl de Grey. New chat.</p>
+      <textarea id="p3" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words, in British English, written to be read aloud (no lists).
+- For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself.
+- For anything else about Wrest Park, use the NOTES.
+- If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.
+
+QUESTION: Was the orangery built before or after the house?
+
+FACTS (worked out by the app):
+- Who: the house (1834–39) was designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works.
+- Who: the Orangery (c.1835) was designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works.
+- The Orangery (c.1835) was built WHILE the house (1834–39) was being built, so neither before nor after it: about 1 year after work on the house began, about 4 years before the house was finished.
+- When the house was built (1834–39), the rulers were — England/Britain: William IV (1830–1837), then Victoria (1837–1901); France: Louis-Philippe (1830–1848).
+- When the Orangery was built (c.1835), the rulers were — England/Britain: William IV (1830–1837); France: Louis-Philippe (1830–1848).
+- Thomas, 2nd Earl de Grey (born 1781) was 52 when the house was begun (1834) and 57 when it was finished (1839).
+- Thomas, 2nd Earl de Grey (born 1781) was about 53 when the Orangery was built (c.1835).
+- Louis-Philippe (born 1773) was about 61 when the Orangery was built (c.1835).
+- The house (1834–39): 187–192 years ago (counting from 2026).
+- The Orangery (c.1835): about 191 years ago (counting from 2026).
+
+NOTES:
+## The Orangery
+The Orangery was built about 1835 for Thomas Philip, 2nd Earl de Grey, who designed it himself, with James Clephan as his clerk of works. It stands on the site of an earlier greenhouse designed for the Duke of Kent by Batty Langley. The Earl took the design from a French pattern book, Jacques-François Blondel's Maisons de Plaisance, and added classical ornament and a tall French dome at each end. An orangery in the French style was unique in England.
+
+It is built of yellow brick, rendered in cement on the front and sides so that it reads as stone. The main roof is glass on a shallow cast-iron frame, to let in as much winter light as possible. The floor originally had heating grilles; they were replaced with ceramic tiles after 1948. Below the floor is a vaulted undercroft of thirteen bays that held water tanks, and a cast-iron pump that raised the water still survives.
+
+The orange trees were bought from King Louis-Philippe of France. In summer they were set out in their tubs on the terraced parterre below the Orangery, and by around 1900 they were among the largest orange trees in England. The front doors were too low for the grown trees, so a full-height double door was hidden in the north end, rendered to look like plain wall.
+
+Inside is a stone fireplace of about 1600 carved with the de Grey coat of arms, rescued from the old house when it was demolished. On the steps outside are four early-1700s stone cherubs on pedestals, probably by an unknown Flemish sculptor, holding a book, a puppy, a bird's nest and a torch. They have been there since at least 1908. Child figures shown on the domes in a 1904 photograph are now missing. The Orangery is listed Grade II*.
+
+## Growing oranges in England
+Citrus trees are killed by frost, so in northern Europe they were grown in tubs: outside in summer, then moved under cover before the first frosts. The building that sheltered them was an orangery. Orangeries became fashionable among royalty and the nobility in the late 1600s. Louis XIV's Orangerie at Versailles (1684–86) held over a thousand trees, and Queen Anne's Orangery at Kensington Palace was built in 1704–05. Owning orange trees showed wealth, because of the cost of heating, staff and the building itself.
+
+Early orangeries had solid roofs and tall south-facing windows: the trees only had to survive the winter, not grow. In the 1800s cheaper cast iron and better glass made glass roofs possible, and big conservatories followed, such as Joseph Paxton's Great Conservatory at Chatsworth (late 1830s). Glass was taxed in Britain until 1845, so a large glass roof in 1835, as at Wrest, was a costly statement.
+
+Light is the problem in an English winter. At Wrest's latitude (about 52° North), the midday sun at the winter solstice is only about 15° above the horizon (90 − 52 − 23.4), and days are under eight hours long. Cast iron is very strong in compression, so the glazing bars could be slim, blocking less light than timber.
+
+## Thomas Philip, 2nd Earl de Grey
+Thomas Philip de Grey, 2nd Earl de Grey (born 8 December 1781, died 14 November 1859), built the present house, the Orangery and the French gardens at Wrest. He was born Thomas Philip Robinson, was known as Lord Grantham from 1786, took the surname Weddell in 1803 when he inherited Newby Hall in Yorkshire from a cousin, and changed it to de Grey in 1833.
+
+In 1833 he inherited Wrest Park, the earldom de Grey and the barony of Lucas from his aunt Amabel, the daughter of Jemima, Marchioness Grey. He found a large, crumbling house of medieval origins and, rather than repair it, pulled it down and built a new one about 200 metres to the north.
+
+He was a Tory politician: First Lord of the Admiralty under Robert Peel from December 1834 to April 1835, Lord Lieutenant of Ireland from 1841 to 1844, and Lord Lieutenant of Bedfordshire from 1818 until his death. He was a keen amateur architect and became the first president of the Institute of British Architects when it was founded in 1834, holding the post until he died; it received its royal charter in 1837 and is today's RIBA. He was also a Fellow of the Royal Society (1841) and commanded the Yorkshire Hussars, a yeomanry cavalry regiment, for over forty years. Of the house he wrote: "I was strictly and in every sense of the word my own architect." Wrest passed to his elder daughter, Anne Florence, Countess Cowper.
+
+QUESTION: Was the orangery built before or after the house?</textarea>
+      <button class="btn block" data-copy="p3">Copy</button>
+    </div>
+    <div class="card">
       <h2>Test 3: fuller notes, dates worked out by the app</h2>
       <ol class="small">
-        <li>In Edge Gallery, open the model's settings and raise <b>max tokens</b> to 8,000 or more. This prompt is about 4,200 tokens.</li>
-        <li>New <b>AI Chat</b> with Gemma 4 E2B on GPU. Paste <b>Prompt</b> below (2,998 words). It has the rules, 24 calculated date facts, the notes and the first question.</li>
+        <li>In Edge Gallery, open the model's settings and raise <b>max tokens</b> to 8,000 or more. This prompt is about 4,300 tokens.</li>
+        <li>New <b>AI Chat</b> with Gemma 4 E2B on GPU. Paste <b>Prompt</b> below (3,094 words). It has the rules, 28 calculated date facts, the notes and the first question.</li>
         <li>Send the <b>follow-ups</b> one at a time in the same chat.</li>
         <li>Send me the answers, times, and anything wrong or dull.</li>
       </ol>
@@ -32,7 +178,7 @@
     <div class="card">
       <h2>Prompt</h2>
       <p class="small muted">Paste as the first message of a new chat.</p>
-      <textarea id="p1" readonly rows="8">You are a friendly, knowledgeable guide for a family visiting Wrest Park. Answer each question I ask.
+      <textarea id="p4" readonly rows="8">You are a friendly, knowledgeable guide for a family visiting Wrest Park. Answer each question I ask.
 Rules:
 1. For any date, age, number of years, who was on the throne, or whether something came before, after or during something else, use ONLY the CALCULATED FACTS. They are exact. Never work out dates yourself. If the fact you need is not there, say you can't work that out exactly.
 2. For facts about Wrest Park itself (who built or made what, what is inside, what happened here), use only the NOTES. If they don't cover it, say "I don't have that in my notes". Do not guess.
@@ -40,6 +186,10 @@ Rules:
 4. British English. Under 100 words. Write it to be read aloud: no lists or headings.
 
 CALCULATED FACTS (worked out by the app; exact):
+- Who: the Orangery (c.1835) was designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works.
+- Who: the house (1834–39) was designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works.
+- Who: the Archer Pavilion (1709–11) was designed by Thomas Archer for Henry Grey, Duke of Kent; the Great Room painted by Hauduroy in 1712.
+- Who: the statue of William III (c.1737–39) was thought to be by the sculptor John Cheere, put up while Henry Grey, Duke of Kent, owned Wrest.
 - The Orangery (c.1835) was built WHILE the house (1834–39) was being built, so neither before nor after it: about 1 year after work on the house began, about 4 years before the house was finished.
 - The Orangery (c.1835) was built AFTER the Archer Pavilion (1709–11): about 124 years later.
 - The statue of William III (c.1737–39) was put up AFTER the Archer Pavilion (1709–11): about 26 years later.
@@ -143,50 +293,50 @@ Mary died in 1694 and William reigned alone until he died in March 1702, after h
 The Act of Settlement of 1701 passed the crown, after Anne, to the Protestant House of Hanover, and George I succeeded in 1714. Jacobites, supporters of James II's descendants, rose in 1715 and again in 1745. So in the 1730s a statue of William was a statement of loyalty to the Protestant succession and the Hanoverian kings.
 
 QUESTION: Was the orangery built before or after the house?</textarea>
-      <button class="btn block" data-copy="p1">Copy</button>
+      <button class="btn block" data-copy="p4">Copy</button>
     </div>
     
     <div class="card">
       <h2>Follow-up 1</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p2" readonly rows="2">Why would a duke put up a statue of a king who had been dead for decades?</textarea>
-      <button class="btn block" data-copy="p2">Copy</button>
+      <textarea id="p5" readonly rows="2">Why would a duke put up a statue of a king who had been dead for decades?</textarea>
+      <button class="btn block" data-copy="p5">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 2</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p3" readonly rows="2">How did they keep orange trees alive through the winter here?</textarea>
-      <button class="btn block" data-copy="p3">Copy</button>
+      <textarea id="p6" readonly rows="2">How did they keep orange trees alive through the winter here?</textarea>
+      <button class="btn block" data-copy="p6">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 3</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p4" readonly rows="2">Who was on the throne when the Archer Pavilion was built, and what was going on in Europe at the time?</textarea>
-      <button class="btn block" data-copy="p4">Copy</button>
+      <textarea id="p7" readonly rows="2">Who was on the throne when the Archer Pavilion was built, and what was going on in Europe at the time?</textarea>
+      <button class="btn block" data-copy="p7">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 4</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p5" readonly rows="2">Is there any link between the orange trees and the Habsburgs?</textarea>
-      <button class="btn block" data-copy="p5">Copy</button>
+      <textarea id="p8" readonly rows="2">Is there any link between the orange trees and the Habsburgs?</textarea>
+      <button class="btn block" data-copy="p8">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 5</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p6" readonly rows="2">How old was Earl de Grey when he built the house, and what else was he doing then?</textarea>
-      <button class="btn block" data-copy="p6">Copy</button>
+      <textarea id="p9" readonly rows="2">How old was Earl de Grey when he built the house, and what else was he doing then?</textarea>
+      <button class="btn block" data-copy="p9">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 6</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p7" readonly rows="2">Which famous scientist was related to the Duke of Kent, and what did he do?</textarea>
-      <button class="btn block" data-copy="p7">Copy</button>
+      <textarea id="p10" readonly rows="2">Which famous scientist was related to the Duke of Kent, and what did he do?</textarea>
+      <button class="btn block" data-copy="p10">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 7</h2>
       <p class="small muted">Not in the notes: it should say so rather than guess.</p>
-      <textarea id="p8" readonly rows="2">What year was the visitor centre café built?</textarea>
-      <button class="btn block" data-copy="p8">Copy</button>
+      <textarea id="p11" readonly rows="2">What year was the visitor centre café built?</textarea>
+      <button class="btn block" data-copy="p11">Copy</button>
     </div>
     <div class="card">
       <h2>Test 3b: a different part of the site</h2>
@@ -199,28 +349,26 @@ QUESTION: Was the orangery built before or after the house?</textarea>
     <div class="card">
       <h2>Plain question</h2>
       <p class="small muted">Send in the same chat, after the test 3 questions.</p>
-      <textarea id="p9" readonly rows="2">Who made the river?</textarea>
-      <button class="btn block" data-copy="p9">Copy</button>
+      <textarea id="p12" readonly rows="2">Who made the river?</textarea>
+      <button class="btn block" data-copy="p12">Copy</button>
     </div>
     
     <div class="card">
       <h2>With the app's added material</h2>
-      <p class="small muted">942 words. Send in the same chat.</p>
-      <textarea id="p10" readonly rows="8">The app has added material for this question.
+      <p class="small muted">883 words. Send in the same chat.</p>
+      <textarea id="p13" readonly rows="8">The app has added material for this question.
 
 CALCULATED FACTS (worked out by the app; exact):
-- The boundary canals (c.1706–29) were dug BEFORE Capability Brown's reshaping of the canals (1758–60): about 29 years earlier.
-- The boundary canals (c.1706–29) were dug BEFORE the Capability Brown column (1760): about 31 years earlier.
-- The Capability Brown column (1760) was put up WHILE Capability Brown's reshaping of the canals (1758–60) was being carried out, so neither before nor after it: 2 years after work on Capability Brown's reshaping of the canals began, in the year Capability Brown's reshaping of the canals was finished.
-- When the boundary canals were dug (c.1706–29), the rulers were — England/Britain: Anne (1702–1714), then George I (1714–1727), then George II (1727–1760); France: Louis XIV (1643–1715), then Louis XV (1715–1774).
-- When Capability Brown's reshaping of the canals was carried out (1758–60), the rulers were — England/Britain: George II (1727–1760), then George III (1760–1820); France: Louis XV (1715–1774).
-- When the Capability Brown column was put up (1760), the rulers were — England/Britain: George II (1727–1760), then George III (1760–1820); France: Louis XV (1715–1774).
-- Henry Grey, Duke of Kent (born 1671) was about 35–58 when the boundary canals were dug (c.1706–29).
+- Who: the 'river' canals (c.1706–29) were dug for Henry Grey, Duke of Kent; reshaped in 1758–60 by Lancelot 'Capability' Brown for Jemima, Marchioness Grey, and her husband Philip Yorke.
+- Who: Capability Brown's reshaping of the canals (1758–60) was carried out by Lancelot 'Capability' Brown for Jemima, Marchioness Grey, and her husband Philip Yorke.
+- Who: the Capability Brown column (1760) was attributed to the architect Edward Stevens.
+- Capability Brown's reshaping of the canals (1758–60) was carried out AFTER the 'river' canals (c.1706–29): about 29 years later.
+- The Capability Brown column (1760) was put up AFTER the 'river' canals (c.1706–29): about 31 years later.
+- When the 'river' canals were dug (c.1706–29), the rulers were — England/Britain: Anne (1702–1714), then George I (1714–1727), then George II (1727–1760); France: Louis XIV (1643–1715), then Louis XV (1715–1774).
+- Henry Grey, Duke of Kent (born 1671) was about 35–58 when the 'river' canals were dug (c.1706–29).
 - Lancelot 'Capability' Brown (born 1716) was 41 when Capability Brown's reshaping of the canals was begun (1758) and 43 when it was finished (1760).
 - Jemima, Marchioness Grey (born 1723) was 34 when Capability Brown's reshaping of the canals was begun (1758) and 36 when it was finished (1760).
-- The boundary canals (c.1706–29): about 297–320 years ago (counting from 2026).
-- Capability Brown's reshaping of the canals (1758–60): 266–268 years ago (counting from 2026).
-- The Capability Brown column (1760): 266 years ago (counting from 2026).
+- The 'river' canals (c.1706–29): about 297–320 years ago (counting from 2026).
 
 NOTES:
 ## The boundary canals ("the river")
@@ -243,7 +391,7 @@ Lancelot Brown (1716–83) was the most famous English landscape designer of the
 Earth-moving in his day was done by hand: gangs of labourers with spades and wheelbarrows, and horses and carts to move the soil.
 
 QUESTION: Who made the river?</textarea>
-      <button class="btn block" data-copy="p10">Copy</button>
+      <button class="btn block" data-copy="p13">Copy</button>
     </div>
     <details class="card">
       <summary>Earlier test (tour bullets only)</summary>
@@ -251,7 +399,7 @@ QUESTION: Who made the river?</textarea>
     <div class="card">
       <h2>Full notes + first question</h2>
       <p class="small muted">Paste as the first message of a new chat.</p>
-      <textarea id="p11" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the question using ONLY the FACTS, REIGNS and NOTES below. If they do not contain the answer, reply exactly: "Sorry, that isn't in my notes." Use British English. Keep answers under 80 words.
+      <textarea id="p14" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the question using ONLY the FACTS, REIGNS and NOTES below. If they do not contain the answer, reply exactly: "Sorry, that isn't in my notes." Use British English. Keep answers under 80 words.
 
 FACTS:
 - The house: built 1834–39 for Thomas, 2nd Earl de Grey, who designed it himself.
@@ -373,26 +521,26 @@ NOTES:
 - The meadow just north of the bridge is one of the best spots for autumn colour.
 
 QUESTION: Was the orangery built before or after the house?</textarea>
-      <button class="btn block" data-copy="p11">Copy</button>
+      <button class="btn block" data-copy="p14">Copy</button>
     </div>
       
     <div class="card">
       <h2>Follow-up 1</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p12" readonly rows="2">When was William III king, and why is there a statue of him here?</textarea>
-      <button class="btn block" data-copy="p12">Copy</button>
+      <textarea id="p15" readonly rows="2">When was William III king, and why is there a statue of him here?</textarea>
+      <button class="btn block" data-copy="p15">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 2</h2>
       <p class="small muted">Send in the same chat.</p>
-      <textarea id="p13" readonly rows="2">What is trompe-l’œil, and where can we see it here?</textarea>
-      <button class="btn block" data-copy="p13">Copy</button>
+      <textarea id="p16" readonly rows="2">What is trompe-l’œil, and where can we see it here?</textarea>
+      <button class="btn block" data-copy="p16">Copy</button>
     </div>
     <div class="card">
       <h2>Follow-up 3</h2>
       <p class="small muted">Not in the notes: it should say so.</p>
-      <textarea id="p14" readonly rows="2">Who won the 1966 football World Cup?</textarea>
-      <button class="btn block" data-copy="p14">Copy</button>
+      <textarea id="p17" readonly rows="2">Who won the 1966 football World Cup?</textarea>
+      <button class="btn block" data-copy="p17">Copy</button>
     </div>
     </details>
   </main>

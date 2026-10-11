@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import { calculatedFacts, mentions } from '../assistant/maths.mjs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
+import { buildPrompt } from '../assistant/prompt.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const read = (p) => fs.readFileSync(root + p, 'utf8');
@@ -48,6 +49,11 @@ const m = mentions(dates, QR);
 const factsR = calculatedFacts(dates, { ...m, nowYear: new Date().getFullYear() });
 const EXTRA = `The app has added material for this question.\n\nCALCULATED FACTS (worked out by the app; exact):\n${factsR.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${fmt(picked)}\n\nQUESTION: ${QR}`;
 console.log('3b picked:', picked.map(x => x.title).join(' | '), '| things:', m.things.join(','), '| people:', m.people.join(','));
+
+// Test 4: one fresh, short prompt per question, exactly as the app would build it.
+const Q4 = ['Who made the river?', 'Why would a duke put up a statue of a king who had been dead for decades?', 'Was the orangery built before or after the house?'];
+const T4 = Q4.map(q => buildPrompt({ question: q, sections, dates }));
+T4.forEach((t, i) => console.log('4:', Q4[i], '|', t.picked.join(' | '), '|', words(t.text), 'words'));
 
 const FULL3 = `${RULES}\n\nCALCULATED FACTS (worked out by the app; exact):\n${facts.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${notes}\n\nQUESTION: ${Q3[0]}`;
 
@@ -97,6 +103,15 @@ const html = `<!doctype html>
   <header id="top"><div class="top-row"><div class="title">Test prompts</div><a class="icon-btn" href="lab.html" style="color:inherit;text-decoration:none">✕</a></div>
     <div class="status">For testing on-phone AI apps (e.g. AI Edge Gallery) with the material the assistant would use.</div></header>
   <main>
+    <div class="card">
+      <h2>Test 4: a fresh prompt for each question</h2>
+      <ol class="small">
+        <li>This is how the app would really ask: each question gets a <b>new chat</b> with its own short prompt (about 1,000 words): rules, facts the app worked out (dates and who made what), the best-matching notes, and the question.</li>
+        <li>For each prompt below: start a <b>new AI Chat</b>, paste it, note the answer and time.</li>
+        <li>If you have time, repeat one with <b>Gemma 4 E4B</b> to compare quality and speed.</li>
+      </ol>
+    </div>
+    ${T4.map((t, i) => block(`Question ${i + 1}: ${Q4[i]}`, t.text, `${words(t.text)} words. Notes picked: ${t.picked.join('; ')}. New chat.`)).join('')}
     <div class="card">
       <h2>Test 3: fuller notes, dates worked out by the app</h2>
       <ol class="small">

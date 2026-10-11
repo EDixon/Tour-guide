@@ -8,5 +8,5 @@ let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
 ok('sections parsed with sources', () => { assert.ok(secs.length >= 14); assert.ok(secs.every(s => s.text && !/^Sources:/m.test(s.text))); });
 ok('river question finds the canals', () => assert.match(rank(secs, 'Who made the river?')[0].title, /boundary canals/));
 ok('orange trees in winter finds orangery material', () => assert.match(rank(secs, 'How did they keep orange trees alive through the winter here?').slice(0, 2).map(s => s.title).join(), /Orangery|oranges/));
-ok('river question brings in Brown and the Duke', () => { const m = mentions(dates, 'Who made the river?'); assert.ok(m.things.includes('brown-river')); assert.ok(m.people.includes('capability-brown') && m.people.includes('duke-of-kent')); });
+ok('river question brings in Brown and the Duke', () => { const m = mentions(dates, 'Who made the river?'); assert.ok(m.related.includes('brown-river')); assert.ok(m.people.includes('capability-brown') && m.people.includes('duke-of-kent')); });
 console.log(`\n${n} passed`);
