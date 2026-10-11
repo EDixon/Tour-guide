@@ -1,5 +1,5 @@
 {
-  "note": "Dates the app uses for all arithmetic. from/to are years; approx = date is circa; born/died for people (with month where known); stops = tour stops where the thing is; who = who made it; related/people = links used to widen a question's facts.",
+  "note": "Site dates for Wrest Park, used for all date arithmetic (rulers come from the reference pack). from/to are years; approx = date is circa; born/died for people (with month where known); stops = tour stops where the thing is; who = who made it; related/people = links used to widen a question's facts.",
   "things": [
     {"id": "house", "name": "the house", "names": ["house", "mansion", "wrest park house", "new house"], "from": 1834, "to": 1839, "verb": "built", "people": ["earl-de-grey"], "who": "designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works", "stops": ["terrace", "staircase", "staterooms", "dining", "countess", "exhibition"]},
     {"id": "orangery", "name": "the Orangery", "names": ["orangery", "orange house"], "from": 1835, "to": 1835, "approx": true, "verb": "built", "people": ["earl-de-grey", "louis-philippe"], "who": "designed by Thomas, 2nd Earl de Grey, for himself, with James Clephan as clerk of works", "stops": ["orangery"]},
@@ -27,9 +27,5 @@
     {"id": "capability-brown", "name": "Lancelot 'Capability' Brown", "names": ["capability brown", "lancelot brown", "brown"], "born": [1716, 8], "died": [1783, 2], "who": "the most famous English landscape designer of the 18th century, who reshaped the boundary canals in 1758–60", "events": [[1741, "became head gardener at Stowe"], [1764, "became the King's Master Gardener at Hampton Court"]]},
     {"id": "jemima", "name": "Jemima, Marchioness Grey", "names": ["jemima", "marchioness grey"], "born": [1723, 10], "died": [1797, 1], "who": "the granddaughter and heir of Henry Grey, Duke of Kent; wife of Philip Yorke, who became 2nd Earl of Hardwicke in 1764", "events": [[1740, "inherited Wrest when her grandfather died"], [1740, "married Philip Yorke"]]},
     {"id": "henry-cavendish", "name": "Henry Cavendish", "names": ["cavendish"], "born": [1731, 10], "died": [1810, 2], "who": "the scientist, a grandson of Henry Grey, Duke of Kent"}
-  ],
-  "rulers": {
-    "England/Britain": [["Charles II", 1660, 1685], ["James II", 1685, 1688], ["William III and Mary II", 1689, 1694], ["William III", 1694, 1702], ["Anne", 1702, 1714], ["George I", 1714, 1727], ["George II", 1727, 1760], ["George III", 1760, 1820], ["George IV", 1820, 1830], ["William IV", 1830, 1837], ["Victoria", 1837, 1901], ["Edward VII", 1901, 1910], ["George V", 1910, 1936]],
-    "France": [["Louis XIV", 1643, 1715], ["Louis XV", 1715, 1774], ["Louis XVI", 1774, 1792], ["the Republic and Napoleon", 1792, 1814], ["Louis XVIII", 1814, 1824], ["Charles X", 1824, 1830], ["Louis-Philippe", 1830, 1848], ["the Second Republic", 1848, 1852], ["Napoleon III", 1852, 1870]]
-  }
+  ]
 }

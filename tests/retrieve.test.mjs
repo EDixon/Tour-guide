@@ -3,8 +3,7 @@ import fs from 'node:fs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
 import { mentions } from '../assistant/maths.mjs';
 import { buildPrompt, plainDates, createSession, hereContext } from '../assistant/prompt.mjs';
-const secs = parseSections(fs.readFileSync(new URL('../knowledge/wrest-park-sample.md', import.meta.url), 'utf8'));
-const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
+import { secs, dates, tour } from './load.mjs';
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
 ok('sections parsed with sources', () => { assert.ok(secs.length >= 14); assert.ok(secs.every(s => s.text && !/^Sources:/m.test(s.text))); });
 ok('river question finds the canals', () => assert.match(rank(secs, 'Who made the river?')[0].title, /boundary canals/));
@@ -39,7 +38,6 @@ ok('a conversation carries its subject through chained follow-ups', () => {
   assert.match(e.text, /EARLIER QUESTION: Why would a duke/);
   assert.ok(!/worked out by the app|^- Who:/m.test(e.text));
 });
-const tour = JSON.parse(fs.readFileSync(new URL('../tours/wrest-park.json', import.meta.url)));
 ok('where we are: "who built this?" at the Orangery', () => {
   const s = createSession({ sections: secs, dates, tour, nowYear: 2026 });
   const r = s.prompt('Who built this?', { stopId: 'orangery' });

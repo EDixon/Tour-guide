@@ -3473,5 +3473,11 @@
    }
   ]
  },
- "introStop": "intro"
+ "introStop": "intro",
+ "knowledge": {
+  "site": "knowledge/wrest-park",
+  "reference": [
+   "rulers"
+  ]
+ }
 }

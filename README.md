@@ -12,7 +12,7 @@ This repository is the whole project, and its top level is also the website:
 |---|---|
 | `index.html`, `app.js`, `planner.js`, `style.css`, `sw.js`, `manifest.webmanifest`, `icons/` | The app |
 | `tours/` | One JSON file per site, plus `index.json` listing them |
-| `knowledge/` | Knowledge base for the assistant: notes in sections with sources (`*-sample.md`) and the dates table (`*-dates.json`) |
+| `knowledge/` | Knowledge for the assistant: `knowledge/<site>/notes.md` (sections with sources) and `dates.json`, plus shared packs in `knowledge/reference/`. Format: `docs/KNOWLEDGE_FORMAT.md` |
 | `assistant/` | Assistant code (not yet in the app). `maths.mjs` works out every date relationship (before/after/during, reigns, ages, years ago) so the model never does sums; `retrieve.mjs` picks the notes; `prompt.mjs` builds each question's prompt, with where you are and the earlier question |
 | `docs/` | Tour file format |
 | `prep/` | Brief for preparing a new site with Claude |

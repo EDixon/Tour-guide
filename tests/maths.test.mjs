@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
-import fs from 'node:fs';
 import { compare, rulersDuring, personAt, calculatedFacts, mentions, label } from '../assistant/maths.mjs';
-const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
+import { dates } from './load.mjs';
 const T = (id) => dates.things.find(t => t.id === id), P = (id) => dates.people.find(p => p.id === id);
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
 ok('labels use full years', () => { assert.equal(label(T('house')), '1834–1839'); assert.equal(label(T('orangery')), 'about 1835'); });

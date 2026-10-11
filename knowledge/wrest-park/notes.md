@@ -1,6 +1,6 @@
-# Wrest Park knowledge sample
+# Wrest Park notes
 
-A sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `About:` lists the dated things and people (ids in the dates file) a section covers, so naming one brings its sections in. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `wrest-park-dates.json`, which the app uses for all date arithmetic.
+So far a sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `About:` lists the dated things and people (ids in the dates file) a section covers, so naming one brings its sections in. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `dates.json` alongside, which the app uses for all date arithmetic. Format: docs/KNOWLEDGE_FORMAT.md.
 
 ## The Orangery
 Kind: site
