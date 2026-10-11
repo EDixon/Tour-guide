@@ -1,0 +1,71 @@
+name: OpenStreetMap layer
+
+# Fetches a site's OpenStreetMap layer (tools/fetch-osm.mjs) and commits it. Claude's workspace
+# can't reach the Overpass API, so this runs here. Two ways to start it:
+#   - push a file sites/<id>/osm.request (its first line may hold extra arguments, e.g. "--margin 400")
+#   - run it by hand (workflow_dispatch) with the site id
+on:
+  push:
+    branches: [main]
+    paths: ['sites/*/osm.request']
+  workflow_dispatch:
+    inputs:
+      site:
+        description: Site id (e.g. wrest-park)
+        required: true
+      args:
+        description: Extra arguments (e.g. --margin 400 or --bbox s,w,n,e)
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: osm
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Fetch
+        env:
+          SITE: ${{ github.event.inputs.site }}
+          ARGS: ${{ github.event.inputs.args }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -e
+          if [ -n "$SITE" ]; then
+            echo "$SITE|$ARGS" > /tmp/jobs
+          else
+            git diff --name-only "$BEFORE" "$GITHUB_SHA" -- 'sites/*/osm.request' | while read f; do
+              [ -f "$f" ] || continue
+              id=$(basename "$(dirname "$f")")
+              echo "$id|$(head -n1 "$f")" >> /tmp/jobs
+            done
+          fi
+          [ -s /tmp/jobs ] || { echo "Nothing to fetch"; exit 0; }
+          while IFS='|' read -r id args; do
+            echo "::group::$id"
+            # shellcheck disable=SC2086
+            node tools/fetch-osm.mjs "$id" $args || { echo "::error::OpenStreetMap fetch failed for $id"; exit 1; }
+            echo "::endgroup::"
+          done < /tmp/jobs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tours/*.map.json sites/*/osm-pois.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "OpenStreetMap layer: $(git diff --cached --name-only | grep map.json | xargs -n1 basename | sed 's/.map.json//' | paste -sd, -)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
