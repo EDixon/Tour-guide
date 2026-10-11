@@ -1,0 +1,68 @@
+name: Site photos
+
+# Lists a site's geotagged Wikimedia Commons photos and/or downloads the chosen ones
+# (tools/fetch-photos.mjs), then commits the result. Claude's workspace can't reach Wikimedia.
+# Start it by pushing sites/<id>/photos.request (first line: "list", "download" or "list download"),
+# or by hand with the site id and mode.
+on:
+  push:
+    branches: [main]
+    paths: ['sites/*/photos.request']
+  workflow_dispatch:
+    inputs:
+      site:
+        description: Site id (e.g. wrest-park)
+        required: true
+      mode:
+        description: list, download, or "list download"
+        required: true
+        default: list
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Fetch
+        env:
+          SITE: ${{ github.event.inputs.site }}
+          MODE: ${{ github.event.inputs.mode }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -e
+          if [ -n "$SITE" ]; then
+            echo "$SITE|$MODE" > /tmp/jobs
+          else
+            git diff --name-only "$BEFORE" "$GITHUB_SHA" -- 'sites/*/photos.request' | while read f; do
+              [ -f "$f" ] || continue
+              echo "$(basename "$(dirname "$f")")|$(head -n1 "$f")" >> /tmp/jobs
+            done
+          fi
+          [ -s /tmp/jobs ] || { echo "Nothing to fetch"; exit 0; }
+          while IFS='|' read -r id mode; do
+            # shellcheck disable=SC2086
+            node tools/fetch-photos.mjs "$id" $mode || { echo "::error::Photo fetch failed for $id"; exit 1; }
+          done < /tmp/jobs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for p in sites/*/photos.json tours/*.photos.json tours/*/img; do [ -e "$p" ] && git add "$p"; done
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Site photos: $(git diff --cached --name-only | cut -d/ -f2 | sed 's/\..*//' | sort -u | paste -sd, -)"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
