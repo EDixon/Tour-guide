@@ -1,6 +1,6 @@
 node_modules/
 .DS_Store
-sites/*/inputs/*.gpx
+sites/*/inputs/
 android/.gradle/
 android/build/
 android/app/build/

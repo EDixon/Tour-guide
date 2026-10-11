@@ -7,8 +7,26 @@ description: Second link in the Tour Guide site chain. Survey a site, gather sou
 
 Main chat (Opus). Read `CLAUDE.md`, `sites/<id>/brief.md` and `STATUS.md`. Formats: `docs/TOUR_FORMAT.md` and `docs/KNOWLEDGE_FORMAT.md`; the reference example is `tours/wrest-park.json`.
 
+**Ask Eliot what he has** (one message, before mapping). Anything here beats what can be found online:
+- **Site map:** a photo of the map board on site, the operator's leaflet map, or map photos saved from Google Maps (Claude can't fetch those itself).
+- **Visitor guide or guidebook:** photos of the pages, or a PDF.
+- **Other photos:** his own photos from a visit, especially of things to look for.
+- **A GPX track** or route from a previous visit.
+
+Attach them in the chat; they are saved to `sites/<id>/inputs/`, which is kept out of the repo (it is public, and guidebooks and photos are copyright or personal). So:
+- Take what you need from them now.
+- Cite a guidebook like any other source ("English Heritage guidebook (2011), p. 12") in `sources.md`.
+- List in `STATUS.md` what was supplied, so a later chat knows to ask for it again.
+
+If `brief.md` already lists inputs, or says Eliot was asked and has none, don't ask again. If Eliot isn't there, carry on without them and add a flag.
+
 **If the site already exists** (`tours/<id>.json` is there): don't rebuild it. Keep the stops, paths and bullets that work, read `STATUS.md` for what's known to be weak, and concentrate on:
 - `sources.md`, covering the whole site
+- the map (section 3):
+  - fetch the OpenStreetMap layer if it's missing
+  - check stop positions against it
+  - redraw the path network along the real footpaths
+  - add the car park and main entrance
 - visitor scores: if `sites/<id>/visitor-scores.md` doesn't exist, add a "visitors" line to the research plan so the visitor-scout runs
 - the ownership chronology (section 3)
 - `dates.json` entries for every stop
@@ -28,6 +46,7 @@ Gather and list, with URLs:
 Only physical places a visitor can stand at or look at:
 - rooms, garden features, viewpoints
 - the visitor centre, café and toilets, as `kind: "facility"`
+- **arrival:** the main car park (and any overflow car park) with `facilities: ["parking"]`, and the main entrance with `facilities: ["entrance"]`, as facility stops. They are often not where the visitor centre is. Set the tour's `start` and `exit` to the main car park, and make the path network go car park → entrance → visitor centre the way visitors actually walk.
 - an introduction stop (`kind: "intro"`)
 
 For each stop:
@@ -42,12 +61,20 @@ For each stop:
 Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. Too many makes the planner's job harder without adding value.
 
 ## 3. Paths, map, timeline
+- **OpenStreetMap layer first.** Unless `tours/<id>.map.json` exists and is recent:
+  1. Create `sites/<id>/osm.request`. Its first line holds the arguments, e.g. `--margin 300`; for a new site with no stops yet, use `--bbox south,west,north,east`.
+  2. Commit and push it. The "OpenStreetMap layer" GitHub workflow fetches the data (Claude's workspace can't reach OpenStreetMap) and commits `tours/<id>.map.json` and `sites/<id>/osm-pois.json` within a minute or so.
+  3. `git pull`. If nothing arrives, check `gh run list --workflow osm.yml`.
+  4. Set `"map": {"osm": "tours/<id>.map.json", "osmNote": "..."}` in the tour, and add the file to `sw.js`.
+- **Use it:**
+  - `osm-pois.json` lists named points (statues, toilets, gates, car parks, buildings) with positions. Check every stop's position against it and the listing. Where they disagree by more than about 20 m, find out which is right and say so in `sources.md`.
+  - Draw waypoints and path links along the real footpaths in `tours/<id>.map.json`, so walking distances are realistic.
 - **Waypoints and paths:**
   - Cover all stops: `[a, b, scenic, name, door?]`.
   - Scenic scores: waterside or viewpoint walks 0.8–1, ordinary paths 0.3–0.5, service short-cuts 0.2.
   - Name each link the way you'd give directions ("Long Water, west bank").
-  - If Eliot supplied a map or GPX, use it. Otherwise estimate from listing coordinates and say so in `map.note`.
-- **Map shapes:** a few schematic shapes (water, woodland, main buildings).
+  - Use, in order of preference: a GPX from Eliot, the OpenStreetMap footpaths, his map photos, then estimates from listing coordinates. Say which in `map.osmNote` (or `map.note` without OpenStreetMap).
+- **Map shapes:** only without the OpenStreetMap layer (abroad, say, where coverage is poor): a few schematic shapes (water, woodland, main buildings).
 - **Timeline:**
   - Eras: 6–10, covering how the site developed.
   - Events: 20–35 dated events, linked to stops where possible. Keep labels short. Research adds `more`, the explanation shown when an event is tapped, so assign each event that needs one to a research batch: events at a batch's stops go to that batch, and sales, inheritances and the like go to "family and owners".

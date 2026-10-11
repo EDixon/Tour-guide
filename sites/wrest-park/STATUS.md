@@ -21,6 +21,10 @@ Updated: 2026-10-11
   - the 1917 sale: who bought it and what happened next
 
   Assign every event that leaves a question open to a batch.
+- **Map.** The OpenStreetMap layer is in place (`tours/wrest-park.map.json`, fetched 2026-10-11), along with `sites/wrest-park/osm-pois.json`. Still to do:
+  - Add the main car park and overflow car park (both in the OpenStreetMap data) and the main entrance as facility stops, and make the car park `start`/`exit`. Both are currently the visitor centre.
+  - Check stop positions against `osm-pois.json`. Several stops look a few metres off their buildings, e.g. Bowling Green House.
+  - Redraw the path network along the real footpaths. The current links are straight lines between estimated waypoints, so walking times are rough, and the planned route cuts corners on the map.
 - **14 stops have no notes or dated things:** italian, conservatory, dairy, science, parterre, oldhouse, bowling, longwater, whh, altar, ehh, altars, chinese, atlas.
 - **The Silsoe science years** (the "science" stop and the agricultural engineering research) have no notes at all. That matters, because science and engineering are high-interest topics.
 - **Rulers pack is too short.** It needs England back to at least 1066 (and Scotland where useful), so that facts about the medieval owners get rulers. Note that the app says "no ruler data" rather than guessing.

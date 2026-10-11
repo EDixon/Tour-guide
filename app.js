@@ -712,6 +712,84 @@ function renderTimeline() {
 }
 
 // ---------------------------------------------------------------- Map tab
+// The OpenStreetMap layer (tours/<id>.map.json, from tools/fetch-osm.mjs) is drawn once into its own
+// SVG under the stops; panning and zooming only change its viewBox. Without it, the tour's
+// schematic shapes are drawn instead.
+let osmLayer = null, osmSvg = '';
+const OSM_FILL = { site: 'var(--site)', field: 'var(--field)', park: 'var(--park)', lawn: 'var(--lawn)', garden: 'var(--garden)', playground: 'var(--garden)', wood: 'var(--wood)', parking: 'var(--parking)', water: 'var(--water)', building: 'var(--building)' };
+function loadOsm() {
+  if (!tour.map?.osm) return;
+  fetch(tour.map.osm).then(r => r.ok ? r.json() : null).then(l => {
+    if (!l?.features) return;
+    osmLayer = l; osmSvg = '';
+    if (tab === 'map') renderMap(true);
+  }).catch(() => {});
+}
+function osmBase() {
+  if (osmSvg) return osmSvg;
+  const pt = (p) => proj(p).map(v => v.toFixed(1)).join(',');
+  const ring = (r) => 'M' + r.map(pt).join('L') + 'Z';
+  const line = (f, stroke, w, extra = '') => `<polyline points="${f.line.map(pt).join(' ')}" fill="none" stroke="${stroke}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"${extra}/>`;
+  const NS = ' vector-effect="non-scaling-stroke"';
+  const out = [];
+  for (const f of osmLayer.features) {
+    if (f.rings) {
+      const fill = OSM_FILL[f.kind]; if (!fill) continue;
+      const edge = f.kind === 'building' ? ` stroke="var(--building-edge)" stroke-width="0.8"${NS}`
+        : f.kind === 'site' ? ` stroke="var(--site-edge)" stroke-width="1.5" stroke-dasharray="6 4"${NS}` : '';
+      out.push(`<path d="${f.rings.map(ring).join('')}" fill="${fill}" fill-rule="evenodd"${edge}/>`);
+    } else if (f.line) {
+      if (f.kind === 'waterline') out.push(line(f, 'var(--water)', f.width || 3));
+      else if (f.kind === 'road') out.push(line(f, 'var(--road)', 4, NS));
+      else if (f.kind === 'path') out.push(line(f, 'var(--path)', 1.6, NS + (f.steps ? ' stroke-dasharray="2 2"' : '')));
+      else if (f.kind === 'wall') out.push(line(f, 'var(--wall)', 1.2, NS));
+    }
+  }
+  return (osmSvg = out.join(''));
+}
+// Facility markers: car parks and the main entrance get their own symbol, everything else "i".
+function facilityMark(s) {
+  const f = s.facilities || [];
+  if (f.includes('parking')) return { glyph: 'P', fill: '#2f5d9e' };
+  if (f.includes('entrance')) return { glyph: '⇥', fill: '#555' };
+  return { glyph: 'i', fill: '#555' };
+}
+// Where to put a shape's name: its centre if that's inside it, otherwise (a U-shaped canal, say)
+// the edge point nearest the centre, nudged inwards.
+function labelPoint(ring) {
+  const r = ring.map(proj);
+  const c = r.reduce((a, p) => [a[0] + p[0] / r.length, a[1] + p[1] / r.length], [0, 0]);
+  let inside = false;
+  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+    if ((r[i][1] > c[1]) !== (r[j][1] > c[1]) && c[0] < (r[j][0] - r[i][0]) * (c[1] - r[i][1]) / (r[j][1] - r[i][1]) + r[i][0]) inside = !inside;
+  }
+  if (inside) return c;
+  let best = r[0], bd = Infinity;
+  for (let i = 0; i < r.length - 1; i++) {
+    const [a, b] = [r[i], r[i + 1]];
+    const L2 = (b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2 || 1;
+    const t = Math.max(0, Math.min(1, ((c[0] - a[0]) * (b[0] - a[0]) + (c[1] - a[1]) * (b[1] - a[1])) / L2));
+    const q = [a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])];
+    const d = Math.hypot(q[0] - c[0], q[1] - c[1]);
+    if (d < bd) { bd = d; best = q; }
+  }
+  return best;
+}
+const ringNear = (ring, pos, m) => ring.some(p => P.haversine(p, pos) < m);
+// Names of water, woods and gardens, and a P on car parks; sized for the current zoom.
+function osmLabels(k) {
+  const out = [];
+  for (const f of osmLayer.features) {
+    if (!f.rings || !f.name) continue;
+    const isP = f.kind === 'parking';
+    if (isP && tour.stops.some(s => (s.facilities || []).includes('parking') && ringNear(f.rings[0], s.pos, 60))) continue;
+    if (!isP && (k > 1.6 || !['water', 'wood', 'garden', 'lawn', 'playground'].includes(f.kind))) continue;
+    const [x, y] = labelPoint(f.rings[0]);
+    if (isP) out.push(`<g><rect x="${x - 8 * k}" y="${y - 8 * k}" width="${16 * k}" height="${16 * k}" rx="${3 * k}" fill="#2f5d9e"/><text x="${x}" y="${y + 4.5 * k}" font-size="${12 * k}" font-weight="700" fill="#fff" text-anchor="middle">P</text></g>`);
+    else out.push(`<text class="lbl" x="${x}" y="${y}" font-size="${10.5 * k}" stroke-width="${3 * k}" text-anchor="middle" fill-opacity="0.75" font-style="italic">${esc(f.name)}</text>`);
+  }
+  return out.join('');
+}
 const LAT0 = () => tour.map?.centre?.[0] ?? model.nodes.get(tour.start).pos[0];
 function proj(p) {
   const lat0 = LAT0(), lon0 = model.nodes.get(tour.start).pos[1];
@@ -736,7 +814,8 @@ function renderMap(fresh = false) {
   const k = vb.w / W; // metres per pixel
   const pt = (p) => proj(p).map(v => v.toFixed(1)).join(',');
   const parts = [];
-  for (const f of tour.map?.features || []) {
+  if (osmLayer) parts.push(osmLabels(k));
+  for (const f of osmLayer ? [] : tour.map?.features || []) {
     const fill = { wood: 'var(--wood)', garden: 'var(--garden)', lawn: 'var(--lawn)', building: 'var(--building)', water: 'var(--water)' }[f.kind];
     if (f.poly) parts.push(`<polygon points="${f.poly.map(pt).join(' ')}" fill="${fill}" stroke="${f.kind === 'building' ? '#8c7b5e' : 'none'}" stroke-width="${1.5 * k}"/>`);
     if (f.line) parts.push(`<polyline points="${f.line.map(pt).join(' ')}" fill="none" stroke="${fill}" stroke-width="${f.width || 10}" stroke-linecap="round" stroke-linejoin="round"/>`);
@@ -747,8 +826,8 @@ function renderMap(fresh = false) {
       parts.push(`<text class="lbl" x="${x}" y="${y}" font-size="${11 * k}" stroke-width="${3 * k}" text-anchor="middle" fill-opacity="0.7" font-style="italic">${esc(f.label)}</text>`);
     }
   }
-  // paths
-  for (const e of model.edges) {
+  // paths (the planner's network; with the OpenStreetMap layer the real paths show instead)
+  for (const e of osmLayer ? [] : model.edges) {
     if (e.temp || (model.nodes.get(e.a).building && model.nodes.get(e.b).building)) continue;
     const col = e.scenic >= 0.8 ? '#5a9e7a' : '#b9ad92';
     parts.push(`<line x1="${proj(model.nodes.get(e.a).pos)[0]}" y1="${proj(model.nodes.get(e.a).pos)[1]}" x2="${proj(model.nodes.get(e.b).pos)[0]}" y2="${proj(model.nodes.get(e.b).pos)[1]}" stroke="${col}" stroke-width="${2 * k}" stroke-dasharray="${e.scenic >= 0.8 ? 'none' : `${4 * k},${3 * k}`}" opacity="0.9"/>`);
@@ -774,13 +853,14 @@ function renderMap(fresh = false) {
     const isTarget = state.phase === 'walking' && s.id === state.target;
     const isHere = s.id === state.at;
     const n = order.get(s.id);
-    const fill = s.kind === 'facility' ? '#555' : visited ? '#8a8f8c' : (isTarget || isHere) ? 'var(--accent)' : n ? 'var(--brand)' : 'var(--card)';
+    const fac = s.kind === 'facility' ? facilityMark(s) : null;
+    const fill = fac ? fac.fill : visited ? '#8a8f8c' : (isTarget || isHere) ? 'var(--accent)' : n ? 'var(--brand)' : 'var(--card)';
     const stroke = n || visited || isTarget || isHere || s.kind === 'facility' ? '#fff' : '#8a8f8c';
     const small = s.indoor && k > 1.2;
     const rr = small ? r * 0.55 : r;
     if (isTarget || isHere) parts.push(`<circle class="pulse" cx="${x}" cy="${y}" r="${rr * 2}" fill="var(--accent)" opacity="0.4"/>`);
     parts.push(`<g data-sheet="${s.kind === 'facility' ? '' : s.id}"><circle cx="${x}" cy="${y}" r="${rr}" fill="${fill}" stroke="${stroke}" stroke-width="${2 * k}"/>`);
-    if (!small) parts.push(`<text class="num" x="${x}" y="${y}" font-size="${10 * k}">${s.kind === 'facility' ? 'i' : visited ? '✓' : n ?? ''}</text>`);
+    if (!small) parts.push(`<text class="num" x="${x}" y="${y}" font-size="${10 * k}">${fac ? fac.glyph : visited ? '✓' : n ?? ''}</text>`);
     const soon = n != null && n <= (state.phase === 'stop' ? 3 : 2);
     const showLbl = k < 0.95 ? (!small || k < 0.45) : (isTarget || isHere || soon || s.kind === "facility");
     if (showLbl) parts.push(`<text class="lbl" x="${x + rr + 3 * k}" y="${y + 4 * k}" font-size="${12 * k}" stroke-width="${3 * k}">${esc(k < 0.6 ? s.name : (s.short || s.name))}</text>`);
@@ -793,15 +873,21 @@ function renderMap(fresh = false) {
     if (me.kind === 'gps') parts.push(`<circle cx="${mx}" cy="${my}" r="${me.acc}" fill="#1a73e8" opacity="0.12"/><circle cx="${mx}" cy="${my}" r="${7 * k}" fill="#1a73e8" stroke="#fff" stroke-width="${2.5 * k}"/>`);
     else parts.push(`<circle cx="${mx}" cy="${my}" r="${7 * k}" fill="none" stroke="#1a73e8" stroke-width="${3 * k}" stroke-dasharray="${3 * k},${2 * k}"/>`);
   }
-  const svg = `<svg id="map" viewBox="${vb.x} ${vb.y} ${vb.w} ${vb.h}" xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
+  const vbs = `${vb.x} ${vb.y} ${vb.w} ${vb.h}`;
+  const svg = `<svg id="map" viewBox="${vbs}" xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
+  const legend = osmLayer ? '● planned &nbsp;✓ seen &nbsp;<span style="color:var(--route)">━</span> route &nbsp;<span style="color:#1a73e8">◉</span> you'
+    : '● planned &nbsp;✓ seen &nbsp;<span style="color:#5a9e7a">━</span> waterside &nbsp;<span style="color:#1a73e8">◉</span> you';
+  const note = osmLayer ? `Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors. ${tour.map?.osmNote || ''}` : esc(tour.map?.note || '');
   if (fresh || !$('#map')) {
-    wrap.innerHTML = svg + `<div class="map-ctrl"><button data-map="in">＋</button><button data-map="out">－</button><button data-map="fit">⤢</button><button data-map="me">◎</button><button data-map="pick" title="We're here">📍</button></div>
+    wrap.classList.toggle('has-osm', !!osmLayer);
+    wrap.innerHTML = (osmLayer ? `<svg id="basemap" viewBox="${vbs}" xmlns="http://www.w3.org/2000/svg">${osmBase()}</svg>` : '') + svg + `<div class="map-ctrl"><button data-map="in">＋</button><button data-map="out">－</button><button data-map="fit">⤢</button><button data-map="me">◎</button><button data-map="pick" title="We're here">📍</button></div>
       <div class="map-legend" id="pickhint" style="top:auto;bottom:44px;background:var(--accent);color:#fff;${mapPick ? '' : 'display:none'}">Tap where you are to re-route</div>
-      <div class="map-legend">● planned &nbsp;✓ seen &nbsp;<span style="color:#5a9e7a">━</span> waterside &nbsp;<span style="color:#1a73e8">◉</span> you</div>
-      <div class="map-note">${esc(tour.map?.note || '')}</div>`;
+      <div class="map-legend">${legend}</div>
+      <div class="map-note">${note}</div>`;
     bindMap(wrap);
   } else {
     $('#map').outerHTML = svg;
+    $('#basemap')?.setAttribute('viewBox', vbs);
   }
 }
 function viewBoxNow() {
@@ -1261,6 +1347,7 @@ async function boot() {
   const entry = idx.tours.find(t => t.id === id) || idx.tours[0];
   tour = await (await fetch(`tours/${entry.file}`)).json();
   model = P.buildModel(tour);
+  loadOsm();
   localStorage.setItem(LS + ':last', tour.id);
   if (tour.knowledge) setTimeout(() => knowledgeFiles(tour).forEach(f => fetch(f).catch(() => {})), 3000);
   state = load(tour.id) || freshState(tour);

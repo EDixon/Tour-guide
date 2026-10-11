@@ -16,6 +16,15 @@
   --lawn: #e6eedc;
   --garden: #ece3cf;
   --building: #d8cdb8;
+  --building-edge: #a8987a;
+  --field: #f1eee2;
+  --park: #e9efdf;
+  --site: #e3ecd6;
+  --site-edge: #7c9a6a;
+  --parking: #e2e0dc;
+  --path: #b49a6e;
+  --road: #ffffff;
+  --wall: #9c8f7a;
   --route: #c8102e;
   --radius: 14px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -25,6 +34,8 @@
     --bg: #121614; --card: #1c2220; --ink: #e9ece9; --muted: #a3ada7; --line: #2f3833;
     --brand: #3f8a68; --kid-bg: #3a3120; --kid-ink: #f3dfa6;
     --water: #2d5566; --wood: #23382a; --lawn: #1f2b22; --garden: #2c2a22; --building: #4a443a;
+    --building-edge: #6b6252; --field: #191d1a; --park: #1c241e; --site: #1e271f; --site-edge: #4f6b48;
+    --parking: #2a2b2a; --path: #8a7650; --road: #3a3d3b; --wall: #6f6656;
   }
 }
 * { box-sizing: border-box; }
@@ -146,7 +157,9 @@ input[type=range] { width: 100%; accent-color: var(--brand); min-height: 32px; }
 
 /* map */
 .map-wrap { position: absolute; inset: 0; }
-.map-wrap svg { width: 100%; height: 100%; touch-action: none; display: block; background: var(--lawn); }
+.map-wrap svg { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; display: block; background: var(--lawn); }
+.map-wrap #basemap { background: var(--field); pointer-events: none; }
+.map-wrap.has-osm #map { background: transparent; }
 .map-ctrl { position: absolute; right: 12px; top: 12px; display: flex; flex-direction: column; gap: 8px; }
 .map-ctrl button { width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); font-size: 1.1rem; }
 .map-note { position: absolute; left: 10px; bottom: 8px; right: 70px; font-size: 0.72rem; color: var(--muted); background: color-mix(in srgb, var(--card) 85%, transparent); padding: 4px 8px; border-radius: 8px; }

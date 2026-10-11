@@ -28,7 +28,7 @@
   "cafe": {
    "label": "Café & play area",
    "minutes": 25,
-   "restore": 1.0,
+   "restore": 1,
    "at": "vc"
   },
   "loo": {
@@ -57,7 +57,7 @@
   "space": 0.9,
   "computing": 0.9,
   "history": 0.6,
-  "habsburg": 1.0,
+  "habsburg": 1,
   "views": 0.8,
   "people": 0.55,
   "architecture": 0.5,
@@ -457,7 +457,7 @@
    "id": "sc_e",
    "name": "South-east canal corner",
    "pos": [
-    52.0,
+    52,
     -0.408
    ]
   },
@@ -3378,7 +3378,7 @@
       -0.4157
      ],
      [
-      52.0,
+      52,
       -0.4151
      ]
     ],
@@ -3388,7 +3388,7 @@
     "kind": "water",
     "line": [
      [
-      52.0,
+      52,
       -0.4151
      ],
      [
@@ -3471,7 +3471,9 @@
     ],
     "r": 16
    }
-  ]
+  ],
+  "osm": "tours/wrest-park.map.json",
+  "osmNote": "Stop positions from listing records."
  },
  "introStop": "intro",
  "knowledge": {

@@ -9,7 +9,7 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
 | `id`, `name`, `subtitle`, `operator` | Identity. `id` is used in the URL (`?tour=id`) and storage key. |
 | `significance` | 0–1 default for “how gripping is this place” (royal castle ~0.8, random country house ~0.3). |
 | `hours` | `{open, close, note}`. `close` caps the default deadline. |
-| `start`, `exit` | Stop ids (usually the visitor centre / car park). |
+| `start`, `exit` | Stop ids: normally the main car park, so the walk to the entrance and back is counted. The car park and main entrance are facility stops (`facilities: ["parking"]` / `["entrance"]`); they are often not where the visitor centre is. |
 | `introStop` | Id of a stop with `kind: "intro"`: the story in brief, shown at the start (trimmed like any stop) and on the Timeline tab. Give it a path to the start node and optionally `attnBoost` (e.g. 0.15) so a few more of its points are kept. |
 | `walk` | `{detour, indoorFactor}`: multipliers on straight-line distance for outdoor paths and indoor rooms. |
 | `buildings` | `{id: {name, entrySeconds, exitSeconds, note}}`: one-off cost of going in (e.g. leaving the pushchair). |
@@ -21,7 +21,8 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
 | `waypoints` | `[{id, name, pos}]`: path junctions that aren't stops. |
 | `paths` | `[[a, b, scenic 0–1, name, door?]]`: walkable links. `scenic` drives route choice; `name` is used for directions; `door` = building id for links that enter a building. |
 | `stops` | See below. |
-| `map` | `{note, features: [{kind: wood|garden|lawn|building|water, poly|line+width|circle+r, label?}]}`: schematic shapes. |
+| `map` | `{osm, osmNote, note, features: [{kind: wood|garden|lawn|building|water, poly|line+width|circle+r, label?}]}`: schematic shapes. |
+| `map.osm` | Path of the OpenStreetMap layer, `tours/<id>.map.json`, made by `tools/fetch-osm.mjs` (run by the "OpenStreetMap layer" GitHub workflow when `sites/<id>/osm.request` is pushed). When present it replaces the schematic `features` and the planner's network lines on the map. `osmNote` is added after the attribution. Add the file to `sw.js` so it works offline. |
 | `sources` | `{key: [title, url]}`. Key `gk` = general knowledge. |
 
 ## Stop
@@ -37,7 +38,7 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
   "wow": 5,                        // 0–5 how visually impressive it is, story aside (see below)
   "popular": 4,                    // 0–5 how often visitors single it out in reviews and guides (see below)
   "mustSee": true,                 // planner includes it whenever feasible
-  "facilities": ["toilet", "cafe", "play", "babychange"],
+  "facilities": ["toilet", "cafe", "play", "babychange"],   // also "parking" and "entrance", which get their own map symbols
   "look": "What to look at on arrival.",
   "note": "Practical note (steps, opening).",
   "kids": ["A find-it task for a toddler."],

@@ -8,5 +8,5 @@
 - **Party:** Eliot, his wife, their daughter (2), pushchair <change if different>
 - **Scope:** <house and gardens / gardens only / named parts>
 - **Special angles for this site:** <e.g. engineering, Habsburg link; or "none beyond the defaults">
-- **Maps or tracks supplied:** <file names in sites/<id>/inputs/, or "none">
+- **Maps, guides, photos or tracks supplied:** <what, in sites/<id>/inputs/ (not in the repo); "asked, none"; or "not asked yet">
 - **Assumptions made without asking:** <list>

@@ -23,7 +23,7 @@ Find out, from Eliot or by looking it up, and confirm in one message:
   - Who's going (default: Eliot, his wife and their two-year-old daughter, with a pushchair).
 - **Scope:** house and gardens, or part of the site only. For big or multi-part sites (Egypt), agree which parts count as one "site" in the app.
 - **Interests:** the defaults are in `CLAUDE.md`. Only ask if this site suggests a special angle (e.g. a site with a strong engineering story).
-- **Maps:** ask whether he has a site map, leaflet, or a GPX/route from a previous visit. Map APIs are often blocked from Claude's workspace, so paths otherwise have to be estimated.
+- **What he already has:** see "Ask Eliot what he has" in the site-survey skill, and ask in the same message.
 
 Don't ask questions you can answer with a quick search. If Eliot isn't there to answer, take sensible defaults and record them as assumptions.
 

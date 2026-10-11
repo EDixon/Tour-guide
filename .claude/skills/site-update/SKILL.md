@@ -10,7 +10,7 @@ Main chat. Read `CLAUDE.md` and `sites/<id>/STATUS.md`.
 ## Kinds of update
 - **Feedback from the visit** (too much detail here, wrong place there, toddler task impossible): change the tour file directly. Where the feedback is about how the app behaves rather than this site, say so: that's an app change, not a site change.
 - **GPX track:**
-  1. Save it to `sites/<id>/inputs/` (gitignored if it shows home or start locations; keep only the on-site part).
+  1. Save it to `sites/<id>/inputs/` (kept out of the repo). Use only the on-site part.
   2. Snap waypoints and stop positions to the track where the estimate was off, and add paths they actually walked. Re-score `scenic` where obvious.
   3. Set `approx: false` only for positions confirmed by the track.
 - **What impressed them:** if Eliot says a place was better or worse to look at than expected, adjust its `wow` and note why in `visitor-scores.md`. Leave `popular` to the visitor-scout. Re-run the scout if the scores are more than a couple of years old or the site has changed (a restoration, a new play area).
