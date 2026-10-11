@@ -19,14 +19,14 @@
     {"id": "glorious-revolution", "name": "the Glorious Revolution", "names": ["glorious revolution", "revolution of 1688"], "from": 1688, "to": 1689, "verb": "happened"}
   ],
   "people": [
-    {"id": "earl-de-grey", "name": "Thomas, 2nd Earl de Grey", "names": ["earl de grey", "de grey", "earl"], "born": [1781, 12], "died": [1859, 11]},
-    {"id": "duke-of-kent", "name": "Henry Grey, Duke of Kent", "names": ["duke of kent", "duke", "henry grey"], "born": [1671], "died": [1740, 6]},
-    {"id": "thomas-archer", "name": "Thomas Archer", "names": ["thomas archer", "archer"], "born": [1668], "died": [1743, 5]},
-    {"id": "william-iii", "name": "William III", "names": ["william iii", "william of orange", "king william"], "born": [1650, 11], "died": [1702, 3]},
-    {"id": "louis-philippe", "name": "Louis-Philippe", "names": ["louis-philippe", "louis philippe"], "born": [1773, 10], "died": [1850, 8]},
-    {"id": "capability-brown", "name": "Lancelot 'Capability' Brown", "names": ["capability brown", "lancelot brown", "brown"], "born": [1716, 8], "died": [1783, 2]},
-    {"id": "jemima", "name": "Jemima, Marchioness Grey", "names": ["jemima", "marchioness grey"], "born": [1723, 10], "died": [1797, 1]},
-    {"id": "henry-cavendish", "name": "Henry Cavendish", "names": ["cavendish"], "born": [1731, 10], "died": [1810, 2]}
+    {"id": "earl-de-grey", "name": "Thomas, 2nd Earl de Grey", "names": ["earl de grey", "de grey", "earl"], "born": [1781, 12], "died": [1859, 11], "who": "the owner who built the present house and the Orangery; nephew of Amabel, Countess de Grey, from whom he inherited Wrest", "events": [[1833, "inherited Wrest Park"], [1834, "became the first President of the Institute of British Architects"]]},
+    {"id": "duke-of-kent", "name": "Henry Grey, Duke of Kent", "names": ["duke of kent", "duke", "henry grey"], "born": [1671], "died": [1740, 6], "who": "the owner who made the Great Garden; created Duke of Kent in 1710; grandfather of Jemima, Marchioness Grey", "events": [[1702, "inherited Wrest"], [1710, "was made Duke of Kent"]]},
+    {"id": "thomas-archer", "name": "Thomas Archer", "names": ["thomas archer", "archer"], "born": [1668], "died": [1743, 5], "who": "the architect of the Archer Pavilion"},
+    {"id": "william-iii", "name": "William III", "names": ["william iii", "william of orange", "king william"], "born": [1650, 11], "died": [1702, 3], "who": "King of England, Scotland and Ireland, jointly with Mary II from 1689 and alone from 1694 until 1702"},
+    {"id": "louis-philippe", "name": "Louis-Philippe", "names": ["louis-philippe", "louis philippe"], "born": [1773, 10], "died": [1850, 8], "who": "King of the French 1830–48, who sold Wrest its orange trees"},
+    {"id": "capability-brown", "name": "Lancelot 'Capability' Brown", "names": ["capability brown", "lancelot brown", "brown"], "born": [1716, 8], "died": [1783, 2], "who": "the landscape designer who reshaped the boundary canals in 1758–60"},
+    {"id": "jemima", "name": "Jemima, Marchioness Grey", "names": ["jemima", "marchioness grey"], "born": [1723, 10], "died": [1797, 1], "who": "the granddaughter and heir of Henry Grey, Duke of Kent; wife of Philip Yorke, who became 2nd Earl of Hardwicke in 1764", "events": [[1740, "inherited Wrest when her grandfather died"], [1740, "married Philip Yorke"]]},
+    {"id": "henry-cavendish", "name": "Henry Cavendish", "names": ["cavendish"], "born": [1731, 10], "died": [1810, 2], "who": "the scientist, a grandson of Henry Grey, Duke of Kent"}
   ],
   "rulers": {
     "England/Britain": [["Charles II", 1660, 1685], ["James II", 1685, 1688], ["William III and Mary II", 1689, 1694], ["William III", 1694, 1702], ["Anne", 1702, 1714], ["George I", 1714, 1727], ["George II", 1727, 1760], ["George III", 1760, 1820], ["George IV", 1820, 1830], ["William IV", 1830, 1837], ["Victoria", 1837, 1901], ["Edward VII", 1901, 1910], ["George V", 1910, 1936]],

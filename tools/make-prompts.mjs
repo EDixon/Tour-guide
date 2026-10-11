@@ -53,6 +53,10 @@ console.log('3b picked:', picked.map(x => x.title).join(' | '), '| things:', m.t
 // Test 4: one fresh, short prompt per question, exactly as the app would build it.
 const Q4 = ['Who made the river?', 'Why would a duke put up a statue of a king who had been dead for decades?', 'Was the orangery built before or after the house?'];
 const T4 = Q4.map(q => buildPrompt({ question: q, sections, dates }));
+// A follow-up: the app sends the previous question and answer along with the new one. (Here the earlier answer is an
+// example; in the app it is whatever the model actually said.)
+Q4.push('Who is Jemima? (follow-up to the river question)');
+T4.push(buildPrompt({ question: 'Who is Jemima?', sections, dates, history: [['Who made the river?', "The canals were dug for Henry Grey, Duke of Kent, in the early 1700s. In 1758 to 1760 Capability Brown reshaped them into gentle curves for the Duke's granddaughter Jemima, Marchioness Grey, and her husband Philip Yorke."]] }));
 T4.forEach((t, i) => console.log('4:', Q4[i], '|', t.picked.join(' | '), '|', words(t.text), 'words'));
 
 const FULL3 = `${RULES}\n\nCALCULATED FACTS (worked out by the app; exact):\n${facts.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${notes}\n\nQUESTION: ${Q3[0]}`;

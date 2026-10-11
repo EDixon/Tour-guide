@@ -7,7 +7,7 @@ const stem = (w) => w.replace(/(ies|es|s)$/, (m) => (m === 'ies' ? 'y' : '')).re
 const terms = (s) => words(s).filter(w => !STOP.has(w)).map(stem);
 
 // sections: [{ title, text, about? }]; returns sections sorted by score with .score.
-// boost: { ids: Set of thing/person ids the question names, weight } adds to sections about them.
+// boost: Map of thing/person id -> weight; a section about any of them gets the largest matching weight.
 export function rank(sections, question, { k1 = 1.4, b = 0.75, titleBoost = 2, boost = null } = {}) {
   const docs = sections.map(s => { const t = [...terms(s.title), ...terms(s.title).flatMap(x => Array(titleBoost - 1).fill(x)), ...terms(s.text)]; return { s, t, len: t.length }; });
   const N = docs.length, avg = docs.reduce((n, d) => n + d.len, 0) / Math.max(1, N);
@@ -21,7 +21,7 @@ export function rank(sections, question, { k1 = 1.4, b = 0.75, titleBoost = 2, b
       const idf = Math.log(1 + (N - df.get(w) + 0.5) / (df.get(w) + 0.5));
       score += idf * (f * (k1 + 1)) / (f + k1 * (1 - b + b * d.len / avg));
     }
-    if (boost) score += (d.s.about || []).filter(id => boost.ids.has(id)).length ? boost.weight : 0;
+    if (boost) score += Math.max(0, ...(d.s.about || []).map(id => boost.get(id) || 0));
     return { ...d.s, score };
   }).sort((x, y) => y.score - x.score);
 }

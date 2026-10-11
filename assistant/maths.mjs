@@ -67,6 +67,20 @@ export function personAt(p, t) {
   return `${p.name} (born ${by}) was ${about(approx)}${ageAt(a)} when ${t.name} was begun (${a}) and ${about(approx)}${ageAt(Math.min(b, dy ?? b))} when it was finished (${b}).`;
 }
 
+// About a person: who they were, life span and age at death, and their dated life events with ages.
+export function personFacts(p) {
+  const [by, bm] = p.born, [dy, dm] = p.died || [];
+  const ageAt = (y) => y - by - (bm && bm > 6 ? 1 : 0);
+  const lines = [];
+  if (p.who) lines.push(`Who: ${p.name} was ${p.who}.`);
+  if (dy) {
+    const age = bm && dm ? dy - by - (dm < bm ? 1 : 0) : null;
+    lines.push(`${p.name}: born ${by}, died ${dy}${age != null ? `, aged ${age}` : `, aged about ${dy - by}`}.`);
+  }
+  for (const [y, what] of p.events || []) lines.push(`In ${y}, aged about ${ageAt(y)}, ${p.name} ${what}.`);
+  return lines;
+}
+
 export function yearsAgo(t, nowYear) {
   const { a, b } = span(t);
   const ago = a === b ? `${about(t.approx)}${plural(nowYear - a, 'year')} ago` : `${about(t.approx)}${nowYear - b}–${nowYear - a} years ago`;
@@ -76,11 +90,13 @@ export function yearsAgo(t, nowYear) {
 // Build the CALCULATED FACTS block. `things` are what the question is about; `related` are linked
 // things (e.g. later alterations) that are compared with them and named, but not given full detail.
 // compare: optional explicit list of [thingId, thingId] pairs instead of the default.
-export function calculatedFacts(dates, { things = [], related = [], people = [], pairs = [], compare: only = null, nowYear = new Date().getFullYear() } = {}) {
+// named: people the question itself names (they get a full summary); others only appear through linked things.
+export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, nowYear = new Date().getFullYear() } = {}) {
   const byId = (id) => dates.things.find(t => t.id === id);
   const T = things.map(byId).filter(Boolean), R = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
+  for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p));
   for (const t of [...T, ...R]) if (t.who) lines.push(`Who: ${t.name} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
   if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
   else {
@@ -102,11 +118,14 @@ export function mentions(dates, question, { expand = true } = {}) {
   const q = ' ' + question.toLowerCase().replace(/[^a-z0-9' -]/g, ' ') + ' ';
   const hit = (names) => names.some(n => q.includes(' ' + n + ' ') || q.includes(' ' + n + 's ') || q.includes(' ' + n + "'s "));
   const things = dates.things.filter(t => hit(t.names)).map(t => t.id);
-  const people = new Set(dates.people.filter(p => hit(p.names)).map(p => p.id));
+  const named = dates.people.filter(p => hit(p.names)).map(p => p.id);
+  const people = new Set(named);
   const related = new Set();
   if (expand) {
+    // Works linked to a person the question names (up to 4), so their ages at those works are worked out.
+    for (const pid of named) dates.things.filter(t => (t.people || []).includes(pid) && !things.includes(t.id)).slice(0, 4).forEach(t => related.add(t.id));
     for (const id of things) (dates.things.find(x => x.id === id).related || []).forEach(r => { if (!things.includes(r)) related.add(r); });
     for (const id of [...things, ...related]) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
   }
-  return { things, related: [...related], people: [...people] };
+  return { things, related: [...related], people: [...people], named };
 }

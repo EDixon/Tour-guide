@@ -10,9 +10,12 @@ export const RULES = `You are a friendly guide for a family visiting Wrest Park.
 
 export function buildPrompt({ question, sections, dates, nowYear = new Date().getFullYear(), topK = 3, history = [] }) {
   const m = mentions(dates, question);
-  // Sections about anything the question names (or its linked people and works) get a boost over plain keywords.
-  const ids = new Set([...m.things, ...m.related, ...m.people]);
-  const picked = rank(sections, question, { boost: { ids, weight: 4 } }).filter(s => s.score > 0).slice(0, topK);
+  // Sections about what the question names get a boost over plain keywords; linked people and works a smaller one.
+  const boost = new Map();
+  for (const id of [...m.related, ...m.people]) boost.set(id, 1);
+  for (const id of m.named) boost.set(id, 3);
+  for (const id of m.things) boost.set(id, 4);
+  const picked = rank(sections, question, { boost }).filter(s => s.score > 0).slice(0, topK);
   const facts = calculatedFacts(dates, { ...m, nowYear });
   const prev = history.length ? `EARLIER IN THIS CONVERSATION:\n${history.map(([q, a]) => `Q: ${q}\nA: ${a}`).join('\n')}\n\n` : '';
   const text = `${RULES}\n\nQUESTION: ${question}\n\n${prev}` +
