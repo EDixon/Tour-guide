@@ -1,9 +1,10 @@
 # Wrest Park knowledge sample
 
-A sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `wrest-park-dates.json`, which the app uses for all date arithmetic.
+A sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `About:` lists the dated things and people (ids in the dates file) a section covers, so naming one brings its sections in. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `wrest-park-dates.json`, which the app uses for all date arithmetic.
 
 ## The Orangery
 Kind: site
+About: orangery
 The Orangery was built about 1835 for Thomas Philip, 2nd Earl de Grey, who designed it himself, with James Clephan as his clerk of works. It stands on the site of an earlier greenhouse designed for the Duke of Kent by Batty Langley. The Earl took the design from a French pattern book, Jacques-François Blondel's Maisons de Plaisance, and added classical ornament and a tall French dome at each end. An orangery in the French style was unique in England.
 
 It is built of yellow brick, rendered in cement on the front and sides so that it reads as stone. The main roof is glass on a shallow cast-iron frame, to let in as much winter light as possible. The floor originally had heating grilles; they were replaced with ceramic tiles after 1948. Below the floor is a vaulted undercroft of thirteen bays that held water tanks, and a cast-iron pump that raised the water still survives.
@@ -15,6 +16,7 @@ Sources: Historic England list entry 1158549 (via British Listed Buildings).
 
 ## Growing oranges in England
 Kind: reference
+About: orangery
 Citrus trees are killed by frost, so in northern Europe they were grown in tubs: outside in summer, then moved under cover before the first frosts. The building that sheltered them was an orangery. Orangeries became fashionable among royalty and the nobility in the late 1600s. Louis XIV's Orangerie at Versailles (1684–86) held over a thousand trees, and Queen Anne's Orangery at Kensington Palace was built in 1704–05. Owning orange trees showed wealth, because of the cost of heating, staff and the building itself.
 
 Early orangeries had solid roofs and tall south-facing windows: the trees only had to survive the winter, not grow. In the 1800s cheaper cast iron and better glass made glass roofs possible, and big conservatories followed, such as Joseph Paxton's Great Conservatory at Chatsworth (late 1830s). Glass was taxed in Britain until 1845, so a large glass roof in 1835, as at Wrest, was a costly statement.
@@ -24,6 +26,7 @@ Sources: general knowledge; Versailles and Kensington dates from standard histor
 
 ## Louis-Philippe and Queen Maria Amalia
 Kind: reference
+About: louis-philippe, orangery
 Louis-Philippe I was King of the French from 1830 to 1848. He came to the throne after the July Revolution of 1830 and styled himself a "citizen king". He was overthrown in the revolution of February 1848, fled to England, landing at Newhaven, and Queen Victoria let the family live at Claremont House in Surrey, where he died in 1850.
 
 His queen, Maria Amalia (married 1809 in Palermo), was the daughter of Ferdinand I of the Two Sicilies and Maria Carolina of Austria. Maria Carolina was a Habsburg archduchess and a sister of Marie Antoinette, so Marie Antoinette was Maria Amalia's aunt. Both sisters were daughters of the Habsburg Empress Maria Theresa.
@@ -31,6 +34,7 @@ Sources: Wikipedia, Maria Amalia of Naples and Sicily; general knowledge.
 
 ## Thomas Philip, 2nd Earl de Grey
 Kind: person
+About: earl-de-grey, house, admiralty, riba, ireland
 Thomas Philip de Grey, 2nd Earl de Grey (born 8 December 1781, died 14 November 1859), built the present house, the Orangery and the French gardens at Wrest. He was born Thomas Philip Robinson, was known as Lord Grantham from 1786, took the surname Weddell in 1803 when he inherited Newby Hall in Yorkshire from a cousin, and changed it to de Grey in 1833.
 
 In 1833 he inherited Wrest Park, the earldom de Grey and the barony of Lucas from his aunt Amabel, the daughter of Jemima, Marchioness Grey. He found a large, crumbling house of medieval origins and, rather than repair it, pulled it down and built a new one about 200 metres to the north.
@@ -40,6 +44,7 @@ Sources: Wikipedia, Thomas de Grey, 2nd Earl de Grey; English Heritage, History 
 
 ## The house
 Kind: site
+About: house
 The house was built in 1834–39 to the Earl's own design, with James Clephan as clerk of works. It is a near-unique example in England of a whole country house designed and decorated, inside and out, as an 18th-century French château in the Louis XV style. The garden front copies a design in Blondel's Maisons de Plaisance (1737); the entrance front is modelled on the Hôtel de Matignon in Paris. It is built of Bath stone with a mansard roof, the steep double-pitched French roof that hides an attic storey.
 
 The Earl moved the house about 200 metres north of the old one but kept it exactly in line with the Long Water and the Archer Pavilion, so the main axis of the garden runs from the front door to the Pavilion, about 800 metres due south. In 1968 Pevsner wrongly credited the house to an "unknown French architect" called Cléphane; Clephan was in fact the Earl's clerk of works.
@@ -47,6 +52,7 @@ Sources: Historic England list entry 1311484; English Heritage, History of Wrest
 
 ## The Archer Pavilion
 Kind: site
+About: pavilion, pavilion-paint
 The Archer Pavilion was designed by Thomas Archer and built in 1709–11 for Henry Grey, then Marquess of Kent, who became Duke of Kent in 1710 while it was going up. It cost £1,809. It is a garden pavilion or banqueting house at the south end of the Long Water, both closing the view from the house and giving a view back along the garden.
 
 Its plan is borrowed from Borromini's church of Sant'Ivo alla Sapienza in Rome: a six-pointed star made of two interlocking triangles. Archer made three of the points semicircular and three rectangular. It is built of red and yellow brick with stone dressings, was originally rendered, and has a lead-covered dome topped by a lantern. The keystone of the north porch carries a coronet and the Grey family's staff badge.
@@ -58,6 +64,7 @@ Sources: Historic England list entry 1113807; English Heritage, History of Wrest
 
 ## Thomas Archer, architect
 Kind: person
+About: thomas-archer
 Thomas Archer (about 1668–1743) was the youngest son of a Warwickshire gentry family. He went to Trinity College, Oxford, in 1686, then spent four years abroad, including Italy, where he studied the Roman Baroque of Bernini and Borromini at first hand. His buildings are the only English Baroque ones that show direct study of the Italian architecture of his day.
 
 He was a gentleman architect who did not need the work: from 1705 he held the lucrative court post of Groom Porter, which licensed gambling, and from 1715 he was comptroller of customs at Newcastle. His main works include the north front and Cascade House at Chatsworth (about 1705), Heythrop Hall (about 1705), St Philip's in Birmingham (1708–15, now the cathedral), St Paul's Deptford (1712–30) and St John's, Smith Square, in London (1713–28).
@@ -65,6 +72,7 @@ Sources: Wikipedia, Thomas Archer.
 
 ## Trompe-l'œil and painted rooms
 Kind: reference
+About: pavilion-paint
 Trompe-l'œil is French for "deceive the eye": flat painting made to look three-dimensional, using linear perspective (lines that converge on a vanishing point) and light and shade painted as if lit from the room's real windows. The illusion works best from one viewpoint, usually the doorway or the centre of the room; from elsewhere the geometry starts to look wrong. Painted architecture was much cheaper than carving real columns and a coffered dome.
 
 Around 1700, painted halls and staircases were the height of fashion in England, led by foreign painters such as Antonio Verrio and Louis Laguerre, and by the Englishman James Thornhill, who painted the Painted Hall at Greenwich (1707–26).
@@ -72,6 +80,7 @@ Sources: general knowledge.
 
 ## The War of the Spanish Succession
 Kind: reference
+About: pavilion
 The Archer Pavilion was built during the War of the Spanish Succession (1701–14). When Charles II of Spain, the last Spanish Habsburg king, died childless in 1700, he left his empire to Philip of Anjou, grandson of Louis XIV of France. Britain, the Dutch Republic and the Austrian Habsburgs formed a Grand Alliance to stop France and Spain uniting, backing the Habsburg Archduke Charles for the Spanish throne.
 
 The Duke of Marlborough won the great allied victories: Blenheim (1704), Ramillies (1706), Oudenaarde (1708) and Malplaquet (September 1709), a very bloody battle fought in the year the Pavilion was begun. The war ended with the Treaty of Utrecht in 1713: Philip kept Spain but gave up any claim to France, and Britain gained Gibraltar and Minorca.
@@ -79,6 +88,7 @@ Sources: general knowledge.
 
 ## Henry Grey, Duke of Kent
 Kind: person
+About: duke-of-kent, great-garden
 Henry Grey (1671–1740) made Wrest's great formal garden. His parents, Anthony, 11th Earl of Kent, and Mary, Baroness Lucas, had made the Long Water in the 1680s, and he inherited in 1702. He became Marquess of Kent in 1706, and in 1710 was made Duke of Kent in exchange for giving up his post as Lord Chamberlain, which he had held since 1704. He was made a Knight of the Garter in 1712, and later served as Lord Steward (1716–18), Lord Privy Seal (1719–20) and Lord Lieutenant of Bedfordshire (1711–40).
 
 Contemporaries thought him lacking in talent, and he was unpopular: he was nicknamed "Bug", reputedly because of his body odour. He was a loyal servant of the Protestant succession and the new Hanoverian kings. Between 1706 and the 1720s he laid out the Great Garden, a rare English example of a French-style formal woodland garden, employing Nicholas Hawksmoor, Thomas Archer, Batty Langley and William Kent.
@@ -88,6 +98,7 @@ Sources: Wikipedia, Henry Grey, 1st Duke of Kent; English Heritage, History of W
 
 ## The statue of William III
 Kind: site
+About: william-statue
 The lead statue of King William III stands about 30 metres north of the Archer Pavilion, on the garden's main axis. It is thought to be by John Cheere (1709–87), a leading maker of lead garden statues. It is believed to date from the 1730s, probably after 1737, since it does not appear in John Rocque's 1737 views of the garden.
 
 William is shown as a Roman emperor: in armour, crowned with a victor's laurel wreath, holding a baton, with a cloak. The straps of his armour alternate thistles and roses, for Scotland and England. The pedestal is of Ketton stone on a Portland stone plinth, with a white marble panel reading: "KING WILLIAM the 3 of GLORIOUS and Immortell Memory". The wording echoes the toast to William's "glorious and immortal memory" drunk by his supporters, a way of declaring loyalty to the Protestant settlement. It is listed Grade II*.
@@ -95,6 +106,7 @@ Sources: Historic England list entry 1158878; general knowledge for the toast.
 
 ## William III and the Glorious Revolution
 Kind: reference
+About: william-iii, glorious-revolution, william-statue
 William of Orange (born 1650) was the Dutch stadtholder and husband of Mary, the Protestant daughter of the Catholic King James II. When James's son was born in June 1688, raising the prospect of a Catholic dynasty, leading English politicians invited William to intervene. He landed at Torbay on 5 November 1688 with a large army and James fled to France. In 1689 Parliament offered the crown to William and Mary jointly, and the Bill of Rights limited royal power and barred Catholics from the throne. This largely bloodless change in England became known as the Glorious Revolution, though it was fiercely fought in Ireland, where William won the Battle of the Boyne in 1690.
 
 Mary died in 1694 and William reigned alone until he died in March 1702, after his horse stumbled on a molehill at Hampton Court; his opponents, the Jacobites, toasted "the little gentleman in the black velvet waistcoat". Abroad, he led the alliance against Louis XIV of France, including the Grand Alliance of 1689 with the Habsburg Emperor Leopold I.
@@ -104,6 +116,7 @@ Sources: general knowledge.
 
 ## The boundary canals ("the river")
 Kind: site
+About: boundary-canals, brown-river, brown-column, bath-house
 The water that runs round the west, south and east edges of the old garden, which visitors often call the river, is a chain of canals. It began as straight, formal canals dug for Henry Grey, Duke of Kent, as part of his Great Garden in the early 1700s, enclosing the woodland garden on three sides, with more canals at right angles to the Long Water. The canals were altered in the 1720s, and a serpentine canal was made in 1729. To the south, the garden ended at the Old Brook, a line that is still the boundary between the parishes of Silsoe and Gravenhurst.
 
 In 1758–60 the Duke's granddaughter Jemima, Marchioness Grey, and her husband Philip Yorke brought in Lancelot "Capability" Brown. Jemima valued her grandfather's garden, so Brown's changes were limited: he linked up the waters round the garden and made the straight perimeter canals meander in a more natural way, softening the edges while leaving the formal core alone. That is why the "river" curves while the Long Water stays straight.
@@ -113,6 +126,7 @@ Sources: Historic England register entry 1000113; list entries 1158972 (Brown mo
 
 ## Lancelot "Capability" Brown
 Kind: person
+About: capability-brown, brown-river
 Lancelot Brown (1716–83) was the most famous English landscape designer of the 18th century. Born at Kirkharle in Northumberland, he made his name as head gardener at Stowe in Buckinghamshire in the 1740s, then worked all over England, reshaping more than 170 parks. His nickname came from telling clients their land had "capability" for improvement. His style swept away straight lines for rolling grass, clumps and belts of trees, and serpentine lakes made by damming streams, as at Blenheim. In 1764 he became the King's Master Gardener at Hampton Court. At Wrest, unusually, he was held back, which is why the formal garden survives.
 
 Earth-moving in his day was done by hand: gangs of labourers with spades and wheelbarrows, and horses and carts to move the soil.
@@ -120,5 +134,6 @@ Sources: general knowledge.
 
 ## Jemima, Marchioness Grey
 Kind: person
+About: jemima, bath-house
 Jemima Campbell (1723–97) was the Duke of Kent's granddaughter and heir, the daughter of his daughter Amabel and John Campbell, later Earl of Breadalbane. She inherited Wrest when the Duke died in 1740, and that year married Philip Yorke, son of the Lord Chancellor, Lord Hardwicke; Philip became the 2nd Earl of Hardwicke in 1764. Both were keen on the gardens. Jemima kept her grandfather's formal garden but softened its edges with Capability Brown and added garden buildings: the Bath House, a Chinese temple and bridge, and an altar. Wrest later passed to her daughter Amabel, and then to Amabel's nephew, the 2nd Earl de Grey.
 Sources: Historic England list entry 1113790; English Heritage, History of Wrest Park; general knowledge.
