@@ -1,12 +1,13 @@
 // Offline cache: everything the app needs is cached on first visit; afterwards it runs with no signal.
-const VERSION = 'tg-v2';
+const VERSION = 'tg-v4';
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',
   'tours/index.json', 'tours/wrest-park.json',
 ];
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
+  // cache: 'reload' bypasses the browser's HTTP cache so an update never caches stale files.
+  e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES.map(f => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim()));

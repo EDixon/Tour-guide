@@ -481,6 +481,12 @@
  "paths": [
   [
    "vc",
+   "intro",
+   0.2,
+   ""
+  ],
+  [
+   "vc",
    "wg_s",
    0.2,
    "Through the walled garden"
@@ -846,14 +852,35 @@
    ],
    "look": "Admissions, café, toilets, baby change and play area are all here in the walled garden.",
    "note": "Free golf-cart shuttle runs round the grounds. Free audio guides at admissions.",
+   "bullets": [],
+   "kids": [],
+   "wow": 0,
+   "short": "Visitor centre"
+  },
+  {
+   "id": "intro",
+   "name": "Wrest Park in brief",
+   "short": "Introduction",
+   "kind": "intro",
+   "pos": [
+    52.0072,
+    -0.4157
+   ],
+   "approx": true,
+   "date": 1280,
+   "dateLabel": "1280s–today",
+   "era": "medieval",
+   "dwell": 15,
+   "wow": 0,
+   "look": "The whole story in a few points, to put every stop in context. Also on the Timeline tab any time.",
    "bullets": [
     {
      "id": 1,
-     "t": "The de Grey family held Wrest for over 600 years, from the 1280s until it was sold in 1917.",
+     "t": "Wrest was the de Grey family's home for over 600 years, from the 1280s until it was sold in 1917. Each generation added to the garden but kept what came before.",
      "imp": 5,
      "tags": {
       "history": 1,
-      "people": 0.6
+      "gardens": 0.6
      },
      "src": [
       1,
@@ -862,10 +889,38 @@
     },
     {
      "id": 2,
-     "t": "The garden is layered: an 1680s canal, the Duke's 1700s woodland garden, Capability Brown's 1750s softening, and an 1830s French-style house.",
+     "t": "The spine is one straight line: house, Long Water and Archer Pavilion, 800 m due south. Almost everything else hangs off that axis.",
+     "imp": 5,
+     "tags": {
+      "views": 1,
+      "gardens": 0.6,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      4
+     ]
+    },
+    {
+     "id": 3,
+     "t": "1680s: Earl Anthony and Countess Mary dig the Long Water beside a rambling medieval house, which stood about 200 m south of today's.",
+     "imp": 4,
+     "tags": {
+      "history": 1,
+      "gardens": 0.6
+     },
+     "src": [
+      1,
+      3
+     ]
+    },
+    {
+     "id": 4,
+     "t": "1700s: Henry, Duke of Kent builds a formal woodland garden around it, with straight avenues, canals and Thomas Archer's Pavilion. Gardens like this are now rare in England.",
      "imp": 5,
      "tags": {
       "gardens": 1,
+      "architecture": 0.6,
       "history": 0.6
      },
      "src": [
@@ -874,36 +929,63 @@
      ]
     },
     {
-     "id": 3,
-     "t": "Unusually, each generation kept its predecessors' work instead of sweeping it away, so you can read three centuries of garden design in one place.",
+     "id": 5,
+     "t": "1750s–70s: his granddaughter Jemima softens the edges with Capability Brown and adds follies: a Chinese temple, a bath house and a ‘Persian’ altar.",
      "imp": 4,
      "tags": {
       "gardens": 1,
-      "history": 0.5
+      "people": 0.6
      },
      "src": [
-      1,
-      2
+      1
      ]
     },
     {
-     "id": 4,
-     "t": "Since 2006 English Heritage has been working through a 20-year plan to restore the gardens to how they looked before 1917.",
-     "imp": 2,
+     "id": 6,
+     "t": "1830s: Thomas, Earl de Grey pulls down the old house, designs a French-style mansion himself, and lays out formal gardens between it and the old garden.",
+     "imp": 5,
      "tags": {
-      "history": 0.6,
-      "gardens": 0.6
+      "architecture": 1,
+      "history": 0.6
      },
      "src": [
+      1,
+      3
+     ]
+    },
+    {
+     "id": 7,
+     "t": "1914–16: the house is a military hospital until a fire. In 1917 the estate is sold, and many statues and old trees are stripped out.",
+     "imp": 3,
+     "tags": {
+      "history": 1
+     },
+     "src": [
+      1,
+      12,
+      9
+     ]
+    },
+    {
+     "id": 8,
+     "t": "1948–2006: an agricultural engineering research institute, which built early driverless tractors and camera-guided weeding robots. Since 2006 English Heritage has been restoring the gardens to their pre-1917 state.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.8,
+      "computing": 0.8,
+      "history": 0.6
+     },
+     "src": [
+      16,
+      17,
       1
      ]
     }
    ],
    "kids": [
-    "Can you spot the play area? That's for later!"
+    "Can you see the play area? That's for later!"
    ],
-   "wow": 0,
-   "short": "Visitor centre"
+   "attnBoost": 0.15
   },
   {
    "id": "italian",
@@ -3390,5 +3472,6 @@
     "r": 16
    }
   ]
- }
+ },
+ "introStop": "intro"
 }

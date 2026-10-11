@@ -17,10 +17,10 @@ function freshState(t) {
     leftAt: null, arrivedAt: null, breakEnds: null, breakKind: null,
     visited: {}, skipped: {}, pinned: {},
     shown: [], extra: [],
-    energy: { E: 1, at: Date.now(), drainMult: 1 }, impatience: 1,
+    energy: { E: 1, at: Date.now(), drainMult: 1 }, depthMult: 1, herePos: null,
     prefs: {
       weights: d.weights, siteInterest: d.siteInterest, chrono: false, volatility: 'normal',
-      speed: d.speed, talkFactor: d.talkFactor, allowBreaks: true, recordTrack: true, useGps: true,
+      speed: d.speed, talkFactor: d.talkFactor, allowBreaks: true, recordTrack: true, useGps: true, detail: d.detail,
     },
     clockOffset: 0, track: [], gps: null, log: [],
   };
@@ -31,7 +31,7 @@ function load(id) { try { return JSON.parse(localStorage.getItem(LS + ':' + id))
 function settings() {
   const d = P.defaultSettings(tour);
   const p = state.prefs;
-  return { ...d, weights: { ...d.weights, ...p.weights }, siteInterest: p.siteInterest, chrono: p.chrono, volatility: p.volatility, speed: p.speed, talkFactor: p.talkFactor, allowBreaks: p.allowBreaks };
+  return { ...d, weights: { ...d.weights, ...p.weights }, siteInterest: p.siteInterest, chrono: p.chrono, volatility: p.volatility, speed: p.speed, talkFactor: p.talkFactor, allowBreaks: p.allowBreaks, detail: p.detail || d.detail };
 }
 const energyNow = () => P.energyAt(state.energy, now(), settings());
 function setEnergy(E, drainMult = state.energy.drainMult) { state.energy = { E: clamp(E, P.ENERGY_MIN, 1), at: now(), drainMult: clamp(drainMult, 0.5, 3) }; }
@@ -75,10 +75,11 @@ function replan({ keepTarget = true, quiet = false } = {}) {
   } else if (state.phase === 'walking' && keepTarget && state.purpose === 'stop' && state.target) {
     forceFirst = state.target;
   }
+  const seeds = prev ? [prev.route] : [];
   plan = P.plan(model, {
-    from, deadlineS: state.deadline / 1000, E0, drainMult: state.energy.drainMult, lambdaMult: state.impatience || 1,
+    from, deadlineS: state.deadline / 1000, E0, drainMult: state.energy.drainMult, depthMult: state.depthMult || 1,
     visited: state.visited, skipped: state.skipped, pinned: state.pinned, forceFirst, onBreak,
-  }, st, nowS);
+  }, st, nowS, { seeds });
   if (state.phase === 'walking' && !forceFirst && state.purpose !== 'cafe' && state.purpose !== 'loo') setTargetFromPlan();
   if (!quiet && prev) diffToast(prev, plan);
   save();
@@ -106,12 +107,21 @@ function diffToast(a, b) {
 // ---------------------------------------------------------------- actions
 function startTour(deadlineMs) {
   state.deadline = deadlineMs;
-  state.phase = 'walking';
   state.from = tour.start;
   state.leftAt = now();
-  setEnergy(1, 1); state.impatience = 1;
+  setEnergy(1, 1); state.depthMult = 1;
   logEv('start', { deadline: deadlineMs });
-  replan({ keepTarget: false, quiet: true });
+  const intro = tour.introStop && stop(tour.introStop);
+  if (intro) {
+    // Always open with the story in brief; its points are trimmed like any other stop's.
+    state.phase = 'stop'; state.at = intro.id; state.arrivedAt = now();
+    replan({ quiet: true });
+    const step = plan.steps.find(s => s.type === 'stop' && s.id === intro.id);
+    state.shown = step ? step.bullets : [intro.bullets[0].id]; state.extra = [];
+  } else {
+    state.phase = 'walking';
+    replan({ keepTarget: false, quiet: true });
+  }
   requestWake();
   startGps();
   render();
@@ -152,7 +162,7 @@ function finishStop() {
 
 function endBreak() {
   const kind = state.breakKind;
-  if (kind === 'cafe') { setEnergy(Math.max(energyNow(), breakCfg().restore ?? 1), Math.max(1, state.energy.drainMult * 0.85)); state.impatience = Math.max(1, (state.impatience || 1) * 0.75); }
+  if (kind === 'cafe') { setEnergy(Math.max(energyNow(), breakCfg().restore ?? 1), Math.max(1, state.energy.drainMult * 0.8)); state.depthMult = Math.max(1, (state.depthMult || 1) * 0.7); }
   else setEnergy(energyNow() + 0.08);
   logEv('break-end', { kind });
   state.from = state.at; state.at = null; state.phase = 'walking'; state.leftAt = now();
@@ -191,41 +201,69 @@ function nudgeWeights(id, delta) {
   for (const t of top) state.prefs.weights[t] = clamp((state.prefs.weights[t] ?? 0.5) + delta, 0, 1);
 }
 
+// Bored: fewer facts per stop from now on (not fewer stops), and energy runs down faster so a
+// café break gets suggested sooner.
 function bored() {
-  setEnergy(energyNow() - 0.2, state.energy.drainMult * 1.15);
-  state.impatience = clamp((state.impatience || 1) * 1.4, 0.5, 5);
-  state.prefs.siteInterest = clamp(state.prefs.siteInterest - 0.05, 0, 1);
+  setEnergy(energyNow() - 0.1, state.energy.drainMult * 1.3);
+  state.depthMult = clamp((state.depthMult || 1) * 1.5, 0.4, 5);
   const here = state.at || (state.purpose === 'stop' ? state.target : null);
-  if (here) nudgeWeights(here, -0.05);
   logEv('bored', { at: here });
   if (state.phase === 'stop') {
     // Trim this stop hard (they want to move on now), then plan the rest with the new mood.
-    const keep = state.impatience;
-    state.impatience = keep * 2.5;
+    const keep = state.depthMult;
+    state.depthMult = keep * 3;
     replan({ quiet: true });
     const step = plan.steps.find(s => s.type === 'stop' && s.id === state.at);
     if (step) state.shown = state.shown.filter(id => step.bullets.includes(id));
     state.extra = [];
-    state.impatience = keep;
+    state.depthMult = keep;
     replan({ quiet: true });
-    toast('Got it. Trimmed this stop to the essentials and shortened the rest.');
+    toast('Got it. Trimmed this stop, fewer facts from now on, and a coffee break will come sooner.');
   } else {
-    replan({ keepTarget: false });
-    toast('Got it. Shortened the plan.');
+    replan({ keepTarget: true });
+    toast('Got it. Fewer facts per stop from now on, and a coffee break will come sooner.');
   }
   render();
 }
 
 function loving() {
   setEnergy(energyNow() + 0.1, state.energy.drainMult * 0.9);
-  state.impatience = clamp((state.impatience || 1) * 0.8, 0.5, 4);
-  state.prefs.siteInterest = clamp(state.prefs.siteInterest + 0.05, 0, 1);
+  state.depthMult = clamp((state.depthMult || 1) * 0.7, 0.4, 5);
+  state.prefs.siteInterest = clamp(state.prefs.siteInterest + 0.03, 0, 1);
   const here = state.at || (state.purpose === 'stop' ? state.target : null);
   if (here) nudgeWeights(here, 0.03);
   logEv('loving', { at: here });
   replan({ quiet: false });
-  toast('Noted. More of this kind of thing.');
+  toast('Noted. A bit more depth from now on.');
   render();
+}
+
+// Re-route from an arbitrary spot (GPS fix or a tap on the map).
+let mapPick = false;
+function rerouteFrom(pos, how) {
+  if (state.phase === 'stop') finishStopSilently();
+  if (state.phase === 'break') { state.from = state.at; state.at = null; state.breakKind = null; }
+  state.herePos = pos;
+  P.setHere(model, pos);
+  state.from = P.HERE_ID; state.phase = 'walking'; state.purpose = null; state.leftAt = now();
+  logEv('reroute', { pos, how });
+  replan({ keepTarget: false, quiet: true });
+  mapPick = false; tab = 'now';
+  const t = state.target && stop(state.target);
+  toast(`Re-routed from where you are.${t ? ' Next: ' + t.name + '.' : ''}`);
+  render();
+}
+function offRoute() {
+  const g = gpsFresh();
+  if (g) return rerouteFrom([g.lat, g.lon], 'gps');
+  mapPick = true; tab = 'map'; render();
+  toast('Tap the map where you are.');
+}
+function readHere(id) {
+  if (state.phase === 'stop') finishStopSilently();
+  if (state.skipped[id]) delete state.skipped[id];
+  state.phase = 'walking'; state.target = id; state.purpose = 'stop';
+  arrive();
 }
 
 function moreBullet() {
@@ -418,6 +456,7 @@ function legDirections(leg) {
   for (let i = 1; i < leg.path.length; i++) {
     const a = leg.path[i - 1], b = leg.path[i];
     const e = model.adj.get(a).find(x => x.to === b)?.e;
+    if (e && e.len < 5) continue; // zero-length hops (e.g. introduction → visitor centre)
     const name = e?.name || `To ${model.nodes.get(b).name}`;
     const secs = e ? (e.len * 1.15) / settings().speed : 0;
     const last = parts[parts.length - 1];
@@ -441,7 +480,26 @@ function navInfo() {
   const brg = P.bearing(me.pos, aim);
   const remaining = me.kind === 'gps' ? P.haversine(me.pos, tpos) * 1.15 : null;
   const legLeft = leg ? Math.max(0, leg.time - (now() - state.leftAt) / 1000) : 0;
-  return { leg, me, brg, remaining, legLeft, near: me.kind === 'gps' && P.haversine(me.pos, tpos) < 25 && !stop(state.target)?.indoor };
+  const near = me.kind === 'gps' && P.haversine(me.pos, tpos) < 25 && !stop(state.target)?.indoor;
+  let other = null, off = false;
+  if (me.kind === 'gps' && !near) {
+    // Wandered up to a different stop?
+    let bd = 25;
+    for (const s of tour.stops) {
+      if (s.kind !== 'sight' || s.indoor || s.id === state.target || state.visited[s.id]) continue;
+      const d = P.haversine(me.pos, s.pos);
+      if (d < bd) { bd = d; other = s; }
+    }
+    // Or just off the planned path?
+    if (!other && leg?.path?.length) off = P.distanceToPath(model, me.pos, leg.path) > Math.max(60, me.acc + 25);
+  }
+  return { leg, me, brg, remaining, legLeft, near, other, off };
+}
+function bannerHtml(nav, s) {
+  if (nav.near) return `<div class="banner"><span>You look to be at <b>${esc(s.name)}</b></span><button class="btn secondary" style="background:#fff" data-do="arrive">Start</button></div>`;
+  if (nav.other) return `<div class="banner"><span>You're at <b>${esc(nav.other.name)}</b>. Read it now?</span><button class="btn secondary" style="background:#fff" data-do="here-stop" data-id="${nav.other.id}">Yes</button></div>`;
+  if (nav.off) return `<div class="banner" style="background:var(--accent)"><span>Off the planned path?</span><button class="btn secondary" style="background:#fff" data-do="reroute-gps">Re-route</button></div>`;
+  return '';
 }
 
 function renderWalking() {
@@ -456,7 +514,7 @@ function renderWalking() {
   const indoor = s?.indoor ? `<div class="note">${esc(tour.buildings?.[s.building]?.note || 'Indoors: GPS won’t help here; tap “We’re here” when you arrive.')}</div>` : '';
   const bullets = purpose === 'stop' && step0 ? `<div class="small muted">${step0.bullets.length} of ${step0.total} points planned here · arrive ~${fmtClock(step0.arrive * 1000)}</div>` : '';
   return `
-  ${nav.near ? `<div class="banner"><span>You look to be at <b>${esc(s.name)}</b></span><button class="btn secondary" style="background:#fff" data-do="arrive">Start</button></div>` : ''}
+  <div id="bannerslot">${bannerHtml(nav, s)}</div>
   <div class="card">
     <div class="small muted">${purpose === 'exit' ? 'Tour complete' : 'Next'}</div>
     <h1>${esc(title)}</h1>
@@ -479,7 +537,8 @@ function renderWalking() {
       ${purpose === 'cafe' || purpose === 'loo' ? '<button class="btn ghost" data-do="cancel-detour">Cancel</button>' : ''}
     </div>
   </div>
-  ${purpose === 'stop' ? `<div class="small muted">Coming up</div>${upNext()}` : ''}`;
+  ${purpose === 'stop' ? `<div class="small muted">Coming up</div>${upNext()}` : ''}
+  <button class="btn ghost block" style="margin-top:14px" data-do="offroute">📍 We're somewhere else: re-route</button>`;
 }
 function renderNowLight() {
   if (state.phase !== 'walking') return;
@@ -490,7 +549,8 @@ function renderNowLight() {
   if (a) { a.dataset.bearing = nav.brg.toFixed(0); a.style.transform = `rotate(${((nav.brg - (heading ?? 0)) + 360) % 360}deg)`; }
   const w = $('#dirword'); if (w) w.innerHTML = `head ${P.compassWord(nav.brg)}${heading == null ? ' <span class="small">(compass off; arrow is north-up)</span>' : ''}`;
   const g = $('#gpsline'); if (g) g.textContent = nav.me.kind === 'gps' ? `GPS ±${Math.round(nav.me.acc)} m` : 'Position estimated from walking time';
-  if (nav.near && !$('.banner')) render();
+  const slot = $('#bannerslot');
+  if (slot) { const h = bannerHtml(nav, stop(state.target)); if (slot.innerHTML !== h) slot.innerHTML = h; }
 }
 
 function bulletHtml(s, id, extra) {
@@ -615,7 +675,7 @@ function renderTimeline() {
   };
   const html = tour.eras.map(e => {
     const evs = tour.events.filter(x => x.year >= e.from && x.year <= e.to).map(x => ({ y: x.year, label: x.label, stop: x.stop }));
-    const stops = tour.stops.filter(s => s.era === e.id && s.kind !== 'facility');
+    const stops = tour.stops.filter(s => s.era === e.id && s.kind === 'sight');
     const items = [
       ...evs.map(x => `<div class="tl-ev ${x.stop && x.stop === here ? 'here' : ''}"><span class="y">${x.y}</span><span>${esc(x.label)}</span></div>`),
       ...stops.map(s => `<div class="tl-ev stop ${s.id === here ? 'here' : ''}" data-sheet="${s.id}"><span class="y">${s.date || ''}</span><span>📍 ${esc(s.name)} ${status(s.id)}</span></div>`),
@@ -624,7 +684,9 @@ function renderTimeline() {
       <h2>${esc(e.name)}</h2><div class="years">${e.from}–${e.to === 2026 ? 'today' : e.to}</div>
       <p>${esc(e.summary)}</p>${items.join('')}</section>`;
   }).join('');
-  return `<p class="small muted">How the place developed. 📍 = stops; tap one for details.</p>${html}`;
+  const intro = tour.introStop && stop(tour.introStop);
+  const brief = intro ? `<div class="card"><details><summary><b>${esc(intro.name)}</b> <span class="small muted">(${intro.bullets.length} points)</span></summary><ul class="bullets" style="margin-top:8px">${intro.bullets.map(b => bulletHtml(intro, b.id)).join('')}</ul></details></div>` : '';
+  return `${brief}<p class="small muted">How the place developed. 📍 = stops; tap one for details.</p>${html}`;
 }
 
 // ---------------------------------------------------------------- Map tab
@@ -665,7 +727,7 @@ function renderMap(fresh = false) {
   }
   // paths
   for (const e of model.edges) {
-    if (model.nodes.get(e.a).building && model.nodes.get(e.b).building) continue;
+    if (e.temp || (model.nodes.get(e.a).building && model.nodes.get(e.b).building)) continue;
     const col = e.scenic >= 0.8 ? '#5a9e7a' : '#b9ad92';
     parts.push(`<line x1="${proj(model.nodes.get(e.a).pos)[0]}" y1="${proj(model.nodes.get(e.a).pos)[1]}" x2="${proj(model.nodes.get(e.b).pos)[0]}" y2="${proj(model.nodes.get(e.b).pos)[1]}" stroke="${col}" stroke-width="${2 * k}" stroke-dasharray="${e.scenic >= 0.8 ? 'none' : `${4 * k},${3 * k}`}" opacity="0.9"/>`);
   }
@@ -682,8 +744,9 @@ function renderMap(fresh = false) {
   }
   // stops
   const order = new Map((plan?.route || []).filter(x => x !== P.BREAK_ID).map((id, i) => [id, i + 1]));
-  const r = 9 * k;
+  const r = 11 * k;
   for (const s of tour.stops) {
+    if (s.kind === 'intro') continue;
     const [x, y] = proj(s.pos);
     const visited = !!state.visited[s.id];
     const isTarget = state.phase === 'walking' && s.id === state.target;
@@ -710,13 +773,18 @@ function renderMap(fresh = false) {
   }
   const svg = `<svg id="map" viewBox="${vb.x} ${vb.y} ${vb.w} ${vb.h}" xmlns="http://www.w3.org/2000/svg">${parts.join('')}</svg>`;
   if (fresh || !$('#map')) {
-    wrap.innerHTML = svg + `<div class="map-ctrl"><button data-map="in">＋</button><button data-map="out">－</button><button data-map="fit">⤢</button><button data-map="me">◎</button></div>
+    wrap.innerHTML = svg + `<div class="map-ctrl"><button data-map="in">＋</button><button data-map="out">－</button><button data-map="fit">⤢</button><button data-map="me">◎</button><button data-map="pick" title="We're here">📍</button></div>
+      <div class="map-legend" id="pickhint" style="top:auto;bottom:44px;background:var(--accent);color:#fff;${mapPick ? '' : 'display:none'}">Tap where you are to re-route</div>
       <div class="map-legend">● planned &nbsp;✓ seen &nbsp;<span style="color:#5a9e7a">━</span> waterside &nbsp;<span style="color:#1a73e8">◉</span> you</div>
       <div class="map-note">${esc(tour.map?.note || '')}</div>`;
     bindMap(wrap);
   } else {
     $('#map').outerHTML = svg;
   }
+}
+function viewBoxNow() {
+  const v = $('#map')?.viewBox?.baseVal;
+  return v ? { x: v.x, y: v.y, w: v.width, h: v.height } : mapView;
 }
 function bindMap(wrap) {
   const ptrs = new Map();
@@ -755,9 +823,25 @@ function bindMap(wrap) {
     const was = ptrs.get(e.pointerId), st = startPts?.get(e.pointerId);
     ptrs.delete(e.pointerId);
     startView = { ...mapView }; startPts = new Map(ptrs);
-    if (was && st && Math.hypot(was[0] - st[0], was[1] - st[1]) < 6) {
-      const g = document.elementFromPoint(e.clientX, e.clientY)?.closest('[data-sheet]');
-      if (g && g.dataset.sheet) stopSheet(g.dataset.sheet);
+    if (was && st && Math.hypot(was[0] - st[0], was[1] - st[1]) < 6 && mapPick) {
+      const [wx, wy] = toWorld(e.clientX, e.clientY, viewBoxNow());
+      const lat0 = LAT0(), lon0 = model.nodes.get(tour.start).pos[1];
+      rerouteFrom([lat0 - wy / 110574, lon0 + wx / (Math.cos(lat0 * Math.PI / 180) * 111320)], 'map');
+      return;
+    }
+    if (was && st && Math.hypot(was[0] - st[0], was[1] - st[1]) < 10) {
+      // Generous finger-sized hit area: anything within ~32 px of the tap counts. If several
+      // stops are that close (e.g. rooms in the house), offer a short list to pick from.
+      const vb = viewBoxNow();
+      const r = wrap.getBoundingClientRect();
+      const k = vb.w / r.width;
+      const [wx, wy] = toWorld(e.clientX, e.clientY, vb);
+      const hits = tour.stops.filter(s => s.kind === 'sight')
+        .map(s => { const [x, y] = proj(s.pos); return { s, d: Math.hypot(x - wx, y - wy) / k }; })
+        .filter(h => h.d < 32).sort((a, b) => a.d - b.d);
+      if (hits.length === 1 || (hits.length > 1 && hits[1].d - hits[0].d > 14)) stopSheet(hits[0].s.id);
+      else if (hits.length > 1) openSheet(`<h2>Which one?</h2>${hits.slice(0, 6).map(h => `<button class="btn secondary block" style="margin-top:10px" data-sheet="${h.s.id}">${esc(h.s.name)}</button>`).join('')}
+        <button class="btn ghost block" style="margin-top:10px" data-do="close">Cancel</button>`);
     }
   };
   wrap.addEventListener('pointerup', up);
@@ -775,6 +859,12 @@ function bindMap(wrap) {
     if (b.dataset.map === 'in') zoom(0.7);
     if (b.dataset.map === 'out') zoom(1.4);
     if (b.dataset.map === 'fit') mapView = fitView();
+    if (b.dataset.map === 'pick') {
+      if (state.phase === 'setup') return;
+      mapPick = !mapPick; const h = $('#pickhint'); if (h) h.style.display = mapPick ? '' : 'none';
+      if (mapPick) toast('Tap the map where you are.');
+      return;
+    }
     if (b.dataset.map === 'me' && state.phase !== 'setup') { const [x, y] = proj(whereAmI().pos); mapView = { x: x - 150, y: y - 150, w: 300, h: 300 }; }
     renderMap();
   });
@@ -786,46 +876,67 @@ function seg(name, opts, cur) {
 }
 function openSettings() {
   const p = state.prefs;
-  const weights = Object.entries(tour.topics).map(([k, label]) => `
-    <div class="field" style="margin:8px 0"><label for="w-${k}" style="font-weight:500">${esc(label)}</label>
-    <div class="slider-row"><input type="range" min="0" max="1" step="0.05" id="w-${k}" data-w="${k}" value="${p.weights[k] ?? 0.5}"><output>${Math.round((p.weights[k] ?? 0.5) * 100)}</output></div></div>`).join('');
   openSheet(`
     <h2>Settings</h2>
     ${state.phase !== 'setup' ? `<div class="field"><label for="s-dl">Back at the car by</label><input type="time" id="s-dl" value="${timeInputValue(new Date(state.deadline))}"></div>` : ''}
-    <div class="field"><label>How gripping is this place today?</label>
-      <div class="slider-row"><input type="range" id="s-si" min="0" max="1" step="0.05" value="${p.siteInterest}"><output>${Math.round(p.siteInterest * 100)}</output></div></div>
+    <div class="field"><label>Facts per stop</label>${seg('detail', [['light', 'Few'], ['normal', 'Some'], ['full', 'Lots']], p.detail || 'light')}
+      <div class="hint">Which facts are chosen still follows your interests; “More” at a stop always shows the next one.</div></div>
     <div class="field switch"><label for="s-chrono">Follow the story in time order</label><input type="checkbox" id="s-chrono" ${p.chrono ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-breaks">Suggest café breaks</label><input type="checkbox" id="s-breaks" ${p.allowBreaks ? 'checked' : ''}></div>
     <div class="field"><label>Walking pace</label>${seg('speed', [[0.7, 'Toddler'], [0.85, 'Family'], [1.1, 'Brisk']], p.speed)}</div>
     <div class="field"><label>Time per point</label>${seg('talk', [[1.1, 'Read only'], [1.5, 'Some chat'], [2.2, 'Lots of chat']], p.talkFactor)}</div>
     <div class="field"><label>How likely are we to have to leave early?</label>${seg('vol', [['calm', 'Unlikely'], ['normal', 'Normal'], ['chaotic', 'Very']], p.volatility)}</div>
+    <div class="btn-row"><button class="btn" data-do="apply">Apply</button></div>
     <h3>Interests</h3>
-    <p class="small muted">The app nudges these when you tap More, Bored or Loving it.</p>
-    ${weights}
+    <button class="btn secondary block" data-do="interests">Edit interests…</button>
     <h3>Tools</h3>
     <div class="field switch"><label for="s-gps">Use GPS (turn off for testing at home)</label><input type="checkbox" id="s-gps" ${p.useGps !== false ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-track">Record GPS track (to correct paths later)</label><input type="checkbox" id="s-track" ${p.recordTrack ? 'checked' : ''}></div>
     <div class="btn-row"><button class="btn ghost" data-do="gpx">Export track (${state.track.length} pts)</button><button class="btn ghost" data-do="review">Review content</button></div>
+    <a class="btn ghost block" style="margin-top:10px;text-decoration:none" href="lab.html">Offline assistant test (needs Wi-Fi)</a>
     <div class="field"><label>Simulated clock ${state.clockOffset ? `(+${Math.round(state.clockOffset / 60000)} min)` : ''}</label>
       <div class="btn-row"><button class="btn ghost" data-do="clock5">+5 min</button><button class="btn ghost" data-do="clock15">+15 min</button><button class="btn ghost" data-do="clock0">Real time</button></div></div>
-    <div class="btn-row"><button class="btn" data-do="apply">Apply</button><button class="btn danger" data-do="reset">Reset tour</button></div>
+    <div class="btn-row"><button class="btn ghost" data-do="close">Close</button><button class="btn danger" data-do="reset">Reset tour</button></div>
     <p class="small muted" style="margin-top:14px">Content compiled from public sources (listings, English Heritage, Wikipedia and others). Check “Review content” for sources and items flagged to verify.</p>`);
 }
 function applySettings() {
   const p = state.prefs;
   const sheet = $('#sheet-body');
-  sheet.querySelectorAll('[data-w]').forEach(i => { p.weights[i.dataset.w] = +i.value; });
-  p.siteInterest = +$('#s-si', sheet).value;
   p.chrono = $('#s-chrono', sheet).checked;
   p.allowBreaks = $('#s-breaks', sheet).checked;
   p.recordTrack = $('#s-track', sheet).checked;
   p.useGps = $('#s-gps', sheet).checked;
   const segv = (n) => sheet.querySelector(`[data-seg="${n}"] .on`)?.dataset.v;
   p.speed = +(segv('speed') ?? p.speed); p.talkFactor = +(segv('talk') ?? p.talkFactor); p.volatility = segv('vol') ?? p.volatility;
+  p.detail = segv('detail') ?? p.detail;
   const dl = $('#s-dl', sheet);
   if (dl && dl.value) state.deadline = timeFromInput(dl.value);
   if (state.phase !== 'setup') replan({ keepTarget: state.phase === 'walking' });
   save(); closeSheet(); render();
+}
+// Interests live on their own screen with an explicit Save, so they can't be nudged by accident.
+function openInterests() {
+  const p = state.prefs;
+  const weights = Object.entries(tour.topics).map(([k, label]) => `
+    <div class="field" style="margin:8px 0"><label for="w-${k}" style="font-weight:500">${esc(label)}</label>
+    <div class="slider-row"><input type="range" min="0" max="1" step="0.05" id="w-${k}" data-w="${k}" value="${p.weights[k] ?? 0.5}"><output>${Math.round((p.weights[k] ?? 0.5) * 100)}</output></div></div>`).join('');
+  openSheet(`
+    <h2>Interests</h2>
+    <p class="small muted">These decide which stops and facts are chosen. The app nudges them a little when you tap More or Loving it.</p>
+    <div class="field"><label>How gripping is this place today?</label>
+      <div class="slider-row"><input type="range" id="s-si" min="0" max="1" step="0.05" value="${p.siteInterest}"><output>${Math.round(p.siteInterest * 100)}</output></div></div>
+    ${weights}
+    <div class="btn-row"><button class="btn ghost" data-do="close">Cancel</button><button class="btn" data-do="save-interests">Save interests</button></div>`);
+}
+function saveInterests() {
+  const p = state.prefs;
+  const sheet = $('#sheet-body');
+  sheet.querySelectorAll('[data-w]').forEach(i => { p.weights[i.dataset.w] = +i.value; });
+  p.siteInterest = +$('#s-si', sheet).value;
+  logEv('interests', { w: p.weights, si: p.siteInterest });
+  if (state.phase !== 'setup') replan({ keepTarget: state.phase === 'walking' });
+  save(); closeSheet(); render();
+  toast('Interests saved.');
 }
 function openReview() {
   reviewMode = true;
@@ -911,6 +1022,11 @@ function handleDo(el) {
     case 'unskip': delete state.skipped[id]; if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'close': return closeSheet();
     case 'apply': return applySettings();
+    case 'interests': return openInterests();
+    case 'save-interests': return saveInterests();
+    case 'offroute': return offRoute();
+    case 'reroute-gps': { const g = gpsFresh(); return g ? rerouteFrom([g.lat, g.lon], 'gps-banner') : offRoute(); }
+    case 'here-stop': return readHere(id);
     case 'reset': if (confirm('Reset this tour? Progress will be lost.')) { state = freshState(tour); plan = null; save(); closeSheet(); tab = 'now'; render(); } return;
     case 'gpx': return exportGpx();
     case 'review': return openReview();
@@ -976,6 +1092,8 @@ async function boot() {
   localStorage.setItem(LS + ':last', tour.id);
   state = load(tour.id) || freshState(tour);
   state.prefs.weights = { ...P.defaultSettings(tour).weights, ...state.prefs.weights };
+  if (state.depthMult == null) state.depthMult = 1;
+  if (state.herePos) P.setHere(model, state.herePos);
   if (state.phase !== 'setup') { replan({ keepTarget: true, quiet: true }); startGps(); requestWake(); }
   render();
 }

@@ -27,8 +27,17 @@ export function defaultSettings(tour) {
     scenicRate: 0.35,      // value per minute of fully scenic walking, at views weight 1
     leaveRate: 0.25,       // value per minute of "doing something else" (scaled down for gripping sites)
     allowBreaks: true,
+    detail: 'light',       // facts per stop: light | normal | full
   };
 }
+
+// How many facts per stop. `mult` raises the bar a fact must clear (relative to the value of
+// time); `attn` is the attention span (each further fact at a stop is worth this much less).
+export const DETAIL = {
+  light: { mult: 2.8, attn: 0.6, route: 0.7 },
+  normal: { mult: 1.6, attn: 0.72, route: 0.85 },
+  full: { mult: 0.7, attn: 0.86, route: 1 },
+};
 
 const HAZARD = { calm: 0.001, normal: 0.0025, chaotic: 0.006 }; // per minute
 export const ENERGY_MIN = 0.25;
@@ -116,7 +125,8 @@ export function stopCurve(stop, weights, settings) {
     groups.push(best);
   }
   // Attention span: each extra bullet at the same stop is worth a bit less than the last.
-  const attn = 0.8 + 0.12 * (settings.siteInterest ?? 0.5);
+  // A stop can ask for a longer attention span (e.g. the introduction, which sets the context).
+  const attn = Math.min(0.95, (DETAIL[settings.detail] || DETAIL.light).attn + (stop.attnBoost ?? 0) + 0.1 * ((settings.siteInterest ?? 0.5) - 0.5));
   let before = 1;
   for (const g of groups) {
     const f = Math.pow(attn, before);
@@ -229,6 +239,47 @@ function cacheDj(model, key, a, settings) {
   return r;
 }
 
+// "We're here": a temporary node at an arbitrary position, joined to the nearest outdoor nodes,
+// so the planner can route from wherever the family has wandered to.
+export const HERE_ID = '__here__';
+export function setHere(model, pos) {
+  if (model.nodes.has(HERE_ID)) {
+    for (const { to } of model.adj.get(HERE_ID)) model.adj.set(to, model.adj.get(to).filter(x => x.to !== HERE_ID));
+    model.edges = model.edges.filter(e => e.a !== HERE_ID && e.b !== HERE_ID);
+    model.nodes.delete(HERE_ID); model.adj.delete(HERE_ID);
+  }
+  model._dj = {}; model.legCache = new Map(); model.legKey = '';
+  if (!pos) return;
+  model.nodes.set(HERE_ID, { id: HERE_ID, pos, name: 'Where you are', waypoint: true });
+  model.adj.set(HERE_ID, []);
+  const near = [...model.nodes.values()]
+    .filter(n => n.id !== HERE_ID && !n.building && n.stop?.kind !== 'intro')
+    .map(n => ({ n, d: haversine(pos, n.pos) }))
+    .sort((a, b) => a.d - b.d).slice(0, 3);
+  for (const { n, d } of near) {
+    const e = { a: HERE_ID, b: n.id, scenic: 0.3, name: `Head for ${n.name}`, door: null, len: d, temp: true };
+    model.edges.push(e);
+    model.adj.get(HERE_ID).push({ to: n.id, e });
+    model.adj.get(n.id).push({ to: HERE_ID, e });
+  }
+}
+
+// Distance (m) from a point to a path given as node ids: used to spot "we've wandered off".
+export function distanceToPath(model, pos, path) {
+  const lat0 = pos[0] * Math.PI / 180;
+  const xy = p => [(p[1] - pos[1]) * Math.cos(lat0) * 111320, (p[0] - pos[0]) * 110574];
+  const pts = path.map(id => xy(model.nodes.get(id).pos));
+  if (pts.length === 1) return Math.hypot(...pts[0]);
+  let best = Infinity;
+  for (let i = 1; i < pts.length; i++) {
+    const [ax, ay] = pts[i - 1], [bx, by] = pts[i];
+    const dx = bx - ax, dy = by - ay, L = dx * dx + dy * dy || 1;
+    const t = Math.max(0, Math.min(1, -(ax * dx + ay * dy) / L));
+    best = Math.min(best, Math.hypot(ax + t * dx, ay + t * dy));
+  }
+  return best;
+}
+
 // ---------- evaluation ----------
 // ctx: t0 (s), from, deadline (s), exit, E0, drain (/s), hazard (/s), lambda (value/s), leg(),
 //      curves{id:curve}, chrono, chronoMax, mustSee:Set, scenicPerSec, breakSec, breakAt, breakRestore
@@ -236,7 +287,7 @@ export function evaluate(route, ctx, detail = false) {
   let t = ctx.t0, at = ctx.from, E0 = ctx.E0, eT = ctx.t0;
   const E = (time) => Math.max(ENERGY_MIN, E0 - ctx.drain * (time - eT));
   const S = (time) => Math.exp(-ctx.hazard * (time - ctx.t0));
-  const M = (time) => (0.4 + 0.6 * E(time)) * S(time); // value multiplier
+  const M = (time) => (0.6 + 0.4 * E(time)) * S(time); // value multiplier: tired families get less from each stop
   let base = 0, chronoMax = ctx.chronoMax;
   const items = [];
   const steps = detail ? [] : null;
@@ -259,6 +310,8 @@ export function evaluate(route, ctx, detail = false) {
     t += L.fast.time; at = stopNode;
     if (id === BREAK_ID) {
       const arrive = t;
+      // A break is worth more the more tired you are, but only if there's touring after it.
+      if (route.slice(i + 1).some(x => x !== BREAK_ID)) base += ctx.breakValue * (1 - E(arrive)) * S(arrive);
       t += ctx.breakSec;
       E0 = Math.min(1, Math.max(E(arrive), ctx.breakRestore)); eT = t;
       if (detail) steps.push({ id, node: stopNode, leg: L, legStart: leaveFrom, arrive, leave: t });
@@ -288,7 +341,8 @@ export function evaluate(route, ctx, detail = false) {
   let gained = 0, extra = 0;
   const chosen = [];
   for (const it of items) {
-    if (it.r <= ctx.lambda) break; // not worth more than going home
+    // A fact must clear a higher bar than a scenic detour: "fewer facts" never means "fewer stops".
+    if (it.r <= (it.kind === 'b' ? ctx.bulletLambda : ctx.lambda)) continue;
     const key = it.kind + it.i;
     if (it.kind === 'b' && (blocked.has(key) || (nextSeq.get(key) ?? 0) !== it.seq)) continue;
     if (it.t > slack) { if (it.kind === 'b') blocked.add(key); continue; }
@@ -316,7 +370,10 @@ export function buildContext(model, state, settings, nowS) {
     E0: state.E0 ?? 1,
     drain: drainPerMin(settings, state.drainMult || 1) / 60,
     hazard: (HAZARD[settings.volatility] ?? HAZARD.normal) / 60,
-    lambda: settings.leaveRate * (1.2 - settings.siteInterest) * (state.lambdaMult || 1) / 60,
+    // Fewer facts per stop frees time, so the bar for adding a stop drops: depth changes, breadth doesn't.
+    lambda: settings.leaveRate * (1.2 - settings.siteInterest) / 60 * (DETAIL[settings.detail] || DETAIL.light).route,
+    bulletLambda: settings.leaveRate * (1.2 - settings.siteInterest) / 60
+      * (DETAIL[settings.detail] || DETAIL.light).mult * (state.depthMult || 1),
     scenicPerSec: settings.scenicRate * (settings.weights.views ?? 0.5) / 60,
     leg: legs(model, settings),
     curves,
@@ -326,12 +383,13 @@ export function buildContext(model, state, settings, nowS) {
     breakSec: (brk.minutes ?? 20) * 60,
     breakAt: brk.at || tour.exit,
     breakRestore: brk.restore ?? 1,
+    breakValue: settings.breakValue ?? 9,
   };
 }
 
 export function candidates(model, state) {
   return model.tour.stops
-    .filter(s => s.kind !== 'facility')
+    .filter(s => s.kind !== 'facility' && s.kind !== 'intro')
     .filter(s => !(state.visited || {})[s.id] && !(state.skipped || {})[s.id])
     .map(s => s.id);
 }
@@ -401,11 +459,36 @@ export function plan(model, state, settings, nowS, opts = {}) {
   const budget = opts.budgetMs ?? 1200;
   const ctx = buildContext(model, state, settings, nowS);
   const pool = candidates(model, state);
+  if (state.forceFirst && !pool.includes(state.forceFirst) && model.stopsById.get(state.forceFirst)?.kind === 'intro') pool.unshift(state.forceFirst);
   const blocks = buildingBlocks(model, pool);
   let fixed = 0, route = [];
   if (state.forceFirst && pool.includes(state.forceFirst)) { route = [state.forceFirst]; fixed = 1; }
 
-  const { route: r1, ev: e1 } = improve(route, pool, ctx, fixed, t0 + budget * 0.6, blocks);
+  let { route: r1, ev: e1 } = improve(route, pool, ctx, fixed, t0 + budget * 0.45, blocks);
+  // Warm start from earlier plans (e.g. the plan before the last tap): keeps plans stable and
+  // stops the search getting stuck in a poorer local optimum.
+  // Second construction: visit everything nearest-neighbour style, then let the search prune.
+  const nn = (() => {
+    const left = new Set(pool.filter(id => id !== route[0]));
+    const out = fixed ? [route[0]] : [];
+    let at = fixed ? route[0] : ctx.from;
+    while (left.size) {
+      let best = null, bt = Infinity;
+      for (const id of left) { const tt = ctx.leg(at, id).fast.time; if (tt < bt) { bt = tt; best = id; } }
+      out.push(best); left.delete(best); at = best;
+    }
+    return out;
+  })();
+  for (const seedRaw of [nn, ...(opts.seeds || [])]) {
+    if (Date.now() > t0 + budget * 0.6) break;
+    const allowed = new Set(pool);
+    let seed = seedRaw.filter(id => allowed.has(id) && id !== state.forceFirst);
+    seed = fixed ? [route[0], ...seed] : seed;
+    const sEv = evaluate(seed, ctx);
+    if (!sEv.feasible && sEv.score < e1.score) continue;
+    const { route: r, ev } = improve(seed, pool, ctx, fixed, t0 + budget * 0.6, blocks);
+    if (ev.score > e1.score + 1e-6) { r1 = r; e1 = ev; }
+  }
   let bestRoute = r1, bestEv = e1;
 
   if (settings.allowBreaks && !state.onBreak && !state.noBreak) {
@@ -419,6 +502,13 @@ export function plan(model, state, settings, nowS, opts = {}) {
     if (seed) {
       const { route: r2, ev: e2 } = improve(seed, [...pool, BREAK_ID], ctx, fixed, t0 + budget, blocks);
       if (e2.score > bestEv.score + 1e-6) { bestRoute = r2; bestEv = e2; }
+    }
+    for (const seedRaw of (opts.seeds || []).filter(r => r.includes(BREAK_ID))) {
+      const allowed = new Set([...pool, BREAK_ID]);
+      let sd = seedRaw.filter(id => allowed.has(id) && id !== state.forceFirst);
+      sd = fixed ? [route[0], ...sd] : sd;
+      const { route: r3, ev: e3 } = improve(sd, [...pool, BREAK_ID], ctx, fixed, t0 + budget * 1.2, blocks);
+      if (e3.score > bestEv.score + 1e-6) { bestRoute = r3; bestEv = e3; }
     }
   }
   return describe(model, bestRoute, ctx, settings, state, pool);
