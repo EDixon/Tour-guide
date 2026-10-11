@@ -1,6 +1,6 @@
 # Wrest Park knowledge sample
 
-A sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III) and the people and background they draw on. Each section is one retrievable chunk. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `wrest-park-dates.json`, which the app uses for all date arithmetic.
+A sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `wrest-park-dates.json`, which the app uses for all date arithmetic.
 
 ## The Orangery
 Kind: site
@@ -101,3 +101,24 @@ Mary died in 1694 and William reigned alone until he died in March 1702, after h
 
 The Act of Settlement of 1701 passed the crown, after Anne, to the Protestant House of Hanover, and George I succeeded in 1714. Jacobites, supporters of James II's descendants, rose in 1715 and again in 1745. So in the 1730s a statue of William was a statement of loyalty to the Protestant succession and the Hanoverian kings.
 Sources: general knowledge.
+
+## The boundary canals ("the river")
+Kind: site
+The water that runs round the west, south and east edges of the old garden, which visitors often call the river, is a chain of canals. It began as straight, formal canals dug for Henry Grey, Duke of Kent, as part of his Great Garden in the early 1700s, enclosing the woodland garden on three sides, with more canals at right angles to the Long Water. The canals were altered in the 1720s, and a serpentine canal was made in 1729. To the south, the garden ended at the Old Brook, a line that is still the boundary between the parishes of Silsoe and Gravenhurst.
+
+In 1758–60 the Duke's granddaughter Jemima, Marchioness Grey, and her husband Philip Yorke brought in Lancelot "Capability" Brown. Jemima valued her grandfather's garden, so Brown's changes were limited: he linked up the waters round the garden and made the straight perimeter canals meander in a more natural way, softening the edges while leaving the formal core alone. That is why the "river" curves while the Long Water stays straight.
+
+A Doric column about 6 metres tall, put up in 1760 and attributed to the architect Edward Stevens, records the work: "These gardens originally laid out by Henry Duke of Kent, were altered by Philip Earl of Hardwicke and Jemima Marchioness Grey, with the professional assistance of Lancelot Brown Esq. in the years 1758, 1759, 1760." It was first placed to be seen from the Bath House and was moved to its present spot in 1828. The Bath House itself (about 1769–71, also by Stevens, for Jemima) stands beside a pond made as an arm of the canal, with a cascade at its north end fed from a lead-lined tank.
+Sources: Historic England register entry 1000113; list entries 1158972 (Brown monument) and 1113790 (Bath House and Cascade); English Heritage, History of Wrest Park.
+
+## Lancelot "Capability" Brown
+Kind: person
+Lancelot Brown (1716–83) was the most famous English landscape designer of the 18th century. Born at Kirkharle in Northumberland, he made his name as head gardener at Stowe in Buckinghamshire in the 1740s, then worked all over England, reshaping more than 170 parks. His nickname came from telling clients their land had "capability" for improvement. His style swept away straight lines for rolling grass, clumps and belts of trees, and serpentine lakes made by damming streams, as at Blenheim. In 1764 he became the King's Master Gardener at Hampton Court. At Wrest, unusually, he was held back, which is why the formal garden survives.
+
+Earth-moving in his day was done by hand: gangs of labourers with spades and wheelbarrows, and horses and carts to move the soil.
+Sources: general knowledge.
+
+## Jemima, Marchioness Grey
+Kind: person
+Jemima Campbell (1723–97) was the Duke of Kent's granddaughter and heir, the daughter of his daughter Amabel and John Campbell, later Earl of Breadalbane. She inherited Wrest when the Duke died in 1740, and that year married Philip Yorke, son of the Lord Chancellor, Lord Hardwicke; Philip became the 2nd Earl of Hardwicke in 1764. Both were keen on the gardens. Jemima kept her grandfather's formal garden but softened its edges with Capability Brown and added garden buildings: the Bath House, a Chinese temple and bridge, and an altar. Wrest later passed to her daughter Amabel, and then to Amabel's nephew, the 2nd Earl de Grey.
+Sources: Historic England list entry 1113790; English Heritage, History of Wrest Park; general knowledge.

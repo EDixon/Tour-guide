@@ -1,7 +1,8 @@
 // Builds prompts.html: copy-and-paste prompts for testing on-phone AI apps (e.g. AI Edge Gallery)
 // with the same material the in-app assistant would use. Run: node tools/make-prompts.mjs
 import fs from 'node:fs';
-import { calculatedFacts } from '../assistant/maths.mjs';
+import { calculatedFacts, mentions } from '../assistant/maths.mjs';
+import { rank, parseSections } from '../assistant/retrieve.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const read = (p) => fs.readFileSync(root + p, 'utf8');
@@ -13,7 +14,10 @@ const words = (s) => s.split(/\s+/).length;
 
 // ------------------------------------------------ Test 3: fuller notes + calculated facts
 const sample = read('knowledge/wrest-park-sample.md');
-const notes = sample.split(/^## /m).slice(1).map(sec => '## ' + sec.replace(/^(Kind|Sources):.*\n?/gm, '').trim()).join('\n\n');
+const sections = parseSections(sample);
+const RIVER = ['The boundary canals ("the river")', 'Lancelot "Capability" Brown', 'Jemima, Marchioness Grey'];
+const fmt = (secs) => secs.map(x => `## ${x.title}\n${x.text}`).join('\n\n');
+const notes = fmt(sections.filter(x => !RIVER.includes(x.title)));
 const facts = calculatedFacts(dates, {
   things: ['orangery', 'house', 'pavilion', 'william-statue', 'glorious-revolution'],
   people: ['earl-de-grey', 'duke-of-kent', 'thomas-archer', 'william-iii', 'louis-philippe'],
@@ -36,6 +40,15 @@ const Q3 = [
   'Which famous scientist was related to the Duke of Kent, and what did he do?',
   'What year was the visitor centre café built?',
 ];
+// Test 3b: a question about a part of the site not in the first notes, built the way the app would:
+// keyword retrieval picks the sections, name matching picks the dated things, and the maths is worked out.
+const QR = 'Who made the river?';
+const picked = rank(sections, QR).slice(0, 3);
+const m = mentions(dates, QR);
+const factsR = calculatedFacts(dates, { ...m, nowYear: new Date().getFullYear() });
+const EXTRA = `The app has added material for this question.\n\nCALCULATED FACTS (worked out by the app; exact):\n${factsR.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${fmt(picked)}\n\nQUESTION: ${QR}`;
+console.log('3b picked:', picked.map(x => x.title).join(' | '), '| things:', m.things.join(','), '| people:', m.people.join(','));
+
 const FULL3 = `${RULES}\n\nCALCULATED FACTS (worked out by the app; exact):\n${facts.map(f => '- ' + f).join('\n')}\n\nNOTES:\n${notes}\n\nQUESTION: ${Q3[0]}`;
 
 // ------------------------------------------------ Earlier tests (bullets only)
@@ -96,6 +109,15 @@ const html = `<!doctype html>
     </div>
     ${block('Prompt', FULL3, 'Paste as the first message of a new chat.')}
     ${Q3.slice(1).map((q, i) => block(`Follow-up ${i + 1}`, q, i === Q3.length - 2 ? 'Not in the notes: it should say so rather than guess.' : 'Send in the same chat.')).join('')}
+    <div class="card">
+      <h2>Test 3b: a different part of the site</h2>
+      <ol class="small">
+        <li>In the same chat, send <b>Plain question</b>. Its first notes don't cover the river, so it should say so rather than guess.</li>
+        <li>Then send <b>With the app's added material</b>. This is what the app would actually send: the best-matching notes for the question (found by keyword search) and dates worked out for what it mentions.</li>
+      </ol>
+    </div>
+    ${block('Plain question', QR, 'Send in the same chat, after the test 3 questions.')}
+    ${block("With the app's added material", EXTRA, `${words(EXTRA)} words. Send in the same chat.`)}
     <details class="card">
       <summary>Earlier test (tour bullets only)</summary>
       ${block('Full notes + first question', FULL1, 'Paste as the first message of a new chat.')}

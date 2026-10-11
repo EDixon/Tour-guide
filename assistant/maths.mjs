@@ -14,7 +14,7 @@ export function label(t) {
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const span = (t) => ({ a: t.from, b: t.to ?? t.from });
 // "was built" / "happened"; "being built" / "happening"
-const was = (t) => (t.verb === 'happened' ? 'happened' : `was ${t.verb}`);
+const was = (t) => (t.verb === 'happened' ? 'happened' : `${t.plural ? 'were' : 'was'} ${t.verb}`);
 const being = (t) => (t.verb === 'happened' ? 'happening' : `being ${t.verb}`);
 
 // Before / after / during between two dated things.
@@ -25,6 +25,11 @@ export function compare(A, B) {
   if (x.a > y.b) return { rel: 'after', text: `${cap(nA)} ${was(A)} AFTER ${nB}: ${about(ap)}${plural(x.a - y.b, 'year')} later.` };
   if (x.a >= y.a && x.b <= y.b && !(x.a === y.a && x.b === y.b)) {
     const start = x.a - y.a, end = y.b - x.b;
+    if (x.a === x.b && A.verb !== 'happened') { // a single year inside a span
+      const after = start === 0 ? `in the same year work on ${B.name} began` : `${about(ap)}${plural(start, 'year')} after work on ${B.name} began`;
+      const before = end === 0 ? `in the year ${B.name} was finished` : `${about(ap)}${plural(end, 'year')} before ${B.name} was finished`;
+      return { rel: 'during', text: `${cap(nA)} ${was(A)} WHILE ${nB} was ${being(B)}, so neither before nor after it: ${after}, ${before}.` };
+    }
     const began = start === 0 ? `in the same year work on ${B.name} began` : `${about(ap)}${plural(start, 'year')} after work on ${B.name} began`;
     if (A.verb === 'happened') return { rel: 'during', text: `${cap(nA)} happened WHILE ${nB} was ${being(B)}, starting ${began}.` };
     return { rel: 'during', text: `${cap(nA)} ${was(A)} WHILE ${nB} was ${being(B)}, so neither before nor after it: ` +
@@ -86,12 +91,16 @@ export function calculatedFacts(dates, { things = [], people = [], pairs = [], c
   return lines;
 }
 
-// Find which dated things and people a question mentions (simple name matching).
-export function mentions(dates, question) {
+// Find which dated things and people a question mentions (simple name matching), plus the
+// things and people linked to them (builder, related works), so the facts cover the context.
+export function mentions(dates, question, { expand = true } = {}) {
   const q = ' ' + question.toLowerCase().replace(/[^a-z0-9' -]/g, ' ') + ' ';
   const hit = (names) => names.some(n => q.includes(' ' + n + ' ') || q.includes(' ' + n + 's ') || q.includes(' ' + n + "'s "));
-  return {
-    things: dates.things.filter(t => hit(t.names)).map(t => t.id),
-    people: dates.people.filter(p => hit(p.names)).map(p => p.id),
-  };
+  const things = new Set(dates.things.filter(t => hit(t.names)).map(t => t.id));
+  const people = new Set(dates.people.filter(p => hit(p.names)).map(p => p.id));
+  if (expand) {
+    for (const id of [...things]) (dates.things.find(x => x.id === id).related || []).forEach(r => things.add(r));
+    for (const id of things) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
+  }
+  return { things: [...things], people: [...people] };
 }
