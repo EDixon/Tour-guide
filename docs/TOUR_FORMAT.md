@@ -12,14 +12,14 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
 | `start`, `exit` | Stop ids: normally the main car park, so the walk to the entrance and back is counted. The car park and main entrance are facility stops (`facilities: ["parking"]` / `["entrance"]`); they are often not where the visitor centre is. |
 | `introStop` | Id of a stop with `kind: "intro"`: the story in brief, shown at the start (trimmed like any stop) and on the Timeline tab. Give it a path to the start node and optionally `attnBoost` (e.g. 0.15) so a few more of its points are kept. |
 | `walk` | `{detour, indoorFactor}`: multipliers on straight-line distance for outdoor paths and indoor rooms. |
-| `buildings` | `{id: {name, entrySeconds, exitSeconds, note}}`: one-off cost of going in (e.g. leaving the pushchair). |
+| `buildings` | `{id: {name, entrySeconds, exitSeconds, note, steps?}}`: one-off cost of going in (e.g. leaving the pushchair). `steps: true` if the way in has steps and no lift or ramp: pushchair mode then leaves out its rooms. |
 | `breaks.cafe` | `{label, minutes, restore, at}`: the break the planner may insert; `restore` is energy after it (0–1). |
 | `topics` | `{key: label}`: the interest dimensions shown as sliders. |
 | `defaultWeights` | `{key: 0–1}`: starting interest per topic. May also override the two sight weightings, `looks` (default 0.8) and `popular` (default 0.6), which apply to whole stops rather than bullets and are always shown in Interests under "What to see". |
 | `eras` | `[{id, name, from, to, colour, summary}]` for the timeline. |
 | `events` | `[{year, label, src, stop?, more?}]`. `stop` links an event to a stop. `more` is the explanation shown when the line is tapped on the Timeline: 1–3 sentences, under 60 words, answering the obvious follow-ups (what was damaged and who was affected by a fire; who bought it and why for a sale; what changed as a result). It is sourced by the event's `src` and must agree with the notes. Give every event whose label leaves a who, what or why question open a `more`. |
 | `waypoints` | `[{id, name, pos}]`: path junctions that aren't stops. |
-| `paths` | `[[a, b, scenic 0–1, name, door?]]`: walkable links. `scenic` drives route choice; `name` is used for directions; `door` = building id for links that enter a building. |
+| `paths` | `[[a, b, scenic 0–1, name, door?, opts?]]`: walkable links. `scenic` drives route choice; `name` is used for directions; `door` = building id for links that enter a building (else `null`). `opts` is `{"steps": true}` for a link with steps, which pushchair mode (👶) avoids. |
 | `stops` | See below. |
 | `map` | `{osm, osmNote, note, features: [{kind: wood|garden|lawn|building|water, poly|line+width|circle+r, label?}]}`: schematic shapes. |
 | `photos` | Path of the photo credits file, `tours/<id>.photos.json` (see Photos under Bullet). |
@@ -39,6 +39,7 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
   "wow": 5,                        // 0–5 how visually impressive it is, story aside (see below)
   "popular": 4,                    // 0–5 how often visitors single it out in reviews and guides (see below)
   "mustSee": true,                 // planner includes it whenever feasible
+  "steps": true,                   // optional: the stop itself needs steps (pushchair mode leaves it out)
   "photoSpot": true,               // a viewpoint people stop to photograph (camera on the map); "look" says where to point
   "photo": "pavilion-vista",       // optional photo beside the "look" line
   "facilities": ["toilet", "cafe", "play", "babychange"],   // also "parking" and "entrance", which get their own map symbols

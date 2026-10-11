@@ -38,6 +38,10 @@ Updated: 2026-10-11
   - Oldpark Water by the West Half House
 
   25 "look for" points (mostly toddler tasks) have no photo yet; `validate-tour` lists them.
+- **Steps not marked.** No path, stop or building has `steps` yet, so pushchair mode (👶) changes nothing at Wrest until the survey marks them. Sources:
+  - OpenStreetMap's steps
+  - the leaflet: the Archer Pavilion has steps, and the mansion has a lift
+  - the English Heritage access page
 - **14 stops have no notes or dated things:** italian, conservatory, dairy, science, parterre, oldhouse, bowling, longwater, whh, altar, ehh, altars, chinese, atlas.
 - **The Silsoe science years** (the "science" stop and the agricultural engineering research) have no notes at all. That matters, because science and engineering are high-interest topics.
 - **Rulers pack is too short.** It needs England back to at least 1066 (and Scotland where useful), so that facts about the medieval owners get rulers. Note that the app says "no ruler data" rather than guessing.

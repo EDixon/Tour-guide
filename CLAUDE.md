@@ -18,7 +18,12 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 - `assistant/`: the prompt pipeline. `maths.js` works out all date facts so the model never calculates, `retrieve.js` picks the notes, `prompt.js` builds each question's prompt, `knowledge.js` loads the files, `llm.js` talks to the Android app.
 - `android/`: the Android wrapper app (a WebView of the site plus on-device Gemma). It is built by GitHub Actions and published as the `android-latest` release.
 - `sites/<id>/`: working files for preparing a site (brief, status, research drafts). These are not served to the app.
-- `tools/`: `validate-tour.mjs`, `check-knowledge.mjs`, `merge-research.mjs`, `ask.mjs` (prints the exact prompt for a question).
+- `tools/`:
+  - checking: `validate-tour.mjs`, `check-knowledge.mjs`, `ask.mjs` (prints the exact prompt for a question)
+  - merging research: `merge-research.mjs`
+  - map: `fetch-osm.mjs` (OpenStreetMap layer), `map-markers.py` and `georef.mjs` (place a leaflet or guidebook map on the real one)
+  - photos: `fetch-photos.mjs` (Wikimedia Commons), `photo-spots.mjs` (viewpoints from where people take photos)
+- **Network access:** Claude's workspace can't reach OpenStreetMap or Wikimedia. `fetch-osm.mjs` and `fetch-photos.mjs` run in GitHub Actions, started by pushing `sites/<id>/osm.request` or `sites/<id>/photos.request`, and commit their results. Then `git pull`.
 
 ## Adding or updating a site
 Use the skills in `.claude/skills/`, which run as a chain: **new-site → site-survey → site-research → reference-packs → site-check → site-publish**, plus **site-update** for changes after a visit. Each reads and updates `sites/<id>/STATUS.md`, so work can resume in a fresh chat ("continue <site>").

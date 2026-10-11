@@ -1,5 +1,5 @@
 // Offline cache: everything the app needs is cached on first visit; afterwards it runs with no signal.
-const VERSION = 'tg-v11';
+const VERSION = 'tg-v12';
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',

@@ -31,6 +31,7 @@ export function defaultSettings(tour) {
     scenicRate: 0.35,      // value per minute of fully scenic walking, at views weight 1
     leaveRate: 0.25,       // value per minute of "doing something else" (scaled down for gripping sites)
     allowBreaks: true,
+    avoidSteps: false,     // pushchair mode: no stepped paths, no stops that need steps
     detail: 'light',       // facts per stop: light | normal | full
   };
 }
@@ -161,9 +162,9 @@ export function buildModel(tour) {
   const adj = new Map([...nodes.keys()].map(k => [k, []]));
   const edges = [];
   for (const p of tour.paths || []) {
-    const [a, b, scenic = 0.3, name = '', door = null] = p;
+    const [a, b, scenic = 0.3, name = '', door = null, opts = null] = p;
     if (!nodes.has(a) || !nodes.has(b)) throw new Error(`path refers to unknown node ${a}-${b}`);
-    const e = { a, b, scenic, name, door, len: haversine(nodes.get(a).pos, nodes.get(b).pos) };
+    const e = { a, b, scenic, name, door, steps: !!opts?.steps, len: haversine(nodes.get(a).pos, nodes.get(b).pos) };
     edges.push(e);
     adj.get(a).push({ to: b, e });
     adj.get(b).push({ to: a, e });
@@ -172,6 +173,7 @@ export function buildModel(tour) {
 }
 
 function edgeSeconds(model, from, to, e, settings) {
+  if (settings.avoidSteps && e.steps) return Infinity; // Dijkstra never relaxes an infinite edge
   const walk = model.tour.walk || {};
   const A = model.nodes.get(from), B = model.nodes.get(to);
   const inA = !!A.building, inB = !!B.building;
@@ -213,7 +215,7 @@ function pathTo(prev, src, dst) {
 }
 
 export function legs(model, settings) {
-  const key = `${settings.speed}`;
+  const key = `${settings.speed}|${settings.avoidSteps ? 'nostep' : ''}`;
   if (model.legKey !== key) { model.legCache = new Map(); model.legKey = key; }
   return function leg(a, b) {
     const k = a + '>' + b;
@@ -224,7 +226,10 @@ export function legs(model, settings) {
     } else {
       const f = model._dj?.[key]?.[a] ?? cacheDj(model, key, a, settings);
       const ft = f.fast.time.get(b), st = f.scenic.time.get(b);
-      if (ft == null) {
+      if (ft == null && settings.avoidSteps) {
+        // No step-free way: don't fall back to a straight line, which would cross the steps.
+        L = { fast: { time: Infinity, scenicSec: 0, path: [a, b] }, scenic: null, noStepFree: true };
+      } else if (ft == null) {
         const d = haversine(model.nodes.get(a).pos, model.nodes.get(b).pos) * 1.4 / settings.speed;
         L = { fast: { time: d, scenicSec: 0, path: [a, b] }, scenic: null };
       } else {
@@ -394,10 +399,15 @@ export function buildContext(model, state, settings, nowS) {
   };
 }
 
-export function candidates(model, state) {
+// Does this stop need steps (its own flag, or the building it's in)? Used in pushchair mode.
+export function needsSteps(model, s) {
+  return !!(s.steps || (s.building && model.tour.buildings?.[s.building]?.steps));
+}
+export function candidates(model, state, settings = {}) {
   return model.tour.stops
     .filter(s => s.kind !== 'facility' && s.kind !== 'intro')
     .filter(s => !(state.visited || {})[s.id] && !(state.skipped || {})[s.id])
+    .filter(s => !(settings.avoidSteps && needsSteps(model, s)))
     .map(s => s.id);
 }
 
@@ -465,7 +475,8 @@ export function plan(model, state, settings, nowS, opts = {}) {
   const t0 = Date.now();
   const budget = opts.budgetMs ?? 1200;
   const ctx = buildContext(model, state, settings, nowS);
-  const pool = candidates(model, state);
+  // In pushchair mode, leave out stops with no step-free way to them (they are listed as dropped).
+  const pool = candidates(model, state, settings).filter(id => !(settings.avoidSteps && ctx.leg(state.from, id).noStepFree));
   if (state.forceFirst && !pool.includes(state.forceFirst) && model.stopsById.get(state.forceFirst)?.kind === 'intro') pool.unshift(state.forceFirst);
   const blocks = buildingBlocks(model, pool);
   let fixed = 0, route = [];
@@ -482,6 +493,7 @@ export function plan(model, state, settings, nowS, opts = {}) {
     while (left.size) {
       let best = null, bt = Infinity;
       for (const id of left) { const tt = ctx.leg(at, id).fast.time; if (tt < bt) { bt = tt; best = id; } }
+      if (best == null) break;
       out.push(best); left.delete(best); at = best;
     }
     return out;
@@ -559,6 +571,9 @@ function describe(model, route, ctx, settings, state, pool) {
   // Why were things left out?
   const inRoute = new Set(route);
   const dropped = [];
+  if (settings.avoidSteps) {
+    for (const id of candidates(model, state, settings)) if (!pool.includes(id)) dropped.push({ id, reason: 'No step-free way there' });
+  }
   for (const id of pool) {
     if (inRoute.has(id)) continue;
     let bestIns = null;
@@ -568,6 +583,11 @@ function describe(model, route, ctx, settings, state, pool) {
     }
     const reason = !bestIns || !bestIns.feasible ? 'No time left for it' : 'Not worth the time for your interests and energy';
     dropped.push({ id, reason });
+  }
+  if (settings.avoidSteps) {
+    for (const s of model.tour.stops) {
+      if (needsSteps(model, s) && s.kind !== 'facility' && !(state.visited || {})[s.id] && !(state.skipped || {})[s.id]) dropped.push({ id: s.id, reason: 'Needs steps (avoiding steps)' });
+    }
   }
   return {
     feasible: ev.feasible,

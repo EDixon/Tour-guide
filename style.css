@@ -49,8 +49,12 @@ header#top { background: var(--brand); color: var(--brand-ink); padding: 10px 16
 .top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .title { font-weight: 700; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .icon-btn { background: transparent; border: 0; color: inherit; font-size: 1.4rem; padding: 4px 8px; min-width: 44px; min-height: 44px; }
+.status.tight { gap: 8px; }
+.status.tight .pill:first-child { padding: 2px 8px; }
 .status { display: flex; gap: 12px; align-items: center; font-size: 0.85rem; flex-wrap: wrap; opacity: 0.95; }
 .status .pill { background: rgba(255,255,255,0.16); border-radius: 999px; padding: 2px 10px; }
+.status button.pram { border: 0; color: inherit; font: inherit; font-size: 0.8rem; padding: 2px 8px; margin-left: auto; cursor: pointer; white-space: nowrap; }
+.status button.pram.on { background: var(--accent); color: #fff; }
 .energy { display: inline-flex; align-items: center; gap: 6px; }
 .energy .bar { width: 56px; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.25); overflow: hidden; }
 .energy .bar i { display: block; height: 100%; background: #f2c14e; }

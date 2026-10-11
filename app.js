@@ -34,7 +34,7 @@ function load(id) { try { return JSON.parse(localStorage.getItem(LS + ':' + id))
 function settings() {
   const d = P.defaultSettings(tour);
   const p = state.prefs;
-  return { ...d, weights: { ...d.weights, ...p.weights }, siteInterest: p.siteInterest, chrono: p.chrono, volatility: p.volatility, speed: p.speed, talkFactor: p.talkFactor, allowBreaks: p.allowBreaks, detail: p.detail || d.detail };
+  return { ...d, weights: { ...d.weights, ...p.weights }, siteInterest: p.siteInterest, chrono: p.chrono, volatility: p.volatility, speed: p.speed, talkFactor: p.talkFactor, allowBreaks: p.allowBreaks, detail: p.detail || d.detail, avoidSteps: !!p.avoidSteps };
 }
 const energyNow = () => P.energyAt(state.energy, now(), settings());
 function setEnergy(E, drainMult = state.energy.drainMult) { state.energy = { E: clamp(E, P.ENERGY_MIN, 1), at: now(), drainMult: clamp(drainMult, 0.5, 3) }; }
@@ -385,7 +385,23 @@ function renderStatus() {
   el.innerHTML = `
     <span class="pill">⏱ ${left > 0 ? fmtDur(left) + ' left' : 'past time!'}</span>
     <span>car by ${fmtClock(state.deadline)}</span>
-    <span class="energy" title="Family energy (model)">⚡<span class="bar"><i style="width:${Math.round(E * 100)}%"></i></span></span>`;
+    <span class="energy" title="Family energy (model)">⚡<span class="bar"><i style="width:${Math.round(E * 100)}%"></i></span></span>
+    <button class="pill pram${state.prefs.avoidSteps ? ' on' : ''}" data-do="pram" aria-pressed="${!!state.prefs.avoidSteps}" title="Avoid steps (pushchair)">${state.prefs.avoidSteps ? '👶 no steps' : '👶'}</button>`;
+  el.classList.toggle('tight', !!state.prefs.avoidSteps);
+}
+
+// Pushchair mode: a quick toggle for when the baby is asleep in the pram. The plan avoids stepped
+// paths and stops that need steps until it's turned off again.
+function togglePram() {
+  state.prefs.avoidSteps = !state.prefs.avoidSteps;
+  logEv('pram', { on: state.prefs.avoidSteps });
+  if (state.phase !== 'setup') {
+    const t = state.target && stop(state.target);
+    const keep = state.phase === 'walking' && state.purpose === 'stop' && !(state.prefs.avoidSteps && t && P.needsSteps(model, t));
+    replan({ keepTarget: keep, quiet: true });
+  }
+  save(); render();
+  toast(state.prefs.avoidSteps ? 'Avoiding steps: the route is step-free from here.' : 'Steps are fine again: back to the usual route.');
 }
 
 // ---------------------------------------------------------------- Now tab
@@ -686,6 +702,7 @@ function stopSheet(id) {
     <div>${chip(s.era, stopDate(s))}<span class="chip outline">${statusTxt}</span></div>
     <h2 style="margin-top:8px">${esc(s.name)}</h2>
     ${s.look ? `<p class="look">${thumbHtml(s.photo)}${esc(s.look)}</p>` : ''}
+    ${P.needsSteps(model, s) ? `<div class="note">Steps here${state.prefs.avoidSteps ? ': left out while avoiding steps (👶).' : '.'}</div>` : ''}
     <p class="small muted">${s.bullets.length} points · about ${Math.round((s.dwell + s.bullets.reduce((n, b) => n + P.bulletSeconds(b, settings()), 0)) / 60)} min for everything</p>
     ${state.phase !== 'setup' && !state.visited[id] ? `<button class="btn block" data-do="goto" data-id="${id}">Go here next</button>` : ''}
     <div class="btn-row">
@@ -1158,6 +1175,7 @@ function openSettings() {
     <h3>Offline assistant</h3>
     <div id="as-block">${assistantSettingsHtml()}</div>
     <h3>Tools</h3>
+    <div class="field switch"><label for="s-steps">Avoid steps (pushchair). Also the 👶 button at the top.</label><input type="checkbox" id="s-steps" ${p.avoidSteps ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-gps">Use GPS (turn off for testing at home)</label><input type="checkbox" id="s-gps" ${p.useGps !== false ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-track">Record GPS track (to correct paths later)</label><input type="checkbox" id="s-track" ${p.recordTrack ? 'checked' : ''}></div>
     <div class="btn-row"><button class="btn ghost" data-do="gpx">Export track (${state.track.length} pts)</button><button class="btn ghost" data-do="review">Review content</button></div>
@@ -1173,6 +1191,7 @@ function applySettings() {
   p.allowBreaks = $('#s-breaks', sheet).checked;
   p.recordTrack = $('#s-track', sheet).checked;
   p.useGps = $('#s-gps', sheet).checked;
+  p.avoidSteps = $('#s-steps', sheet).checked;
   const segv = (n) => sheet.querySelector(`[data-seg="${n}"] .on`)?.dataset.v;
   p.speed = +(segv('speed') ?? p.speed); p.talkFactor = +(segv('talk') ?? p.talkFactor); p.volatility = segv('vol') ?? p.volatility;
   p.detail = segv('detail') ?? p.detail;
@@ -1300,6 +1319,7 @@ function handleDo(el) {
     case 'unskip': delete state.skipped[id]; if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'close': return closeSheet();
     case 'ask': return openAsk(el.dataset.q || '');
+    case 'pram': return togglePram();
     case 'ask-send': return sendAsk();
     case 'ask-new': if (ask.session) ask.session.reset(); ask.items = []; return openAsk();
     case 'ask-setup': return openSettings();

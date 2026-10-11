@@ -191,6 +191,33 @@ test('visitor favourites are planned more when the popular weighting is up', () 
   assert.ok(on > off);
 });
 
+test('pushchair mode: stepped paths and stepped stops are avoided', () => {
+  const t2 = structuredClone(tour);
+  // an outdoor sight whose every path link has steps
+  const leaf = t2.stops.find(s => s.id === 'bathhouse');
+  for (const link of t2.paths.filter(p => p[0] === leaf.id || p[1] === leaf.id)) {
+    while (link.length < 5) link.push(link.length === 2 ? 0.3 : link.length === 3 ? '' : null);
+    link[5] = { steps: true };
+  }
+  const other = t2.stops.find(s => s.kind === 'sight' && s.id !== leaf.id && !s.building && s.mustSee);
+  other.steps = true;
+  const m2 = buildModel(t2);
+  const pinned = { [leaf.id]: true };
+  const normal = plan(m2, mk(240, { pinned }), S(), NOW);
+  assert.ok(normal.route.includes(leaf.id), `${leaf.id} planned normally`);
+  const pram = plan(m2, mk(240, { pinned }), S({ avoidSteps: true }), NOW);
+  assert.ok(!pram.route.includes(leaf.id), `${leaf.id} avoided in pushchair mode`);
+  assert.ok(!pram.route.includes(other.id), `${other.id} (needs steps) avoided`);
+  const why = Object.fromEntries(pram.dropped.map(d => [d.id, d.reason]));
+  assert.equal(why[leaf.id], 'No step-free way there');
+  assert.equal(why[other.id], 'Needs steps (avoiding steps)');
+  for (const st of pram.steps) for (let i = 1; i < (st.leg.path || []).length; i++) {
+    const a = st.leg.path[i - 1], b = st.leg.path[i];
+    assert.ok(!m2.edges.some(e => e.steps && ((e.a === a && e.b === b) || (e.a === b && e.b === a))), 'no stepped link used');
+  }
+  console.log(`     pushchair mode: ${leaf.id} (stepped path) and ${other.id} (stepped stop) left out`);
+});
+
 test('forced next stop stays first; visited stops excluded', () => {
   const p = plan(model, mk(120, { from: 'terrace', visited: { terrace: {} }, forceFirst: 'bathhouse' }), S(), NOW);
   assert.equal(p.route[0], 'bathhouse');

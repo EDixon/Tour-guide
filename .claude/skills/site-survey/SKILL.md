@@ -96,6 +96,7 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
 - **Waypoints and paths:**
   - Cover all stops: `[a, b, scenic, name, door?]`.
   - Scenic scores: waterside or viewpoint walks 0.8–1, ordinary paths 0.3–0.5, service short-cuts 0.2.
+  - **Steps.** Mark links with steps `{"steps": true}` (sixth element), so pushchair mode can avoid them. OpenStreetMap marks steps (`highway=steps`, drawn dashed), and the operator's access page and leaflet name others. Do the same for stops that need steps (`"steps": true`) and for buildings whose way in has steps with no lift or ramp. Make sure every stop that is step-free in fact has a step-free route, so pushchair mode doesn't lose it.
   - Name each link the way you'd give directions ("Long Water, west bank").
   - Use, in order of preference: a GPX from Eliot, the OpenStreetMap footpaths, his map photos, then estimates from listing coordinates. Say which in `map.osmNote` (or `map.note` without OpenStreetMap).
 - **Map shapes:** only without the OpenStreetMap layer (abroad, say, where coverage is poor): a few schematic shapes (water, woodland, main buildings).
