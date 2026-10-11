@@ -1,0 +1,746 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: liblitertlm_jni.so. Run with --info option to learn more.
+
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:javaPreCompileRelease
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeReleaseShaders
+> Task :app:mergeReleaseArtProfile
+> Task :app:processReleaseManifestForPackage
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:processReleaseResources
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:extractProguardFiles
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:optimizeReleaseResources
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:mergeExtDexRelease
+
+> Task :app:compileReleaseKotlin
+e: Incompatible classes were found in dependencies. Remove them from the classpath or use '-Xskip-metadata-version-check' to suppress errors
+e: file:///home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/META-INF/third_party.odml.litert_lm.kotlin.java.com.google.ai.edge.litertlm_litertlm-android.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/kotlin-reflection.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_descriptors.jvm.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_descriptors.runtime.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_deserialization.common.jvm.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_deserialization.common.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_deserialization.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_kotlin-metadata-jvm.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_kotlin-metadata.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/2.4.0/532cc727c0960d12f4c9acb6a6c2c4a3e08187b/kotlin-reflect-2.4.0.jar!/META-INF/org.jetbrains.kotlin_metadata.jvm.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/META-INF/kotlin-stdlib-jdk7.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/META-INF/kotlin-stdlib-jdk8.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/META-INF/kotlin-stdlib.kotlin_module Module was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.4.0, expected version is 2.2.0.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:39:38 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:42:25 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:42:40 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:44:40 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:46:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:46:35 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:47:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:48:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:49:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:50:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:51:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:51:36 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:51:49 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:58:47 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:59:50 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:59:75 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:60:50 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:60:60 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:60:76 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:61:43 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:61:58 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:62:84 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:62:99 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:64:21 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:17 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:30 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:45 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:57 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:59 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:59 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:59 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:65:59 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:68:96 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:69:42 Unresolved reference 'apply'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:70:17 Unresolved reference 'put'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:71:17 Unresolved reference 'put'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:73:109 'return' is prohibited here.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:74:61 Unresolved reference 'use'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:74:67 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:74:81 Unresolved reference 'toByteArray'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:79:32 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:82:41 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:82:60 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:82:69 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:83:9 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:83:17 Unresolved reference 'let'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:83:23 'return' is prohibited here.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:83:30 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:84:41 Unresolved reference 'run'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:85:76 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:85:90 'return' is prohibited here.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:87:50 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:24 Unresolved reference 'listOf'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:37 Unresolved reference 'to'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:40 Class 'com.google.ai.edge.litertlm.Backend' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:42 Class 'com.google.ai.edge.litertlm.Backend.GPU' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend$GPU.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:59 Class 'com.google.ai.edge.litertlm.Backend' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:76 Unresolved reference 'to'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:79 Class 'com.google.ai.edge.litertlm.Backend' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:81 Class 'com.google.ai.edge.litertlm.Backend.CPU' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend$CPU.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:90:98 Class 'com.google.ai.edge.litertlm.Backend' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:92:33 Destructuring of type 'ERROR CLASS: Unresolved name: next' requires operator function 'component1()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:92:33 Destructuring of type 'ERROR CLASS: Unresolved name: next' requires operator function 'component2()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:92:33 For-loop range must have an 'iterator()' method.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:25 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:25 Class 'com.google.ai.edge.litertlm.EngineConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/EngineConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:32 Class 'com.google.ai.edge.litertlm.EngineConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/EngineConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:32 Class 'com.google.ai.edge.litertlm.Backend' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Backend.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:32 Class 'com.google.ai.edge.litertlm.ActivationDataType' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ActivationDataType.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:94:86 Unresolved reference 'backend'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:95:17 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:95:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:95:17 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:96:17 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:96:26 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:98:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:99:24 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:105:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:9 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:23 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:23 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:23 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:110:23 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:111:9 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:111:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:111:23 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:111:23 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:111:23 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:112:9 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:115:19 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:115:29 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:115:44 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:119:17 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:119:42 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:120:9 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:120:18 Unresolved reference 'let'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:120:24 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:120:38 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:124:13 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:124:13 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:124:13 Class 'com.google.ai.edge.litertlm.ConversationConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ConversationConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:124:13 Class 'com.google.ai.edge.litertlm.Engine' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Engine.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:125:17 Class 'com.google.ai.edge.litertlm.ConversationConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ConversationConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:125:17 Class 'com.google.ai.edge.litertlm.Contents' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Contents.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:125:17 Class 'com.google.ai.edge.litertlm.SamplerConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/SamplerConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:125:17 Class 'com.google.ai.edge.litertlm.LoraConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/LoraConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:125:17 Class 'com.google.ai.edge.litertlm.ThinkingConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ThinkingConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:126:37 Class 'com.google.ai.edge.litertlm.SamplerConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/SamplerConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:127:48 Unresolved reference 'coerceIn'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:131:20 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:133:9 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:133:22 Unresolved reference 'to'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:133:25 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.MessageCallback' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/MessageCallback.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.RepetitionPenaltyConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/RepetitionPenaltyConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.NoRepeatNgramConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/NoRepeatNgramConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.SuppressTokensConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/SuppressTokensConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.ThinkingConfig' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ThinkingConfig.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.ResponseFormat' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/ResponseFormat.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:13 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:135:52 Class 'com.google.ai.edge.litertlm.MessageCallback' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/MessageCallback.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:136:49 Class 'com.google.ai.edge.litertlm.Message' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Message.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:138:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:138:86 Class 'com.google.ai.edge.litertlm.Message' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Message.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:138:86 Class 'com.google.ai.edge.litertlm.Message' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Message.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:141:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:143:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:143:21 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:143:32 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:146:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:147:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:147:21 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:147:32 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:151:13 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:152:13 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:152:13 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:152:24 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:156:42 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:157:9 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:158:17 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:158:39 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:159:13 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:159:25 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:159:27 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:159:27 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:159:27 Class 'com.google.ai.edge.litertlm.Conversation' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/8.14.3/transforms/38ab0a2c48ebfba19440ec7de7d638d2/transformed/litertlm-android-0.18.0-api.jar!/com/google/ai/edge/litertlm/Conversation.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:180:24 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/LlmBridge.kt:184:20 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:31:29 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:35:41 Unresolved reference 'any'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:35:47 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:36:13 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:36:25 Unresolved reference 'let'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:36:31 Cannot infer type for implicit value parameter 'it'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:36:31 Destructuring of type 'ERROR CLASS: Cannot infer type for parameter <destruct>' requires operator function 'component1()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:36:31 Destructuring of type 'ERROR CLASS: Cannot infer type for parameter <destruct>' requires operator function 'component2()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:37:13 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:42:30 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:42:55 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:47:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:48:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:49:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:50:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:53:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:54:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:56:13 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:60:22 Unresolved reference 'apply'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:60:28 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:61:13 Unresolved reference 'javaScriptEnabled'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:62:13 Unresolved reference 'domStorageEnabled'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:63:13 Unresolved reference 'setGeolocationEnabled'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:64:13 Unresolved reference 'mediaPlaybackRequiresUserGesture'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:65:13 Unresolved reference 'userAgentString'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:65:33 Unresolved reference 'userAgentString'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:71:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:73:21 Class 'kotlin.Pair' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Pair.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:73:41 Unresolved reference 'to'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:74:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:83:17 Unresolved reference 'runCatching'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:83:29 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:83:31 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:88:38 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:89:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:91:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:94:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:95:58 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:95:76 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:100:83 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:104:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:109:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:111:82 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:115:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:116:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/MainActivity.kt:117:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:23:76 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:25:25 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:25:40 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:28:85 Unresolved reference 'apply'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:28:93 Unresolved reference 'mkdirs'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:30:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:32:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:33:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:34:6 Class 'kotlin.jvm.Volatile' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/jvm/Volatile.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:36:12 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:38:47 Unresolved reference 'firstOrNull'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:38:61 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:38:74 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:38:107 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:46:62 Unresolved reference 'use'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:46:68 Cannot infer type for value parameter 'c'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:47:19 Unresolved reference 'moveToFirst'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:48:17 'return' is prohibited here.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:49:37 Unresolved reference 'getLong'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:49:47 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:50:22 Unresolved reference 'put'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:50:37 Unresolved reference 'getLong'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:50:47 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:51:38 Unresolved reference 'getInt'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:51:47 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:61:9 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:74:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:75:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:76:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:80:17 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:89:48 Unresolved reference 'bufferedReader'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:26 Unresolved reference 'getJSONArray'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:57 Cannot infer type for value parameter 'a'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:65 Unresolved reference 'until'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:73 Unresolved reference 'length'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:91 Unresolved reference 'getJSONObject'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:90:105 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:92:41 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:92:70 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:93:26 Class 'kotlin.text.Regex' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/text/Regex.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:93:26 Class 'kotlin.text.RegexOption' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/text/RegexOption.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:93:26 Class 'kotlin.text.Regex' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/text/Regex.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:93:80 Class 'kotlin.text.RegexOption' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/text/RegexOption.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:93:121 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:94:41 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:100:38 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:100:53 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:106:66 Unresolved reference 'use'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:106:72 Cannot infer type for value parameter 'c'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:107:23 Unresolved reference 'moveToFirst'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:108:32 Unresolved reference 'getInt'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:108:41 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:109:32 Unresolved reference 'getInt'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:109:41 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:117:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:118:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:122:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:124:21 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:126:27 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:126:39 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:135:9 Class 'kotlin.coroutines.CoroutineContext' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/coroutines/CoroutineContext.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:137:36 Destructuring of type 'uninferred ERROR CLASS: Cannot infer argument for type parameter K' requires operator function 'component1()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:137:36 Destructuring of type 'uninferred ERROR CLASS: Cannot infer argument for type parameter K' requires operator function 'component2()'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:137:96 Unresolved reference 'use'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:137:102 Cannot infer type for value parameter 'c'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:138:23 Unresolved reference 'moveToFirst'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:139:31 Unresolved reference 'getString'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:139:43 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:140:31 Unresolved reference 'getLong'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:140:41 Unresolved reference 'getColumnIndexOrThrow'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:142:40 Unresolved reference 'to'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:144:66 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:146:64 Unresolved reference 'use'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:146:70 Cannot infer type for value parameter 'input'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:147:25 Unresolved reference 'outputStream'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:147:46 Cannot infer type for value parameter 'out'. Specify it explicitly.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:151:43 Unresolved reference 'read'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:152:33 Unresolved reference 'write'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:153:92 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:157:34 Unresolved reference 'filter'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:157:43 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:157:86 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:162:34 Unresolved reference 'filter'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:162:43 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:162:82 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:164:34 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:170:42 Unresolved reference 'takeIf'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:170:51 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:170:78 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:171:9 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:172:26 Unresolved reference 'forEach'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:172:36 Unresolved reference 'it'.
+e: file:///home/runner/work/Tour-guide/Tour-guide/android/app/src/main/java/uk/co/roboverse/tourguide/ModelStore.kt:176:19 Class 'kotlin.Unit' was compiled with an incompatible version of Kotlin. The actual metadata version is 2.4.0, but the compiler version 2.2.0 can read versions up to 2.3.0.
+The class is loaded from /home/runner/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.0/4e9f4b531dce5c7dee58ed2de9a8b9a763c8dc6c/kotlin-stdlib-2.4.0.jar!/kotlin/Unit.class
+
+> Task :app:compileReleaseKotlin FAILED
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run-1791736933730.json
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileReleaseKotlin'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+	at org.gradle.workers.internal.DefaultWorkerExecutor$WorkItemExecution.waitForCompletion(DefaultWorkerExecutor.java:287)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.lambda$waitForItemsAndGatherFailures$2(DefaultAsyncWorkTracker.java:130)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:335)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLocks(DefaultWorkerLeaseService.java:318)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withoutLock(DefaultWorkerLeaseService.java:323)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:126)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForItemsAndGatherFailures(DefaultAsyncWorkTracker.java:92)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForAll(DefaultAsyncWorkTracker.java:78)
+	at org.gradle.internal.work.DefaultAsyncWorkTracker.waitForCompletion(DefaultAsyncWorkTracker.java:66)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:252)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:30)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:27)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:48)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:229)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:212)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:195)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:162)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:50)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:28)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:61)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:26)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:189)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:75)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:73)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:48)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:107)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:56)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilation error. See log for more details
+	at org.jetbrains.kotlin.gradle.tasks.TasksUtilsKt.throwExceptionIfCompilationFailed(tasksUtils.kt:21)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.run(GradleKotlinCompilerWork.kt:119)
+	at org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction.execute(GradleCompilerRunnerWithWorkers.kt:74)
+	at org.gradle.workers.internal.DefaultWorkerServer.execute(DefaultWorkerServer.java:63)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:66)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1$1.create(NoIsolationWorkerFactory.java:62)
+	at org.gradle.internal.classloader.ClassLoaderUtils.executeInClassloader(ClassLoaderUtils.java:100)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.lambda$execute$0(NoIsolationWorkerFactory.java:62)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:44)
+	at org.gradle.workers.internal.AbstractWorker$1.call(AbstractWorker.java:41)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:210)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:205)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:67)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:167)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:60)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:54)
+	at org.gradle.workers.internal.AbstractWorker.executeWrappedInBuildOperation(AbstractWorker.java:41)
+	at org.gradle.workers.internal.NoIsolationWorkerFactory$1.execute(NoIsolationWorkerFactory.java:59)
+	at org.gradle.workers.internal.DefaultWorkerExecutor.lambda$submitWork$0(DefaultWorkerExecutor.java:174)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runExecution(DefaultConditionalExecutionQueue.java:194)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.access$700(DefaultConditionalExecutionQueue.java:127)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner$1.run(DefaultConditionalExecutionQueue.java:169)
+	at org.gradle.internal.Factories$1.create(Factories.java:31)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:132)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.runBatch(DefaultConditionalExecutionQueue.java:164)
+	at org.gradle.internal.work.DefaultConditionalExecutionQueue$ExecutionRunner.run(DefaultConditionalExecutionQueue.java:133)
+	... 2 more
+
+
+BUILD FAILED in 58s
+37 actionable tasks: 37 executed
