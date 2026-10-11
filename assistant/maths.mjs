@@ -91,13 +91,16 @@ export function yearsAgo(t, nowYear) {
 // things (e.g. later alterations) that are compared with them and named, but not given full detail.
 // compare: optional explicit list of [thingId, thingId] pairs instead of the default.
 // named: people the question itself names (they get a full summary); others only appear through linked things.
-export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, nowYear = new Date().getFullYear() } = {}) {
+// detail: 'full' for questions about dates and order; 'light' (who made it, who someone was, life span only)
+// for other questions, so the model isn't handed a page of dates it then recites.
+export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, detail = 'full', nowYear = new Date().getFullYear() } = {}) {
   const byId = (id) => dates.things.find(t => t.id === id);
   const T = things.map(byId).filter(Boolean), R = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
-  for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p));
+  for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p).slice(0, detail === 'light' ? 2 : undefined));
   for (const t of [...T, ...R]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
+  if (detail === 'light') return lines;
   if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
   else {
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);

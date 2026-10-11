@@ -62,4 +62,13 @@ ok('"he" after a question about a person stays with that person even at another 
   const r = s.prompt('When did he die?', { stopId: 'orangery' });
   assert.equal(r.about, 'previous'); assert.ok(r.facts.some(f => /Brown.*died 1783/.test(f)));
 });
+ok('a question that is not about dates gets light facts', () => {
+  const s = createSession({ sections: secs, dates, tour, nowYear: 2026 });
+  const r = s.prompt('Who is Capability Brown?', { stopId: 'cbcol' });
+  assert.ok(r.facts.length <= 5, `${r.facts.length} facts`);
+  assert.equal(r.picked[0], 'Lancelot "Capability" Brown'); assert.ok(r.picked.includes('The boundary canals ("the river")'));
+  assert.ok(!r.facts.some(f => /rulers were|years ago|WHILE|BEFORE|AFTER/.test(f)));
+  const d = s.prompt('When did he become Master Gardener?', { stopId: 'cbcol' });
+  assert.ok(d.facts.some(f => /1764, aged about 47/.test(f)));
+});
 console.log(`\n${n} passed`);

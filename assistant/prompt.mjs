@@ -3,11 +3,16 @@
 import { calculatedFacts, mentions, expand } from './maths.mjs';
 import { rank } from './retrieve.mjs';
 
-export const RULES = `You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words, in British English, written to be read aloud (no lists).
+export const RULES = `You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words of plain British English prose (no lists).
+- Answer the question directly, then add the most interesting detail from the NOTES, ideally something to do with WHERE WE ARE.
 - WHERE WE ARE says where the family is standing. "This", "here" or "it" usually means that place.
-- For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself.
+- For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself. Only give dates that help the answer.
+- Write years and numbers as digits, for example 1716.
 - For anything else about Wrest Park, use the NOTES.
 - If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.`;
+
+// Questions about dates, order, ages or rulers get the full date facts; others get only who-made-it and life spans.
+const DATE_QUESTION = /\b(when|what year|which year|years?|before|after|during|how long|how old|age|aged|century|centuries|ago|older|oldest|newer|first|last|reign|reigned|king|queen|monarch|throne|dates?|period|same time)\b/i;
 
 // Write dates out in full for the model: "1834–39" -> "1834–1839", "c.1835" -> "about 1835".
 export function plainDates(text) {
@@ -48,7 +53,8 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
     else if (hereM) { m = hereM; about = 'here'; }
     else if (lastM) { m = lastM; about = 'previous'; }
   }
-  // Notes: the text about where we are first, then the best matches for the question.
+  // Notes: when the question names its own subject, the best match for it first, then where we are, then the rest;
+  // otherwise where we are first.
   const boost = new Map();
   for (const id of hereM ? hereM.things : []) boost.set(id, 2);
   for (const id of [...m.related, ...m.people]) boost.set(id, Math.max(boost.get(id) || 0, 1));
@@ -57,7 +63,8 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   const query = about === 'previous' ? `${question} ${last}` : question;
   const hereNote = here ? (here.section || here.tourText) : null;
   const ranked = rank(sections, query, { boost }).filter(s => s.score > 0 && s.title !== hereNote?.title);
-  const picked = [...(hereNote ? [hereNote] : []), ...ranked].slice(0, topK);
+  const order = about === 'question' && ranked.length ? [ranked[0], hereNote, ...ranked.slice(1)] : [hereNote, ...ranked];
+  const picked = order.filter(Boolean).slice(0, topK);
   // Facts: what the question is about, plus the things where we are (so "was this built before the house?" works).
   const uniq = (a) => [...new Set(a)];
   const facts = calculatedFacts(dates, {
@@ -65,6 +72,7 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
     related: m.related,
     people: uniq([...m.people, ...(hereM ? hereM.people : [])]),
     named: m.named,
+    detail: DATE_QUESTION.test(question) ? 'full' : 'light',
     nowYear,
   });
   const nameOf = (id) => (dates.things.find(t => t.id === id) || dates.people.find(p => p.id === id))?.name;
