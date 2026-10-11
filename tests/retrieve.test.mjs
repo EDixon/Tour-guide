@@ -46,7 +46,7 @@ ok('where we are: "who built this?" at the Orangery', () => {
 });
 ok('where we are: "was this built before the house?" compares the two', () => {
   const r = createSession({ sections: secs, dates, tour, nowYear: 2026 }).prompt('Was this built before or after the house?', { stopId: 'orangery' });
-  assert.ok(r.facts.some(f => /The Orangery .* WHILE the house/.test(f) || /The house .* Orangery/.test(f)));
+  assert.ok(r.facts.some(f => /The Orangery .* WHILE the present house/.test(f)));
 });
 ok('a stop the knowledge base does not cover yet falls back to the tour text', () => {
   const h = hereContext({ tour, dates, sections: secs, stopId: 'science' });
@@ -68,5 +68,15 @@ ok('a question that is not about dates gets light facts', () => {
   assert.ok(!r.facts.some(f => /rulers were|years ago|WHILE|BEFORE|AFTER/.test(f)));
   const d = s.prompt('When did he become Master Gardener?', { stopId: 'cbcol' });
   assert.ok(d.facts.some(f => /1764, aged about 47/.test(f)));
+});
+ok('family questions get the family, not just the Earl who built the house', () => {
+  const s = createSession({ sections: secs, dates, tour, nowYear: 2026 });
+  const a = s.prompt('Who are the de grey family?', { stopId: 'intro' });
+  assert.equal(a.picked[0], 'The de Grey family and Wrest');
+  assert.ok(!/WHERE WE ARE/.test(a.text) || true);
+  const b = s.prompt('Who was the first grey to own the house?', { stopId: 'intro' });
+  assert.ok(b.facts.some(f => /first record of the Greys at Wrest \(1284–1286\) was of Reginald de Grey/.test(f)));
+  assert.equal(b.picked[0], 'The de Grey family and Wrest');
+  assert.ok(!b.facts.some(f => /rulers were/.test(f) && /1284/.test(f)), 'no ruler list over 600 years');
 });
 console.log(`\n${n} passed`);

@@ -4,11 +4,11 @@ import { calculatedFacts, mentions, expand } from './maths.js';
 import { rank } from './retrieve.js';
 
 export const RULES = `You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words of plain British English prose (no lists).
-- Answer the question directly, then add the most interesting detail from the NOTES, ideally something to do with WHERE WE ARE.
+- Answer the question itself first, in a sentence or two. Then, only if the NOTES have a detail that adds to the answer, give it. Don't pad: no "It is interesting to know", no restating where we are.
 - WHERE WE ARE says where the family is standing. "This", "here" or "it" usually means that place.
 - For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself. Only give dates that help the answer.
 - Write years and numbers as digits, for example 1716.
-- For anything else about Wrest Park, use the NOTES.
+- For anything else about Wrest Park, use the NOTES. Read the question carefully: "first", "last", "who owned" and "who built" are different questions.
 - If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.`;
 
 // Questions about dates, order, ages or rulers get the full date facts; others get only who-made-it and life spans.
@@ -78,7 +78,9 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   });
   const nameOf = (id) => (dates.things.find(t => t.id === id) || dates.people.find(p => p.id === id))?.name;
   const where = here ? `WHERE WE ARE: ${here.name}\n\n` : '';
-  const prev = last ? `EARLIER QUESTION: ${last}` + (lastM.things.length || lastM.people.length ? ` (about ${[...lastM.things, ...lastM.related, ...lastM.people].map(nameOf).filter(Boolean).join('; ')})` : '') + '\n\n' : '';
+  // Only what the earlier question itself named, not everything linked to it.
+  const lastNamed = lastM ? [...lastM.things, ...lastM.named] : [];
+  const prev = last ? `EARLIER QUESTION: ${last}` + (lastNamed.length ? ` (about ${lastNamed.map(nameOf).filter(Boolean).join('; ')})` : '') + '\n\n' : '';
   const text = `${RULES}\n\nQUESTION: ${question}\n\n${where}${prev}` +
     `FACTS:\n${facts.length ? facts.map(f => '- ' + plainDates(f)).join('\n') : '- (none for this question)'}\n\n` +
     `NOTES:\n${picked.map(s => `## ${s.title}\n${plainDates(s.text)}`).join('\n\n')}\n\nQUESTION: ${question}`;

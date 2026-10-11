@@ -1,6 +1,6 @@
 # Wrest Park notes
 
-So far a sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), and the people and background they draw on. Each section is one retrievable chunk. `About:` lists the dated things and people (ids in the dates file) a section covers, so naming one brings its sections in. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `dates.json` alongside, which the app uses for all date arithmetic. Format: docs/KNOWLEDGE_FORMAT.md.
+So far a sample of the knowledge base, at the depth planned for every stop. It covers three stops (Orangery, Archer Pavilion, Statue of William III), the boundary canals ("the river"), the family who owned Wrest, and the people and background they draw on. Each section is one retrievable chunk. `About:` lists the dated things and people (ids in the dates file) a section covers, so naming one brings its sections in. `Sources:` lines are kept for checking and are stripped before the text is given to the model. Dates live in `dates.json` alongside, which the app uses for all date arithmetic. Format: docs/KNOWLEDGE_FORMAT.md.
 
 ## The Orangery
 Kind: site
@@ -137,3 +137,15 @@ Kind: person
 About: jemima, bath-house
 Jemima Campbell (1723–97) was the Duke of Kent's granddaughter and heir, the daughter of his daughter Amabel and John Campbell, later Earl of Breadalbane. She inherited Wrest when the Duke died in 1740, and that year married Philip Yorke, son of the Lord Chancellor, Lord Hardwicke; Philip became the 2nd Earl of Hardwicke in 1764. Both were keen on the gardens. Jemima kept her grandfather's formal garden but softened its edges with Capability Brown and added garden buildings: the Bath House, a Chinese temple and bridge, and an altar. Wrest later passed to her daughter Amabel, and then to Amabel's nephew, the 2nd Earl de Grey.
 Sources: Historic England list entry 1113790; English Heritage, History of Wrest Park; general knowledge.
+
+## The de Grey family and Wrest
+Kind: site
+About: grey-family, grey-first-record, kent-earldom, wrest-sale, edmund-grey, amabel-de-grey, lord-lucas
+The Greys and their heirs held Wrest almost continuously for more than 600 years, from the Middle Ages until it was put up for sale in 1917. The first record is of Reginald de Grey, 1st Baron Grey de Wilton, who held land in Flitton and Silsoe in 1284–1286. The papers made at his death list a "capital messuage with a dovecote", a main house, which is thought to be the beginning of the house at Wrest.
+
+In 1465 Edward IV made Edmund Grey Earl of Kent. Edmund had changed to the Yorkist side at the Battle of Northampton in 1460 and became Edward's Lord Treasurer. His descendants were Earls of Kent for almost 300 years. Richard, the 3rd Earl, lost the estate through debt in the early 1500s; his half-brother Henry, the 4th Earl, bought it back.
+
+In the 1680s Anthony, the 11th Earl, his wife Mary, Baroness Lucas, and his mother Amabel made the Long Water. Their son Henry became Duke of Kent in 1710 and made the great formal garden. When he died in 1740 his Kent titles died with him, and Wrest passed to his granddaughter Jemima, Marchioness Grey. Her daughter Amabel, made Countess de Grey in 1816, left it in 1833 to her nephew Thomas, 2nd Earl de Grey, who pulled down the old house and built the present one in 1834–1839.
+
+After Thomas, Wrest passed to his daughter Anne Florence, Countess Cowper, then to her son Francis, 7th Earl Cowper, and then to his nephew Auberon Herbert, 9th Baron Lucas, who let it to the American ambassador Whitelaw Reid from 1905. Lucas, a Royal Flying Corps pilot, was shot down near Bapaume in November 1916. His sister Nan, who had run the wartime hospital in the house, put Wrest up for auction in 1917. It was bought by John Murray, a businessman in brewing and coal, ending more than six centuries of family ownership.
+Sources: Wikipedia, Wrest Park; Wikipedia, Earl of Kent; Wikipedia, Amabel Hume-Campbell, 1st Countess de Grey; Wikipedia, Auberon Herbert, 9th Baron Lucas; English Heritage, History of Wrest Park and Wrest Park at War.

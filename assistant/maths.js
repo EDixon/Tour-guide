@@ -95,16 +95,22 @@ export function yearsAgo(t, nowYear) {
 // for other questions, so the model isn't handed a page of dates it then recites.
 export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, detail = 'full', nowYear = new Date().getFullYear() } = {}) {
   const byId = (id) => dates.things.find(t => t.id === id);
-  const T = things.map(byId).filter(Boolean), R = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
+  // Things spanning centuries (a family's ownership) only get their who-line: comparisons, rulers and
+  // ages over such spans are noise.
+  const LONG = 100, short = (t) => (t.to ?? t.from) - t.from <= LONG;
+  const Tall = things.map(byId).filter(Boolean), Rall = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
+  const T = Tall.filter(short), R = Rall.filter(short);
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
   for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p).slice(0, detail === 'light' ? 2 : undefined));
-  for (const t of [...T, ...R]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
+  for (const t of [...Tall, ...Rall]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
   if (detail === 'light') return lines;
+  // Comparisons only between things within 150 years of each other; "548 years later" helps nobody.
+  const near = (a, b) => Math.max(a.from, b.from) - Math.min(a.to ?? a.from, b.to ?? b.from) <= 150;
   if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
   else {
-    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);
-    for (const t of T) for (const r of R) lines.push(compare(r, t).text);
+    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) if (near(T[i], T[j])) lines.push(compare(T[i], T[j]).text);
+    for (const t of T) for (const r of R) if (near(t, r)) lines.push(compare(r, t).text);
   }
   for (const t of T) { const r = rulersDuring(t, dates.rulers); if (r) lines.push(r); }
   // Ages and 'after their death' only for people linked to the thing (builder, owner, subject) or explicitly paired.

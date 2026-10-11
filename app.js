@@ -891,7 +891,7 @@ function ensureKnowledge() {
 // Where the family is, for "this" and "here": the stop you're at, or the nearest outdoor stop within 60 m by GPS,
 // or the stop you've just left.
 function whereForAsk() {
-  if (state.phase === 'stop' && state.at) return state.at;
+  if (state.phase === 'stop' && state.at && !['intro', 'facility'].includes(stop(state.at)?.kind)) return state.at;
   const g = gpsFresh();
   if (g) {
     let best = null, bd = Infinity;
