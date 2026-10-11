@@ -1,5 +1,5 @@
 // Offline cache: everything the app needs is cached on first visit; afterwards it runs with no signal.
-const VERSION = 'tg-v4';
+const VERSION = 'tg-v5';
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',
@@ -14,7 +14,10 @@ self.addEventListener('activate', (e) => {
 });
 // Cache first (works offline); refresh the cache in the background when online.
 self.addEventListener('fetch', (e) => {
-  if (e.request.method !== 'GET' || new URL(e.request.url).origin !== location.origin) return;
+  const url = new URL(e.request.url);
+  if (e.request.method !== 'GET' || url.origin !== location.origin) return;
+  // The assistant test needs the network anyway, so always fetch its latest version.
+  if (/\/lab\.(html|js)$/.test(url.pathname)) return;
   e.respondWith(caches.open(VERSION).then(async (cache) => {
     const hit = await cache.match(e.request, { ignoreSearch: true });
     const net = fetch(e.request).then(r => { if (r.ok) cache.put(e.request, r.clone()); return r; }).catch(() => null);

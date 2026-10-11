@@ -46,6 +46,7 @@ async function checkDevice() {
 // ---------------------------------------------------------------- 2. models
 const RECOMMENDED = [
   /^Llama-3\.2-1B-Instruct-q4f(16|32)_1-MLC$/,
+  /^Qwen3-0\.6B-q4f(16|32)_1-MLC$/,
   /^Qwen3-1\.7B-q4f(16|32)_1-MLC$/,
   /^Qwen2\.5-1\.5B-Instruct-q4f(16|32)_1-MLC$/,
   /^Llama-3\.2-3B-Instruct-q4f(16|32)_1-MLC$/,
@@ -66,47 +67,102 @@ function listModels(showAll) {
   const list = showAll ? [...rec, ...all.filter(m => !rec.includes(m)).sort((a, b) => (a.vram_required_MB || 0) - (b.vram_required_MB || 0))] : rec;
   models = list;
   $('#models').innerHTML = list.length ? list.map((m, i) => `
-    <label class="model"><input type="checkbox" value="${esc(m.model_id)}" ${rec.includes(m) && i < 2 ? 'checked' : ''}>
+    <label class="model"><input type="checkbox" value="${esc(m.model_id)}" ${rec.includes(m) && i < 1 ? 'checked' : ''}>
       <span>${esc(m.model_id)} ${rec.includes(m) ? '<span class="rec">recommended</span>' : ''}
       <small>≈ ${m.vram_required_MB ? (m.vram_required_MB / 1024).toFixed(1) + ' GB memory' : 'size not listed'}${m.low_resource_required ? ' · suits phones' : ''}</small></span></label>`).join('')
     : '<p class="muted">No models found. Is the network on?</p>';
 }
 
-// ---------------------------------------------------------------- 3. prompt like the real feature
+// ---------------------------------------------------------------- 3. prompts like the real feature
+// Test 2 showed the time goes on reading the notes (prefill), not writing the answer. So this test measures:
+//  A. a short, retrieved context (~300 tokens), cold;
+//  B. follow-up questions in the same chat, where the notes are already loaded (what a background pre-load would give);
+//  C. a medium context (~900 tokens), cold, to see how reading time scales.
 const REIGNS = [
   ['Charles II', 1660, 1685], ['James II', 1685, 1688], ['William III (jointly with Mary II until 1694)', 1689, 1702], ['Anne', 1702, 1714],
   ['George I', 1714, 1727], ['George II', 1727, 1760], ['George III', 1760, 1820], ['George IV', 1820, 1830], ['William IV', 1830, 1837],
   ['Victoria', 1837, 1901], ['Edward VII', 1901, 1910], ['George V', 1910, 1936],
 ];
-const QUESTIONS = [
+const RULES = 'You are a friendly guide for a family visiting Wrest Park. Answer using ONLY the notes below. ' +
+  'If the notes do not contain the answer, reply exactly: "Sorry, that isn\'t in my notes." Use British English. Answer in under 60 words.';
+let CTX_SHORT = '', CTX_MED = '';
+const SHORT_QS = [
   'Was the orangery built before or after the house?',
   'When was William III king, and why is there a statue of him here?',
-  'What is trompe-l’œil, and where can we see it here?',
   'Who won the 1966 football World Cup?', // not in the notes: should say so
 ];
-let SYSTEM = '';
+const MED_Q = 'What is trompe-l’œil, and where can we see it here?';
+const tokEst = (t) => Math.round(t.split(/\s+/).length * 1.35);
+
 async function buildContext() {
   const tour = await (await fetch('tours/wrest-park.json')).json();
   const S = Object.fromEntries(tour.stops.map(s => [s.id, s]));
-  const facts = [
-    'The house: built 1834–39 for Thomas, 2nd Earl de Grey, who designed it himself.',
-    'The Orangery: built c.1835, also designed by Earl de Grey.',
-    'Comparison: the Orangery (c.1835) was built while the house was being built (1834–39).',
-    'The Archer Pavilion: built 1709–11 by Thomas Archer for Henry Grey, Duke of Kent.',
-    'Statue of William III: lead, 1730s, by John Cheere.',
-  ];
-  const pick = ['terrace', 'orangery', 'william', 'pavilion', 'staircase', 'oldhouse', 'bathhouse', 'longwater', 'parterre', 'conservatory', 'whh', 'chinese'];
-  const notes = pick.filter(id => S[id]).map(id => `## ${S[id].name} (${S[id].dateLabel || S[id].date})\n` + S[id].bullets.map(b => '- ' + b.t).join('\n')).join('\n\n');
-  SYSTEM = 'You are a friendly guide for a family visiting Wrest Park. Answer the question using ONLY the FACTS, REIGNS and NOTES below. ' +
-    'If they do not contain the answer, reply exactly: "Sorry, that isn\'t in my notes." Use British English. Keep answers under 80 words.\n\n' +
-    'FACTS:\n' + facts.map(f => '- ' + f).join('\n') + '\n\nREIGNS (British monarchs):\n' + REIGNS.map(([n, a, b]) => `- ${n}: ${a}–${b}`).join('\n') +
-    '\n\nNOTES:\n' + notes;
-  const words = SYSTEM.split(/\s+/).length;
-  $('#ctxwords').textContent = words.toLocaleString('en-GB');
-  log.push(`Context: ${words} words`);
+  const notes = (ids) => ids.filter(id => S[id]).map(id => `## ${S[id].name} (${S[id].dateLabel || S[id].date})\n` + S[id].bullets.map(b => '- ' + b.t).join('\n')).join('\n\n');
+  CTX_SHORT = RULES + '\n\nNOTES:\n' + [
+    '- The house: built 1834–39 for Thomas, 2nd Earl de Grey, who designed it himself.',
+    '- The Orangery: built c.1835, while the house was being built (1834–39).',
+    '- William III reigned 1689–1702 (jointly with Mary II until 1694).',
+  ].join('\n') + '\n\n' + notes(['orangery', 'william']);
+  CTX_MED = RULES + '\n\nREIGNS:\n' + REIGNS.map(([n, a, b]) => `- ${n}: ${a}–${b}`).join('\n') + '\n\nNOTES:\n' + notes(['pavilion', 'staircase', 'terrace']);
+  $('#ctxwords').textContent = `about ${tokEst(CTX_SHORT)} and ${tokEst(CTX_MED)} tokens`;
+  log.push(`Test 3 · contexts ≈ ${tokEst(CTX_SHORT)} and ${tokEst(CTX_MED)} tokens`);
 }
 
 // ---------------------------------------------------------------- run
+async function loadWithRetry(engineRef, id, cb, status) {
+  let lastErr = null;
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    try {
+      if (!engineRef.e) engineRef.e = await webllm.CreateMLCEngine(id, { initProgressCallback: cb });
+      else { engineRef.e.setInitProgressCallback?.(cb); await engineRef.e.reload(id); }
+      return attempt;
+    } catch (e) {
+      lastErr = e;
+      if (!/network|fetch|Cache|Failed to fetch|load/i.test(e.message || '')) break;
+      status.textContent = `Download hiccup (${e.message}). Retrying (${attempt}/3)…`;
+      log.push(`(load attempt ${attempt} failed: ${e.message})`);
+      await new Promise(r => setTimeout(r, 3000));
+    }
+  }
+  throw lastErr;
+}
+
+async function ask(engine, sect, label, messages, isQwen3) {
+  const box = document.createElement('div');
+  box.className = 'answer';
+  const q = messages[messages.length - 1].content;
+  box.innerHTML = `<div class="q">${esc(label)}: ${esc(q)}</div><div class="a">…</div><div class="t"></div>`;
+  sect.appendChild(box);
+  const msgs = messages.map(m => (isQwen3 && m.role === 'user') ? { ...m, content: m.content + ' /no_think' } : m);
+  const tq = performance.now();
+  let first = null, raw = '', usage = null, finish = null;
+  try {
+    const stream = await engine.chat.completions.create({
+      messages: msgs, temperature: 0.2, max_tokens: 200, stream: true, stream_options: { include_usage: true },
+    });
+    for await (const chunk of stream) {
+      const d = chunk.choices?.[0]?.delta?.content || '';
+      if (d && first == null) first = performance.now();
+      raw += d;
+      if (chunk.choices?.[0]?.finish_reason) finish = chunk.choices[0].finish_reason;
+      if (chunk.usage) usage = chunk.usage;
+      box.querySelector('.a').textContent = raw.replace(/<think>[\s\S]*?<\/think>/g, '').trim() || '…';
+    }
+  } catch (e) {
+    box.querySelector('.a').textContent = 'Error: ' + e.message;
+    log.push(`${label}: ${q}\nERROR: ${e.message}`);
+    return null;
+  }
+  const end = performance.now();
+  const ttft = ((first ?? end) - tq) / 1000, total = (end - tq) / 1000;
+  const x = usage?.extra || {};
+  const r = { raw, finish, ttft, total, inTok: usage?.prompt_tokens, outTok: usage?.completion_tokens, prefill: x.prefill_tokens_per_s, decode: x.decode_tokens_per_s };
+  const shown = raw.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
+  box.querySelector('.t').textContent = `First words after ${ttft.toFixed(1)} s · done in ${total.toFixed(1)} s · read ${r.inTok ?? '?'} tokens`;
+  log.push(`${label}: ${q}\nA: ${shown}\n(first words ${ttft.toFixed(1)} s, total ${total.toFixed(1)} s, read ${r.inTok ?? '?'} tok at ${r.prefill ? r.prefill.toFixed(0) : '?'} tok/s, wrote ${r.outTok ?? '?'} tok at ${r.decode ? r.decode.toFixed(1) : '?'} tok/s, end: ${finish})`);
+  return r;
+}
+
 async function runTest() {
   const chosen = [...document.querySelectorAll('#models input:checked')].map(i => i.value);
   if (!chosen.length) return toast('Pick at least one model.');
@@ -114,8 +170,9 @@ async function runTest() {
   try { wake = await navigator.wakeLock?.request('screen'); } catch (e) { /* ignore */ }
   $('#run').disabled = true;
   const out = $('#results');
-  let engine = null;
+  const ref = { e: null };
   for (const id of chosen) {
+    const isQwen3 = /^Qwen3/i.test(id);
     const sect = document.createElement('div');
     sect.innerHTML = `<h3>${esc(id)}</h3><div class="t">Downloading / loading…</div><progress max="1" value="0"></progress>`;
     out.appendChild(sect);
@@ -123,59 +180,44 @@ async function runTest() {
     const t0 = performance.now();
     try {
       const cb = (p) => { bar.value = p.progress ?? 0; status.textContent = p.text || ''; };
-      if (!engine) engine = await webllm.CreateMLCEngine(id, { initProgressCallback: cb });
-      else { engine.setInitProgressCallback?.(cb); await engine.reload(id); }
+      await loadWithRetry(ref, id, cb, status);
     } catch (e) {
       status.textContent = 'Failed to load: ' + e.message;
       log.push(`\n## ${id}\nFAILED to load: ${e.message}`);
       continue;
     }
+    const engine = ref.e;
     const loadS = (performance.now() - t0) / 1000;
     bar.remove();
     status.textContent = `Loaded in ${loadS.toFixed(0)} s (includes download the first time).`;
     log.push(`\n## ${id}\nLoad: ${loadS.toFixed(1)} s`);
-    const stats = [];
-    for (const q of QUESTIONS) {
-      const box = document.createElement('div');
-      box.className = 'answer';
-      box.innerHTML = `<div class="q">${esc(q)}</div><div class="a">…</div><div class="t"></div>`;
-      sect.appendChild(box);
-      const userMsg = /^Qwen3/i.test(id) ? q + ' /no_think' : q;
-      const tq = performance.now();
-      let first = null, text = '', usage = null;
-      try {
-        const stream = await engine.chat.completions.create({
-          messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: userMsg }],
-          temperature: 0.2, max_tokens: 160, stream: true, stream_options: { include_usage: true },
-        });
-        for await (const chunk of stream) {
-          const d = chunk.choices?.[0]?.delta?.content || '';
-          if (d && first == null) first = performance.now();
-          text += d;
-          if (chunk.usage) usage = chunk.usage;
-          box.querySelector('.a').textContent = text.replace(/<think>[\s\S]*?<\/think>/g, '').trim() || '…';
-        }
-      } catch (e) {
-        box.querySelector('.a').textContent = 'Error: ' + e.message;
-        log.push(`Q: ${q}\nERROR: ${e.message}`);
-        continue;
-      }
-      const end = performance.now();
-      const ttft = ((first ?? end) - tq) / 1000, total = (end - tq) / 1000;
-      const outTok = usage?.completion_tokens ?? Math.round(text.split(/\s+/).length * 1.3);
-      const inTok = usage?.prompt_tokens;
-      const decode = first && end > first ? (outTok - 1) / ((end - first) / 1000) : null;
-      const prefill = inTok && ttft ? inTok / ttft : null;
-      stats.push({ ttft, total, decode, prefill });
-      box.querySelector('.t').textContent = `First words after ${ttft.toFixed(1)} s · ${decode ? (decode / 1.3).toFixed(1) + ' words/s' : ''} · done in ${total.toFixed(1)} s`;
-      log.push(`Q: ${q}\nA: ${text.replace(/<think>[\s\S]*?<\/think>/g, '').trim()}\n(first words ${ttft.toFixed(1)} s, total ${total.toFixed(1)} s, prompt ${inTok ?? '?'} tokens, prefill ${prefill ? prefill.toFixed(0) : '?'} tok/s, decode ${decode ? decode.toFixed(1) : '?'} tok/s)`);
+
+    // Warm-up (first run compiles GPU code)
+    const w = await ask(engine, sect, 'Warm-up', [{ role: 'system', content: 'Be brief.' }, { role: 'user', content: 'Say hello in three words.' }], isQwen3);
+
+    // A + B: short context, then follow-ups in the same chat (notes already loaded)
+    const history = [{ role: 'system', content: CTX_SHORT }];
+    const res = [];
+    for (let i = 0; i < SHORT_QS.length; i++) {
+      history.push({ role: 'user', content: SHORT_QS[i] });
+      const r = await ask(engine, sect, i === 0 ? 'A (short notes, cold)' : `B${i} (notes already loaded)`, history, isQwen3);
+      if (!r) break;
+      res.push(r);
+      // Keep the model's exact reply so the next question continues the same chat and reuses what it has read
+      history.push({ role: 'assistant', content: r.raw });
     }
-    if (stats.length) {
-      const avg = (k) => stats.filter(s => s[k] != null).reduce((n, s) => n + s[k], 0) / Math.max(1, stats.filter(s => s[k] != null).length);
-      const sum = `Average: first words after ${avg('ttft').toFixed(1)} s, answer done in ${avg('total').toFixed(1)} s, ${(avg('decode') / 1.3).toFixed(1)} words/s`;
-      const p = document.createElement('p'); p.innerHTML = `<b>${esc(sum)}</b>`; sect.appendChild(p);
-      log.push(sum);
-    }
+    // C: medium context, cold
+    const c = await ask(engine, sect, 'C (longer notes, cold)', [{ role: 'system', content: CTX_MED }, { role: 'user', content: MED_Q }], isQwen3);
+
+    const f = (r) => r ? `${r.ttft.toFixed(1)} s to first words (${r.inTok ?? '?'} tok read)` : 'n/a';
+    const sum = [
+      `Summary: warm-up ${w ? w.total.toFixed(1) + ' s' : 'n/a'}`,
+      `A short cold: ${f(res[0])}`,
+      `B follow-ups: ${res.slice(1).map(f).join('; ') || 'n/a'}`,
+      `C longer cold: ${f(c)}`,
+    ].join(' | ');
+    const p = document.createElement('p'); p.innerHTML = `<b>${esc(sum)}</b>`; sect.appendChild(p);
+    log.push(sum);
   }
   $('#run').disabled = false;
   try { await wake?.release(); } catch (e) { /* ignore */ }
