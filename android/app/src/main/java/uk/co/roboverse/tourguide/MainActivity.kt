@@ -12,6 +12,7 @@ import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.FrameLayout
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
@@ -49,13 +50,22 @@ class MainActivity : ComponentActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         WebView.setWebContentsDebuggingEnabled(true)
 
+        // A WebView ignores its own padding, so it sits inside a container that keeps it clear of the
+        // status bar, camera cut-out, navigation bar and keyboard. The container shows the brand colour
+        // behind the system bars.
+        val root = FrameLayout(this).apply { setBackgroundColor(0xFF1F4D3A.toInt()) }
         web = WebView(this)
-        setContentView(web)
-        ViewCompat.setOnApplyWindowInsetsListener(web) { v, insets ->
-            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime())
+        root.addView(web, FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT))
+        setContentView(root)
+        ViewCompat.setOnApplyWindowInsetsListener(root) { v, insets ->
+            val bars = insets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout() or WindowInsetsCompat.Type.ime()
+            )
             v.setPadding(bars.left, bars.top, bars.right, bars.bottom)
             WindowInsetsCompat.CONSUMED
         }
+        WindowCompat.getInsetsController(window, root).isAppearanceLightStatusBars = false
+        WindowCompat.getInsetsController(window, root).isAppearanceLightNavigationBars = false
 
         web.settings.apply {
             javaScriptEnabled = true
