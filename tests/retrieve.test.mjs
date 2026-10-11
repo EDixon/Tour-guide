@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
 import { mentions } from '../assistant/maths.mjs';
-import { buildPrompt, plainDates, createSession } from '../assistant/prompt.mjs';
+import { buildPrompt, plainDates, createSession, hereContext } from '../assistant/prompt.mjs';
 const secs = parseSections(fs.readFileSync(new URL('../knowledge/wrest-park-sample.md', import.meta.url), 'utf8'));
 const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
@@ -38,5 +38,28 @@ ok('a conversation carries its subject through chained follow-ups', () => {
   const e = s.prompt('When did he die?');
   assert.match(e.text, /EARLIER QUESTION: Why would a duke/);
   assert.ok(!/worked out by the app|^- Who:/m.test(e.text));
+});
+const tour = JSON.parse(fs.readFileSync(new URL('../tours/wrest-park.json', import.meta.url)));
+ok('where we are: "who built this?" at the Orangery', () => {
+  const s = createSession({ sections: secs, dates, tour, nowYear: 2026 });
+  const r = s.prompt('Who built this?', { stopId: 'orangery' });
+  assert.equal(r.about, 'here'); assert.equal(r.picked[0], 'The Orangery');
+  assert.match(r.text, /WHERE WE ARE: Orangery/); assert.ok(r.facts.some(f => /The Orangery \(about 1835\) was designed by/.test(f)));
+});
+ok('where we are: "was this built before the house?" compares the two', () => {
+  const r = createSession({ sections: secs, dates, tour, nowYear: 2026 }).prompt('Was this built before or after the house?', { stopId: 'orangery' });
+  assert.ok(r.facts.some(f => /The Orangery .* WHILE the house/.test(f) || /The house .* Orangery/.test(f)));
+});
+ok('a stop the knowledge base does not cover yet falls back to the tour text', () => {
+  const h = hereContext({ tour, dates, sections: secs, stopId: 'science' });
+  assert.equal(h.section, null); assert.match(h.tourText.text, /driverless tractor/i);
+  const r = createSession({ sections: secs, dates, tour }).prompt('What happened here?', { stopId: 'science' });
+  assert.match(r.picked[0], /science years/);
+});
+ok('"he" after a question about a person stays with that person even at another stop', () => {
+  const s = createSession({ sections: secs, dates, tour, nowYear: 2026 });
+  s.prompt('Who is Capability Brown?', { stopId: 'cbcol' });
+  const r = s.prompt('When did he die?', { stopId: 'orangery' });
+  assert.equal(r.about, 'previous'); assert.ok(r.facts.some(f => /Brown.*died 1783/.test(f)));
 });
 console.log(`\n${n} passed`);

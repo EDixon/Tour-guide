@@ -1,1 +1,1 @@
-{ "name": "tour-guide", "private": true, "type": "module", "scripts": { "test": "node tests/planner.test.mjs && node tests/maths.test.mjs && node tests/retrieve.test.mjs", "prompts": "node tools/make-prompts.mjs" } }
+{ "name": "tour-guide", "private": true, "type": "module", "scripts": { "test": "node tests/planner.test.mjs && node tests/maths.test.mjs && node tests/retrieve.test.mjs" } }

@@ -12,13 +12,11 @@ This repository is the whole project, and its top level is also the website:
 |---|---|
 | `index.html`, `app.js`, `planner.js`, `style.css`, `sw.js`, `manifest.webmanifest`, `icons/` | The app |
 | `tours/` | One JSON file per site, plus `index.json` listing them |
-| `lab.html`, `lab.js` | Offline assistant test in the browser (Settings → *Offline assistant test*) |
-| `prompts.html` | Copy-and-paste test prompts for on-phone AI apps such as AI Edge Gallery (built by `node tools/make-prompts.mjs`) |
 | `knowledge/` | Knowledge base for the assistant: notes in sections with sources (`*-sample.md`) and the dates table (`*-dates.json`) |
-| `assistant/` | Assistant code. `maths.mjs` works out every date relationship (before/after/during, reigns, ages, years ago) so the model never does sums |
+| `assistant/` | Assistant code (not yet in the app). `maths.mjs` works out every date relationship (before/after/during, reigns, ages, years ago) so the model never does sums; `retrieve.mjs` picks the notes; `prompt.mjs` builds each question's prompt, with where you are and the earlier question |
 | `docs/` | Tour file format |
 | `prep/` | Brief for preparing a new site with Claude |
-| `tools/` | Tour file checker (`node tools/validate-tour.mjs tours/<id>.json 120`) |
+| `tools/` | Tour file checker (`node tools/validate-tour.mjs tours/<id>.json 120`); `ask.mjs` prints the assistant's prompt for a conversation (`node tools/ask.mjs --at orangery "Who built this?"`) |
 | `tests/` | Planner and date-maths tests (`npm test`) |
 
 GitHub Pages publishes the `main` branch from the top level, at `https://edixon.github.io/Tour-guide/`. Everything here is public; nothing private belongs in the repo.

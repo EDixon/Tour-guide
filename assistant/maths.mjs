@@ -114,18 +114,21 @@ export function calculatedFacts(dates, { things = [], related = [], people = [],
 
 // Find which dated things and people a question mentions (simple name matching), plus the
 // things and people linked to them (builder, related works), so the facts cover the context.
-export function mentions(dates, question, { expand = true } = {}) {
+export function mentions(dates, question, { expand: doExpand = true } = {}) {
   const q = ' ' + question.toLowerCase().replace(/[^a-z0-9' -]/g, ' ') + ' ';
   const hit = (names) => names.some(n => q.includes(' ' + n + ' ') || q.includes(' ' + n + 's ') || q.includes(' ' + n + "'s "));
   const things = dates.things.filter(t => hit(t.names)).map(t => t.id);
   const named = dates.people.filter(p => hit(p.names)).map(p => p.id);
+  return doExpand ? expand(dates, { things, named }) : { things, related: [], people: [...named], named };
+}
+
+// Add linked works and people: things' related works, people linked to any of them, and (up to 4) works
+// linked to a named person.
+export function expand(dates, { things = [], named = [] }) {
   const people = new Set(named);
   const related = new Set();
-  if (expand) {
-    // Works linked to a person the question names (up to 4), so their ages at those works are worked out.
-    for (const pid of named) dates.things.filter(t => (t.people || []).includes(pid) && !things.includes(t.id)).slice(0, 4).forEach(t => related.add(t.id));
-    for (const id of things) (dates.things.find(x => x.id === id).related || []).forEach(r => { if (!things.includes(r)) related.add(r); });
-    for (const id of [...things, ...related]) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
-  }
-  return { things, related: [...related], people: [...people], named };
+  for (const pid of named) dates.things.filter(t => (t.people || []).includes(pid) && !things.includes(t.id)).slice(0, 4).forEach(t => related.add(t.id));
+  for (const id of things) (dates.things.find(x => x.id === id)?.related || []).forEach(r => { if (!things.includes(r)) related.add(r); });
+  for (const id of [...things, ...related]) (dates.things.find(x => x.id === id)?.people || []).forEach(p => people.add(p));
+  return { things: [...things], related: [...related], people: [...people], named: [...named] };
 }

@@ -893,7 +893,6 @@ function openSettings() {
     <div class="field switch"><label for="s-gps">Use GPS (turn off for testing at home)</label><input type="checkbox" id="s-gps" ${p.useGps !== false ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-track">Record GPS track (to correct paths later)</label><input type="checkbox" id="s-track" ${p.recordTrack ? 'checked' : ''}></div>
     <div class="btn-row"><button class="btn ghost" data-do="gpx">Export track (${state.track.length} pts)</button><button class="btn ghost" data-do="review">Review content</button></div>
-    <a class="btn ghost block" style="margin-top:10px;text-decoration:none" href="lab.html">Offline assistant test (needs Wi-Fi)</a>
     <div class="field"><label>Simulated clock ${state.clockOffset ? `(+${Math.round(state.clockOffset / 60000)} min)` : ''}</label>
       <div class="btn-row"><button class="btn ghost" data-do="clock5">+5 min</button><button class="btn ghost" data-do="clock15">+15 min</button><button class="btn ghost" data-do="clock0">Real time</button></div></div>
     <div class="btn-row"><button class="btn ghost" data-do="close">Close</button><button class="btn danger" data-do="reset">Reset tour</button></div>
