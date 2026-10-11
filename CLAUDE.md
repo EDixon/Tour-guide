@@ -6,6 +6,7 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 - **British English, UK sources.** Be realistic, keep to the point, don't flatter. Ask before continuing if something vital is missing.
 - **Every fact has a source.** Site-specific claims need a site-specific source: a Historic England listing, the operator's history pages, county archives, scholarly work. "General knowledge" is only acceptable for well-established background, and must never be used for anything about the site itself. If sources disagree, say so in the text and flag it.
 - **Nothing private in the repo.** It is public and served by GitHub Pages. No API keys, tokens, personal data or GPS tracks.
+- **Every site has its full ownership chronology** (`owners` in its dates file, from the first record to today), so "who owned it when…" is answered by the app, not guessed.
 - **Dates are written out in full** in anything the model reads: "1834–1839", not "1834–39"; "about 1835", not "c.1835".
 - **Test before pushing:** `npm test` and `node tools/validate-tour.mjs tours/<id>.json 120`, plus `node tools/check-knowledge.mjs <id>` once the site has knowledge.
 - **Pushing:** work on `main` (Pages publishes it). Commit messages end with the Co-Authored-By and Claude-Session lines the environment specifies.
@@ -24,7 +25,7 @@ Use the skills in `.claude/skills/`, which run as a chain: **new-site → site-s
 
 Model use is deliberate:
 - The main chat should be **Opus**. It does scoping, mapping, judgement and the final checks.
-- Bulk research goes to the `stop-researcher` and `reference-writer` agents (**Sonnet**).
+- Bulk research goes to the `stop-researcher`, `reference-writer` and `visitor-scout` agents (**Sonnet**).
 - Mechanical fixes go to `format-fixer` (**Haiku**).
 - Fact-checking goes to `fact-checker` (**Opus**, fresh context, reports only).
 
@@ -33,3 +34,4 @@ Model use is deliberate:
 - Medium: wider historical links, especially the **Habsburgs**.
 - Low: furniture, wallpaper, fabrics.
 - Toddler tasks should be genuinely findable on site.
+- A good story isn't the only reason to visit a stop. Every sight also has `wow` (how visually impressive it is) and `popular` (how often visitors single it out in reviews). Both are scored from evidence recorded in `sites/<id>/visitor-scores.md`, and each has its own slider in the app.

@@ -37,9 +37,15 @@ Read first: `CLAUDE.md`, `docs/TOUR_FORMAT.md` (bullets) and `docs/KNOWLEDGE_FOR
 - Use the ids in your brief where they exist.
 - Fill in `who`, `people`, `related`, `stops`, and `events` with ages-worthy milestones.
 - One object per line.
+- **A "family and owners" batch** also writes `"site"` and the complete `"owners"` chronology (format in `docs/KNOWLEDGE_FORMAT.md`). The merge replaces the whole list, so write it in full.
+
+**4. `<batch>-events.json`** (if your brief lists timeline events): `[{ "year": 1916, "label": "<exactly as in the tour file>", "more": "...", "src": [..] }]`.
+- `more` is 1–3 sentences, under 60 words, shown when the event is tapped on the Timeline. Answer the questions the label raises: what happened, who was affected, what changed, and for a sale or inheritance, who to and why.
+- It must agree with your notes, and `src` must support it.
+- To fix a label, give the new `label` and the old one as `"was"`. To add a missing event, give `year`, `label`, `src` and, if relevant, `stop`.
 
 ## Before you finish
-- Run `node -e "JSON.parse(require('fs').readFileSync('<file>','utf8'))"` on both JSON files.
+- Run `node -e "JSON.parse(require('fs').readFileSync('<file>','utf8'))"` on each JSON file.
 - Re-read your sections for anything unsourced.
 - Reply with a short report:
   - files written

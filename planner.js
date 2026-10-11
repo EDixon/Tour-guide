@@ -11,13 +11,17 @@
 // is low it will happily finish early.
 
 export const IMP_WEIGHT = [0, 0.35, 0.55, 0.8, 1.0, 1.25];
+// Weights for the sight itself rather than its story: how striking it is to look at (`wow` 0-5)
+// and how often visitors single it out in reviews and guides (`popular` 0-5). They sit alongside
+// the topic weights but apply to whole stops, not bullets.
+export const SIGHT_WEIGHTS = { looks: 0.8, popular: 0.6 };
 export const BREAK_ID = '__break__';
 const MUST_BONUS = 50;
 const EARTH = 6371000;
 
 export function defaultSettings(tour) {
   return {
-    weights: { ...(tour.defaultWeights || {}) },
+    weights: { ...SIGHT_WEIGHTS, ...(tour.defaultWeights || {}) },
     siteInterest: tour.significance ?? 0.5, // 0..1: how much this place grips the family
     wpm: 150,              // reading-aloud speed
     talkFactor: 1.5,       // reading + chatting about it
@@ -133,8 +137,11 @@ export function stopCurve(stop, weights, settings) {
     g.v *= f; g.r *= f; before += g.ids.length;
   }
   for (let i = 1; i < groups.length; i++) groups[i].r = Math.min(groups[i].r, groups[i - 1].r);
-  // Just seeing the place is worth something too ("wow" 0-5, scaled by the views weighting).
-  const sight = (IMP_WEIGHT[stop.wow ?? 0] ?? 0) * (0.3 + 0.7 * (weights.views ?? 0.5)) * 0.8;
+  // Just seeing the place is worth something too: how striking it is ("wow", scaled by the
+  // "looks" weighting) and how often other visitors rate it ("popular", scaled by "popular").
+  const looks = (IMP_WEIGHT[stop.wow ?? 0] ?? 0) * (0.3 + 0.7 * (weights.looks ?? SIGHT_WEIGHTS.looks)) * 0.8;
+  const crowd = (IMP_WEIGHT[stop.popular ?? 0] ?? 0) * (0.1 + 0.9 * (weights.popular ?? SIGHT_WEIGHTS.popular)) * 0.6;
+  const sight = looks + crowd;
   return {
     id: stop.id,
     sight,

@@ -12,6 +12,7 @@ export const RULES = `You are a friendly guide for a family visiting Wrest Park.
 - If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.`;
 
 // Questions about dates, order, ages or rulers get the full date facts; others get only who-made-it and life spans.
+const OWNERSHIP_QUESTION = /\b(own|owned|owner|owners|ownership|family|families|inherit|inherited|heir|heirs|sold|bought|sale|lived here|lived in)\b/i;
 const DATE_QUESTION = /\b(when|what year|which year|years?|before|after|during|how long|how old|age|aged|century|centuries|ago|older|oldest|newer|first|last|reign|reigned|king|queen|monarch|throne|dates?|period|same time)\b/i;
 
 // Write dates out in full for the model: "1834–39" -> "1834–1839", "c.1835" -> "about 1835".
@@ -74,6 +75,7 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
     people: uniq([...m.people, ...(hereM ? hereM.people : [])]),
     named: m.named,
     detail: DATE_QUESTION.test(question) ? 'full' : 'light',
+    ownership: OWNERSHIP_QUESTION.test(question),
     nowYear,
   });
   const nameOf = (id) => (dates.things.find(t => t.id === id) || dates.people.find(p => p.id === id))?.name;

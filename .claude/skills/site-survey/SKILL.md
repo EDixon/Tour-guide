@@ -5,7 +5,16 @@ description: Second link in the Tour Guide site chain. Survey a site, gather sou
 
 # site-survey: map the site and plan the research
 
-Main chat (Opus). Read `CLAUDE.md`, `sites/<id>/brief.md` and `STATUS.md`. Formats: `docs/TOUR_FORMAT.md`; the reference example is `tours/wrest-park.json`.
+Main chat (Opus). Read `CLAUDE.md`, `sites/<id>/brief.md` and `STATUS.md`. Formats: `docs/TOUR_FORMAT.md` and `docs/KNOWLEDGE_FORMAT.md`; the reference example is `tours/wrest-park.json`.
+
+**If the site already exists** (`tours/<id>.json` is there): don't rebuild it. Keep the stops, paths and bullets that work, read `STATUS.md` for what's known to be weak, and concentrate on:
+- `sources.md`, covering the whole site
+- visitor scores: if `sites/<id>/visitor-scores.md` doesn't exist, add a "visitors" line to the research plan so the visitor-scout runs
+- the ownership chronology (section 3)
+- `dates.json` entries for every stop
+- a research plan covering every stop without a notes section (`node tools/check-knowledge.mjs <id>` lists them), plus any existing notes that need more depth
+
+Fix stops or paths only where the sources show they're wrong.
 
 ## 1. Sources: `sites/<id>/sources.md`
 Gather and list, with URLs:
@@ -23,7 +32,10 @@ Only physical places a visitor can stand at or look at:
 
 For each stop:
 - **Position and dating:** id, name, short name, coordinates (from the listing where possible, `approx: true` if estimated), date and dateLabel, era.
-- **Planning values:** `wow` (0–5, value of just seeing it), `dwell` seconds, and `mustSee` for the two or three unmissables.
+- **Planning values:**
+  - `wow` (0–5, how visually impressive it is, on the scale in `docs/TOUR_FORMAT.md`). This is provisional: the visitor-scout settles `wow` and `popular` from evidence during research.
+  - `dwell` seconds.
+  - `mustSee` for the two or three unmissables. Revisit these once the visitor scores are in.
 - **Indoor rooms:** `building` and `indoor`.
 - **Text:** a one-line `look` ("what to look at on arrival"), a practical `note` (steps, opening), and `facilities`.
 
@@ -38,7 +50,12 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
 - **Map shapes:** a few schematic shapes (water, woodland, main buildings).
 - **Timeline:**
   - Eras: 6–10, covering how the site developed.
-  - Events: 20–35 dated events, linked to stops where possible.
+  - Events: 20–35 dated events, linked to stops where possible. Keep labels short. Research adds `more`, the explanation shown when an event is tapped, so assign each event that needs one to a research batch: events at a batch's stops go to that batch, and sales, inheritances and the like go to "family and owners".
+- **Ownership chronology (required):** in `knowledge/<id>/dates.json`, set `site` (how a sentence names the place) and `owners`. That is every owner or custodian from the first record to today, in order, as `[from, to, "who"]`, with `null` for the current one (format in `docs/KNOWLEDGE_FORMAT.md`).
+  - Use the listing entries, the operator's history, county history (the Victoria County History is good for this) and family histories.
+  - Where a stretch is uncertain, give the best-supported row, note it in `sources.md`, and add a flag.
+  - The research plan should include a "family and owners" batch that writes the notes section telling this story.
+  - For ancient or state sites (Egypt), "owners" means who controlled or cared for the site: dynasty, temple estate, later rulers, the antiquities service. Rulers by period go in a reference pack.
 - **Topics and weights:** copy from Wrest unless the brief says otherwise.
 - **Knowledge links:** `"knowledge": {"site": "knowledge/<id>", "reference": [<packs it will use>]}`. Check which packs already exist in `knowledge/reference/`.
 - **Dated things:** for each stop, list its main dated things and people in `knowledge/<id>/dates.json`: ids, names, dates and `stops`. Research fills in the `who`, `events` and links.
@@ -50,6 +67,8 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
   - the dated thing and person ids it should use or create
   - the specific sources to start from
   - the angles worth pursuing (engineering, the Habsburgs, science), but only where genuine
+  - the timeline events it should explain (year and label exactly as in the tour file)
+- Add a **visitors** line: the visitor-scout scores every sight for `wow` and `popular` (no batch of stops; it covers the whole site).
 - List the **reference topics** the site needs: rulers, a royal house, an architectural style, a technology. Mark which exist already and which need writing.
 
 ## 5. Check and hand on

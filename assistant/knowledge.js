@@ -24,8 +24,10 @@ export async function loadKnowledge(tour, readText) {
 }
 
 export function mergeDates(list) {
-  const out = { things: [], people: [], rulers: {} };
+  const out = { things: [], people: [], rulers: {}, owners: [], site: null };
   for (const d of list) {
+    if (d.site && !out.site) out.site = d.site;
+    if (d.owners) out.owners.push(...d.owners);
     out.things.push(...(d.things || []));
     out.people.push(...(d.people || []));
     for (const [country, rows] of Object.entries(d.rulers || {})) out.rulers[country] = [...(out.rulers[country] || []), ...rows];

@@ -58,7 +58,18 @@ One object per line, so diffs stay readable.
 - `who` completes "X was ___".
 - `events` are `[year, "what they did"]` pairs, phrased to follow the name ("became head gardener at Stowe").
 
-**Rulers** (reference packs): `"rulers": {"England/Britain": [["Anne", 1702, 1714], ...]}`, with years inclusive at both ends.
+**Site and owners** (the site's own dates file):
+
+```json
+"site": "Wrest",
+"owners": [[1284, 1308, "Reginald de Grey, 1st Baron Grey de Wilton"], [1308, 1353, "..."], ..., [2006, null, "English Heritage (for the nation)"]]
+```
+
+- `site` is how a sentence names the place ("Wrest was owned by ...").
+- `owners` is the **complete chronology from the first record to today**: one `[from, to, "who"]` row per owner, in order, with `null` for "to date". Include custodians as well as private owners (the Crown, a government department, a trust). For joint owners, use one row ("Anthony, 11th Earl of Kent, and Mary, Baroness Lucas").
+- The app uses it for "who owned it when X was built" and gives the whole list for questions about owners, the family, inheriting or selling. Where a stretch is uncertain, still give your best-supported row and say so in the notes. Gaps and overlaps are flagged by `tools/check-knowledge.mjs`.
+
+**Rulers** (reference packs): `"rulers": {"England/Britain": [["Anne", 1702, 1714], ...]}`, with years inclusive at both ends. A pack should cover the whole period its sites need. The app never claims a ruler for a year the pack doesn't cover; it says "no ruler data" instead. For ancient sites, write years BC as negative numbers and note the chronology used.
 
 ## Checks
 

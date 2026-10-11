@@ -26,7 +26,7 @@ Start a **fact-checker** agent. Give it:
 - the list of files to check
 - a sampling instruction:
   - every bullet with `imp` 4–5
-  - every date in `dates.json`
+  - every date in `dates.json`, every `owners` row, and every timeline event with its `more`
   - every claim sourced only to "general knowledge" or marked `verify`
   - a random 20% of the remaining notes sentences
 

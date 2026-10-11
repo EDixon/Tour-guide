@@ -1,15 +1,18 @@
 // Date arithmetic for the assistant. The model never does sums: the app works out every date
 // relationship that might matter and hands them over as CALCULATED FACTS, which the model must use.
-// Pure functions over a dates file (knowledge/<site>-dates.json).
+// Pure functions over the merged dates (knowledge/<site>/dates.json plus reference packs).
 
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+// Years BC are stored as negative numbers (-1550 = 1550 BC). There is no year 0, so a gap across it is one less.
+export const Y = (y) => (y == null ? 'today' : y < 0 ? `${-y} BC` : String(y));
+export const gap = (from, to) => to - from - (from < 0 && to > 0 ? 1 : 0);
 const about = (approx) => (approx ? 'about ' : '');
 
 // Full years and words only: small models misread shorthand like "c.1706–29" ("29 years later").
 export function label(t) {
   const c = t.approx ? 'about ' : '';
-  if (t.to == null || t.to === t.from) return `${c}${t.from}`;
-  return `${c}${t.from}–${t.to}`;
+  if (t.to == null || t.to === t.from) return `${c}${Y(t.from)}`;
+  return `${c}${Y(t.from)}–${Y(t.to)}`;
 }
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const span = (t) => ({ a: t.from, b: t.to ?? t.from });
@@ -21,10 +24,10 @@ const being = (t) => (t.verb === 'happened' ? 'happening' : `being ${t.verb}`);
 export function compare(A, B) {
   const x = span(A), y = span(B), ap = A.approx || B.approx;
   const nA = `${A.name} (${label(A)})`, nB = `${B.name} (${label(B)})`;
-  if (x.b < y.a) return { rel: 'before', text: `${cap(nA)} ${was(A)} BEFORE ${nB}: ${about(ap)}${plural(y.a - x.b, 'year')} earlier.` };
-  if (x.a > y.b) return { rel: 'after', text: `${cap(nA)} ${was(A)} AFTER ${nB}: ${about(ap)}${plural(x.a - y.b, 'year')} later.` };
+  if (x.b < y.a) return { rel: 'before', text: `${cap(nA)} ${was(A)} BEFORE ${nB}: ${about(ap)}${plural(gap(x.b, y.a), 'year')} earlier.` };
+  if (x.a > y.b) return { rel: 'after', text: `${cap(nA)} ${was(A)} AFTER ${nB}: ${about(ap)}${plural(gap(y.b, x.a), 'year')} later.` };
   if (x.a >= y.a && x.b <= y.b && !(x.a === y.a && x.b === y.b)) {
-    const start = x.a - y.a, end = y.b - x.b;
+    const start = gap(y.a, x.a), end = gap(x.b, y.b);
     if (x.a === x.b && A.verb !== 'happened') { // a single year inside a span
       const after = start === 0 ? `in the same year work on ${B.name} began` : `${about(ap)}${plural(start, 'year')} after work on ${B.name} began`;
       const before = end === 0 ? `in the year ${B.name} was finished` : `${about(ap)}${plural(end, 'year')} before ${B.name} was finished`;
@@ -45,45 +48,72 @@ export function compare(A, B) {
 // Who reigned during a span, for each country in the dates file.
 export function rulersDuring(t, rulers) {
   const { a, b } = span(t);
+  const at = (list, y) => list.filter(([, s, e]) => s <= y && e >= y);
+  const covers = (list, y) => list.length && list[0][1] <= y && list[list.length - 1][2] >= y;
+  const fmt = (hits) => hits.map(([n, s, e]) => `${n} (${Y(s)}–${Y(e)})`).join(' / ');
   const parts = [];
   for (const [country, list] of Object.entries(rulers)) {
-    const hits = list.filter(([, s, e]) => s <= b && e >= a); // inclusive: a boundary year lists both rulers
-    if (!hits.length) continue;
-    parts.push(`${country}: ${hits.map(([n, s, e]) => `${n} (${s}–${e})`).join(', then ')}`);
+    if (b - a <= 60) {
+      if (!covers(list, a) && !covers(list, b)) continue;
+      const hits = list.filter(([, s, e]) => s <= b && e >= a); // inclusive: a boundary year lists both rulers
+      if (hits.length) parts.push(`${country}: ${hits.map(([n, s, e]) => `${n} (${Y(s)}–${Y(e)})`).join(', then ')}`);
+    } else {
+      // Long spans (a family's ownership, a temple built over centuries): who reigned at the start and at the end.
+      const start = covers(list, a) ? at(list, a) : [], end = covers(list, b) ? at(list, b) : [];
+      if (!start.length && !end.length) continue;
+      parts.push(`${country}: ${start.length ? `at the start (${Y(a)}) ${fmt(start)}` : `no ruler data for ${Y(a)}`}; ${end.length ? `at the end (${Y(b)}) ${fmt(end)}` : `no ruler data for ${Y(b)}`}`);
+    }
   }
-  return parts.length ? `When ${t.name} ${was(t)} (${label(t)}), the rulers were — ${parts.join('; ')}.` : '';
+  if (!parts.length) return '';
+  return b - a <= 60 ? `When ${t.name} ${was(t)} (${label(t)}), the rulers were — ${parts.join('; ')}.` : `Rulers during ${t.name} (${label(t)}) — ${parts.join('. ')}.`;
+}
+
+// Who owned the site: owners = [[from, to, "name"], ...] in order (to = null for the present owner).
+export function ownerAt(owners, y) {
+  return owners.filter(([s, e]) => s <= y && (e == null || e >= y));
+}
+export function ownersDuring(t, owners, site) {
+  if (!owners?.length) return '';
+  const { a, b } = span(t);
+  const hits = owners.filter(([s, e]) => s <= b && (e == null || e >= a));
+  if (!hits.length) return '';
+  return `When ${t.name} ${was(t)} (${label(t)}), ${site} was owned by ${hits.map(([s, e, n]) => `${n} (owner ${Y(s)}–${Y(e)})`).join(', then ')}.`;
+}
+export function ownersList(owners, site) {
+  if (!owners?.length) return '';
+  return `Owners of ${site} in order: ${owners.map(([s, e, n]) => `${n} (${Y(s)}–${Y(e)})`).join('; ')}.`;
 }
 
 // A person's age at a dated thing, or how long after their death it came.
 export function personAt(p, t) {
   const { a, b } = span(t);
   const [by, bm] = p.born, [dy] = p.died || [];
-  const ageAt = (y) => y - by - (bm && bm > 6 ? 1 : 0); // age at mid-year
-  if (dy && a > dy) return `${cap(t.name)} (${label(t)}) ${was(t)} ${about(t.approx)}${plural(a - dy, 'year')} after ${p.name} died (${dy}).`;
-  if (b < by) return `${cap(t.name)} (${label(t)}) ${was(t)} ${plural(by - b, 'year')} before ${p.name} was born (${by}).`;
+  const ageAt = (y) => gap(by, y) - (bm && bm > 6 ? 1 : 0); // age at mid-year
+  if (dy && a > dy) return `${cap(t.name)} (${label(t)}) ${was(t)} ${about(t.approx)}${plural(gap(dy, a), 'year')} after ${p.name} died (${Y(dy)}).`;
+  if (b < by) return `${cap(t.name)} (${label(t)}) ${was(t)} ${plural(gap(b, by), 'year')} before ${p.name} was born (${Y(by)}).`;
   const approx = t.approx || !bm;
-  if (a === b) return `${p.name} (born ${by}) was ${about(true)}${ageAt(a)} when ${t.name} ${was(t)} (${label(t)}).`;
-  if (t.approx) return `${p.name} (born ${by}) was about ${ageAt(a)}–${ageAt(Math.min(b, dy ?? b))} when ${t.name} ${was(t)} (${label(t)}).`;
-  return `${p.name} (born ${by}) was ${about(approx)}${ageAt(a)} when ${t.name} was begun (${a}) and ${about(approx)}${ageAt(Math.min(b, dy ?? b))} when it was finished (${b}).`;
+  if (a === b) return `${p.name} (born ${Y(by)}) was ${about(true)}${ageAt(a)} when ${t.name} ${was(t)} (${label(t)}).`;
+  if (t.approx) return `${p.name} (born ${Y(by)}) was about ${ageAt(a)}–${ageAt(Math.min(b, dy ?? b))} when ${t.name} ${was(t)} (${label(t)}).`;
+  return `${p.name} (born ${Y(by)}) was ${about(approx)}${ageAt(a)} when ${t.name} was begun (${Y(a)}) and ${about(approx)}${ageAt(Math.min(b, dy ?? b))} when it was finished (${Y(b)}).`;
 }
 
 // About a person: who they were, life span and age at death, and their dated life events with ages.
 export function personFacts(p) {
   const [by, bm] = p.born, [dy, dm] = p.died || [];
-  const ageAt = (y) => y - by - (bm && bm > 6 ? 1 : 0);
+  const ageAt = (y) => gap(by, y) - (bm && bm > 6 ? 1 : 0);
   const lines = [];
   if (p.who) lines.push(`${p.name} was ${p.who}.`);
   if (dy) {
-    const age = bm && dm ? dy - by - (dm < bm ? 1 : 0) : null;
-    lines.push(`${p.name}: born ${by}, died ${dy}${age != null ? `, aged ${age}` : `, aged about ${dy - by}`}.`);
+    const age = bm && dm ? gap(by, dy) - (dm < bm ? 1 : 0) : null;
+    lines.push(`${p.name}: born ${Y(by)}, died ${Y(dy)}${age != null ? `, aged ${age}` : `, aged about ${gap(by, dy)}`}.`);
   }
-  for (const [y, what] of p.events || []) lines.push(`In ${y}, aged about ${ageAt(y)}, ${p.name} ${what}.`);
+  for (const [y, what] of p.events || []) lines.push(`In ${Y(y)}, aged about ${ageAt(y)}, ${p.name} ${what}.`);
   return lines;
 }
 
 export function yearsAgo(t, nowYear) {
   const { a, b } = span(t);
-  const ago = a === b ? `${about(t.approx)}${plural(nowYear - a, 'year')} ago` : `${about(t.approx)}${nowYear - b}–${nowYear - a} years ago`;
+  const ago = a === b ? `${about(t.approx)}${plural(gap(a, nowYear), 'year')} ago` : `${about(t.approx)}${gap(b, nowYear)}–${gap(a, nowYear)} years ago`;
   return `${cap(t.name)} (${label(t)}): ${ago} (counting from ${nowYear}).`;
 }
 
@@ -93,26 +123,27 @@ export function yearsAgo(t, nowYear) {
 // named: people the question itself names (they get a full summary); others only appear through linked things.
 // detail: 'full' for questions about dates and order; 'light' (who made it, who someone was, life span only)
 // for other questions, so the model isn't handed a page of dates it then recites.
-export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, detail = 'full', nowYear = new Date().getFullYear() } = {}) {
+// ownership: true adds the site's full owner chronology (for questions about owners, the family, inheriting, selling).
+export function calculatedFacts(dates, { things = [], related = [], people = [], named = [], pairs = [], compare: only = null, detail = 'full', ownership = false, nowYear = new Date().getFullYear() } = {}) {
   const byId = (id) => dates.things.find(t => t.id === id);
-  // Things spanning centuries (a family's ownership) only get their who-line: comparisons, rulers and
-  // ages over such spans are noise.
-  const LONG = 100, short = (t) => (t.to ?? t.from) - t.from <= LONG;
-  const Tall = things.map(byId).filter(Boolean), Rall = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
-  const T = Tall.filter(short), R = Rall.filter(short);
+  const T = things.map(byId).filter(Boolean), R = related.map(byId).filter(Boolean).filter(t => !things.includes(t.id));
   const P = people.map(id => dates.people.find(p => p.id === id)).filter(Boolean);
   const lines = [];
   for (const p of P.filter(p => named.includes(p.id))) lines.push(...personFacts(p).slice(0, detail === 'light' ? 2 : undefined));
-  for (const t of [...Tall, ...Rall]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
-  if (detail === 'light') return lines;
-  // Comparisons only between things within 150 years of each other; "548 years later" helps nobody.
+  for (const t of [...T, ...R]) if (t.who) lines.push(`${cap(t.name)} (${label(t)}) ${t.plural ? 'were' : 'was'} ${t.who}.`);
+  if (detail === 'light') { if (ownership && dates.owners?.length) lines.push(ownersList(dates.owners, dates.site || 'the site')); return lines; }
+  // Things the question names are always compared, however far apart. Linked background items (R) only
+  // when within 150 years, so a question about the house doesn't get "548 years after the first record".
   const near = (a, b) => Math.max(a.from, b.from) - Math.min(a.to ?? a.from, b.to ?? b.from) <= 150;
   if (only) { for (const [x, y] of only) if (byId(x) && byId(y)) lines.push(compare(byId(x), byId(y)).text); }
   else {
-    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) if (near(T[i], T[j])) lines.push(compare(T[i], T[j]).text);
+    for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) lines.push(compare(T[i], T[j]).text);
     for (const t of T) for (const r of R) if (near(t, r)) lines.push(compare(r, t).text);
   }
   for (const t of T) { const r = rulersDuring(t, dates.rulers); if (r) lines.push(r); }
+  const site = dates.site || 'the site';
+  for (const t of T) { const o = ownersDuring(t, dates.owners, site); if (o) lines.push(o); }
+  if (ownership && dates.owners?.length) lines.push(ownersList(dates.owners, site));
   // Ages and 'after their death' only for people linked to the thing (builder, owner, subject) or explicitly paired.
   for (const p of P) for (const t of [...T, ...R]) {
     if ((t.people || []).includes(p.id) || pairs.some(([x, y]) => x === p.id && y === t.id)) lines.push(personAt(p, t));

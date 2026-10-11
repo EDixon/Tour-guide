@@ -16,6 +16,7 @@ for (const s of tour.stops) {
   need(Array.isArray(s.pos) && s.pos.length === 2, `${s.id}: pos [lat, lon] required`);
   need(tour.eras.some(e => e.id === s.era), `${s.id}: unknown era ${s.era}`);
   need(s.kind === 'facility' || s.bullets.length > 0, `${s.id}: no bullets`);
+  for (const k of ['wow', 'popular']) if (s[k] != null) need(Number.isInteger(s[k]) && s[k] >= 0 && s[k] <= 5, `${s.id}: ${k} must be a whole number 0-5`);
   const seen = new Set();
   s.bullets.forEach((b, i) => {
     need(!seen.has(b.id), `${s.id}.${b.id}: duplicate id`); seen.add(b.id);
@@ -24,6 +25,13 @@ for (const s of tour.stops) {
     if (b.needs != null) need(s.bullets.findIndex(x => x.id === b.needs) > -1 && s.bullets.findIndex(x => x.id === b.needs) < i, `${s.id}.${b.id}: needs must point to an earlier bullet`);
     for (const k of b.src || []) need(tour.sources[String(k)], `${s.id}.${b.id}: unknown source ${k}`);
   });
+}
+for (const e of tour.events || []) {
+  const at = `event ${e.year} "${e.label}"`;
+  need(Number.isInteger(e.year) && e.label, `${at}: needs a whole-number year and a label`);
+  if (e.stop) need(ids.has(e.stop), `${at}: unknown stop ${e.stop}`);
+  for (const k of e.src || []) need(tour.sources[String(k)], `${at}: unknown source ${k}`);
+  if (e.more) need(e.src && e.src.length, `${at}: "more" needs a source`);
 }
 let model;
 try { model = buildModel(tour); } catch (e) { problems.push(e.message); }
@@ -39,6 +47,11 @@ if (problems.length) { console.log('PROBLEMS:\n- ' + problems.join('\n- ')); pro
 const nB = tour.stops.reduce((n, s) => n + s.bullets.length, 0);
 const nV = tour.stops.reduce((n, s) => n + s.bullets.filter(b => b.verify || (b.src || []).includes('gk')).length, 0);
 console.log(`OK: ${tour.stops.length} stops, ${nB} bullets (${nV} flagged to check), ${tour.paths.length} path links`);
+const sightStops = tour.stops.filter(s => s.kind === 'sight');
+const unscored = sightStops.filter(s => s.popular == null).map(s => s.id);
+const bare = (tour.events || []).filter(e => !e.more).length;
+if (bare) console.log(`Note: ${bare}/${(tour.events || []).length} timeline events have no "more" explanation.`);
+if (unscored.length) console.log(`Note: ${unscored.length}/${sightStops.length} sights have no "popular" score (visitor-scout not run or not merged): ${unscored.join(', ')}`);
 const now = 11 * 3600;
 const p = plan(model, { from: tour.start, deadlineS: now + mins * 60, E0: 1, visited: {}, skipped: {}, pinned: {} }, defaultSettings(tour), now);
 const hm = s => `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}`;

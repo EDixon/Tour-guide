@@ -100,7 +100,7 @@ Limitations:
 
 Start a Claude chat (Opus) with this repository connected and say **"add <site>"**. The `new-site` skill takes it from there through a chain of skills:
 - **site-survey:** sources, stops, paths, timeline
-- **site-research:** the stops are researched in batches by Sonnet helper agents
+- **site-research:** the stops are researched in batches by Sonnet helper agents, and a visitor-scout (also Sonnet) reads reviews to score how impressive and how popular each stop is
 - **reference-packs:** shared background
 - **site-check:** a Haiku helper does mechanical fixes, and an Opus fact-checker reports on accuracy
 - **site-publish:** the site goes into the app

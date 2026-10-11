@@ -169,6 +169,28 @@ test('scenic legs depend on the views weighting', () => {
   assert.ok(n1 > 0);
 });
 
+test('sight value: wow follows the looks weighting, popular adds to it', () => {
+  const s = { ...tour.stops.find(x => x.id === 'chinese') };
+  const plain = stopCurve(s, { ...base.weights }, base).sight;
+  const keen = stopCurve(s, { ...base.weights, looks: 1 }, base).sight;
+  const cool = stopCurve(s, { ...base.weights, looks: 0 }, base).sight;
+  assert.ok(keen > plain && plain > cool && cool > 0);
+  const fav = stopCurve({ ...s, popular: 5 }, { ...base.weights }, base).sight;
+  const favOff = stopCurve({ ...s, popular: 5 }, { ...base.weights, popular: 0 }, base).sight;
+  assert.ok(fav > plain && favOff > plain && favOff < fav);
+});
+
+test('visitor favourites are planned more when the popular weighting is up', () => {
+  const t2 = structuredClone(tour);
+  const favs = ['chinese', 'atlas', 'dairy'];
+  for (const id of favs) t2.stops.find(s => s.id === id).popular = 5;
+  const m2 = buildModel(t2);
+  const count = (w) => plan(m2, mk(120), S({ weights: { popular: w } }), NOW).route.filter(id => favs.includes(id)).length;
+  const on = count(1), off = count(0);
+  console.log(`     favourites in a 2-hour plan: popular=1 → ${on}, popular=0 → ${off}`);
+  assert.ok(on > off);
+});
+
 test('forced next stop stays first; visited stops excluded', () => {
   const p = plan(model, mk(120, { from: 'terrace', visited: { terrace: {} }, forceFirst: 'bathhouse' }), S(), NOW);
   assert.equal(p.route[0], 'bathhouse');

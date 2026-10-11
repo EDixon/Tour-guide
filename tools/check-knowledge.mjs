@@ -55,6 +55,20 @@ for (const p of dates.people) {
   if (!p.who) warn(`${where}: no "who"`);
   for (const n of p.names || []) if (n !== n.toLowerCase()) warn(`${where}: alias "${n}" should be lower case`);
 }
+// ---- owners: the site's full ownership chronology
+if (!dates.owners?.length) warn(`no "owners" chronology in knowledge/${id}/dates.json: add who owned the site from the first record to today`);
+else {
+  if (!dates.site) warn('dates.json has owners but no "site" name (how to refer to the place, e.g. "Wrest")');
+  dates.owners.forEach(([a, b, n], i) => {
+    if (typeof a !== 'number' || !n) err(`owner ${i + 1}: needs [from, to, "name"]`);
+    if (b != null && b < a) err(`owner "${n}": ends before it starts`);
+    const prev = dates.owners[i - 1];
+    if (prev && prev[1] != null && a > prev[1] + 1) warn(`owners: gap between "${prev[2]}" (to ${prev[1]}) and "${n}" (from ${a})`);
+    if (prev && prev[1] != null && a < prev[1]) warn(`owners: "${n}" (from ${a}) overlaps "${prev[2]}" (to ${prev[1]}); fine for joint owners, otherwise check`);
+  });
+  const last = dates.owners[dates.owners.length - 1];
+  if (last[1] != null) warn(`owners: the last owner ("${last[2]}") has an end date; who owns it today? (use null for "to date")`);
+}
 // ---- rulers
 for (const [c, rows] of Object.entries(dates.rulers)) rows.forEach(([n, a, b]) => { if (b < a) err(`ruler ${n} (${c}): end before start`); });
 

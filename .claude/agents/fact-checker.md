@@ -12,7 +12,8 @@ Read `CLAUDE.md`, then the files you're given: `tours/<id>.json` (bullets), `kno
 ## What to check
 Follow the sampling instruction in your brief. By default:
 - every bullet with `imp` 4–5
-- every date and every `who` in `dates.json`
+- every date and every `who` in `dates.json`, and every row of the `owners` chronology (dates, names, and whether there are gaps)
+- every timeline event in the tour file, including its `more` explanation
 - every claim sourced only to "general knowledge" (`gk`) or marked `verify`
 - a random fifth of the other sentences in the notes
 

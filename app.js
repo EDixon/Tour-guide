@@ -202,6 +202,8 @@ function nudgeWeights(id, delta) {
   for (const b of s.bullets) for (const [t, v] of Object.entries(b.tags)) tally[t] = (tally[t] || 0) + v * b.imp;
   const top = Object.entries(tally).sort((a, b) => b[1] - a[1]).slice(0, 2).map(x => x[0]);
   for (const t of top) state.prefs.weights[t] = clamp((state.prefs.weights[t] ?? 0.5) + delta, 0, 1);
+  // Loving a striking place says something about looks, not just its topics.
+  if ((s.wow ?? 0) >= 4) state.prefs.weights.looks = clamp((state.prefs.weights.looks ?? P.SIGHT_WEIGHTS.looks) + delta, 0, 1);
 }
 
 // Bored: fewer facts per stop from now on (not fewer stops), and energy runs down faster so a
@@ -677,11 +679,27 @@ function renderTimeline() {
     if (order.has(id)) return `<span class="tl-status muted">#${order.get(id)} in plan</span>`;
     return '<span class="tl-status muted">not planned</span>';
   };
+  // An event with `more` opens to explain itself (what happened, who was affected, what came
+  // next); one linked to a stop opens that stop.
+  const evHtml = (x) => {
+    const cls = `tl-ev${x.stop && x.stop === here ? ' here' : ''}`;
+    if (!x.more) {
+      const row = `<span class="y">${x.year}</span><span>${esc(x.label)}</span>`;
+      return x.stop ? `<div class="${cls} link" data-sheet="${x.stop}">${row}</div>` : `<div class="${cls}">${row}</div>`;
+    }
+    const srcs = (x.src || []).map(k => tour.sources[String(k)]).filter(Boolean)
+      .map(([t, u]) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t)).join(' · ');
+    const st = x.stop && stop(x.stop);
+    const btns = (st ? `<button class="btn ghost" data-sheet="${x.stop}">📍 ${esc(st.short || st.name)}</button>` : '')
+      + (llm.available() ? `<button class="btn ghost" data-do="ask" data-q="${esc(`Tell me more about this: ${x.label} (${x.year}).`)}">💬 Ask more</button>` : '');
+    return `<details class="${cls} tl-more"><summary><span class="y">${x.year}</span><span>${esc(x.label)} <span class="tl-chev">▸</span></span></summary>
+      <div class="tl-body"><p>${esc(x.more)}</p>${srcs ? `<div class="small muted">Source: ${srcs}</div>` : ''}${btns ? `<div class="btn-row">${btns}</div>` : ''}</div></details>`;
+  };
   const html = tour.eras.map(e => {
-    const evs = tour.events.filter(x => x.year >= e.from && x.year <= e.to).map(x => ({ y: x.year, label: x.label, stop: x.stop }));
+    const evs = tour.events.filter(x => x.year >= e.from && x.year <= e.to);
     const stops = tour.stops.filter(s => s.era === e.id && s.kind === 'sight');
     const items = [
-      ...evs.map(x => `<div class="tl-ev ${x.stop && x.stop === here ? 'here' : ''}"><span class="y">${x.y}</span><span>${esc(x.label)}</span></div>`),
+      ...evs.map(evHtml),
       ...stops.map(s => `<div class="tl-ev stop ${s.id === here ? 'here' : ''}" data-sheet="${s.id}"><span class="y">${s.date || ''}</span><span>📍 ${esc(s.name)} ${status(s.id)}</span></div>`),
     ];
     return `<section class="tl-era ${e.id === hereEra ? 'here' : ''}" style="border-color:${e.colour}">
@@ -690,7 +708,7 @@ function renderTimeline() {
   }).join('');
   const intro = tour.introStop && stop(tour.introStop);
   const brief = intro ? `<div class="card"><details><summary><b>${esc(intro.name)}</b> <span class="small muted">(${intro.bullets.length} points)</span></summary><ul class="bullets" style="margin-top:8px">${intro.bullets.map(b => bulletHtml(intro, b.id)).join('')}</ul></details></div>` : '';
-  return `${brief}<p class="small muted">How the place developed. 📍 = stops; tap one for details.</p>${html}`;
+  return `${brief}<p class="small muted">How the place developed. 📍 = stops; tap one for details. Tap a line marked ▸ for more about it.</p>${html}`;
 }
 
 // ---------------------------------------------------------------- Map tab
@@ -928,7 +946,7 @@ function updateAskItem(it) {
   if (el) { el.outerHTML = askItemHtml(it); scrollAskLog(); }
 }
 function scrollAskLog() { const b = $('#sheet-body'); if (b && $('#ask-log')) b.scrollTop = b.scrollHeight; }
-function openAsk() {
+function openAsk(prefill = '') {
   const where = whereForAsk();
   const st = llm.status();
   if (st.state === 'ready') llm.load();   // warm the model up while they type
@@ -944,6 +962,7 @@ function openAsk() {
     <div class="btn-row"><button class="btn ghost" data-do="ask-new">New topic</button><button class="btn ghost" data-do="close">Close</button></div>`);
   const input = $('#ask-q');
   if (input) input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); sendAsk(); } });
+  if (input && prefill) { input.value = prefill; input.focus(); }
   scrollAskLog();
 }
 async function sendAsk() {
@@ -1050,14 +1069,23 @@ function applySettings() {
 // Interests live on their own screen with an explicit Save, so they can't be nudged by accident.
 function openInterests() {
   const p = state.prefs;
-  const weights = Object.entries(tour.topics).map(([k, label]) => `
-    <div class="field" style="margin:8px 0"><label for="w-${k}" style="font-weight:500">${esc(label)}</label>
-    <div class="slider-row"><input type="range" min="0" max="1" step="0.05" id="w-${k}" data-w="${k}" value="${p.weights[k] ?? 0.5}"><output>${Math.round((p.weights[k] ?? 0.5) * 100)}</output></div></div>`).join('');
+  const slider = (k, label, hint = '') => {
+    const v = p.weights[k] ?? P.SIGHT_WEIGHTS[k] ?? 0.5;
+    return `
+    <div class="field" style="margin:8px 0"><label for="w-${k}" style="font-weight:500">${esc(label)}</label>${hint ? `<div class="small muted">${esc(hint)}</div>` : ''}
+    <div class="slider-row"><input type="range" min="0" max="1" step="0.05" id="w-${k}" data-w="${k}" value="${v}"><output>${Math.round(v * 100)}</output></div></div>`;
+  };
+  const sights = slider('looks', 'Visually impressive places', 'Worth seeing even without the story.')
+    + slider('popular', 'Visitor favourites', 'Places other visitors single out in reviews and guides.');
+  const weights = Object.entries(tour.topics).map(([k, label]) => slider(k, label)).join('');
   openSheet(`
     <h2>Interests</h2>
     <p class="small muted">These decide which stops and facts are chosen. The app nudges them a little when you tap More or Loving it.</p>
     <div class="field"><label>How gripping is this place today?</label>
       <div class="slider-row"><input type="range" id="s-si" min="0" max="1" step="0.05" value="${p.siteInterest}"><output>${Math.round(p.siteInterest * 100)}</output></div></div>
+    <h3 style="margin:14px 0 2px">What to see</h3>
+    ${sights}
+    <h3 style="margin:14px 0 2px">Topics</h3>
     ${weights}
     <div class="btn-row"><button class="btn ghost" data-do="close">Cancel</button><button class="btn" data-do="save-interests">Save interests</button></div>`);
 }
@@ -1156,7 +1184,7 @@ function handleDo(el) {
     case 'skipid': state.skipped[id] = true; if (state.target === id && state.phase === 'walking') replan({ keepTarget: false }); else if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'unskip': delete state.skipped[id]; if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'close': return closeSheet();
-    case 'ask': return openAsk();
+    case 'ask': return openAsk(el.dataset.q || '');
     case 'ask-send': return sendAsk();
     case 'ask-new': if (ask.session) ask.session.reset(); ask.items = []; return openAsk();
     case 'ask-setup': return openSettings();
