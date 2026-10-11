@@ -25,6 +25,12 @@ Updated: 2026-10-11
   - Add the main car park and overflow car park (both in the OpenStreetMap data) and the main entrance as facility stops, and make the car park `start`/`exit`. Both are currently the visitor centre.
   - Check stop positions against `osm-pois.json`. Several stops look a few metres off their buildings, e.g. Bowling Green House.
   - Redraw the path network along the real footpaths. The current links are straight lines between estimated waypoints, so walking times are rough, and the planned route cuts corners on the map.
+- **Leaflet test (2026-10-11).** Eliot supplied the English Heritage orientation leaflet (2024). It is not in the repo, so ask him to re-attach it. Georeferenced from 18 numbered markers, the median leave-one-out error was about 20 m (50–70 m at the far end and on the edges). It shows:
+  - **Visitor centre stop is in the wrong place.** The `vc` stop is about 90 m from where the leaflet and OpenStreetMap put the visitor centre and admissions, by the main car park.
+  - **Facilities to add:** admissions (marker 1), the mobility buggy start (marker 9, south of the mansion on the main axis), toilets and parking.
+  - **Routes:** the blue mobility-buggy route follows the west avenue and the east side of the Long Water to the pavilion. It is step-free, so a good guide for the pushchair. The orange "upper gardens walk" is also drawn.
+  - **Old house:** the `oldhouse` stop agrees with the leaflet (about 10 m).
+  - **Dairy:** the `dairy` stop is about 25 m off.
 - **14 stops have no notes or dated things:** italian, conservatory, dairy, science, parterre, oldhouse, bowling, longwater, whh, altar, ehh, altars, chinese, atlas.
 - **The Silsoe science years** (the "science" stop and the agricultural engineering research) have no notes at all. That matters, because science and engineering are high-interest topics.
 - **Rulers pack is too short.** It needs England back to at least 1066 (and Scotland where useful), so that facts about the medieval owners get rulers. Note that the app says "no ruler data" rather than guessing.

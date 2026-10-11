@@ -69,6 +69,23 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
 - **Use it:**
   - `osm-pois.json` lists named points (statues, toilets, gates, car parks, buildings) with positions. Check every stop's position against it and the listing. Where they disagree by more than about 20 m, find out which is right and say so in `sources.md`.
   - Draw waypoints and path links along the real footpaths in `tours/<id>.map.json`, so walking distances are realistic.
+- **A map picture from Eliot** (leaflet, guidebook plan, photo of the board). Visitor maps are rarely to scale: often a bird's-eye view, rotated and stretched. So georeference it, rather than reading positions off it by eye:
+  1. **Prepare the image.** Render a PDF at 200 dpi or more (`pdftoppm -r 200`) and crop to the map.
+  2. **Find the markers.** For numbered key markers, sample their colour from the key and run `python3 tools/map-markers.py map.png --colour R,G,B --sheet sheet.png --json markers.json`. Read the numbers off the contact sheet.
+  3. **Fit.** Choose 10–20 control points with certain positions (OpenStreetMap buildings in `osm-pois.json`, listing coordinates), spread over the whole map including the far edge. Run `node tools/georef.mjs fit control.json`. It fits a perspective transform plus a smoothed spline and prints leave-one-out errors.
+     - A median under about 25 m is fine for placing facilities.
+     - Errors are larger at the far edge of a bird's-eye view, and where a marker sits beside its feature rather than on it.
+     - Mark doubtful points `"use": false` to check them without fitting to them.
+  4. **Apply.** Use `node tools/georef.mjs apply` to place what only the picture shows: admissions, toilets, play area, buggy start, audio points.
+  5. **Trace routes.** Trace drawn routes (suggested walks, a mobility-buggy or step-free route) by running `map-markers.py` with the route's colour, then `georef.mjs chain`, then `apply`. Match the result to the nearest OpenStreetMap footpaths. A step-free buggy route tells you which paths suit the pushchair.
+  6. **Merge by trust.** For each kind of data, the most trusted source wins:
+     - **Paths walked:** GPX.
+     - **Shapes and paths:** OpenStreetMap.
+     - **Listed structures:** listing coordinates.
+     - **Facilities, routes and names:** the picture, for anything only it shows.
+     - **Anything else:** estimates.
+
+     Record every disagreement over about 20 m in `sources.md`.
 - **Waypoints and paths:**
   - Cover all stops: `[a, b, scenic, name, door?]`.
   - Scenic scores: waterside or viewpoint walks 0.8–1, ordinary paths 0.3–0.5, service short-cuts 0.2.
