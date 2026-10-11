@@ -17,6 +17,7 @@ This repository is the whole project, and its top level is also the website:
 | `docs/` | Tour file format |
 | `sites/` | Working files while preparing a site (brief, status, research drafts, fact-check report) |
 | `.claude/`, `CLAUDE.md` | Instructions for Claude: the site-preparation skills and helper agents |
+| `android/` | The Android app: the guide in a WebView plus on-phone Gemma (LiteRT-LM). Built by GitHub Actions (`.github/workflows/android.yml`) into the `android-latest` release |
 | `tools/` | Tour file checker (`node tools/validate-tour.mjs tours/<id>.json 120`); `ask.mjs` prints the assistant's prompt for a conversation (`node tools/ask.mjs --at orangery "Who built this?"`) |
 | `tests/` | Planner and date-maths tests (`npm test`) |
 
@@ -25,6 +26,25 @@ GitHub Pages publishes the `main` branch from the top level, at `https://edixon.
 **Installing on the phone:** open the address in Chrome on Wi-Fi, ⋮ → **Add to Home screen / Install app**, then open it once from the home screen. It then works offline (test with aeroplane mode).
 
 **Updates:** Claude pushes changes straight to this repository. Pages redeploys in a minute or two; then open the app with signal, wait about 10 seconds, close it fully and open it again. Your progress is kept. Anyone changing files by hand should also bump `VERSION` in `sw.js`.
+
+## The Android app and the offline assistant
+
+The Android app is the same guide with an **Ask** feature: questions answered offline by Google's Gemma 4 E2B model running on the phone. In an ordinary browser everything else works, but Ask explains that it needs the app.
+
+**Install (one-off):**
+1. On the phone, open **https://github.com/EDixon/Tour-guide/releases/tag/android-latest** and download `TourGuide.apk`.
+2. Open it. Allow Chrome to install apps when asked. If Play Protect warns about an unknown developer, choose to install anyway: it's your own build.
+3. Open **Tour Guide**, allow location, and let the guide load once with signal.
+4. **Settings → Offline assistant → Download** (about 2.6 GB, Wi-Fi only; it carries on in the background). Or **Import model file** if you've downloaded the `.litertlm` file yourself.
+
+**Using it:** tap **💬** (top bar) or **Ask about this** on a stop, and type or use the keyboard's microphone.
+- The first question loads the model, which takes several seconds; after that, answers start in a few seconds.
+- The app works out every date (before/after, who reigned, ages) itself and gives the model the best-matching notes for where you are, so the model never does sums.
+- **New topic** clears the conversation.
+
+**Updates:** guide content and app screens update as before, through the website. The Android app only needs reinstalling when its native side changes. Each GitHub build is published to the same release page and installs over the previous one, keeping your downloaded model.
+
+**Signing:** the APK is signed with a key kept in this public repo (`android/keystore/`), so builds install over each other. That key only proves an APK was built from this repo, not by you, so only install APKs from this repo's Releases page.
 
 ## Try it at home first
 
