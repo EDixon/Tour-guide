@@ -5,11 +5,11 @@
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 const about = (approx) => (approx ? 'about ' : '');
 
+// Full years and words only: small models misread shorthand like "c.1706–29" ("29 years later").
 export function label(t) {
-  const c = t.approx ? 'c.' : '';
+  const c = t.approx ? 'about ' : '';
   if (t.to == null || t.to === t.from) return `${c}${t.from}`;
-  const sameCentury = Math.floor(t.from / 100) === Math.floor(t.to / 100);
-  return `${c}${t.from}–${sameCentury ? String(t.to).slice(2) : t.to}`;
+  return `${c}${t.from}–${t.to}`;
 }
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const span = (t) => ({ a: t.from, b: t.to ?? t.from });

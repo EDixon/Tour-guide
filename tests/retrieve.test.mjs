@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { rank, parseSections } from '../assistant/retrieve.mjs';
 import { mentions } from '../assistant/maths.mjs';
-import { buildPrompt } from '../assistant/prompt.mjs';
+import { buildPrompt, plainDates } from '../assistant/prompt.mjs';
 const secs = parseSections(fs.readFileSync(new URL('../knowledge/wrest-park-sample.md', import.meta.url), 'utf8'));
 const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
@@ -14,5 +14,17 @@ ok('naming the statue brings in its notes and the Glorious Revolution', () => {
   const p = buildPrompt({ question: 'Why would a duke put up a statue of a king who had been dead for decades?', sections: secs, dates, nowYear: 2026 });
   assert.ok(p.picked.includes('The statue of William III') && p.picked.includes('William III and the Glorious Revolution'));
   assert.ok(p.facts.some(f => /35 years after William III died/.test(f)));
+});
+ok('dates written out in full for the model', () => {
+  assert.equal(plainDates('built 1834–39, c.1835, 1758-60, 1709–11, £1,809, 1690'), 'built 1834–1839, about 1835, 1758–1760, 1709–1711, £1,809, 1690');
+  const p = buildPrompt({ question: 'Who made the river?', sections: secs, dates, nowYear: 2026 });
+  assert.ok(!/\b1\d{3}–\d\d\b/.test(p.text), 'no shortened year ranges');
+  assert.ok(!/\bc\.\d/.test(p.text), 'no c. dates');
+});
+ok('a follow-up that names nothing inherits the previous question', () => {
+  const p = buildPrompt({ question: 'Why did he do that?', sections: secs, dates, previous: ['Why would a duke put up a statue of a king who had been dead for decades?'], nowYear: 2026 });
+  assert.ok(p.picked.includes('The statue of William III'));
+  assert.match(p.text, /EARLIER QUESTION: Why would a duke/);
+  assert.ok(!/^A:/m.test(p.text), 'no earlier answers carried');
 });
 console.log(`\n${n} passed`);

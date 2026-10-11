@@ -4,10 +4,10 @@ import { compare, rulersDuring, personAt, calculatedFacts, mentions, label } fro
 const dates = JSON.parse(fs.readFileSync(new URL('../knowledge/wrest-park-dates.json', import.meta.url)));
 const T = (id) => dates.things.find(t => t.id === id), P = (id) => dates.people.find(p => p.id === id);
 let n = 0; const ok = (name, f) => { f(); n++; console.log('ok  ', name); };
-ok('labels', () => { assert.equal(label(T('house')), '1834–39'); assert.equal(label(T('orangery')), 'c.1835'); });
+ok('labels use full years', () => { assert.equal(label(T('house')), '1834–1839'); assert.equal(label(T('orangery')), 'about 1835'); });
 ok('orangery is during the house, not after', () => {
   const r = compare(T('orangery'), T('house')); assert.equal(r.rel, 'during');
-  assert.match(r.text, /WHILE the house \(1834–39\) was being built/); assert.match(r.text, /about 1 year after/); assert.match(r.text, /about 4 years before/);
+  assert.match(r.text, /WHILE the house \(1834–1839\) was being built/); assert.match(r.text, /about 1 year after/); assert.match(r.text, /about 4 years before/);
 });
 ok('house compared the other way round still says during', () => assert.match(compare(T('house'), T('orangery')).text, /WHILE/));
 ok('pavilion before statue', () => { const r = compare(T('pavilion'), T('william-statue')); assert.equal(r.rel, 'before'); assert.match(r.text, /about 26 years earlier/); });
