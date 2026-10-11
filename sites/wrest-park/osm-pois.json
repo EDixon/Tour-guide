@@ -1,0 +1,885 @@
+{
+ "attribution": "© OpenStreetMap contributors",
+ "licence": "Open Database Licence (ODbL) 1.0, https://www.openstreetmap.org/copyright",
+ "fetched": "2026-10-11",
+ "pois": [
+  {
+   "osm": "node/1426735425",
+   "pos": [
+    52.006952,
+    -0.413332
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/1426735463",
+   "pos": [
+    52.007875,
+    -0.414929
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/1429005892",
+   "pos": [
+    52.006799,
+    -0.414793
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/1429010486",
+   "pos": [
+    52.006578,
+    -0.416229
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/1429010503",
+   "pos": [
+    52.00611,
+    -0.411814
+   ],
+   "tags": {
+    "amenity": "fountain"
+   }
+  },
+  {
+   "osm": "node/1429021424",
+   "pos": [
+    52.004634,
+    -0.413571
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/1429029835",
+   "pos": [
+    52.003125,
+    -0.408525
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Capability Brown Column",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/6457680338",
+   "pos": [
+    52.008257,
+    -0.408086
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/7841192997",
+   "pos": [
+    52.002193,
+    -0.41035
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/7841192998",
+   "pos": [
+    52.002091,
+    -0.412076
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/7841192999",
+   "pos": [
+    52.001649,
+    -0.41309
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/7841193400",
+   "pos": [
+    52.000767,
+    -0.411021
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "William III",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/7841193401",
+   "pos": [
+    52.005436,
+    -0.411709
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/8612423106",
+   "pos": [
+    52.000253,
+    -0.4127
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Mithraic Altar",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/8612423107",
+   "pos": [
+    52.000354,
+    -0.413306
+   ],
+   "tags": {
+    "historic": "monument",
+    "name": "Hutton Monument"
+   }
+  },
+  {
+   "osm": "node/8612423108",
+   "pos": [
+    52.002412,
+    -0.408097
+   ],
+   "tags": {
+    "historic": "monument",
+    "name": "Dog's Cemetery"
+   }
+  },
+  {
+   "osm": "node/8612423109",
+   "pos": [
+    52.002919,
+    -0.409208
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Graeco-Roman Altars",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/8612428128",
+   "pos": [
+    52.003514,
+    -0.410529
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Diana",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/8612428129",
+   "pos": [
+    52.006234,
+    -0.40952
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Atlas",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13228175943",
+   "pos": [
+    52.007838,
+    -0.414697
+   ],
+   "tags": {
+    "access": "customers",
+    "amenity": "toilets",
+    "fee": "no",
+    "wheelchair": "yes"
+   }
+  },
+  {
+   "osm": "node/13228221478",
+   "pos": [
+    52.007788,
+    -0.413351
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Wyvern",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13228222223",
+   "pos": [
+    51.999224,
+    -0.413586
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222224",
+   "pos": [
+    51.999443,
+    -0.412815
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222225",
+   "pos": [
+    52.000178,
+    -0.412708
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222226",
+   "pos": [
+    52.000318,
+    -0.412863
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222227",
+   "pos": [
+    52.0002,
+    -0.412702
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222228",
+   "pos": [
+    52.000132,
+    -0.414404
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Dog",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13228222229",
+   "pos": [
+    52.002059,
+    -0.407401
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222230",
+   "pos": [
+    52.001842,
+    -0.407208
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222231",
+   "pos": [
+    52.006146,
+    -0.416031
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13228222232",
+   "pos": [
+    52.006225,
+    -0.416036
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430240",
+   "pos": [
+    52.002883,
+    -0.41163
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430241",
+   "pos": [
+    52.002371,
+    -0.411548
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430244",
+   "pos": [
+    52.001893,
+    -0.411466
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430245",
+   "pos": [
+    52.001211,
+    -0.41136
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430246",
+   "pos": [
+    52.000335,
+    -0.410911
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430249",
+   "pos": [
+    52.002905,
+    -0.411052
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430250",
+   "pos": [
+    52.0024,
+    -0.410979
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430251",
+   "pos": [
+    52.001923,
+    -0.410901
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430252",
+   "pos": [
+    52.001239,
+    -0.410797
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430253",
+   "pos": [
+    52.006025,
+    -0.413781
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430254",
+   "pos": [
+    52.00595,
+    -0.413775
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430255",
+   "pos": [
+    52.00584,
+    -0.413773
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430258",
+   "pos": [
+    52.003509,
+    -0.413841
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430259",
+   "pos": [
+    52.004037,
+    -0.413912
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430268",
+   "pos": [
+    52.000368,
+    -0.410833
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13231430269",
+   "pos": [
+    52.007607,
+    -0.412251
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13231430270",
+   "pos": [
+    52.007414,
+    -0.412215
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13231430271",
+   "pos": [
+    52.007437,
+    -0.411784
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13231430272",
+   "pos": [
+    52.007633,
+    -0.411814
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/13231430273",
+   "pos": [
+    52.007878,
+    -0.413076
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/13231430274",
+   "pos": [
+    52.007735,
+    -0.413646
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13590657805",
+   "pos": [
+    52.007897,
+    -0.412045
+   ],
+   "tags": {
+    "amenity": "studio",
+    "name": "Tristar Television Ltd"
+   }
+  },
+  {
+   "osm": "node/13590657807",
+   "pos": [
+    52.00805,
+    -0.412436
+   ],
+   "tags": {
+    "amenity": "car_rental",
+    "name": "Maxi-Lease Car & Van Leasing",
+    "opening_hours": "Mo-Fr 09:00-17:00"
+   }
+  },
+  {
+   "osm": "way/89187553",
+   "pos": [
+    52.002056,
+    -0.412132
+   ],
+   "tags": {
+    "name": "Broad Water",
+    "natural": "water"
+   }
+  },
+  {
+   "osm": "way/89187555",
+   "pos": [
+    52.003244,
+    -0.411349
+   ],
+   "tags": {
+    "name": "Long Water",
+    "natural": "water"
+   }
+  },
+  {
+   "osm": "way/129286046",
+   "pos": [
+    52.004609,
+    -0.411082
+   ],
+   "tags": {
+    "heritage": "2",
+    "historic": "garden",
+    "leisure": "garden",
+    "name": "Wrest Park & Gardens",
+    "operator": "English Heritage",
+    "tourism": "attraction"
+   }
+  },
+  {
+   "osm": "way/129286205",
+   "pos": [
+    52.005995,
+    -0.413957
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "Wrest Park Orangery"
+   }
+  },
+  {
+   "osm": "way/129286207",
+   "pos": [
+    52.007885,
+    -0.414138
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "English Heritage Shop"
+   }
+  },
+  {
+   "osm": "way/129286302",
+   "pos": [
+    52.00375,
+    -0.414044
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "Bowling Green House"
+   }
+  },
+  {
+   "osm": "way/129320232",
+   "pos": [
+    52.000424,
+    -0.410966
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "man_made": "pavilion",
+    "name": "Wrest Park Archer Pavilion"
+   }
+  },
+  {
+   "osm": "way/129320237",
+   "pos": [
+    52.003849,
+    -0.413496
+   ],
+   "tags": {
+    "historic": "yes",
+    "leisure": "pitch"
+   }
+  },
+  {
+   "osm": "way/129536356",
+   "pos": [
+    52.007383,
+    -0.415353
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "EH Second Hand Bookstore"
+   }
+  },
+  {
+   "osm": "way/129536642",
+   "pos": [
+    52.00682,
+    -0.414684
+   ],
+   "tags": {
+    "amenity": "toilets",
+    "building": "yes"
+   }
+  },
+  {
+   "osm": "way/129536646",
+   "pos": [
+    52.005836,
+    -0.415321
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "Wrest Park Roman Bath House"
+   }
+  },
+  {
+   "osm": "way/129537311",
+   "pos": [
+    52.003356,
+    -0.413452
+   ],
+   "tags": {
+    "name": "Leg O'Mutton Lake",
+    "natural": "water"
+   }
+  },
+  {
+   "osm": "way/840320514",
+   "pos": [
+    52.003566,
+    -0.409798
+   ],
+   "tags": {
+    "name": "Ladies' Lake",
+    "natural": "water"
+   }
+  },
+  {
+   "osm": "way/840320520",
+   "pos": [
+    52.007547,
+    -0.412947
+   ],
+   "tags": {
+    "leisure": "garden",
+    "name": "The Rose Garden"
+   }
+  },
+  {
+   "osm": "way/840320521",
+   "pos": [
+    52.008181,
+    -0.410835
+   ],
+   "tags": {
+    "man_made": "courtyard"
+   }
+  },
+  {
+   "osm": "way/840320522",
+   "pos": [
+    52.008048,
+    -0.411316
+   ],
+   "tags": {
+    "man_made": "courtyard"
+   }
+  },
+  {
+   "osm": "way/840320537",
+   "pos": [
+    52.007864,
+    -0.414481
+   ],
+   "tags": {
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "English Heritage Cafe"
+   }
+  },
+  {
+   "osm": "way/928491583",
+   "pos": [
+    52.00785,
+    -0.412802
+   ],
+   "tags": {
+    "leisure": "garden",
+    "name": "The Italian Garden"
+   }
+  },
+  {
+   "osm": "way/928491584",
+   "pos": [
+    52.007545,
+    -0.412067
+   ],
+   "tags": {
+    "leisure": "garden",
+    "name": "The French Garden"
+   }
+  },
+  {
+   "osm": "way/928491585",
+   "pos": [
+    52.00472,
+    -0.413695
+   ],
+   "tags": {
+    "leisure": "garden",
+    "name": "The American Garden"
+   }
+  },
+  {
+   "osm": "way/928491586",
+   "pos": [
+    52.000866,
+    -0.408136
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "East Half House"
+   }
+  },
+  {
+   "osm": "way/928491587",
+   "pos": [
+    52.001884,
+    -0.413147
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "West Half House"
+   }
+  },
+  {
+   "osm": "way/928491588",
+   "pos": [
+    52.003904,
+    -0.409696
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "building",
+    "name": "Chinese Temple"
+   }
+  },
+  {
+   "osm": "way/1441685480",
+   "pos": [
+    52.007597,
+    -0.415385
+   ],
+   "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Wrest Park Main Car Park",
+    "operator": "English Heritage",
+    "surface": "gravel"
+   }
+  },
+  {
+   "osm": "way/1441984080",
+   "pos": [
+    52.008151,
+    -0.41585
+   ],
+   "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Wrest Park Overflow Parking",
+    "operator": "English Heritage",
+    "surface": "grass"
+   }
+  },
+  {
+   "osm": "way/1441984082",
+   "pos": [
+    52.00753,
+    -0.413769
+   ],
+   "tags": {
+    "amenity": "shelter",
+    "building": "yes"
+   }
+  }
+ ]
+}
