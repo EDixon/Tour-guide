@@ -101,6 +101,8 @@ function kindOf(t, closed) {
   if (t.waterway) return 'waterline';
   if (!closed && t.barrier) return 'wall';
   if (!closed) return null;
+  // The outline of the whole attraction is drawn as a faint backdrop, not as a garden over everything.
+  if (t.tourism === 'attraction' || t.historic === 'garden' || t.boundary) return 'site';
   if (/^(wood|scrub)$/.test(t.natural || '') || /^(forest|orchard)$/.test(t.landuse || '')) return 'wood';
   if (t.leisure === 'garden') return 'garden';
   if (t.leisure === 'playground') return 'playground';
@@ -230,8 +232,11 @@ for (const el of data.elements) {
   }
 }
 
-const ORDER = ['field', 'park', 'lawn', 'garden', 'playground', 'wood', 'parking', 'water', 'waterline', 'road', 'path', 'wall', 'building'];
-features.sort((a, b) => ORDER.indexOf(a.kind) - ORDER.indexOf(b.kind));
+// Drawing order: backdrops, then ground cover largest first (so small gardens sit on top of big
+// lawns), then water, roads, paths, walls and buildings.
+const LAYER = { site: 0, field: 1, park: 2, lawn: 3, garden: 3, playground: 3, wood: 3, parking: 3, water: 4, waterline: 5, road: 6, path: 7, wall: 8, building: 9 };
+const area = (f) => f.rings ? Math.abs(f.rings[0].reduce((s, p, i, r) => { const q = r[(i + 1) % r.length]; return s + p[1] * q[0] - q[1] * p[0]; }, 0)) : 0;
+features.sort((a, b) => LAYER[a.kind] - LAYER[b.kind] || (LAYER[a.kind] === 3 ? area(b) - area(a) : 0));
 const layer = {
   attribution: '© OpenStreetMap contributors',
   licence: 'Open Database Licence (ODbL) 1.0, https://www.openstreetmap.org/copyright',
