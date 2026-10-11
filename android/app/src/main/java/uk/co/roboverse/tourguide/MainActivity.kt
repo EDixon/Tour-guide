@@ -108,7 +108,7 @@ class MainActivity : ComponentActivity() {
     override fun onTrimMemory(level: Int) {
         super.onTrimMemory(level)
         // Free the model (about 3 GB) if Android is short of memory while we're in the background.
-        if (level >= TRIM_MEMORY_BACKGROUND) llm.unload()
+        if (level >= android.content.ComponentCallbacks2.TRIM_MEMORY_BACKGROUND) llm.unload()
     }
 
     override fun onDestroy() {

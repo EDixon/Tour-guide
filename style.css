@@ -150,3 +150,13 @@ svg .pulse { animation: pulse 1.6s ease-in-out infinite; }
 .kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 0.9rem; }
 .center { text-align: center; }
 a { color: var(--brand); }
+
+/* Ask (offline assistant) */
+.ask-log { margin: 12px 0; }
+.ask-item { border-left: 4px solid var(--brand); padding: 4px 0 4px 12px; margin: 12px 0; }
+.ask-q { font-weight: 600; margin-bottom: 4px; }
+.ask-a { font-size: 1.05rem; line-height: 1.45; white-space: pre-wrap; }
+.ask-row { display: flex; gap: 8px; margin-top: 12px; }
+.ask-row input { flex: 1; min-width: 0; font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); min-height: 52px; }
+.ask-row .btn { flex: none; }
+.top-btns { display: flex; gap: 2px; }

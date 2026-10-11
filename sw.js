@@ -1,9 +1,11 @@
 // Offline cache: everything the app needs is cached on first visit; afterwards it runs with no signal.
-const VERSION = 'tg-v8';
+const VERSION = 'tg-v9';
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',
   'tours/index.json', 'tours/wrest-park.json',
+  'assistant/llm.js', 'assistant/prompt.mjs', 'assistant/maths.mjs', 'assistant/retrieve.mjs', 'assistant/knowledge.mjs',
+  'knowledge/wrest-park/notes.md', 'knowledge/wrest-park/dates.json', 'knowledge/reference/rulers/notes.md', 'knowledge/reference/rulers/dates.json',
 ];
 self.addEventListener('install', (e) => {
   // cache: 'reload' bypasses the browser's HTTP cache so an update never caches stale files.

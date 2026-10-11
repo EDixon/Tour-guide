@@ -1,4 +1,7 @@
 import * as P from './planner.js';
+import { llm } from './assistant/llm.js';
+import { createSession } from './assistant/prompt.mjs';
+import { loadKnowledge, knowledgeFiles } from './assistant/knowledge.mjs';
 
 // ---------------------------------------------------------------- state
 const LS = 'tourguide:v1';
@@ -578,6 +581,7 @@ function renderStop() {
     ${(s.kids || []).length ? `<div class="kid"><b>For the little one</b>${esc(s.kids[0])}</div>` : ''}
     <ul class="bullets">${ordered.map(b => bulletHtml(s, b.id, state.extra.includes(b.id))).join('')}</ul>
     ${remaining ? `<button class="btn ghost block" style="margin-top:10px" data-do="more">More (${remaining} left)</button>` : ''}
+    <button class="btn secondary block" style="margin-top:10px" data-do="ask">💬 Ask about this</button>
     <button class="btn block" style="margin-top:12px" data-do="done">Done: next is ${esc(nextTxt)}</button>
     ${leaveBy ? `<div class="small muted center" style="margin-top:8px">Plan has you moving on about ${leaveBy}</div>` : ''}
   </div>`;
@@ -870,6 +874,134 @@ function bindMap(wrap) {
   });
 }
 
+// ---------------------------------------------------------------- Ask (offline assistant)
+// The app builds each question's prompt (date facts worked out in code, the best-matching notes, where you
+// are, the earlier question) and the Android app's on-phone model writes the answer.
+const APP_URL = 'https://github.com/EDixon/Tour-guide/releases/tag/android-latest';
+const ask = { session: null, loading: null, items: [], busy: null, key: 0 };
+function ensureKnowledge() {
+  if (ask.session) return Promise.resolve(ask.session);
+  if (!ask.loading) {
+    ask.loading = loadKnowledge(tour, async (p) => { const r = await fetch(p); return r.ok ? r.text() : null; })
+      .then(k => (ask.session = createSession({ sections: k.sections, dates: k.dates, tour })))
+      .catch(e => { ask.loading = null; throw e; });
+  }
+  return ask.loading;
+}
+// Where the family is, for "this" and "here": the stop you're at, or the nearest outdoor stop within 60 m by GPS,
+// or the stop you've just left.
+function whereForAsk() {
+  if (state.phase === 'stop' && state.at) return state.at;
+  const g = gpsFresh();
+  if (g) {
+    let best = null, bd = Infinity;
+    for (const st of tour.stops) {
+      if (st.kind === 'facility' || st.kind === 'intro' || st.indoor) continue;
+      const d = P.haversine([g.lat, g.lon], st.pos);
+      if (d < bd) { bd = d; best = st.id; }
+    }
+    if (bd <= 60) return best;
+  }
+  if (state.phase === 'walking' && state.from && now() - state.leftAt < 120000 && stop(state.from)?.kind !== 'facility') return state.from;
+  return null;
+}
+function fmtGB(b) { return `${(b / 1e9).toFixed(1)} GB`; }
+function assistantStatusText(st = llm.status()) {
+  const pr = st.progress || {};
+  switch (st.state) {
+    case 'unavailable': return 'Needs the Android app.';
+    case 'none': return 'Model not on the phone yet.';
+    case 'downloading': return pr.total > 0 ? `${pr.kind === 'import' ? 'Copying' : 'Downloading'} the model: ${Math.round(100 * pr.bytes / pr.total)}% of ${fmtGB(pr.total)}` : 'Starting download (Wi-Fi only)…';
+    case 'ready': return 'Ready. It takes a few seconds to load the first time.';
+    case 'loading': return 'Getting the assistant ready…';
+    case 'loaded': return `Ready (${st.backend === 'GPU' ? 'using the graphics chip' : 'using the main processor'}).`;
+    case 'error': return st.error || 'Something went wrong.';
+  }
+  return '';
+}
+function askItemHtml(it) {
+  const a = it.a ? esc(it.a) : (it.state === 'thinking' ? '<span class="muted">Thinking…</span>' : '');
+  return `<div class="ask-item" data-ask="${it.key}"><div class="ask-q">${esc(it.q)}</div><div class="ask-a">${a}</div><div class="small muted ask-meta">${esc(it.meta || '')}</div></div>`;
+}
+function updateAskItem(it) {
+  const el = document.querySelector(`[data-ask="${it.key}"]`);
+  if (el) { el.outerHTML = askItemHtml(it); scrollAskLog(); }
+}
+function scrollAskLog() { const b = $('#sheet-body'); if (b && $('#ask-log')) b.scrollTop = b.scrollHeight; }
+function openAsk() {
+  const where = whereForAsk();
+  const st = llm.status();
+  if (st.state === 'ready') llm.load();   // warm the model up while they type
+  ensureKnowledge().catch(() => {});
+  const setup = llm.available() && !st.model && st.state !== 'downloading';
+  openSheet(`
+    <h2>Ask</h2>
+    <div class="small muted"><span id="ask-status">${esc(assistantStatusText(st))}</span>${where ? ` · at ${esc(stop(where).name)}` : ''}</div>
+    <div id="ask-log" class="ask-log">${ask.items.map(askItemHtml).join('') || '<p class="small muted">Ask about what you’re looking at: who built it, when, why, who someone was. Dates are worked out by the app, so they’re exact; the rest comes from the guide’s notes.</p>'}</div>
+    ${!llm.available() ? `<div class="note">The offline assistant runs on the phone in the Android app. <a href="${APP_URL}" target="_blank" rel="noopener">Get the app</a></div>` : ''}
+    ${setup ? '<button class="btn secondary block" data-do="ask-setup">Set up the assistant</button>' : ''}
+    <div class="ask-row"><input type="text" id="ask-q" placeholder="Ask a question…" enterkeyhint="send" autocomplete="off"><button class="btn" data-do="ask-send">Ask</button></div>
+    <div class="btn-row"><button class="btn ghost" data-do="ask-new">New topic</button><button class="btn ghost" data-do="close">Close</button></div>`);
+  const input = $('#ask-q');
+  if (input) input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); sendAsk(); } });
+  scrollAskLog();
+}
+async function sendAsk() {
+  const input = $('#ask-q');
+  const q = input?.value.trim();
+  if (!q) return;
+  if (!llm.available()) return toast('The assistant needs the Android app.');
+  const st = llm.status();
+  if (!st.model) return toast('Set up the assistant first: Settings → Offline assistant.');
+  if (ask.busy) llm.cancel(ask.busy);
+  input.value = '';
+  const it = { key: ++ask.key, q, a: '', state: 'thinking', meta: '' };
+  ask.items.push(it);
+  if (ask.items.length > 20) ask.items.shift();
+  const log = $('#ask-log');
+  if (log) { if (ask.items.length === 1) log.innerHTML = ''; log.insertAdjacentHTML('beforeend', askItemHtml(it)); scrollAskLog(); }
+  let session;
+  try { session = await ensureKnowledge(); } catch (e) { it.state = 'error'; it.meta = `Couldn’t load the notes: ${e.message}`; return updateAskItem(it); }
+  const where = whereForAsk();
+  const r = session.prompt(q, { stopId: where });
+  logEv('ask', { q, stop: where, about: r.about });
+  const t0 = performance.now();
+  const tick = setInterval(() => { if (it.state === 'thinking') { it.meta = `Thinking… ${Math.round((performance.now() - t0) / 1000)} s`; updateAskItem(it); } }, 1000);
+  const h = llm.ask(r.text, { maxTokens: 256, onToken: (text) => { it.a = text.replace(/\*\*/g, ''); it.state = 'streaming'; updateAskItem(it); } });
+  ask.busy = h.id;
+  try {
+    const res = await h.done;
+    it.a = res.text.replace(/\*\*/g, '').trim();
+    it.state = 'done';
+    it.meta = res.firstMs >= 0 ? `${(res.firstMs / 1000).toFixed(1)} s to start, ${(res.totalMs / 1000).toFixed(1)} s in all` : '';
+  } catch (e) {
+    it.state = 'error'; it.meta = e.message;
+  } finally {
+    clearInterval(tick);
+    if (ask.busy === h.id) ask.busy = null;
+    updateAskItem(it);
+    save();
+  }
+}
+function assistantSettingsHtml() {
+  if (!llm.available()) return `<p class="small muted">The offline assistant runs on the phone in the Android app. <a href="${APP_URL}" target="_blank" rel="noopener">Get the app</a></p>`;
+  const st = llm.status();
+  const busy = st.state === 'downloading';
+  return `<div class="small" id="as-status">${esc(assistantStatusText(st))}</div>
+    ${st.model ? `<div class="small muted">${esc(st.model)} · ${fmtGB(st.modelBytes || 0)} · app ${esc(st.appVersion || '')}</div>` : ''}
+    ${!st.model && !busy ? `<div class="btn-row"><button class="btn" data-do="ask-download">Download (about 2.6 GB, Wi-Fi)</button></div>
+      <div class="btn-row"><button class="btn ghost" data-do="ask-import">Import model file…</button></div>
+      <div class="hint small muted">The model is Google’s Gemma 4 E2B. Download needs Wi-Fi; it carries on in the background and shows in the notifications.</div>` : ''}
+    ${st.model ? `<div class="btn-row">${st.state !== 'loaded' ? '<button class="btn ghost" data-do="ask-load">Load now</button>' : ''}<button class="btn ghost" data-do="ask-delete">Delete model</button></div>` : ''}`;
+}
+llm.onStatus((st) => {
+  const t = assistantStatusText(st);
+  const a = $('#ask-status'); if (a) a.textContent = t;
+  const block = $('#as-block'); if (block) block.innerHTML = assistantSettingsHtml();
+});
+// Lets the Android back button close a sheet before leaving the app.
+window.TourApp = { back() { if (!$('#sheet').classList.contains('hidden')) { closeSheet(); return true; } return false; } };
+
 // ---------------------------------------------------------------- Settings & review
 function seg(name, opts, cur) {
   return `<div class="seg" data-seg="${name}">${opts.map(([v, l]) => `<button data-v="${v}" class="${String(v) === String(cur) ? 'on' : ''}">${l}</button>`).join('')}</div>`;
@@ -889,6 +1021,8 @@ function openSettings() {
     <div class="btn-row"><button class="btn" data-do="apply">Apply</button></div>
     <h3>Interests</h3>
     <button class="btn secondary block" data-do="interests">Edit interests…</button>
+    <h3>Offline assistant</h3>
+    <div id="as-block">${assistantSettingsHtml()}</div>
     <h3>Tools</h3>
     <div class="field switch"><label for="s-gps">Use GPS (turn off for testing at home)</label><input type="checkbox" id="s-gps" ${p.useGps !== false ? 'checked' : ''}></div>
     <div class="field switch"><label for="s-track">Record GPS track (to correct paths later)</label><input type="checkbox" id="s-track" ${p.recordTrack ? 'checked' : ''}></div>
@@ -951,9 +1085,11 @@ function openReview() {
 function exportGpx() {
   const pts = state.track.map(([la, lo, t]) => `<trkpt lat="${la}" lon="${lo}"><time>${new Date(t).toISOString()}</time></trkpt>`).join('');
   const gpx = `<?xml version="1.0" encoding="UTF-8"?><gpx version="1.1" creator="Tour Guide" xmlns="http://www.topografix.com/GPX/1/1"><trk><name>${esc(tour.name)}</name><trkseg>${pts}</trkseg></trk></gpx>`;
+  const name = `${tour.id}-${new Date().toISOString().slice(0, 10)}.gpx`;
+  if (llm.available()) { toast(llm.saveText(name, 'application/gpx+xml', gpx) ? `Saved to Downloads: ${name}` : 'Couldn’t save the track.'); return; }
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([gpx], { type: 'application/gpx+xml' }));
-  a.download = `${tour.id}-${new Date().toISOString().slice(0, 10)}.gpx`;
+  a.download = name;
   a.click();
 }
 
@@ -1020,6 +1156,14 @@ function handleDo(el) {
     case 'skipid': state.skipped[id] = true; if (state.target === id && state.phase === 'walking') replan({ keepTarget: false }); else if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'unskip': delete state.skipped[id]; if (state.phase !== 'setup') replan(); closeSheet(); return render();
     case 'close': return closeSheet();
+    case 'ask': return openAsk();
+    case 'ask-send': return sendAsk();
+    case 'ask-new': if (ask.session) ask.session.reset(); ask.items = []; return openAsk();
+    case 'ask-setup': return openSettings();
+    case 'ask-download': llm.download(); toast('Download started (Wi-Fi only). It carries on in the background.'); return;
+    case 'ask-import': return llm.importModel();
+    case 'ask-load': llm.load(); return;
+    case 'ask-delete': if (confirm('Delete the assistant model from the phone? You can download it again later.')) llm.deleteModel(); return;
     case 'apply': return applySettings();
     case 'interests': return openInterests();
     case 'save-interests': return saveInterests();
@@ -1053,6 +1197,7 @@ document.addEventListener('click', (e) => {
     if (a === 'leave') return leaveSheet();
   }
   if (e.target.closest('#btn-settings')) return openSettings();
+  if (e.target.closest('#btn-ask')) return openAsk();
   const segBtn = e.target.closest('.seg button');
   if (segBtn) { segBtn.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === segBtn)); return; }
   const doEl = e.target.closest('[data-do]');
@@ -1089,6 +1234,7 @@ async function boot() {
   tour = await (await fetch(`tours/${entry.file}`)).json();
   model = P.buildModel(tour);
   localStorage.setItem(LS + ':last', tour.id);
+  if (tour.knowledge) setTimeout(() => knowledgeFiles(tour).forEach(f => fetch(f).catch(() => {})), 3000);
   state = load(tour.id) || freshState(tour);
   state.prefs.weights = { ...P.defaultSettings(tour).weights, ...state.prefs.weights };
   if (state.depthMult == null) state.depthMult = 1;

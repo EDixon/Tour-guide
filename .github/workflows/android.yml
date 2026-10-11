@@ -17,9 +17,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
@@ -30,7 +30,21 @@ jobs:
 
       - name: Build APK
         working-directory: android
-        run: gradle :app:assembleRelease -PbuildNumber=${{ github.run_number }} --stacktrace
+        run: |
+          set -o pipefail
+          gradle :app:assembleRelease -PbuildNumber=${{ github.run_number }} --stacktrace 2>&1 | tee ../build.log
+
+      # Build logs can't be downloaded from Claude's workspace, so on failure surface the key lines as
+      # annotations and push the full log to the ci-logs branch.
+      - name: Report build errors
+        if: failure()
+        run: |
+          grep -E "^e: |error:|What went wrong|Could not|Execution failed|> " build.log | grep -v "^> Task" | head -10 | while IFS= read -r l; do echo "::error::${l:0:400}"; done
+          git config user.name "ci"; git config user.email "ci@users.noreply.github.com"
+          mkdir -p /tmp/ci && cp build.log /tmp/ci/
+          git checkout --orphan ci-logs && git rm -rf --cached . -q && git clean -fdq -e build.log
+          mkdir -p logs && cp /tmp/ci/build.log logs/build-${{ github.run_number }}.log
+          git add logs && git commit -qm "Build log ${{ github.run_number }}" && git push -qf origin ci-logs
 
       - name: Show what was resolved
         working-directory: android
