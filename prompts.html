@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f4d3a">
+  <title>Test prompts</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { display: block; }
+    main { padding: 16px; max-width: 720px; margin: 0 auto; }
+    textarea { width: 100%; box-sizing: border-box; font: 0.8rem/1.35 ui-monospace, monospace; padding: 8px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: inherit; margin: 6px 0 10px; }
+    ol { padding-left: 1.2em; } li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <header id="top"><div class="top-row"><div class="title">Test prompts</div><a class="icon-btn" href="lab.html" style="color:inherit;text-decoration:none">✕</a></div>
+    <div class="status">For testing other on-phone AI apps (e.g. AI Edge Gallery) with the same notes as the browser test.</div></header>
+  <main>
+    <div class="card">
+      <h2>How to run it</h2>
+      <ol class="small">
+        <li>In the app, use the multi-turn chat (AI Chat), not Prompt Lab. Pick the GPU accelerator if offered.</li>
+        <li><b>Chat 1:</b> paste <b>Full notes</b> (1,912 words, the same as the browser test). Note the answer and its stats (time to first token, prefill and decode speed).</li>
+        <li>In the <b>same chat</b>, send each <b>follow-up</b> in turn. These show how fast it is once the notes are loaded.</li>
+        <li><b>Chat 2 (new chat):</b> paste <b>Short notes</b> (338 words), what a real question would usually need.</li>
+        <li>Repeat with a second model if you like. Send me the answers and stats.</li>
+      </ol>
+    </div>
+    
+    <div class="card">
+      <h2>1. Full notes + first question</h2>
+      <p class="small muted">Paste as the first message of a new chat.</p>
+      <textarea id="p1" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer the question using ONLY the FACTS, REIGNS and NOTES below. If they do not contain the answer, reply exactly: "Sorry, that isn't in my notes." Use British English. Keep answers under 80 words.
+
+FACTS:
+- The house: built 1834–39 for Thomas, 2nd Earl de Grey, who designed it himself.
+- The Orangery: built c.1835, also designed by Earl de Grey.
+- Comparison: the Orangery (c.1835) was built while the house was being built (1834–39).
+- The Archer Pavilion: built 1709–11 by Thomas Archer for Henry Grey, Duke of Kent.
+- Statue of William III: lead, 1730s, by John Cheere.
+
+REIGNS (British monarchs):
+- Charles II: 1660–1685
+- James II: 1685–1688
+- William III (jointly with Mary II until 1694): 1689–1702
+- Anne: 1702–1714
+- George I: 1714–1727
+- George II: 1727–1760
+- George III: 1760–1820
+- George IV: 1820–1830
+- William IV: 1830–1837
+- Victoria: 1837–1901
+- Edward VII: 1901–1910
+- George V: 1910–1936
+
+NOTES:
+## Garden front &amp; terrace (1834–39)
+- You're on the axis: the house door, the Long Water and the Archer Pavilion all line up, about 800 m due south.
+- Earl de Grey built this house about 200 m north of the old one but kept the exact alignment with the Pavilion. He moved the house, not the axis.
+- He designed it himself from French pattern books: ‘I was strictly and in every sense of the word my own architect.’
+- Unique in England: a whole country house built and decorated in French Louis XV style, in one go, 1834–39.
+- This garden front copies a design in Blondel's Maisons de Plaisance (1737). The entrance front copies the Hôtel de Matignon in Paris, now the French Prime Minister's residence.
+- Built in Bath stone ashlar with a mansard roof: the steep, double-pitched French roof that hides a whole attic storey.
+- Mid-build, in 1835, the Earl became the first President of what is now RIBA, the Royal Institute of British Architects.
+- First World War: Wrest was probably the first country house to take in wounded soldiers, opening on 7 September 1914. Patients were photographed on this terrace.
+- The stone dogs by the steps are Molossian hounds. The western one copies an ancient Roman statue known as Alcibiades' Dog.
+
+## Orangery (1835)
+- Built about 1835 by Earl de Grey on the site of a Batty Langley greenhouse, from a French design in Blondel. A French-style orangery was unique in England.
+- The main roof is glass on a shallow cast-iron frame, to get as much winter light as possible on to the citrus trees.
+- Heating grilles were set in the floor, with water tanks in the vaulted undercroft and a pump (still there) to raise the water.
+- The orange trees were bought from King Louis-Philippe of France. By 1900 they were among the largest in England.
+- Louis-Philippe's queen, Maria Amalia, was the daughter of a Habsburg archduchess, which made her Marie Antoinette's niece.
+- The front doors were too small for the grown trees, so the designers hid a full-height door in the north end, rendered to look like wall.
+- Inside: a c.1600 stone fireplace with the de Grey arms, rescued from the old house.
+- On the steps are four early-1700s stone cherubs holding a book, a puppy, a bird's nest and a torch.
+
+## Statue of William III (1730s)
+- King William III in Roman armour, crowned with laurel (1730s, by John Cheere), placed right on the main axis.
+- The Duke was a Whig. William stood for the 1688 ‘Glorious Revolution’ and a Protestant succession, so the garden made a political statement.
+- William built the Grand Alliance with the Habsburg Emperor Leopold I against Louis XIV of France.
+
+## Archer Pavilion (1709–11)
+- Thomas Archer's Pavilion (1709–11): a Baroque banqueting house closing the view down the Long Water. It cost £1,809.
+- Its plan is borrowed from Borromini's Sant'Ivo in Rome: two interlocking triangles making a six-pointed star. Archer made three points round and three square.
+- It was built during the War of the Spanish Succession, fought over who would inherit the throne of the last Spanish Habsburg king, Charles II.
+- The paintings are thought to celebrate Henry Grey becoming Duke of Kent in 1710, halfway through construction.
+- Inside, the columns, coffered dome and statues of the Great Room are trompe-l'œil: flat paint made to look 3-D using perspective and shading (1712, Hauduroy).
+- Hidden doors in the painting lead to spiral stairs: up to two servants' bedrooms, and down to a brick kitchen and a double privy in the basement.
+- Red and yellow brick with banded rustication, a lead-covered dome and a lantern on top. It was originally rendered.
+- It was used for hunting parties, tea and ‘occasional suppers’. The Great Room had twelve chairs covered in scarlet Morocco leather.
+
+## Staircase &amp; entrance hall (1839)
+- The staircase hall rises the full height of the house to a glass lantern. The north–south axis runs from the front door, through here, to the Long Water.
+- Ground floor was A-Ward for the most serious cases in the First World War, with B-Ward upstairs, C-Ward in the service wing, an operating theatre and an X-ray room.
+- X-rays had been discovered only 19 years earlier, by Wilhelm Röntgen in 1895, and portable X-ray units were new to war medicine.
+- About 1,600 patients passed through. On 14 September 1916 fire broke out; all 156 patients were got out safely, but the hospital never reopened.
+- Nan Herbert, sister of the owner Lord Lucas, ran it as matron from 1915. It was reckoned one of the best-run country-house hospitals.
+- The full-length portraits show Henry, Duke of Kent, his family and royalty including Queens Anne and Caroline, by painters such as Kneller and Amigoni.
+- Over the south door: a plaster palette, brushes, T-square and dividers, with figures seated on books by Blondel, Mansart and Le Pautre. The Earl was honouring his sources.
+- In 1968 Pevsner wrongly credited the house to an ‘unknown French architect’ called Cléphane. James Clephan was actually the Earl's clerk of works.
+
+## Site of the old house &amp; fountain (1280s–1834)
+- Roughly here stood the old house: a rambling building that had grown piecemeal since the Middle Ages, demolished from 1834.
+- Reginald de Grey held land here in the 1280s. Records made at his death list a ‘capital messuage with a dovecote’, probably the start of the house.
+- In 1671 Earl Anthony and Countess Mary gave the old house a classical north front ‘to disguise its irregularities’.
+- Two survivors: a c.1600 fireplace, now in the Orangery, and the clock tower, moved to the new house's service yard.
+- The fountain was fed from cisterns at the top of the house. Gravity alone gave the pressure: every 10 m of height adds about 1 bar.
+- The service yard had a horse-driven pump at a well, and a fire-engine house for a horse-drawn fire engine.
+- Four figures sit round the fountain bowl: one holds an oar, one a dolphin, one a bird.
+
+## Bath House &amp; cascade (c.1769–71)
+- Built about 1769–71 by Edward Stevens for Jemima, Marchioness Grey: a cold plunge pool dressed up as a romantic ruin.
+- Local ironstone, laid as massive rough blocks outside and neat coursed stone inside. Historic England notes the ‘considerable engineering skill’ needed for the huge rough-hewn blocks.
+- The domed pool room has three ragged holes in its roof, built as a deliberate semi-ruin.
+- Water came through a lead lion's-head spout. The cascade behind has a lead-lined tank, presumably released to pour out under the rough stone arch.
+- The octagonal side room has a thatched roof and a cobbled floor in a radiating pattern of deer bones.
+- Plunge pools were a fashionable health habit in the later 1700s. The fashion faded in the early 1800s as outdoor swimming caught on.
+
+## Head of the Long Water (early 1680s)
+- The Long Water was dug in the early 1680s by Amabel Benn, her son Anthony, 11th Earl, and his wife Mary. It is the oldest part of the design and still its spine.
+- Still water works as a mirror: on a calm day the Pavilion is doubled in it, 800 m from the house.
+- Straight canals were the height of Dutch and French formal taste. Garden historians trace Dutch influence at Wrest from 1686 to the 1730s.
+- Look for Mercury and Cupid on the east bank, about 70 m from this end.
+
+## French Parterre (1830s)
+- Laid out by Earl de Grey in the 1830s to match his French house, filling the ground between the new house and the older gardens.
+- A parterre is designed to be read as a pattern from the windows above, so look back up at the house.
+- Four 18th-century lead groups by John Cheere: Aeneas and Anchises, the Abduction of Helen, Venus and Adonis, and Meleager and Atalanta. They were restored from 2021.
+- Aeneas carries his father out of burning Troy: the legend Romans used for their own founding.
+- The Mermaid Basin on the west side has four seated mermaids, from the mid-1800s.
+
+## Conservatory (1839)
+- The glazed roof sits on ornate cast-iron trusses: 1830s iron-and-glass building, more than a decade before the Crystal Palace (1851).
+- Cast iron is strong in compression but brittle in tension. Triangulated trusses spread the load so slim members can carry a wide glass roof.
+- It opens straight off the Countess's sitting room, so the family could step from the house into the warmth and greenery.
+
+## West Half House &amp; Jemima's statue (1726 &amp; 1748)
+- The West Half House (1726) is a half-round shelter in a woodland clearing, built at the peak of the Duke's formal garden.
+- Straight avenues and ‘squares’ cut through the woods either side of the Long Water. A formal woodland garden in the French style like this is now rare in England.
+- Just south is a statue of Jemima, Marchioness Grey, reading a book (c.1748, probably by John Cheere).
+- The Duke outlived his sons, so in 1740 Wrest passed to his 17-year-old granddaughter Jemima, on condition that she marry Philip Yorke, son of the Lord Chancellor.
+- Jemima and Philip ran a literary circle they called ‘Wrestiana’ and wrote poems, plays and garden inscriptions.
+
+## Chinese Temple &amp; Bridge (c.1760 &amp; 1876)
+- The Chinese Temple (c.1760) was built for Jemima, possibly to designs by William Chambers: timber, with a pagoda roof topped by a wyvern, bells and fretwork.
+- Chambers had actually been to China, to Canton, and went on to build the Pagoda at Kew in 1762.
+- Countess Cowper rebuilt the bridge in brick and stone in 1876, replacing earlier timber bridges. Date stones carry her monogram.
+- It's a single elliptical arch: flatter than a semicircle, so you get a lower deck for the same span, at the cost of more sideways thrust on the abutments.
+- The design imitates the bridge on Willow Pattern china, which is itself an English invention of the 1790s, not a Chinese one.
+- The meadow just north of the bridge is one of the best spots for autumn colour.
+
+QUESTION: Was the orangery built before or after the house?</textarea>
+      <button class="btn block" data-copy="p1">Copy</button>
+    </div>
+    
+    <div class="card">
+      <h2>Follow-up 1</h2>
+      <p class="small muted">Send in the same chat.</p>
+      <textarea id="p2" readonly rows="2">When was William III king, and why is there a statue of him here?</textarea>
+      <button class="btn block" data-copy="p2">Copy</button>
+    </div>
+    <div class="card">
+      <h2>Follow-up 2</h2>
+      <p class="small muted">Send in the same chat.</p>
+      <textarea id="p3" readonly rows="2">What is trompe-l’œil, and where can we see it here?</textarea>
+      <button class="btn block" data-copy="p3">Copy</button>
+    </div>
+    <div class="card">
+      <h2>Follow-up 3</h2>
+      <p class="small muted">Not in the notes: it should say so.</p>
+      <textarea id="p4" readonly rows="2">Who won the 1966 football World Cup?</textarea>
+      <button class="btn block" data-copy="p4">Copy</button>
+    </div>
+    
+    <div class="card">
+      <h2>2. Short notes + question</h2>
+      <p class="small muted">Paste as the first message of a new chat.</p>
+      <textarea id="p5" readonly rows="8">You are a friendly guide for a family visiting Wrest Park. Answer using ONLY the notes below. If the notes do not contain the answer, reply exactly: "Sorry, that isn't in my notes." Use British English. Answer in under 60 words.
+
+NOTES:
+- The house: built 1834–39 for Thomas, 2nd Earl de Grey, who designed it himself.
+- The Orangery: built c.1835, while the house was being built (1834–39).
+- William III reigned 1689–1702 (jointly with Mary II until 1694).
+
+## Orangery (1835)
+- Built about 1835 by Earl de Grey on the site of a Batty Langley greenhouse, from a French design in Blondel. A French-style orangery was unique in England.
+- The main roof is glass on a shallow cast-iron frame, to get as much winter light as possible on to the citrus trees.
+- Heating grilles were set in the floor, with water tanks in the vaulted undercroft and a pump (still there) to raise the water.
+- The orange trees were bought from King Louis-Philippe of France. By 1900 they were among the largest in England.
+- Louis-Philippe's queen, Maria Amalia, was the daughter of a Habsburg archduchess, which made her Marie Antoinette's niece.
+- The front doors were too small for the grown trees, so the designers hid a full-height door in the north end, rendered to look like wall.
+- Inside: a c.1600 stone fireplace with the de Grey arms, rescued from the old house.
+- On the steps are four early-1700s stone cherubs holding a book, a puppy, a bird's nest and a torch.
+
+## Statue of William III (1730s)
+- King William III in Roman armour, crowned with laurel (1730s, by John Cheere), placed right on the main axis.
+- The Duke was a Whig. William stood for the 1688 ‘Glorious Revolution’ and a Protestant succession, so the garden made a political statement.
+- William built the Grand Alliance with the Habsburg Emperor Leopold I against Louis XIV of France.
+
+QUESTION: Was the orangery built before or after the house?</textarea>
+      <button class="btn block" data-copy="p5">Copy</button>
+    </div>
+  </main>
+  <div id="toast" class="toast hidden"></div>
+  <script>
+    document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+      const t = document.getElementById(b.dataset.copy);
+      try { await navigator.clipboard.writeText(t.value); } catch (e) { t.select(); document.execCommand('copy'); }
+      const s = document.getElementById('toast'); s.textContent = 'Copied'; s.classList.remove('hidden');
+      setTimeout(() => s.classList.add('hidden'), 1500);
+    }));
+  </script>
+</body>
+</html>
