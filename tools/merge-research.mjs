@@ -17,7 +17,7 @@ const dry = flag === '--dry';
 if (!id) { console.error('Usage: node tools/merge-research.mjs <site-id> [--dry]'); process.exit(2); }
 const dir = root + `sites/${id}/research/`;
 if (!fs.existsSync(dir)) { console.error(`No ${dir}`); process.exit(2); }
-const files = fs.readdirSync(dir).filter(f => /-(notes\.md|dates\.json|stops\.json|events\.json)$/.test(f)).sort();
+const files = fs.readdirSync(dir).filter(f => /-(notes\.md|dates\.json|stops\.json|events\.json|photos\.json)$/.test(f)).sort();
 const report = [];
 
 function mergeNotes(target, mdFiles) {
@@ -93,6 +93,19 @@ function mergeEvents(jsonFiles) {
   tour.events.sort((a, b) => a.year - b.year);
   write(tf, JSON.stringify(tour, null, 1) + '\n');
 }
+// Photos chosen by researchers: added to sites/<id>/photos-wanted.json for the "Site photos" workflow.
+function mergePhotos(jsonFiles) {
+  const wf = root + `sites/${id}/photos-wanted.json`;
+  const wanted = fs.existsSync(wf) ? JSON.parse(fs.readFileSync(wf, 'utf8')) : [];
+  for (const f of jsonFiles) for (const p of JSON.parse(fs.readFileSync(dir + f, 'utf8'))) {
+    const i = wanted.findIndex(w => w.id === p.id);
+    const item = { id: p.id, file: p.file, width: p.width || 900 };
+    if (i >= 0) wanted[i] = item; else wanted.push(item);
+    report.push(`photos: ${i >= 0 ? 'replaced' : 'wanted'} "${p.id}" (${f})`);
+  }
+  write(wf, JSON.stringify(wanted, null, 1) + '\n');
+  report.push(`photos: now push sites/${id}/photos.request containing "download" to fetch them`);
+}
 function write(f, text) { if (!dry) { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, text); } }
 
 const site = files.filter(f => !f.startsWith('ref-'));
@@ -101,6 +114,7 @@ mergeNotes(root + `knowledge/${id}/notes.md`, site.filter(f => f.endsWith('-note
 mergeDates(root + `knowledge/${id}/dates.json`, site.filter(f => f.endsWith('-dates.json')));
 if (site.some(f => f.endsWith('-stops.json'))) mergeStops(site.filter(f => f.endsWith('-stops.json')));
 if (site.some(f => f.endsWith('-events.json'))) mergeEvents(site.filter(f => f.endsWith('-events.json')));
+if (site.some(f => f.endsWith('-photos.json'))) mergePhotos(site.filter(f => f.endsWith('-photos.json')));
 const packs = [...new Set(refs.map(f => f.match(/^ref-(.+)-(notes\.md|dates\.json)$/)?.[1]).filter(Boolean))];
 for (const p of packs) {
   mergeNotes(root + `knowledge/reference/${p}/notes.md`, refs.filter(f => f === `ref-${p}-notes.md`));

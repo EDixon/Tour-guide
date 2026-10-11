@@ -22,6 +22,7 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
 | `paths` | `[[a, b, scenic 0–1, name, door?]]`: walkable links. `scenic` drives route choice; `name` is used for directions; `door` = building id for links that enter a building. |
 | `stops` | See below. |
 | `map` | `{osm, osmNote, note, features: [{kind: wood|garden|lawn|building|water, poly|line+width|circle+r, label?}]}`: schematic shapes. |
+| `photos` | Path of the photo credits file, `tours/<id>.photos.json` (see Photos under Bullet). |
 | `map.osm` | Path of the OpenStreetMap layer, `tours/<id>.map.json`, made by `tools/fetch-osm.mjs` (run by the "OpenStreetMap layer" GitHub workflow when `sites/<id>/osm.request` is pushed). When present it replaces the schematic `features` and the planner's network lines on the map. `osmNote` is added after the attribution. Add the file to `sw.js` so it works offline. |
 | `sources` | `{key: [title, url]}`. Key `gk` = general knowledge. |
 
@@ -38,6 +39,8 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
   "wow": 5,                        // 0–5 how visually impressive it is, story aside (see below)
   "popular": 4,                    // 0–5 how often visitors single it out in reviews and guides (see below)
   "mustSee": true,                 // planner includes it whenever feasible
+  "photoSpot": true,               // a viewpoint people stop to photograph (camera on the map); "look" says where to point
+  "photo": "pavilion-vista",       // optional photo beside the "look" line
   "facilities": ["toilet", "cafe", "play", "babychange"],   // also "parking" and "entrance", which get their own map symbols
   "look": "What to look at on arrival.",
   "note": "Practical note (steps, opening).",
@@ -76,8 +79,11 @@ The planner adds both to a stop's value, scaled by the family's "looks" and "pop
   "tags": { "engineering": 1, "physics": 0.4 },
   "needs": 1,          // optional: id of an earlier bullet this one depends on
   "src": [4, "gk"],    // keys into sources
-  "verify": true }     // optional: flag for checking the night before
+  "verify": true,      // optional: flag for checking the night before
+  "photo": "william-statue" }  // optional: id in the tour's photos file, shown as a thumbnail
 ```
+
+**Photos.** Any bullet that asks the family to look for or find something specific should have a `photo` that shows it clearly. The same goes for a toddler task (write it as `{"t": "Find the dog statue!", "photo": "dog-statue"}` instead of a plain string) and for a stop's `look` line (stop field `photo`). Photo ids point into `tours/<id>.photos.json`, which the tour names in its top-level `photos` field. That file maps each id to `{file, credit, licence, licenceUrl, page}` and is written by `tools/fetch-photos.mjs download` from `sites/<id>/photos-wanted.json`. Use only freely licensed photos (Wikimedia Commons, which mirrors Geograph), always credited, or Eliot's own photos of objects. Never use photos showing the family or other people's faces up close: the repo is public.
 
 Rules:
 - The **first bullet is the headline**: always read if the stop is visited.

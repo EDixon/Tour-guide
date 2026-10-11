@@ -31,6 +31,13 @@ Updated: 2026-10-11
   - **Routes:** the blue mobility-buggy route follows the west avenue and the east side of the Long Water to the pavilion. It is step-free, so a good guide for the pushchair. The orange "upper gardens walk" is also drawn.
   - **Old house:** the `oldhouse` stop agrees with the leaflet (about 10 m).
   - **Dairy:** the `dairy` stop is about 25 m off.
+- **Photos.** `sites/wrest-park/photos.json` lists 334 geotagged Commons photos by 38 photographers, fetched 2026-10-11. `photo-spots.md` has 14 spots. Most are at existing stops: the house, the pavilion and the Orangery are the most photographed. Views no stop covers yet:
+  - the house seen up the Long Water from its south end (about 40 m from `longwater`)
+  - mid-way along the Long Water
+  - the Diana statue over the Ladies' Lake (about 95 m from `chinese`)
+  - Oldpark Water by the West Half House
+
+  25 "look for" points (mostly toddler tasks) have no photo yet; `validate-tour` lists them.
 - **14 stops have no notes or dated things:** italian, conservatory, dairy, science, parterre, oldhouse, bowling, longwater, whh, altar, ehh, altars, chinese, atlas.
 - **The Silsoe science years** (the "science" stop and the agricultural engineering research) have no notes at all. That matters, because science and engineering are high-interest topics.
 - **Rulers pack is too short.** It needs England back to at least 1066 (and Scotland where useful), so that facts about the medieval owners get rulers. Note that the app says "no ruler data" rather than guessing.

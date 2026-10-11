@@ -27,6 +27,7 @@ If `brief.md` already lists inputs, or says Eliot was asked and has none, don't 
   - check stop positions against it
   - redraw the path network along the real footpaths
   - add the car park and main entrance
+- photo spots (section 3), if `sites/<id>/photo-spots.md` doesn't exist
 - visitor scores: if `sites/<id>/visitor-scores.md` doesn't exist, add a "visitors" line to the research plan so the visitor-scout runs
 - the ownership chronology (section 3)
 - `dates.json` entries for every stop
@@ -86,6 +87,12 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
      - **Anything else:** estimates.
 
      Record every disagreement over about 20 m in `sources.md`.
+- **Photos and photo spots:**
+  1. Create `sites/<id>/photos.request` containing `list`, then commit and push it. The "Site photos" workflow writes `sites/<id>/photos.json`, a list of geotagged Wikimedia Commons photos (including Geograph's).
+  2. `git pull`, then run `node tools/photo-spots.mjs <id>`. It finds the places several different people stood to take a picture.
+  3. For a spot that no stop covers and that is a real view, add a stop with `photoSpot: true`, `kind: "sight"` and a `look` line saying where to point the camera and what's in shot. Give it `wow` 3–5 and a short `dwell`.
+  4. For a spot at an existing stop, mention the view in that stop's `look`.
+  5. The photo list also feeds the researchers' photos for "look for" points and the visitor-scout's evidence.
 - **Waypoints and paths:**
   - Cover all stops: `[a, b, scenic, name, door?]`.
   - Scenic scores: waterside or viewpoint walks 0.8–1, ordinary paths 0.3–0.5, service short-cuts 0.2.

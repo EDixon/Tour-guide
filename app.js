@@ -558,12 +558,41 @@ function renderNowLight() {
   if (slot) { const h = bannerHtml(nav, stop(state.target)); if (slot.innerHTML !== h) slot.innerHTML = h; }
 }
 
+// ---------------------------------------------------------------- photos
+// tours/<id>.photos.json maps photo ids to files and credits (tools/fetch-photos.mjs). Bullets,
+// toddler tasks and a stop's "look" line can name a photo; it shows as a thumbnail, and tapping
+// it opens it full size with the credit. All of a tour's photos are fetched once when online, so
+// the service worker has them for offline use.
+let photoCredits = {};
+function loadPhotos() {
+  if (!tour.photos) return;
+  fetch(tour.photos).then(r => (r.ok ? r.json() : {})).then(c => {
+    photoCredits = c || {};
+    setTimeout(() => Object.values(photoCredits).forEach(p => fetch(p.file).catch(() => {})), 4000);
+    render();
+  }).catch(() => {});
+}
+function thumbHtml(pid) {
+  const p = pid && photoCredits[pid];
+  return p ? `<button class="thumb" data-photo="${esc(pid)}" aria-label="Show photo"><img src="${esc(p.file)}" alt="" loading="lazy"></button>` : '';
+}
+function openPhoto(pid) {
+  const p = photoCredits[pid]; if (!p) return;
+  const lic = p.licence ? (p.licenceUrl ? `<a href="${esc(p.licenceUrl)}" target="_blank" rel="noopener">${esc(p.licence)}</a>` : esc(p.licence)) : '';
+  const via = p.page ? ` via <a href="${esc(p.page)}" target="_blank" rel="noopener">${/wikimedia/.test(p.page) ? 'Wikimedia Commons' : 'source'}</a>` : '';
+  openSheet(`<img class="photo-full" src="${esc(p.file)}" alt="">
+    <div class="small muted" style="margin-top:6px">Photo: ${esc(p.credit || 'unknown')}${lic ? `, ${lic}` : ''}${via}</div>
+    <div class="btn-row"><button class="btn ghost" data-do="close">Close</button></div>`);
+}
+const kidText = (k) => (typeof k === 'string' ? k : k?.t || '');
+const kidPhoto = (k) => (typeof k === 'string' ? null : k?.photo);
+
 function bulletHtml(s, id, extra) {
   const b = s.bullets.find(x => x.id === id);
   if (!b) return '';
   const flag = reviewMode && (b.verify || (b.src || []).includes('gk')) ? `<span class="flag">${b.verify ? 'check' : 'general knowledge'}</span>` : '';
   const src = reviewMode ? `<span class="src">${(b.src || []).map(k => esc(tour.sources[k]?.[0] || k)).join(' · ')}</span>` : '';
-  return `<li class="${extra ? 'extra' : ''}">${esc(b.t)}${flag}${src}</li>`;
+  return `<li class="${extra ? 'extra' : ''}">${thumbHtml(b.photo)}${esc(b.t)}${flag}${src}</li>`;
 }
 
 function renderStop() {
@@ -578,9 +607,9 @@ function renderStop() {
   <div class="card">
     <div>${chip(s.era, stopDate(s))}</div>
     <h1>${esc(s.name)}</h1>
-    ${s.look ? `<p class="look">${esc(s.look)}</p>` : ''}
+    ${s.look ? `<p class="look">${thumbHtml(s.photo)}${esc(s.look)}</p>` : ''}
     ${s.note ? `<div class="note">ⓘ ${esc(s.note)}</div>` : ''}
-    ${(s.kids || []).length ? `<div class="kid"><b>For the little one</b>${esc(s.kids[0])}</div>` : ''}
+    ${(s.kids || []).length ? `<div class="kid">${thumbHtml(kidPhoto(s.kids[0]))}<b>For the little one</b>${esc(kidText(s.kids[0]))}</div>` : ''}
     <ul class="bullets">${ordered.map(b => bulletHtml(s, b.id, state.extra.includes(b.id))).join('')}</ul>
     ${remaining ? `<button class="btn ghost block" style="margin-top:10px" data-do="more">More (${remaining} left)</button>` : ''}
     <button class="btn secondary block" style="margin-top:10px" data-do="ask">💬 Ask about this</button>
@@ -656,7 +685,7 @@ function stopSheet(id) {
   openSheet(`
     <div>${chip(s.era, stopDate(s))}<span class="chip outline">${statusTxt}</span></div>
     <h2 style="margin-top:8px">${esc(s.name)}</h2>
-    ${s.look ? `<p class="look">${esc(s.look)}</p>` : ''}
+    ${s.look ? `<p class="look">${thumbHtml(s.photo)}${esc(s.look)}</p>` : ''}
     <p class="small muted">${s.bullets.length} points · about ${Math.round((s.dwell + s.bullets.reduce((n, b) => n + P.bulletSeconds(b, settings()), 0)) / 60)} min for everything</p>
     ${state.phase !== 'setup' && !state.visited[id] ? `<button class="btn block" data-do="goto" data-id="${id}">Go here next</button>` : ''}
     <div class="btn-row">
@@ -860,10 +889,10 @@ function renderMap(fresh = false) {
     const rr = small ? r * 0.55 : r;
     if (isTarget || isHere) parts.push(`<circle class="pulse" cx="${x}" cy="${y}" r="${rr * 2}" fill="var(--accent)" opacity="0.4"/>`);
     parts.push(`<g data-sheet="${s.kind === 'facility' ? '' : s.id}"><circle cx="${x}" cy="${y}" r="${rr}" fill="${fill}" stroke="${stroke}" stroke-width="${2 * k}"/>`);
-    if (!small) parts.push(`<text class="num" x="${x}" y="${y}" font-size="${10 * k}">${fac ? fac.glyph : visited ? '✓' : n ?? ''}</text>`);
+    if (!small) parts.push(`<text class="num" x="${x}" y="${y}" font-size="${10 * k}">${fac ? fac.glyph : visited ? '✓' : n ?? (s.photoSpot ? '📷' : '')}</text>`);
     const soon = n != null && n <= (state.phase === 'stop' ? 3 : 2);
     const showLbl = k < 0.95 ? (!small || k < 0.45) : (isTarget || isHere || soon || s.kind === "facility");
-    if (showLbl) parts.push(`<text class="lbl" x="${x + rr + 3 * k}" y="${y + 4 * k}" font-size="${12 * k}" stroke-width="${3 * k}">${esc(k < 0.6 ? s.name : (s.short || s.name))}</text>`);
+    if (showLbl) parts.push(`<text class="lbl" x="${x + rr + 3 * k}" y="${y + 4 * k}" font-size="${12 * k}" stroke-width="${3 * k}">${s.photoSpot ? '📷 ' : ''}${esc(k < 0.6 ? s.name : (s.short || s.name))}</text>`);
     parts.push('</g>');
   }
   // me
@@ -1316,6 +1345,8 @@ document.addEventListener('click', (e) => {
   if (segBtn) { segBtn.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === segBtn)); return; }
   const doEl = e.target.closest('[data-do]');
   if (doEl) return handleDo(doEl);
+  const ph = e.target.closest('[data-photo]');
+  if (ph) return openPhoto(ph.dataset.photo);
   const sh = e.target.closest('[data-sheet]');
   if (sh && sh.dataset.sheet && !e.target.closest('#mapwrap')) return stopSheet(sh.dataset.sheet);
   if (e.target.id === 'sheet') closeSheet();
@@ -1348,6 +1379,7 @@ async function boot() {
   tour = await (await fetch(`tours/${entry.file}`)).json();
   model = P.buildModel(tour);
   loadOsm();
+  loadPhotos();
   localStorage.setItem(LS + ':last', tour.id);
   if (tour.knowledge) setTimeout(() => knowledgeFiles(tour).forEach(f => fetch(f).catch(() => {})), 3000);
   state = load(tour.id) || freshState(tour);

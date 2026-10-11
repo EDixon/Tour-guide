@@ -84,6 +84,11 @@ ul.bullets li { position: relative; padding: 10px 0 10px 22px; border-top: 1px s
 ul.bullets li:first-child { border-top: 0; }
 ul.bullets li::before { content: ""; position: absolute; left: 4px; top: 21px; width: 8px; height: 8px; border-radius: 50%; background: var(--brand); }
 ul.bullets li.extra::before { background: var(--accent); }
+.thumb { float: right; margin: 2px 0 6px 10px; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.thumb img { width: 76px; height: 76px; object-fit: cover; border-radius: 8px; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+.kid .thumb img, .look .thumb img { width: 64px; height: 64px; }
+ul.bullets li::after, .kid::after, .look::after { content: ""; display: block; clear: both; }
+.photo-full { width: 100%; max-height: 70vh; object-fit: contain; border-radius: 10px; display: block; background: #000; }
 ul.bullets li .flag { font-size: 0.72rem; color: var(--warn); margin-left: 6px; }
 ul.bullets li .src { display: block; font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
 

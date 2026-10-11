@@ -27,6 +27,11 @@ Read first: `CLAUDE.md`, `docs/TOUR_FORMAT.md` (bullets) and `docs/KNOWLEDGE_FOR
 - Give each bullet `imp` (1–5) and topic `tags`, using the tour's topic keys with 0–1 weights.
 - Give each bullet `src`, using keys into the tour's `sources` (list any new sources in your report so the lead adds them) or `"gk"`, with `verify: true` for anything non-trivial from general knowledge.
 - One toddler `kids` task per stop, for something genuinely findable there.
+- **Photos for "look for" points.** Where a bullet, a toddler task or the `look` line asks the family to look for or find something specific (a carving, a statue, a sundial), give it a `photo` id. A toddler task with a photo is written `{"t": "...", "photo": "<id>"}`.
+  - Choose the photo from `sites/<id>/photos.json` (geotagged Wikimedia Commons photos with titles and descriptions), or search Commons. It must clearly show that thing.
+  - List each one in `<batch>-photos.json`: `[{"id": "<id>", "file": "File:<exact Commons file name>", "width": 900, "for": "<stop>.<bullet id>|kids|look"}]`.
+  - Ids are lower-case and hyphenated, and unique across the site.
+  - Only freely licensed files.
 
 **2. `<batch>-notes.md`:** knowledge sections in the format in `docs/KNOWLEDGE_FORMAT.md`.
 - One section per stop of 300–500 words, plus sections for key people or events these stops need, unless they already exist in `knowledge/<id>/notes.md` (check first).
@@ -52,5 +57,6 @@ Read first: `CLAUDE.md`, `docs/TOUR_FORMAT.md` (bullets) and `docs/KNOWLEDGE_FOR
   - new source keys needed, with their URLs
   - anything uncertain or where sources disagree
   - suggested `mustSee` changes
+  - photos chosen, and any "look for" points you couldn't find a good photo for
 
 Don't edit any other files.

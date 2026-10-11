@@ -13,7 +13,7 @@ Read `CLAUDE.md`, then the "Sight scores" section of `docs/TOUR_FORMAT.md`, whic
 - **Reviews:** Tripadvisor, Google and similar. Review sites often refuse WebFetch, so use WebSearch with the site name plus words like "review", "highlight", "must see" or "worth it", and work from the snippets. Prefer the last five years.
 - **Write-ups:** blogs, family days-out sites, local and national newspaper pieces, and Mumsnet-style threads. Count each author once.
 - **The operator:** its "highlights", "top things to see" or "explore" pages, and the order in which its visit page mentions things. Record this separately from visitor accounts.
-- **Photos:** what gets photographed. Look at the Wikimedia Commons category for the site and its subcategories (count files per feature where the categories allow it), the operator's own images, and which features recur in review photo captions.
+- **Photos:** what gets photographed. Start with `sites/<id>/photo-spots.md` (photographers per spot, from geotagged Commons photos, which include Geograph's) and `sites/<id>/photos.json`. Then look at the Wikimedia Commons category for the site and its subcategories (count files per feature where the categories allow it), the operator's own images, and which features recur in review photo captions.
 
 Keep a log of every account: URL, date if shown, and which stops it mentions. Match a mention to a stop only when the name or the description is unmistakable ("the blue and white bridge" is the Chinese Bridge). Many visitors call things by other names, so use the `look` lines to recognise them.
 

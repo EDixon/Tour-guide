@@ -51,6 +51,11 @@ For the **visitor scores**, check:
 
 ## 4. Merge
 - `node tools/merge-research.mjs <id> --dry`, read the report, then run it without `--dry`.
+- **Photos.**
+  - If the merge added photos to `sites/<id>/photos-wanted.json`, push `sites/<id>/photos.request` containing `download`.
+  - The workflow saves the images to `tours/<id>/img/` and the credits to `tours/<id>.photos.json`. Then `git pull`.
+  - Set `"photos": "tours/<id>.photos.json"` in the tour if it isn't there.
+  - Check that every `photo` id in the tour has an entry in that file.
 - `node tools/validate-tour.mjs tours/<id>.json 120` and `node tools/check-knowledge.mjs <id>`. Leave mechanical warnings for `site-check`; fix errors that block merging.
 - Check the validator's "no popular score" note is gone.
 - Mark batches (and visitors) merged in `STATUS.md`, add flags, set `Stage: reference`, commit and push (`<site>: research batches merged`).

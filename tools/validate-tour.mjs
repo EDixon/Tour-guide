@@ -1,5 +1,5 @@
 // Check a tour file and print a sample plan.  Usage: node tools/validate-tour.mjs tours/<id>.json [minutes]
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { buildModel, plan, defaultSettings, legs } from '../planner.js';
 
 const file = process.argv[2];
@@ -33,6 +33,16 @@ for (const e of tour.events || []) {
   for (const k of e.src || []) need(tour.sources[String(k)], `${at}: unknown source ${k}`);
   if (e.more) need(e.src && e.src.length, `${at}: "more" needs a source`);
 }
+// Photos: every id used must exist in the tour's photos file, and that file's images must exist.
+const photos = tour.photos && existsSync(tour.photos) ? JSON.parse(readFileSync(tour.photos, 'utf8')) : {};
+const photoRefs = [];
+for (const s of tour.stops) {
+  if (s.photo) photoRefs.push([s.id + ' look', s.photo]);
+  for (const b of s.bullets) if (b.photo) photoRefs.push([`${s.id}.${b.id}`, b.photo]);
+  for (const k of s.kids || []) if (typeof k === 'object') { need(k.t, `${s.id}: toddler task object needs "t"`); if (k.photo) photoRefs.push([s.id + ' kids', k.photo]); }
+}
+for (const [where, pid] of photoRefs) need(photos[pid], `${where}: photo "${pid}" not in ${tour.photos || '(no "photos" file set in the tour)'}`);
+for (const [pid, p] of Object.entries(photos)) need(existsSync(p.file), `photo "${pid}": missing file ${p.file}`);
 let model;
 try { model = buildModel(tour); } catch (e) { problems.push(e.message); }
 if (model) {
@@ -49,6 +59,12 @@ const nV = tour.stops.reduce((n, s) => n + s.bullets.filter(b => b.verify || (b.
 console.log(`OK: ${tour.stops.length} stops, ${nB} bullets (${nV} flagged to check), ${tour.paths.length} path links`);
 const sightStops = tour.stops.filter(s => s.kind === 'sight');
 const unscored = sightStops.filter(s => s.popular == null).map(s => s.id);
+const LOOK_FOR = /\b(look for|look out for|find|spot|can you see|search for)\b/i;
+const noPhoto = tour.stops.flatMap(s => [
+  ...s.bullets.filter(b => LOOK_FOR.test(b.t) && !b.photo).map(b => `${s.id}.${b.id}`),
+  ...(s.kids || []).filter(k => LOOK_FOR.test(typeof k === 'string' ? k : k.t) && !(typeof k === 'object' && k.photo)).map(() => `${s.id} kids`),
+]);
+if (noPhoto.length) console.log(`Note: ${noPhoto.length} "look for" points have no photo: ${noPhoto.slice(0, 12).join(', ')}${noPhoto.length > 12 ? ', …' : ''}`);
 const bare = (tour.events || []).filter(e => !e.more).length;
 if (bare) console.log(`Note: ${bare}/${(tour.events || []).length} timeline events have no "more" explanation.`);
 if (unscored.length) console.log(`Note: ${unscored.length}/${sightStops.length} sights have no "popular" score (visitor-scout not run or not merged): ${unscored.join(', ')}`);
