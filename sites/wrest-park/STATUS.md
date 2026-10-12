@@ -1,9 +1,9 @@
 # Wrest Park: status
 
-Stage: research
+Stage: reference
 Updated: 2026-10-12
 
-**Existing site.** `tours/wrest-park.json` was built by hand before the skills chain; the survey (12 October 2026) reviewed it, and did not rebuild it. Next: site-research, batch by batch, from `research-plan.md`.
+**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Next: reference-packs.
 
 **Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
 - English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
@@ -18,7 +18,7 @@ Updated: 2026-10-12
   - path network rebuilt along the OSM footpaths, with steps marked
   - car parks, admissions and south toilets added
   - two photo-spot stops (sundial, Oldpark Water)
-- [ ] site-research: 7 batches below, plus visitors (on hold). Existing sample notes cover 13 of 27 stops.
+- [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
 - [ ] reference-packs: extend `rulers`; write `habsburgs`, `garden-styles` and `farm-machinery`.
 - [ ] site-check: not done. No fact-check yet.
 - [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
@@ -26,23 +26,47 @@ Updated: 2026-10-12
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | returned, reviewed |
-| 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | returned, reviewed |
-| 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | returned, reviewed |
-| 4 Jemima's garden and its follies | altar, chinese, altars, atlas | returned, reviewed |
-| 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | returned, reviewed |
-| 6 The science years | science | returned, reviewed |
-| 7 Family and owners | (notes sections; intro, staircase, oldhouse) | dispatched |
+| 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | merged |
+| 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | merged |
+| 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | merged |
+| 4 Jemima's garden and its follies | altar, chinese, altars, atlas | merged |
+| 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | merged |
+| 6 The science years | science | merged |
+| 7 Family and owners | (notes sections; intro, staircase, oldhouse) | merged |
 | Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |
 
 ## Known gaps carried forward
 - **No `popular` scores, and `wow` set by hand:** waits for the visitor-scout (on hold).
-- **No timeline `more` yet:** every event is assigned to a batch in the plan, including Eliot's two (the 1916 fire and the 1917 sale), both in batch 7.
+- **Timeline `more`:** done for all 37 events.
 - **Notes still to fix:** the existing notes have shortened date ranges and things with no `who` (format-fixer at site-check). Many existing sections cite general knowledge or Wikipedia; the batches upgrade them.
 - **25 "look for" points have no photo:** the batches pick photos from `photos.json`.
 - **Planner time:** the network went from 42 to 214 nodes, so a worst-case 4-hour plan takes about 870 ms here (was about 600 ms; the test limit is 1500 ms). Watch for lag on the phone.
 
 ## Flags for Eliot
+- **From the research (12 October 2026), to check or decide:**
+  - **Photos:** the batch 3 photos (Bowling Green House, the Half Houses, Oldpark Water) and the science-view photo were chosen from captions without being seen. Check them once downloaded.
+  - **No photo found** for: the Hutton Monument, the dogs' cemetery, the dairy and its cupola, the conservatory roof trusses, the Bath House roof holes and lion's face, and the old house parchmarks. Worth taking on the day.
+  - **Sources disagree (all said in the text):**
+    - Ministry purchase: 1946 (Historic England) or October 1949 (Bedfordshire Archives).
+    - Fountain and sundial statues: about 1840 for Earl de Grey (Bedfordshire Archives) or after 1859 for Anne Florence Cowper (Historic England).
+    - Mermaid Basin: mid-1800s or 1880–1904.
+    - Brown column: finial (pineapple, acanthus or urn) and date (1760, or later 1760s by Edward Stevens).
+    - Jemima's birth: 1722 used (Bedfordshire Archives, Art UK) against 1723 (Wikipedia, The Peerage).
+    - North front: 1671, 1672 or 1672–1676.
+  - **Settled:**
+    - Sun Insurance bought Wrest in 1939 (the event moves from 1940).
+    - The institute closed at the end of March 2006.
+    - Nan Herbert was 10th Baroness Lucas.
+    - Murray was "of Thirsk, chairman of north-eastern brewery and coal companies" (Bedfordshire Archives).
+    - Oldpark Water is part of the boundary canals.
+    - The Brown "Mystery of the Gardens" quote is English Heritage's own wording.
+    - The Meleager group is not "Diana and Endymion".
+  - **The 1917 sale:** the house went privately to Murray in July 1917, and the contents were auctioned over five days from 10 September 1917. Most statue and tree losses came in the 1920s and 1930s under Murray, not in 1917. No source gives Nan's reasons for selling.
+  - **The 1916 fire:** all 156 patients were got out safely. The east wing, about 50 patients sent to Woburn and Ampthill, and no injuries come from one local-history site quoting the Bedfordshire Standard (`verify`). The cause is not known.
+  - **Long Water:** about 330 m of water (from OpenStreetMap), not 800 m; the 800 m is house to Pavilion. The Mercury statue's position disagrees between the listing and photos.
+  - **Not found:** how the Orangery and conservatory were heated. The Earl's own account of building the house (Bedfordshire Historical Record Society, *Miscellanea*, 2024) may answer it if you have access.
+  - **Petit Trianon:** "built for the Earl's children" (listing), though they were adults by 1856. Kept as the listing says, flagged.
+  - **Tests:** three planner tests already failed before this merge: boredom, default detail, and visitor favourites. The last waits for the visitor scores. The first two need a look at site-check.
 - **Paths now follow OpenStreetMap**, which is much better than before but still unwalked. A GPX track from the next visit would still help (attach it in the chat; it is kept out of the repo).
 - **Positions placed by eye from the leaflet and OSM:**
   - admissions/main entrance, by the gateway at the west end of the visitor centre
@@ -63,9 +87,13 @@ Updated: 2026-10-12
 - **Unverified quote.** Brown's "might unravel the Mystery of the Gardens" (cbcol bullet) has no source found yet.
 - **Sources disagree on the column finial.** Bedfordshire Archives says pineapple, Historic England says acanthus. A photo on the visit would settle it.
 - **Debug-grade signing key.** The Android app signing key is committed knowingly. Install only from this repo's Releases.
-- **Branch.** This session pushed to `claude/wrest-park-g823kx`. Pages publishes `main`, so merge it to go live.
+- **Branch.** This session pushed to `ccr-36dbd78e-uhfhwl` (an earlier one to `claude/wrest-park-g823kx`). Pages publishes `main`, so merge it to go live.
 
 ## Log
+- 2026-10-12: research batches 1–7 (stop-researcher agents) reviewed and merged.
+  - Duplicate source keys unified; 76 sources added to the tour; the tour now names `tours/wrest-park.photos.json`. Photo download started on GitHub Actions for this branch.
+  - Two person sections dropped as duplicates of batch 7.
+  - Tool changes: `merge-research.mjs` keeps a stop's `photo` and matches a renamed event on `was` whatever the year. `born` is now optional, so the assistant gives no ages for people with an unknown birth year.
 - 2026-10-12: survey (existing-site mode).
   - Sources, ownership chronology, dates for every stop, research plan.
   - Stops: vc, terrace, parterre, longwater, bathhouse and science moved. Car parks, admissions and south toilets added; start/exit is now the main car park. Sundial and Oldpark Water photo-spot stops added, each with a provisional `verify` bullet.
