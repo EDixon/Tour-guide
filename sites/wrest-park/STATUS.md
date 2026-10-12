@@ -19,7 +19,7 @@ Updated: 2026-10-12
   - car parks, admissions and south toilets added
   - two photo-spot stops (sundial, Oldpark Water)
 - [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
-- [ ] reference-packs: extend `rulers`; write `habsburgs`, `garden-styles` and `farm-machinery`.
+- [ ] reference-packs: dispatched 2026-10-12 (rulers extended; habsburgs, garden-styles, farm-machinery new).
 - [ ] site-check: not done. No fact-check yet.
 - [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
 
