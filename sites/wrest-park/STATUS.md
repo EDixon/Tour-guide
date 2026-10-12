@@ -44,7 +44,7 @@ Updated: 2026-10-12
 
 ## Flags for Eliot
 - **From the research (12 October 2026), to check or decide:**
-  - **Photos:** the batch 3 photos (Bowling Green House, the Half Houses, Oldpark Water) and the science-view photo were chosen from captions without being seen. Check them once downloaded.
+  - **Photos:** all 44 downloaded. The 12 nobody had seen (batch 3, the science view, the Orangery fireplace and the Bath House) were checked on 12 October 2026 and show the right things.
   - **No photo found** for: the Hutton Monument, the dogs' cemetery, the dairy and its cupola, the conservatory roof trusses, the Bath House roof holes and lion's face, and the old house parchmarks. Worth taking on the day.
   - **Sources disagree (all said in the text):**
     - Ministry purchase: 1946 (Historic England) or October 1949 (Bedfordshire Archives).
