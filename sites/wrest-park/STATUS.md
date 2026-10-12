@@ -1,9 +1,9 @@
 # Wrest Park: status
 
-Stage: publish
+Stage: done
 Updated: 2026-10-12
 
-**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs and site-check done the same day. Next: site-publish.
+**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs, site-check and publish done the same day (published to main, service worker tg-v14). After the visit: site-update.
 
 **Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
 - English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
@@ -21,7 +21,7 @@ Updated: 2026-10-12
 - [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
 - [x] reference-packs (2026-10-12): `rulers` extended (England/Britain 1066–2026, Scotland, France 1060–2026, Holy Roman Empire, Spain, Austria). New packs: `habsburgs`, `garden-styles`, `farm-machinery`. Four site sections they replace were removed: oranges, trompe-l'œil, the Spanish Succession, and Marie Antoinette.
 - [x] site-check (2026-10-12): format fixes; independent fact-check (`factcheck.md`: about 560 claims, 10 wrong, all fixed; 27 where sources disagree, now said in the text; 12 unsupported, softened or re-sourced). Planner and assistant fixes found while trying it as a visitor.
-- [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
+- [x] site-publish (2026-10-12): pushed to main; offline files now include the photo credits and the habsburgs, garden-styles and farm-machinery packs; service worker tg-v14.
 
 ## Research batches
 | Batch | Stops | State |
@@ -103,9 +103,10 @@ Updated: 2026-10-12
 - **Unverified quote.** Brown's "might unravel the Mystery of the Gardens" (cbcol bullet) has no source found yet.
 - **Sources disagree on the column finial.** Bedfordshire Archives says pineapple, Historic England says acanthus. A photo on the visit would settle it.
 - **Debug-grade signing key.** The Android app signing key is committed knowingly. Install only from this repo's Releases.
-- **Branch.** This session pushed to `ccr-36dbd78e-uhfhwl` (an earlier one to `claude/wrest-park-g823kx`). Pages publishes `main`, so merge it to go live.
+- **Branch.** Published to `main` on 12 October 2026 from `ccr-36dbd78e-uhfhwl`. An earlier session's branch `claude/wrest-park-g823kx` may still exist; it is not needed.
 
 ## Log
+- 2026-10-12: published to main (tg-v14).
 - 2026-10-12: site-check. Format fixes, independent fact-check and all wrong items fixed. Planner fix: seeds are trimmed to fit and scenic detours capped. Assistant fix: pronoun follow-ups bring in the linked people's dates. Tests all pass.
 - 2026-10-12: reference packs written, checked against the web, and merged; tour `knowledge.reference` now lists all four. Clashing generic aliases removed from the packs.
 - 2026-10-12: research batches 1–7 (stop-researcher agents) reviewed and merged.
