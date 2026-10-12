@@ -31,7 +31,7 @@ Updated: 2026-10-12
 | 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | returned, reviewed |
 | 4 Jemima's garden and its follies | altar, chinese, altars, atlas | returned, reviewed |
 | 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | dispatched |
-| 6 The science years | science | dispatched |
+| 6 The science years | science | returned, reviewed |
 | 7 Family and owners | (notes sections; intro, staircase, oldhouse) | dispatched |
 | Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |
 

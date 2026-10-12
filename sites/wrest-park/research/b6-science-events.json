@@ -1,0 +1,36 @@
+[
+ {
+  "year": 1939,
+  "label": "Sun Insurance buys Wrest for its wartime head office",
+  "was": "Sun Insurance offices (Second World War)",
+  "more": "Sun Insurance bought Wrest in 1939 and moved its head office staff here from Threadneedle Street in London. Archive photographs of about 1939–1940 show them living on site; the company built 12 huts and converted the stables for about 300 people.",
+  "src": [
+   9,
+   45,
+   46
+  ],
+  "stop": "science"
+ },
+ {
+  "year": 1948,
+  "label": "Agricultural engineering institute moves in",
+  "more": "The National Institute of Agricultural Engineering, 150 strong in 1947 and in temporary quarters near York since 1942, moved to Wrest between June 1947 and July 1948. The state had bought the house and leased it to the institute; sources give 1946 or 1949 for the purchase.",
+  "src": [
+   16,
+   1,
+   47
+  ],
+  "stop": "science"
+ },
+ {
+  "year": 1996,
+  "label": "Camera-guided robot hoe demonstrated",
+  "more": "Silsoe Research Institute showed a small driverless tool-carrier that steered by computer analysis of a camera image, hoeing within 2 centimetres of crop plants and spot-spraying weeds. The camera guidance later went into commercial tractor hoes, first sold in 2001.",
+  "src": [
+   17,
+   42,
+   43
+  ],
+  "stop": "science"
+ }
+]

@@ -1,0 +1,144 @@
+{
+ "science": {
+  "photo": "silsoe-institute-view",
+  "look": "Look north-east across the lawn to the modern buildings beyond the old stable block: the former research campus where the institute worked.",
+  "note": "A viewpoint on the lawn, no steps. The research campus is seen from here, not entered; check on the day what is open.",
+  "kids": [
+   {
+    "t": "Look north-east across the lawn and point to the big modern buildings where scientists once built robot tractors.",
+    "photo": "silsoe-institute-view"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "From 1948 until 2006 this side of the estate was home to the National Institute of Agricultural Engineering, renamed Silsoe Research Institute in 1991. It began in Oxford in 1924.",
+    "imp": 5,
+    "tags": {
+     "engineering": 1,
+     "history": 0.5
+    },
+    "src": [
+     16,
+     1,
+     40
+    ]
+   },
+   {
+    "id": 6,
+    "t": "Before that, Sun Insurance bought Wrest in 1939 as a wartime head office. It moved staff out of Threadneedle Street in London, building 12 huts and converting the stables for about 300 people.",
+    "imp": 3,
+    "tags": {
+     "history": 1,
+     "people": 0.4
+    },
+    "src": [
+     9,
+     45,
+     46
+    ],
+    "verify": true
+   },
+   {
+    "id": 7,
+    "t": "After the war the state bought the house and gardens and leased them to the institute, which had worked from temporary quarters near York since 1942. Sources give 1946 or 1949 for the purchase.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8,
+     "engineering": 0.3
+    },
+    "src": [
+     2,
+     40,
+     47,
+     54
+    ],
+    "verify": true
+   },
+   {
+    "id": 2,
+    "t": "Mid-1950s: Reading University began a driverless tractor that followed a current in a wire buried below ploughing depth. Coded signals could lift the implement or stop it. Silsoe later took the project over.",
+    "imp": 5,
+    "tags": {
+     "computing": 1,
+     "engineering": 1,
+     "physics": 0.6
+    },
+    "src": [
+     17
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Early 1990s: a small tool-carrier steered itself by computer analysis of a camera image, hoeing within 2 centimetres of crop plants and spot-spraying weeds. It was demonstrated in 1996.",
+    "imp": 5,
+    "tags": {
+     "computing": 1,
+     "engineering": 0.8
+    },
+    "src": [
+     17,
+     42
+    ]
+   },
+   {
+    "id": 4,
+    "t": "The same camera guidance went on a tractor hoe. Garford sold its first Robocrop hoe in 2001, and two Silsoe scientists set up their own company once closure was announced.",
+    "imp": 3,
+    "tags": {
+     "computing": 1,
+     "engineering": 0.5
+    },
+    "needs": 3,
+    "src": [
+     43,
+     44,
+     56
+    ],
+    "verify": true
+   },
+   {
+    "id": 5,
+    "t": "The institute tested farm machines for decades, from tractors and grain dryers to potato harvesters. From 1963 its test reports include the safety cabs and frames that later became compulsory on tractors.",
+    "imp": 3,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.3
+    },
+    "src": [
+     40,
+     48
+    ],
+    "verify": true
+   },
+   {
+    "id": 8,
+    "t": "Other Silsoe work included crop drying, how spray drifts off a sprayer boom, and a six-metre cube standing in open country to measure real wind pressure on a building.",
+    "imp": 2,
+    "tags": {
+     "physics": 1,
+     "engineering": 0.8
+    },
+    "src": [
+     40,
+     52,
+     53
+    ],
+    "verify": true
+   },
+   {
+    "id": 9,
+    "t": "In 2004 its main funder, the BBSRC, withdrew support. The institute ceased work at the end of March 2006 and English Heritage took over the house, then began restoring the gardens.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8
+    },
+    "src": [
+     40,
+     41,
+     1
+    ]
+   }
+  ]
+ }
+}
