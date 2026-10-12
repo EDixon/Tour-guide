@@ -43,14 +43,10 @@
 {"id":"prince-eugene","name":"Prince Eugene of Savoy","names":["prince eugene","eugene of savoy"],"born":[1663,10],"died":[1736,4],"who":"the Habsburg commander who fought alongside Marlborough","events":[[1704,"fought with Marlborough at Blenheim"]]},
 {"id":"louis-xiv","name":"Louis XIV of France","names":["louis xiv","sun king"],"born":[1638,9],"died":[1715,9],"who":"the French king whose grandson became King of Spain","events":[[1700,"accepted Charles II's will for his grandson"]]},
 {"id":"louis-xvi","name":"Louis XVI of France","names":["louis xvi"],"born":[1754,8],"died":[1793,1],"who":"the king married to Marie Antoinette","events":[[1770,"married Marie Antoinette"],[1774,"became king and gave her the Petit Trianon"]]},
-{"id":"maria-carolina","name":"Maria Carolina of Austria, Queen of Naples","names":["maria carolina","queen of naples"],"born":[1752,8],"died":[1814,9],"who":"Marie Antoinette's sister and Maria Amalia's mother","events":[[1768,"married Ferdinand IV of Naples"],[1799,"was restored to Naples after the revolution"]]},
+{"id":"maria-carolina","name":"Maria Carolina of Austria, Queen of Naples","names":["maria carolina","queen of naples"],"born":[1752,8],"died":[1814,9],"who":"Marie Antoinette's sister and Maria Amalia's mother","events":[[1768,"married Ferdinand IV of Naples"],[1799,"was driven out of Naples by the revolution"]]},
 {"id":"ferdinand-of-naples","name":"Ferdinand I of the Two Sicilies","names":["ferdinand iv of naples","ferdinand i of the two sicilies"],"born":[1751,1],"died":[1825,1],"who":"King of Naples and Sicily, husband of Maria Carolina","events":[[1768,"married Maria Carolina"]]},
 {"id":"maria-amalia","name":"Maria Amalia, Queen of the French","names":["maria amalia","queen maria amalia"],"born":[1782,4],"died":[1866,3],"who":"daughter of Maria Carolina, niece of Marie Antoinette and queen of Louis-Philippe","events":[[1809,"married Louis-Philippe at Palermo"],[1830,"became Queen of the French"],[1848,"fled to England"]]},
 {"id":"franz-joseph","name":"Emperor Franz Joseph","names":["franz joseph","francis joseph"],"born":[1830,8],"died":[1916,11],"who":"Emperor of Austria for 68 years","events":[[1848,"became Emperor of Austria"],[1854,"married Elisabeth of Bavaria"],[1867,"became King of Hungary under the Compromise"],[1914,"went to war after the Sarajevo assassination"]]},
 {"id":"charles-i-of-austria","name":"Emperor Charles I of Austria","names":["charles i of austria","last emperor of austria"],"born":[1887,8],"died":[1922,4],"who":"the last Habsburg emperor","events":[[1916,"became emperor"],[1918,"gave up the right to take part in government"]]}
-],
-"rulers": {
-"Spain (Habsburg)": [["Charles I (Emperor Charles V)",1516,1556],["Philip II",1556,1598],["Philip III",1598,1621],["Philip IV",1621,1665],["Charles II",1665,1700]],
-"Habsburg monarchy (Austrian lands)": [["Ferdinand I",1556,1564],["Maximilian II",1564,1576],["Rudolf II",1576,1612],["Matthias",1612,1619],["Ferdinand II",1619,1637],["Ferdinand III",1637,1657],["Leopold I",1657,1705],["Joseph I",1705,1711],["Charles VI",1711,1740],["Maria Theresa",1740,1780],["Joseph II",1780,1790],["Leopold II",1790,1792],["Francis II (Francis I of Austria from 1804)",1792,1835],["Ferdinand I of Austria",1835,1848],["Franz Joseph I",1848,1916],["Charles I",1916,1918]]
-}
+]
 }
