@@ -235,7 +235,8 @@ export function legs(model, settings) {
       } else {
         const fast = { time: ft, scenicSec: f.fast.scen.get(b), path: pathTo(f.fast.prev, a, b) };
         let scenic = { time: st, scenicSec: f.scenic.scen.get(b), path: pathTo(f.scenic.prev, a, b) };
-        if (scenic.path.join() === fast.path.join() || scenic.time <= fast.time + 1) scenic = null;
+        // A scenic way is an alternative, not a tour of its own: at most half as long again, plus 3 minutes.
+        if (scenic.path.join() === fast.path.join() || scenic.time <= fast.time + 1 || scenic.time > fast.time * 1.5 + 180) scenic = null;
         L = { fast, scenic };
       }
     }
