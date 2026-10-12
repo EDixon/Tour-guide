@@ -1,0 +1,514 @@
+{
+ "orangery": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Built about 1835 by Earl de Grey on the site of a Batty Langley greenhouse, from a French design in Blondel. Historic England calls a French-style orangery unique in England.",
+    "imp": 4,
+    "tags": {
+     "architecture": 1,
+     "history": 0.3
+    },
+    "src": [
+     8
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The main roof is glass on a shallow cast-iron frame. Iron is strong enough for slim glazing bars, so more winter light reaches the citrus trees than a timber frame would allow.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.6
+    },
+    "src": [
+     8,
+     "gk"
+    ],
+    "verify": true
+   },
+   {
+    "id": 3,
+    "t": "Below is a vaulted undercroft of thirteen bays. The floor above once had heating grilles, now tiled over, and a cast-iron pump near the north wall once lifted water from tanks below.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.4
+    },
+    "src": [
+     8
+    ]
+   },
+   {
+    "id": 9,
+    "t": "Rainwater from the roof was stored in those tanks. A hydraulic ram pump from the garden's water system, once used to feed the house's roof tanks, is now kept in the undercroft.",
+    "imp": 3,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.3
+    },
+    "src": [
+     "albion-weir-2007"
+    ],
+    "needs": 3,
+    "verify": true
+   },
+   {
+    "id": 4,
+    "t": "The orange trees were bought from King Louis-Philippe of France. In summer they stood in tubs on the terraced parterre below, and by 1900 they were among the largest in England.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8,
+     "people": 0.6
+    },
+    "src": [
+     8
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Louis-Philippe's queen, Maria Amalia, was the daughter of the Habsburg archduchess Maria Carolina, sister of Marie Antoinette. That made Marie Antoinette her aunt.",
+    "imp": 3,
+    "tags": {
+     "habsburg": 1
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 4,
+    "verify": true
+   },
+   {
+    "id": 6,
+    "t": "The front doors were too low for the grown trees, so the north end has a full-height double door of render over timber, disguised as plain wall.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.8,
+     "people": 0.5
+    },
+    "src": [
+     8
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Inside is a big stone fireplace with the de Grey arms, from the old house. The listing says about 1600; Historic England's 2013 report says about 1570.",
+    "imp": 2,
+    "tags": {
+     "history": 0.8,
+     "interiors": 0.4
+    },
+    "src": [
+     8,
+     "he-rr-6-2013"
+    ],
+    "photo": "orangery-fireplace"
+   },
+   {
+    "id": 8,
+    "t": "On the steps are four early-1700s stone cherubs, probably by an unknown Flemish sculptor, holding a book, a puppy, a bird's nest and a torch.",
+    "imp": 1,
+    "tags": {
+     "art": 1
+    },
+    "src": [
+     8
+    ],
+    "photo": "orangery-cherubs"
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the stone baby holding a puppy!",
+    "photo": "orangery-cherubs"
+   },
+   {
+    "t": "Find the giant stone fireplace with a big shield on top.",
+    "photo": "orangery-fireplace"
+   }
+  ],
+  "look": "The long glass-roofed building on its terrace, west of the parterre. Look for the two domes and the four little statues on the steps.",
+  "photo": "orangery-front",
+  "note": "Steps or a steep slope up to the Orangery; Historic England's survey also shows a ramped path round the north side (not checked on site)."
+ },
+ "bathhouse": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Built about 1769–1771 by Edward Stevens for Jemima, Marchioness Grey: a cold plunge bath dressed as a romantic Roman ruin. In 1784 the vicar asked to use it for his health.",
+    "imp": 5,
+    "tags": {
+     "architecture": 0.8,
+     "people": 0.6
+    },
+    "src": [
+     5,
+     "he-rr-74-2018"
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Local ironstone, dressed inside but rough-hewn outside. Historic England praises the 'considerable engineering skill' of the huge rough blocks, and thinks the rustic outer skin may have been added after the shell.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1
+    },
+    "src": [
+     5,
+     "he-rr-74-2018"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Two rooms: a circular bath room under a stone dome with three ragged holes, built to look ruined, and an octagonal dressing room with a conical thatched roof.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.7,
+     "architecture": 0.7
+    },
+    "src": [
+     5,
+     "he-rr-74-2018"
+    ]
+   },
+   {
+    "id": 7,
+    "t": "The bath is a round tank in two stages. Narrow stone steps run down either side of the doorway, though the present ones were rebuilt in the 1960s from slight remains.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.6,
+     "architecture": 0.4
+    },
+    "src": [
+     "he-rr-74-2018"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "A spring fed the bath by pipes, wooden at first, then lead from 1802 because the boggy ground wrecked wood. The spring later ran dry, so a pump now recirculates the water.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.4
+    },
+    "src": [
+     "he-rr-74-2018",
+     "albion-weir-2007"
+    ]
+   },
+   {
+    "id": 9,
+    "t": "The Cascade behind was built over the spring head. The listing describes a lead-lined tank storing water to spill under the rough arch; a 2015 survey found a concrete-lined tank, probably a replacement.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.6
+    },
+    "src": [
+     5,
+     "he-rr-84-2015"
+    ]
+   },
+   {
+    "id": 10,
+    "t": "The lion's-head spout over the bath looks 18th-century, but it dates from the 1960s restoration. What the original inlet looked like is not known.",
+    "imp": 3,
+    "tags": {
+     "engineering": 0.5,
+     "history": 0.4
+    },
+    "src": [
+     "he-rr-74-2018",
+     5
+    ],
+    "needs": 7
+   },
+   {
+    "id": 5,
+    "t": "The octagonal dressing room has a thatched cone roof and a floor of pebbles and deer bones radiating from a central circle. How much is original is uncertain, as it was relaid in the 1960s.",
+    "imp": 3,
+    "tags": {
+     "people": 0.6,
+     "interiors": 0.5
+    },
+    "src": [
+     5,
+     "he-rr-74-2018"
+    ]
+   },
+   {
+    "id": 11,
+    "t": "The Earl filled the bath in 1834, once hot and cold baths were fitted in the old house. The 1960s restoration dug it out again.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8,
+     "engineering": 0.3
+    },
+    "src": [
+     "he-rr-74-2018"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the little house with a pointy straw hat!",
+    "photo": "bath-house-thatch"
+   },
+   "Look up inside the round room: can you see the sky through the holes in the roof?",
+   "Find the lion's face over the water."
+  ],
+  "look": "The rough ironstone building with a thatched cone, west of the Orangery beside the Bath House Water. Climb the Cascade mound next to it for the best view.",
+  "photo": "bath-house-ruin",
+  "note": "The leaflet marks steps near the Bath House. Documented steps: narrow steps down into the bath, three up to the dressing room, and a stepped path beside the Cascade mound (2015 survey). Which one the leaflet means is unconfirmed; check on site before taking a pushchair."
+ },
+ "cbcol": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "This rustic stone column credits 'Lancelot Brown Esq.' with 'professional assistance' to Jemima and her husband in altering the gardens in 1758, 1759 and 1760.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "people": 0.6
+    },
+    "src": [
+     21,
+     11,
+     "he-rr-74-2018"
+    ],
+    "photo": "brown-column-photo"
+   },
+   {
+    "id": 2,
+    "t": "Jemima valued her grandfather's formal garden, so Brown only joined and curved the straight boundary canals. English Heritage says he realised that doing more 'might unravel the Mystery of the Gardens'.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "views": 0.5
+    },
+    "src": [
+     1,
+     21
+    ]
+   },
+   {
+    "id": 5,
+    "t": "The plan was to 'lay the waters together around the garden' as one winding stream. Where levels differed more than digging could cure, a bank of earth was needed, hidden by planting.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.8,
+     "gardens": 0.8
+    },
+    "src": [
+     "albion-weir-2007"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "What tops the column is disputed: a pineapple says Bedfordshire Archives, acanthus leaves says the Historic England listing, an urn says its 2018 research report. Have a look.",
+    "imp": 2,
+    "tags": {
+     "history": 0.4,
+     "gardens": 0.3
+    },
+    "src": [
+     11,
+     21,
+     "he-rr-74-2018"
+    ],
+    "photo": "brown-column-photo"
+   },
+   {
+    "id": 6,
+    "t": "Look for the two rough, uncut blocks interrupting the smooth shaft. The listing calls the effect 'curious' and thinks this rustication may have been added later.",
+    "imp": 2,
+    "tags": {
+     "architecture": 0.6,
+     "art": 0.3
+    },
+    "src": [
+     21
+    ],
+    "photo": "brown-column-photo"
+   },
+   {
+    "id": 4,
+    "t": "It was first set up to be seen from the Bath House, then moved: 1828 says the listing, about 1830 a 2015 survey. Its old site near the yew hedge has a plaque.",
+    "imp": 1,
+    "tags": {
+     "history": 0.6
+    },
+    "src": [
+     21,
+     "he-rr-84-2015",
+     "he-rr-74-2018"
+    ],
+    "verify": true
+   },
+   {
+    "id": 7,
+    "t": "Brown returned briefly in 1778 and 1779. He is often credited with the nearby Bath House, but the records point to Edward Stevens, and Historic England doubts Brown designed it.",
+    "imp": 3,
+    "tags": {
+     "people": 0.7,
+     "history": 0.4
+    },
+    "src": [
+     "he-rr-74-2018"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the tall stone column among the trees!",
+    "photo": "brown-column-photo"
+   },
+   {
+    "t": "Can you spot the two rough, bumpy blocks on its side?",
+    "photo": "brown-column-photo"
+   }
+  ],
+  "look": "A tall stone column among the trees by the Broad Water. What is on top: a pineapple, acanthus leaves or an urn?",
+  "photo": "brown-column-photo"
+ },
+ "pavilion": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Thomas Archer's Pavilion (1709–1711): a Baroque banqueting house closing the view down the Long Water. It cost £1,809, and Historic England calls it 'a miniature masterpiece'.",
+    "imp": 5,
+    "tags": {
+     "architecture": 1,
+     "views": 0.5
+    },
+    "src": [
+     4
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Its plan is borrowed from Borromini's Sant'Ivo in Rome: two interlocking triangles making a six-pointed star. Archer made three points round and three square.",
+    "imp": 5,
+    "tags": {
+     "engineering": 0.8,
+     "architecture": 1,
+     "physics": 0.3
+    },
+    "src": [
+     4
+    ]
+   },
+   {
+    "id": 3,
+    "t": "It was built during the War of the Spanish Succession (1701–1714), fought over who would inherit the throne of the last Spanish Habsburg king, Charles II.",
+    "imp": 4,
+    "tags": {
+     "habsburg": 1,
+     "history": 0.8
+    },
+    "src": [
+     4,
+     "gk"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "The painting celebrates the Greys' rising status, with family arms, cherubs and perhaps portrait busts. Henry Grey became Duke of Kent in 1710, halfway through the building.",
+    "imp": 3,
+    "tags": {
+     "history": 0.6,
+     "people": 0.6
+    },
+    "src": [
+     4,
+     1
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Inside, the columns, coffered dome and statues of the Great Room are trompe-l'œil: flat paint made to look 3-D, signed 'Hauduroy pinxit 1712'. Stand in the doorway and look up.",
+    "imp": 4,
+    "tags": {
+     "art": 1,
+     "physics": 0.4
+    },
+    "src": [
+     4,
+     "aml-pavilion-1997"
+    ],
+    "photo": "pavilion-dome-inside"
+   },
+   {
+    "id": 6,
+    "t": "Small doors hidden in the painting lead to spiral stairs: up to servants' bedrooms, down to a brick-lined kitchen and a double privy in the basement.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.6,
+     "people": 0.6
+    },
+    "src": [
+     4,
+     "aml-pavilion-1997"
+    ]
+   },
+   {
+    "id": 9,
+    "t": "The dome is covered in heavy lead. It slowly slid down the dome, letting rain into the roof space and threatening the painted ceiling, so English Heritage repaired it in 2016–2017.",
+    "imp": 3,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.3
+    },
+    "src": [
+     "fpcr-pavilion",
+     "eh-revitalising"
+    ]
+   },
+   {
+    "id": 10,
+    "t": "The Pavilion stands at the end of an earth causeway from a dam. One account says the Long Canal itself was made by damming a shallow valley, about 1686–1688.",
+    "imp": 3,
+    "tags": {
+     "engineering": 0.8,
+     "gardens": 0.4
+    },
+    "src": [
+     "he-rr-6-2013",
+     "albion-weir-2007"
+    ],
+    "verify": true
+   },
+   {
+    "id": 7,
+    "t": "Red and yellow brick with stone dressings, a lantern on the dome, and round 'bull's-eye' windows. The brick was originally rendered, and the render was later stripped off.",
+    "imp": 2,
+    "tags": {
+     "engineering": 0.8,
+     "architecture": 0.6
+    },
+    "src": [
+     4,
+     "aml-pavilion-1997"
+    ],
+    "photo": "pavilion-round-windows"
+   }
+  ],
+  "kids": [
+   {
+    "t": "Count the round 'bull's-eye' windows up high.",
+    "photo": "pavilion-round-windows"
+   },
+   {
+    "t": "Look up inside: find the round hole of light at the top of the painted dome.",
+    "photo": "pavilion-dome-inside"
+   },
+   {
+    "t": "Find the carved shell above the door.",
+    "photo": "pavilion-shell"
+   }
+  ],
+  "look": "The domed Baroque banqueting house closing the end of the Long Water. Look back north to the house.",
+  "photo": "pavilion-long-water",
+  "note": "Steep steps up into the Pavilion, with no step-free way in: leave the pushchair at the foot. The interior is open at times; check on the day."
+ }
+}
