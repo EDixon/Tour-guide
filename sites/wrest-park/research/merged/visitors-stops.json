@@ -1,0 +1,88 @@
+{
+ "italian": {
+  "popular": 2
+ },
+ "terrace": {
+  "popular": 2,
+  "mustSee": false
+ },
+ "conservatory": {
+  "popular": 2
+ },
+ "countess": {
+  "popular": 1
+ },
+ "staircase": {
+  "popular": 1
+ },
+ "staterooms": {
+  "popular": 3
+ },
+ "dining": {
+  "popular": 1
+ },
+ "exhibition": {
+  "popular": 2
+ },
+ "dairy": {
+  "popular": 2
+ },
+ "science": {
+  "popular": 0
+ },
+ "parterre": {
+  "popular": 2
+ },
+ "oldhouse": {
+  "popular": 1,
+  "wow": 3
+ },
+ "orangery": {
+  "popular": 3
+ },
+ "bathhouse": {
+  "popular": 2
+ },
+ "bowling": {
+  "popular": 2
+ },
+ "oldpark": {
+  "popular": 0
+ },
+ "sundial": {
+  "popular": 1
+ },
+ "longwater": {
+  "popular": 3,
+  "mustSee": true
+ },
+ "whh": {
+  "popular": 1
+ },
+ "altar": {
+  "popular": 1
+ },
+ "william": {
+  "popular": 1
+ },
+ "pavilion": {
+  "popular": 4,
+  "mustSee": true
+ },
+ "ehh": {
+  "popular": 1
+ },
+ "cbcol": {
+  "popular": 1
+ },
+ "altars": {
+  "popular": 0
+ },
+ "chinese": {
+  "popular": 3,
+  "mustSee": true
+ },
+ "atlas": {
+  "popular": 0
+ }
+}

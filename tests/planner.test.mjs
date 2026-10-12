@@ -170,7 +170,7 @@ test('scenic legs depend on the views weighting', () => {
 });
 
 test('sight value: wow follows the looks weighting, popular adds to it', () => {
-  const s = { ...tour.stops.find(x => x.id === 'chinese') };
+  const s = { ...tour.stops.find(x => x.id === 'chinese'), popular: 0 }; // compare against no popularity at all
   const plain = stopCurve(s, { ...base.weights }, base).sight;
   const keen = stopCurve(s, { ...base.weights, looks: 1 }, base).sight;
   const cool = stopCurve(s, { ...base.weights, looks: 0 }, base).sight;
@@ -183,12 +183,13 @@ test('sight value: wow follows the looks weighting, popular adds to it', () => {
 test('visitor favourites are planned more when the popular weighting is up', () => {
   const t2 = structuredClone(tour);
   const favs = ['chinese', 'atlas', 'dairy'];
-  for (const id of favs) t2.stops.find(s => s.id === id).popular = 5;
+  for (const s of t2.stops) delete s.popular; // only the chosen favourites are popular
+  for (const id of favs) Object.assign(t2.stops.find(s => s.id === id), { popular: 5, mustSee: false }); // must-sees are planned anyway
   const m2 = buildModel(t2);
   // Summed over short and medium visits: in a long plan most stops fit anyway, so the weighting only shows when time is tight.
-  const count = (w) => [45, 75, 120].reduce((n, mins) => n + plan(m2, mk(mins), S({ weights: { popular: w } }), NOW).route.filter(id => favs.includes(id)).length, 0);
+  const count = (w) => [45, 75, 90, 120].reduce((n, mins) => n + plan(m2, mk(mins), S({ weights: { popular: w } }), NOW).route.filter(id => favs.includes(id)).length, 0);
   const on = count(1), off = count(0);
-  console.log(`     favourites in 45-, 75- and 120-minute plans: popular=1 → ${on}, popular=0 → ${off}`);
+  console.log(`     favourites in 45-, 75-, 90- and 120-minute plans: popular=1 → ${on}, popular=0 → ${off}`);
   assert.ok(on > off);
 });
 

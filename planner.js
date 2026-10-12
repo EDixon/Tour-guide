@@ -518,7 +518,10 @@ export function plan(model, state, settings, nowS, opts = {}) {
     }
     return out;
   })();
-  for (const seedRaw of [nn, ...(opts.seeds || [])]) {
+  // In chronological mode, also start from the stops in date order, or the search can settle on a
+  // route that begins with the newest buildings (the house is by the car park) and pays the penalty after.
+  const byDate = ctx.chrono ? [pool.filter(id => id !== route[0]).sort((a, b) => (ctx.curves[a]?.date ?? 0) - (ctx.curves[b]?.date ?? 0))] : [];
+  for (const seedRaw of [nn, ...byDate, ...(opts.seeds || [])]) {
     if (Date.now() > t0 + budget * 0.6) break;
     const allowed = new Set(pool);
     let seed = seedRaw.filter(id => allowed.has(id) && id !== state.forceFirst);

@@ -3,7 +3,7 @@
 Stage: done
 Updated: 2026-10-12
 
-**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs, site-check and publish done the same day (published to main, service worker tg-v14).
+**Existing site.** Research batches 1–7 and the visitor scores merged on 12 October 2026. Reference packs, site-check and publish done the same day (published to main, service worker tg-v15).
 
 **Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
 - English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
@@ -18,7 +18,7 @@ Updated: 2026-10-12
   - path network rebuilt along the OSM footpaths, with steps marked
   - car parks, admissions and south toilets added
   - two photo-spot stops (sundial, Oldpark Water)
-- [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
+- [x] site-research (2026-10-12): batches 1–7 and visitor scores merged.
 - [x] reference-packs (2026-10-12): `rulers` extended (England/Britain 1066–2026, Scotland, France 1060–2026, Holy Roman Empire, Spain, Austria). New packs: `habsburgs`, `garden-styles`, `farm-machinery`. Four site sections they replace were removed: oranges, trompe-l'œil, the Spanish Succession, and Marie Antoinette.
 - [x] site-check (2026-10-12): format fixes; independent fact-check (`factcheck.md`: about 560 claims, 10 wrong, all fixed; 27 where sources disagree, now said in the text; 12 unsupported, softened or re-sourced). Planner and assistant fixes found while trying it as a visitor.
 - [x] site-publish (2026-10-12): pushed to main; offline files now include the photo credits and the habsburgs, garden-styles and farm-machinery packs; service worker tg-v14.
@@ -33,7 +33,7 @@ Updated: 2026-10-12
 | 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | merged |
 | 6 The science years | science | merged |
 | 7 Family and owners | (notes sections; intro, staircase, oldhouse) | merged |
-| Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |
+| Visitors (visitor-scout) | all sights | merged (47 accounts, `visitor-scores.md`) |
 
 ## One visit
 The family visit once, and that is the real visit: no trial run, no return visit. Nothing below waits for a check on the day. Where something is uncertain, the app gives the best-supported answer and says it is uncertain.
@@ -47,6 +47,11 @@ The family visit once, and that is the real visit: no trial run, no return visit
 - **Planner speed:** a worst-case 4-hour plan takes about 0.9 seconds here (test limit 1.5 seconds). Expect a short pause on the phone when re-planning.
 
 ## Flags for Eliot
+- **Visit date and opening hours:** the visit date isn't set. English Heritage sources conflict on autumn and winter opening: daily 10:00–17:00 (the visit page in October 2026), Wednesday to Sunday 10:00–16:00, and one visitor post says closed Monday and Tuesday. The tour uses 10:00–17:00. Give the date and the hours can be set for that day.
+- **Visitor scores** (47 accounts; `visitor-scores.md`): the Archer Pavilion, Orangery, Long Water, Chinese Temple and State rooms are the most mentioned.
+  - **Must-sees are now** the Pavilion, the Long Water and the Chinese Temple; the terrace is no longer one, but every plan passes it.
+  - **Scores may run low:** many accounts were search snippets.
+  - **Practical points** from visitors are in the stop notes: the house sometimes closes for filming or weddings, mud and loose gravel, the golf-cart shuttle, the steep Pavilion stairs, and the Chinese wallpaper rooms being by guided tour only.
 - **Uncertain on site; the app's answer:**
   - **Mercury and Cupid:** about 70 m down the east bank of the Long Water (the listing). One photograph suggests further down.
   - **Chinese Bridge:** just east of the temple (map coordinates). The listing text says north.
@@ -69,6 +74,7 @@ The family visit once, and that is the real visit: no trial run, no return visit
 - **Debug-grade signing key.** The Android app signing key is committed knowingly. Install only from this repo's Releases.
 
 ## Log
+- 2026-10-12: visitor-scout run and merged (popular for all sights; oldhouse wow 2 to 3; must-sees Pavilion, Long Water, Chinese Temple). Planner: chronological mode now also starts from a date-ordered route. Tests adjusted for real popularity scores. Published (tg-v15).
 - 2026-10-12: published to main (tg-v14).
 - 2026-10-12: site-check. Format fixes, independent fact-check and all wrong items fixed. Planner fix: seeds are trimmed to fit and scenic detours capped. Assistant fix: pronoun follow-ups bring in the linked people's dates. Tests all pass.
 - 2026-10-12: reference packs written, checked against the web, and merged; tour `knowledge.reference` now lists all four. Clashing generic aliases removed from the packs.

@@ -4004,7 +4004,7 @@
     "shop"
    ],
    "look": "Shop, café, toilets, baby change and, says the 2024 leaflet, an accessible toilet (English Heritage’s website says only the mansion has one) in the visitor centre range on the north side of the walled garden; the play area is in the walled garden behind.",
-   "note": "Free golf-cart shuttle runs round the grounds. Free audio guides at admissions.",
+   "note": "Free golf-cart shuttle runs round the grounds, and free audio guides are at Admissions (the audio trail helps find the woodland monuments). Paths can be muddy after rain and the gravel is loose. Picnics are allowed; the café queues at busy times.",
    "bullets": [],
    "kids": [],
    "wow": 0,
@@ -4251,7 +4251,8 @@
    ],
    "wow": 3,
    "short": "Italian Garden",
-   "photo": "italian-garden-beds"
+   "photo": "italian-garden-beds",
+   "popular": 2
   },
   {
    "id": "terrace",
@@ -4261,7 +4262,7 @@
     52.00792,
     -0.41205
    ],
-   "mustSee": true,
+   "mustSee": false,
    "date": 1834,
    "dateLabel": "1834–1839",
    "era": "earl",
@@ -4386,7 +4387,8 @@
     "Find the two stone dogs guarding the steps."
    ],
    "wow": 4,
-   "short": "Terrace"
+   "short": "Terrace",
+   "popular": 2
   },
   {
    "id": "conservatory",
@@ -4492,7 +4494,8 @@
     "Look up! Can you see the sky through the glass roof?"
    ],
    "wow": 3,
-   "short": "Conservatory"
+   "short": "Conservatory",
+   "popular": 2
   },
   {
    "id": "countess",
@@ -4563,7 +4566,8 @@
     "Find the flying babies on the ceiling."
    ],
    "wow": 2,
-   "short": "Countess's room"
+   "short": "Countess's room",
+   "popular": 1
   },
   {
    "id": "staircase",
@@ -4701,7 +4705,9 @@
     "Look up and find the big glass window in the roof."
    ],
    "wow": 3,
-   "short": "Staircase hall"
+   "short": "Staircase hall",
+   "popular": 1,
+   "note": "Ground-floor rooms only, with a lift on request. The house is sometimes closed for filming or weddings: ask at Admissions. The Chinese wallpaper rooms upstairs are by guided tour only."
   },
   {
    "id": "staterooms",
@@ -4795,7 +4801,9 @@
     "Can you see all the way down the line of doors?"
    ],
    "wow": 3,
-   "short": "State rooms"
+   "short": "State rooms",
+   "popular": 3,
+   "note": "Rooms are largely unfurnished; allow 20–30 minutes for the whole house."
   },
   {
    "id": "dining",
@@ -4865,7 +4873,8 @@
     "Find the fish and the bird on the ceiling edge."
    ],
    "wow": 2,
-   "short": "Dining room"
+   "short": "Dining room",
+   "popular": 1
   },
   {
    "id": "exhibition",
@@ -4956,7 +4965,8 @@
     "Find a picture of a lady in a big dress."
    ],
    "wow": 1,
-   "short": "Exhibition"
+   "short": "Exhibition",
+   "popular": 2
   },
   {
    "id": "dairy",
@@ -5075,7 +5085,8 @@
    ],
    "wow": 2,
    "short": "Dairy & Trianon",
-   "photo": "petit-trianon-log-house"
+   "photo": "petit-trianon-log-house",
+   "popular": 2
   },
   {
    "id": "science",
@@ -5233,7 +5244,8 @@
    "wow": 1,
    "short": "Science years",
    "note": "A viewpoint on the lawn, no steps. The former research campus is seen from here, not entered.",
-   "photo": "silsoe-institute-view"
+   "photo": "silsoe-institute-view",
+   "popular": 0
   },
   {
    "id": "parterre",
@@ -5384,7 +5396,8 @@
    ],
    "wow": 3,
    "short": "Parterre",
-   "photo": "parterre-axis-view"
+   "photo": "parterre-axis-view",
+   "popular": 2
   },
   {
    "id": "oldhouse",
@@ -5532,10 +5545,11 @@
      "photo": "fountain-ladies"
     }
    ],
-   "wow": 2,
+   "wow": 3,
    "short": "Old house site",
    "note": "On lawn and gravel, no steps at the pond itself; the way down from the house crosses the parterre steps (a step-free route is marked on the leaflet). Nothing of the old house shows above ground; its walls lie just under the turf and show as brown parchmarks in dry summers. The fountain is not always running.",
-   "photo": "round-pond-fountain"
+   "photo": "round-pond-fountain",
+   "popular": 1
   },
   {
    "id": "orangery",
@@ -5679,7 +5693,8 @@
    ],
    "wow": 3,
    "short": "Orangery",
-   "photo": "orangery-front"
+   "photo": "orangery-front",
+   "popular": 3
   },
   {
    "id": "bathhouse",
@@ -5821,8 +5836,9 @@
    ],
    "wow": 4,
    "short": "Bath House",
-   "note": "The leaflet marks steps near the Bath House. Documented steps: narrow steps down into the bath, three up to the dressing room, and a stepped path beside the Cascade mound (2015 survey). Which one the leaflet means is unconfirmed; check on site before taking a pushchair.",
-   "photo": "bath-house-ruin"
+   "note": "The leaflet marks steps near the Bath House, but no source says exactly where. Documented steps: narrow steps down into the bath, three up to the dressing room, and a stepped path beside the Cascade mound. The outside can be seen from the grass.",
+   "photo": "bath-house-ruin",
+   "popular": 2
   },
   {
    "id": "bowling",
@@ -5973,7 +5989,8 @@
    ],
    "wow": 3,
    "short": "Bowling Green Ho.",
-   "photo": "bowling-front"
+   "photo": "bowling-front",
+   "popular": 2
   },
   {
    "id": "oldpark",
@@ -6071,7 +6088,8 @@
      "photo": "oldpark-bulrushes"
     }
    ],
-   "photo": "oldpark-water"
+   "photo": "oldpark-water",
+   "popular": 0
   },
   {
    "id": "sundial",
@@ -6218,7 +6236,8 @@
     }
    ],
    "note": "On gravel and lawn, no steps. The brass blade (gnomon) may be missing: a 2024 register entry says it is. The dial plate is a replica, so do not expect to read the time to the minute.",
-   "photo": "sundial-axis-view"
+   "photo": "sundial-axis-view",
+   "popular": 1
   },
   {
    "id": "longwater",
@@ -6353,7 +6372,9 @@
    "wow": 4,
    "short": "Long Water",
    "note": "Level paths run down both banks. The head of the water is where OpenStreetMap shows the canal starting, about 170 m south of the sundial.",
-   "photo": "long-water-pavilion"
+   "photo": "long-water-pavilion",
+   "popular": 3,
+   "mustSee": true
   },
   {
    "id": "whh",
@@ -6493,7 +6514,8 @@
    ],
    "wow": 2,
    "short": "West Half House",
-   "photo": "west-half-house"
+   "photo": "west-half-house",
+   "popular": 1
   },
   {
    "id": "altar",
@@ -6631,7 +6653,8 @@
    "wow": 2,
    "short": "Mithraic Altar",
    "note": "On the woodland edge, on grass; no steps. The altar is about 40 m east of the Hutton Monument.",
-   "photo": "mithraic-altar"
+   "photo": "mithraic-altar",
+   "popular": 1
   },
   {
    "id": "william",
@@ -6690,7 +6713,8 @@
     "Find the king dressed as a Roman soldier."
    ],
    "wow": 2,
-   "short": "William III"
+   "short": "William III",
+   "popular": 1
   },
   {
    "id": "pavilion",
@@ -6706,7 +6730,7 @@
    "era": "duke",
    "dwell": 210,
    "look": "The domed Baroque banqueting house closing the end of the Long Water. Look back north to the house.",
-   "note": "Steep steps up into the Pavilion, with no step-free way in: leave the pushchair at the foot. The interior is open at times; check on the day.",
+   "note": "Steep steps up into the Pavilion, with no step-free way in: leave the pushchair at the foot. Inside, the stairs are steep and narrow, so carry your daughter. The interior is usually open, but the upper floor is sometimes closed.",
    "bullets": [
     {
      "id": 1,
@@ -6844,7 +6868,8 @@
    ],
    "wow": 5,
    "short": "Archer Pavilion",
-   "photo": "pavilion-long-water"
+   "photo": "pavilion-long-water",
+   "popular": 4
   },
   {
    "id": "ehh",
@@ -6936,7 +6961,8 @@
    ],
    "wow": 2,
    "short": "East Half House",
-   "photo": "east-half-house"
+   "photo": "east-half-house",
+   "popular": 1
   },
   {
    "id": "cbcol",
@@ -7060,7 +7086,8 @@
    ],
    "wow": 2,
    "short": "Brown Column",
-   "photo": "brown-column-photo"
+   "photo": "brown-column-photo",
+   "popular": 1
   },
   {
    "id": "altars",
@@ -7163,7 +7190,8 @@
    "wow": 2,
    "short": "Ancient altars",
    "note": "On the lawn south of the Ladies' Lake. The dogs' cemetery is a short walk to the south-east, in woodland.",
-   "photo": "ancient-altars"
+   "photo": "ancient-altars",
+   "popular": 0
   },
   {
    "id": "chinese",
@@ -7319,7 +7347,9 @@
    "wow": 4,
    "short": "Chinese Temple",
    "note": "The Chinese Bridge has steps; the temple side of the water can be reached without crossing it. The Diana statue is a short walk west along the lake.",
-   "photo": "chinese-temple"
+   "photo": "chinese-temple",
+   "popular": 3,
+   "mustSee": true
   },
   {
    "id": "atlas",
@@ -7423,7 +7453,8 @@
    "wow": 2,
    "short": "Atlas",
    "note": "The pond once around him has silted up; the statue stands on open grass.",
-   "photo": "atlas-statue"
+   "photo": "atlas-statue",
+   "popular": 0
   }
  ],
  "sources": {
