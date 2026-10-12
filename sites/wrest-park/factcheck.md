@@ -146,8 +146,8 @@ Smaller disagreements that are already flagged correctly in the files (counted a
 **Look lines that could mislead on site**
 - `atlas` look: the distance and bearing are from the wrong reference point (W1). From the old-house and fountain stop, Atlas is about 160 m due east.
 - `italian` look: "Ceres at the far end, and the glass of the conservatory behind you." With the conservatory (east) behind you, you face west, but Ceres is at the **north** end against the screen wall (listing 1321790). Suggested: "Ceres stands against the north wall, on your right as you come out of the conservatory."
-- `longwater` look and notes: Mercury's position (U7). Check on the day.
-- `chinese` look: the bridge's direction (D15). Check on the day.
+- `longwater` look and notes: Mercury's position (U7): unresolved; the app gives the listing's 70 m.
+- `chinese` look: the bridge's direction (D15): unresolved; the app says east.
 - `vc` look: the accessible toilet location (D24).
 
 **Cosmetic**

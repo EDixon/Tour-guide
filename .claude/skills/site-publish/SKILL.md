@@ -1,6 +1,6 @@
 ---
 name: site-publish
-description: Last link in the Tour Guide site chain. List the new site in the app, run the final tests, push to GitHub Pages, and send Eliot a short report with what to check on the day. Run by the main chat after site-check.
+description: Last link in the Tour Guide site chain. List the new site in the app, run the final tests, push to GitHub Pages, and send Eliot a short report with what to know on the day. Run by the main chat after site-check.
 ---
 
 # site-publish: put it on the phone
@@ -13,8 +13,8 @@ description: Last link in the Tour Guide site chain. List the new site in the ap
 6. **STATUS.md:** tick publish, set `Stage: done`, log the date.
 7. **Report to Eliot**, short:
    - what the tour covers: stops, must-sees, and how deep the knowledge goes
-   - what's estimated, e.g. "paths estimated, so please record a GPX"
-   - the flags to check on the day
+   - what's estimated and what it means on the day (e.g. "paths follow OpenStreetMap and are unwalked, so allow a few extra minutes")
+   - anything still uncertain, with the answer the app gives and why
    - how to get it on the phone: open the app with signal, choose the site, and wait for "available offline"
 
-After the visit, the **site-update** skill handles notes, corrections and GPX tracks.
+The site is visited once, so there is no follow-up after the visit. Corrections or more depth beforehand go through the **site-update** skill.

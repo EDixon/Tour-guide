@@ -105,6 +105,6 @@ Start a Claude chat (Opus) with this repository connected and say **"add <site>"
 - **site-check:** a Haiku helper does mechanical fixes, and an Opus fact-checker reports on accuracy
 - **site-publish:** the site goes into the app
 
-Progress is kept in `sites/<id>/STATUS.md`, so if a chat gets long, start a new one and say **"continue <site>"**. After a visit, **"we're back from <site>"** (with notes or a GPX) runs `site-update`.
+Progress is kept in `sites/<id>/STATUS.md`, so if a chat gets long, start a new one and say **"continue <site>"**. Each site is visited once, as the real visit, so everything is finished before the day. For corrections or more depth beforehand, say **"fix <site>"** or **"add more about <thing>"** (`site-update`).
 
 Formats: `docs/TOUR_FORMAT.md` (tour) and `docs/KNOWLEDGE_FORMAT.md` (assistant knowledge). Checks: `npm test`, `node tools/validate-tour.mjs tours/<id>.json 120`, `node tools/check-knowledge.mjs <id>`.

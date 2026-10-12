@@ -16,7 +16,7 @@ Updated: <YYYY-MM-DD>
 |---|---|---|
 
 ## Flags for Eliot
-- (things to check on site or decide)
+- (things Eliot needs to decide or supply before the visit; there is no later visit to check things)
 
 ## Log
 - <date>: started

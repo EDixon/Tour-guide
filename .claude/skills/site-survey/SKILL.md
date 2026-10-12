@@ -10,8 +10,8 @@ Main chat (Opus). Read `CLAUDE.md`, `sites/<id>/brief.md` and `STATUS.md`. Forma
 **Ask Eliot what he has** (one message, before mapping). Anything here beats what can be found online:
 - **Site map:** a photo of the map board on site, the operator's leaflet map, or map photos saved from Google Maps (Claude can't fetch those itself).
 - **Visitor guide or guidebook:** photos of the pages, or a PDF.
-- **Other photos:** his own photos from a visit, especially of things to look for.
-- **A GPX track** or route from a previous visit.
+- **Other photos:** any of his own photos of the site, especially of things to look for.
+- **A GPX track** or route, if he already has one.
 
 Attach them in the chat; they are saved to `sites/<id>/inputs/`, which is kept out of the repo (it is public, and guidebooks and photos are copyright or personal). So:
 - Take what you need from them now.
@@ -125,6 +125,6 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
 
 ## 5. Check and hand on
 - `node tools/validate-tour.mjs tours/<id>.json 120`. Fix errors. Stops with no bullets will be flagged; that's expected at this stage.
-- Update `STATUS.md`: tick the survey stage, fill the batches table, set `Stage: research`, and add flags (e.g. "path network estimated: please record a GPX on the visit").
+- Update `STATUS.md`: tick the survey stage, fill the batches table, set `Stage: research`, and add flags (e.g. "path network estimated from OpenStreetMap, unwalked"). There is no later visit to correct things, so a flag must say what the app will do, not ask for a check on site.
 - Commit and push (`<site>: survey and research plan`).
 - Invoke the **site-research** skill.

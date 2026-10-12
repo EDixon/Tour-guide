@@ -36,6 +36,7 @@ It reports in `sites/<id>/factcheck.md`: claim, file, verdict (confirmed / wrong
 - Fix every **wrong** item yourself (main chat), or send a batch back to a stop-researcher with the evidence.
 - For **unsupported**: find a source or soften the claim ("is said to", "probably").
 - For **sources disagree**: say so in the text and add a flag.
+- There is no later visit to settle anything (the family visit once, as the real visit). Never leave a finding as "check on site": choose the best-supported answer, say in the text that it is uncertain, and flag it.
 - Re-run the mechanical checks.
 
 ## 4. Try it as a visitor

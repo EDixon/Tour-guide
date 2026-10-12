@@ -4,6 +4,7 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 
 ## Standing rules
 - **British English, UK sources.** Be realistic, keep to the point, don't flatter. Ask before continuing if something vital is missing.
+- **One visit, and it is the real one.** Each site is visited once. There is no trial run and no return visit, so nothing can be checked on the day and fixed afterwards. Get everything right before the visit. Where something stays uncertain, choose the best-supported answer, say in the app text that it is uncertain, and never leave it as "check on site" or "record a GPX next time".
 - **Every fact has a source.** Site-specific claims need a site-specific source: a Historic England listing, the operator's history pages, county archives, scholarly work. "General knowledge" is only acceptable for well-established background, and must never be used for anything about the site itself. If sources disagree, say so in the text and flag it.
 - **Nothing private in the repo.** It is public and served by GitHub Pages. No API keys, tokens, personal data or GPS tracks.
 - **Every site has its full ownership chronology** (`owners` in its dates file, from the first record to today), so "who owned it when…" is answered by the app, not guessed.
@@ -26,7 +27,7 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 - **Network access:** Claude's workspace can't reach OpenStreetMap or Wikimedia. `fetch-osm.mjs` and `fetch-photos.mjs` run in GitHub Actions, started by pushing `sites/<id>/osm.request` or `sites/<id>/photos.request`, and commit their results. Then `git pull`.
 
 ## Adding or updating a site
-Use the skills in `.claude/skills/`, which run as a chain: **new-site → site-survey → site-research → reference-packs → site-check → site-publish**, plus **site-update** for changes after a visit. Each reads and updates `sites/<id>/STATUS.md`, so work can resume in a fresh chat ("continue <site>").
+Use the skills in `.claude/skills/`, which run as a chain: **new-site → site-survey → site-research → reference-packs → site-check → site-publish**, plus **site-update** for corrections or more depth on request before the visit. Each reads and updates `sites/<id>/STATUS.md`, so work can resume in a fresh chat ("continue <site>").
 
 Model use is deliberate:
 - The main chat should be **Opus**. It does scoping, mapping, judgement and the final checks.
