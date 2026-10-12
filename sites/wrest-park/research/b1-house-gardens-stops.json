@@ -1,0 +1,416 @@
+{
+ "italian": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Laid out about 1839 for Earl de Grey, on the west side of the house. Look through the conservatory and you see it as his family did.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "history": 0.3,
+     "views": 0.4
+    },
+    "src": [
+     27,
+     "hlfrevival"
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Gravel paths cut it into four quarters of stone-edged geometric beds around a round centre. ‘Italian’ here means formal and symmetrical: bold geometry rather than particular plants.",
+    "imp": 3,
+    "tags": {
+     "gardens": 1
+    },
+    "src": [
+     27,
+     "ehtreasures"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "At the north end stands Ceres, Roman goddess of the harvest, holding flowers with one hand on an overflowing cornucopia. The listing says she was probably brought here in 1839.",
+    "imp": 3,
+    "tags": {
+     "art": 1,
+     "history": 0.2
+    },
+    "src": [
+     27
+    ],
+    "photo": "ceres-statue"
+   },
+   {
+    "id": 4,
+    "t": "Four statue groups once stood in the quarters and vases flanked the entrances. The groups have gone, and the vases were replaced with plainer ones.",
+    "imp": 2,
+    "tags": {
+     "art": 0.8,
+     "history": 0.4
+    },
+    "src": [
+     27
+    ],
+    "needs": 3
+   },
+   {
+    "id": 5,
+    "t": "English Heritage restored the beds in 2011, re-laying broken stone edging and replacing low-maintenance foliage with seasonal tulips, wallflowers, dahlias and pelargoniums. One Heritage Fund page dates the layout to 1882, not 1839.",
+    "imp": 2,
+    "tags": {
+     "gardens": 1,
+     "history": 0.3
+    },
+    "src": [
+     "hlfrevival",
+     "ehrevital"
+    ],
+    "verify": true
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the lady with the overflowing basket of fruit and flowers!",
+    "photo": "ceres-statue"
+   },
+   {
+    "t": "Find the round flower bed in the very middle of the garden.",
+    "photo": "italian-garden-beds"
+   }
+  ],
+  "look": "Four quarters of stone-edged beds with Ceres at the far end, and the glass of the conservatory behind you.",
+  "photo": "italian-garden-beds"
+ },
+ "conservatory": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The glazed roof sits on ornate cast-iron trusses, built with the house in the 1830s: iron-and-glass building more than a decade before the Crystal Palace of 1851.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "history": 0.4
+    },
+    "src": [
+     3,
+     "gk"
+    ],
+    "verify": true
+   },
+   {
+    "id": 2,
+    "t": "Cast iron is strong when squeezed but brittle when stretched. Triangulated trusses keep most of the load in compression, so slim members can carry a wide glass roof.",
+    "imp": 3,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.8
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 1
+   },
+   {
+    "id": 3,
+    "t": "It opens straight off the Countess's sitting room at the west end of the house, so the family could step from the house into a glass-roofed room of plants.",
+    "imp": 2,
+    "tags": {
+     "architecture": 0.6,
+     "people": 0.4
+    },
+    "src": [
+     3
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Look through the glass to the Italian Garden and walled garden beyond, just as Henrietta, Countess de Grey did when the house was new in the 1830s.",
+    "imp": 3,
+    "tags": {
+     "views": 0.8,
+     "gardens": 0.5,
+     "people": 0.4
+    },
+    "src": [
+     "hlfrevival"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Glasshouses were the cutting edge then: Joseph Paxton's Great Conservatory at Chatsworth went up in 1836–1840, and glass was still taxed by weight until 1845.",
+    "imp": 2,
+    "tags": {
+     "engineering": 0.8,
+     "history": 0.6
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 1,
+    "verify": true
+   },
+   {
+    "id": 6,
+    "t": "English Heritage fully repaired the conservatory and replanted it as part of the 2011 restoration.",
+    "imp": 1,
+    "tags": {
+     "gardens": 0.4,
+     "engineering": 0.3
+    },
+    "src": [
+     "ehrevital"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the big spiky palm growing indoors.",
+    "photo": "conservatory-palms"
+   },
+   "Look up! Can you see the sky through the glass roof?"
+  ],
+  "look": "Look up at the glass roof and its iron trusses, then through the glass to the Italian Garden.",
+  "note": "Visitor entrance and lift are at this end of the house. Pushchairs stay outside."
+ },
+ "parterre": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Laid out in the 1830s for Earl de Grey in the French style, between his new house and the older gardens, to match his French-style mansion.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "history": 0.3,
+     "architecture": 0.3
+    },
+    "src": [
+     1,
+     "pgukwrest"
+    ]
+   },
+   {
+    "id": 2,
+    "t": "A parterre is designed to be read as a pattern from above, so look back up at the house windows and terrace.",
+    "imp": 3,
+    "tags": {
+     "gardens": 1,
+     "views": 0.6
+    },
+    "src": [
+     "gk"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "The pattern was lost in the early 1900s, when it was simplified. A full excavation found the original beds and gravel, and English Heritage restored them in 2012.",
+    "imp": 3,
+    "tags": {
+     "gardens": 0.8,
+     "engineering": 0.3,
+     "history": 0.5
+    },
+    "src": [
+     "ehrevital",
+     "hlfrevival"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Four lead groups, attributed to John Cheere and dated about 1730, flank the walk: Venus and Adonis, Meleager and Atalanta, Aeneas and Anchises, and the Abduction of Helen.",
+    "imp": 3,
+    "tags": {
+     "art": 1
+    },
+    "src": [
+     "lst1113789"
+    ],
+    "photo": "venus-adonis-group"
+   },
+   {
+    "id": 5,
+    "t": "Some guides call the Meleager group ‘Diana and Endymion’. Historic England says that was a mistake: look for the boar's head under the dog's paw.",
+    "imp": 2,
+    "tags": {
+     "art": 0.8
+    },
+    "src": [
+     "lst1113789",
+     38
+    ],
+    "needs": 4,
+    "photo": "meleager-atalanta-group"
+   },
+   {
+    "id": 6,
+    "t": "Aeneas carries his old father Anchises out of burning Troy, his small son beside him: the legend Romans used for their own founding.",
+    "imp": 2,
+    "tags": {
+     "art": 0.6,
+     "history": 0.6
+    },
+    "src": [
+     "lst1113789",
+     "gk"
+    ],
+    "needs": 4,
+    "photo": "aeneas-anchises-group"
+   },
+   {
+    "id": 7,
+    "t": "Cheere's lead is painted white to pass for marble from a distance. In 2021 conservators steamed off peeling paint from two groups, over 3 metres tall, and repainted them.",
+    "imp": 3,
+    "tags": {
+     "art": 0.7,
+     "engineering": 0.5
+    },
+    "src": [
+     "ehstatues"
+    ],
+    "needs": 4
+   },
+   {
+    "id": 8,
+    "t": "The groups were not made for Wrest. The listing thinks they came from Cheere's stock, sold off in the late 1700s, and a view of 1839 already shows them here.",
+    "imp": 2,
+    "tags": {
+     "art": 0.6,
+     "history": 0.5
+    },
+    "src": [
+     "lst1113789"
+    ],
+    "needs": 4
+   },
+   {
+    "id": 9,
+    "t": "On the west side, the Mermaid Basin has four seated marble mermaids. Historic England thinks it was added between 1880 and 1904; Bedfordshire Archives says mid-1800s.",
+    "imp": 2,
+    "tags": {
+     "art": 1
+    },
+    "src": [
+     "lst1158506",
+     11
+    ],
+    "photo": "mermaid-basin-statue"
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the mermaids!",
+    "photo": "mermaid-basin-statue"
+   },
+   {
+    "t": "Find the statue with a little angel and a dog.",
+    "photo": "venus-adonis-group"
+   }
+  ],
+  "look": "Low patterned beds below the terrace, two statue groups each side of the central walk, the Mermaid Basin on the west side and the Archer Pavilion far away on the axis.",
+  "photo": "parterre-axis-view"
+ },
+ "dairy": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Le Petit Trianon, built in 1856, is a playhouse of split logs on a timber frame. Inside are three rooms: a kitchen, scullery and sitting room.",
+    "imp": 4,
+    "tags": {
+     "people": 1,
+     "architecture": 0.4
+    },
+    "src": [
+     25
+    ],
+    "photo": "petit-trianon-log-house"
+   },
+   {
+    "id": 2,
+    "t": "Historic England says it was built for the Earl's children, but his daughters were grown by 1856, so grandchildren would fit better. No source settles it.",
+    "imp": 3,
+    "tags": {
+     "people": 0.8
+    },
+    "src": [
+     25,
+     "lst1158506"
+    ],
+    "needs": 1,
+    "verify": true
+   },
+   {
+    "id": 3,
+    "t": "It is named after the Petit Trianon at Versailles, which Louis XVI gave in 1774 to his Habsburg queen, Marie Antoinette, daughter of Empress Maria Theresa.",
+    "imp": 4,
+    "tags": {
+     "habsburg": 1,
+     "history": 0.8
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 1,
+    "verify": true
+   },
+   {
+    "id": 4,
+    "t": "At Versailles she later had a make-believe rustic hamlet built, about 1783–1786. No source says Wrest's log house copies it: the name is the only link.",
+    "imp": 3,
+    "tags": {
+     "habsburg": 1,
+     "history": 0.5
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 3,
+    "verify": true
+   },
+   {
+    "id": 5,
+    "t": "The French taste came early: his Silsoe entrance lodges of about 1826 were his first Louis XV-style buildings, years before the house itself.",
+    "imp": 2,
+    "tags": {
+     "architecture": 0.7,
+     "history": 0.5
+    },
+    "src": [
+     10,
+     1
+    ]
+   },
+   {
+    "id": 6,
+    "t": "The ornamental dairy beside the service range has a verandah, stained glass and a cupola. It is much altered: its fittings are gone and a 1982 extension cut through its north wall.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.6,
+     "art": 0.3
+    },
+    "src": [
+     3
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Once the source of the family's butter and cream, it now shelters garden statues too fragile to stay outside, including a Portland stone Neptune and a bronze sundial dated 1682.",
+    "imp": 3,
+    "tags": {
+     "art": 0.8,
+     "history": 0.4
+    },
+    "src": [
+     "ehtreasures"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the little wooden house made of logs.",
+    "photo": "petit-trianon-log-house"
+   },
+   "Find the little tower with a pointed roof on top of the dairy."
+  ],
+  "look": "The little log playhouse in the trees, and the dairy with its verandah and cupola beside the service range.",
+  "photo": "petit-trianon-log-house"
+ }
+}

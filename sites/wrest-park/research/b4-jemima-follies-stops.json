@@ -1,0 +1,451 @@
+{
+ "altar": {
+  "photo": "mithraic-altar",
+  "look": "A squat altar faced with knapped flint, with lion's-paw feet and curled leaves at the corners, in the woods west of the Pavilion. About 40 m further west is a plain brick wall with a plaque: the Hutton Monument.",
+  "note": "On the woodland edge, on grass; no steps. The altar is about 40 m east of the Hutton Monument.",
+  "kids": [
+   {
+    "t": "Find the tall stone covered in little flints, with a lion's paw at each corner.",
+    "photo": "mithraic-altar"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The Mithraic Altar was put up by 1748 for Jemima and her husband Philip Yorke: a chunky flint-faced block with lion's-paw feet, carrying one inscription in ancient Greek and one in a made-up 'Persian' script.",
+    "imp": 3,
+    "tags": {
+     "history": 0.6,
+     "art": 0.4,
+     "architecture": 0.4
+    },
+    "photo": "mithraic-altar",
+    "src": [
+     18,
+     11
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Mithras was a Persian-born god worshipped in a Roman soldiers' mystery cult. This altar is no antique: it is an eighteenth-century fantasy, built as a garden joke for clever friends.",
+    "imp": 2,
+    "tags": {
+     "history": 0.9
+    },
+    "src": [
+     11,
+     "gk"
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Its Greek inscription was written by Daniel Wray, and an 1831 record says the altar honoured the Athenian Letters, a book by Philip Yorke's circle, framed as letters from a Persian agent in Athens.",
+    "imp": 3,
+    "tags": {
+     "history": 0.7,
+     "people": 0.8
+    },
+    "needs": 1,
+    "src": [
+     18,
+     "athenian-letters-wiki",
+     "ega-womens-designs"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Historic England credits the design to Thomas Wright, Jemima's tutor. He was Thomas Wright of Durham (1711–1786), who taught her garden design, surveying, geometry and astronomy, and wrote a famous book on the Milky Way.",
+    "imp": 4,
+    "tags": {
+     "space": 0.9,
+     "people": 0.8
+    },
+    "src": [
+     18,
+     "ega-womens-designs",
+     "wrest-circle-oxford",
+     19
+    ]
+   },
+   {
+    "id": 4,
+    "t": "In 1750 Wright published a new theory of the universe. The Milky Way, he said, is what we see when we look along a thin layer of stars from inside it.",
+    "imp": 5,
+    "tags": {
+     "space": 1,
+     "physics": 0.7
+    },
+    "needs": 3,
+    "src": [
+     19,
+     "warwick-wright",
+     "en-wiki-wright"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "Wright pictured stars circling a divine centre, in a flat ring or nested shells. Immanuel Kant read a review of the book and, in 1755, took the flat-disc idea further.",
+    "imp": 4,
+    "tags": {
+     "space": 0.9,
+     "physics": 0.5,
+     "history": 0.4
+    },
+    "needs": 4,
+    "src": [
+     "warwick-wright",
+     "lindahall-wright"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Wright began as a clockmaker's apprentice, then taught navigation, and later taught mathematics and astronomy to aristocratic women while planning at least fifteen gardens and grottoes.",
+    "imp": 3,
+    "tags": {
+     "space": 0.6,
+     "people": 0.8,
+     "gardens": 0.5
+    },
+    "needs": 3,
+    "src": [
+     19
+    ]
+   },
+   {
+    "id": 6,
+    "t": "The Hutton Monument, a plain brick wall about 40 metres west, was put up about 1730 by the Duke of Kent for his friend Thomas Hutton. Its plaque is rather condescending about him.",
+    "imp": 2,
+    "tags": {
+     "people": 1
+    },
+    "src": [
+     11
+    ]
+   }
+  ]
+ },
+ "chinese": {
+  "photo": "chinese-temple",
+  "look": "The white-and-red timber temple with its two-tier pagoda roof and little bells, then the pale brick bridge just east over the water. Just west, a white statue of Diana with her greyhound stands beside the Ladies' Lake.",
+  "note": "The Chinese Bridge has steps; the temple side of the water can be reached without crossing it. The Diana statue is a short walk west along the lake.",
+  "kids": [
+   {
+    "t": "Find the golden dragon on top of the roof, and the little bells hanging from the corners.",
+    "photo": "chinese-temple-roof"
+   },
+   {
+    "t": "Find the white lady with her dog by the lake. What kind of dog is it?",
+    "photo": "diana-greyhound"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The Chinese Temple dates from about 1760, built for Jemima: a timber summerhouse on a stone plinth, with a two-tier pagoda roof, fretwork, hanging bells and a wyvern on the top.",
+    "imp": 4,
+    "tags": {
+     "architecture": 1,
+     "views": 0.6
+    },
+    "photo": "chinese-temple",
+    "src": [
+     20,
+     "ega-womens-designs"
+    ]
+   },
+   {
+    "id": 7,
+    "t": "A wyvern is a two-legged dragon, and it is the Grey family's emblem. So the 'Chinese' roof is topped by the family's own crest.",
+    "imp": 2,
+    "tags": {
+     "history": 0.5,
+     "art": 0.4
+    },
+    "needs": 1,
+    "photo": "chinese-temple-roof",
+    "src": [
+     20
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Historic England says it was possibly designed by William Chambers, who made three voyages to China for the Swedish East India Company in the 1740s and built the Great Pagoda at Kew in 1761–1762.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.6,
+     "history": 0.8
+    },
+    "needs": 1,
+    "verify": true,
+    "src": [
+     20,
+     "en-wiki-chambers"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "This is chinoiserie: Europeans' fantasy of China, made fashionable by Chambers's 1757 book of Chinese designs. Jemima's set piece also had a conch-shell water feature, a willow and a tulip tree.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "gardens": 0.8,
+     "history": 0.5
+    },
+    "needs": 2,
+    "src": [
+     "ega-womens-designs",
+     "en-wiki-chambers"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "The brick bridge to the east is from 1876. Anne Florence, Countess Cowper, designed it herself, and estate workmen built it to replace a timber bridge of the 1760s.",
+    "imp": 3,
+    "tags": {
+     "engineering": 0.6,
+     "people": 0.7
+    },
+    "photo": "chinese-bridge",
+    "src": [
+     7,
+     10
+    ]
+   },
+   {
+    "id": 4,
+    "t": "It has a single elliptical arch: flatter than a semicircle, so a low deck for the same span, but more sideways thrust, which the abutments must resist. Wedge-shaped voussoirs hold it up in compression.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.8
+    },
+    "needs": 3,
+    "src": [
+     7,
+     "gk"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "The bridge's style is said to copy the bridge on Willow Pattern china. That pattern is itself an English invention of the later 1700s, not a Chinese one.",
+    "imp": 2,
+    "tags": {
+     "history": 0.8,
+     "art": 0.5
+    },
+    "verify": true,
+    "src": [
+     10,
+     "gk"
+    ]
+   },
+   {
+    "id": 9,
+    "t": "By the Ladies' Lake stands a lead Diana with her greyhound, made about 1729–1730, probably by Andrew Carpenter for the Duke of Kent. Sold in 1917, it was bought back with Art Fund help in 2012.",
+    "imp": 3,
+    "tags": {
+     "art": 0.7,
+     "history": 0.6
+    },
+    "photo": "diana-greyhound",
+    "src": [
+     "artfund-diana",
+     "geograph-diana"
+    ]
+   },
+   {
+    "id": 6,
+    "t": "The meadow just north of the bridge is one of the best spots for autumn colour.",
+    "imp": 2,
+    "tags": {
+     "views": 1
+    },
+    "src": [
+     33
+    ]
+   }
+  ]
+ },
+ "altars": {
+  "photo": "ancient-altars",
+  "look": "Five round white marble altars on a circular lawn among the trees: four around the edge, one in the middle.",
+  "note": "On the lawn south of the Ladies' Lake. The dogs' cemetery is a short walk to the south-east, in woodland.",
+  "kids": [
+   {
+    "t": "Count the round white stones on the grass. How many are there?",
+    "photo": "ancient-altars"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "These five marble altars are genuinely ancient: Greek work of the late second to first century BC. Amabel, Countess de Grey, bought them in 1817 from a Mr Beauclere of Muswell Hill.",
+    "imp": 4,
+    "tags": {
+     "history": 1,
+     "art": 0.5
+    },
+    "src": [
+     "le-altars-1311237",
+     11
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The middle altar reads 'Hail Diogenes, son of Enon, honest citizen of Askalon', a coastal city near Gaza. Its letters are far less worn than the rest, so may be a later addition.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8
+    },
+    "needs": 1,
+    "src": [
+     "le-altars-1311237",
+     11
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Each is a cylinder about a metre tall, carved with ox skulls joined by festoons of flowers, a pattern that recalls animal sacrifice at an altar.",
+    "imp": 2,
+    "tags": {
+     "art": 0.7,
+     "history": 0.5
+    },
+    "needs": 1,
+    "src": [
+     "le-altars-1311237",
+     "gk"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Amabel bought marble after many of the family's lead statues had been melted down, in 1809 according to the Art Fund. English Heritage says she later regretted it.",
+    "imp": 3,
+    "tags": {
+     "history": 0.7,
+     "people": 0.7
+    },
+    "needs": 1,
+    "src": [
+     "ega-womens-designs",
+     "artfund-diana"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Where Mr Beauclere got them is unknown. Having stood in this setting since 1817, they are now the oldest objects at Wrest, and are listed Grade II*.",
+    "imp": 2,
+    "tags": {
+     "history": 0.6
+    },
+    "needs": 1,
+    "src": [
+     "le-altars-1311237"
+    ]
+   },
+   {
+    "id": 6,
+    "t": "About 90 metres south-east, in the woods, is the dogs' cemetery. English Heritage says the Lucas family buried favourite dogs there, with headstones around a stone dog on a plinth.",
+    "imp": 2,
+    "tags": {
+     "people": 1
+    },
+    "verify": true,
+    "src": [
+     "eh-top-dogs"
+    ]
+   }
+  ]
+ },
+ "atlas": {
+  "photo": "atlas-statue",
+  "look": "A weathered stone Atlas stooping under a globe on a plain pedestal, in rough grass, about 250 m south-east of the old house site.",
+  "note": "The pond once around him has silted up; the statue stands on open grass.",
+  "kids": [
+   {
+    "t": "Find the strong man carrying a big ball on his shoulders. Can you stand like him?",
+    "photo": "atlas-statue"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Atlas, the Titan condemned to hold up the heavens, stoops under a globe. The Portland stone figure is early eighteenth century, probably one of the Duke of Kent's garden additions.",
+    "imp": 4,
+    "tags": {
+     "space": 1,
+     "art": 0.6
+    },
+    "src": [
+     24
+    ]
+   },
+   {
+    "id": 2,
+    "t": "In myth Atlas holds up the sky, not the Earth. The 'Atlas carrying the world' picture is a later mix-up, helped by map books being called atlases.",
+    "imp": 3,
+    "tags": {
+     "space": 0.8,
+     "history": 0.5
+    },
+    "needs": 1,
+    "src": [
+     "en-wiki-atlas"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "If his ball is the sky, it is a celestial globe. Those show the stars as if seen from outside, so the constellations look mirror-reversed from how we see them.",
+    "imp": 3,
+    "tags": {
+     "space": 1,
+     "physics": 0.6
+    },
+    "needs": 1,
+    "src": [
+     "gk"
+    ],
+    "verify": true
+   },
+   {
+    "id": 4,
+    "t": "The Farnese Atlas in Naples, a Roman marble from about 150 AD, is the oldest surviving celestial globe, showing 41 or 42 of the 48 classical constellations.",
+    "imp": 3,
+    "tags": {
+     "space": 1,
+     "history": 0.6
+    },
+    "needs": 1,
+    "src": [
+     "en-wiki-farnese"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Nobody knows where he first stood. The earliest record of him in this spot, east of the old house, is from 1900, and the pedestal is nineteenth century.",
+    "imp": 2,
+    "tags": {
+     "history": 0.6,
+     "gardens": 0.4
+    },
+    "needs": 1,
+    "src": [
+     24
+    ]
+   },
+   {
+    "id": 6,
+    "t": "Earthworks show a pond once surrounded him; it has silted up. A small hole on his body is thought to be where a nineteenth-century fig leaf was fixed.",
+    "imp": 1,
+    "tags": {
+     "history": 0.3
+    },
+    "needs": 1,
+    "src": [
+     24,
+     11
+    ]
+   }
+  ]
+ }
+}

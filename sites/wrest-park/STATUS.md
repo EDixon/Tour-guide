@@ -29,8 +29,8 @@ Updated: 2026-10-12
 | 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | dispatched |
 | 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | dispatched |
 | 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | dispatched |
-| 4 Jemima's garden and its follies | altar, chinese, altars, atlas | dispatched |
-| 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | to do |
+| 4 Jemima's garden and its follies | altar, chinese, altars, atlas | returned, reviewed |
+| 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | dispatched |
 | 6 The science years | science | to do |
 | 7 Family and owners | (notes sections; intro, staircase, oldhouse) | to do |
 | Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |

@@ -1,0 +1,429 @@
+{
+ "bowling": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "A bowling pavilion of about 1735, remodelled by Batty Langley for the Duke of Kent. It is Grade II* listed, partly because early-1700s bowling houses so rarely survive.",
+    "imp": 5,
+    "tags": {
+     "architecture": 1,
+     "history": 0.4
+    },
+    "photo": "bowling-front",
+    "src": [
+     6,
+     10
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Bowls ran in the family. Bedfordshire Archives says the Duke's father, Anthony, 11th Earl of Kent, died on a bowling green in Tonbridge, in 1702.",
+    "imp": 3,
+    "tags": {
+     "people": 1
+    },
+    "verify": true,
+    "src": [
+     10,
+     "wiki-anthony"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Historic England thinks it probably wraps an earlier deer house. English Heritage's plan dates the walls to 1720–1721, with only the six front columns added in 1735.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "engineering": 0.4
+    },
+    "needs": 1,
+    "verify": true,
+    "src": [
+     6,
+     "eh-phased"
+    ]
+   },
+   {
+    "id": 6,
+    "t": "The east front, facing the green, has six painted wooden columns and a smooth white-washed finish. Walk round the back: the west side is an arcade of arches on plain brick piers.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "engineering": 0.3
+    },
+    "needs": 1,
+    "src": [
+     6
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Above the columns, the roof balustrade once carried six life-size statues. By 1831 they had been swapped for urns, and those were later replaced by copies.",
+    "imp": 2,
+    "tags": {
+     "architecture": 0.5,
+     "art": 0.5
+    },
+    "needs": 6,
+    "src": [
+     6
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Two lead urns about two metres tall, made about 1720 and probably by John Van Nost the Younger, flank the house. One shows Venus in a sea chariot, the other Bacchus with nymphs and fauns.",
+    "imp": 2,
+    "tags": {
+     "art": 1
+    },
+    "photo": "bowling-urns",
+    "src": [
+     6
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Langley wrote pattern books for builders, including Practical Geometry in 1726 and New Principles of Gardening in 1728. Wrest is one of his few known commissions.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "engineering": 0.5
+    },
+    "src": [
+     "wiki-langley"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "He tried to improve Gothic with classical rules, and Horace Walpole mocked him for it. His books crossed the Atlantic: George Washington used them for Mount Vernon.",
+    "imp": 2,
+    "tags": {
+     "architecture": 0.6,
+     "history": 0.5
+    },
+    "needs": 4,
+    "verify": true,
+    "src": [
+     "wiki-langley"
+    ]
+   },
+   {
+    "id": 9,
+    "t": "Beyond the green is the Leg o' Mutton Lake, named for a bulge on its south side that has since gone. An amphitheatre was added north of the green in 1729.",
+    "imp": 2,
+    "tags": {
+     "gardens": 0.8,
+     "views": 0.6
+    },
+    "photo": "leg-of-mutton-lake",
+    "verify": true,
+    "src": [
+     "he-1402869",
+     "geograph-leg"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the two big grey urns, like giant vases, by the house.",
+    "photo": "bowling-urns"
+   },
+   {
+    "t": "Count the white columns across the front. There are six!",
+    "photo": "bowling-front"
+   }
+  ],
+  "look": "The white columned pavilion facing east across the bowling green; its brick arcade at the back faces Oldpark Water.",
+  "photo": "bowling-front",
+  "note": "Ramp access."
+ },
+ "whh": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The West Half House, built about 1726, is a half-round brick garden shelter with a white front, a blind red-brick back and a half-cone lead roof. A curved wooden seat is inside.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "gardens": 0.6
+    },
+    "photo": "west-half-house",
+    "src": [
+     22,
+     38
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Straight avenues and open ‘squares’ were cut through the woods either side of the Long Water, largely complete by 1726. English Heritage calls it a rare English formal woodland garden in the French style.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "views": 0.4
+    },
+    "src": [
+     1,
+     21
+    ]
+   },
+   {
+    "id": 7,
+    "t": "The leaflet marks Duchess's Square beside this half house, and a Duke's Square elsewhere in the wood. These are the clearings where the straight rides meet.",
+    "imp": 2,
+    "tags": {
+     "gardens": 0.7
+    },
+    "needs": 2,
+    "verify": true,
+    "src": [
+     15
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Just south, a lead lady sits reading, about 2.5 metres high on a stone pedestal. Historic England dates her to about 1748 and says she is probably by John Cheere.",
+    "imp": 3,
+    "tags": {
+     "people": 0.8,
+     "art": 0.6
+    },
+    "photo": "jemima-statue",
+    "src": [
+     31,
+     15
+    ]
+   },
+   {
+    "id": 6,
+    "t": "Who is she? Historic England says Jemima, Marchioness Grey. Bedfordshire Archives says Jemima, the Duke's first wife, who died in 1728. Neither is certain.",
+    "imp": 3,
+    "tags": {
+     "people": 1,
+     "art": 0.4
+    },
+    "needs": 3,
+    "verify": true,
+    "src": [
+     31,
+     38
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Jemima was 17 when she married Philip Yorke, the Lord Chancellor's son, on 22 May 1740. The Duke died on 5 June, having outlived all his sons, and she inherited Wrest.",
+    "imp": 4,
+    "tags": {
+     "people": 1,
+     "history": 0.6
+    },
+    "needs": 3,
+    "verify": true,
+    "src": [
+     "beds-jemima",
+     "wiki-duke"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Jemima and Philip kept a lively circle of relatives and friends at Wrest: days in the gardens, evenings swapping poems.",
+    "imp": 2,
+    "tags": {
+     "people": 1
+    },
+    "needs": 4,
+    "verify": true,
+    "src": [
+     "history-today"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "John Cheere, a London maker of lead garden statues, is also thought to have made the King William III statue by the Long Water.",
+    "imp": 2,
+    "tags": {
+     "art": 0.8,
+     "people": 0.4
+    },
+    "needs": 3,
+    "src": [
+     23,
+     "wiki-cheere"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Find the lady reading a book.",
+    "photo": "jemima-statue"
+   },
+   {
+    "t": "Find the little house with a roof like half an ice-cream cone.",
+    "photo": "west-half-house"
+   }
+  ],
+  "look": "The half-round garden shelter in its woodland clearing, with the lady reading just south.",
+  "photo": "west-half-house"
+ },
+ "ehh": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The East Half House is the West's twin, built in 1726 as a garden shelter for the Duke. It has a square front, a rounded back and a half-cone lead roof.",
+    "imp": 2,
+    "tags": {
+     "architecture": 1
+    },
+    "photo": "east-half-house",
+    "src": [
+     28,
+     10
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Spot the differences. This one has a round arch under a triangular pediment, with niches that once held statues. The West has a flatter arch between narrow pilasters.",
+    "imp": 3,
+    "tags": {
+     "architecture": 1
+    },
+    "needs": 1,
+    "src": [
+     28,
+     22
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Nobody has recorded who designed them. The Duke did employ Hawksmoor, Archer, Langley and William Kent, and designs came from Gibbs, Juvarra and Leoni too, though not all were built.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "people": 0.6
+    },
+    "verify": true,
+    "src": [
+     28,
+     1,
+     21
+    ]
+   },
+   {
+    "id": 4,
+    "t": "The Duke, Henry Grey, was Lord Chamberlain from 1704, Marquess of Kent in 1706, and Duke of Kent in 1710, a title he gained by giving up the Chamberlain's post.",
+    "imp": 3,
+    "tags": {
+     "people": 1,
+     "history": 0.5
+    },
+    "src": [
+     "wiki-duke",
+     1
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Britain was then fighting the War of the Spanish Succession, backing the Habsburg Archduke Charles for Spain's throne. Charles became Holy Roman Emperor in 1711, as the Pavilion was finished.",
+    "imp": 3,
+    "tags": {
+     "habsburg": 1,
+     "history": 0.8
+    },
+    "needs": 4,
+    "src": [
+     "wiki-wsc",
+     4
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Is there somewhere to sit inside? Find the curved wooden seat.",
+    "photo": "east-half-house"
+   }
+  ],
+  "look": "The twin of the West Half House, in the woods on the east side.",
+  "photo": "east-half-house"
+ },
+ "oldpark": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "This is the western stretch of the ‘river’ round three sides of the garden. The Duke dug canals here between 1702 and 1720, and Capability Brown reshaped them in 1758–1760.",
+    "imp": 5,
+    "tags": {
+     "engineering": 0.4,
+     "views": 0.8,
+     "history": 0.3
+    },
+    "src": [
+     "albion-oldpark",
+     1
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The water is held in by clay banks that still have to be ‘puddled’ to stop leaks, and by weirs. Old Park Weir joins this water to the Serpentine to the south.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.3
+    },
+    "needs": 1,
+    "src": [
+     "albion-oldpark"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "The garden's old spring no longer flows, so a pump has circulated the water since 1972. Around 1760 a bank of earth, hidden by planting, held back the higher level.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.5
+    },
+    "needs": 2,
+    "verify": true,
+    "src": [
+     "albion-oldpark"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Not every curve is Brown's. In 1729 the Duke's works included a serpentine canal, so gentle bends were already being dug before Brown arrived.",
+    "imp": 3,
+    "tags": {
+     "engineering": 0.4,
+     "gardens": 0.8
+    },
+    "needs": 1,
+    "verify": true,
+    "src": [
+     "he-1402869"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "West of the water lies the Old Park, the oldest parkland at Wrest, parts probably fourteenth-century. A listed ha-ha about 400 metres long crosses it.",
+    "imp": 2,
+    "tags": {
+     "history": 0.8
+    },
+    "src": [
+     "he-1402869"
+    ]
+   }
+  ],
+  "kids": [
+   {
+    "t": "Spot a goose or a duck on the water.",
+    "photo": "oldpark-geese"
+   },
+   {
+    "t": "Find the tall bulrushes at the water's edge.",
+    "photo": "oldpark-bulrushes"
+   }
+  ],
+  "look": "Look along the western boundary canal, still and tree-lined: one of the quietest views in the garden.",
+  "photo": "oldpark-water"
+ }
+}
