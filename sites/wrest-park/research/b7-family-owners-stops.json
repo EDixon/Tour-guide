@@ -1,0 +1,238 @@
+{
+ "intro": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Wrest was the de Grey family's home for over 600 years, from the 1280s until it was sold in 1917. Each generation added to the garden but kept what came before.",
+    "imp": 5,
+    "tags": {
+     "history": 1,
+     "gardens": 0.6
+    },
+    "src": [
+     1,
+     9
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The spine is one straight line: house, Long Water and Archer Pavilion, 800 m due south. Almost everything else hangs off that axis.",
+    "imp": 5,
+    "tags": {
+     "views": 1,
+     "gardens": 0.6,
+     "architecture": 0.5
+    },
+    "src": [
+     3,
+     4
+    ]
+   },
+   {
+    "id": 3,
+    "t": "1680s: Earl Anthony and Countess Mary dig the Long Water beside a rambling medieval house, which stood about 200 m south of today's.",
+    "imp": 4,
+    "tags": {
+     "history": 1,
+     "gardens": 0.6
+    },
+    "src": [
+     1,
+     3
+    ]
+   },
+   {
+    "id": 4,
+    "t": "1700s: Henry, Duke of Kent builds a formal woodland garden around it, with straight avenues, canals and Thomas Archer's Pavilion. Gardens like this are now rare in England.",
+    "imp": 5,
+    "tags": {
+     "gardens": 1,
+     "architecture": 0.6,
+     "history": 0.6
+    },
+    "src": [
+     1,
+     2
+    ]
+   },
+   {
+    "id": 5,
+    "t": "1750s–70s: his granddaughter Jemima softens the edges with Capability Brown and adds follies: a Chinese temple, a bath house and a ‘Persian’ altar.",
+    "imp": 4,
+    "tags": {
+     "gardens": 1,
+     "people": 0.6
+    },
+    "src": [
+     1
+    ]
+   },
+   {
+    "id": 6,
+    "t": "1830s: Thomas, Earl de Grey pulls down the old house, designs a French-style mansion himself, and lays out formal gardens between it and the old garden.",
+    "imp": 5,
+    "tags": {
+     "architecture": 1,
+     "history": 0.6
+    },
+    "src": [
+     1,
+     3
+    ]
+   },
+   {
+    "id": 7,
+    "t": "1914–16: the house is a military hospital until fire damages it. Sold in 1917, it later loses many statues and old trees, mostly in the 1920s and 1930s under the next owner, John George Murray.",
+    "imp": 3,
+    "tags": {
+     "history": 1
+    },
+    "src": [
+     12,
+     "beds-20c",
+     "eh-lost-found"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "1948–2006: an agricultural engineering research institute, which built early driverless tractors and camera-guided weeding robots. Since 2006 English Heritage has been restoring the gardens to their pre-1917 state.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.8,
+     "computing": 0.8,
+     "history": 0.6
+    },
+    "src": [
+     16,
+     17,
+     1
+    ]
+   }
+  ],
+  "kids": [
+   "Can you see the play area? That's for later!"
+  ],
+  "look": "The whole story in a few points, to put every stop in context. Also on the Timeline tab any time."
+ },
+ "staircase": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The staircase hall rises the full height of the house to a glass lantern. The north–south axis runs from the front door, through here, to the Long Water.",
+    "imp": 4,
+    "tags": {
+     "architecture": 1,
+     "views": 0.4
+    },
+    "src": [
+     3
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Ground floor was A-Ward for the most serious cases in the First World War, with B-Ward upstairs, C-Ward in the service wing, an operating theatre and an X-ray room.",
+    "imp": 4,
+    "tags": {
+     "history": 1,
+     "people": 0.5
+    },
+    "src": [
+     12
+    ]
+   },
+   {
+    "id": 3,
+    "t": "X-rays had been discovered only 19 years earlier, by Wilhelm Röntgen in 1895, and portable X-ray units were new to war medicine.",
+    "imp": 3,
+    "tags": {
+     "physics": 1,
+     "history": 0.5
+    },
+    "src": [
+     "gk"
+    ],
+    "needs": 2,
+    "verify": true
+   },
+   {
+    "id": 4,
+    "t": "About 1,600 patients passed through. On 14 September 1916 fire broke out; all 156 patients were got out safely, but the hospital never reopened.",
+    "imp": 4,
+    "tags": {
+     "history": 1,
+     "people": 0.7
+    },
+    "src": [
+     12,
+     1
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Nan Herbert, sister of the owner Lord Lucas, ran it as matron from 1915. It was reckoned one of the best-run country-house hospitals.",
+    "imp": 2,
+    "tags": {
+     "people": 1,
+     "history": 0.4
+    },
+    "src": [
+     12
+    ]
+   },
+   {
+    "id": 6,
+    "t": "The full-length portraits show Henry, Duke of Kent, his family and royalty including Queens Anne and Caroline, by painters such as Kneller and Amigoni.",
+    "imp": 2,
+    "tags": {
+     "art": 1,
+     "people": 0.5
+    },
+    "src": [
+     35
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Over the south door: a plaster palette, brushes, T-square and dividers, with figures seated on books by Blondel, Mansart and Le Pautre. The Earl was honouring his sources.",
+    "imp": 3,
+    "tags": {
+     "architecture": 0.8,
+     "people": 0.6
+    },
+    "src": [
+     3
+    ]
+   },
+   {
+    "id": 8,
+    "t": "In 1968 Pevsner wrongly credited the house to an ‘unknown French architect’ called Cléphane. James Clephan was actually the Earl's clerk of works.",
+    "imp": 2,
+    "tags": {
+     "people": 1
+    },
+    "src": [
+     9
+    ]
+   },
+   {
+    "id": 9,
+    "t": "The fire of 14 September 1916 is said to have started in the east wing. About 50 patients were moved to Woburn Abbey hospital and army huts at Ampthill, and no-one was hurt.",
+    "imp": 3,
+    "tags": {
+     "history": 1,
+     "people": 0.5
+    },
+    "src": [
+     "tommy-fire",
+     12
+    ],
+    "needs": 4,
+    "verify": true
+   }
+  ],
+  "kids": [
+   "Look up and find the big glass window in the roof."
+  ],
+  "look": "Look up to the glass lantern, then along the line from the front door to the garden."
+ }
+}
