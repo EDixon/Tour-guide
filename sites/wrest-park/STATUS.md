@@ -26,13 +26,13 @@ Updated: 2026-10-12
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | dispatched |
+| 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | returned, reviewed |
 | 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | dispatched |
-| 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | dispatched |
+| 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | returned, reviewed |
 | 4 Jemima's garden and its follies | altar, chinese, altars, atlas | returned, reviewed |
 | 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | dispatched |
-| 6 The science years | science | to do |
-| 7 Family and owners | (notes sections; intro, staircase, oldhouse) | to do |
+| 6 The science years | science | dispatched |
+| 7 Family and owners | (notes sections; intro, staircase, oldhouse) | dispatched |
 | Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |
 
 ## Known gaps carried forward

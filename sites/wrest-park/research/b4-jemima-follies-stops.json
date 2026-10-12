@@ -241,7 +241,7 @@
    },
    {
     "id": 9,
-    "t": "By the Ladies' Lake stands a lead Diana with her greyhound, made about 1729–1730, probably by Andrew Carpenter for the Duke of Kent. Sold in 1917, it was bought back with Art Fund help in 2012.",
+    "t": "By the Ladies' Lake stands a lead Diana with her greyhound, made about 1729–1730, probably by Andrew Carpenter for the Duke of Kent. Sold in 1917, it was bought back at auction in 2011 with Art Fund help.",
     "imp": 3,
     "tags": {
      "art": 0.7,
@@ -250,7 +250,8 @@
     "photo": "diana-greyhound",
     "src": [
      "artfund-diana",
-     "geograph-diana"
+     "geograph-diana",
+     "ehcollection"
     ]
    },
    {
