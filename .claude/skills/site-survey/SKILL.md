@@ -69,7 +69,7 @@ Leave `bullets` and `kids` empty: research fills them. Aim for 15–30 stops. To
   4. Set `"map": {"osm": "tours/<id>.map.json", "osmNote": "..."}` in the tour, and add the file to `sw.js`.
 - **Use it:**
   - `osm-pois.json` lists named points (statues, toilets, gates, car parks, buildings) with positions. Check every stop's position against it and the listing. Where they disagree by more than about 20 m, find out which is right and say so in `sources.md`.
-  - Draw waypoints and path links along the real footpaths in `tours/<id>.map.json`, so walking distances are realistic.
+  - Draw waypoints and path links along the real footpaths in `tours/<id>.map.json`, so walking distances are realistic. `node tools/osm-network.mjs <id>` does this: it builds the links from the OSM footpaths, snaps the stops on and copies OSM steps. Link names, scenic scores, extra paths and extra steps go in `sites/<id>/network.json` (format at the top of the tool). Run it without `--write` first to see the report.
 - **A map picture from Eliot** (leaflet, guidebook plan, photo of the board). Visitor maps are rarely to scale: often a bird's-eye view, rotated and stretched. So georeference it, rather than reading positions off it by eye:
   1. **Prepare the image.** Render a PDF at 200 dpi or more (`pdftoppm -r 200`) and crop to the map.
   2. **Find the markers.** For numbered key markers, sample their colour from the key and run `python3 tools/map-markers.py map.png --colour R,G,B --sheet sheet.png --json markers.json`. Read the numbers off the contact sheet.

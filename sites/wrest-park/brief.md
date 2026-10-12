@@ -12,7 +12,7 @@
   - science: the twentieth-century agricultural engineering research years (Silsoe)
   - the Habsburgs, through the War of the Spanish Succession and the Duke of Kent's career
   - the full ownership story, from the de Greys to English Heritage
-- **Maps, guides, photos or tracks supplied:** not asked yet. The survey should ask (see its "Ask Eliot what he has"). Paths so far were estimated from listing coordinates.
+- **Maps, guides, photos or tracks supplied:** English Heritage orientation leaflet (2024), supplied 12 October 2026, in `sites/wrest-park/inputs/` (not in the repo). No guidebook or GPX yet.
 - **Assumptions made without asking:**
   - The default family interests in `CLAUDE.md` apply.
   - This brief was written after the tour already existed. Wrest Park was built by hand while the app was being developed, before the skills chain existed.

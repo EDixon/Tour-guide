@@ -1,64 +1,75 @@
 # Wrest Park: status
 
-Stage: survey
-Updated: 2026-10-11
+Stage: research
+Updated: 2026-10-12
 
-**Existing site.** `tours/wrest-park.json` was built by hand before the skills chain existed, and `knowledge/wrest-park/` holds sample notes only. Run site-survey in its "If the site already exists" mode: keep the stops, paths and bullets that work, and don't rebuild.
+**Existing site.** `tours/wrest-park.json` was built by hand before the skills chain; the survey (12 October 2026) reviewed it, and did not rebuild it. Next: site-research, batch by batch, from `research-plan.md`.
+
+**Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
+- English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
 
 ## Stages
 - [x] new-site: brief (written after the fact)
-- [ ] site-survey: existing-site review. Needs `sources.md`, the ownership chronology, `dates.json` for every stop, and the research plan.
-- [ ] site-research: partial. Sample notes and dates cover 11 of 25 stops: terrace, countess, staircase, staterooms, dining, exhibition, orangery, bathhouse, william, pavilion, cbcol.
-- [ ] reference-packs: partial. `rulers` exists but covers only England/Britain from 1660 and France from 1643.
-- [ ] site-check: not done. No fact-check has been run.
-- [ ] site-publish: listed in the app already. Re-publish (bump `sw.js` VERSION) when the knowledge changes.
-
-## Known gaps (for the survey to plan)
-- **No ownership chronology.** `site` and `owners` are missing from `knowledge/wrest-park/dates.json`. It must run from the first record (the de Greys, 1280s) through the 1917 sale and the twentieth-century owners and custodians to English Heritage today. This needs a "family and owners" research batch. The existing section "The de Grey family and Wrest" is a start, but its sources are mostly Wikipedia.
-- **No visitor scores: ON HOLD.** No stop has `popular`, and the `wow` values were set by hand. Eliot asked (2026-10-11) to hold the review evidence for now. Don't run the visitor-scout until he says so. Leave a "visitors" line in the research plan marked on hold.
-- **No timeline explanations.** None of the 32 events has `more`. Eliot specifically wants:
-  - the 1916 fire: what was damaged, who was affected, what happened to the hospital
-  - the 1917 sale: who bought it and what happened next
-
-  Assign every event that leaves a question open to a batch.
-- **Map.** The OpenStreetMap layer is in place (`tours/wrest-park.map.json`, fetched 2026-10-11), along with `sites/wrest-park/osm-pois.json`. Still to do:
-  - Add the main car park and overflow car park (both in the OpenStreetMap data) and the main entrance as facility stops, and make the car park `start`/`exit`. Both are currently the visitor centre.
-  - Check stop positions against `osm-pois.json`. Several stops look a few metres off their buildings, e.g. Bowling Green House.
-  - Redraw the path network along the real footpaths. The current links are straight lines between estimated waypoints, so walking times are rough, and the planned route cuts corners on the map.
-- **Leaflet test (2026-10-11).** Eliot supplied the English Heritage orientation leaflet (2024). It is not in the repo, so ask him to re-attach it. Georeferenced from 18 numbered markers, the median leave-one-out error was about 20 m (50–70 m at the far end and on the edges). It shows:
-  - **Visitor centre stop is in the wrong place.** The `vc` stop is about 90 m from where the leaflet and OpenStreetMap put the visitor centre and admissions, by the main car park.
-  - **Facilities to add:** admissions (marker 1), the mobility buggy start (marker 9, south of the mansion on the main axis), toilets and parking.
-  - **Routes:** the blue mobility-buggy route follows the west avenue and the east side of the Long Water to the pavilion. It is step-free, so a good guide for the pushchair. The orange "upper gardens walk" is also drawn.
-  - **Old house:** the `oldhouse` stop agrees with the leaflet (about 10 m).
-  - **Dairy:** the `dairy` stop is about 25 m off.
-- **Photos.** `sites/wrest-park/photos.json` lists 334 geotagged Commons photos by 38 photographers, fetched 2026-10-11. `photo-spots.md` has 14 spots. Most are at existing stops: the house, the pavilion and the Orangery are the most photographed. Views no stop covers yet:
-  - the house seen up the Long Water from its south end (about 40 m from `longwater`)
-  - mid-way along the Long Water
-  - the Diana statue over the Ladies' Lake (about 95 m from `chinese`)
-  - Oldpark Water by the West Half House
-
-  25 "look for" points (mostly toddler tasks) have no photo yet; `validate-tour` lists them.
-- **Steps not marked.** No path, stop or building has `steps` yet, so pushchair mode (👶) changes nothing at Wrest until the survey marks them. Sources:
-  - OpenStreetMap's steps
-  - the leaflet: the Archer Pavilion has steps, and the mansion has a lift
-  - the English Heritage access page
-- **14 stops have no notes or dated things:** italian, conservatory, dairy, science, parterre, oldhouse, bowling, longwater, whh, altar, ehh, altars, chinese, atlas.
-- **The Silsoe science years** (the "science" stop and the agricultural engineering research) have no notes at all. That matters, because science and engineering are high-interest topics.
-- **Rulers pack is too short.** It needs England back to at least 1066 (and Scotland where useful), so that facts about the medieval owners get rulers. Note that the app says "no ruler data" rather than guessing.
-- **`check-knowledge` warnings:** existing notes use shortened date ranges, and several things have no `who`. These are mechanical fixes for format-fixer.
-- **`tours/wrest-park.json` sources** are good for the listings. They don't include the Victoria County History for Bedfordshire (the Flitton with Silsoe entry), which is the best source for the medieval descent.
+- [x] site-survey (2026-10-12):
+  - `sources.md` and `research-plan.md`
+  - full ownership chronology, from Domesday to today
+  - dated things for every stop
+  - stop positions checked against OSM and the leaflet
+  - path network rebuilt along the OSM footpaths, with steps marked
+  - car parks, admissions and south toilets added
+  - two photo-spot stops (sundial, Oldpark Water)
+- [ ] site-research: 7 batches below, plus visitors (on hold). Existing sample notes cover 13 of 27 stops.
+- [ ] reference-packs: extend `rulers`; write `habsburgs`, `garden-styles` and `farm-machinery`.
+- [ ] site-check: not done. No fact-check yet.
+- [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
 
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| (survey to fill) | | |
+| 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | to do |
+| 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | to do |
+| 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | to do |
+| 4 Jemima's garden and its follies | altar, chinese, altars, atlas | to do |
+| 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | to do |
+| 6 The science years | science | to do |
+| 7 Family and owners | (notes sections; intro, staircase, oldhouse) | to do |
+| Visitors (visitor-scout) | all sights | **ON HOLD** (Eliot, 2026-10-11) |
+
+## Known gaps carried forward
+- **No `popular` scores, and `wow` set by hand:** waits for the visitor-scout (on hold).
+- **No timeline `more` yet:** every event is assigned to a batch in the plan, including Eliot's two (the 1916 fire and the 1917 sale), both in batch 7.
+- **Notes still to fix:** the existing notes have shortened date ranges and things with no `who` (format-fixer at site-check). Many existing sections cite general knowledge or Wikipedia; the batches upgrade them.
+- **25 "look for" points have no photo:** the batches pick photos from `photos.json`.
+- **Planner time:** the network went from 42 to 214 nodes, so a worst-case 4-hour plan takes about 870 ms here (was about 600 ms; the test limit is 1500 ms). Watch for lag on the phone.
 
 ## Flags for Eliot
-- **Paths are estimated.** Please record a GPX on the next visit and attach it in the chat. It is kept out of the repo.
+- **Paths now follow OpenStreetMap**, which is much better than before but still unwalked. A GPX track from the next visit would still help (attach it in the chat; it is kept out of the repo).
+- **Positions placed by eye from the leaflet and OSM:**
+  - admissions/main entrance, by the gateway at the west end of the visitor centre
+  - the science-years viewpoint, at the east end of the cross walk
+  
+  Worth a glance on the day.
+- **Head of the Long Water moved about 145 m south**, to where OSM shows the water starting. The old position (the lawn by the sundial) is now the "Sundial and the six statues" stop. The Mercury-and-Cupid bullet at `longwater` needs re-checking.
+- **Steps near the Bath House** are shown on the leaflet but not placed on a path yet. Pushchair mode still routes to the Bath House. Please note where they are on the visit.
+- **Pushchair mode:**
+  - The Chinese Bridge and the parterre's central steps are now avoided.
+  - The Pavilion is kept, because its outside is the sight; its note says to leave the pushchair at the foot of the steps.
+- **Ownership chronology** was built from search summaries; the page fetches were blocked in this workspace. Batch 7 must confirm it. Least certain:
+  - the Domesday identification
+  - 1087–1283 (not recorded)
+  - Sir Henry Wyatt, 1507–1512 (one source)
+  - the 1946 Ministry purchase
+  - John George Murray's description (the old "brewing and coal businessman" has no source)
 - **Unverified quote.** Brown's "might unravel the Mystery of the Gardens" (cbcol bullet) has no source found yet.
-- **Sources disagree on the column finial.** Bedfordshire Archives says the Capability Brown column has a pineapple on top. The Historic England listing describes an acanthus-leaf finial. A photo on the visit would settle it.
+- **Sources disagree on the column finial.** Bedfordshire Archives says pineapple, Historic England says acanthus. A photo on the visit would settle it.
 - **Debug-grade signing key.** The Android app signing key is committed knowingly. Install only from this repo's Releases.
+- **Branch.** This session pushed to `claude/wrest-park-g823kx`. Pages publishes `main`, so merge it to go live.
 
 ## Log
+- 2026-10-12: survey (existing-site mode).
+  - Sources, ownership chronology, dates for every stop, research plan.
+  - Stops: vc, terrace, parterre, longwater, bathhouse and science moved. Car parks, admissions and south toilets added; start/exit is now the main car park. Sundial and Oldpark Water photo-spot stops added, each with a provisional `verify` bullet.
+  - Path network rebuilt along the OSM footpaths with new `tools/osm-network.mjs` (config `sites/wrest-park/network.json`); steps from OSM and the leaflet.
+  - The leaflet was supplied again.
 - 2026-10-11: added stop scores (`wow`, `popular`) and their sliders, the visitor-scout agent, tappable timeline events (`more`), and merging of `owners` and events in `tools/merge-research.mjs`.
 - 2026-10-11: brief and STATUS written for the existing site, ready for "continue wrest park" in a new chat. Since the last check: the assistant can now hold an ownership chronology, the century limit on date comparisons was removed, and BC years are supported.

@@ -21,7 +21,7 @@ An offline phone guide for historic sites that re-plans the visit as the day cha
 - `tools/`:
   - checking: `validate-tour.mjs`, `check-knowledge.mjs`, `ask.mjs` (prints the exact prompt for a question)
   - merging research: `merge-research.mjs`
-  - map: `fetch-osm.mjs` (OpenStreetMap layer), `map-markers.py` and `georef.mjs` (place a leaflet or guidebook map on the real one)
+  - map: `fetch-osm.mjs` (OpenStreetMap layer), `osm-network.mjs` (path network from the OSM footpaths), `map-markers.py` and `georef.mjs` (place a leaflet or guidebook map on the real one)
   - photos: `fetch-photos.mjs` (Wikimedia Commons), `photo-spots.mjs` (viewpoints from where people take photos)
 - **Network access:** Claude's workspace can't reach OpenStreetMap or Wikimedia. `fetch-osm.mjs` and `fetch-photos.mjs` run in GitHub Actions, started by pushing `sites/<id>/osm.request` or `sites/<id>/photos.request`, and commit their results. Then `git pull`.
 

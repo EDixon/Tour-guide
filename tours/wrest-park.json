@@ -10,8 +10,8 @@
   "close": "17:00",
   "note": "Open daily 10:00–17:00, last entry 16:00 (EH website, Oct 2026). Winter hours can change: check before you go."
  },
- "start": "vc",
- "exit": "vc",
+ "start": "carpark",
+ "exit": "carpark",
  "walk": {
   "detour": 1.15,
   "indoorFactor": 1.4
@@ -398,104 +398,3337 @@
  ],
  "waypoints": [
   {
-   "id": "wg_s",
-   "name": "Walled garden south gate",
+   "id": "w1",
+   "name": "Path by Italian Garden",
    "pos": [
-    52.0064,
-    -0.4146
+    52.008549,
+    -0.413126
    ]
   },
   {
-   "id": "lw_w",
-   "name": "Long Water, west bank",
+   "id": "w2",
+   "name": "Path by Italian Garden",
    "pos": [
-    52.003,
-    -0.4116
+    52.008558,
+    -0.411366
    ]
   },
   {
-   "id": "lw_e",
-   "name": "Long Water, east bank",
+   "id": "w3",
+   "name": "Path by Terrace",
    "pos": [
-    52.003,
-    -0.4106
+    52.008562,
+    -0.410759
    ]
   },
   {
-   "id": "lw_s",
-   "name": "South end of the Long Water",
+   "id": "w4",
+   "name": "Path by Dairy & Trianon",
    "pos": [
-    52.0012,
+    52.008566,
+    -0.410017
+   ]
+  },
+  {
+   "id": "w5",
+   "name": "Path by Dairy & Trianon",
+   "pos": [
+    52.008374,
+    -0.410008
+   ]
+  },
+  {
+   "id": "w6",
+   "name": "Path by Dairy & Trianon",
+   "pos": [
+    52.008396,
+    -0.411023
+   ]
+  },
+  {
+   "id": "w7",
+   "name": "Path by Terrace",
+   "pos": [
+    52.008161,
+    -0.412203
+   ]
+  },
+  {
+   "id": "w8",
+   "name": "Path by Terrace",
+   "pos": [
+    52.008283,
+    -0.411621
+   ]
+  },
+  {
+   "id": "w9",
+   "name": "Path by Car park",
+   "pos": [
+    52.006578,
+    -0.416229
+   ]
+  },
+  {
+   "id": "w10",
+   "name": "Path by Car park",
+   "pos": [
+    52.008538,
+    -0.416569
+   ]
+  },
+  {
+   "id": "w11",
+   "name": "Path by Car park",
+   "pos": [
+    52.008546,
+    -0.415861
+   ]
+  },
+  {
+   "id": "w12",
+   "name": "Path by Overflow parking",
+   "pos": [
+    52.008555,
+    -0.415017
+   ]
+  },
+  {
+   "id": "w13",
+   "name": "Path by Admissions",
+   "pos": [
+    52.007845,
+    -0.414925
+   ]
+  },
+  {
+   "id": "w14",
+   "name": "From the car park to the visitor centre",
+   "pos": [
+    52.007772,
+    -0.414916
+   ]
+  },
+  {
+   "id": "w15",
+   "name": "From the car park to the visitor centre",
+   "pos": [
+    52.007748,
+    -0.414913
+   ]
+  },
+  {
+   "id": "w16",
+   "name": "Road from the visitor centre to the toilets",
+   "pos": [
+    52.007528,
+    -0.414886
+   ]
+  },
+  {
+   "id": "w17",
+   "name": "Road from the visitor centre to the toilets",
+   "pos": [
+    52.007474,
+    -0.414879
+   ]
+  },
+  {
+   "id": "w18",
+   "name": "Road from the visitor centre to the toilets",
+   "pos": [
+    52.006656,
+    -0.414777
+   ]
+  },
+  {
+   "id": "w19",
+   "name": "Path by Car park",
+   "pos": [
+    52.007509,
+    -0.415249
+   ]
+  },
+  {
+   "id": "w20",
+   "name": "Path by Car park",
+   "pos": [
+    52.007495,
+    -0.415518
+   ]
+  },
+  {
+   "id": "w21",
+   "name": "Path by Car park",
+   "pos": [
+    52.007495,
+    -0.415736
+   ]
+  },
+  {
+   "id": "w22",
+   "name": "Path by Car park",
+   "pos": [
+    52.007668,
+    -0.415784
+   ]
+  },
+  {
+   "id": "w23",
+   "name": "Path by Car park",
+   "pos": [
+    52.007715,
+    -0.415546
+   ]
+  },
+  {
+   "id": "w24",
+   "name": "Path by Car park",
+   "pos": [
+    52.007729,
+    -0.415285
+   ]
+  },
+  {
+   "id": "w25",
+   "name": "Path by Car park",
+   "pos": [
+    52.007608,
+    -0.415265
+   ]
+  },
+  {
+   "id": "w26",
+   "name": "Path by Toilets (south)",
+   "pos": [
+    52.006583,
+    -0.415895
+   ]
+  },
+  {
+   "id": "w27",
+   "name": "Central walk down to the fountain",
+   "pos": [
+    52.007839,
+    -0.412054
+   ]
+  },
+  {
+   "id": "w28",
+   "name": "Central walk down to the fountain",
+   "pos": [
+    52.007759,
+    -0.412038
+   ]
+  },
+  {
+   "id": "w29",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006118,
+    -0.411629
+   ]
+  },
+  {
+   "id": "w30",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006147,
+    -0.411056
+   ]
+  },
+  {
+   "id": "w31",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006104,
+    -0.411994
+   ]
+  },
+  {
+   "id": "w32",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006227,
+    -0.41181
+   ]
+  },
+  {
+   "id": "w33",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006012,
+    -0.41175
+   ]
+  },
+  {
+   "id": "w34",
+   "name": "Central walk from the fountain to the sundial",
+   "pos": [
+    52.006003,
+    -0.41179
+   ]
+  },
+  {
+   "id": "w35",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005418,
+    -0.413687
+   ]
+  },
+  {
+   "id": "w36",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005679,
+    -0.413726
+   ]
+  },
+  {
+   "id": "w37",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.007896,
+    -0.412822
+   ]
+  },
+  {
+   "id": "w38",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.0076,
+    -0.412779
+   ]
+  },
+  {
+   "id": "w39",
+   "name": "Path by the Rose Garden",
+   "pos": [
+    52.006772,
+    -0.412659
+   ]
+  },
+  {
+   "id": "w40",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006067,
+    -0.412557
+   ]
+  },
+  {
+   "id": "w41",
+   "name": "Path by Old house site",
+   "pos": [
+    52.005496,
+    -0.412475
+   ]
+  },
+  {
+   "id": "w42",
+   "name": "Central walk from the fountain to the sundial",
+   "pos": [
+    52.005544,
+    -0.411724
+   ]
+  },
+  {
+   "id": "w43",
+   "name": "Path by Bowling Green House",
+   "pos": [
+    52.004532,
+    -0.413553
+   ]
+  },
+  {
+   "id": "w44",
+   "name": "Path by Bowling Green House",
+   "pos": [
+    52.004074,
+    -0.413482
+   ]
+  },
+  {
+   "id": "w45",
+   "name": "Path by Bowling Green House",
+   "pos": [
+    52.003991,
+    -0.412915
+   ]
+  },
+  {
+   "id": "w46",
+   "name": "Path by Bowling Green House",
+   "pos": [
+    52.003644,
+    -0.412856
+   ]
+  },
+  {
+   "id": "w47",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003496,
+    -0.413773
+   ]
+  },
+  {
+   "id": "w48",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003693,
+    -0.413942
+   ]
+  },
+  {
+   "id": "w49",
+   "name": "Path by the American Garden",
+   "pos": [
+    52.005378,
+    -0.414545
+   ]
+  },
+  {
+   "id": "w50",
+   "name": "Path by the American Garden",
+   "pos": [
+    52.004572,
+    -0.414426
+   ]
+  },
+  {
+   "id": "w51",
+   "name": "Path by Bowling Green House",
+   "pos": [
+    52.003171,
+    -0.414218
+   ]
+  },
+  {
+   "id": "w52",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.001914,
+    -0.414007
+   ]
+  },
+  {
+   "id": "w53",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006861,
+    -0.411163
+   ]
+  },
+  {
+   "id": "w54",
+   "name": "Path by Old house site",
+   "pos": [
+    52.006182,
+    -0.411061
+   ]
+  },
+  {
+   "id": "w55",
+   "name": "Path by Old house site",
+   "pos": [
+    52.005584,
+    -0.410971
+   ]
+  },
+  {
+   "id": "w56",
+   "name": "Path by Orangery",
+   "pos": [
+    52.006005,
+    -0.413504
+   ]
+  },
+  {
+   "id": "w57",
+   "name": "Path by Science years",
+   "pos": [
+    52.006986,
+    -0.408698
+   ]
+  },
+  {
+   "id": "w58",
+   "name": "Path by Science years",
+   "pos": [
+    52.006998,
+    -0.408458
+   ]
+  },
+  {
+   "id": "w59",
+   "name": "Path by Science years",
+   "pos": [
+    52.006286,
+    -0.408745
+   ]
+  },
+  {
+   "id": "w60",
+   "name": "Path by Atlas",
+   "pos": [
+    52.005695,
+    -0.40888
+   ]
+  },
+  {
+   "id": "w61",
+   "name": "Cross walk below the Orangery",
+   "pos": [
+    52.005498,
+    -0.412443
+   ]
+  },
+  {
+   "id": "w62",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005616,
+    -0.414899
+   ]
+  },
+  {
+   "id": "w63",
+   "name": "Path by Bath House",
+   "pos": [
+    52.00595,
+    -0.414724
+   ]
+  },
+  {
+   "id": "w64",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006007,
+    -0.414698
+   ]
+  },
+  {
+   "id": "w65",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006122,
+    -0.414711
+   ]
+  },
+  {
+   "id": "w66",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006218,
+    -0.414768
+   ]
+  },
+  {
+   "id": "w67",
+   "name": "Path by Toilets (south)",
+   "pos": [
+    52.006458,
+    -0.415407
+   ]
+  },
+  {
+   "id": "w68",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.007897,
+    -0.4128
+   ]
+  },
+  {
+   "id": "w69",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.00785,
+    -0.413602
+   ]
+  },
+  {
+   "id": "w70",
+   "name": "Path by Visitor centre",
+   "pos": [
+    52.007809,
+    -0.414289
+   ]
+  },
+  {
+   "id": "w71",
+   "name": "Path by Visitor centre",
+   "pos": [
+    52.007807,
+    -0.414314
+   ]
+  },
+  {
+   "id": "w72",
+   "name": "Path by Visitor centre",
+   "pos": [
+    52.00778,
+    -0.414767
+   ]
+  },
+  {
+   "id": "w73",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005784,
+    -0.413747
+   ]
+  },
+  {
+   "id": "w74",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005968,
+    -0.414012
+   ]
+  },
+  {
+   "id": "w75",
+   "name": "Path by Orangery",
+   "pos": [
+    52.006259,
+    -0.414234
+   ]
+  },
+  {
+   "id": "w76",
+   "name": "Path by Orangery",
+   "pos": [
+    52.006147,
+    -0.413791
+   ]
+  },
+  {
+   "id": "w77",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005992,
+    -0.413753
+   ]
+  },
+  {
+   "id": "w78",
+   "name": "Path by Orangery",
+   "pos": [
+    52.005997,
+    -0.413649
+   ]
+  },
+  {
+   "id": "w79",
+   "name": "Path by William III",
+   "pos": [
+    52.000813,
+    -0.410751
+   ]
+  },
+  {
+   "id": "w80",
+   "name": "Path by William III",
+   "pos": [
+    52.000798,
     -0.411
    ]
   },
   {
-   "id": "wc_n",
-   "name": "West canal, north end",
+   "id": "w81",
+   "name": "Path by William III",
    "pos": [
-    52.0054,
-    -0.4153
+    52.000782,
+    -0.411261
    ]
   },
   {
-   "id": "wc_m",
-   "name": "West canal, middle",
+   "id": "w82",
+   "name": "Long Water, east bank",
    "pos": [
-    52.0028,
-    -0.4153
+    52.000521,
+    -0.410718
    ]
   },
   {
-   "id": "wc_s",
-   "name": "West canal, south end",
+   "id": "w83",
+   "name": "Long Water, east bank",
    "pos": [
-    52.0001,
-    -0.415
+    52.002356,
+    -0.410991
    ]
   },
   {
-   "id": "sc_e",
-   "name": "South-east canal corner",
+   "id": "w84",
+   "name": "Long Water, east bank",
    "pos": [
-    52,
-    -0.408
+    52.003232,
+    -0.411128
    ]
   },
   {
-   "id": "ec_m",
+   "id": "w85",
+   "name": "Long Water, east bank",
+   "pos": [
+    52.003368,
+    -0.410962
+   ]
+  },
+  {
+   "id": "w86",
+   "name": "Long Water, east bank",
+   "pos": [
+    52.003661,
+    -0.411002
+   ]
+  },
+  {
+   "id": "w87",
+   "name": "Long Water, east bank",
+   "pos": [
+    52.003971,
+    -0.411044
+   ]
+  },
+  {
+   "id": "w88",
+   "name": "East side of the central lawn",
+   "pos": [
+    52.004293,
+    -0.411029
+   ]
+  },
+  {
+   "id": "w89",
+   "name": "East side of the central lawn",
+   "pos": [
+    52.004574,
+    -0.410645
+   ]
+  },
+  {
+   "id": "w90",
+   "name": "East side of the central lawn",
+   "pos": [
+    52.005523,
+    -0.410963
+   ]
+  },
+  {
+   "id": "w91",
+   "name": "Long Water, west bank",
+   "pos": [
+    52.003162,
+    -0.411639
+   ]
+  },
+  {
+   "id": "w92",
+   "name": "Long Water, west bank",
+   "pos": [
+    52.003295,
+    -0.411859
+   ]
+  },
+  {
+   "id": "w93",
+   "name": "Long Water, west bank",
+   "pos": [
+    52.003875,
+    -0.41194
+   ]
+  },
+  {
+   "id": "w94",
+   "name": "West side of the central lawn",
+   "pos": [
+    52.004703,
+    -0.412495
+   ]
+  },
+  {
+   "id": "w95",
+   "name": "Road from the visitor centre to the toilets",
+   "pos": [
+    52.006662,
+    -0.414667
+   ]
+  },
+  {
+   "id": "w96",
+   "name": "Road from the visitor centre to the toilets",
+   "pos": [
+    52.006804,
+    -0.414694
+   ]
+  },
+  {
+   "id": "w97",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006032,
+    -0.415646
+   ]
+  },
+  {
+   "id": "w98",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005595,
+    -0.416218
+   ]
+  },
+  {
+   "id": "w99",
+   "name": "Central walk down to the fountain",
+   "pos": [
+    52.007521,
+    -0.412003
+   ]
+  },
+  {
+   "id": "w100",
+   "name": "Central walk down to the fountain",
+   "pos": [
+    52.007296,
+    -0.411969
+   ]
+  },
+  {
+   "id": "w101",
+   "name": "Central walk down to the fountain",
+   "pos": [
+    52.006817,
+    -0.411898
+   ]
+  },
+  {
+   "id": "w102",
+   "name": "Path by Parterre",
+   "pos": [
+    52.007314,
+    -0.411594
+   ]
+  },
+  {
+   "id": "w103",
+   "name": "Path by Parterre",
+   "pos": [
+    52.007776,
+    -0.411666
+   ]
+  },
+  {
+   "id": "w104",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.00774,
+    -0.412436
+   ]
+  },
+  {
+   "id": "w105",
+   "name": "Path by Italian Garden",
+   "pos": [
+    52.0076,
+    -0.412415
+   ]
+  },
+  {
+   "id": "w106",
+   "name": "Path by Parterre",
+   "pos": [
+    52.007276,
+    -0.412366
+   ]
+  },
+  {
+   "id": "w107",
+   "name": "Path by the American Garden",
+   "pos": [
+    52.004727,
+    -0.413579
+   ]
+  },
+  {
+   "id": "w108",
+   "name": "Path by the American Garden",
+   "pos": [
+    52.004617,
+    -0.413728
+   ]
+  },
+  {
+   "id": "w109",
+   "name": "Path by the American Garden",
+   "pos": [
+    52.004636,
+    -0.413406
+   ]
+  },
+  {
+   "id": "w110",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003201,
+    -0.413638
+   ]
+  },
+  {
+   "id": "w111",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003042,
+    -0.413233
+   ]
+  },
+  {
+   "id": "w112",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003252,
+    -0.413029
+   ]
+  },
+  {
+   "id": "w113",
+   "name": "Path by the Leg o' Mutton Lake",
+   "pos": [
+    52.003295,
+    -0.412235
+   ]
+  },
+  {
+   "id": "w114",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005908,
+    -0.415283
+   ]
+  },
+  {
+   "id": "w115",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005879,
+    -0.415365
+   ]
+  },
+  {
+   "id": "w116",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005837,
+    -0.415382
+   ]
+  },
+  {
+   "id": "w117",
+   "name": "Across the Chinese Bridge",
+   "pos": [
+    52.003795,
+    -0.408697
+   ]
+  },
+  {
+   "id": "w118",
+   "name": "Across the Chinese Bridge",
+   "pos": [
+    52.003976,
+    -0.40859
+   ]
+  },
+  {
+   "id": "w119",
    "name": "Broad Water, west bank",
    "pos": [
-    52.002,
-    -0.4081
+    52.00348,
+    -0.408481
    ]
   },
   {
-   "id": "ec_n",
-   "name": "North end of Broad Water",
+   "id": "w120",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.003168,
+    -0.408203
+   ]
+  },
+  {
+   "id": "w121",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.002226,
+    -0.407479
+   ]
+  },
+  {
+   "id": "w122",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.00309,
+    -0.408493
+   ]
+  },
+  {
+   "id": "w123",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.003067,
+    -0.408577
+   ]
+  },
+  {
+   "id": "w124",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.002221,
+    -0.408422
+   ]
+  },
+  {
+   "id": "w125",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.001673,
+    -0.408321
+   ]
+  },
+  {
+   "id": "w126",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.000923,
+    -0.408321
+   ]
+  },
+  {
+   "id": "w127",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.000867,
+    -0.408336
+   ]
+  },
+  {
+   "id": "w128",
+   "name": "Broad Water, west bank",
+   "pos": [
+    52.000159,
+    -0.408136
+   ]
+  },
+  {
+   "id": "w129",
+   "name": "Broad Water, west bank",
+   "pos": [
+    51.999833,
+    -0.407811
+   ]
+  },
+  {
+   "id": "w130",
+   "name": "Avenue north-east from the Pavilion",
+   "pos": [
+    52.001116,
+    -0.409446
+   ]
+  },
+  {
+   "id": "w131",
+   "name": "Path by West Half House",
+   "pos": [
+    52.001466,
+    -0.413588
+   ]
+  },
+  {
+   "id": "w132",
+   "name": "Path by West Half House",
+   "pos": [
+    52.001332,
+    -0.413269
+   ]
+  },
+  {
+   "id": "w133",
+   "name": "Path by William III",
+   "pos": [
+    52.000502,
+    -0.411235
+   ]
+  },
+  {
+   "id": "w134",
+   "name": "Path by Oldpark Water",
+   "pos": [
+    52.001655,
+    -0.413962
+   ]
+  },
+  {
+   "id": "w135",
+   "name": "Path by Oldpark Water",
+   "pos": [
+    52.000793,
+    -0.414424
+   ]
+  },
+  {
+   "id": "w136",
+   "name": "Path by Oldpark Water",
+   "pos": [
+    52.000186,
+    -0.414445
+   ]
+  },
+  {
+   "id": "w137",
+   "name": "Path by West Half House",
+   "pos": [
+    52.001858,
+    -0.413332
+   ]
+  },
+  {
+   "id": "w138",
+   "name": "Path by Sundial",
+   "pos": [
+    52.004924,
+    -0.409998
+   ]
+  },
+  {
+   "id": "w139",
+   "name": "Path by Chinese Temple",
+   "pos": [
+    52.004504,
+    -0.409654
+   ]
+  },
+  {
+   "id": "w140",
+   "name": "Path by Chinese Temple",
+   "pos": [
+    52.004206,
+    -0.408523
+   ]
+  },
+  {
+   "id": "w141",
+   "name": "Path by Parterre",
+   "pos": [
+    52.006863,
+    -0.411133
+   ]
+  },
+  {
+   "id": "w142",
+   "name": "Path by Parterre",
+   "pos": [
+    52.007689,
+    -0.411254
+   ]
+  },
+  {
+   "id": "w143",
+   "name": "Path by Terrace",
+   "pos": [
+    52.007833,
+    -0.411422
+   ]
+  },
+  {
+   "id": "w144",
+   "name": "East–west walk across the garden below the parterre",
+   "pos": [
+    52.006765,
+    -0.412793
+   ]
+  },
+  {
+   "id": "w145",
+   "name": "Across the head of the Long Water",
+   "pos": [
+    52.004019,
+    -0.411417
+   ]
+  },
+  {
+   "id": "w146",
+   "name": "Path by Archer Pavilion",
+   "pos": [
+    52.000261,
+    -0.411069
+   ]
+  },
+  {
+   "id": "w147",
+   "name": "Path by Archer Pavilion",
+   "pos": [
+    52.000408,
+    -0.410706
+   ]
+  },
+  {
+   "id": "w148",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006011,
+    -0.41524
+   ]
+  },
+  {
+   "id": "w149",
+   "name": "Path by Bath House",
+   "pos": [
+    52.006073,
+    -0.415587
+   ]
+  },
+  {
+   "id": "w150",
+   "name": "Path by Bath House",
+   "pos": [
+    52.005674,
+    -0.415627
+   ]
+  },
+  {
+   "id": "w151",
+   "name": "Path by the walled garden",
+   "pos": [
+    52.007124,
+    -0.414206
+   ]
+  },
+  {
+   "id": "w152",
+   "name": "Path by the walled garden",
+   "pos": [
+    52.007169,
+    -0.413513
+   ]
+  },
+  {
+   "id": "w153",
+   "name": "Path by Toilets (south)",
+   "pos": [
+    52.0071,
+    -0.414664
+   ]
+  },
+  {
+   "id": "w154",
+   "name": "Path by Toilets (south)",
+   "pos": [
+    52.00748,
+    -0.414722
+   ]
+  },
+  {
+   "id": "w155",
+   "name": "Path by Chinese Temple",
+   "pos": [
+    52.003861,
+    -0.409232
+   ]
+  },
+  {
+   "id": "w156",
+   "name": "Path by Chinese Temple",
    "pos": [
     52.004,
-    -0.4083
+    -0.409893
+   ]
+  },
+  {
+   "id": "w157",
+   "name": "Path by Chinese Temple",
+   "pos": [
+    52.003947,
+    -0.410697
+   ]
+  },
+  {
+   "id": "w158",
+   "name": "Path by Long Water",
+   "pos": [
+    52.003667,
+    -0.410693
+   ]
+  },
+  {
+   "id": "w159",
+   "name": "Path by the Ladies' Lake",
+   "pos": [
+    52.003488,
+    -0.410504
+   ]
+  },
+  {
+   "id": "w160",
+   "name": "Path by the Ladies' Lake",
+   "pos": [
+    52.003369,
+    -0.410721
+   ]
+  },
+  {
+   "id": "w161",
+   "name": "Path by the dogs' cemetery",
+   "pos": [
+    52.001952,
+    -0.408879
+   ]
+  },
+  {
+   "id": "w162",
+   "name": "Path by Ancient altars",
+   "pos": [
+    52.003278,
+    -0.410059
+   ]
+  },
+  {
+   "id": "w163",
+   "name": "Path by Ancient altars",
+   "pos": [
+    52.002781,
+    -0.409617
+   ]
+  },
+  {
+   "id": "w164",
+   "name": "Path by Ancient altars",
+   "pos": [
+    52.002919,
+    -0.409114
+   ]
+  },
+  {
+   "id": "w165",
+   "name": "Path by Dairy & Trianon",
+   "pos": [
+    52.007716,
+    -0.410733
+   ]
+  },
+  {
+   "id": "w166",
+   "name": "Terrace along the garden front",
+   "pos": [
+    52.007843,
+    -0.4115
+   ]
+  },
+  {
+   "id": "w167",
+   "name": "Terrace along the garden front",
+   "pos": [
+    52.00784,
+    -0.412039
+   ]
+  },
+  {
+   "id": "w168",
+   "name": "Path by Atlas",
+   "pos": [
+    52.006252,
+    -0.409506
+   ]
+  },
+  {
+   "id": "w169",
+   "name": "Path by East Half House",
+   "pos": [
+    52.001581,
+    -0.407017
+   ]
+  },
+  {
+   "id": "w170",
+   "name": "Path by East Half House",
+   "pos": [
+    52.000856,
+    -0.406862
+   ]
+  },
+  {
+   "id": "w171",
+   "name": "Path by East Half House",
+   "pos": [
+    52.000536,
+    -0.406958
+   ]
+  },
+  {
+   "id": "w172",
+   "name": "South canal bank",
+   "pos": [
+    51.99972,
+    -0.410941
+   ]
+  },
+  {
+   "id": "w173",
+   "name": "South canal bank",
+   "pos": [
+    51.999391,
+    -0.413095
+   ]
+  },
+  {
+   "id": "w174",
+   "name": "South canal bank",
+   "pos": [
+    51.999915,
+    -0.41427
+   ]
+  },
+  {
+   "id": "w175",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.000096,
+    -0.414179
+   ]
+  },
+  {
+   "id": "w176",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.00033,
+    -0.413272
+   ]
+  },
+  {
+   "id": "w177",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.000036,
+    -0.412972
+   ]
+  },
+  {
+   "id": "w178",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.000089,
+    -0.412779
+   ]
+  },
+  {
+   "id": "w179",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.000311,
+    -0.41282
+   ]
+  },
+  {
+   "id": "w180",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.000672,
+    -0.412862
+   ]
+  },
+  {
+   "id": "w181",
+   "name": "Path by Mithraic Altar",
+   "pos": [
+    52.001058,
+    -0.413385
    ]
   }
  ],
  "paths": [
   [
-   "vc",
-   "intro",
+   "w1",
+   "w2",
    0.2,
-   ""
+   "Path past Italian Garden",
+   null
   ],
   [
-   "vc",
-   "wg_s",
+   "w2",
+   "w3",
    0.2,
-   "Through the walled garden"
+   "Path past Terrace",
+   null
   ],
   [
-   "vc",
-   "italian",
+   "w3",
+   "w4",
+   0.2,
+   "Path past Dairy & Trianon",
+   null
+  ],
+  [
+   "w4",
+   "w5",
+   0.2,
+   "Path past Dairy & Trianon",
+   null
+  ],
+  [
+   "w5",
+   "w6",
+   0.2,
+   "Path past Dairy & Trianon",
+   null
+  ],
+  [
+   "w1",
+   "w7",
+   0.2,
+   "Path past Terrace",
+   null
+  ],
+  [
+   "w7",
+   "w8",
+   0.2,
+   "Path past Terrace",
+   null
+  ],
+  [
+   "w8",
+   "w2",
+   0.2,
+   "Path past Terrace",
+   null
+  ],
+  [
+   "w9",
+   "w10",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w10",
+   "w11",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w11",
+   "w12",
+   0.2,
+   "Path past Overflow parking",
+   null
+  ],
+  [
+   "w12",
+   "w1",
+   0.2,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w12",
+   "w13",
+   0.2,
+   "Path past Admissions",
+   null
+  ],
+  [
+   "w13",
+   "w14",
+   0.2,
+   "From the car park to the visitor centre",
+   null
+  ],
+  [
+   "w14",
+   "w15",
+   0.2,
+   "From the car park to the visitor centre",
+   null
+  ],
+  [
+   "w15",
+   "w16",
+   0.2,
+   "Road from the visitor centre to the toilets",
+   null
+  ],
+  [
+   "w16",
+   "w17",
+   0.2,
+   "Road from the visitor centre to the toilets",
+   null
+  ],
+  [
+   "w17",
+   "w18",
+   0.2,
+   "Road from the visitor centre to the toilets",
+   null
+  ],
+  [
+   "w16",
+   "w19",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w19",
+   "w20",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w20",
+   "w21",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w21",
+   "w22",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w22",
+   "w23",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w23",
+   "w24",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w24",
+   "w15",
+   0.2,
+   "Path past Admissions",
+   null
+  ],
+  [
+   "w23",
+   "w20",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w24",
+   "w25",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w25",
+   "w19",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w6",
+   "w3",
+   0.2,
+   "Path past Dairy & Trianon",
+   null
+  ],
+  [
+   "w6",
+   "w2",
+   0.2,
+   "Path past Terrace",
+   null
+  ],
+  [
+   "w18",
+   "w26",
+   0.2,
+   "Path past Toilets (south)",
+   null
+  ],
+  [
+   "w26",
+   "w9",
+   0.2,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w27",
+   "w28",
+   0.7,
+   "Central walk down to the fountain",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w29",
+   "w30",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w31",
+   "w32",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w32",
+   "w29",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w29",
+   "w33",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w33",
+   "w34",
+   0.7,
+   "Central walk from the fountain to the sundial",
+   null
+  ],
+  [
+   "w34",
+   "w31",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w35",
+   "w36",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w37",
+   "w38",
+   0.4,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w38",
+   "w39",
+   0.4,
+   "Path past the Rose Garden",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w39",
+   "w40",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w40",
+   "w41",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w34",
+   "w42",
+   0.7,
+   "Central walk from the fountain to the sundial",
+   null
+  ],
+  [
+   "w43",
+   "w44",
+   0.4,
+   "Path past Bowling Green House",
+   null
+  ],
+  [
+   "w44",
+   "w45",
+   0.4,
+   "Path past Bowling Green House",
+   null
+  ],
+  [
+   "w45",
+   "w46",
+   0.4,
+   "Path past Bowling Green House",
+   null
+  ],
+  [
+   "w46",
+   "w47",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w47",
+   "w48",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w49",
+   "w50",
+   0.4,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w50",
+   "w51",
+   0.9,
+   "Path past Bowling Green House",
+   null
+  ],
+  [
+   "w51",
+   "w52",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w53",
+   "w54",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w54",
+   "w30",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w30",
+   "w55",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w56",
+   "w40",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w40",
+   "w31",
+   0.4,
+   "Path past Old house site",
+   null
+  ],
+  [
+   "w57",
+   "w58",
+   0.4,
+   "Path past Science years",
+   null
+  ],
+  [
+   "w58",
+   "w59",
+   0.4,
+   "Path past Science years",
+   null
+  ],
+  [
+   "w59",
+   "w60",
+   0.4,
+   "Path past Atlas",
+   null
+  ],
+  [
+   "w60",
+   "w55",
+   0.5,
+   "Cross walk below the Orangery",
+   null
+  ],
+  [
+   "w55",
+   "w42",
+   0.5,
+   "Cross walk below the Orangery",
+   null
+  ],
+  [
+   "w42",
+   "w61",
+   0.5,
+   "Cross walk below the Orangery",
+   null
+  ],
+  [
+   "w61",
+   "w41",
+   0.6,
+   "West side of the central lawn",
+   null
+  ],
+  [
+   "w41",
+   "w35",
+   0.5,
+   "Cross walk below the Orangery",
+   null
+  ],
+  [
+   "w35",
+   "w49",
+   0.5,
+   "Cross walk below the Orangery",
+   null
+  ],
+  [
+   "w49",
+   "w62",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w62",
+   "w63",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w63",
+   "w64",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w64",
+   "w65",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w65",
+   "w66",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w66",
+   "w67",
+   0.4,
+   "Path past Toilets (south)",
+   null
+  ],
+  [
+   "w67",
+   "w26",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w37",
+   "w68",
+   0.5,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w68",
+   "w27",
+   0.4,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w37",
+   "w69",
+   0.4,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w69",
+   "w70",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w70",
+   "w71",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w71",
+   "w72",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w36",
+   "w73",
+   0.4,
+   "Path past Orangery",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w64",
+   "w74",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w66",
+   "w75",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w75",
+   "w76",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w76",
+   "w77",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w77",
+   "w73",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w77",
+   "w78",
+   0.4,
+   "Path past Orangery",
+   null
+  ],
+  [
+   "w79",
+   "w80",
+   0.9,
+   "Path past William III",
+   null
+  ],
+  [
+   "w80",
+   "w81",
+   0.9,
+   "Path past William III",
+   null
+  ],
+  [
+   "w82",
+   "w79",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w79",
+   "w83",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w83",
+   "w84",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w84",
+   "w85",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w85",
+   "w86",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w86",
+   "w87",
+   0.95,
+   "Long Water, east bank",
+   null
+  ],
+  [
+   "w87",
+   "w88",
+   0.6,
+   "East side of the central lawn",
+   null
+  ],
+  [
+   "w88",
+   "w89",
+   0.6,
+   "East side of the central lawn",
+   null
+  ],
+  [
+   "w89",
+   "w90",
+   0.6,
+   "East side of the central lawn",
+   null
+  ],
+  [
+   "w90",
+   "w55",
+   0.6,
+   "East side of the central lawn",
+   null
+  ],
+  [
+   "w81",
+   "w91",
+   0.95,
+   "Long Water, west bank",
+   null
+  ],
+  [
+   "w91",
+   "w92",
+   0.95,
+   "Long Water, west bank",
+   null
+  ],
+  [
+   "w92",
+   "w93",
+   0.95,
+   "Long Water, west bank",
+   null
+  ],
+  [
+   "w93",
+   "w94",
+   0.6,
+   "West side of the central lawn",
+   null
+  ],
+  [
+   "w94",
+   "w61",
+   0.6,
+   "West side of the central lawn",
+   null
+  ],
+  [
+   "w95",
+   "w96",
+   0.2,
+   "Road from the visitor centre to the toilets",
+   null
+  ],
+  [
+   "w97",
+   "w98",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w98",
+   "w9",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w28",
+   "w99",
+   0.7,
+   "Central walk down to the fountain",
+   null
+  ],
+  [
+   "w99",
+   "w100",
+   0.7,
+   "Central walk down to the fountain",
+   null
+  ],
+  [
+   "w100",
+   "w101",
+   0.7,
+   "Central walk down to the fountain",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w101",
+   "w32",
+   0.7,
+   "Central walk down to the fountain",
+   null
+  ],
+  [
+   "w100",
+   "w102",
+   0.5,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w102",
+   "w103",
+   0.5,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w103",
+   "w28",
+   0.5,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w28",
+   "w104",
+   0.5,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w104",
+   "w105",
+   0.5,
+   "Path past Italian Garden",
+   null
+  ],
+  [
+   "w105",
+   "w106",
+   0.5,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w106",
+   "w100",
+   0.5,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w107",
+   "w108",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w108",
+   "w43",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w43",
+   "w109",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w109",
+   "w107",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w107",
+   "w35",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w51",
+   "w110",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w110",
+   "w111",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w111",
+   "w112",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w112",
+   "w113",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w50",
+   "w108",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w63",
+   "w114",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w114",
+   "w115",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w115",
+   "w116",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w117",
+   "w118",
+   0.9,
+   "Across the Chinese Bridge",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w117",
+   "w119",
+   0.9,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w119",
+   "w120",
+   0.9,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w120",
+   "w121",
+   0.9,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w120",
+   "w122",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w122",
+   "w123",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w123",
+   "w124",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w124",
+   "w125",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w125",
+   "w126",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w126",
+   "w127",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w127",
+   "w128",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w128",
+   "w129",
+   0.85,
+   "Broad Water, west bank",
+   null
+  ],
+  [
+   "w82",
+   "w130",
+   0.55,
+   "Avenue north-east from the Pavilion",
+   null
+  ],
+  [
+   "w130",
+   "w125",
+   0.55,
+   "Avenue north-east from the Pavilion",
+   null
+  ],
+  [
+   "w125",
+   "w121",
+   0.55,
+   "Avenue north-east from the Pavilion",
+   null
+  ],
+  [
+   "w131",
+   "w132",
+   0.55,
+   "Path past West Half House",
+   null
+  ],
+  [
+   "w132",
+   "w133",
+   0.4,
+   "Path past William III",
+   null
+  ],
+  [
+   "w133",
+   "w81",
+   0.4,
+   "Path past William III",
+   null
+  ],
+  [
+   "w52",
+   "w134",
+   0.9,
+   "Path past Oldpark Water",
+   null
+  ],
+  [
+   "w134",
+   "w135",
+   0.9,
+   "Path past Oldpark Water",
+   null
+  ],
+  [
+   "w135",
+   "w136",
+   0.9,
+   "Path past Oldpark Water",
+   null
+  ],
+  [
+   "w136",
+   "w131",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w131",
+   "w137",
+   0.55,
+   "Path past West Half House",
+   null
+  ],
+  [
+   "w90",
+   "w138",
+   0.4,
+   "Path past Sundial",
+   null
+  ],
+  [
+   "w138",
+   "w139",
+   0.4,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w138",
+   "w140",
+   0.4,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w60",
+   "w140",
+   0.4,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w140",
+   "w118",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w89",
+   "w139",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w139",
+   "w118",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w141",
+   "w142",
+   0.4,
+   "Path past Parterre",
+   null
+  ],
+  [
+   "w142",
+   "w143",
+   0.4,
+   "Path past Terrace",
+   null
+  ],
+  [
+   "w18",
+   "w95",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w95",
+   "w144",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w144",
+   "w39",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w39",
+   "w101",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w101",
+   "w53",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w53",
+   "w141",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w141",
+   "w57",
+   0.5,
+   "East–west walk across the garden below the parterre",
+   null
+  ],
+  [
+   "w109",
+   "w94",
+   0.5,
+   "Path past the American Garden",
+   null
+  ],
+  [
+   "w87",
+   "w145",
+   0.9,
+   "Across the head of the Long Water",
+   null
+  ],
+  [
+   "w145",
+   "w93",
+   0.9,
+   "Across the head of the Long Water",
+   null
+  ],
+  [
+   "w133",
+   "w146",
+   0.4,
+   "Path past Archer Pavilion",
+   null
+  ],
+  [
+   "w146",
+   "w147",
+   0.4,
+   "Path past Archer Pavilion",
+   null
+  ],
+  [
+   "w147",
+   "w82",
+   0.55,
+   "Avenue north-east from the Pavilion",
+   null
+  ],
+  [
+   "w65",
+   "w148",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w148",
+   "w114",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w148",
+   "w149",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w149",
+   "w97",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w97",
+   "w115",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w115",
+   "w150",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w150",
+   "w116",
+   0.9,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w149",
+   "w67",
+   0.4,
+   "Path past Bath House",
+   null
+  ],
+  [
+   "w71",
+   "w151",
+   0.5,
+   "Path past the walled garden",
+   null
+  ],
+  [
+   "w151",
+   "w152",
+   0.5,
+   "Path past the walled garden",
+   null
+  ],
+  [
+   "w152",
+   "w69",
+   0.4,
+   "Path past the Rose Garden",
+   null
+  ],
+  [
+   "w151",
+   "w153",
+   0.5,
+   "Path past Toilets (south)",
+   null
+  ],
+  [
+   "w153",
+   "w154",
+   0.5,
+   "Path past Toilets (south)",
+   null
+  ],
+  [
+   "w154",
+   "w72",
+   0.2,
+   "From the car park to the visitor centre",
+   null
+  ],
+  [
+   "w117",
+   "w155",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w155",
+   "w156",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w156",
+   "w157",
+   0.9,
+   "Path past Chinese Temple",
+   null
+  ],
+  [
+   "w157",
+   "w87",
+   0.55,
+   "Path past Long Water",
+   null
+  ],
+  [
+   "w86",
+   "w158",
+   0.9,
+   "Path past Long Water",
+   null
+  ],
+  [
+   "w158",
+   "w159",
+   0.9,
+   "Path past the Ladies' Lake",
+   null
+  ],
+  [
+   "w159",
+   "w160",
+   0.9,
+   "Path past the Ladies' Lake",
+   null
+  ],
+  [
+   "w160",
+   "w85",
+   0.9,
+   "Path past Long Water",
+   null
+  ],
+  [
+   "w124",
+   "w161",
+   0.55,
+   "Path past the dogs' cemetery",
+   null
+  ],
+  [
+   "w161",
+   "w79",
+   0.55,
+   "Path past the dogs' cemetery",
+   null
+  ],
+  [
+   "w162",
+   "w163",
+   0.55,
+   "Path past Ancient altars",
+   null
+  ],
+  [
+   "w163",
+   "w161",
+   0.55,
+   "Path past Ancient altars",
+   null
+  ],
+  [
+   "w119",
+   "w162",
+   0.9,
+   "Path past the Ladies' Lake",
+   null
+  ],
+  [
+   "w162",
+   "w160",
+   0.9,
+   "Path past the Ladies' Lake",
+   null
+  ],
+  [
+   "w123",
+   "w164",
+   0.55,
+   "Path past Ancient altars",
+   null
+  ],
+  [
+   "w164",
+   "w163",
+   0.55,
+   "Path past Ancient altars",
+   null
+  ],
+  [
+   "w163",
+   "w83",
+   0.55,
+   "Path past Ancient altars",
+   null
+  ],
+  [
+   "w127",
+   "w130",
+   0.55,
+   "Path past East Half House",
+   null
+  ],
+  [
+   "w92",
+   "w113",
+   0.9,
+   "Path past Long Water",
+   null
+  ],
+  [
+   "w113",
+   "w46",
+   0.9,
+   "Path past the Leg o' Mutton Lake",
+   null
+  ],
+  [
+   "w72",
+   "w14",
+   0.2,
+   "From the car park to the visitor centre",
+   null
+  ],
+  [
+   "w17",
+   "w154",
+   0.2,
+   "From the car park to the visitor centre",
+   null
+  ],
+  [
+   "w152",
+   "w144",
+   0.4,
+   "Path past the Rose Garden",
+   null
+  ],
+  [
+   "w142",
+   "w165",
+   0.4,
+   "Path past Dairy & Trianon",
+   null
+  ],
+  [
+   "w166",
+   "w167",
+   0.6,
+   "Terrace along the garden front",
+   null
+  ],
+  [
+   "w167",
+   "w27",
+   0.7,
+   "Central walk down to the fountain",
+   null
+  ],
+  [
+   "w143",
+   "w166",
+   0.6,
+   "Terrace along the garden front",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w54",
+   "w168",
+   0.4,
+   "Path past Atlas",
+   null
+  ],
+  [
+   "w168",
+   "w59",
+   0.4,
+   "Path past Atlas",
+   null
+  ],
+  [
+   "w157",
+   "w158",
+   0.55,
+   "Path past Long Water",
+   null
+  ],
+  [
+   "w121",
+   "w169",
+   0.9,
+   "Path past East Half House",
+   null
+  ],
+  [
+   "w169",
+   "w170",
+   0.9,
+   "Path past East Half House",
+   null
+  ],
+  [
+   "w170",
+   "w171",
+   0.9,
+   "Path past East Half House",
+   null
+  ],
+  [
+   "w171",
+   "w129",
+   0.9,
+   "Path past East Half House",
+   null
+  ],
+  [
+   "w129",
+   "w172",
+   0.9,
+   "South canal bank",
+   null
+  ],
+  [
+   "w172",
+   "w173",
+   0.9,
+   "South canal bank",
+   null
+  ],
+  [
+   "w173",
+   "w174",
+   0.9,
+   "South canal bank",
+   null
+  ],
+  [
+   "w174",
+   "w136",
+   0.9,
+   "South canal bank",
+   null
+  ],
+  [
+   "w134",
+   "w131",
+   0.55,
+   "Path past West Half House",
+   null
+  ],
+  [
+   "w78",
+   "w56",
+   0.4,
+   "Path past Orangery",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w136",
+   "w175",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w175",
+   "w176",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w176",
+   "w177",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w177",
+   "w178",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w178",
+   "w179",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w179",
+   "w180",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w180",
+   "w181",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w181",
+   "w132",
+   0.55,
+   "Path past Mithraic Altar",
+   null
+  ],
+  [
+   "w105",
+   "w38",
+   0.5,
+   "Path past the Rose Garden",
+   null
+  ],
+  [
+   "carpark",
+   "w25",
    0.3,
-   "Past the café towards the house"
+   "",
+   null
+  ],
+  [
+   "overflow",
+   "w11",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "entrance",
+   "w13",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "vc",
+   "w70",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "toilets",
+   "w96",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "intro",
+   "vc",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "italian",
+   "w68",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "terrace",
+   "w167",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "dairy",
+   "w165",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "science",
+   "w57",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "parterre",
+   "w99",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "oldhouse",
+   "w33",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "orangery",
+   "w74",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "bathhouse",
+   "w116",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "bowling",
+   "w48",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "oldpark",
+   "w52",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "sundial",
+   "w42",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "longwater",
+   "w145",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "whh",
+   "w137",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "altar",
+   "w179",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "william",
+   "w80",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "pavilion",
+   "w147",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "ehh",
+   "w126",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "cbcol",
+   "w122",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "altars",
+   "w164",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "chinese",
+   "w155",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "atlas",
+   "w168",
+   0.3,
+   "",
+   null
   ],
   [
    "italian",
@@ -503,282 +3736,6 @@
    0.3,
    "Into the house by the conservatory",
    "house"
-  ],
-  [
-   "italian",
-   "terrace",
-   0.4,
-   "Along the garden front"
-  ],
-  [
-   "terrace",
-   "parterre",
-   0.6,
-   "Down the terrace steps"
-  ],
-  [
-   "parterre",
-   "oldhouse",
-   0.5,
-   "Central path south"
-  ],
-  [
-   "oldhouse",
-   "longwater",
-   0.6,
-   "Central path to the Long Water"
-  ],
-  [
-   "longwater",
-   "lw_w",
-   0.95,
-   "Long Water, west bank"
-  ],
-  [
-   "lw_w",
-   "lw_s",
-   0.95,
-   "Long Water, west bank"
-  ],
-  [
-   "longwater",
-   "lw_e",
-   0.95,
-   "Long Water, east bank"
-  ],
-  [
-   "lw_e",
-   "lw_s",
-   0.95,
-   "Long Water, east bank"
-  ],
-  [
-   "lw_s",
-   "william",
-   0.7,
-   "End of the Long Water"
-  ],
-  [
-   "william",
-   "pavilion",
-   0.7,
-   "Up to the Pavilion"
-  ],
-  [
-   "wg_s",
-   "orangery",
-   0.4,
-   "Below the walled garden"
-  ],
-  [
-   "wg_s",
-   "bathhouse",
-   0.5,
-   "Below the walled garden"
-  ],
-  [
-   "orangery",
-   "oldhouse",
-   0.4,
-   "Across the upper garden"
-  ],
-  [
-   "orangery",
-   "parterre",
-   0.4,
-   "Across the upper garden"
-  ],
-  [
-   "orangery",
-   "bathhouse",
-   0.5,
-   "Path to the Bath House"
-  ],
-  [
-   "bathhouse",
-   "wc_n",
-   0.7,
-   "Past the cascade"
-  ],
-  [
-   "wc_n",
-   "wc_m",
-   0.95,
-   "West canal bank"
-  ],
-  [
-   "wc_m",
-   "wc_s",
-   0.95,
-   "West canal bank"
-  ],
-  [
-   "wc_s",
-   "altar",
-   0.6,
-   "Along the south edge"
-  ],
-  [
-   "altar",
-   "pavilion",
-   0.5,
-   "Through the trees to the Pavilion"
-  ],
-  [
-   "pavilion",
-   "sc_e",
-   0.75,
-   "South canal bank"
-  ],
-  [
-   "sc_e",
-   "ehh",
-   0.6,
-   "Into the woodland"
-  ],
-  [
-   "sc_e",
-   "ec_m",
-   0.9,
-   "Broad Water bank"
-  ],
-  [
-   "ec_m",
-   "ec_n",
-   0.95,
-   "Broad Water bank"
-  ],
-  [
-   "ec_m",
-   "ehh",
-   0.4,
-   "Woodland path"
-  ],
-  [
-   "ec_n",
-   "chinese",
-   0.85,
-   "Across the Chinese Bridge"
-  ],
-  [
-   "chinese",
-   "cbcol",
-   0.6,
-   "Along the water"
-  ],
-  [
-   "cbcol",
-   "altars",
-   0.4,
-   "Woodland path"
-  ],
-  [
-   "cbcol",
-   "ec_m",
-   0.8,
-   "Broad Water bank"
-  ],
-  [
-   "altars",
-   "lw_e",
-   0.3,
-   "Woodland cross-path"
-  ],
-  [
-   "altars",
-   "ec_m",
-   0.4,
-   "Woodland path"
-  ],
-  [
-   "chinese",
-   "atlas",
-   0.5,
-   "North past the meadow"
-  ],
-  [
-   "atlas",
-   "oldhouse",
-   0.4,
-   "Across the lawn"
-  ],
-  [
-   "atlas",
-   "dairy",
-   0.4,
-   "Towards the house"
-  ],
-  [
-   "atlas",
-   "science",
-   0.3,
-   "East lawn"
-  ],
-  [
-   "dairy",
-   "science",
-   0.2,
-   "East of the house"
-  ],
-  [
-   "dairy",
-   "terrace",
-   0.3,
-   "Along the house front"
-  ],
-  [
-   "bowling",
-   "wc_m",
-   0.6,
-   "Past Oldpark Water"
-  ],
-  [
-   "bowling",
-   "lw_w",
-   0.2,
-   "Woodland cross-path"
-  ],
-  [
-   "bowling",
-   "orangery",
-   0.35,
-   "Through the Evergreen Garden"
-  ],
-  [
-   "bowling",
-   "whh",
-   0.3,
-   "Woodland avenue"
-  ],
-  [
-   "whh",
-   "lw_w",
-   0.3,
-   "Woodland avenue"
-  ],
-  [
-   "whh",
-   "altar",
-   0.3,
-   "Woodland avenue"
-  ],
-  [
-   "whh",
-   "lw_s",
-   0.3,
-   "Woodland avenue"
-  ],
-  [
-   "ehh",
-   "lw_s",
-   0.3,
-   "Duke's Square avenue"
-  ],
-  [
-   "ehh",
-   "lw_e",
-   0.2,
-   "Woodland avenue"
   ],
   [
    "conservatory",
@@ -832,12 +3789,78 @@
  ],
  "stops": [
   {
+   "kind": "facility",
+   "approx": false,
+   "date": 2011,
+   "era": "eh",
+   "dwell": 0,
+   "bullets": [],
+   "kids": [],
+   "wow": 0,
+   "id": "carpark",
+   "name": "Main car park",
+   "short": "Car park",
+   "pos": [
+    52.0076,
+    -0.41539
+   ],
+   "facilities": [
+    "parking"
+   ],
+   "look": "The main car park (gravel, free for visitors). The visitor centre is on its east side.",
+   "note": "Free parking for English Heritage visitors."
+  },
+  {
+   "kind": "facility",
+   "approx": false,
+   "date": 2011,
+   "era": "eh",
+   "dwell": 0,
+   "bullets": [],
+   "kids": [],
+   "wow": 0,
+   "id": "overflow",
+   "name": "Overflow car park",
+   "short": "Overflow parking",
+   "pos": [
+    52.00815,
+    -0.41585
+   ],
+   "facilities": [
+    "parking"
+   ],
+   "look": "Grass overflow parking, used on busy days.",
+   "note": "Grass surface: can be soft after rain with a pushchair."
+  },
+  {
+   "kind": "facility",
+   "approx": true,
+   "date": 2011,
+   "era": "eh",
+   "dwell": 0,
+   "bullets": [],
+   "kids": [],
+   "wow": 0,
+   "id": "entrance",
+   "name": "Admissions (main entrance)",
+   "short": "Admissions",
+   "pos": [
+    52.00785,
+    -0.41482
+   ],
+   "facilities": [
+    "entrance"
+   ],
+   "look": "Admissions, at the west end of the visitor centre by the gateway from the main car park.",
+   "note": "Tickets, maps and free audio guides."
+  },
+  {
    "id": "vc",
    "name": "Visitor centre",
    "kind": "facility",
    "pos": [
-    52.0072,
-    -0.4157
+    52.00788,
+    -0.4143
    ],
    "approx": true,
    "date": 2011,
@@ -850,7 +3873,7 @@
     "babychange",
     "shop"
    ],
-   "look": "Admissions, café, toilets, baby change and play area are all here in the walled garden.",
+   "look": "Shop, café, toilets, baby change and accessible toilet in the visitor centre range on the north side of the walled garden; the play area is in the walled garden behind.",
    "note": "Free golf-cart shuttle runs round the grounds. Free audio guides at admissions.",
    "bullets": [],
    "kids": [],
@@ -858,13 +3881,33 @@
    "short": "Visitor centre"
   },
   {
+   "id": "toilets",
+   "name": "Toilets by the overflow car park",
+   "short": "Toilets (south)",
+   "kind": "facility",
+   "pos": [
+    52.00682,
+    -0.41468
+   ],
+   "date": 2011,
+   "era": "eh",
+   "dwell": 0,
+   "facilities": [
+    "toilet"
+   ],
+   "look": "Toilet block at the south end of the road past the walled garden, handy on the way to the Bath House and Orangery.",
+   "bullets": [],
+   "kids": [],
+   "wow": 0
+  },
+  {
    "id": "intro",
    "name": "Wrest Park in brief",
    "short": "Introduction",
    "kind": "intro",
    "pos": [
-    52.0072,
-    -0.4157
+    52.00788,
+    -0.4143
    ],
    "approx": true,
    "date": 1280,
@@ -1058,8 +4101,8 @@
    "name": "Garden front & terrace",
    "kind": "sight",
    "pos": [
-    52.0075,
-    -0.4115
+    52.00792,
+    -0.41205
    ],
    "mustSee": true,
    "date": 1834,
@@ -1776,8 +4819,8 @@
    "name": "The science years (east lawn)",
    "kind": "sight",
    "pos": [
-    52.0076,
-    -0.409
+    52.007,
+    -0.4087
    ],
    "approx": true,
    "date": 1948,
@@ -1872,8 +4915,8 @@
    "name": "French Parterre",
    "kind": "sight",
    "pos": [
-    52.0068,
-    -0.4115
+    52.00752,
+    -0.41202
    ],
    "date": 1839,
    "dateLabel": "1830s",
@@ -1959,7 +5002,7 @@
    "dateLabel": "1280s–1834",
    "era": "medieval",
    "dwell": 60,
-   "look": "The circular pond and fountain about 200 m south of the house, roughly where the old house stood.",
+   "look": "The circular pond and fountain about 200 m south of the house, roughly where the old house stood. Turn round for the view back up the garden to the house.",
    "bullets": [
     {
      "id": 1,
@@ -2176,8 +5219,8 @@
    "name": "Bath House & cascade",
    "kind": "sight",
    "pos": [
-    52.006,
-    -0.415
+    52.00583,
+    -0.4153
    ],
    "date": 1769,
    "dateLabel": "c.1769–71",
@@ -2260,7 +5303,8 @@
     "Look up! Can you see the sky through the holes in the roof?"
    ],
    "wow": 4,
-   "short": "Bath House"
+   "short": "Bath House",
+   "note": "The leaflet marks steps near the Bath House."
   },
   {
    "id": "bowling",
@@ -2343,14 +5387,96 @@
    "short": "Bowling Green Ho."
   },
   {
+   "id": "oldpark",
+   "name": "Oldpark Water",
+   "short": "Oldpark Water",
+   "kind": "sight",
+   "pos": [
+    52.00189,
+    -0.41437
+   ],
+   "approx": true,
+   "date": 1706,
+   "dateLabel": "early 1700s",
+   "era": "duke",
+   "dwell": 60,
+   "wow": 3,
+   "photoSpot": true,
+   "look": "Look along the western boundary canal, still and tree-lined: one of the quietest views in the garden.",
+   "facilities": [],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This water is part of the ‘river’ round three sides of the garden: canals dug straight for the Duke of Kent in the early 1700s, given gentler curves by Capability Brown around 1760.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.4,
+      "views": 0.8
+     },
+     "src": [
+      2,
+      1
+     ],
+     "verify": true
+    }
+   ],
+   "kids": []
+  },
+  {
+   "id": "sundial",
+   "name": "Sundial and the six statues",
+   "short": "Sundial",
+   "kind": "sight",
+   "pos": [
+    52.00539,
+    -0.41169
+   ],
+   "date": 1682,
+   "dateLabel": "1682 (statues about 1840)",
+   "era": "restoration",
+   "dwell": 90,
+   "wow": 3,
+   "photoSpot": true,
+   "look": "Stand by the sundial and look north up the main axis to the house, framed by the marble statues; south, the lawn runs on to the head of the Long Water.",
+   "facilities": [],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This sundial dates from 1682, the same years as the Long Water, and its listing links it to Henry Wynne, a London maker of instruments.",
+     "imp": 4,
+     "tags": {
+      "physics": 0.5,
+      "history": 0.4
+     },
+     "src": [
+      37
+     ],
+     "verify": true
+    },
+    {
+     "id": 2,
+     "t": "The six marble statues standing round it are much later: probably made about 1840 for Earl de Grey, who built the present house.",
+     "imp": 3,
+     "tags": {
+      "history": 0.4,
+      "art": 0.5
+     },
+     "src": [
+      38
+     ],
+     "verify": true
+    }
+   ],
+   "kids": []
+  },
+  {
    "id": "longwater",
    "name": "Head of the Long Water",
    "kind": "sight",
    "pos": [
-    52.0052,
-    -0.4112
+    52.0039,
+    -0.4114
    ],
-   "approx": true,
    "date": 1682,
    "dateLabel": "early 1680s",
    "era": "restoration",
@@ -2667,7 +5793,7 @@
    "era": "duke",
    "dwell": 210,
    "look": "The domed Baroque banqueting house closing the end of the Long Water. Look back north to the house.",
-   "note": "Steep steps up. The interior is open at times; check on the day.",
+   "note": "Steep steps up. The interior is open at times; check on the day. Steps up into the Pavilion (no step-free way in): leave the pushchair at the foot.",
    "bullets": [
     {
      "id": 1,
@@ -2949,7 +6075,7 @@
    "dateLabel": "c.1760 & 1876",
    "era": "jemima",
    "dwell": 90,
-   "look": "The timber temple with its pagoda roof, and the brick bridge just east across the water.",
+   "look": "The timber temple with its pagoda roof, and the brick bridge just east across the water. West across the Ladies’ Lake, a statue (named Diana on OpenStreetMap) stands over the water: a favourite photo.",
    "bullets": [
     {
      "id": 1,
@@ -3032,7 +6158,8 @@
     "Find the dragon on top of the roof!"
    ],
    "wow": 4,
-   "short": "Chinese Temple"
+   "short": "Chinese Temple",
+   "note": "The Chinese Bridge has steps; the temple side of the water can be reached without crossing it."
   },
   {
    "id": "atlas",
@@ -3249,13 +6376,25 @@
    "IAgrE: Dr Nick Tillett award citation",
    "https://iagre.org/downloads/31"
   ],
+  "37": [
+   "Listing: Sundial approximately 270m south of Wrest Park House (1113797)",
+   "https://britishlistedbuildings.co.uk/101113797-sundial-approximately-270m-south-of-wrest-park-house-silsoe"
+  ],
+  "38": [
+   "Bedfordshire Archives: Statues at Wrest Park",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/StatuesAtWrestPark.aspx"
+  ],
+  "39": [
+   "Victoria County History, Bedford vol. 2 (1908): Flitton cum Silsoe",
+   "https://www.british-history.ac.uk/vch/beds/vol2/pp325-333"
+  ],
   "gk": [
    "General knowledge (not from a Wrest-specific source): check if it matters to you",
    ""
   ]
  },
  "map": {
-  "note": "Schematic. Stop positions come from listing records; paths, water and woodland outlines are approximate.",
+  "note": "Paths follow the OpenStreetMap footpaths; the schematic shapes below are only used without the OpenStreetMap layer.",
   "features": [
    {
     "kind": "wood",
@@ -3473,7 +6612,7 @@
    }
   ],
   "osm": "tours/wrest-park.map.json",
-  "osmNote": "Stop positions from listing records."
+  "osmNote": "Paths from OpenStreetMap (2026-10-11); steps from OpenStreetMap and the English Heritage leaflet (2024)."
  },
  "introStop": "intro",
  "knowledge": {

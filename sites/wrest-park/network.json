@@ -1,0 +1,544 @@
+{
+ "note": "Names and scenic scores for tools/osm-network.mjs. Corridors are drawn along the OpenStreetMap paths (fetched 2026-10-11).",
+ "corridors": [
+  {
+   "name": "Long Water, east bank",
+   "line": [
+    [
+     52.00063,
+     -0.41073
+    ],
+    [
+     52.00082,
+     -0.41075
+    ],
+    [
+     52.00323,
+     -0.41113
+    ],
+    [
+     52.00337,
+     -0.41096
+    ],
+    [
+     52.00397,
+     -0.41104
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.95
+  },
+  {
+   "name": "Long Water, west bank",
+   "line": [
+    [
+     52.00078,
+     -0.41126
+    ],
+    [
+     52.00316,
+     -0.41164
+    ],
+    [
+     52.0033,
+     -0.41186
+    ],
+    [
+     52.00388,
+     -0.41194
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.95
+  },
+  {
+   "name": "Across the head of the Long Water",
+   "line": [
+    [
+     52.00388,
+     -0.41194
+    ],
+    [
+     52.00392,
+     -0.4119
+    ],
+    [
+     52.004,
+     -0.41175
+    ],
+    [
+     52.00403,
+     -0.41127
+    ],
+    [
+     52.00397,
+     -0.41104
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.9
+  },
+  {
+   "name": "East side of the central lawn",
+   "line": [
+    [
+     52.00397,
+     -0.41104
+    ],
+    [
+     52.0042,
+     -0.41106
+    ],
+    [
+     52.00441,
+     -0.41078
+    ],
+    [
+     52.00457,
+     -0.41064
+    ],
+    [
+     52.00481,
+     -0.41065
+    ],
+    [
+     52.00503,
+     -0.41078
+    ],
+    [
+     52.00533,
+     -0.41094
+    ],
+    [
+     52.00558,
+     -0.41097
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.6
+  },
+  {
+   "name": "West side of the central lawn",
+   "line": [
+    [
+     52.00388,
+     -0.41194
+    ],
+    [
+     52.0042,
+     -0.412
+    ],
+    [
+     52.00444,
+     -0.4124
+    ],
+    [
+     52.0047,
+     -0.4125
+    ],
+    [
+     52.0055,
+     -0.41244
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.6
+  },
+  {
+   "name": "Cross walk below the Orangery",
+   "line": [
+    [
+     52.0057,
+     -0.40888
+    ],
+    [
+     52.00554,
+     -0.41172
+    ],
+    [
+     52.00542,
+     -0.41369
+    ],
+    [
+     52.00538,
+     -0.41454
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.5
+  },
+  {
+   "name": "Central walk down to the fountain",
+   "line": [
+    [
+     52.007756,
+     -0.412038
+    ],
+    [
+     52.006227,
+     -0.41181
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.7
+  },
+  {
+   "name": "Central walk from the fountain to the sundial",
+   "line": [
+    [
+     52.006003,
+     -0.41179
+    ],
+    [
+     52.005544,
+     -0.411724
+    ],
+    [
+     52.00539,
+     -0.41169
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.7
+  },
+  {
+   "name": "Terrace along the garden front",
+   "line": [
+    [
+     52.00784,
+     -0.4115
+    ],
+    [
+     52.00787,
+     -0.41158
+    ],
+    [
+     52.00781,
+     -0.41259
+    ],
+    [
+     52.008,
+     -0.41262
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.6
+  },
+  {
+   "name": "Avenue north-east from the Pavilion",
+   "line": [
+    [
+     52.00052,
+     -0.41072
+    ],
+    [
+     52.00087,
+     -0.40997
+    ],
+    [
+     52.00167,
+     -0.40832
+    ],
+    [
+     52.00206,
+     -0.40756
+    ],
+    [
+     52.00223,
+     -0.40748
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.55
+  },
+  {
+   "name": "Broad Water, west bank",
+   "line": [
+    [
+     52.00379,
+     -0.4087
+    ],
+    [
+     52.00348,
+     -0.40848
+    ],
+    [
+     52.00265,
+     -0.40775
+    ],
+    [
+     52.00223,
+     -0.40748
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.9
+  },
+  {
+   "name": "Broad Water, west bank",
+   "line": [
+    [
+     52.00317,
+     -0.4082
+    ],
+    [
+     52.00307,
+     -0.40858
+    ],
+    [
+     52.00123,
+     -0.40824
+    ],
+    [
+     52.00087,
+     -0.40834
+    ],
+    [
+     52.00016,
+     -0.40814
+    ],
+    [
+     51.99983,
+     -0.40781
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.85
+  },
+  {
+   "name": "Broad Water, east bank",
+   "line": [
+    [
+     52.00142,
+     -0.40395
+    ],
+    [
+     52.00231,
+     -0.40431
+    ],
+    [
+     52.00364,
+     -0.40539
+    ],
+    [
+     52.00447,
+     -0.40602
+    ],
+    [
+     52.00596,
+     -0.40709
+    ],
+    [
+     52.00673,
+     -0.40757
+    ],
+    [
+     52.00715,
+     -0.40766
+    ]
+   ],
+   "within": 12,
+   "scenic": 0.85
+  },
+  {
+   "name": "South canal bank",
+   "line": [
+    [
+     52.00186,
+     -0.40717
+    ],
+    [
+     52.0013,
+     -0.40689
+    ],
+    [
+     52.00054,
+     -0.40696
+    ],
+    [
+     51.9999,
+     -0.40763
+    ],
+    [
+     51.99974,
+     -0.40841
+    ],
+    [
+     51.99971,
+     -0.41052
+    ],
+    [
+     51.9995,
+     -0.41228
+    ],
+    [
+     51.99939,
+     -0.41309
+    ],
+    [
+     51.99972,
+     -0.41379
+    ],
+    [
+     52.0001,
+     -0.41442
+    ],
+    [
+     52.00019,
+     -0.41445
+    ]
+   ],
+   "within": 15,
+   "scenic": 0.9
+  },
+  {
+   "name": "Across the Chinese Bridge",
+   "line": [
+    [
+     52.003795,
+     -0.408697
+    ],
+    [
+     52.003949,
+     -0.408608
+    ]
+   ],
+   "within": 8,
+   "scenic": 0.9
+  },
+  {
+   "name": "From the car park to the visitor centre",
+   "line": [
+    [
+     52.0071,
+     -0.414664
+    ],
+    [
+     52.00778,
+     -0.414767
+    ],
+    [
+     52.007772,
+     -0.414916
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.2
+  },
+  {
+   "name": "East–west walk across the garden below the parterre",
+   "line": [
+    [
+     52.006656,
+     -0.414777
+    ],
+    [
+     52.006772,
+     -0.412661
+    ],
+    [
+     52.006861,
+     -0.411163
+    ],
+    [
+     52.007014,
+     -0.408134
+    ]
+   ],
+   "within": 10,
+   "scenic": 0.5
+  },
+  {
+   "name": "Road from the visitor centre to the toilets",
+   "line": [
+    [
+     52.007875,
+     -0.414929
+    ],
+    [
+     52.006656,
+     -0.414777
+    ]
+   ],
+   "within": 8,
+   "scenic": 0.2
+  }
+ ],
+ "landmarks": [
+  {
+   "name": "the Leg o' Mutton Lake",
+   "pos": [
+    52.00335,
+    -0.41332
+   ]
+  },
+  {
+   "name": "the Ladies' Lake",
+   "pos": [
+    52.00356,
+    -0.40966
+   ]
+  },
+  {
+   "name": "the American Garden",
+   "pos": [
+    52.00472,
+    -0.4137
+   ]
+  },
+  {
+   "name": "the Rose Garden",
+   "pos": [
+    52.00755,
+    -0.41295
+   ]
+  },
+  {
+   "name": "the walled garden",
+   "pos": [
+    52.00745,
+    -0.41425
+   ]
+  },
+  {
+   "name": "the dogs' cemetery",
+   "pos": [
+    52.00241,
+    -0.4081
+   ]
+  }
+ ],
+ "links": [],
+ "exclude": [],
+ "steps": [
+  [
+   52.00725,
+   -0.41197
+  ],
+  [
+   52.00724,
+   -0.41273
+  ],
+  [
+   52.003872,
+   -0.408652
+  ]
+ ],
+ "stepsNote": "From the English Heritage orientation leaflet (2024): steps at the south edge of the French Parterre on the main axis, at the south end of the Rose Garden, and on the Chinese Bridge. OSM marks the terrace and Orangery steps.",
+ "lines": [
+  {
+   "line": [
+    [
+     52.0076,
+     -0.41241
+    ],
+    [
+     52.0076,
+     -0.41285
+    ]
+   ],
+   "steps": false,
+   "note": "Step-free way into the French Parterre from the west (wheelchair symbol on the English Heritage leaflet, 2024); not in OSM."
+  }
+ ]
+}
