@@ -1,0 +1,116 @@
+[
+ {
+  "year": 1284,
+  "label": "Reginald de Grey holds land at Silsoe",
+  "more": "The Feudal Aids of 1284–1286 record Reginald de Grey holding one fee in Flitton and Silsoe of John de Wahull. When he died in 1307–1308 his papers listed a 'capital messuage with a dovecote', probably the start of the old house. Nothing earlier names the Greys here.",
+  "src": [
+   39,
+   "beds-pre-17c",
+   "beds-manor"
+  ]
+ },
+ {
+  "year": 1465,
+  "label": "Edmund Grey made Earl of Kent by Edward IV",
+  "more": "Edmund Grey, Lord Grey of Ruthin, deserted the Lancastrians at Northampton in 1460. Edward IV made him Lord High Treasurer in 1463 and Earl of Kent on 30 May 1465. His heirs were Earls of Kent until 1740.",
+  "src": [
+   39,
+   "beds-earls-kent"
+  ]
+ },
+ {
+  "year": 1740,
+  "label": "Duke dies; Jemima inherits",
+  "more": "Henry, Duke of Kent, died on 5 June 1740. All his sons had died before him, so Wrest went to his granddaughter Jemima, who had married Philip Yorke two weeks earlier. The Kent titles died out, but she became Marchioness Grey by a special remainder.",
+  "src": [
+   39,
+   "beds-jemima",
+   "beds-duke"
+  ]
+ },
+ {
+  "year": 1833,
+  "label": "Thomas, Earl de Grey inherits",
+  "more": "Amabel, Countess de Grey, died childless in 1833 (4 March by Wikipedia, 4 May by Bedfordshire Archives). Wrest passed to her nephew Thomas, 2nd Earl de Grey, who changed his name to de Grey, pulled down the old house and built the present one.",
+  "src": [
+   39,
+   "beds-de-grey",
+   "wiki-amabel"
+  ]
+ },
+ {
+  "year": 1905,
+  "label": "US Ambassador Whitelaw Reid rents Wrest",
+  "more": "When Earl Cowper died in July 1905, Wrest passed to his nephew Lord Lucas, who let it that year to the new American ambassador Whitelaw Reid at £1,500 a year. Reid stayed about eight years and improved the house.",
+  "src": [
+   "beds-20c",
+   9
+  ]
+ },
+ {
+  "year": 1909,
+  "label": "King Edward VII visits",
+  "more": "The King spent the weekend of 24–25 July 1909 at Wrest as Reid's guest, the first visit by a sovereign according to the Bedfordshire Times. Crowds lined Silsoe's streets, and he went to church there and saw Flitton church and mausoleum.",
+  "src": [
+   "beds-edward7",
+   "beds-20c"
+  ]
+ },
+ {
+  "year": 1914,
+  "label": "Hospital opens, 7 September",
+  "more": "Lord Lucas offered Wrest as a hospital in August 1914 and it was ready for its first patients on 7 September. It began as a convalescent home and became a base hospital in November. His sister Nan ran it; she became matron in February 1915.",
+  "src": [
+   12,
+   "eh-nurse-news",
+   1
+  ]
+ },
+ {
+  "year": 1916,
+  "label": "Fire, 14 September; hospital closes",
+  "more": "Fire badly damaged the mansion; a local account puts it in the east wing. All 156 patients were got out safely, some in their beds, and about 50 went to Woburn Abbey hospital and Ampthill Camp. The damage made reopening impractical. About 1,600 men had passed through.",
+  "src": [
+   12,
+   "tommy-fire",
+   "eh-nurses"
+  ]
+ },
+ {
+  "year": 1917,
+  "label": "Estate sold",
+  "more": "After Lord Lucas was killed in November 1916 and the fire, his sister Nan sold up. An auction was advertised for July, but the house was sold privately to John George Murray, a brewery and coal company chairman. The contents were auctioned over five days from 10 September 1917.",
+  "src": [
+   "beds-20c",
+   "wikishire-silsoe",
+   "eh-lost-found"
+  ]
+ },
+ {
+  "year": 2006,
+  "label": "Institute closes; English Heritage takes over",
+  "more": "Silsoe Research Institute closed at the end of March 2006 after the BBSRC withdrew its funding. English Heritage took over the house and began a 20-year plan to restore the gardens to their pre-1917 state.",
+  "src": [
+   1,
+   16,
+   "beds-20c"
+  ]
+ },
+ {
+  "year": 2011,
+  "label": "Restored gardens reopen, 4 August",
+  "more": "The restored gardens reopened on 4 August 2011, with a new visitor centre. Funding included over £1 million from the Heritage Lottery Fund and a pledge of up to £400,000 from the Wolfson Foundation. About three miles of woodland paths were reinstated.",
+  "src": [
+   9,
+   "pg-wrest"
+  ]
+ },
+ {
+  "year": 2014,
+  "label": "Archaeological collections store opens",
+  "more": "English Heritage opened a £2 million purpose-built store at Wrest in 2014, with guided tours. It holds over 150,000 objects from sites including Kirby Hall, Audley End and Hill Hall, and about a third of the charity's architectural salvage.",
+  "src": [
+   9
+  ]
+ }
+]

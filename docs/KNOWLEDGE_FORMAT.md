@@ -54,7 +54,7 @@ One object per line, so diffs stay readable.
 - `related` lists other thing ids worth comparing with it (a later alteration, the event it commemorates). `stops` lists tour stop ids where you can see it, which is how "this" and "here" are resolved.
 
 **People:**
-- `born`/`died` are `[year, month]` (month optional).
+- `born`/`died` are `[year, month]` (month optional). Leave `born` out if it is genuinely unknown (common for medieval people): the app then gives no ages for that person.
 - `who` completes "X was ___".
 - `events` are `[year, "what they did"]` pairs, phrased to follow the name ("became head gardener at Stowe").
 

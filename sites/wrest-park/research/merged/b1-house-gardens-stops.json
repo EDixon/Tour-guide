@@ -63,7 +63,7 @@
     },
     "src": [
      "hlfrevival",
-     "ehrevital"
+     "eh-revitalising"
     ],
     "verify": true
    }
@@ -158,7 +158,7 @@
      "engineering": 0.3
     },
     "src": [
-     "ehrevital"
+     "eh-revitalising"
     ]
    }
   ],
@@ -185,7 +185,7 @@
     },
     "src": [
      1,
-     "pgukwrest"
+     "pg-wrest"
     ]
    },
    {
@@ -210,7 +210,7 @@
      "history": 0.5
     },
     "src": [
-     "ehrevital",
+     "eh-revitalising",
      "hlfrevival"
     ]
    },

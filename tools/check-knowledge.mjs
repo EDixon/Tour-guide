@@ -49,7 +49,8 @@ for (const t of dates.things) {
 // ---- people
 for (const p of dates.people) {
   const where = `person "${p.id}"`;
-  for (const k of ['name', 'names', 'born']) if (p[k] == null) err(`${where}: missing ${k}`);
+  for (const k of ['name', 'names']) if (p[k] == null) err(`${where}: missing ${k}`);
+  if (p.born == null) warn(`${where}: no born (fine if unknown; ages are then left out)`);
   if (p.died && p.born && p.died[0] < p.born[0]) err(`${where}: died before born`);
   for (const [y] of p.events || []) if (p.born && (y < p.born[0] || (p.died && y > p.died[0]))) err(`${where}: event ${y} outside their life`);
   if (!p.who) warn(`${where}: no "who"`);

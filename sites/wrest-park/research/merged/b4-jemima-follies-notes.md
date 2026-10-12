@@ -102,14 +102,3 @@ Space link: in Greek myth the Titan Atlas was condemned to hold up the sky (the 
 A celestial globe shows the sky as if seen from outside, so constellations look the opposite way round to the view from Earth. The best-known ancient example is the Farnese Atlas in the National Archaeological Museum in Naples: a Roman marble of about 150 AD, probably copied from an earlier Greek work. Atlas carries a globe 65 centimetres across, carved with 41 or 42 of the 48 classical constellations. It is the oldest surviving celestial globe. In 2005 Bradley Schaefer argued that its constellations fit the lost star catalogue of Hipparchus, about 129 BC; this is contested. Nothing suggests the Wrest Atlas was modelled on the Farnese one.
 Sources: Historic England list entry 1321795; Bedfordshire Archives, Statues at Wrest Park; Wikipedia, Atlas (mythology); Wikipedia, Farnese Atlas; general knowledge for the mirror-reversal of celestial globes.
 
-## Anne Florence, Countess Cowper
-Kind: person
-About: anne-florence-cowper
-Anne Florence (1806–1880) was the daughter of Thomas, 2nd Earl de Grey, who built the present house. She married the 6th Earl Cowper, and inherited Wrest in 1859 when her father died, becoming Countess Cowper; Bedfordshire Archives also calls her 7th Baroness Lucas of Crudwell. Historic England says she and her husband added statuary and the Chinese Bridge. The bridge of 1876 was designed by her and built by estate workmen, and the stones carry her monogram under a coronet. Wikipedia and Bedfordshire Archives add that the Chinese Temple was rebuilt or remodelled for her in the same year. Her son Francis, 7th Earl Cowper, inherited after her; later owners were the Lucas family.
-Sources: Historic England list entry 1158909; Bedfordshire Archives, Buildings at Wrest Park; Wikipedia, Wrest Park.
-
-## Amabel, Countess de Grey
-Kind: person
-About: amabel-de-grey
-Amabel Hume-Campbell (1751–1833) was the daughter of Jemima, Marchioness Grey. She inherited Wrest in 1797 when Jemima died, and was made Countess de Grey in 1816. English Heritage says she made few changes to the gardens, bought five antique altars in 1817 and had many lead statues melted down for roof repairs, which she later regretted. In 1774 she sketched the gardens for Catherine the Great's Wedgwood dinner service. She died in 1833 and Wrest passed to her nephew Thomas, 2nd Earl de Grey, who pulled down the old house. See also the section on the de Grey family.
-Sources: English Heritage, Women's Designs at Wrest Park; Historic England list entry 1311237; existing section "The de Grey family and Wrest".

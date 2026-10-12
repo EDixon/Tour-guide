@@ -5,7 +5,7 @@
 //   knowledge/<id>/notes.md   sections replaced by title, or appended
 //   knowledge/<id>/dates.json things and people replaced by id, or appended; `site` and `owners` replaced whole
 //   tours/<id>.json           per-stop fields (bullets, look, note, kids, short, wow, popular, mustSee, dwell, ...)
-//                             and timeline events (matched on year + label, or year + `was` for a renamed label)
+//                             and timeline events (matched on year + label, or on `was` for a renamed label)
 // Reference-pack batches (files named ref-<pack>-notes.md / ref-<pack>-dates.json) go to knowledge/reference/<pack>/.
 // Merged batch files are moved to sites/<id>/research/merged/.
 import fs from 'node:fs';
@@ -60,7 +60,7 @@ function formatDates(d) {
   if (d.rulers) { lines[lines.length - 1] += ','; lines.push('  "rulers": {', ...Object.entries(d.rulers).map(([c, r], i, a) => `    ${JSON.stringify(c)}: ${JSON.stringify(r)}${i < a.length - 1 ? ',' : ''}`), '  }'); }
   return lines.join('\n') + '\n}\n';
 }
-const STOP_FIELDS = ['bullets', 'look', 'note', 'kids', 'short', 'wow', 'popular', 'mustSee', 'dwell', 'date', 'dateLabel', 'era', 'name', 'facilities', 'attnBoost'];
+const STOP_FIELDS = ['bullets', 'look', 'note', 'kids', 'short', 'wow', 'popular', 'mustSee', 'dwell', 'date', 'dateLabel', 'era', 'name', 'facilities', 'attnBoost', 'photo'];
 function mergeStops(jsonFiles) {
   const tf = root + `tours/${id}.json`;
   const tour = JSON.parse(fs.readFileSync(tf, 'utf8'));
@@ -84,7 +84,8 @@ function mergeEvents(jsonFiles) {
   tour.events = tour.events || [];
   for (const f of jsonFiles) {
     for (const ev of JSON.parse(fs.readFileSync(dir + f, 'utf8'))) {
-      const match = tour.events.find(e => e.year === ev.year && (e.label === ev.label || (ev.was && e.label === ev.was)));
+      // A `was` label matches whatever its year, so an event can move to a corrected year.
+      const match = tour.events.find(e => (e.year === ev.year && e.label === ev.label) || (ev.was && e.label === ev.was));
       const clean = Object.fromEntries(EVENT_FIELDS.filter(k => ev[k] !== undefined).map(k => [k, ev[k]]));
       if (match) { Object.assign(match, clean); report.push(`events: updated ${ev.year} "${ev.label}" (${f})`); }
       else { tour.events.push(clean); report.push(`events: added ${ev.year} "${ev.label}" (${f})${ev.was ? `, no event matched was: "${ev.was}"` : ''}`); }

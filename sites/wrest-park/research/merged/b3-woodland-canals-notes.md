@@ -117,14 +117,3 @@ At Wrest he worked for the Duke of Kent in the 1730s. Parks & Gardens UK and the
 The Duke's other designers: English Heritage names Hawksmoor, Archer, Langley and William Kent.
 Sources: Wikipedia, Batty Langley; Historic England list entry 1158672; Bedfordshire Archives, Buildings at Wrest Park; Parks & Gardens UK, Wrest Park; Heritage Fund (2011); The Garden History blog (2014); English Heritage, History of Wrest Park.
 
-## John Cheere
-Kind: person
-About: john-cheere, jemima-statue, william-statue
-John Cheere (1709–1787) was a London sculptor who made garden statues; the Wrest ones credited to him are lead. He was the younger brother of the sculptor Sir Henry Cheere, and began in John Nost's yard, later working with his brother when Henry set up on his own. Wikipedia credits him with the Medici lions at Stowe, figures for the grottoes and gardens at Stourhead (1751–1766) and four for the Pantheon there (1766). His dates are given as 1709–1789 in the Historic England listing for the statue at Wrest; the dates file uses Wikipedia's 1709–1787.
-
-At Wrest the lady reading (about 1748) is "probably" by him, according to Historic England (list entry 1113805), which calls it a rare mid-eighteenth-century lead figure of a seated woman, about 2.5 metres high on a Portland stone pedestal, and the lead statue of King William III by the Long Water is "thought to be" by him (list entry 1158878, 1730s). Bedfordshire Archives gives neither to Cheere: it credits the William III statue to John Nost or his son and names no sculptor for the lady reading. Wikipedia also pictures a statue of Harlequin by him at Wrest Park (not found in any Wrest listing).
-
-The lady reading is the only lead statue besides the Main Walk groups that Bedfordshire Archives describes: it calls those four groups "painted lead and thought to be about 1730", on bases that look nineteenth-century. Lead was a practical garden material because a figure could be cast from a mould, which is general background rather than a Wrest-specific fact.
-
-English Heritage's leaflet says there are over 40 statues dotted around the grounds. When asked who made a Wrest statue, say "probably" or "thought to be" unless the source names the maker outright.
-Sources: Wikipedia, John Cheere; Historic England list entries 1113805 and 1158878; Bedfordshire Archives, Statues at Wrest Park; English Heritage orientation leaflet (2024); general knowledge for lead casting.

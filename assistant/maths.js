@@ -85,8 +85,14 @@ export function ownersList(owners, site) {
 }
 
 // A person's age at a dated thing, or how long after their death it came.
+// Birth years are unknown for some people (medieval owners, craftsmen): then only death is used.
 export function personAt(p, t) {
   const { a, b } = span(t);
+  if (!p.born) {
+    const [dy] = p.died || [];
+    if (dy && a > dy) return `${cap(t.name)} (${label(t)}) ${was(t)} ${about(t.approx)}${plural(gap(dy, a), 'year')} after ${p.name} died (${Y(dy)}).`;
+    return `${p.name}'s birth year is not known, so their age when ${t.name} ${was(t)} (${label(t)}) is not known.`;
+  }
   const [by, bm] = p.born, [dy] = p.died || [];
   const ageAt = (y) => gap(by, y) - (bm && bm > 6 ? 1 : 0); // age at mid-year
   if (dy && a > dy) return `${cap(t.name)} (${label(t)}) ${was(t)} ${about(t.approx)}${plural(gap(dy, a), 'year')} after ${p.name} died (${Y(dy)}).`;
@@ -99,6 +105,13 @@ export function personAt(p, t) {
 
 // About a person: who they were, life span and age at death, and their dated life events with ages.
 export function personFacts(p) {
+  if (!p.born) {
+    const lines = [];
+    if (p.who) lines.push(`${p.name} was ${p.who}.`);
+    lines.push(p.died ? `${p.name}: birth year not known, died ${Y(p.died[0])}.` : `${p.name}: birth and death years not known.`);
+    for (const [y, what] of p.events || []) lines.push(`In ${Y(y)}, ${p.name} ${what}.`);
+    return lines;
+  }
   const [by, bm] = p.born, [dy, dm] = p.died || [];
   const ageAt = (y) => gap(by, y) - (bm && bm > 6 ? 1 : 0);
   const lines = [];

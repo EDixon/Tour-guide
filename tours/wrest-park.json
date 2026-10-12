@@ -152,248 +152,378 @@
    "year": 1284,
    "label": "Reginald de Grey holds land at Silsoe",
    "src": [
-    9
-   ]
+    39,
+    "beds-pre-17c",
+    "beds-manor"
+   ],
+   "more": "The Feudal Aids of 1284–1286 record Reginald de Grey holding one fee in Flitton and Silsoe of John de Wahull. When he died in 1307–1308 his papers listed a 'capital messuage with a dovecote', probably the start of the old house. Nothing earlier names the Greys here."
   },
   {
    "year": 1465,
    "label": "Edmund Grey made Earl of Kent by Edward IV",
    "src": [
-    1
-   ]
+    39,
+    "beds-earls-kent"
+   ],
+   "more": "Edmund Grey, Lord Grey of Ruthin, deserted the Lancastrians at Northampton in 1460. Edward IV made him Lord High Treasurer in 1463 and Earl of Kent on 30 May 1465. His heirs were Earls of Kent until 1740."
   },
   {
    "year": 1639,
    "label": "Thomas Carew's poem ‘To my friend G.N. from Wrest’",
    "src": [
-    9
-   ]
+    "he-rr-6-2013"
+   ],
+   "more": "The Cavalier poet Thomas Carew, a guest of Henry, 8th Earl of Kent, and his wife Elizabeth, wrote it at Wrest in spring 1639. It praises the plain house, the warm welcome and streams that ‘twice surround this island Mansion’, and may be the first mention of a designed garden here."
   },
   {
    "year": 1671,
    "label": "Classical north front added to the old house",
    "src": [
-    3
-   ]
+    3,
+    "beds-17c",
+    "hop-anthony-grey"
+   ],
+   "more": "Anthony, 11th Earl, and his wife Mary gave the rambling old house a classical front to disguise its irregularities, paid for largely by Mary’s inheritance when her father died in July 1671. Sources date the work 1671 (listing), 1672 (Bedfordshire Archives) or 1672 to 1676."
   },
   {
    "year": 1682,
    "label": "Long Water dug (early 1680s)",
    "src": [
-    1
+    1,
+    "he-rr-6-2013"
    ],
-   "stop": "longwater"
+   "stop": "longwater",
+   "more": "The straight canal was made by Amabel, Countess of Kent, her son Anthony, 11th Earl, and his wife Mary. English Heritage gives the early 1680s; a 2013 survey says only that it was probably there before 1685. The Pavilion at its end came in 1709–1711."
+  },
+  {
+   "year": 1682,
+   "label": "Henry Wynne's sundial dated 1682",
+   "more": "The dial plate, signed by the London instrument maker Henry Wynne and dated 1682, stood in the garden until it was taken to Coles Park after Wrest was sold. The Ministry won it back after 1954. The plate now in the garden is a replica.",
+   "src": [
+    37,
+    "bss-s2125",
+    "bss-s5169",
+    "he-rr-6-2013"
+   ],
+   "stop": "sundial"
   },
   {
    "year": 1706,
    "label": "Duke of Kent begins the Great Garden",
    "src": [
-    3
-   ]
+    1,
+    2,
+    "wiki-duke"
+   ],
+   "more": "In 1706, the year he became Marquess of Kent, Henry Grey began adding a French-style formal woodland round his parents' Long Water: straight avenues, clearings, statues and canals on three sides. English Heritage says the work ran into the 1720s."
   },
   {
    "year": 1709,
    "label": "Archer Pavilion begun (finished 1711)",
    "src": [
-    4
+    4,
+    1
    ],
-   "stop": "pavilion"
+   "stop": "pavilion",
+   "more": "Henry Grey, who became Duke of Kent in 1710, commissioned Thomas Archer to design a banqueting house at the south end of the Long Water. It cost £1,809 and was built in 1709–1711. Hauduroy painted the interior in 1712."
   },
   {
    "year": 1710,
    "label": "Henry Grey created Duke of Kent",
    "src": [
-    1
-   ]
+    1,
+    "wiki-duke"
+   ],
+   "more": "The Marquess of Kent was made a duke in 1710, during the War of the Spanish Succession, in exchange for giving up his post as Lord Chamberlain. English Heritage thinks the Archer Pavilion's wall paintings celebrate the honour."
   },
   {
    "year": 1726,
    "label": "East and West Half Houses built",
    "src": [
+    22,
+    28,
+    21,
     9
    ],
-   "stop": "whh"
+   "stop": "whh",
+   "more": "These two small garden shelters were built in clearings in the Duke's woodland, either side of the Long Water, when its avenues and squares were largely complete. Each has a curved wooden seat inside. The listings give no architect."
+  },
+  {
+   "year": 1729,
+   "label": "Serpentine canal dug; amphitheatre added by the bowling green",
+   "more": "When work resumed in 1729, the Duke's garden gained a serpentine canal and an amphitheatre north of the bowling green. Brown later joined the serpentine water to Old Park Water, about 1760.",
+   "src": [
+    "he-1402869"
+   ],
+   "stop": "oldpark"
   },
   {
    "year": 1735,
    "label": "Bowling Green House by Batty Langley",
    "src": [
-    6
+    6,
+    10,
+    "pg-wrest",
+    "eh-phased"
    ],
-   "stop": "bowling"
+   "stop": "bowling",
+   "more": "Langley remodelled an earlier building into a pavilion with a six-column wooden portico facing the bowling green. The date is uncertain: about 1735 in the listing, 1735 (latest 1734) in Parks & Gardens UK, and English Heritage's plan dates the main walls 1720–1721."
   },
   {
    "year": 1740,
    "label": "Duke dies; Jemima inherits",
    "src": [
-    9
-   ]
+    39,
+    "beds-jemima",
+    "beds-duke"
+   ],
+   "more": "Henry, Duke of Kent, died on 5 June 1740. All his sons had died before him, so Wrest went to his granddaughter Jemima, who had married Philip Yorke two weeks earlier. The Kent titles died out, but she became Marchioness Grey by a special remainder."
   },
   {
    "year": 1748,
    "label": "Mithraic Altar and Jemima's statue",
    "src": [
     18,
-    31
+    31,
+    "ega-womens-designs"
    ],
-   "stop": "altar"
+   "stop": "altar",
+   "more": "Jemima and her husband Philip Yorke put up a flint 'Persian' altar, designed by her tutor Thomas Wright, with Greek inscription by Daniel Wray, as a learned garden joke. Her lead statue, reading a book, is dated about 1748 and probably by John Cheere."
   },
   {
    "year": 1758,
-   "label": "Capability Brown at work (1758–60)",
+   "label": "Capability Brown at work (1758–1760)",
    "src": [
     1,
-    21
+    21,
+    "he-rr-74-2018"
    ],
-   "stop": "cbcol"
+   "stop": "cbcol",
+   "more": "Jemima, Marchioness Grey, and her husband Philip Yorke brought in Lancelot Brown. He joined the canals and made the straight boundary ones curve, but left the Duke of Kent's formal core alone. He was consulted again briefly in 1778 and 1779."
   },
   {
    "year": 1760,
    "label": "Chinese Temple built",
    "src": [
-    20
+    20,
+    10,
+    "ega-womens-designs"
    ],
-   "stop": "chinese"
+   "stop": "chinese",
+   "more": "Jemima had a timber Chinese summerhouse built beside the new Broad Water, about 1760 (Chinese features in her garden date from the late 1750s). Historic England says William Chambers, designer of the Kew Pagoda, possibly designed it. Edward Stevens repaired it in 1769."
   },
   {
    "year": 1769,
    "label": "Bath House built (to 1771)",
    "src": [
-    5
+    5,
+    "he-rr-74-2018",
+    "he-rr-84-2015"
    ],
-   "stop": "bathhouse"
+   "stop": "bathhouse",
+   "more": "Edward Stevens built a cold plunge bath and dressing room for Jemima, styled as a ruined Roman bath in rough ironstone, with a cascade over the spring that fed it. Work was under way by September 1769 and nearly finished in May 1771."
   },
   {
    "year": 1817,
    "label": "Ancient altars bought by Amabel",
    "src": [
+    "le-altars-1311237",
     11
    ],
-   "stop": "altars"
+   "stop": "altars",
+   "more": "Amabel, Countess de Grey, bought five marble altars of the late second to first century BC from a Mr Beauclere of Muswell Hill and set them on a lawn. Where he found them is unknown."
   },
   {
    "year": 1833,
    "label": "Thomas, Earl de Grey inherits",
    "src": [
-    1
-   ]
+    39,
+    "beds-de-grey",
+    "wiki-amabel"
+   ],
+   "more": "Amabel, Countess de Grey, died childless in 1833 (4 March by Wikipedia, 4 May by Bedfordshire Archives). Wrest passed to her nephew Thomas, 2nd Earl de Grey, who changed his name to de Grey, pulled down the old house and built the present one."
   },
   {
    "year": 1834,
    "label": "Old house demolished; new house built (to 1839)",
    "src": [
-    3
+    3,
+    1,
+    "he-rr-6-2013"
    ],
-   "stop": "terrace"
+   "stop": "terrace",
+   "more": "Thomas, 2nd Earl de Grey, inherited in 1833, found a large, crumbling house of medieval origins, and chose to rebuild rather than repair. He pulled it down while building a French-style mansion 200 metres north; parts of the old house were still standing in 1838."
+  },
+  {
+   "year": 1834,
+   "label": "Bath House plunge bath filled in",
+   "more": "Earl de Grey filled in the Bath House's bath, no longer needed after hot and cold baths were fitted in the old house in 1827–1828. The 1960s restoration dug it out and rebuilt it.",
+   "src": [
+    "he-rr-74-2018"
+   ],
+   "stop": "bathhouse"
   },
   {
    "year": 1835,
    "label": "Orangery; Earl becomes first RIBA President",
    "src": [
     8,
-    3
+    3,
+    "he-rr-74-2018",
+    "wiki-earl-de-grey"
    ],
-   "stop": "orangery"
+   "stop": "orangery",
+   "more": "Thomas, 2nd Earl de Grey designed the Orangery for the orange trees he bought from King Louis-Philippe (dated about 1835 in the listing; 1838–1839 in a later Historic England report). He was also the first President of the Institute of British Architects, founded in 1834."
   },
   {
    "year": 1856,
    "label": "Le Petit Trianon playhouse",
    "src": [
-    25
+    25,
+    "gk"
    ],
-   "stop": "dairy"
+   "stop": "dairy",
+   "more": "A split-log playhouse with kitchen, scullery and sitting room, built near the house. Historic England says it was for the Earl's children, who were grown by 1856, so grandchildren would fit better; no source settles it. The name echoes Marie Antoinette's Petit Trianon at Versailles."
   },
   {
    "year": 1876,
    "label": "Chinese Bridge rebuilt in brick",
    "src": [
-    7
+    7,
+    10,
+    20
    ],
-   "stop": "chinese"
+   "stop": "chinese",
+   "more": "Anne Florence, Countess Cowper, designed a brick bridge with a single elliptical arch, built by estate workmen to replace a timber bridge of the 1760s. Date stones carry her monogram. The temple was rebuilt or remodelled for her the same year."
   },
   {
    "year": 1905,
    "label": "US Ambassador Whitelaw Reid rents Wrest",
    "src": [
+    "beds-20c",
     9
-   ]
+   ],
+   "more": "When Earl Cowper died in July 1905, Wrest passed to his nephew Lord Lucas, who let it that year to the new American ambassador Whitelaw Reid at £1,500 a year. Reid stayed about eight years and improved the house."
   },
   {
    "year": 1909,
    "label": "King Edward VII visits",
    "src": [
-    9
-   ]
+    "beds-edward7",
+    "beds-20c"
+   ],
+   "more": "The King spent the weekend of 24–25 July 1909 at Wrest as Reid's guest, the first visit by a sovereign according to the Bedfordshire Times. Crowds lined Silsoe's streets, and he went to church there and saw Flitton church and mausoleum."
   },
   {
    "year": 1914,
    "label": "Hospital opens, 7 September",
    "src": [
-    1,
-    12
+    12,
+    "eh-nurse-news",
+    1
    ],
-   "stop": "staircase"
+   "stop": "staircase",
+   "more": "Lord Lucas offered Wrest as a hospital in August 1914 and it was ready for its first patients on 7 September. It began as a convalescent home and became a base hospital in November. His sister Nan ran it; she became matron in February 1915."
   },
   {
    "year": 1916,
    "label": "Fire, 14 September; hospital closes",
    "src": [
-    12
+    12,
+    "tommy-fire",
+    "eh-nurses"
    ],
-   "stop": "staircase"
+   "stop": "staircase",
+   "more": "Fire badly damaged the mansion; a local account puts it in the east wing. All 156 patients were got out safely, some in their beds, and about 50 went to Woburn Abbey hospital and Ampthill Camp. The damage made reopening impractical. About 1,600 men had passed through."
   },
   {
    "year": 1917,
    "label": "Estate sold",
    "src": [
-    1
-   ]
+    "beds-20c",
+    "wikishire-silsoe",
+    "eh-lost-found"
+   ],
+   "more": "After Lord Lucas was killed in November 1916 and the fire, his sister Nan sold up. An auction was advertised for July, but the house was sold privately to John George Murray, a brewery and coal company chairman. The contents were auctioned over five days from 10 September 1917."
   },
   {
-   "year": 1940,
-   "label": "Sun Insurance offices (Second World War)",
+   "year": 1939,
+   "label": "Sun Insurance buys Wrest for its wartime head office",
    "src": [
-    9
+    9,
+    45,
+    "pg-wrest"
    ],
-   "stop": "science"
+   "stop": "science",
+   "more": "Sun Insurance bought Wrest in 1939 and moved its head office staff here from Threadneedle Street in London. Archive photographs of about 1939–1940 show them living on site; the company built 12 huts and converted the stables for about 300 people."
   },
   {
    "year": 1948,
    "label": "Agricultural engineering institute moves in",
    "src": [
-    16
+    16,
+    1,
+    47
    ],
-   "stop": "science"
+   "stop": "science",
+   "more": "The National Institute of Agricultural Engineering, 150 strong in 1947 and in temporary quarters near York since 1942, moved to Wrest between June 1947 and July 1948. The state had bought the house and leased it to the institute; sources give 1946 or 1949 for the purchase."
   },
   {
    "year": 1996,
    "label": "Camera-guided robot hoe demonstrated",
    "src": [
-    17
+    17,
+    42,
+    43
    ],
-   "stop": "science"
+   "stop": "science",
+   "more": "Silsoe Research Institute showed a small driverless tool-carrier that steered by computer analysis of a camera image, hoeing within 2 centimetres of crop plants and spot-spraying weeds. The camera guidance later went into commercial tractor hoes, first sold in 2001."
   },
   {
    "year": 2006,
    "label": "Institute closes; English Heritage takes over",
    "src": [
     1,
-    16
-   ]
+    16,
+    "beds-20c"
+   ],
+   "more": "Silsoe Research Institute closed at the end of March 2006 after the BBSRC withdrew its funding. English Heritage took over the house and began a 20-year plan to restore the gardens to their pre-1917 state."
   },
   {
    "year": 2011,
    "label": "Restored gardens reopen, 4 August",
    "src": [
-    9
-   ]
+    9,
+    "pg-wrest"
+   ],
+   "more": "The restored gardens reopened on 4 August 2011, with a new visitor centre. Funding included over £1 million from the Heritage Lottery Fund and a pledge of up to £400,000 from the Wolfson Foundation. About three miles of woodland paths were reinstated."
+  },
+  {
+   "year": 2012,
+   "label": "French Parterre restored to the Earl's design",
+   "more": "After a full excavation found the original beds and gravel, English Heritage restored the parterre to Earl de Grey's 1830s design. It had been simplified in the early 1900s to make it easier to maintain.",
+   "src": [
+    "eh-revitalising",
+    "hlfrevival"
+   ],
+   "stop": "parterre"
   },
   {
    "year": 2014,
    "label": "Archaeological collections store opens",
    "src": [
     9
-   ]
+   ],
+   "more": "English Heritage opened a £2 million purpose-built store at Wrest in 2014, with guided tours. It holds over 150,000 objects from sites including Kirby Hall, Audley End and Hill Hall, and about a third of the charity's architectural salvage."
+  },
+  {
+   "year": 2021,
+   "label": "Restoration of the parterre's Cheere statues begins",
+   "more": "Conservators steamed off peeling paint from Venus and Adonis and Aeneas and Anchises, each over 3 metres tall, and repainted them to look like marble. It was the first phase of a wider statue project.",
+   "src": [
+    "ehstatues"
+   ],
+   "stop": "parterre"
   }
  ],
  "waypoints": [
@@ -3973,7 +4103,7 @@
     },
     {
      "id": 5,
-     "t": "1750s–70s: his granddaughter Jemima softens the edges with Capability Brown and adds follies: a Chinese temple, a bath house and a ‘Persian’ altar.",
+     "t": "1750s–1770s: his granddaughter Jemima softens the edges with Capability Brown and adds follies: a Chinese temple, a bath house and a ‘Persian’ altar.",
      "imp": 4,
      "tags": {
       "gardens": 1,
@@ -3998,15 +4128,15 @@
     },
     {
      "id": 7,
-     "t": "1914–16: the house is a military hospital until a fire. In 1917 the estate is sold, and many statues and old trees are stripped out.",
+     "t": "1914–1916: the house is a military hospital until fire damages it. Sold in 1917, it later loses many statues and old trees, mostly in the 1920s and 1930s under the next owner, John George Murray.",
      "imp": 3,
      "tags": {
       "history": 1
      },
      "src": [
-      1,
       12,
-      9
+      "beds-20c",
+      "eh-lost-found"
      ]
     },
     {
@@ -4041,60 +4171,88 @@
    "date": 1839,
    "era": "earl",
    "dwell": 60,
-   "look": "Formal beds in quarters beside the conservatory, with a statue of Ceres at the north end.",
+   "look": "Four quarters of stone-edged beds with Ceres at the far end, and the glass of the conservatory behind you.",
    "bullets": [
     {
      "id": 1,
-     "t": "Laid out around 1839 for Earl de Grey, right beside the conservatory of his new house.",
+     "t": "Laid out about 1839 for Earl de Grey, on the west side of the house. Look through the conservatory and you see it as his family did.",
      "imp": 4,
      "tags": {
       "gardens": 1,
-      "history": 0.3
+      "history": 0.3,
+      "views": 0.4
      },
      "src": [
-      27
+      27,
+      "hlfrevival"
      ]
     },
     {
      "id": 2,
-     "t": "Geometric stone-edged beds in quarters: ‘Italian’ here means formal, symmetrical bedding.",
+     "t": "Gravel paths cut it into four quarters of stone-edged geometric beds around a round centre. ‘Italian’ here means formal and symmetrical: bold geometry rather than particular plants.",
      "imp": 3,
      "tags": {
       "gardens": 1
      },
      "src": [
-      27
+      27,
+      "ehtreasures"
      ]
     },
     {
      "id": 3,
-     "t": "The statue at the north end is Ceres, Roman goddess of the harvest and the earth's abundance.",
-     "imp": 2,
+     "t": "At the north end stands Ceres, Roman goddess of the harvest, holding flowers with one hand on an overflowing cornucopia. The listing says she was probably brought here in 1839.",
+     "imp": 3,
      "tags": {
-      "art": 1
+      "art": 1,
+      "history": 0.2
      },
      "src": [
       27
-     ]
+     ],
+     "photo": "ceres-statue"
     },
     {
      "id": 4,
-     "t": "Trained wisterias flower here in early summer.",
-     "imp": 1,
+     "t": "Four statue groups once stood in the quarters and vases flanked the entrances. The groups have gone, and the vases were replaced with plainer ones.",
+     "imp": 2,
      "tags": {
-      "views": 0.8,
-      "gardens": 0.5
+      "art": 0.8,
+      "history": 0.4
      },
      "src": [
-      33
-     ]
+      27
+     ],
+     "needs": 3
+    },
+    {
+     "id": 5,
+     "t": "English Heritage restored the beds in 2011, re-laying broken stone edging and replacing low-maintenance foliage with seasonal tulips, wallflowers, dahlias and pelargoniums. One Heritage Fund page dates the layout to 1882, not 1839.",
+     "imp": 2,
+     "tags": {
+      "gardens": 1,
+      "history": 0.3
+     },
+     "src": [
+      "hlfrevival",
+      "eh-revitalising"
+     ],
+     "verify": true
     }
    ],
    "kids": [
-    "Find the statue of the harvest lady."
+    {
+     "t": "Find the lady with the overflowing basket of fruit and flowers!",
+     "photo": "ceres-statue"
+    },
+    {
+     "t": "Find the round flower bed in the very middle of the garden.",
+     "photo": "italian-garden-beds"
+    }
    ],
    "wow": 3,
-   "short": "Italian Garden"
+   "short": "Italian Garden",
+   "photo": "italian-garden-beds"
   },
   {
    "id": "terrace",
@@ -4245,12 +4403,12 @@
    "date": 1839,
    "era": "earl",
    "dwell": 60,
-   "look": "Look up at the glass roof and its iron trusses.",
+   "look": "Look up at the glass roof and its iron trusses, then through the glass to the Italian Garden.",
    "note": "Visitor entrance and lift are at this end of the house. Pushchairs stay outside.",
    "bullets": [
     {
      "id": 1,
-     "t": "The glazed roof sits on ornate cast-iron trusses: 1830s iron-and-glass building, more than a decade before the Crystal Palace (1851).",
+     "t": "The glazed roof sits on ornate cast-iron trusses, built with the house in the 1830s: iron-and-glass building more than a decade before the Crystal Palace of 1851.",
      "imp": 4,
      "tags": {
       "engineering": 1,
@@ -4259,11 +4417,12 @@
      "src": [
       3,
       "gk"
-     ]
+     ],
+     "verify": true
     },
     {
      "id": 2,
-     "t": "Cast iron is strong in compression but brittle in tension. Triangulated trusses spread the load so slim members can carry a wide glass roof.",
+     "t": "Cast iron is strong when squeezed but brittle when stretched. Triangulated trusses keep most of the load in compression, so slim members can carry a wide glass roof.",
      "imp": 3,
      "tags": {
       "engineering": 1,
@@ -4276,7 +4435,7 @@
     },
     {
      "id": 3,
-     "t": "It opens straight off the Countess's sitting room, so the family could step from the house into the warmth and greenery.",
+     "t": "It opens straight off the Countess's sitting room at the west end of the house, so the family could step from the house into a glass-roofed room of plants.",
      "imp": 2,
      "tags": {
       "architecture": 0.6,
@@ -4285,9 +4444,52 @@
      "src": [
       3
      ]
+    },
+    {
+     "id": 4,
+     "t": "Look through the glass to the Italian Garden and walled garden beyond, just as Henrietta, Countess de Grey did when the house was new in the 1830s.",
+     "imp": 3,
+     "tags": {
+      "views": 0.8,
+      "gardens": 0.5,
+      "people": 0.4
+     },
+     "src": [
+      "hlfrevival"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Glasshouses were the cutting edge then: Joseph Paxton's Great Conservatory at Chatsworth went up in 1836–1840, and glass was still taxed by weight until 1845.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.6
+     },
+     "src": [
+      "gk"
+     ],
+     "needs": 1,
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "English Heritage fully repaired the conservatory and replanted it as part of the 2011 restoration.",
+     "imp": 1,
+     "tags": {
+      "gardens": 0.4,
+      "engineering": 0.3
+     },
+     "src": [
+      "eh-revitalising"
+     ]
     }
    ],
    "kids": [
+    {
+     "t": "Find the big spiky palm growing indoors.",
+     "photo": "conservatory-palms"
+    },
     "Look up! Can you see the sky through the glass roof?"
    ],
    "wow": 3,
@@ -4477,6 +4679,21 @@
      "src": [
       9
      ]
+    },
+    {
+     "id": 9,
+     "t": "The fire of 14 September 1916 is said to have started in the east wing. About 50 patients were moved to Woburn Abbey hospital and army huts at Ampthill, and no-one was hurt.",
+     "imp": 3,
+     "tags": {
+      "history": 1,
+      "people": 0.5
+     },
+     "src": [
+      "tommy-fire",
+      12
+     ],
+     "needs": 4,
+     "verify": true
     }
    ],
    "kids": [
@@ -4753,11 +4970,11 @@
    "dateLabel": "1830s & 1856",
    "era": "earl",
    "dwell": 150,
-   "look": "The ornamental dairy (now a sculpture gallery) and the little log playhouse nearby.",
+   "look": "The little log playhouse in the trees, and the dairy with its verandah and cupola beside the service range.",
    "bullets": [
     {
      "id": 1,
-     "t": "Le Petit Trianon (1856): a split-log playhouse built for Earl de Grey's children, with a kitchen, scullery and sitting room.",
+     "t": "Le Petit Trianon, built in 1856, is a playhouse of split logs on a timber frame. Inside are three rooms: a kitchen, scullery and sitting room.",
      "imp": 4,
      "tags": {
       "people": 1,
@@ -4765,11 +4982,26 @@
      },
      "src": [
       25
-     ]
+     ],
+     "photo": "petit-trianon-log-house"
     },
     {
      "id": 2,
-     "t": "It's named after the Petit Trianon at Versailles, which Louis XVI gave in 1774 to his Habsburg queen, Marie Antoinette.",
+     "t": "Historic England says it was built for the Earl's children, but his daughters were grown by 1856, so grandchildren would fit better. No source settles it.",
+     "imp": 3,
+     "tags": {
+      "people": 0.8
+     },
+     "src": [
+      25,
+      "lst1158506"
+     ],
+     "needs": 1,
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "It is named after the Petit Trianon at Versailles, which Louis XVI gave in 1774 to his Habsburg queen, Marie Antoinette, daughter of Empress Maria Theresa.",
      "imp": 4,
      "tags": {
       "habsburg": 1,
@@ -4778,11 +5010,12 @@
      "src": [
       "gk"
      ],
-     "needs": 1
+     "needs": 1,
+     "verify": true
     },
     {
-     "id": 3,
-     "t": "Marie Antoinette, daughter of Empress Maria Theresa, built a make-believe rustic hamlet there. A log playhouse is a nod to that taste.",
+     "id": 4,
+     "t": "At Versailles she later had a make-believe rustic hamlet built, about 1783–1786. No source says Wrest's log house copies it: the name is the only link.",
      "imp": 3,
      "tags": {
       "habsburg": 1,
@@ -4791,28 +5024,57 @@
      "src": [
       "gk"
      ],
-     "needs": 2,
+     "needs": 3,
      "verify": true
     },
     {
-     "id": 4,
-     "t": "The ornamental dairy, part of the Earl's 1830s service wing, still has its verandah, stained glass and cupola. It now shelters restored garden statues.",
+     "id": 5,
+     "t": "The French taste came early: his Silsoe entrance lodges of about 1826 were his first Louis XV-style buildings, years before the house itself.",
+     "imp": 2,
+     "tags": {
+      "architecture": 0.7,
+      "history": 0.5
+     },
+     "src": [
+      10,
+      1
+     ]
+    },
+    {
+     "id": 6,
+     "t": "The ornamental dairy beside the service range has a verandah, stained glass and a cupola. It is much altered: its fittings are gone and a 1982 extension cut through its north wall.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.6,
+      "art": 0.3
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Once the source of the family's butter and cream, it now shelters garden statues too fragile to stay outside, including a Portland stone Neptune and a bronze sundial dated 1682.",
      "imp": 3,
      "tags": {
       "art": 0.8,
-      "architecture": 0.5
+      "history": 0.4
      },
      "src": [
-      3,
-      15
+      "ehtreasures"
      ]
     }
    ],
    "kids": [
-    "Find the little wooden house made of logs."
+    {
+     "t": "Find the little wooden house made of logs.",
+     "photo": "petit-trianon-log-house"
+    },
+    "Find the little tower with a pointed roof on top of the dairy."
    ],
    "wow": 2,
-   "short": "Dairy & Trianon"
+   "short": "Dairy & Trianon",
+   "photo": "petit-trianon-log-house"
   },
   {
    "id": "science",
@@ -4827,24 +5089,56 @@
    "dateLabel": "1917–2006",
    "era": "science",
    "dwell": 30,
-   "look": "Look north-east towards the modern buildings: the former research campus.",
+   "look": "Look north-east across the lawn to the modern buildings beyond the old stable block: the former research campus where the institute worked.",
    "bullets": [
     {
      "id": 1,
-     "t": "From 1948 to 2006 this side of the estate was the National Institute of Agricultural Engineering, later the Silsoe Research Institute.",
+     "t": "From 1948 until 2006 this side of the estate was home to the National Institute of Agricultural Engineering, renamed Silsoe Research Institute in 1991. It began in Oxford in 1924.",
      "imp": 5,
      "tags": {
       "engineering": 1,
-      "history": 0.6
+      "history": 0.5
      },
      "src": [
       16,
-      1
+      1,
+      40
      ]
     },
     {
+     "id": 6,
+     "t": "Before that, Sun Insurance bought Wrest in 1939 as a wartime head office. It moved staff out of Threadneedle Street in London, building 12 huts and converting the stables for about 300 people.",
+     "imp": 3,
+     "tags": {
+      "history": 1,
+      "people": 0.4
+     },
+     "src": [
+      9,
+      45,
+      "pg-wrest"
+     ],
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "After the war the state bought the house and gardens and leased them to the institute, which had worked from temporary quarters near York since 1942. Sources give 1946 or 1949 for the purchase.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.3
+     },
+     "src": [
+      2,
+      40,
+      47,
+      54
+     ],
+     "verify": true
+    },
+    {
      "id": 2,
-     "t": "1950s: Silsoe took over and developed Reading University's driverless tractor. It followed an electric current in a wire buried below ploughing depth, and coded signals along the wire told it to lift its implement, run its power take-off, or stop.",
+     "t": "Mid-1950s: Reading University began a driverless tractor that followed a current in a wire buried below ploughing depth. Coded signals could lift the implement or stop it. Silsoe later took the project over.",
      "imp": 5,
      "tags": {
       "computing": 1,
@@ -4857,58 +5151,86 @@
     },
     {
      "id": 3,
-     "t": "Early 1990s: a small robot tool-carrier steered by computer analysis of a camera image, hoeing within 2 cm of crop plants and spot-spraying individual weeds. It was demonstrated in 1996.",
+     "t": "Early 1990s: a small tool-carrier steered itself by computer analysis of a camera image, hoeing within 2 centimetres of crop plants and spot-spraying weeds. It was demonstrated in 1996.",
      "imp": 5,
      "tags": {
       "computing": 1,
       "engineering": 0.8
      },
      "src": [
-      17
+      17,
+      42
      ]
     },
     {
      "id": 4,
-     "t": "That vision-guided weeding work carried on commercially after the institute closed, and camera-guided hoes are now common on farms.",
+     "t": "The same camera guidance went on a tractor hoe. Garford sold its first Robocrop hoe in 2001, and two Silsoe scientists set up their own company once closure was announced.",
      "imp": 3,
      "tags": {
       "computing": 1,
       "engineering": 0.5
      },
-     "src": [
-      36
-     ],
      "needs": 3,
+     "src": [
+      43,
+      44,
+      56
+     ],
      "verify": true
     },
     {
      "id": 5,
-     "t": "The institute also ran national tractor testing for decades, through to OECD-standard tests.",
-     "imp": 2,
-     "tags": {
-      "engineering": 1
-     },
-     "src": [
-      16
-     ]
-    },
-    {
-     "id": 6,
-     "t": "Before that: after the 1917 sale, statues were sold and old trees felled. In the Second World War, Sun Insurance moved staff here from its Threadneedle Street offices, putting 300 people in 12 huts and the converted stables.",
+     "t": "The institute tested farm machines for decades, from tractors and grain dryers to potato harvesters. From 1963 its test reports include the safety cabs and frames that later became compulsory on tractors.",
      "imp": 3,
      "tags": {
-      "history": 1,
-      "people": 0.4
+      "engineering": 1,
+      "physics": 0.3
      },
      "src": [
-      9,
-      2
+      40,
+      48
+     ],
+     "verify": true
+    },
+    {
+     "id": 8,
+     "t": "Other Silsoe work included crop drying, how spray drifts off a sprayer boom, and a six-metre cube standing in open country to measure real wind pressure on a building.",
+     "imp": 2,
+     "tags": {
+      "physics": 1,
+      "engineering": 0.8
+     },
+     "src": [
+      40,
+      52,
+      53
+     ],
+     "verify": true
+    },
+    {
+     "id": 9,
+     "t": "In 2004 its main funder, the BBSRC, withdrew support. The institute ceased work at the end of March 2006 and English Heritage took over the house, then began restoring the gardens.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8
+     },
+     "src": [
+      40,
+      41,
+      1
      ]
     }
    ],
-   "kids": [],
+   "kids": [
+    {
+     "t": "Look north-east across the lawn and point to the big modern buildings where scientists once built robot tractors.",
+     "photo": "silsoe-institute-view"
+    }
+   ],
    "wow": 1,
-   "short": "Science years"
+   "short": "Science years",
+   "note": "A viewpoint on the lawn, no steps. The research campus is seen from here, not entered; check on the day what is open.",
+   "photo": "silsoe-institute-view"
   },
   {
    "id": "parterre",
@@ -4922,23 +5244,25 @@
    "dateLabel": "1830s",
    "era": "earl",
    "dwell": 60,
-   "look": "Low patterned beds below the terrace, with four statue groups and a mermaid basin on the west side.",
+   "look": "Low patterned beds below the terrace, two statue groups each side of the central walk, the Mermaid Basin on the west side and the Archer Pavilion far away on the axis.",
    "bullets": [
     {
      "id": 1,
-     "t": "Laid out by Earl de Grey in the 1830s to match his French house, filling the ground between the new house and the older gardens.",
+     "t": "Laid out in the 1830s for Earl de Grey in the French style, between his new house and the older gardens, to match his French-style mansion.",
      "imp": 4,
      "tags": {
       "gardens": 1,
-      "history": 0.3
+      "history": 0.3,
+      "architecture": 0.3
      },
      "src": [
-      3
+      1,
+      "pg-wrest"
      ]
     },
     {
      "id": 2,
-     "t": "A parterre is designed to be read as a pattern from the windows above, so look back up at the house.",
+     "t": "A parterre is designed to be read as a pattern from above, so look back up at the house windows and terrace.",
      "imp": 3,
      "tags": {
       "gardens": 1,
@@ -4950,45 +5274,112 @@
     },
     {
      "id": 3,
-     "t": "Four 18th-century lead groups by John Cheere: Aeneas and Anchises, the Abduction of Helen, Venus and Adonis, and Meleager and Atalanta. They were restored from 2021.",
-     "imp": 2,
+     "t": "The pattern was lost in the early 1900s, when it was simplified. A full excavation found the original beds and gravel, and English Heritage restored them in 2012.",
+     "imp": 3,
      "tags": {
-      "art": 1
+      "gardens": 0.8,
+      "engineering": 0.3,
+      "history": 0.5
      },
      "src": [
-      9
+      "eh-revitalising",
+      "hlfrevival"
      ]
     },
     {
      "id": 4,
-     "t": "Aeneas carries his father out of burning Troy: the legend Romans used for their own founding.",
-     "imp": 1,
+     "t": "Four lead groups, attributed to John Cheere and dated about 1730, flank the walk: Venus and Adonis, Meleager and Atalanta, Aeneas and Anchises, and the Abduction of Helen.",
+     "imp": 3,
+     "tags": {
+      "art": 1
+     },
+     "src": [
+      "lst1113789"
+     ],
+     "photo": "venus-adonis-group"
+    },
+    {
+     "id": 5,
+     "t": "Some guides call the Meleager group ‘Diana and Endymion’. Historic England says that was a mistake: look for the boar's head under the dog's paw.",
+     "imp": 2,
+     "tags": {
+      "art": 0.8
+     },
+     "src": [
+      "lst1113789",
+      38
+     ],
+     "needs": 4,
+     "photo": "meleager-atalanta-group"
+    },
+    {
+     "id": 6,
+     "t": "Aeneas carries his old father Anchises out of burning Troy, his small son beside him: the legend Romans used for their own founding.",
+     "imp": 2,
      "tags": {
       "art": 0.6,
       "history": 0.6
      },
      "src": [
+      "lst1113789",
       "gk"
      ],
-     "needs": 3
+     "needs": 4,
+     "photo": "aeneas-anchises-group"
     },
     {
-     "id": 5,
-     "t": "The Mermaid Basin on the west side has four seated mermaids, from the mid-1800s.",
-     "imp": 1,
+     "id": 7,
+     "t": "Cheere's lead is painted white to pass for marble from a distance. In 2021 conservators steamed off peeling paint from two groups, over 3 metres tall, and repainted them.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "engineering": 0.5
+     },
+     "src": [
+      "ehstatues"
+     ],
+     "needs": 4
+    },
+    {
+     "id": 8,
+     "t": "The groups were not made for Wrest. The listing thinks they came from Cheere's stock, sold off in the late 1700s, and a view of 1839 already shows them here.",
+     "imp": 2,
+     "tags": {
+      "art": 0.6,
+      "history": 0.5
+     },
+     "src": [
+      "lst1113789"
+     ],
+     "needs": 4
+    },
+    {
+     "id": 9,
+     "t": "On the west side, the Mermaid Basin has four seated marble mermaids. Historic England thinks it was added between 1880 and 1904; Bedfordshire Archives says mid-1800s.",
+     "imp": 2,
      "tags": {
       "art": 1
      },
      "src": [
+      "lst1158506",
       11
-     ]
+     ],
+     "photo": "mermaid-basin-statue"
     }
    ],
    "kids": [
-    "Find the mermaids!"
+    {
+     "t": "Find the mermaids!",
+     "photo": "mermaid-basin-statue"
+    },
+    {
+     "t": "Find the statue with a little angel and a dog.",
+     "photo": "venus-adonis-group"
+    }
    ],
    "wow": 3,
-   "short": "Parterre"
+   "short": "Parterre",
+   "photo": "parterre-axis-view"
   },
   {
    "id": "oldhouse",
@@ -5002,11 +5393,11 @@
    "dateLabel": "1280s–1834",
    "era": "medieval",
    "dwell": 60,
-   "look": "The circular pond and fountain about 200 m south of the house, roughly where the old house stood. Turn round for the view back up the garden to the house.",
+   "look": "The round pond with its marble fountain, about 200 m south of the present house and close to where the old house stood. Four seated women round the shaft hold a net, a dolphin, a goose and an oar. Turn round for the view back up the garden to the house.",
    "bullets": [
     {
      "id": 1,
-     "t": "Roughly here stood the old house: a rambling building that had grown piecemeal since the Middle Ages, demolished from 1834.",
+     "t": "Roughly here stood the old house: a rambling building that had grown piecemeal since the Middle Ages. Earl de Grey began pulling it down in 1834 and built the present house 200 metres north.",
      "imp": 5,
      "tags": {
       "history": 1,
@@ -5014,47 +5405,85 @@
      },
      "src": [
       3,
-      1
+      1,
+      "he-rr-6-2013"
      ]
     },
     {
      "id": 2,
-     "t": "Reginald de Grey held land here in the 1280s. Records made at his death list a ‘capital messuage with a dovecote’, probably the start of the house.",
+     "t": "The first record is from the 1280s. When Reginald de Grey died in 1307–1308, papers listed a ‘capital messuage with a dovecote’ at Silsoe: a manor house and its outbuildings. By 1512 it was moated.",
      "imp": 3,
      "tags": {
       "history": 1
      },
      "src": [
-      9
+      "beds-pre-17c",
+      "he-rr-6-2013"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "In spring 1639 the poet Thomas Carew stayed here and wrote ‘To my friend G.N. from Wrest’. He praises the plain house, the warm welcome and streams that ‘twice surround this island Mansion’.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "people": 0.8,
+      "gardens": 0.4
+     },
+     "src": [
+      "he-rr-6-2013"
      ]
     },
     {
      "id": 3,
-     "t": "In 1671 Earl Anthony and Countess Mary gave the old house a classical north front ‘to disguise its irregularities’.",
-     "imp": 2,
+     "t": "Anthony, 11th Earl, and his wife Mary gave the house a classical north front ‘to disguise its irregularities’. The listing says 1671; others say 1672 to 1676. Mary’s inheritance paid for much of it.",
+     "imp": 3,
      "tags": {
-      "architecture": 1
+      "architecture": 1,
+      "history": 0.4
      },
+     "needs": 1,
      "src": [
-      3
+      3,
+      "beds-17c",
+      "hop-anthony-grey",
+      "he-rr-6-2013"
      ]
     },
     {
      "id": 4,
-     "t": "Two survivors: a c.1600 fireplace, now in the Orangery, and the clock tower, moved to the new house's service yard.",
+     "t": "Two survivors: a chimneypiece of about 1570 to 1600, now in the Orangery, with the arms of Edmund Grey and the motto ‘Foy est tout’; and the clock tower, moved to the new service yard.",
      "imp": 3,
      "tags": {
       "history": 0.8,
-      "engineering": 0.3
+      "architecture": 0.3
      },
+     "needs": 1,
      "src": [
       3,
-      8
+      8,
+      10,
+      "he-rr-6-2013"
+     ]
+    },
+    {
+     "id": 10,
+     "t": "The old house came down slowly, while the new one rose: watercolours show parts still standing in 1838. Its walls lie just under the turf and show as brown parchmarks in dry summers.",
+     "imp": 3,
+     "tags": {
+      "history": 0.6,
+      "engineering": 0.4
+     },
+     "needs": 1,
+     "src": [
+      "he-rr-6-2013",
+      "dawson-archaeology",
+      10
      ]
     },
     {
      "id": 5,
-     "t": "The fountain was fed from cisterns at the top of the house. Gravity alone gave the pressure: every 10 m of height adds about 1 bar.",
+     "t": "The fountain was fed from cisterns at the top of the house. Gravity alone gave the pressure: every 10 metres of height adds about 1 bar.",
      "imp": 4,
      "tags": {
       "physics": 1,
@@ -5066,35 +5495,42 @@
      ]
     },
     {
-     "id": 6,
-     "t": "The service yard had a horse-driven pump at a well, and a fire-engine house for a horse-drawn fire engine.",
+     "id": 11,
+     "t": "The fountain is younger than it looks. Its listing says it was acquired by Anne Florence, Countess Cowper, after 1859; Bedfordshire Archives says about 1840. The eight marble statues round it stand on older pedestals.",
      "imp": 3,
+     "tags": {
+      "history": 0.5,
+      "art": 0.6
+     },
+     "src": [
+      29,
+      11,
+      "he-rr-6-2013"
+     ]
+    },
+    {
+     "id": 6,
+     "t": "In the new house’s service yard are a horse-driven pump house beside a well, and a fire-engine house for a horse-drawn engine, both built in 1834–1839.",
+     "imp": 2,
      "tags": {
       "engineering": 1
      },
+     "needs": 5,
      "src": [
       30
-     ],
-     "needs": 5,
-     "verify": true
-    },
-    {
-     "id": 7,
-     "t": "Four figures sit round the fountain bowl: one holds an oar, one a dolphin, one a bird.",
-     "imp": 1,
-     "tags": {
-      "art": 1
-     },
-     "src": [
-      11
      ]
     }
    ],
    "kids": [
-    "Find the lady holding a dolphin."
+    {
+     "t": "Find the stone lady leaning on an oar, sitting under the big bowl!",
+     "photo": "fountain-ladies"
+    }
    ],
    "wow": 2,
-   "short": "Old house site"
+   "short": "Old house site",
+   "note": "On lawn and gravel, no steps at the pond itself; the way down from the house crosses the parterre steps (a step-free route is marked on the leaflet). Nothing of the old house shows above ground; its walls lie just under the turf and show as brown parchmarks in dry summers. The fountain is not always running.",
+   "photo": "round-pond-fountain"
   },
   {
    "id": "orangery",
@@ -5107,12 +5543,12 @@
    "date": 1835,
    "era": "earl",
    "dwell": 120,
-   "look": "The long glass-roofed building on its terrace, west of the parterre.",
-   "note": "Steps or a steep slope up to the Orangery.",
+   "look": "The long glass-roofed building on its terrace, west of the parterre. Look for the two domes and the four little statues on the steps.",
+   "note": "Steps or a steep slope up to the Orangery; Historic England's survey also shows a ramped path round the north side (not checked on site).",
    "bullets": [
     {
      "id": 1,
-     "t": "Built about 1835 by Earl de Grey on the site of a Batty Langley greenhouse, from a French design in Blondel. A French-style orangery was unique in England.",
+     "t": "Built about 1835 by Earl de Grey on the site of a Batty Langley greenhouse, from a French design in Blondel. Historic England calls a French-style orangery unique in England.",
      "imp": 4,
      "tags": {
       "architecture": 1,
@@ -5124,19 +5560,21 @@
     },
     {
      "id": 2,
-     "t": "The main roof is glass on a shallow cast-iron frame, to get as much winter light as possible on to the citrus trees.",
+     "t": "The main roof is glass on a shallow cast-iron frame. Iron is strong enough for slim glazing bars, so more winter light reaches the citrus trees than a timber frame would allow.",
      "imp": 4,
      "tags": {
       "engineering": 1,
       "physics": 0.6
      },
      "src": [
-      8
-     ]
+      8,
+      "gk"
+     ],
+     "verify": true
     },
     {
      "id": 3,
-     "t": "Heating grilles were set in the floor, with water tanks in the vaulted undercroft and a pump (still there) to raise the water.",
+     "t": "Below is a vaulted undercroft of thirteen bays. The floor above once had heating grilles, now tiled over, and a cast-iron pump near the north wall once lifted water from tanks below.",
      "imp": 4,
      "tags": {
       "engineering": 1,
@@ -5147,8 +5585,22 @@
      ]
     },
     {
+     "id": 9,
+     "t": "Rainwater from the roof was stored in those tanks. A hydraulic ram pump from the garden's water system, once used to feed the house's roof tanks, is now kept in the undercroft.",
+     "imp": 3,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.3
+     },
+     "src": [
+      "albion-weir-2007"
+     ],
+     "needs": 3,
+     "verify": true
+    },
+    {
      "id": 4,
-     "t": "The orange trees were bought from King Louis-Philippe of France. By 1900 they were among the largest in England.",
+     "t": "The orange trees were bought from King Louis-Philippe of France. In summer they stood in tubs on the terraced parterre below, and by 1900 they were among the largest in England.",
      "imp": 3,
      "tags": {
       "history": 0.8,
@@ -5160,7 +5612,7 @@
     },
     {
      "id": 5,
-     "t": "Louis-Philippe's queen, Maria Amalia, was the daughter of a Habsburg archduchess, which made her Marie Antoinette's niece.",
+     "t": "Louis-Philippe's queen, Maria Amalia, was the daughter of the Habsburg archduchess Maria Carolina, sister of Marie Antoinette. That made Marie Antoinette her aunt.",
      "imp": 3,
      "tags": {
       "habsburg": 1
@@ -5173,7 +5625,7 @@
     },
     {
      "id": 6,
-     "t": "The front doors were too small for the grown trees, so the designers hid a full-height door in the north end, rendered to look like wall.",
+     "t": "The front doors were too low for the grown trees, so the north end has a full-height double door of render over timber, disguised as plain wall.",
      "imp": 4,
      "tags": {
       "engineering": 0.8,
@@ -5185,7 +5637,7 @@
     },
     {
      "id": 7,
-     "t": "Inside: a c.1600 stone fireplace with the de Grey arms, rescued from the old house.",
+     "t": "Inside is a big stone fireplace with the de Grey arms, from the old house. The listing says about 1600; Historic England's 2013 report says about 1570.",
      "imp": 2,
      "tags": {
       "history": 0.8,
@@ -5193,26 +5645,36 @@
      },
      "src": [
       8,
-      10
-     ]
+      "he-rr-6-2013"
+     ],
+     "photo": "orangery-fireplace"
     },
     {
      "id": 8,
-     "t": "On the steps are four early-1700s stone cherubs holding a book, a puppy, a bird's nest and a torch.",
+     "t": "On the steps are four early-1700s stone cherubs, probably by an unknown Flemish sculptor, holding a book, a puppy, a bird's nest and a torch.",
      "imp": 1,
      "tags": {
       "art": 1
      },
      "src": [
       8
-     ]
+     ],
+     "photo": "orangery-cherubs"
     }
    ],
    "kids": [
-    "Find the stone baby holding a puppy."
+    {
+     "t": "Find the stone baby holding a puppy!",
+     "photo": "orangery-cherubs"
+    },
+    {
+     "t": "Find the giant stone fireplace with a big shield on top.",
+     "photo": "orangery-fireplace"
+    }
    ],
    "wow": 3,
-   "short": "Orangery"
+   "short": "Orangery",
+   "photo": "orangery-front"
   },
   {
    "id": "bathhouse",
@@ -5226,85 +5688,136 @@
    "dateLabel": "c.1769–71",
    "era": "jemima",
    "dwell": 150,
-   "look": "The rustic stone building by the pond south of the walled garden. Go inside the domed pool room.",
+   "look": "The rough ironstone building with a thatched cone, west of the Orangery beside the Bath House Water. Climb the Cascade mound next to it for the best view.",
    "bullets": [
     {
      "id": 1,
-     "t": "Built about 1769–71 by Edward Stevens for Jemima, Marchioness Grey: a cold plunge pool dressed up as a romantic ruin.",
+     "t": "Built about 1769–1771 by Edward Stevens for Jemima, Marchioness Grey: a cold plunge bath dressed as a romantic Roman ruin. In 1784 the vicar asked to use it for his health.",
      "imp": 5,
      "tags": {
       "architecture": 0.8,
       "people": 0.6
      },
      "src": [
-      5
+      5,
+      "he-rr-74-2018"
      ]
     },
     {
      "id": 2,
-     "t": "Local ironstone, laid as massive rough blocks outside and neat coursed stone inside. Historic England notes the ‘considerable engineering skill’ needed for the huge rough-hewn blocks.",
+     "t": "Local ironstone, dressed inside but rough-hewn outside. Historic England praises the 'considerable engineering skill' of the huge rough blocks, and thinks the rustic outer skin may have been added after the shell.",
      "imp": 4,
      "tags": {
       "engineering": 1
      },
      "src": [
-      5
+      5,
+      "he-rr-74-2018"
      ]
     },
     {
      "id": 3,
-     "t": "The domed pool room has three ragged holes in its roof, built as a deliberate semi-ruin.",
+     "t": "Two rooms: a circular bath room under a stone dome with three ragged holes, built to look ruined, and an octagonal dressing room with a conical thatched roof.",
      "imp": 4,
      "tags": {
       "engineering": 0.7,
       "architecture": 0.7
      },
      "src": [
-      5
+      5,
+      "he-rr-74-2018"
      ]
     },
     {
-     "id": 4,
-     "t": "Water came through a lead lion's-head spout. The cascade behind has a lead-lined tank, presumably released to pour out under the rough stone arch.",
+     "id": 7,
+     "t": "The bath is a round tank in two stages. Narrow stone steps run down either side of the doorway, though the present ones were rebuilt in the 1960s from slight remains.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.6,
+      "architecture": 0.4
+     },
+     "src": [
+      "he-rr-74-2018"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "A spring fed the bath by pipes, wooden at first, then lead from 1802 because the boggy ground wrecked wood. The spring later ran dry, so a pump now recirculates the water.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.4
+     },
+     "src": [
+      "he-rr-74-2018",
+      "albion-weir-2007"
+     ]
+    },
+    {
+     "id": 9,
+     "t": "The Cascade behind was built over the spring head. The listing describes a lead-lined tank storing water to spill under the rough arch; a 2015 survey found a concrete-lined tank, probably a replacement.",
      "imp": 4,
      "tags": {
       "engineering": 1,
       "physics": 0.6
      },
      "src": [
-      5
+      5,
+      "he-rr-84-2015"
      ]
     },
     {
+     "id": 10,
+     "t": "The lion's-head spout over the bath looks 18th-century, but it dates from the 1960s restoration. What the original inlet looked like is not known.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.5,
+      "history": 0.4
+     },
+     "src": [
+      "he-rr-74-2018",
+      5
+     ],
+     "needs": 7
+    },
+    {
      "id": 5,
-     "t": "The octagonal side room has a thatched roof and a cobbled floor in a radiating pattern of deer bones.",
+     "t": "The octagonal dressing room has a thatched cone roof and a floor of pebbles and deer bones radiating from a central circle. How much is original is uncertain, as it was relaid in the 1960s.",
      "imp": 3,
      "tags": {
       "people": 0.6,
       "interiors": 0.5
      },
      "src": [
-      5
+      5,
+      "he-rr-74-2018"
      ]
     },
     {
-     "id": 6,
-     "t": "Plunge pools were a fashionable health habit in the later 1700s. The fashion faded in the early 1800s as outdoor swimming caught on.",
-     "imp": 2,
+     "id": 11,
+     "t": "The Earl filled the bath in 1834, once hot and cold baths were fitted in the old house. The 1960s restoration dug it out again.",
+     "imp": 3,
      "tags": {
-      "history": 0.8
+      "history": 0.8,
+      "engineering": 0.3
      },
      "src": [
-      5
+      "he-rr-74-2018"
      ]
     }
    ],
    "kids": [
-    "Look up! Can you see the sky through the holes in the roof?"
+    {
+     "t": "Find the little house with a pointy straw hat!",
+     "photo": "bath-house-thatch"
+    },
+    "Look up inside the round room: can you see the sky through the holes in the roof?",
+    "Find the lion's face over the water."
    ],
    "wow": 4,
    "short": "Bath House",
-   "note": "The leaflet marks steps near the Bath House."
+   "note": "The leaflet marks steps near the Bath House. Documented steps: narrow steps down into the bath, three up to the dressing room, and a stepped path beside the Cascade mound (2015 survey). Which one the leaflet means is unconfirmed; check on site before taking a pushchair.",
+   "photo": "bath-house-ruin"
   },
   {
    "id": "bowling",
@@ -5318,73 +5831,144 @@
    "dateLabel": "c.1735",
    "era": "duke",
    "dwell": 75,
-   "look": "The white columned pavilion facing east across the bowling green; its brick back faces Oldpark Water.",
+   "look": "The white columned pavilion facing east across the bowling green; its brick arcade at the back faces Oldpark Water.",
    "note": "Ramp access.",
    "bullets": [
     {
      "id": 1,
-     "t": "A bowling pavilion of about 1735 by Batty Langley for the Duke of Kent. Early-1700s bowling houses rarely survive.",
-     "imp": 4,
+     "t": "A bowling pavilion of about 1735, remodelled by Batty Langley for the Duke of Kent. It is Grade II* listed, partly because early-1700s bowling houses so rarely survive.",
+     "imp": 5,
      "tags": {
       "architecture": 1,
       "history": 0.4
      },
+     "photo": "bowling-front",
+     "src": [
+      6,
+      10
+     ]
+    },
+    {
+     "id": 2,
+     "t": "Bowls ran in the family. Bedfordshire Archives says the Duke's father, Anthony, 11th Earl of Kent, died on a bowling green in Tonbridge, in 1702.",
+     "imp": 3,
+     "tags": {
+      "people": 1
+     },
+     "verify": true,
+     "src": [
+      10,
+      "wiki-anthony"
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Historic England thinks it probably wraps an earlier deer house. English Heritage's plan dates the walls to 1720–1721, with only the six front columns added in 1735.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.8,
+      "engineering": 0.4
+     },
+     "needs": 1,
+     "verify": true,
+     "src": [
+      6,
+      "eh-phased"
+     ]
+    },
+    {
+     "id": 6,
+     "t": "The east front, facing the green, has six painted wooden columns and a smooth white-washed finish. Walk round the back: the west side is an arcade of arches on plain brick piers.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.8,
+      "engineering": 0.3
+     },
+     "needs": 1,
      "src": [
       6
      ]
     },
     {
-     "id": 2,
-     "t": "Bowls mattered to this family: the Duke's own father, Anthony, 11th Earl, died on a bowling green in Tonbridge.",
-     "imp": 3,
+     "id": 7,
+     "t": "Above the columns, the roof balustrade once carried six life-size statues. By 1831 they had been swapped for urns, and those were later replaced by copies.",
+     "imp": 2,
      "tags": {
-      "people": 1
+      "architecture": 0.5,
+      "art": 0.5
      },
+     "needs": 6,
      "src": [
-      10
+      6
      ]
     },
     {
-     "id": 3,
-     "t": "It probably wraps an earlier deer house. Compare the smart rendered front with the plain brick arcade at the back.",
+     "id": 5,
+     "t": "Two lead urns about two metres tall, made about 1720 and probably by John Van Nost the Younger, flank the house. One shows Venus in a sea chariot, the other Bacchus with nymphs and fauns.",
      "imp": 2,
      "tags": {
-      "architecture": 0.8,
-      "engineering": 0.4
+      "art": 1
      },
+     "photo": "bowling-urns",
      "src": [
       6
      ]
     },
     {
      "id": 4,
-     "t": "Langley also wrote pattern books for builders, spreading classical and ‘Gothick’ details across Georgian Britain.",
-     "imp": 2,
+     "t": "Langley wrote pattern books for builders, including Practical Geometry in 1726 and New Principles of Gardening in 1728. Wrest is one of his few known commissions.",
+     "imp": 3,
      "tags": {
       "architecture": 0.8,
-      "engineering": 0.4
+      "engineering": 0.5
      },
      "src": [
-      "gk"
+      "wiki-langley"
      ]
     },
     {
-     "id": 5,
-     "t": "The lead urns (c.1720, probably by John Van Nost the Younger) show Venus in a chariot pulled by dolphins, and Bacchus drawn by leopards.",
-     "imp": 1,
+     "id": 8,
+     "t": "He tried to improve Gothic with classical rules, and Horace Walpole mocked him for it. His books crossed the Atlantic: George Washington used them for Mount Vernon.",
+     "imp": 2,
      "tags": {
-      "art": 1
+      "architecture": 0.6,
+      "history": 0.5
      },
+     "needs": 4,
+     "verify": true,
      "src": [
-      6
+      "wiki-langley"
+     ]
+    },
+    {
+     "id": 9,
+     "t": "Beyond the green is the Leg o' Mutton Lake, named for a bulge on its south side that has since gone. An amphitheatre was added north of the green in 1729.",
+     "imp": 2,
+     "tags": {
+      "gardens": 0.8,
+      "views": 0.6
+     },
+     "photo": "leg-of-mutton-lake",
+     "verify": true,
+     "src": [
+      "he-1402869",
+      "geograph-leg"
      ]
     }
    ],
    "kids": [
-    "Find the big pot with dolphins on it."
+    {
+     "t": "Find the two big grey urns, like giant vases, by the house.",
+     "photo": "bowling-urns"
+    },
+    {
+     "t": "Count the white columns across the front. There are six!",
+     "photo": "bowling-front"
+    }
    ],
    "wow": 3,
-   "short": "Bowling Green Ho."
+   "short": "Bowling Green Ho.",
+   "photo": "bowling-front"
   },
   {
    "id": "oldpark",
@@ -5407,20 +5991,82 @@
    "bullets": [
     {
      "id": 1,
-     "t": "This water is part of the ‘river’ round three sides of the garden: canals dug straight for the Duke of Kent in the early 1700s, given gentler curves by Capability Brown around 1760.",
-     "imp": 4,
+     "t": "This is the western stretch of the ‘river’ round three sides of the garden. The Duke dug canals here between 1702 and 1720, and Capability Brown reshaped them in 1758–1760.",
+     "imp": 5,
      "tags": {
       "engineering": 0.4,
-      "views": 0.8
+      "views": 0.8,
+      "history": 0.3
      },
      "src": [
-      2,
+      "albion-oldpark",
       1
-     ],
-     "verify": true
+     ]
+    },
+    {
+     "id": 2,
+     "t": "The water is held in by clay banks that still have to be ‘puddled’ to stop leaks, and by weirs. Old Park Weir joins this water to the Serpentine to the south.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.3
+     },
+     "needs": 1,
+     "src": [
+      "albion-oldpark"
+     ]
+    },
+    {
+     "id": 3,
+     "t": "The garden's old spring no longer flows, so a pump has circulated the water since 1972. Around 1760 a bank of earth, hidden by planting, held back the higher level.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.5
+     },
+     "needs": 2,
+     "verify": true,
+     "src": [
+      "albion-oldpark"
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Not every curve is Brown's. In 1729 the Duke's works included a serpentine canal, so gentle bends were already being dug before Brown arrived.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.4,
+      "gardens": 0.8
+     },
+     "needs": 1,
+     "verify": true,
+     "src": [
+      "he-1402869"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "West of the water lies the Old Park, the oldest parkland at Wrest, parts probably fourteenth-century. A listed ha-ha about 400 metres long crosses it.",
+     "imp": 2,
+     "tags": {
+      "history": 0.8
+     },
+     "src": [
+      "he-1402869"
+     ]
     }
    ],
-   "kids": []
+   "kids": [
+    {
+     "t": "Spot a goose or a duck on the water.",
+     "photo": "oldpark-geese"
+    },
+    {
+     "t": "Find the tall bulrushes at the water's edge.",
+     "photo": "oldpark-bulrushes"
+    }
+   ],
+   "photo": "oldpark-water"
   },
   {
    "id": "sundial",
@@ -5442,32 +6088,132 @@
    "bullets": [
     {
      "id": 1,
-     "t": "This sundial dates from 1682, the same years as the Long Water, and its listing links it to Henry Wynne, a London maker of instruments.",
+     "t": "The dial plate is dated 1682 and signed by Henry Wynne, a leading London instrument maker. The brass original is now kept indoors, and the plate here is a replica.",
      "imp": 4,
      "tags": {
-      "physics": 0.5,
-      "history": 0.4
+      "physics": 0.6,
+      "history": 0.5
      },
+     "photo": "sundial-gnomon-arms",
      "src": [
-      37
+      37,
+      "bss-s2125",
+      "bss-s5169"
      ],
      "verify": true
     },
     {
      "id": 2,
-     "t": "The six marble statues standing round it are much later: probably made about 1840 for Earl de Grey, who built the present house.",
+     "t": "The six marble statues round it are mid-1800s, not 1682: Hebe, Minerva, three dancing bacchantes and a girl with a bird. Sources differ: about 1840 for Earl de Grey, or after 1859.",
      "imp": 3,
      "tags": {
       "history": 0.4,
-      "art": 0.5
+      "art": 0.6
      },
+     "photo": "sundial-statues-ring",
      "src": [
-      38
+      38,
+      "listing-sundial-statues"
+     ]
+    },
+    {
+     "id": 3,
+     "t": "A sundial works because its blade, the gnomon, points at the Earth’s pole: it is tilted up at Silsoe’s latitude, about 52 degrees. The Earth’s turning then sweeps the shadow round at an even rate.",
+     "imp": 4,
+     "tags": {
+      "physics": 1,
+      "space": 0.5
+     },
+     "needs": 1,
+     "src": [
+      "gk",
+      "london-dial-wiki"
+     ]
+    },
+    {
+     "id": 4,
+     "t": "A sundial and a watch rarely agree. Silsoe is west of Greenwich, so its noon comes about 1 minute 40 seconds late, and the Sun runs up to 16 minutes fast or 14 slow.",
+     "imp": 4,
+     "tags": {
+      "physics": 1,
+      "space": 0.6
+     },
+     "needs": 3,
+     "src": [
+      "gk"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Wynne’s dial is a showpiece: hour lines to the minute, sixteen places with their latitudes and longitudes, the names and positions of twelve stars, and the age of the Moon.",
+     "imp": 3,
+     "tags": {
+      "space": 0.9,
+      "physics": 0.6,
+      "computing": 0.3
+     },
+     "needs": 1,
+     "src": [
+      "bss-s5169",
+      "bss-s2125"
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "The listing calls Wynne an architect who died in 1709, but he was a London instrument maker. He made a similar dial for Windsor Castle in 1680, with the monogram of Charles II.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6,
+      "people": 0.5
+     },
+     "needs": 1,
+     "src": [
+      37,
+      "bss-s6338",
+      "london-dial-wiki"
+     ],
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "The original blade carried the Grey arms and the motto ‘Foy est tout’, meaning ‘faith is all’. The same motto is carved on the old house’s chimneypiece, now in the Orangery.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6
+     },
+     "needs": 1,
+     "photo": "sundial-gnomon-arms",
+     "src": [
+      "bss-s5169",
+      "he-rr-6-2013"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "John Murray, who bought Wrest in 1917, took the dial to his other estate, Coles Park. The Ministry won it back after 1954, and the brass original later spent years in London.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "people": 0.5
+     },
+     "needs": 1,
+     "src": [
+      "he-rr-6-2013",
+      "bss-s2125",
+      "bss-s5169"
      ],
      "verify": true
     }
    ],
-   "kids": []
+   "kids": [
+    {
+     "t": "Find the stone girl with a little bird on her shoulder, standing round the sundial!",
+     "photo": "sundial-girl-bird"
+    }
+   ],
+   "note": "On gravel and lawn, no steps. The brass blade (gnomon) may be missing: a 2024 register entry says it is. The dial plate is a replica, so do not expect to read the time to the minute.",
+   "photo": "sundial-axis-view"
   },
   {
    "id": "longwater",
@@ -5481,62 +6227,128 @@
    "dateLabel": "early 1680s",
    "era": "restoration",
    "dwell": 45,
-   "look": "The straight canal running south to the Pavilion.",
+   "look": "The straight canal running south to the Pavilion, a little over 300 m of water. Mercury and Cupid stand on the east bank, a good way down.",
    "bullets": [
     {
      "id": 1,
-     "t": "The Long Water was dug in the early 1680s by Amabel Benn, her son Anthony, 11th Earl, and his wife Mary. It is the oldest part of the design and still its spine.",
+     "t": "Amabel Benn, her son Anthony, 11th Earl, and his wife Mary dug the Long Water, which English Heritage dates to the early 1680s. It is the oldest part of the design and still its spine.",
      "imp": 5,
      "tags": {
       "gardens": 1,
       "history": 0.6
      },
      "src": [
-      1
+      1,
+      "he-rr-6-2013"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Its exact date is uncertain. A 2013 survey says only that it was probably there before 1685. In 1701–1706 it was cleaned, hedged and gated, and Archer’s Pavilion followed at the far end in 1709–1711.",
+     "imp": 2,
+     "tags": {
+      "gardens": 0.6,
+      "history": 0.5
+     },
+     "needs": 1,
+     "src": [
+      "he-rr-6-2013",
+      4
      ]
     },
     {
      "id": 2,
-     "t": "Still water works as a mirror: on a calm day the Pavilion is doubled in it, 800 m from the house.",
+     "t": "Still water works as a mirror: on a calm day the Pavilion is doubled in it. The house is about 800 metres from the Pavilion; the water is a little over 300 metres of that.",
      "imp": 3,
      "tags": {
       "views": 1,
-      "physics": 0.3
+      "physics": 0.4
      },
      "src": [
-      2,
+      "he-rr-6-2013",
+      "osm-long-water",
       "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "Water arrives from the north-west: a stream from Silsoe feeds the canals round the garden, and conduits carry it to the head of the Long Water. Brick drains on the west bank flow east.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.4
+     },
+     "src": [
+      "he-rr-6-2013",
+      "dawson-archaeology"
      ]
     },
     {
+     "id": 7,
+     "t": "A dam at the far end holds the water up, with the Pavilion’s causeway on it, and sluices set the levels. Clay banks are patched by puddling; a pump replaces a spring that dried up.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1
+     },
+     "needs": 6,
+     "src": [
+      "he-rr-6-2013",
+      "albion-weir-2007"
+     ],
+     "verify": true
+    },
+    {
      "id": 3,
-     "t": "Straight canals were the height of Dutch and French formal taste. Garden historians trace Dutch influence at Wrest from 1686 to the 1730s.",
-     "imp": 2,
+     "t": "A straight canal was French fashion; Charles II had dug one at Hampton Court about 1670. After 1688 William III’s Dutch taste arrived, and the future Duke wrote home from the Netherlands admiring tree-lined canals.",
+     "imp": 3,
      "tags": {
       "gardens": 1,
+      "history": 0.6
+     },
+     "src": [
+      "he-rr-6-2013",
+      "dawson-archaeology"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Capability Brown softened the outer canals in 1758–1760 but left the Long Water alone, so it is still the straight formal canal the Greys looked down in the early 1700s.",
+     "imp": 3,
+     "tags": {
+      "gardens": 0.8,
       "history": 0.5
      },
      "src": [
-      9
+      "beds-1700-1770",
+      "gardenhistory-blog"
      ]
     },
     {
      "id": 4,
-     "t": "Look for Mercury and Cupid on the east bank, about 70 m from this end.",
+     "t": "Look for Mercury, with a little winged Cupid tying his sandal, on the east bank. The listing says probably late 1600s, perhaps by Caius Gabriel Cibber; Bedfordshire Archives says mid-1800s.",
      "imp": 1,
      "tags": {
       "art": 1
      },
+     "photo": "mercury-cupid",
      "src": [
-      2
-     ]
+      "listing-mercury",
+      38
+     ],
+     "verify": true
     }
    ],
    "kids": [
-    "Can you see the little building right at the far end?"
+    {
+     "t": "Can you see the little building right at the far end?",
+     "photo": "long-water-pavilion"
+    }
    ],
    "wow": 4,
-   "short": "Long Water"
+   "short": "Long Water",
+   "note": "Level paths run down both banks. The head of the water is where OpenStreetMap shows the canal starting, about 170 m south of the sundial.",
+   "photo": "long-water-pavilion"
   },
   {
    "id": "whh",
@@ -5550,24 +6362,25 @@
    "dateLabel": "1726 & 1748",
    "era": "duke",
    "dwell": 75,
-   "look": "The half-round garden shelter in its woodland clearing, with Jemima's statue just south.",
+   "look": "The half-round garden shelter in its woodland clearing, with the lady reading just south.",
    "bullets": [
     {
      "id": 1,
-     "t": "The West Half House (1726) is a half-round shelter in a woodland clearing, built at the peak of the Duke's formal garden.",
+     "t": "The West Half House, built about 1726, is a half-round brick garden shelter with a white front, a blind red-brick back and a half-cone lead roof. A curved wooden seat is inside.",
      "imp": 3,
      "tags": {
       "architecture": 0.8,
       "gardens": 0.6
      },
+     "photo": "west-half-house",
      "src": [
-      9,
-      22
+      22,
+      38
      ]
     },
     {
      "id": 2,
-     "t": "Straight avenues and ‘squares’ cut through the woods either side of the Long Water. A formal woodland garden in the French style like this is now rare in England.",
+     "t": "Straight avenues and open ‘squares’ were cut through the woods either side of the Long Water, largely complete by 1726. English Heritage calls it a rare English formal woodland garden in the French style.",
      "imp": 4,
      "tags": {
       "gardens": 1,
@@ -5575,54 +6388,107 @@
      },
      "src": [
       1,
-      2
+      21
+     ]
+    },
+    {
+     "id": 7,
+     "t": "The leaflet marks Duchess's Square beside this half house, and a Duke's Square elsewhere in the wood. These are the clearings where the straight rides meet.",
+     "imp": 2,
+     "tags": {
+      "gardens": 0.7
+     },
+     "needs": 2,
+     "verify": true,
+     "src": [
+      15
      ]
     },
     {
      "id": 3,
-     "t": "Just south is a statue of Jemima, Marchioness Grey, reading a book (c.1748, probably by John Cheere).",
+     "t": "Just south, a lead lady sits reading, about 2.5 metres high on a stone pedestal. Historic England dates her to about 1748 and says she is probably by John Cheere.",
      "imp": 3,
      "tags": {
       "people": 0.8,
       "art": 0.6
      },
+     "photo": "jemima-statue",
      "src": [
-      31
+      31,
+      15
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Who is she? Historic England says Jemima, Marchioness Grey. Bedfordshire Archives says Jemima, the Duke's first wife, who died in 1728. Neither is certain.",
+     "imp": 3,
+     "tags": {
+      "people": 1,
+      "art": 0.4
+     },
+     "needs": 3,
+     "verify": true,
+     "src": [
+      31,
+      38
      ]
     },
     {
      "id": 4,
-     "t": "The Duke outlived his sons, so in 1740 Wrest passed to his 17-year-old granddaughter Jemima, on condition that she marry Philip Yorke, son of the Lord Chancellor.",
+     "t": "Jemima was 17 when she married Philip Yorke, the Lord Chancellor's son, on 22 May 1740. The Duke died on 5 June, having outlived all his sons, and she inherited Wrest.",
      "imp": 4,
      "tags": {
       "people": 1,
       "history": 0.6
      },
-     "src": [
-      9,
-      11
-     ],
      "needs": 3,
-     "verify": true
+     "verify": true,
+     "src": [
+      "beds-jemima",
+      "wiki-duke"
+     ]
     },
     {
      "id": 5,
-     "t": "Jemima and Philip ran a literary circle they called ‘Wrestiana’ and wrote poems, plays and garden inscriptions.",
+     "t": "Jemima and Philip kept a lively circle of relatives and friends at Wrest: days in the gardens, evenings swapping poems.",
      "imp": 2,
      "tags": {
       "people": 1
      },
+     "needs": 4,
+     "verify": true,
      "src": [
-      9
-     ],
-     "needs": 4
+      "history-today"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "John Cheere, a London maker of lead garden statues, is also thought to have made the King William III statue by the Long Water.",
+     "imp": 2,
+     "tags": {
+      "art": 0.8,
+      "people": 0.4
+     },
+     "needs": 3,
+     "src": [
+      23,
+      "wiki-cheere"
+     ]
     }
    ],
    "kids": [
-    "Find the lady reading a book."
+    {
+     "t": "Find the lady reading a book.",
+     "photo": "jemima-statue"
+    },
+    {
+     "t": "Find the little house with a roof like half an ice-cream cone.",
+     "photo": "west-half-house"
+    }
    ],
    "wow": 2,
-   "short": "West Half House"
+   "short": "West Half House",
+   "photo": "west-half-house"
   },
   {
    "id": "altar",
@@ -5636,16 +6502,18 @@
    "dateLabel": "1748 (and c.1730)",
    "era": "jemima",
    "dwell": 60,
-   "look": "A tall flint-and-stone altar in the woods west of the Pavilion, with a brick memorial wall 40 m to the west.",
+   "look": "A squat altar faced with knapped flint, with lion's-paw feet and curled leaves at the corners, in the woods west of the Pavilion. About 40 m further west is a plain brick wall with a plaque: the Hutton Monument.",
    "bullets": [
     {
      "id": 1,
-     "t": "The Mithraic Altar (1748) was made for Jemima and Philip: a ten-foot flint-and-stone ‘Persian’ altar with an inscription in ancient Greek.",
+     "t": "The Mithraic Altar was put up by 1748 for Jemima and her husband Philip Yorke: a chunky flint-faced block with lion's-paw feet, carrying one inscription in ancient Greek and one in a made-up 'Persian' script.",
      "imp": 3,
      "tags": {
-      "history": 0.8,
-      "art": 0.4
+      "history": 0.6,
+      "art": 0.4,
+      "architecture": 0.4
      },
+     "photo": "mithraic-altar",
      "src": [
       18,
       11
@@ -5653,18 +6521,34 @@
     },
     {
      "id": 2,
-     "t": "Mithras was the god of a Roman mystery cult popular with soldiers. This is an 18th-century fantasy, not an antique.",
+     "t": "Mithras was a Persian-born god worshipped in a Roman soldiers' mystery cult. This altar is no antique: it is an eighteenth-century fantasy, built as a garden joke for clever friends.",
      "imp": 2,
      "tags": {
-      "history": 1
+      "history": 0.9
      },
      "src": [
-      11
+      11,
+      "gk"
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Its Greek inscription was written by Daniel Wray, and an 1831 record says the altar honoured the Athenian Letters, a book by Philip Yorke's circle, framed as letters from a Persian agent in Athens.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "people": 0.8
+     },
+     "needs": 1,
+     "src": [
+      18,
+      "athenian-letters-wiki",
+      "ega-womens-designs"
      ]
     },
     {
      "id": 3,
-     "t": "Historic England credits the design to Thomas Wright, Jemima's tutor. That is almost certainly Thomas Wright of Durham (born 1711), astronomer and garden designer.",
+     "t": "Historic England credits the design to Thomas Wright, Jemima's tutor. He was Thomas Wright of Durham (1711–1786), who taught her garden design, surveying, geometry and astronomy, and wrote a famous book on the Milky Way.",
      "imp": 4,
      "tags": {
       "space": 0.9,
@@ -5672,40 +6556,58 @@
      },
      "src": [
       18,
+      "ega-womens-designs",
+      "wrest-circle-oxford",
       19
-     ],
-     "verify": true
+     ]
     },
     {
      "id": 4,
-     "t": "In 1750 Wright proposed that the Milky Way is a flat disc of stars that we see edge-on from inside. Kant built on the idea, and it's essentially right.",
+     "t": "In 1750 Wright published a new theory of the universe. The Milky Way, he said, is what we see when we look along a thin layer of stars from inside it.",
      "imp": 5,
      "tags": {
       "space": 1,
       "physics": 0.7
      },
+     "needs": 3,
      "src": [
       19,
-      "gk"
-     ],
-     "needs": 3
+      "warwick-wright",
+      "en-wiki-wright"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Wright pictured stars circling a divine centre, in a flat ring or nested shells. Immanuel Kant read a review of the book and, in 1755, took the flat-disc idea further.",
+     "imp": 4,
+     "tags": {
+      "space": 0.9,
+      "physics": 0.5,
+      "history": 0.4
+     },
+     "needs": 4,
+     "src": [
+      "warwick-wright",
+      "lindahall-wright"
+     ]
     },
     {
      "id": 5,
-     "t": "Wright taught mathematics and astronomy to aristocratic women in the 1740s, and designed about 15 gardens and grottoes.",
+     "t": "Wright began as a clockmaker's apprentice, then taught navigation, and later taught mathematics and astronomy to aristocratic women while planning at least fifteen gardens and grottoes.",
      "imp": 3,
      "tags": {
       "space": 0.6,
-      "people": 0.8
+      "people": 0.8,
+      "gardens": 0.5
      },
+     "needs": 3,
      "src": [
       19
-     ],
-     "needs": 3
+     ]
     },
     {
      "id": 6,
-     "t": "The Hutton Monument (c.1730) honours the Duke's friend Thomas Hutton, ‘whose company was always useful and agreeable’. Back-handed praise in stone.",
+     "t": "The Hutton Monument, a plain brick wall about 40 metres west, was put up about 1730 by the Duke of Kent for his friend Thomas Hutton. Its plaque is rather condescending about him.",
      "imp": 2,
      "tags": {
       "people": 1
@@ -5716,10 +6618,15 @@
     }
    ],
    "kids": [
-    "Find the tall stone made of lots of little flints."
+    {
+     "t": "Find the tall stone covered in little flints, with a lion's paw at each corner.",
+     "photo": "mithraic-altar"
+    }
    ],
    "wow": 2,
-   "short": "Mithraic Altar"
+   "short": "Mithraic Altar",
+   "note": "On the woodland edge, on grass; no steps. The altar is about 40 m east of the Hutton Monument.",
+   "photo": "mithraic-altar"
   },
   {
    "id": "william",
@@ -5793,11 +6700,11 @@
    "era": "duke",
    "dwell": 210,
    "look": "The domed Baroque banqueting house closing the end of the Long Water. Look back north to the house.",
-   "note": "Steep steps up. The interior is open at times; check on the day. Steps up into the Pavilion (no step-free way in): leave the pushchair at the foot.",
+   "note": "Steep steps up into the Pavilion, with no step-free way in: leave the pushchair at the foot. The interior is open at times; check on the day.",
    "bullets": [
     {
      "id": 1,
-     "t": "Thomas Archer's Pavilion (1709–11): a Baroque banqueting house closing the view down the Long Water. It cost £1,809.",
+     "t": "Thomas Archer's Pavilion (1709–1711): a Baroque banqueting house closing the view down the Long Water. It cost £1,809, and Historic England calls it 'a miniature masterpiece'.",
      "imp": 5,
      "tags": {
       "architecture": 1,
@@ -5822,31 +6729,33 @@
     },
     {
      "id": 3,
-     "t": "It was built during the War of the Spanish Succession, fought over who would inherit the throne of the last Spanish Habsburg king, Charles II.",
+     "t": "It was built during the War of the Spanish Succession (1701–1714), fought over who would inherit the throne of the last Spanish Habsburg king, Charles II.",
      "imp": 4,
      "tags": {
       "habsburg": 1,
       "history": 0.8
      },
      "src": [
+      4,
       "gk"
      ]
     },
     {
      "id": 4,
-     "t": "The paintings are thought to celebrate Henry Grey becoming Duke of Kent in 1710, halfway through construction.",
+     "t": "The painting celebrates the Greys' rising status, with family arms, cherubs and perhaps portrait busts. Henry Grey became Duke of Kent in 1710, halfway through the building.",
      "imp": 3,
      "tags": {
       "history": 0.6,
       "people": 0.6
      },
      "src": [
+      4,
       1
      ]
     },
     {
      "id": 5,
-     "t": "Inside, the columns, coffered dome and statues of the Great Room are trompe-l'œil: flat paint made to look 3-D using perspective and shading (1712, Hauduroy).",
+     "t": "Inside, the columns, coffered dome and statues of the Great Room are trompe-l'œil: flat paint made to look 3-D, signed 'Hauduroy pinxit 1712'. Stand in the doorway and look up.",
      "imp": 4,
      "tags": {
       "art": 1,
@@ -5854,12 +6763,13 @@
      },
      "src": [
       4,
-      1
-     ]
+      "aml-pavilion-1997"
+     ],
+     "photo": "pavilion-dome-inside"
     },
     {
      "id": 6,
-     "t": "Hidden doors in the painting lead to spiral stairs: up to two servants' bedrooms, and down to a brick kitchen and a double privy in the basement.",
+     "t": "Small doors hidden in the painting lead to spiral stairs: up to servants' bedrooms, down to a brick-lined kitchen and a double privy in the basement.",
      "imp": 4,
      "tags": {
       "engineering": 0.6,
@@ -5867,12 +6777,39 @@
      },
      "src": [
       4,
-      10
+      "aml-pavilion-1997"
      ]
     },
     {
+     "id": 9,
+     "t": "The dome is covered in heavy lead. It slowly slid down the dome, letting rain into the roof space and threatening the painted ceiling, so English Heritage repaired it in 2016–2017.",
+     "imp": 3,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.3
+     },
+     "src": [
+      "fpcr-pavilion",
+      "eh-revitalising"
+     ]
+    },
+    {
+     "id": 10,
+     "t": "The Pavilion stands at the end of an earth causeway from a dam. One account says the Long Canal itself was made by damming a shallow valley, about 1686–1688.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.8,
+      "gardens": 0.4
+     },
+     "src": [
+      "he-rr-6-2013",
+      "albion-weir-2007"
+     ],
+     "verify": true
+    },
+    {
      "id": 7,
-     "t": "Red and yellow brick with banded rustication, a lead-covered dome and a lantern on top. It was originally rendered.",
+     "t": "Red and yellow brick with stone dressings, a lantern on the dome, and round 'bull's-eye' windows. The brick was originally rendered, and the render was later stripped off.",
      "imp": 2,
      "tags": {
       "engineering": 0.8,
@@ -5880,27 +6817,28 @@
      },
      "src": [
       4,
-      9
-     ]
-    },
-    {
-     "id": 8,
-     "t": "It was used for hunting parties, tea and ‘occasional suppers’. The Great Room had twelve chairs covered in scarlet Morocco leather.",
-     "imp": 2,
-     "tags": {
-      "people": 0.8,
-      "interiors": 0.5
-     },
-     "src": [
-      4
-     ]
+      "aml-pavilion-1997"
+     ],
+     "photo": "pavilion-round-windows"
     }
    ],
    "kids": [
-    "Count the round ‘bull's-eye’ windows."
+    {
+     "t": "Count the round 'bull's-eye' windows up high.",
+     "photo": "pavilion-round-windows"
+    },
+    {
+     "t": "Look up inside: find the round hole of light at the top of the painted dome.",
+     "photo": "pavilion-dome-inside"
+    },
+    {
+     "t": "Find the carved shell above the door.",
+     "photo": "pavilion-shell"
+    }
    ],
    "wow": 5,
-   "short": "Archer Pavilion"
+   "short": "Archer Pavilion",
+   "photo": "pavilion-long-water"
   },
   {
    "id": "ehh",
@@ -5917,35 +6855,82 @@
    "bullets": [
     {
      "id": 1,
-     "t": "Built in 1726 as a pair with the West Half House. The two differ in their details, so spot the differences if you've seen both.",
+     "t": "The East Half House is the West's twin, built in 1726 as a garden shelter for the Duke. It has a square front, a rounded back and a half-cone lead roof.",
      "imp": 2,
      "tags": {
       "architecture": 1
      },
+     "photo": "east-half-house",
      "src": [
-      9,
-      28
+      28,
+      10
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Spot the differences. This one has a round arch under a triangular pediment, with niches that once held statues. The West has a flatter arch between narrow pilasters.",
+     "imp": 3,
+     "tags": {
+      "architecture": 1
+     },
+     "needs": 1,
+     "src": [
+      28,
+      22
      ]
     },
     {
      "id": 2,
-     "t": "The Duke asked leading architects for garden-building designs: Hawksmoor, Gibbs, William Kent and the Italians Juvarra and Leoni. Only some were ever built.",
+     "t": "Nobody has recorded who designed them. The Duke did employ Hawksmoor, Archer, Langley and William Kent, and designs came from Gibbs, Juvarra and Leoni too, though not all were built.",
      "imp": 3,
      "tags": {
       "architecture": 0.8,
       "people": 0.6
      },
+     "verify": true,
      "src": [
-      5,
+      28,
+      1,
+      21
+     ]
+    },
+    {
+     "id": 4,
+     "t": "The Duke, Henry Grey, was Lord Chamberlain from 1704, Marquess of Kent in 1706, and Duke of Kent in 1710, a title he gained by giving up the Chamberlain's post.",
+     "imp": 3,
+     "tags": {
+      "people": 1,
+      "history": 0.5
+     },
+     "src": [
+      "wiki-duke",
       1
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Britain was then fighting the War of the Spanish Succession, backing the Habsburg Archduke Charles for Spain's throne. Charles became Holy Roman Emperor in 1711, as the Pavilion was finished.",
+     "imp": 3,
+     "tags": {
+      "habsburg": 1,
+      "history": 0.8
+     },
+     "needs": 4,
+     "src": [
+      "wiki-wsc",
+      4
      ]
     }
    ],
    "kids": [
-    "Is there somewhere to sit inside?"
+    {
+     "t": "Is there somewhere to sit inside? Find the curved wooden seat.",
+     "photo": "east-half-house"
+    }
    ],
    "wow": 2,
-   "short": "East Half House"
+   "short": "East Half House",
+   "photo": "east-half-house"
   },
   {
    "id": "cbcol",
@@ -5959,11 +6944,11 @@
    "dateLabel": "1758–60",
    "era": "jemima",
    "dwell": 45,
-   "look": "A Doric column with a pineapple on top, by the Broad Water.",
+   "look": "A tall stone column among the trees by the Broad Water. What is on top: a pineapple, acanthus leaves or an urn?",
    "bullets": [
     {
      "id": 1,
-     "t": "This Doric column (1760, Edward Stevens) credits ‘Lancelot Brown Esq.’ for alterations made in 1758, 1759 and 1760.",
+     "t": "This rustic stone column credits 'Lancelot Brown Esq.' with 'professional assistance' to Jemima and her husband in altering the gardens in 1758, 1759 and 1760.",
      "imp": 4,
      "tags": {
       "gardens": 1,
@@ -5971,12 +6956,14 @@
      },
      "src": [
       21,
-      11
-     ]
+      11,
+      "he-rr-74-2018"
+     ],
+     "photo": "brown-column-photo"
     },
     {
      "id": 2,
-     "t": "Jemima made Brown keep the formal core. He only curved the straight boundary canals, and admitted that doing more ‘might unravel the Mystery of the Gardens’.",
+     "t": "Jemima valued her grandfather's formal garden, so Brown only joined and curved the straight boundary canals. English Heritage says he realised that doing more 'might unravel the Mystery of the Gardens'.",
      "imp": 4,
      "tags": {
       "gardens": 1,
@@ -5984,40 +6971,89 @@
      },
      "src": [
       1,
-      5
+      21
+     ]
+    },
+    {
+     "id": 5,
+     "t": "The plan was to 'lay the waters together around the garden' as one winding stream. Where levels differed more than digging could cure, a bank of earth was needed, hidden by planting.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.8,
+      "gardens": 0.8
+     },
+     "src": [
+      "albion-weir-2007"
      ]
     },
     {
      "id": 3,
-     "t": "It's topped by a pineapple, an 18th-century status symbol grown in heated ‘pineries’ at huge cost.",
+     "t": "What tops the column is disputed: a pineapple says Bedfordshire Archives, acanthus leaves says the Historic England listing, an urn says its 2018 research report. Have a look.",
      "imp": 2,
      "tags": {
-      "history": 0.6,
-      "engineering": 0.3
+      "history": 0.4,
+      "gardens": 0.3
      },
      "src": [
       11,
-      "gk"
-     ]
+      21,
+      "he-rr-74-2018"
+     ],
+     "photo": "brown-column-photo"
+    },
+    {
+     "id": 6,
+     "t": "Look for the two rough, uncut blocks interrupting the smooth shaft. The listing calls the effect 'curious' and thinks this rustication may have been added later.",
+     "imp": 2,
+     "tags": {
+      "architecture": 0.6,
+      "art": 0.3
+     },
+     "src": [
+      21
+     ],
+     "photo": "brown-column-photo"
     },
     {
      "id": 4,
-     "t": "The listing says it was first placed to be seen from the Bath House, and was moved here in 1828.",
+     "t": "It was first set up to be seen from the Bath House, then moved: 1828 says the listing, about 1830 a 2015 survey. Its old site near the yew hedge has a plaque.",
      "imp": 1,
      "tags": {
       "history": 0.6
      },
      "src": [
-      21
+      21,
+      "he-rr-84-2015",
+      "he-rr-74-2018"
      ],
      "verify": true
+    },
+    {
+     "id": 7,
+     "t": "Brown returned briefly in 1778 and 1779. He is often credited with the nearby Bath House, but the records point to Edward Stevens, and Historic England doubts Brown designed it.",
+     "imp": 3,
+     "tags": {
+      "people": 0.7,
+      "history": 0.4
+     },
+     "src": [
+      "he-rr-74-2018"
+     ]
     }
    ],
    "kids": [
-    "Find the pineapple on top of the tall column!"
+    {
+     "t": "Find the tall stone column among the trees!",
+     "photo": "brown-column-photo"
+    },
+    {
+     "t": "Can you spot the two rough, bumpy blocks on its side?",
+     "photo": "brown-column-photo"
+    }
    ],
    "wow": 2,
-   "short": "Brown Column"
+   "short": "Brown Column",
+   "photo": "brown-column-photo"
   },
   {
    "id": "altars",
@@ -6030,38 +7066,97 @@
    "date": 1817,
    "era": "amabel",
    "dwell": 40,
-   "look": "Five round marble altars on a circular lawn: four round the edge, one in the middle.",
+   "look": "Five round white marble altars on a circular lawn among the trees: four around the edge, one in the middle.",
    "bullets": [
     {
      "id": 1,
-     "t": "Five marble altars bought in 1817 by Amabel, Countess de Grey. They are genuinely ancient, the oldest objects in the garden.",
+     "t": "These five marble altars are genuinely ancient: Greek work of the late second to first century BC. Amabel, Countess de Grey, bought them in 1817 from a Mr Beauclere of Muswell Hill.",
      "imp": 4,
      "tags": {
       "history": 1,
       "art": 0.5
      },
      "src": [
+      "le-altars-1311237",
       11
      ]
     },
     {
      "id": 2,
-     "t": "The Greek inscription on the middle altar is far less worn than the stone around it, probably an early-1800s addition.",
+     "t": "The middle altar reads 'Hail Diogenes, son of Enon, honest citizen of Askalon', a coastal city near Gaza. Its letters are far less worn than the rest, so may be a later addition.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8
+     },
+     "needs": 1,
+     "src": [
+      "le-altars-1311237",
+      11
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Each is a cylinder about a metre tall, carved with ox skulls joined by festoons of flowers, a pattern that recalls animal sacrifice at an altar.",
+     "imp": 2,
+     "tags": {
+      "art": 0.7,
+      "history": 0.5
+     },
+     "needs": 1,
+     "src": [
+      "le-altars-1311237",
+      "gk"
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Amabel bought marble after many of the family's lead statues had been melted down, in 1809 according to the Art Fund. English Heritage says she later regretted it.",
      "imp": 3,
      "tags": {
       "history": 0.7,
-      "physics": 0.2
+      "people": 0.7
      },
+     "needs": 1,
      "src": [
-      11
+      "ega-womens-designs",
+      "artfund-diana"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Where Mr Beauclere got them is unknown. Having stood in this setting since 1817, they are now the oldest objects at Wrest, and are listed Grade II*.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6
+     },
+     "needs": 1,
+     "src": [
+      "le-altars-1311237"
+     ]
+    },
+    {
+     "id": 6,
+     "t": "About 90 metres south-east, in the woods, is the dogs' cemetery. English Heritage says the Lucas family buried favourite dogs there, with headstones around a stone dog on a plinth.",
+     "imp": 2,
+     "tags": {
+      "people": 1
+     },
+     "verify": true,
+     "src": [
+      "eh-top-dogs"
      ]
     }
    ],
    "kids": [
-    "Count the round stones. How many?"
+    {
+     "t": "Count the round white stones on the grass. How many are there?",
+     "photo": "ancient-altars"
+    }
    ],
    "wow": 2,
-   "short": "Ancient altars"
+   "short": "Ancient altars",
+   "note": "On the lawn south of the Ladies' Lake. The dogs' cemetery is a short walk to the south-east, in woodland.",
+   "photo": "ancient-altars"
   },
   {
    "id": "chinese",
@@ -6075,72 +7170,122 @@
    "dateLabel": "c.1760 & 1876",
    "era": "jemima",
    "dwell": 90,
-   "look": "The timber temple with its pagoda roof, and the brick bridge just east across the water. West across the Ladies’ Lake, a statue (named Diana on OpenStreetMap) stands over the water: a favourite photo.",
+   "look": "The white-and-red timber temple with its two-tier pagoda roof and little bells, then the pale brick bridge just east over the water. Just west, a white statue of Diana with her greyhound stands beside the Ladies' Lake.",
    "bullets": [
     {
      "id": 1,
-     "t": "The Chinese Temple (c.1760) was built for Jemima, possibly to designs by William Chambers: timber, with a pagoda roof topped by a wyvern, bells and fretwork.",
+     "t": "The Chinese Temple dates from about 1760, built for Jemima: a timber summerhouse on a stone plinth, with a two-tier pagoda roof, fretwork, hanging bells and a wyvern on the top.",
      "imp": 4,
      "tags": {
       "architecture": 1,
       "views": 0.6
      },
+     "photo": "chinese-temple",
+     "src": [
+      20,
+      "ega-womens-designs"
+     ]
+    },
+    {
+     "id": 7,
+     "t": "A wyvern is a two-legged dragon, and it is the Grey family's emblem. So the 'Chinese' roof is topped by the family's own crest.",
+     "imp": 2,
+     "tags": {
+      "history": 0.5,
+      "art": 0.4
+     },
+     "needs": 1,
+     "photo": "chinese-temple-roof",
      "src": [
       20
      ]
     },
     {
      "id": 2,
-     "t": "Chambers had actually been to China, to Canton, and went on to build the Pagoda at Kew in 1762.",
+     "t": "Historic England says it was possibly designed by William Chambers, who made three voyages to China for the Swedish East India Company in the 1740s and built the Great Pagoda at Kew in 1761–1762.",
      "imp": 3,
      "tags": {
       "architecture": 0.6,
       "history": 0.8
      },
+     "needs": 1,
+     "verify": true,
      "src": [
-      "gk"
-     ],
-     "needs": 1
+      20,
+      "en-wiki-chambers"
+     ]
+    },
+    {
+     "id": 8,
+     "t": "This is chinoiserie: Europeans' fantasy of China, made fashionable by Chambers's 1757 book of Chinese designs. Jemima's set piece also had a conch-shell water feature, a willow and a tulip tree.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.8,
+      "gardens": 0.8,
+      "history": 0.5
+     },
+     "needs": 2,
+     "src": [
+      "ega-womens-designs",
+      "en-wiki-chambers"
+     ]
     },
     {
      "id": 3,
-     "t": "Countess Cowper rebuilt the bridge in brick and stone in 1876, replacing earlier timber bridges. Date stones carry her monogram.",
+     "t": "The brick bridge to the east is from 1876. Anne Florence, Countess Cowper, designed it herself, and estate workmen built it to replace a timber bridge of the 1760s.",
      "imp": 3,
      "tags": {
-      "engineering": 0.8,
-      "people": 0.4
+      "engineering": 0.6,
+      "people": 0.7
      },
+     "photo": "chinese-bridge",
      "src": [
-      7
+      7,
+      10
      ]
     },
     {
      "id": 4,
-     "t": "It's a single elliptical arch: flatter than a semicircle, so you get a lower deck for the same span, at the cost of more sideways thrust on the abutments.",
+     "t": "It has a single elliptical arch: flatter than a semicircle, so a low deck for the same span, but more sideways thrust, which the abutments must resist. Wedge-shaped voussoirs hold it up in compression.",
      "imp": 4,
      "tags": {
       "engineering": 1,
       "physics": 0.8
      },
+     "needs": 3,
      "src": [
       7,
       "gk"
-     ],
-     "needs": 3
+     ]
     },
     {
      "id": 5,
-     "t": "The design imitates the bridge on Willow Pattern china, which is itself an English invention of the 1790s, not a Chinese one.",
+     "t": "The bridge's style is said to copy the bridge on Willow Pattern china. That pattern is itself an English invention of the later 1700s, not a Chinese one.",
      "imp": 2,
      "tags": {
       "history": 0.8,
       "art": 0.5
      },
+     "verify": true,
      "src": [
       10,
       "gk"
-     ],
-     "verify": true
+     ]
+    },
+    {
+     "id": 9,
+     "t": "By the Ladies' Lake stands a lead Diana with her greyhound, made about 1729–1730, probably by Andrew Carpenter for the Duke of Kent. Sold in 1917, it was bought back at auction in 2011 with Art Fund help.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "history": 0.6
+     },
+     "photo": "diana-greyhound",
+     "src": [
+      "artfund-diana",
+      "geograph-diana",
+      "ehcollection"
+     ]
     },
     {
      "id": 6,
@@ -6155,11 +7300,19 @@
     }
    ],
    "kids": [
-    "Find the dragon on top of the roof!"
+    {
+     "t": "Find the golden dragon on top of the roof, and the little bells hanging from the corners.",
+     "photo": "chinese-temple-roof"
+    },
+    {
+     "t": "Find the white lady with her dog by the lake. What kind of dog is it?",
+     "photo": "diana-greyhound"
+    }
    ],
    "wow": 4,
    "short": "Chinese Temple",
-   "note": "The Chinese Bridge has steps; the temple side of the water can be reached without crossing it."
+   "note": "The Chinese Bridge has steps; the temple side of the water can be reached without crossing it. The Diana statue is a short walk west along the lake.",
+   "photo": "chinese-temple"
   },
   {
    "id": "atlas",
@@ -6173,11 +7326,11 @@
    "dateLabel": "early 1700s",
    "era": "duke",
    "dwell": 40,
-   "look": "Atlas stooping under a globe, about 250 m south-east of the house.",
+   "look": "A weathered stone Atlas stooping under a globe on a plain pedestal, in rough grass, about 250 m south-east of the old house site.",
    "bullets": [
     {
      "id": 1,
-     "t": "Atlas, the Titan condemned to hold up the heavens, stoops under a celestial globe. Portland stone, early 1700s.",
+     "t": "Atlas, the Titan condemned to hold up the heavens, stoops under a globe. The Portland stone figure is early eighteenth century, probably one of the Duke of Kent's garden additions.",
      "imp": 4,
      "tags": {
       "space": 1,
@@ -6189,50 +7342,81 @@
     },
     {
      "id": 2,
-     "t": "In myth Atlas holds up the sky, not the Earth. The ‘Atlas holding the world’ image is a later mix-up.",
+     "t": "In myth Atlas holds up the sky, not the Earth. The 'Atlas carrying the world' picture is a later mix-up, helped by map books being called atlases.",
      "imp": 3,
      "tags": {
       "space": 0.8,
       "history": 0.5
      },
+     "needs": 1,
      "src": [
-      "gk"
-     ],
-     "needs": 1
+      "en-wiki-atlas"
+     ]
     },
     {
      "id": 3,
-     "t": "A celestial globe shows the stars as if seen from outside the sky, so the constellations appear mirror-reversed compared with looking up.",
+     "t": "If his ball is the sky, it is a celestial globe. Those show the stars as if seen from outside, so the constellations look mirror-reversed from how we see them.",
      "imp": 3,
      "tags": {
       "space": 1,
       "physics": 0.6
      },
+     "needs": 1,
      "src": [
       "gk"
      ],
-     "needs": 1
+     "verify": true
     },
     {
      "id": 4,
-     "t": "The famous Farnese Atlas in Naples, a Roman marble, carries one of the oldest surviving maps of the classical constellations.",
+     "t": "The Farnese Atlas in Naples, a Roman marble from about 150 AD, is the oldest surviving celestial globe, showing 41 or 42 of the 48 classical constellations.",
      "imp": 3,
      "tags": {
       "space": 1,
       "history": 0.6
      },
-     "src": [
-      "gk"
-     ],
      "needs": 1,
-     "verify": true
+     "src": [
+      "en-wiki-farnese"
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Nobody knows where he first stood. The earliest record of him in this spot, east of the old house, is from 1900, and the pedestal is nineteenth century.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6,
+      "gardens": 0.4
+     },
+     "needs": 1,
+     "src": [
+      24
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Earthworks show a pond once surrounded him; it has silted up. A small hole on his body is thought to be where a nineteenth-century fig leaf was fixed.",
+     "imp": 1,
+     "tags": {
+      "history": 0.3
+     },
+     "needs": 1,
+     "src": [
+      24,
+      11
+     ]
     }
    ],
    "kids": [
-    "Find the strong man carrying a big ball."
+    {
+     "t": "Find the strong man carrying a big ball on his shoulders. Can you stand like him?",
+     "photo": "atlas-statue"
+    }
    ],
    "wow": 2,
-   "short": "Atlas"
+   "short": "Atlas",
+   "note": "The pond once around him has silted up; the statue stands on open grass.",
+   "photo": "atlas-statue"
   }
  ],
  "sources": {
@@ -6388,9 +7572,313 @@
    "Victoria County History, Bedford vol. 2 (1908): Flitton cum Silsoe",
    "https://www.british-history.ac.uk/vch/beds/vol2/pp325-333"
   ],
+  "40": [
+   "Museum of English Rural Life: Silsoe Research Institute archive catalogue (SR SRI)",
+   "https://merl.reading.ac.uk/wp-content/uploads/sites/10/2017/04/SR-SRI.pdf"
+  ],
+  "41": [
+   "Silsoe Research Institute (archived site)",
+   "https://www.silsoeresearch.org.uk/"
+  ],
+  "42": [
+   "Farmers Weekly: MAFF to finance robot weeder development (28 February 1997)",
+   "https://www.fwi.co.uk/news/maff-to-finance-robot-weeder-development"
+  ],
+  "43": [
+   "Farmers Weekly: Auto-guidance hoe cuts down pesticides use (12 May 2000)",
+   "https://www.fwi.co.uk/news/auto-guidance-hoe-cuts-down-pesticides-use"
+  ],
+  "44": [
+   "Farmers Weekly: Robot hoe to reduce pesticide use (11 September 2000)",
+   "https://www.fwi.co.uk/news/robot-hoe-to-reduce-pesticide-use"
+  ],
+  "45": [
+   "Bedfordshire Archives catalogue: Sun Insurance at Wrest (Z503/8, Z50/104/37, Z503/20)",
+   "https://bedsarchivescat.bedford.gov.uk/Details/archive/110024698"
+  ],
+  "47": [
+   "Hansard: written answer, Wrest Park, Bedfordshire (1 November 1960)",
+   "https://api.parliament.uk/historic-hansard/written_answers/1960/nov/01/wrest-park-bedfordshire"
+  ],
+  "48": [
+   "The Agriculture (Tractor Cabs) Regulations 1974 (SI 1974/2034)",
+   "https://www.legislation.gov.uk/uksi/1974/2034/note/made"
+  ],
+  "52": [
+   "BCPC Weeds Conference 1999: Application Technology (P. C. H. Miller on spray drift)",
+   "https://bcpc.org/wp-content/uploads/2021/11/BCPC-Weeds-Conference-1999-Application-Technology.pdf"
+  ],
+  "53": [
+   "Hoxey, Richards and Short (2002): the Silsoe 6 m cube",
+   "https://koreascience.kr/article/JAKO200221349897950.do"
+  ],
+  "54": [
+   "Geograph: Wrest House and Park shared description (M J Richardson)",
+   "https://www.geograph.org.uk/snippet/7382"
+  ],
+  "56": [
+   "The Robot Report: Tillett and Hague Technology",
+   "https://search.therobotreport.com/listings/tillett-and-hague-technology-uk/"
+  ],
   "gk": [
    "General knowledge (not from a Wrest-specific source): check if it matters to you",
    ""
+  ],
+  "beds-20c": [
+   "Bedfordshire Archives: Wrest Park in the 20th Century",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/WrestParkInThe20thCentury.aspx"
+  ],
+  "eh-lost-found": [
+   "English Heritage (Google Arts & Culture): Wrest Park, Lost and Found",
+   "https://artsandculture.google.com/story/wrest-park-lost-and-found-english-heritage/AgVhV0ZCiGDgKA"
+  ],
+  "hlfrevival": [
+   "Heritage Fund: Grand garden revival at Grade I registered Wrest Park",
+   "https://www.heritagefund.org.uk/news/grand-garden-revival-grade-i-registered-wrest-park"
+  ],
+  "ehtreasures": [
+   "English Heritage: Wrest Park uncovered treasures",
+   "https://www.english-heritage.org.uk/visit/places/wrest-park/things-to-do/uncovered-treasures/"
+  ],
+  "eh-revitalising": [
+   "English Heritage: Revitalising Wrest Park",
+   "https://www.english-heritage.org.uk/learn/conservation/gardens-and-landscapes/revitalising-wrest-park/"
+  ],
+  "tommy-fire": [
+   "Tommy's Footprints: Wrest Park military hospital (local history, quoting the Bedfordshire Standard, 22 September 1916)",
+   "https://tommysfootprints.wordpress.com/2016/09/14/wrest-park-military-hospital/"
+  ],
+  "lst1158506": [
+   "Listing: Mermaid Basin (1158506)",
+   "https://britishlistedbuildings.co.uk/101158506-mermaid-basin-at-west-side-of-south-parterre-silsoe"
+  ],
+  "pg-wrest": [
+   "Parks & Gardens UK: Wrest Park (summarises the Historic England register)",
+   "https://www.parksandgardens.org/places/wrest-park"
+  ],
+  "lst1113789": [
+   "Listing: Four statuary groups, south parterre (1113789)",
+   "https://historicengland.org.uk/listing/the-list/list-entry/1113789"
+  ],
+  "ehstatues": [
+   "English Heritage press release: Wrest Park statues (22 April 2021)",
+   "https://www.english-heritage.org.uk/about/search-news/pr-wrest-park-statues/"
+  ],
+  "he-rr-6-2013": [
+   "Historic England Research Report 6/2013: Wrest Park, Silsoe, Landscape Investigations",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1893-1/dissemination/pdf/englishh2-132554_1.pdf"
+  ],
+  "beds-pre-17c": [
+   "Bedfordshire Archives: Wrest Park Before the 17th Century",
+   "https://bedsarchives.bedford.gov.uk/CommunityArchives/Silsoe/WrestParkBeforeThe17thCentury.aspx"
+  ],
+  "beds-17c": [
+   "Bedfordshire Archives: Wrest Park in the 17th Century",
+   "https://bedsarchives.bedford.gov.uk/CommunityArchives/Silsoe/WrestParkInThe17thCentury.aspx"
+  ],
+  "hop-anthony-grey": [
+   "History of Parliament: Anthony Grey, 11th Earl of Kent",
+   "https://dev.historyofparliamentonline.org/lord-biography/grey-anthony-1645-1702"
+  ],
+  "dawson-archaeology": [
+   "Dawson, A brief introduction to the archaeology of Wrest Park (Bedfordshire Archaeology 24)",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-5499-1/dissemination/vol_24/BedsArch24-81-96.pdf"
+  ],
+  "albion-weir-2007": [
+   "Albion Archaeology 2007: Hydrology Restoration, Old Park Weir, Wrest Park",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-690-1/dissemination/pdf/albionar1-165694_1.pdf"
+  ],
+  "he-rr-74-2018": [
+   "Historic England Research Report 74/2018: The Bath House, Wrest Park, Historic Building Assessment (Kewley)",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1893-1/dissemination/pdf/englishh2-376519_1.pdf"
+  ],
+  "he-rr-84-2015": [
+   "Historic England Research Report 84/2015: Bathhouse Grounds Analytical Earthwork Survey",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-4637-1/dissemination/pdf/englishh2-236054_1.pdf"
+  ],
+  "wiki-anthony": [
+   "Wikipedia: Anthony Grey, 11th Earl of Kent",
+   "https://en.wikipedia.org/wiki/Anthony_Grey,_11th_Earl_of_Kent"
+  ],
+  "eh-phased": [
+   "English Heritage: Wrest Park phased plans (February 2015)",
+   "https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/wrest-park/history/wrest-park-phased-plans.pdf"
+  ],
+  "wiki-langley": [
+   "Wikipedia: Batty Langley",
+   "https://en.wikipedia.org/wiki/Batty_Langley"
+  ],
+  "he-1402869": [
+   "Listing: Ha-ha in the Old Park (1402869)",
+   "https://britishlistedbuildings.co.uk/101402869-ha-ha-in-the-old-park-silsoe"
+  ],
+  "geograph-leg": [
+   "Geograph: Leg o' Mutton Lake, Wrest Park (871840)",
+   "https://www.geograph.org.uk/photo/871840"
+  ],
+  "albion-oldpark": [
+   "Albion Archaeology 2007/109: Old Park Weir, Wrest Park, Archaeological Evaluation",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-690-1/dissemination/pdf/albionar1-63125_1.pdf"
+  ],
+  "bss-s2125": [
+   "British Sundial Society register: Wrest Park (1), the 1682 dial",
+   "https://sundialsoc.org.uk/wp_bridol/pages/S2/S2125.html"
+  ],
+  "bss-s5169": [
+   "British Sundial Society register: Wrest Park (2), the replica",
+   "https://sundialsoc.org.uk/wp_bridol/pages/S5/S5169.html"
+  ],
+  "listing-sundial-statues": [
+   "Listing: Group of six statues 270 m south of Wrest Park House (1321796)",
+   "https://britishlistedbuildings.co.uk/101321796-group-of-six-statues-270m-south-of-wrest-park-house-silsoe"
+  ],
+  "london-dial-wiki": [
+   "Wikipedia: London dial",
+   "https://en.wikipedia.org/wiki/London_dial"
+  ],
+  "bss-s6338": [
+   "British Sundial Society register: Windsor Castle dial by Henry Wynne",
+   "https://sundialsoc.org.uk/wp_bridol/pages/S6/S6338.html"
+  ],
+  "osm-long-water": [
+   "OpenStreetMap: Long Water outline (way 89187555)",
+   "https://www.openstreetmap.org/way/89187555"
+  ],
+  "beds-1700-1770": [
+   "Bedfordshire Archives: Wrest Park 1700 to 1770",
+   "https://bedsarchives.bedford.gov.uk/CommunityArchives/Silsoe/WrestPark1700To1770.aspx"
+  ],
+  "gardenhistory-blog": [
+   "The Garden History blog: Eternal Wrest",
+   "https://thegardenhistory.blog/2014/10/18/eternal-wrest"
+  ],
+  "listing-mercury": [
+   "Listing: Mercury and Cupid, east side of the Long Canal (1158734)",
+   "https://britishlistedbuildings.co.uk/101158734"
+  ],
+  "beds-jemima": [
+   "Bedfordshire Archives: Jemima, Marchioness Grey",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/JemimaMarchionessGrey.aspx"
+  ],
+  "wiki-duke": [
+   "Wikipedia: Henry Grey, 1st Duke of Kent",
+   "https://en.wikipedia.org/wiki/Henry_Grey,_1st_Duke_of_Kent"
+  ],
+  "history-today": [
+   "History Today: Home front",
+   "https://www.historytoday.com/history-matters/home-front"
+  ],
+  "wiki-cheere": [
+   "Wikipedia: John Cheere",
+   "https://en.wikipedia.org/wiki/John_Cheere"
+  ],
+  "athenian-letters-wiki": [
+   "Wikipedia: Athenian Letters",
+   "https://en.wikipedia.org/wiki/Athenian_Letters"
+  ],
+  "ega-womens-designs": [
+   "English Heritage (Google Arts & Culture): Women's Designs at Wrest Park",
+   "https://artsandculture.google.com/story/women-39-s-designs-at-wrest-park-english-heritage/LgXxSN9sLjBUrw"
+  ],
+  "wrest-circle-oxford": [
+   "University of Oxford: AHRC award, The Wrest Circle",
+   "https://www.humanities.ox.ac.uk/article/ahrc-collaborative-doctoral-award-wrest-circle"
+  ],
+  "warwick-wright": [
+   "University of Warwick: Structuring the universe (Thomas Wright)",
+   "https://warwick.ac.uk/fac/arts/history/ecc/blog/structuringtheuniverse"
+  ],
+  "en-wiki-wright": [
+   "Wikipedia: Thomas Wright (astronomer)",
+   "https://en.wikipedia.org/wiki/Thomas_Wright_(astronomer)"
+  ],
+  "lindahall-wright": [
+   "Linda Hall Library: Scientist of the Day, Thomas Wright",
+   "https://www.lindahall.org/about/news/scientist-of-the-day/thomas-wright/"
+  ],
+  "aml-pavilion-1997": [
+   "Ancient Monuments Laboratory Report 28/97: Wall painting condition audit, Archer Pavilion",
+   "https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1893-1/dissemination/pdf/englishh2-117116.pdf"
+  ],
+  "fpcr-pavilion": [
+   "FPCR: Archer Pavilion at Wrest Park",
+   "https://www.fpcr.co.uk/project/archer-pavilion-at-wrest-park/"
+  ],
+  "wiki-wsc": [
+   "Wikipedia: War of the Spanish Succession",
+   "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession"
+  ],
+  "le-altars-1311237": [
+   "Listing: Group of five altars south of Ladies Lake (1311237)",
+   "https://britishlistedbuildings.co.uk/101311237-group-of-five-altars-approximately-50m-south-of-ladies-lake-silsoe"
+  ],
+  "artfund-diana": [
+   "Art Fund: Figure of Diana",
+   "https://www.artfund.org/our-purpose/art-funded-by-you/figure-of-diana"
+  ],
+  "eh-top-dogs": [
+   "English Heritage: The top dogs at English Heritage sites",
+   "https://www.english-heritage.org.uk/visit/inspire-me/the-top-dogs-at-english-heritage-sites/"
+  ],
+  "en-wiki-chambers": [
+   "Wikipedia: William Chambers (architect)",
+   "https://en.wikipedia.org/wiki/William_Chambers_(architect)"
+  ],
+  "geograph-diana": [
+   "Geograph (Wikimedia Commons): Diana and Greyhound by Andrew Carpenter, Ladies' Lake (7540056)",
+   "https://commons.wikimedia.org/wiki/File:Silsoe,_Wrest_Park,_by_the_Ladies'_Lake,_'Diana_and_Greyhound'_by_Andrew_Carpenter_-_geograph.org.uk_-_7540056.jpg"
+  ],
+  "ehcollection": [
+   "English Heritage: Wrest Park collection highlights",
+   "https://www.english-heritage.org.uk/visit/places/wrest-park/history/collection/"
+  ],
+  "en-wiki-atlas": [
+   "Wikipedia: Atlas (mythology)",
+   "https://en.wikipedia.org/wiki/Atlas_(mythology)"
+  ],
+  "en-wiki-farnese": [
+   "Wikipedia: Farnese Atlas",
+   "https://en.wikipedia.org/wiki/Farnese_Atlas"
+  ],
+  "beds-manor": [
+   "Bedfordshire Archives: The Manor of Wrest",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/TheManorOfWrest.aspx"
+  ],
+  "beds-earls-kent": [
+   "Bedfordshire Archives: The Earls of Kent",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/TheEarlsOfKent.aspx"
+  ],
+  "beds-duke": [
+   "Bedfordshire Archives: The Duke of Kent",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/TheDukeOfKent.aspx"
+  ],
+  "beds-de-grey": [
+   "Bedfordshire Archives: The Earls and Countesses de Grey",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/TheEarlsAndCountessesDeGrey.aspx"
+  ],
+  "wiki-amabel": [
+   "Wikipedia: Amabel Hume-Campbell, 1st Countess De Grey",
+   "https://en.wikipedia.org/wiki/Amabel_Hume-Campbell,_1st_Countess_De_Grey"
+  ],
+  "wiki-earl-de-grey": [
+   "Wikipedia: Thomas de Grey, 2nd Earl de Grey",
+   "https://en.wikipedia.org/wiki/Thomas_de_Grey,_2nd_Earl_de_Grey"
+  ],
+  "beds-edward7": [
+   "Bedfordshire Archives: King Edward VII at Wrest Park",
+   "https://bedsarchives.bedford.gov.uk/CommunityHistories/Silsoe/KingEdwardVIIAtWrestPark.aspx"
+  ],
+  "eh-nurse-news": [
+   "English Heritage: First World War nurse identified",
+   "https://www.english-heritage.org.uk/about/search-news/first-world-war-nurse-identified/"
+  ],
+  "eh-nurses": [
+   "English Heritage: The nurses of Wrest Park",
+   "https://www.english-heritage.org.uk/visit/places/wrest-park/history/nurses/"
+  ],
+  "wikishire-silsoe": [
+   "Wikishire: Silsoe",
+   "https://wikishire.co.uk/wiki/Silsoe"
   ]
  },
  "map": {
@@ -6620,5 +8108,6 @@
   "reference": [
    "rulers"
   ]
- }
+ },
+ "photos": "tours/wrest-park.photos.json"
 }
