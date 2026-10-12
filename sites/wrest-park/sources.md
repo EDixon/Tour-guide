@@ -46,7 +46,7 @@ Best for dates, designers and positions. Read via British Listed Buildings where
 
 ## Where sources disagree (flag in the text)
 - **Column finial:** Bedfordshire Archives says it is a pineapple; Historic England says acanthus. A photo on the visit would settle it.
-- **Sale to the Ministry of Works:** 1946 (Historic England timeline, Bedfordshire Archives "about 1946") or 1949 (one blog). The chronology uses 1946.
+- **Sale to the Ministry of Works:** 1946 (Historic England timeline; the 2013 English Heritage report in one place), 1947 (the same report's summary) or October 1949 (Bedfordshire Archives, Wrest Park in the 20th Century; its timeline says "about 1946"). The chronology uses 1946.
 - **National Institute of Agricultural Engineering arrival:** 1948 (English Heritage) or 1947 (one timeline). The tour uses 1948.
 - **Sun Insurance:** bought the estate in 1939 (owners row). The tour's timeline event says "1940, Sun Insurance offices". Both can be true (bought 1939, staff moved in 1939–1940); the science batch should settle it.
 - **Silsoe Research Institute closure:** 2006 (English Heritage) or 2007 (Wikipedia, Silsoe).

@@ -1,4 +1,4 @@
-# wrest-park notes
+# Farm machinery (reference pack)
 
 Format: docs/KNOWLEDGE_FORMAT.md.
 

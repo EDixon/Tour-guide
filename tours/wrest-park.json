@@ -267,7 +267,7 @@
     "eh-phased"
    ],
    "stop": "bowling",
-   "more": "Langley remodelled an earlier building into a pavilion with a six-column wooden portico facing the bowling green. The date is uncertain: about 1735 in the listing, 1735 (latest 1734) in Parks & Gardens UK, and English Heritage's plan dates the main walls 1720–1721."
+   "more": "Langley remodelled an earlier building into a pavilion with a six-column wooden portico facing the bowling green. The date is uncertain: about 1735 in the listing, remodelled in 1735 in Parks & Gardens UK, and English Heritage's plan dates the main walls 1720–1721."
   },
   {
    "year": 1740,
@@ -373,7 +373,7 @@
     "wiki-earl-de-grey"
    ],
    "stop": "orangery",
-   "more": "Thomas, 2nd Earl de Grey designed the Orangery for the orange trees he bought from King Louis-Philippe (dated about 1835 in the listing; 1838–1839 in a later Historic England report). He was also the first President of the Institute of British Architects, founded in 1834."
+   "more": "Thomas, 2nd Earl de Grey designed the Orangery for the orange trees he bought from King Louis-Philippe (dated about 1835 in the listing; 1838–1839 in a later Historic England report). He was also the first President of the Institute of British Architects (founded in 1834), from 1835 until his death in 1859."
   },
   {
    "year": 1856,
@@ -466,7 +466,7 @@
     47
    ],
    "stop": "science",
-   "more": "The National Institute of Agricultural Engineering, 150 strong in 1947 and in temporary quarters near York since 1942, moved to Wrest between June 1947 and July 1948. The state had bought the house and leased it to the institute; sources give 1946 or 1949 for the purchase."
+   "more": "The National Institute of Agricultural Engineering, 150 strong in 1947 and in temporary quarters near York since 1942, moved to Wrest between June 1947 and July 1948. The state had bought the house and leased it to the institute; sources give 1946, 1947 or 1949 for the purchase."
   },
   {
    "year": 1996,
@@ -4003,7 +4003,7 @@
     "babychange",
     "shop"
    ],
-   "look": "Shop, café, toilets, baby change and accessible toilet in the visitor centre range on the north side of the walled garden; the play area is in the walled garden behind.",
+   "look": "Shop, café, toilets, baby change and, says the 2024 leaflet, an accessible toilet (English Heritage’s website says the mansion; check on the day) in the visitor centre range on the north side of the walled garden; the play area is in the walled garden behind.",
    "note": "Free golf-cart shuttle runs round the grounds. Free audio guides at admissions.",
    "bullets": [],
    "kids": [],
@@ -4171,7 +4171,7 @@
    "date": 1839,
    "era": "earl",
    "dwell": 60,
-   "look": "Four quarters of stone-edged beds with Ceres at the far end, and the glass of the conservatory behind you.",
+   "look": "Four quarters of stone-edged beds, with Ceres against the north wall, on your right as you come out of the conservatory.",
    "bullets": [
     {
      "id": 1,
@@ -4227,7 +4227,7 @@
     },
     {
      "id": 5,
-     "t": "English Heritage restored the beds in 2011, re-laying broken stone edging and replacing low-maintenance foliage with seasonal tulips, wallflowers, dahlias and pelargoniums. One Heritage Fund page dates the layout to 1882, not 1839.",
+     "t": "English Heritage restored the beds in 2011, re-laying broken stone edging and replacing the 1882 planting of low-maintenance foliage with seasonal tulips, wallflowers, dahlias and pelargoniums.",
      "imp": 2,
      "tags": {
       "gardens": 1,
@@ -4236,8 +4236,7 @@
      "src": [
       "hlfrevival",
       "eh-revitalising"
-     ],
-     "verify": true
+     ]
     }
    ],
    "kids": [
@@ -4422,7 +4421,7 @@
     },
     {
      "id": 2,
-     "t": "Cast iron is strong when squeezed but brittle when stretched. Triangulated trusses keep most of the load in compression, so slim members can carry a wide glass roof.",
+     "t": "Cast iron is strong when squeezed but brittle when stretched, so roofs like this were shaped to keep the iron mostly in compression, often with wrought iron for any parts in tension.",
      "imp": 3,
      "tags": {
       "engineering": 1,
@@ -4608,14 +4607,15 @@
     },
     {
      "id": 3,
-     "t": "X-rays had been discovered only 19 years earlier, by Wilhelm Röntgen in 1895, and portable X-ray units were new to war medicine.",
+     "t": "X-rays had been discovered only 19 years earlier, by Wilhelm Röntgen in 1895, so an X-ray room was still a modern touch for a country-house hospital.",
      "imp": 3,
      "tags": {
       "physics": 1,
       "history": 0.5
      },
      "src": [
-      "gk"
+      "gk",
+      12
      ],
      "needs": 2,
      "verify": true
@@ -4647,14 +4647,15 @@
     },
     {
      "id": 6,
-     "t": "The full-length portraits show Henry, Duke of Kent, his family and royalty including Queens Anne and Caroline, by painters such as Kneller and Amigoni.",
+     "t": "The full-length portraits show Henry, Duke of Kent, his family and royalty including Queens Anne and Caroline; Jacopo Amigoni painted the Queen Caroline in 1735.",
      "imp": 2,
      "tags": {
       "art": 1,
       "people": 0.5
      },
      "src": [
-      35
+      35,
+      "ehcollection"
      ]
     },
     {
@@ -4914,7 +4915,7 @@
     },
     {
      "id": 3,
-     "t": "Geophysical surveys (2010–2018), using magnetic and radar-type sensing of the ground, mapped lost paths and features before replanting.",
+     "t": "Geophysical surveys, using magnetic and radar-type sensing of the ground, mapped lost paths and features before replanting.",
      "imp": 3,
      "tags": {
       "physics": 1,
@@ -5122,7 +5123,7 @@
     },
     {
      "id": 7,
-     "t": "After the war the state bought the house and gardens and leased them to the institute, which had worked from temporary quarters near York since 1942. Sources give 1946 or 1949 for the purchase.",
+     "t": "After the war the state bought the house and gardens and leased them to the institute, which had worked from temporary quarters near York since 1942. Sources give 1946, 1947 or 1949 for the purchase.",
      "imp": 3,
      "tags": {
       "history": 0.8,
@@ -5132,7 +5133,9 @@
       2,
       40,
       47,
-      54
+      54,
+      "he-rr-6-2013",
+      "beds-20c"
      ],
      "verify": true
     },
@@ -5164,7 +5167,7 @@
     },
     {
      "id": 4,
-     "t": "The same camera guidance went on a tractor hoe. Garford sold its first Robocrop hoe in 2001, and two Silsoe scientists set up their own company once closure was announced.",
+     "t": "The same camera guidance went on a tractor hoe, sold by Garford as the Robocrop from about 2001, and two Silsoe scientists set up their own company once closure was announced.",
      "imp": 3,
      "tags": {
       "computing": 1,
@@ -5288,7 +5291,7 @@
     },
     {
      "id": 4,
-     "t": "Four lead groups, attributed to John Cheere and dated about 1730, flank the walk: Venus and Adonis, Meleager and Atalanta, Aeneas and Anchises, and the Abduction of Helen.",
+     "t": "Four lead groups flank the walk: Venus and Adonis, Meleager and Atalanta, Aeneas and Anchises, and the Abduction of Helen. Historic England dates them about 1730 and credits John Cheere.",
      "imp": 3,
      "tags": {
       "art": 1
@@ -5342,14 +5345,16 @@
     },
     {
      "id": 8,
-     "t": "The groups were not made for Wrest. The listing thinks they came from Cheere's stock, sold off in the late 1700s, and a view of 1839 already shows them here.",
+     "t": "But Cheere only set up his statue yard in 1739, and English Heritage dates one group to the late 1700s. An 1839 view already shows them here.",
      "imp": 2,
      "tags": {
       "art": 0.6,
       "history": 0.5
      },
      "src": [
-      "lst1113789"
+      "lst1113789",
+      "ehcollection",
+      "wiki-cheere"
      ],
      "needs": 4
     },
@@ -5850,7 +5855,7 @@
     },
     {
      "id": 2,
-     "t": "Bowls ran in the family. Bedfordshire Archives says the Duke's father, Anthony, 11th Earl of Kent, died on a bowling green in Tonbridge, in 1702.",
+     "t": "Bowls ran in the family. The Duke's father, Anthony, 11th Earl of Kent, died in August 1702 while playing bowls: at Tonbridge, says Bedfordshire Archives, or Tunbridge Wells, says the History of Parliament.",
      "imp": 3,
      "tags": {
       "people": 1
@@ -5858,7 +5863,7 @@
      "verify": true,
      "src": [
       10,
-      "wiki-anthony"
+      "hop-anthony-grey"
      ]
     },
     {
@@ -6118,7 +6123,7 @@
     },
     {
      "id": 3,
-     "t": "A sundial works because its blade, the gnomon, points at the Earth’s pole: it is tilted up at Silsoe’s latitude, about 52 degrees. The Earth’s turning then sweeps the shadow round at an even rate.",
+     "t": "The blade, the gnomon, points at the Earth's pole, tilted at Silsoe's latitude of about 52 degrees. The Sun moves an even 15 degrees an hour, but the hour lines bunch up near noon.",
      "imp": 4,
      "tags": {
       "physics": 1,
@@ -6300,7 +6305,7 @@
     },
     {
      "id": 3,
-     "t": "A straight canal was French fashion; Charles II had dug one at Hampton Court about 1670. After 1688 William III’s Dutch taste arrived, and the future Duke wrote home from the Netherlands admiring tree-lined canals.",
+     "t": "A straight canal was French fashion; Charles II had dug one at Hampton Court in 1661–1662. After 1688 William III's Dutch taste arrived, and the future Duke wrote home from the Netherlands admiring tree-lined canals.",
      "imp": 3,
      "tags": {
       "gardens": 1,
@@ -6435,7 +6440,7 @@
     },
     {
      "id": 4,
-     "t": "Jemima was 17 when she married Philip Yorke, the Lord Chancellor's son, on 22 May 1740. The Duke died on 5 June, having outlived all his sons, and she inherited Wrest.",
+     "t": "Jemima was 16 or 17 (sources differ on 1722 or 1723) when she married Philip Yorke, the Lord Chancellor's son, on 22 May 1740. The Duke died on 5 June; she inherited Wrest.",
      "imp": 4,
      "tags": {
       "people": 1,
@@ -6450,15 +6455,15 @@
     },
     {
      "id": 5,
-     "t": "Jemima and Philip kept a lively circle of relatives and friends at Wrest: days in the gardens, evenings swapping poems.",
+     "t": "Jemima and Philip kept a lively circle of relatives and friends at Wrest, who wrote poems, plays and inscriptions together.",
      "imp": 2,
      "tags": {
       "people": 1
      },
      "needs": 4,
-     "verify": true,
      "src": [
-      "history-today"
+      "wrest-circle-oxford",
+      9
      ]
     },
     {
@@ -6506,7 +6511,7 @@
    "bullets": [
     {
      "id": 1,
-     "t": "The Mithraic Altar was put up by 1748 for Jemima and her husband Philip Yorke: a chunky flint-faced block with lion's-paw feet, carrying one inscription in ancient Greek and one in a made-up 'Persian' script.",
+     "t": "The Mithraic Altar was put up by 1748 for Jemima and Philip Yorke: a flint-faced block on lion's paws, inscribed in Greek and in 'Persian' cuneiform-style characters copied from a travel book.",
      "imp": 3,
      "tags": {
       "history": 0.6,
@@ -6644,14 +6649,15 @@
    "bullets": [
     {
      "id": 1,
-     "t": "King William III in Roman armour, crowned with laurel (1730s, by John Cheere), placed right on the main axis.",
+     "t": "King William III in Roman armour, crowned with laurel, placed right on the main axis. Historic England thinks it came after 1737, probably by John Cheere; Bedfordshire Archives says Nost, 1727–1730.",
      "imp": 3,
      "tags": {
       "art": 0.8,
       "history": 0.6
      },
      "src": [
-      23
+      23,
+      38
      ]
     },
     {
@@ -7016,7 +7022,7 @@
     },
     {
      "id": 4,
-     "t": "It was first set up to be seen from the Bath House, then moved: 1828 says the listing, about 1830 a 2015 survey. Its old site near the yew hedge has a plaque.",
+     "t": "It was moved in about 1828–1830. Where it first stood is disputed: near the Bath House, or near Bowling Green House (Parks & Gardens UK). A plaque marks one old site.",
      "imp": 1,
      "tags": {
       "history": 0.6
@@ -7024,7 +7030,8 @@
      "src": [
       21,
       "he-rr-84-2015",
-      "he-rr-74-2018"
+      "he-rr-74-2018",
+      "pg-wrest"
      ],
      "verify": true
     },
@@ -7274,7 +7281,7 @@
     },
     {
      "id": 9,
-     "t": "By the Ladies' Lake stands a lead Diana with her greyhound, made about 1729–1730, probably by Andrew Carpenter for the Duke of Kent. Sold in 1917, it was bought back at auction in 2011 with Art Fund help.",
+     "t": "By the Ladies' Lake stands a lead Diana with her greyhound, about 1729–1730, probably by Andrew Carpenter. It left Wrest with John Murray and was bought back in 2012 with Art Fund help.",
      "imp": 3,
      "tags": {
       "art": 0.7,
@@ -7283,8 +7290,8 @@
      "photo": "diana-greyhound",
      "src": [
       "artfund-diana",
-      "geograph-diana",
-      "ehcollection"
+      "eh-revitalising",
+      "he-rr-6-2013"
      ]
     },
     {
@@ -7326,7 +7333,7 @@
    "dateLabel": "early 1700s",
    "era": "duke",
    "dwell": 40,
-   "look": "A weathered stone Atlas stooping under a globe on a plain pedestal, in rough grass, about 250 m south-east of the old house site.",
+   "look": "A weathered stone Atlas stooping under a globe on a plain pedestal, in rough grass, about 250 m south-east of the present house and about 160 m east of the old house site.",
    "bullets": [
     {
      "id": 1,

@@ -1,9 +1,9 @@
 # Wrest Park: status
 
-Stage: check
+Stage: publish
 Updated: 2026-10-12
 
-**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs merged the same day. Next: site-check.
+**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs and site-check done the same day. Next: site-publish.
 
 **Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
 - English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
@@ -20,7 +20,7 @@ Updated: 2026-10-12
   - two photo-spot stops (sundial, Oldpark Water)
 - [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
 - [x] reference-packs (2026-10-12): `rulers` extended (England/Britain 1066–2026, Scotland, France 1060–2026, Holy Roman Empire, Spain, Austria). New packs: `habsburgs`, `garden-styles`, `farm-machinery`. Four site sections they replace were removed: oranges, trompe-l'œil, the Spanish Succession, and Marie Antoinette.
-- [ ] site-check: not done. No fact-check yet.
+- [x] site-check (2026-10-12): format fixes; independent fact-check (`factcheck.md`: about 560 claims, 10 wrong, all fixed; 27 where sources disagree, now said in the text; 12 unsupported, softened or re-sourced). Planner and assistant fixes found while trying it as a visitor.
 - [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
 
 ## Research batches
@@ -43,6 +43,19 @@ Updated: 2026-10-12
 - **Planner time:** the network went from 42 to 214 nodes, so a worst-case 4-hour plan takes about 870 ms here (was about 600 ms; the test limit is 1500 ms). Watch for lag on the phone.
 
 ## Flags for Eliot
+- **Check on the day (from the fact-check):**
+  - **Mercury and Cupid:** the listing says about 70 m down the east bank of the Long Water.
+  - **Chinese Bridge:** east of the temple (coordinates) or north (listing text)?
+  - **Accessible toilet:** at the visitor centre (2024 leaflet) or only in the mansion (EH website)?
+  - **Ceres** should be against the north wall of the Italian Garden.
+- **Planner (fixed 12 October 2026):** the rebuilt path network had cut a 2.5-hour plan to 9 far-apart stops. Over-long seeds are now trimmed, not discarded, and scenic detours are capped at half as long again plus 3 minutes. A 2.5-hour light plan now has 17 stops.
+- **Orangery missing from long plans:** it is often left out of a 4-hour plan from the visitor centre, because its hand-set `wow` of 3 does not beat nearer stops. The visitor-scout scores, which are on hold, would settle it; otherwise raise it by hand.
+- **Fact-check corrections worth knowing:**
+  - Diana was bought back in 2012 (not 2011), and left with Murray rather than in the 1917 sale.
+  - Hampton Court's canal is 1661–1662.
+  - The altar's "Persian" characters were copied from a travel book.
+  - RIBA presidency is 1835–1859.
+  - Atlas is about 160 m east of the old house site.
 - **Reference packs:**
   - **Written from memory first.** All four reference-writer agents did this; the three new packs were then sent back to check against the web. Corrections included AHDB grain moisture, the GPS date, Le Nôtre's 1662 summons and the Nost family. What they could not confirm was removed, and what is left unchecked is marked "general knowledge" in each Sources line. The rulers list was not checked online (standard reign dates). The fact-checker should sample all four.
   - **Rulers end at 2026.** The format has no "to date", so the current monarchs' and republics' rows need their end year bumped each year.
@@ -93,6 +106,7 @@ Updated: 2026-10-12
 - **Branch.** This session pushed to `ccr-36dbd78e-uhfhwl` (an earlier one to `claude/wrest-park-g823kx`). Pages publishes `main`, so merge it to go live.
 
 ## Log
+- 2026-10-12: site-check. Format fixes, independent fact-check and all wrong items fixed. Planner fix: seeds are trimmed to fit and scenic detours capped. Assistant fix: pronoun follow-ups bring in the linked people's dates. Tests all pass.
 - 2026-10-12: reference packs written, checked against the web, and merged; tour `knowledge.reference` now lists all four. Clashing generic aliases removed from the packs.
 - 2026-10-12: research batches 1–7 (stop-researcher agents) reviewed and merged.
   - Duplicate source keys unified; 76 sources added to the tour; the tour now names `tours/wrest-park.photos.json`. Photo download started on GitHub Actions for this branch.

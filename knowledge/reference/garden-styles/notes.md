@@ -1,4 +1,4 @@
-# wrest-park notes
+# Garden styles (reference pack)
 
 Format: docs/KNOWLEDGE_FORMAT.md.
 
