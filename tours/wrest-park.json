@@ -8106,7 +8106,10 @@
  "knowledge": {
   "site": "knowledge/wrest-park",
   "reference": [
-   "rulers"
+   "rulers",
+   "habsburgs",
+   "garden-styles",
+   "farm-machinery"
   ]
  },
  "photos": "tours/wrest-park.photos.json"

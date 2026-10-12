@@ -1,9 +1,9 @@
 # Wrest Park: status
 
-Stage: reference
+Stage: check
 Updated: 2026-10-12
 
-**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Next: reference-packs.
+**Existing site.** Research batches 1–7 merged on 12 October 2026 (visitors still on hold). Reference packs merged the same day. Next: site-check.
 
 **Inputs Eliot has supplied** (kept in `sites/wrest-park/inputs/`, not in the repo, so ask again in a fresh container):
 - English Heritage orientation leaflet (2024), PDF, supplied 12 October 2026.
@@ -19,7 +19,7 @@ Updated: 2026-10-12
   - car parks, admissions and south toilets added
   - two photo-spot stops (sundial, Oldpark Water)
 - [x] site-research (2026-10-12): batches 1–7 merged; visitors on hold.
-- [ ] reference-packs: dispatched 2026-10-12 (rulers extended; habsburgs, garden-styles, farm-machinery new).
+- [x] reference-packs (2026-10-12): `rulers` extended (England/Britain 1066–2026, Scotland, France 1060–2026, Holy Roman Empire, Spain, Austria). New packs: `habsburgs`, `garden-styles`, `farm-machinery`. Four site sections they replace were removed: oranges, trompe-l'œil, the Spanish Succession, and Marie Antoinette.
 - [ ] site-check: not done. No fact-check yet.
 - [ ] site-publish: already listed in the app. Re-publish (bump `sw.js` VERSION) once the knowledge changes.
 
@@ -43,6 +43,9 @@ Updated: 2026-10-12
 - **Planner time:** the network went from 42 to 214 nodes, so a worst-case 4-hour plan takes about 870 ms here (was about 600 ms; the test limit is 1500 ms). Watch for lag on the phone.
 
 ## Flags for Eliot
+- **Reference packs:**
+  - **Written from memory first.** All four reference-writer agents did this; the three new packs were then sent back to check against the web. Corrections included AHDB grain moisture, the GPS date, Le Nôtre's 1662 summons and the Nost family. What they could not confirm was removed, and what is left unchecked is marked "general knowledge" in each Sources line. The rulers list was not checked online (standard reign dates). The fact-checker should sample all four.
+  - **Rulers end at 2026.** The format has no "to date", so the current monarchs' and republics' rows need their end year bumped each year.
 - **From the research (12 October 2026), to check or decide:**
   - **Photos:** all 44 downloaded. The 12 nobody had seen (batch 3, the science view, the Orangery fireplace and the Bath House) were checked on 12 October 2026 and show the right things.
   - **No photo found** for: the Hutton Monument, the dogs' cemetery, the dairy and its cupola, the conservatory roof trusses, the Bath House roof holes and lion's face, and the old house parchmarks. Worth taking on the day.
@@ -90,6 +93,7 @@ Updated: 2026-10-12
 - **Branch.** This session pushed to `ccr-36dbd78e-uhfhwl` (an earlier one to `claude/wrest-park-g823kx`). Pages publishes `main`, so merge it to go live.
 
 ## Log
+- 2026-10-12: reference packs written, checked against the web, and merged; tour `knowledge.reference` now lists all four. Clashing generic aliases removed from the packs.
 - 2026-10-12: research batches 1–7 (stop-researcher agents) reviewed and merged.
   - Duplicate source keys unified; 76 sources added to the tour; the tour now names `tours/wrest-park.photos.json`. Photo download started on GitHub Actions for this branch.
   - Two person sections dropped as duplicates of batch 7.

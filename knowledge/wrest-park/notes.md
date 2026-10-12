@@ -16,16 +16,6 @@ The orange trees were bought from King Louis-Philippe of France. In summer they 
 Inside, a stone fireplace with the de Grey arms comes from the old house. The listing dates it about 1600; Historic England's 2013 report, following the Earl's own 1831 caption, says about 1570, with the arms of Edmund Grey, 1st Earl of Kent. Bedfordshire Archives says it was only installed in the Orangery in the twentieth century. On the steps are four early-1700s stone cherubs, probably by an unknown Flemish sculptor, holding a book, a puppy, a bird's nest and a torch. The Orangery was conserved and repainted in 2011.
 Sources: Historic England list entry 1158549; Bedfordshire Archives, Buildings at Wrest Park; Historic England Research Report 6/2013 (landscape investigations); Historic England Research Report 74/2018 (Bath House); Historic England Research Report 84/2015; Albion Archaeology, Old Park Weir (2007); English Heritage, Revitalising Wrest Park.
 
-## Growing oranges in England
-Kind: reference
-About: orangery
-Citrus trees are killed by frost, so in northern Europe they were grown in tubs: outside in summer, then moved under cover before the first frosts. The building that sheltered them was an orangery. Orangeries became fashionable among royalty and the nobility in the late 1600s. Louis XIV's Orangerie at Versailles (1684–86) held over a thousand trees, and Queen Anne's Orangery at Kensington Palace was built in 1704–05. Owning orange trees showed wealth, because of the cost of heating, staff and the building itself.
-
-Early orangeries had solid roofs and tall south-facing windows: the trees only had to survive the winter, not grow. In the 1800s cheaper cast iron and better glass made glass roofs possible, and big conservatories followed, such as Joseph Paxton's Great Conservatory at Chatsworth (late 1830s). Glass was taxed in Britain until 1845, so a large glass roof in 1835, as at Wrest, was a costly statement.
-
-Light is the problem in an English winter. At Wrest's latitude (about 52° North), the midday sun at the winter solstice is only about 15° above the horizon (90 − 52 − 23.4), and days are under eight hours long. Cast iron is very strong in compression, so the glazing bars could be slim, blocking less light than timber.
-Sources: general knowledge; Versailles and Kensington dates from standard histories.
-
 ## Louis-Philippe and Queen Maria Amalia
 Kind: reference
 About: louis-philippe, orangery
@@ -75,22 +65,6 @@ He was an amateur: from 1705 he held the court post of Groom Porter, which licen
 
 At Wrest he also designed Cain Hill House (about 1712–1715, now demolished) for the Duke of Kent, but the Pavilion is the part that survives.
 Sources: Historic England list entry 1113807 (education, travels, Chatsworth, Heythrop, Cain Hill House); Wikipedia, Thomas Archer (Groom Porter, comptroller, church dates).
-
-## Trompe-l'œil and painted rooms
-Kind: reference
-About: pavilion-paint
-Trompe-l'œil is French for "deceive the eye": flat painting made to look three-dimensional, using linear perspective (lines that converge on a vanishing point) and light and shade painted as if lit from the room's real windows. The illusion works best from one viewpoint, usually the doorway or the centre of the room; from elsewhere the geometry starts to look wrong. Painted architecture was much cheaper than carving real columns and a coffered dome.
-
-Around 1700, painted halls and staircases were the height of fashion in England, led by foreign painters such as Antonio Verrio and Louis Laguerre, and by the Englishman James Thornhill, who painted the Painted Hall at Greenwich (1707–26).
-Sources: general knowledge.
-
-## The War of the Spanish Succession
-Kind: reference
-About: pavilion
-The Archer Pavilion was built during the War of the Spanish Succession (1701–14). When Charles II of Spain, the last Spanish Habsburg king, died childless in 1700, he left his empire to Philip of Anjou, grandson of Louis XIV of France. Britain, the Dutch Republic and the Austrian Habsburgs formed a Grand Alliance to stop France and Spain uniting, backing the Habsburg Archduke Charles for the Spanish throne.
-
-The Duke of Marlborough won the great allied victories: Blenheim (1704), Ramillies (1706), Oudenaarde (1708) and Malplaquet (September 1709), a very bloody battle fought in the year the Pavilion was begun. The war ended with the Treaty of Utrecht in 1713: Philip kept Spain but gave up any claim to France, and Britain gained Gibraltar and Minorca.
-Sources: general knowledge.
 
 ## Henry Grey, Duke of Kent
 Kind: person
@@ -259,18 +233,6 @@ The name. It is named after the Petit Trianon at Versailles, the small château 
 
 Nearby, an "American Garden" was laid out in 1857, according to the listing.
 Sources: Historic England list entry 1402866 (read via British Listed Buildings); Parks & Gardens UK, Wrest Park; Bedfordshire Archives, Buildings at Wrest Park; Wikipedia, Thomas de Grey, 2nd Earl de Grey (for his daughters; lead only); Historic England list entry 1158506 (for Francis Cowper's dates).
-
-## Marie Antoinette and the Petit Trianon at Versailles
-Kind: reference
-About: marie-antoinette, maria-theresa, versailles-petit-trianon
-The Petit Trianon is a small neoclassical château in the grounds of Versailles, built in 1761–1768 by the architect Ange-Jacques Gabriel for Louis XV. When Louis XVI came to the throne in 1774 he gave it to his queen, Marie Antoinette, who made it her private retreat, where she could escape the formality of court.
-
-Marie Antoinette (born 2 November 1755, executed 16 October 1793) was an Austrian archduchess, a Habsburg: the youngest daughter of Empress Maria Theresa and of Francis I, the Holy Roman Emperor. Her marriage to the future Louis XVI in 1770 sealed the alliance between the Habsburgs and the Bourbons of France. This is the Habsburg link to Wrest: the playhouse borrows the name of her favourite house.
-
-In the Petit Trianon park she had the Queen's Hamlet (Hameau de la Reine) built about 1783–1786 by Richard Mique, after designs influenced by the painter Hubert Robert: about ten rustic cottages and a farm around a lake, where she and her friends played at country life. The hamlet is the best-known example of the eighteenth-century fashion for make-believe rustic buildings. No Wrest source ties the log playhouse to it.
-
-Why it matters at Wrest. The 2nd Earl de Grey built his house in 1834–1839 in the French style of the Louis XV era, copying a design from Blondel's Maisons de Plaisance (1737) and the Hôtel de Matignon in Paris. The name of his playhouse fits that taste, but no source documents the Earl's reasoning.
-Sources: general knowledge (Château de Versailles, Petit Trianon and Hameau de la Reine; verify dates against the Château's own pages, which could not be opened); Historic England list entry 1311484 (house copies Blondel and the Hôtel de Matignon, per existing notes); Historic England list entry 1402866.
 
 ## The old house of Wrest
 Kind: site
