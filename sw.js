@@ -1,11 +1,14 @@
 // Offline cache: everything the app needs is cached on first visit; afterwards it runs with no signal.
-const VERSION = 'tg-v13';
+const VERSION = 'tg-v14';
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'planner.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png',
-  'tours/index.json', 'tours/wrest-park.json', 'tours/wrest-park.map.json',
+  'tours/index.json', 'tours/wrest-park.json', 'tours/wrest-park.map.json', 'tours/wrest-park.photos.json',
   'assistant/llm.js', 'assistant/prompt.js', 'assistant/maths.js', 'assistant/retrieve.js', 'assistant/knowledge.js',
   'knowledge/wrest-park/notes.md', 'knowledge/wrest-park/dates.json', 'knowledge/reference/rulers/notes.md', 'knowledge/reference/rulers/dates.json',
+  'knowledge/reference/habsburgs/notes.md', 'knowledge/reference/habsburgs/dates.json',
+  'knowledge/reference/garden-styles/notes.md', 'knowledge/reference/garden-styles/dates.json',
+  'knowledge/reference/farm-machinery/notes.md', 'knowledge/reference/farm-machinery/dates.json',
 ];
 self.addEventListener('install', (e) => {
   // cache: 'reload' bypasses the browser's HTTP cache so an update never caches stale files.
