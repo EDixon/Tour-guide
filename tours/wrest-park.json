@@ -4264,7 +4264,7 @@
    ],
    "mustSee": true,
    "date": 1834,
-   "dateLabel": "1834–39",
+   "dateLabel": "1834–1839",
    "era": "earl",
    "dwell": 90,
    "look": "Stand at the top of the terrace steps and look due south down the main axis.",
@@ -4310,7 +4310,7 @@
     },
     {
      "id": 4,
-     "t": "Unique in England: a whole country house built and decorated in French Louis XV style, in one go, 1834–39.",
+     "t": "Unique in England: a whole country house built and decorated in French Louis XV style, in one go, 1834–1839.",
      "imp": 4,
      "tags": {
       "architecture": 1,
@@ -4537,7 +4537,7 @@
     },
     {
      "id": 3,
-     "t": "White-and-gilt plasterwork revives 1730s–50s French taste. These are among the earliest Rococo Revival interiors in England.",
+     "t": "White-and-gilt plasterwork revives 1730s–1750s French taste. These are among the earliest Rococo Revival interiors in England.",
      "imp": 2,
      "tags": {
       "interiors": 1,
@@ -4914,7 +4914,7 @@
     },
     {
      "id": 3,
-     "t": "Geophysical surveys (2010–18), using magnetic and radar-type sensing of the ground, mapped lost paths and features before replanting.",
+     "t": "Geophysical surveys (2010–2018), using magnetic and radar-type sensing of the ground, mapped lost paths and features before replanting.",
      "imp": 3,
      "tags": {
       "physics": 1,
@@ -4928,7 +4928,7 @@
     },
     {
      "id": 4,
-     "t": "A c.1682 painting of the Crew sisters by Jacob Huysmans left with the 1917 sale. English Heritage bought it back in 2015.",
+     "t": "A painting of about 1682 of the Crew sisters by Jacob Huysmans left with the 1917 sale. English Heritage bought it back in 2015.",
      "imp": 2,
      "tags": {
       "art": 1,
@@ -5086,7 +5086,7 @@
    ],
    "approx": true,
    "date": 1948,
-   "dateLabel": "1917–2006",
+   "dateLabel": "1939–2006",
    "era": "science",
    "dwell": 30,
    "look": "Look north-east across the lawn to the modern buildings beyond the old stable block: the former research campus where the institute worked.",
@@ -5685,7 +5685,7 @@
     -0.4153
    ],
    "date": 1769,
-   "dateLabel": "c.1769–71",
+   "dateLabel": "about 1769–1771",
    "era": "jemima",
    "dwell": 150,
    "look": "The rough ironstone building with a thatched cone, west of the Orangery beside the Bath House Water. Climb the Cascade mound next to it for the best view.",
@@ -5828,7 +5828,7 @@
     -0.414
    ],
    "date": 1735,
-   "dateLabel": "c.1735",
+   "dateLabel": "about 1735",
    "era": "duke",
    "dwell": 75,
    "look": "The white columned pavilion facing east across the bowling green; its brick arcade at the back faces Oldpark Water.",
@@ -6078,7 +6078,7 @@
     -0.41169
    ],
    "date": 1682,
-   "dateLabel": "1682 (statues about 1840)",
+   "dateLabel": "1682 (statues mid-1800s)",
    "era": "restoration",
    "dwell": 90,
    "wow": 3,
@@ -6499,7 +6499,7 @@
     -0.4129
    ],
    "date": 1748,
-   "dateLabel": "1748 (and c.1730)",
+   "dateLabel": "1748 (and about 1730)",
    "era": "jemima",
    "dwell": 60,
    "look": "A squat altar faced with knapped flint, with lion's-paw feet and curled leaves at the corners, in the woods west of the Pavilion. About 40 m further west is a plain brick wall with a plaque: the Hutton Monument.",
@@ -6696,7 +6696,7 @@
    ],
    "mustSee": true,
    "date": 1709,
-   "dateLabel": "1709–11",
+   "dateLabel": "1709–1711",
    "era": "duke",
    "dwell": 210,
    "look": "The domed Baroque banqueting house closing the end of the Long Water. Look back north to the house.",
@@ -6941,7 +6941,7 @@
     -0.4085
    ],
    "date": 1760,
-   "dateLabel": "1758–60",
+   "dateLabel": "1758–1760",
    "era": "jemima",
    "dwell": 45,
    "look": "A tall stone column among the trees by the Broad Water. What is on top: a pineapple, acanthus leaves or an urn?",
@@ -7167,7 +7167,7 @@
     -0.4092
    ],
    "date": 1760,
-   "dateLabel": "c.1760 & 1876",
+   "dateLabel": "about 1760 & 1876",
    "era": "jemima",
    "dwell": 90,
    "look": "The white-and-red timber temple with its two-tier pagoda roof and little bells, then the pale brick bridge just east over the water. Just west, a white statue of Diana with her greyhound stands beside the Ladies' Lake.",

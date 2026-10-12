@@ -185,9 +185,10 @@ test('visitor favourites are planned more when the popular weighting is up', () 
   const favs = ['chinese', 'atlas', 'dairy'];
   for (const id of favs) t2.stops.find(s => s.id === id).popular = 5;
   const m2 = buildModel(t2);
-  const count = (w) => plan(m2, mk(120), S({ weights: { popular: w } }), NOW).route.filter(id => favs.includes(id)).length;
+  // Summed over short and medium visits: in a long plan most stops fit anyway, so the weighting only shows when time is tight.
+  const count = (w) => [45, 75, 120].reduce((n, mins) => n + plan(m2, mk(mins), S({ weights: { popular: w } }), NOW).route.filter(id => favs.includes(id)).length, 0);
   const on = count(1), off = count(0);
-  console.log(`     favourites in a 2-hour plan: popular=1 → ${on}, popular=0 → ${off}`);
+  console.log(`     favourites in 45-, 75- and 120-minute plans: popular=1 → ${on}, popular=0 → ${off}`);
   assert.ok(on > off);
 });
 

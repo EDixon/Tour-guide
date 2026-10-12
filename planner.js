@@ -460,6 +460,25 @@ function improve(route, pool, ctx, fixedPrefix, deadlineMs, blocks) {
   return { route, ev: cur };
 }
 
+// Trim a route that overruns the time, dropping whichever stop costs most each time, rather than
+// throwing it away: on a big site a visit-everything seed rarely fits, and a search started from
+// an empty route can settle on a few far-apart stops. Breaks are kept.
+function fit(route, ctx, fixed) {
+  let ev = evaluate(route, ctx);
+  while (!ev.feasible && route.length > fixed) {
+    let bestR = null, bestE = null;
+    for (let i = fixed; i < route.length; i++) {
+      if (route[i] === BREAK_ID) continue;
+      const r = [...route.slice(0, i), ...route.slice(i + 1)];
+      const e = evaluate(r, ctx);
+      if (!bestE || e.score > bestE.score) { bestR = r; bestE = e; }
+    }
+    if (!bestR) break;
+    route = bestR; ev = bestE;
+  }
+  return { route, ev };
+}
+
 function buildingBlocks(model, pool) {
   const by = new Map();
   for (const s of model.tour.stops) {
@@ -503,7 +522,8 @@ export function plan(model, state, settings, nowS, opts = {}) {
     const allowed = new Set(pool);
     let seed = seedRaw.filter(id => allowed.has(id) && id !== state.forceFirst);
     seed = fixed ? [route[0], ...seed] : seed;
-    const sEv = evaluate(seed, ctx);
+    let sEv;
+    ({ route: seed, ev: sEv } = fit(seed, ctx, fixed));
     if (!sEv.feasible && sEv.score < e1.score) continue;
     const { route: r, ev } = improve(seed, pool, ctx, fixed, t0 + budget * 0.6, blocks);
     if (ev.score > e1.score + 1e-6) { r1 = r; e1 = ev; }
@@ -514,8 +534,7 @@ export function plan(model, state, settings, nowS, opts = {}) {
     // Put a break at its best position in the current route, then let the search rebuild around it.
     let seed = null, seedEv = null;
     for (let p = fixed; p <= r1.length; p++) {
-      const r = [...r1.slice(0, p), BREAK_ID, ...r1.slice(p)];
-      const e = evaluate(r, ctx);
+      const { route: r, ev: e } = fit([...r1.slice(0, p), BREAK_ID, ...r1.slice(p)], ctx, fixed);
       if (!seedEv || e.score > seedEv.score) { seed = r; seedEv = e; }
     }
     if (seed) {
