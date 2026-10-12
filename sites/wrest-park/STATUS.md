@@ -27,7 +27,7 @@ Updated: 2026-10-12
 | Batch | Stops | State |
 |---|---|---|
 | 1 Earl de Grey's gardens by the house | italian, conservatory, parterre, dairy | returned, reviewed |
-| 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | dispatched |
+| 2 Old house and the seventeenth-century axis | oldhouse, sundial, longwater | returned, reviewed |
 | 3 The Duke's woodland and the canals | bowling, whh, ehh, oldpark | returned, reviewed |
 | 4 Jemima's garden and its follies | altar, chinese, altars, atlas | returned, reviewed |
 | 5 Water and heat (deepen) | orangery, bathhouse, cbcol, pavilion | dispatched |

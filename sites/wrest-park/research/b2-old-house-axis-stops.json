@@ -1,0 +1,394 @@
+{
+ "oldhouse": {
+  "photo": "round-pond-fountain",
+  "look": "The round pond with its marble fountain, about 200 m south of the present house and close to where the old house stood. Four seated women round the shaft hold a net, a dolphin, a goose and an oar. Turn round for the view back up the garden to the house.",
+  "note": "On lawn and gravel, no steps at the pond itself; the way down from the house crosses the parterre steps (a step-free route is marked on the leaflet). Nothing of the old house shows above ground; its walls lie just under the turf and show as brown parchmarks in dry summers. The fountain is not always running.",
+  "kids": [
+   {
+    "t": "Find the stone lady leaning on an oar, sitting under the big bowl!",
+    "photo": "fountain-ladies"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Roughly here stood the old house: a rambling building that had grown piecemeal since the Middle Ages. Earl de Grey began pulling it down in 1834 and built the present house 200 metres north.",
+    "imp": 5,
+    "tags": {
+     "history": 1,
+     "architecture": 0.6
+    },
+    "src": [
+     3,
+     1,
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The first record is from the 1280s. When Reginald de Grey died in 1307–1308, papers listed a ‘capital messuage with a dovecote’ at Silsoe: a manor house and its outbuildings. By 1512 it was moated.",
+    "imp": 3,
+    "tags": {
+     "history": 1
+    },
+    "src": [
+     "beds-pre-17c",
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "In spring 1639 the poet Thomas Carew stayed here and wrote ‘To my friend G.N. from Wrest’. He praises the plain house, the warm welcome and streams that ‘twice surround this island Mansion’.",
+    "imp": 3,
+    "tags": {
+     "history": 0.7,
+     "people": 0.8,
+     "gardens": 0.4
+    },
+    "src": [
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "Anthony, 11th Earl, and his wife Mary gave the house a classical north front ‘to disguise its irregularities’. The listing says 1671; others say 1672 to 1676. Mary’s inheritance paid for much of it.",
+    "imp": 3,
+    "tags": {
+     "architecture": 1,
+     "history": 0.4
+    },
+    "needs": 1,
+    "src": [
+     3,
+     "beds-17c",
+     "hop-anthony-grey",
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Two survivors: a chimneypiece of about 1570 to 1600, now in the Orangery, with the arms of Edmund Grey and the motto ‘Foy est tout’; and the clock tower, moved to the new service yard.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8,
+     "architecture": 0.3
+    },
+    "needs": 1,
+    "src": [
+     3,
+     8,
+     10,
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 10,
+    "t": "The old house came down slowly, while the new one rose: watercolours show parts still standing in 1838. Its walls lie just under the turf and show as brown parchmarks in dry summers.",
+    "imp": 3,
+    "tags": {
+     "history": 0.6,
+     "engineering": 0.4
+    },
+    "needs": 1,
+    "src": [
+     "eh-landscape-2013",
+     "dawson-archaeology",
+     10
+    ]
+   },
+   {
+    "id": 5,
+    "t": "The fountain was fed from cisterns at the top of the house. Gravity alone gave the pressure: every 10 metres of height adds about 1 bar.",
+    "imp": 4,
+    "tags": {
+     "physics": 1,
+     "engineering": 0.8
+    },
+    "src": [
+     29,
+     "gk"
+    ]
+   },
+   {
+    "id": 11,
+    "t": "The fountain is younger than it looks. Its listing says it was acquired by Anne Florence, Countess Cowper, after 1859; Bedfordshire Archives says about 1840. The eight marble statues round it stand on older pedestals.",
+    "imp": 3,
+    "tags": {
+     "history": 0.5,
+     "art": 0.6
+    },
+    "src": [
+     29,
+     11,
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 6,
+    "t": "In the new house’s service yard are a horse-driven pump house beside a well, and a fire-engine house for a horse-drawn engine, both built in 1834–1839.",
+    "imp": 2,
+    "tags": {
+     "engineering": 1
+    },
+    "needs": 5,
+    "src": [
+     30
+    ]
+   }
+  ]
+ },
+ "sundial": {
+  "photo": "sundial-axis-view",
+  "look": "Stand by the sundial and look north up the main axis to the house, framed by the marble statues; south, the lawn runs on to the head of the Long Water.",
+  "note": "On gravel and lawn, no steps. The brass blade (gnomon) may be missing: a 2024 register entry says it is. The dial plate is a replica, so do not expect to read the time to the minute.",
+  "kids": [
+   {
+    "t": "Find the stone girl with a little bird on her shoulder, standing round the sundial!",
+    "photo": "sundial-girl-bird"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "The dial plate is dated 1682 and signed by Henry Wynne, a leading London instrument maker. The brass original is now kept indoors, and the plate here is a replica.",
+    "imp": 4,
+    "tags": {
+     "physics": 0.6,
+     "history": 0.5
+    },
+    "photo": "sundial-gnomon-arms",
+    "src": [
+     37,
+     "bss-s2125",
+     "bss-s5169"
+    ],
+    "verify": true
+   },
+   {
+    "id": 2,
+    "t": "The six marble statues round it are mid-1800s, not 1682: Hebe, Minerva, three dancing bacchantes and a girl with a bird. Sources differ: about 1840 for Earl de Grey, or after 1859.",
+    "imp": 3,
+    "tags": {
+     "history": 0.4,
+     "art": 0.6
+    },
+    "photo": "sundial-statues-ring",
+    "src": [
+     38,
+     "listing-sundial-statues"
+    ]
+   },
+   {
+    "id": 3,
+    "t": "A sundial works because its blade, the gnomon, points at the Earth’s pole: it is tilted up at Silsoe’s latitude, about 52 degrees. The Earth’s turning then sweeps the shadow round at an even rate.",
+    "imp": 4,
+    "tags": {
+     "physics": 1,
+     "space": 0.5
+    },
+    "needs": 1,
+    "src": [
+     "gk",
+     "london-dial-wiki"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "A sundial and a watch rarely agree. Silsoe is west of Greenwich, so its noon comes about 1 minute 40 seconds late, and the Sun runs up to 16 minutes fast or 14 slow.",
+    "imp": 4,
+    "tags": {
+     "physics": 1,
+     "space": 0.6
+    },
+    "needs": 3,
+    "src": [
+     "gk"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Wynne’s dial is a showpiece: hour lines to the minute, sixteen places with their latitudes and longitudes, the names and positions of twelve stars, and the age of the Moon.",
+    "imp": 3,
+    "tags": {
+     "space": 0.9,
+     "physics": 0.6,
+     "computing": 0.3
+    },
+    "needs": 1,
+    "src": [
+     "bss-s5169",
+     "bss-s2125"
+    ],
+    "verify": true
+   },
+   {
+    "id": 6,
+    "t": "The listing calls Wynne an architect who died in 1709, but he was a London instrument maker. He made a similar dial for Windsor Castle in 1680, with the monogram of Charles II.",
+    "imp": 2,
+    "tags": {
+     "history": 0.6,
+     "people": 0.5
+    },
+    "needs": 1,
+    "src": [
+     37,
+     "bss-s6338",
+     "london-dial-wiki"
+    ],
+    "verify": true
+   },
+   {
+    "id": 7,
+    "t": "The original blade carried the Grey arms and the motto ‘Foy est tout’, meaning ‘faith is all’. The same motto is carved on the old house’s chimneypiece, now in the Orangery.",
+    "imp": 2,
+    "tags": {
+     "history": 0.6
+    },
+    "needs": 1,
+    "photo": "sundial-gnomon-arms",
+    "src": [
+     "bss-s5169",
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "John Murray, who bought Wrest in 1917, took the dial to his other estate, Coles Park. The Ministry won it back after 1954, and the brass original later spent years in London.",
+    "imp": 3,
+    "tags": {
+     "history": 0.7,
+     "people": 0.5
+    },
+    "needs": 1,
+    "src": [
+     "eh-landscape-2013",
+     "bss-s2125",
+     "bss-s5169"
+    ],
+    "verify": true
+   }
+  ]
+ },
+ "longwater": {
+  "photo": "long-water-pavilion",
+  "look": "The straight canal running south to the Pavilion, a little over 300 m of water. Mercury and Cupid stand on the east bank, a good way down.",
+  "note": "Level paths run down both banks. The head of the water is where OpenStreetMap shows the canal starting, about 170 m south of the sundial.",
+  "kids": [
+   {
+    "t": "Can you see the little building right at the far end?",
+    "photo": "long-water-pavilion"
+   }
+  ],
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Amabel Benn, her son Anthony, 11th Earl, and his wife Mary dug the Long Water, which English Heritage dates to the early 1680s. It is the oldest part of the design and still its spine.",
+    "imp": 5,
+    "tags": {
+     "gardens": 1,
+     "history": 0.6
+    },
+    "src": [
+     1,
+     "eh-landscape-2013"
+    ]
+   },
+   {
+    "id": 5,
+    "t": "Its exact date is uncertain. A 2013 survey says only that it was probably there before 1685. In 1701–1706 it was cleaned, hedged and gated, and Archer’s Pavilion followed at the far end in 1709–1711.",
+    "imp": 2,
+    "tags": {
+     "gardens": 0.6,
+     "history": 0.5
+    },
+    "needs": 1,
+    "src": [
+     "eh-landscape-2013",
+     4
+    ]
+   },
+   {
+    "id": 2,
+    "t": "Still water works as a mirror: on a calm day the Pavilion is doubled in it. The house is about 800 metres from the Pavilion; the water is a little over 300 metres of that.",
+    "imp": 3,
+    "tags": {
+     "views": 1,
+     "physics": 0.4
+    },
+    "src": [
+     "eh-landscape-2013",
+     "osm-long-water",
+     "gk"
+    ],
+    "verify": true
+   },
+   {
+    "id": 6,
+    "t": "Water arrives from the north-west: a stream from Silsoe feeds the canals round the garden, and conduits carry it to the head of the Long Water. Brick drains on the west bank flow east.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1,
+     "physics": 0.4
+    },
+    "src": [
+     "eh-landscape-2013",
+     "dawson-archaeology"
+    ]
+   },
+   {
+    "id": 7,
+    "t": "A dam at the far end holds the water up, with the Pavilion’s causeway on it, and sluices set the levels. Clay banks are patched by puddling; a pump replaces a spring that dried up.",
+    "imp": 4,
+    "tags": {
+     "engineering": 1
+    },
+    "needs": 6,
+    "src": [
+     "eh-landscape-2013",
+     "albion-old-park-weir-2007"
+    ],
+    "verify": true
+   },
+   {
+    "id": 3,
+    "t": "A straight canal was French fashion; Charles II had dug one at Hampton Court about 1670. After 1688 William III’s Dutch taste arrived, and the future Duke wrote home from the Netherlands admiring tree-lined canals.",
+    "imp": 3,
+    "tags": {
+     "gardens": 1,
+     "history": 0.6
+    },
+    "src": [
+     "eh-landscape-2013",
+     "dawson-archaeology"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "Capability Brown softened the outer canals in 1758–1760 but left the Long Water alone, so it is still the straight formal canal the Greys looked down in the early 1700s.",
+    "imp": 3,
+    "tags": {
+     "gardens": 0.8,
+     "history": 0.5
+    },
+    "src": [
+     "beds-1700-1770",
+     "gardenhistory-blog"
+    ]
+   },
+   {
+    "id": 4,
+    "t": "Look for Mercury, with a little winged Cupid tying his sandal, on the east bank. The listing says probably late 1600s, perhaps by Caius Gabriel Cibber; Bedfordshire Archives says mid-1800s.",
+    "imp": 1,
+    "tags": {
+     "art": 1
+    },
+    "photo": "mercury-cupid",
+    "src": [
+     "listing-mercury",
+     38
+    ],
+    "verify": true
+   }
+  ]
+ }
+}
