@@ -44,7 +44,8 @@ const PLACE_WORD = /\b(this|it|here|these|this place|this building)\b/i;
 export function buildPrompt({ question, sections, dates, nowYear = new Date().getFullYear(), topK = 3, previous = [], here = null }) {
   const last = previous[previous.length - 1];
   const asked = mentions(dates, question);
-  const lastM = last ? mentions(dates, last) : null;
+  const lastM0 = last ? mentions(dates, last) : null;
+  const lastM = lastM0 && (lastM0.things.length || lastM0.named.length) ? lastM0 : null;
   const hereM = here && here.things.length ? expand(dates, { things: here.things }) : null;
   // What the question is about: what it names; otherwise "he/she" means the previous subject and
   // "this/here/it" (or nothing at all) means where we are.
@@ -73,7 +74,8 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
     things: uniq([...m.things, ...(hereM ? hereM.things : [])]),
     related: m.related,
     people: uniq([...m.people, ...(hereM ? hereM.people : [])]),
-    named: m.named,
+    // "When did she die?" after a question about a building, or at one: summarise the people linked to it.
+    named: about !== 'question' && !m.named.length && PERSON_PRONOUN.test(question) ? m.people : m.named,
     detail: DATE_QUESTION.test(question) ? 'full' : 'light',
     ownership: OWNERSHIP_QUESTION.test(question),
     nowYear,

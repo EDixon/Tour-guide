@@ -138,7 +138,7 @@ Sources: Victoria County History, Bedford vol. 2 (1908), Flitton cum Silsoe; Bed
 
 ## The Conservatory
 Kind: site
-About: conservatory, italian-garden
+About: conservatory
 The conservatory is a glass-roofed room at the west end of Wrest Park house, built with the house in 1834–1839 for Thomas Philip, 2nd Earl de Grey. Historic England's listing calls it an "elegant conservatory which has a glazed roof supported by ornate cast-iron trusses". It sits in one of the single-storey end pavilions of the house, and it closes the west enfilade, the line of state rooms that runs through the house. The room just before it is the Countess's sitting room, "more feminine" than the rest, with delicate plasterwork and putti hanging from the ceiling, and the conservatory opens straight off it.
 
 From the conservatory a door leads out to the Italian Garden to the west. English Heritage says that visitors can look through the conservatory to the Italian Garden and the walled garden beyond, just as Henrietta, Countess de Grey did when the house was new in the 1830s. That view, from sitting room through glass to a formal garden, was part of the design.
@@ -463,7 +463,7 @@ Sources: Parks & Gardens UK, Thomas Wright; Wikipedia, Thomas Wright (astronomer
 
 ## The Chinese Temple
 Kind: site
-About: chinese-temple
+About: chinese-temple, chinese-bridge
 The Chinese Temple, listed Grade II as the Chinese Summerhouse, stands on the south side of the north Broad Water. It is a timber building with a lead-covered roof on a stone plinth, open on its sides and front. A two-stage pagoda roof with upturned corners is topped by a crouching wyvern, the Grey family emblem (a wyvern is a two-legged dragon), and ornamental bells hang from the corners. Fretwork decorates the painted panelling and eaves. Inside are a stone floor and a simple timber bench along the back.
 
 Date and designer: Historic England and Bedfordshire Archives date it to about 1760, for Jemima, Marchioness Grey, and say it was possibly designed by Sir William Chambers, who also designed the Pagoda at Kew. English Heritage's Google Arts story puts Jemima's Chinese-inspired "set piece" in the late 1750s: a wooden Chinese bridge, a temple, a conch-shell water feature, a willow and a tulip tree. Wikipedia's list of Chambers's work gives "about 1766" and "attributed". No document linking Chambers to Wrest has been found, so describe the attribution as possible. Bedfordshire Archives records that Edward Stevens, who also built the Bath House, repaired the temple in 1769.
