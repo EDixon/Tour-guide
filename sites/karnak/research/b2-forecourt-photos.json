@@ -1,0 +1,44 @@
+[
+ {
+  "id": "sety-ii-shrine-front",
+  "file": "File:Karnak Kapelle Sethos II. 01.JPG",
+  "width": 900,
+  "for": "sety2.1|sety2.kids|sety2.look"
+ },
+ {
+  "id": "taharqa-column",
+  "file": "File:Karnak Taharkasäule 01.JPG",
+  "width": 900,
+  "for": "taharqa.1|taharqa.4|taharqa.kids|taharqa.look"
+ },
+ {
+  "id": "ramesses-iii-entrance",
+  "file": "File:Karnak Tempel Ramses III. 02.JPG",
+  "width": 900,
+  "for": "ram3.1|ram3.3|ram3.kids|ram3.look"
+ },
+ {
+  "id": "ramesses-iii-court",
+  "file": "File:Karnak Ramses III temple court.JPG",
+  "width": 900,
+  "for": "ram3.4|ram3.kids"
+ },
+ {
+  "id": "shoshenq-smiting",
+  "file": "File:Karnak Tempel 19.jpg",
+  "width": 900,
+  "for": "bubastite.1|bubastite.2|bubastite.kids"
+ },
+ {
+  "id": "bubastite-relief-wall",
+  "file": "File:Karnak Tempel Bubastis-Portal 02.JPG",
+  "width": 900,
+  "for": "bubastite.4|bubastite.kids"
+ },
+ {
+  "id": "bubastite-portal",
+  "file": "File:Karnak Tempel Bubastis-Portal 01.JPG",
+  "width": 900,
+  "for": "bubastite.look"
+ }
+]

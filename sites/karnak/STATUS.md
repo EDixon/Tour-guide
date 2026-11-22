@@ -20,10 +20,10 @@ Updated: 2026-11-22
 | Batch | Stops | State |
 |---|---|---|
 | 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | dispatched |
-| 2. The great forecourt | sety2, taharqa, ram3, bubastite | dispatched |
+| 2. The great forecourt | sety2, taharqa, ram3, bubastite | reviewed (sources numbered 17-22: renumber at merge) |
 | 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | dispatched |
 | 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | dispatched |
-| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | to do |
+| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | dispatched |
 | 6. The Open Air Museum | whitechapel, redchapel | to do |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | to do |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | to do |
