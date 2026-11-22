@@ -21,11 +21,11 @@ Updated: 2026-11-22
 |---|---|---|
 | 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | reviewed (string source keys; at merge set quay date about 945 BC, rams dateLabel "inscribed", pylon1 "about 380 to 362 BC"; key 8 is Pennington et al. 2025, Antiquity 99(408)) |
 | 2. The great forecourt | sety2, taharqa, ram3, bubastite | reviewed (sources numbered 17-22: renumber at merge) |
-| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | dispatched |
+| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | reviewed (string source keys; at merge: pylon2 look is sandstone not granite, pylon2 dateLabel per report, northwall note: in shade all day, raise hypostyle dwell; two added events 1902 and 2021) |
 | 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | dispatched |
 | 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | dispatched |
 | 6. The Open Air Museum | whitechapel, redchapel | dispatched |
-| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | to do |
+| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | dispatched |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | to do |
 | Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
 

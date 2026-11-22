@@ -1,0 +1,12 @@
+[
+ {"id": "hatshepsut-obelisk-standing", "file": "File:Karnak Tempel Obelisk Hatschepsut 02.JPG", "width": 900, "for": "obelisks.1|obelisks.kids|obelisks.look"},
+ {"id": "thutmose-i-obelisk-standing", "file": "File:Karnak Tempel Obelisk Thutmosis I. 03.jpg", "width": 900, "for": "obelisks.2|obelisks.kids"},
+ {"id": "hatshepsut-obelisk-walls", "file": "File:Karnak Tempel Obelisk Hatschepsut 03.jpg", "width": 900, "for": "obelisks.8"},
+ {"id": "scarab-and-plinth", "file": "File:Karnak Tempel Chepre 01.JPG", "width": 900, "for": "scarab.1|scarab.kids"},
+ {"id": "scarab-closeup", "file": "File:Karnak temple scarab beetle A.jpg", "width": 900, "for": "scarab.4|scarab.kids"},
+ {"id": "obelisk-top-and-scarab", "file": "File:Obélisques Karnak - Louxor (EG) - 2025-12-04 - 1.jpg", "width": 900, "for": "scarab.5|scarab.kids|scarab.look"},
+ {"id": "hatshepsut-pyramidion-relief", "file": "File:Hatshepsut before Amun.jpg", "width": 900, "for": "scarab.8"},
+ {"id": "heraldic-lotus-pillar", "file": "File:Flickr - Gaspa - Tempio di Karnak, pilastro con fiori di loto.jpg", "width": 900, "for": "sanctuary.5|sanctuary.kids"},
+ {"id": "sanctuary-doorway", "file": "File:Karnak Kapelle Philipp III. Arrhidaios 09.jpg", "width": 900, "for": "sanctuary.1|sanctuary.look"},
+ {"id": "sanctuary-interior", "file": "File:Karnak Kapelle Philipp III. Arrhidaios 02.JPG", "width": 900, "for": "sanctuary.kids"}
+]
