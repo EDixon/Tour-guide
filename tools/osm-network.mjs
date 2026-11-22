@@ -19,7 +19,9 @@
 //    "links": [["a", "b", 0.3, "name", null, {"steps": true}]],     // extra links OSM lacks
 //    "lines": [{"line": [[lat, lon], ...], "steps": false, "note": "why"}],   // paths OSM lacks, joined like OSM paths
 //    "exclude": [[lat, lon, radius_m]],                               // drop OSM paths near here (private, closed)
-//    "steps": [[lat, lon]]}                                           // mark the link nearest each point as steps
+//    "steps": [[lat, lon]],                                           // mark the link nearest each point as steps
+//    "outline": [[lat, lon], ...]}                                    // site outline to use instead of OSM "site" areas
+//                                                                     // (when those are only small parts of the site)
 // A link with no corridor is named "Path past <nearest landmark or stop>". Scenic without a corridor:
 // 0.9 beside water, 0.55 in woodland, 0.5 across lawns and gardens, 0.2 on roads, 0.4 otherwise.
 import fs from 'node:fs';
@@ -67,7 +69,8 @@ let lines = map.features.filter(f => (f.kind === 'path' || f.kind === 'road') &&
   .filter(l => !excl.some(([c, r]) => l.pts.some(p => d2(p, c) < r)));
 for (const l of cfg.lines || []) lines.push({ pts: l.line.map(xy), steps: !!l.steps, road: false, name: l.name || '' });
 // Only paths inside the site outline (the OSM "site" area, plus 30 m), if there is one.
-const sites = map.features.filter(f => f.kind === 'site').flatMap(f => f.rings.map(r => r.map(xy)));
+const sites = cfg.outline ? [cfg.outline.map(xy)]
+  : map.features.filter(f => f.kind === 'site').flatMap(f => f.rings.map(r => r.map(xy)));
 if (sites.length) {
   const inSite = (p) => sites.some(r => inRing(p, r) || distToRing(p, r) < 30);
   lines = lines.flatMap(l => {

@@ -1,5 +1,6 @@
 // Mechanical checks on a site's knowledge files (and the reference packs it uses).
 // Usage: node tools/check-knowledge.mjs <site-id>
+let covered, uncovered; // set once coverage is worked out; finish() may run earlier
 // Exit code 1 if there are errors; warnings are printed but don't fail.
 import fs from 'node:fs';
 import { loadKnowledge, knowledgeFiles } from '../assistant/knowledge.js';
@@ -91,7 +92,7 @@ for (const s of sections) {
 }
 
 // ---- coverage: which stops have knowledge
-const covered = [], uncovered = [];
+covered = []; uncovered = [];
 for (const st of tour.stops.filter(s => s.kind !== 'facility' && s.kind !== 'intro')) {
   const here = dates.things.filter(t => (t.stops || []).includes(st.id)).map(t => t.id);
   const sec = sections.some(s => s.about.some(a => here.includes(a)));
@@ -102,7 +103,7 @@ finish();
 function finish() {
   for (const w of warnings) console.log('warn ', w);
   for (const e of errors) console.log('ERROR', e);
-  if (typeof covered !== 'undefined') console.log(`\nCoverage: ${covered.length}/${covered.length + uncovered.length} stops have dated things and a notes section.${uncovered.length ? ' Not yet: ' + uncovered.join(', ') : ''}`);
+  if (covered) console.log(`\nCoverage: ${covered.length}/${covered.length + uncovered.length} stops have dated things and a notes section.${uncovered.length ? ' Not yet: ' + uncovered.join(', ') : ''}`);
   console.log(`${errors.length} errors, ${warnings.length} warnings`);
   process.exit(errors.length ? 1 : 0);
 }

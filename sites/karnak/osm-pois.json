@@ -1,0 +1,2294 @@
+{
+ "attribution": "© OpenStreetMap contributors",
+ "licence": "Open Database Licence (ODbL) 1.0, https://www.openstreetmap.org/copyright",
+ "fetched": "2026-11-22",
+ "pois": [
+  {
+   "osm": "node/285341505",
+   "pos": [
+    25.719109,
+    32.656735
+   ],
+   "tags": {
+    "access": "permissive",
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/1039090622",
+   "pos": [
+    25.719796,
+    32.655256
+   ],
+   "tags": {
+    "entrance": "exit"
+   }
+  },
+  {
+   "osm": "node/1329564166",
+   "pos": [
+    25.719008,
+    32.658105
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/1329564200",
+   "pos": [
+    25.719819,
+    32.652984
+   ],
+   "tags": {
+    "name:en": "Karnak Visitor Center",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/1329626075",
+   "pos": [
+    25.714515,
+    32.657205
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "Chapel of Osiris Ptah"
+   }
+  },
+  {
+   "osm": "node/3322098830",
+   "pos": [
+    25.718204,
+    32.657466
+   ],
+   "tags": {
+    "artwork_type": "relief",
+    "name:fr": "Mur extérieur avec détails de la bataille de Qadesh par Ramses II",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/3322109124",
+   "pos": [
+    25.717464,
+    32.658488
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Scarab of Amenhotep III",
+    "name:en": "Scarab of Amenhotep III",
+    "name:fr": "scarabée en pierre",
+    "name:pl": "Pomnik skarabeusza",
+    "tourism": "artwork",
+    "wikidata": "Q125087888"
+   }
+  },
+  {
+   "osm": "node/7222928129",
+   "pos": [
+    25.713986,
+    32.653901
+   ],
+   "tags": {
+    "access": "no",
+    "barrier": "entrance"
+   }
+  },
+  {
+   "osm": "node/8789827696",
+   "pos": [
+    25.71931,
+    32.654971
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/9234555319",
+   "pos": [
+    25.719022,
+    32.657005
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234795417",
+   "pos": [
+    25.717636,
+    32.659805
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234809122",
+   "pos": [
+    25.719641,
+    32.659529
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234828035",
+   "pos": [
+    25.720473,
+    32.65728
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234829718",
+   "pos": [
+    25.717691,
+    32.660976
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234829720",
+   "pos": [
+    25.716911,
+    32.655993
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234864618",
+   "pos": [
+    25.720147,
+    32.660007
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234864619",
+   "pos": [
+    25.717305,
+    32.660927
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/9234875517",
+   "pos": [
+    25.717347,
+    32.660277
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/10607971430",
+   "pos": [
+    25.719689,
+    32.652809
+   ],
+   "tags": {
+    "access": "customers",
+    "entrance": "main"
+   }
+  },
+  {
+   "osm": "node/11055111891",
+   "pos": [
+    25.72059,
+    32.657403
+   ],
+   "tags": {
+    "name": "The Calcite Bark Shrine of Amenhotep I",
+    "name:en": "The Calcite Bark Shrine of Amenhotep I",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/11055111895",
+   "pos": [
+    25.723723,
+    32.656177
+   ],
+   "tags": {
+    "amenity": "place_of_worship",
+    "name": "Taher Al Hamidi Mosque"
+   }
+  },
+  {
+   "osm": "node/11436599469",
+   "pos": [
+    25.717068,
+    32.657758
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/11436599472",
+   "pos": [
+    25.717488,
+    32.658151
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "name": "Beetle",
+    "name:en": "Beetle",
+    "name:es": "Escarabajo",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599475",
+   "pos": [
+    25.717464,
+    32.658343
+   ],
+   "tags": {
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/11436599504",
+   "pos": [
+    25.717073,
+    32.657437
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599505",
+   "pos": [
+    25.717099,
+    32.657363
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599506",
+   "pos": [
+    25.717122,
+    32.657299
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599507",
+   "pos": [
+    25.717025,
+    32.657527
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599508",
+   "pos": [
+    25.716996,
+    32.657604
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599509",
+   "pos": [
+    25.718328,
+    32.658297
+   ],
+   "tags": {
+    "man_made": "obelisk",
+    "name": "مسلة تحتمس الاول",
+    "name:ar": "مسلة تحتمس الاول",
+    "name:en": "Obelisk of Tuthmosis I",
+    "name:es": "Obelisco de Tutmosis I",
+    "wikidata": "Q70786438"
+   }
+  },
+  {
+   "osm": "node/11436599510",
+   "pos": [
+    25.718328,
+    32.658584
+   ],
+   "tags": {
+    "man_made": "obelisk",
+    "name": "مسلة الملكة حتشبسوت",
+    "name:ar": "مسلة الملكة حتشبسوت",
+    "name:en": "Obelisk of Hatshepsut",
+    "name:es": "Obelisco de la reina Hatshepsut",
+    "wikidata": "Q3880477"
+   }
+  },
+  {
+   "osm": "node/11436599527",
+   "pos": [
+    25.718761,
+    32.657299
+   ],
+   "tags": {
+    "historic": "monument",
+    "name": "Column of Taharqa",
+    "wikidata": "Q124887901"
+   }
+  },
+  {
+   "osm": "node/11436599534",
+   "pos": [
+    25.718824,
+    32.65746
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "name": "Ramesses II and Daughter",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11436599535",
+   "pos": [
+    25.718568,
+    32.657157
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Ramses III",
+    "name:en": "Ramses III",
+    "tourism": "artwork",
+    "wikidata": "Q124960240"
+   }
+  },
+  {
+   "osm": "node/11436599536",
+   "pos": [
+    25.718545,
+    32.65721
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Ramses III",
+    "name:en": "Ramses III",
+    "tourism": "artwork",
+    "wikidata": "Q124960036"
+   }
+  },
+  {
+   "osm": "node/11436599538",
+   "pos": [
+    25.718637,
+    32.65741
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/11436599539",
+   "pos": [
+    25.718488,
+    32.657452
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/11436599540",
+   "pos": [
+    25.718426,
+    32.657414
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/11436599546",
+   "pos": [
+    25.719205,
+    32.656624
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/11436599547",
+   "pos": [
+    25.719048,
+    32.656618
+   ],
+   "tags": {
+    "amenity": "waste_basket"
+   }
+  },
+  {
+   "osm": "node/11436614446",
+   "pos": [
+    25.717276,
+    32.660795
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/11506028724",
+   "pos": [
+    25.71771,
+    32.661127
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/11506028800",
+   "pos": [
+    25.715523,
+    32.656889
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11506028801",
+   "pos": [
+    25.716128,
+    32.655472
+   ],
+   "tags": {
+    "entrance": "yes",
+    "opening_hours": "06:00-16:30"
+   }
+  },
+  {
+   "osm": "node/11506028802",
+   "pos": [
+    25.717146,
+    32.660915
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11506028819",
+   "pos": [
+    25.719845,
+    32.659488
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11524522589",
+   "pos": [
+    25.718552,
+    32.657188
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610322709",
+   "pos": [
+    25.720701,
+    32.661322
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610322725",
+   "pos": [
+    25.718335,
+    32.656052
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610322727",
+   "pos": [
+    25.718183,
+    32.656661
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610322729",
+   "pos": [
+    25.71923,
+    32.65758
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610330083",
+   "pos": [
+    25.718308,
+    32.657237
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610330084",
+   "pos": [
+    25.718165,
+    32.657663
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610330085",
+   "pos": [
+    25.717984,
+    32.658071
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610330086",
+   "pos": [
+    25.716788,
+    32.655133
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/11610330093",
+   "pos": [
+    25.716704,
+    32.655645
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11610330100",
+   "pos": [
+    25.717749,
+    32.655434
+   ],
+   "tags": {
+    "barrier": "gate"
+   }
+  },
+  {
+   "osm": "node/11710884853",
+   "pos": [
+    25.719397,
+    32.65603
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11710884854",
+   "pos": [
+    25.719498,
+    32.655993
+   ],
+   "tags": {
+    "historic": "memorial",
+    "memorial": "stele",
+    "name": "Stele of Seti II",
+    "name:fr": "Stèle de Séthi II du dromos ouest",
+    "wikidata": "Q124892333"
+   }
+  },
+  {
+   "osm": "node/11710884855",
+   "pos": [
+    25.719378,
+    32.655959
+   ],
+   "tags": {
+    "historic": "memorial",
+    "memorial": "plaque"
+   }
+  },
+  {
+   "osm": "node/11710884861",
+   "pos": [
+    25.71944,
+    32.656059
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "node/11710884862",
+   "pos": [
+    25.719375,
+    32.656018
+   ],
+   "tags": {
+    "man_made": "obelisk",
+    "name": "Obelisk of Seti II",
+    "name:de": "Obelisk Sethos’ II.",
+    "name:en": "Obelisk of Seti II",
+    "wikidata": "Q115511928"
+   }
+  },
+  {
+   "osm": "node/11717365887",
+   "pos": [
+    25.71744,
+    32.658641
+   ],
+   "tags": {
+    "amenity": "cafe"
+   }
+  },
+  {
+   "osm": "node/11739052100",
+   "pos": [
+    25.719463,
+    32.656069
+   ],
+   "tags": {
+    "artwork_type": "relief",
+    "name": "socle of the northern obelisk of Seti II",
+    "name:en": "socle of the northern obelisk of Seti II",
+    "name:fr": "socle de l’obélisque nord de Séthi II",
+    "tourism": "artwork",
+    "wikidata": "Q124951697"
+   }
+  },
+  {
+   "osm": "node/11739052101",
+   "pos": [
+    25.719632,
+    32.657663
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "tourism": "artwork",
+    "wikidata": "Q124956269"
+   }
+  },
+  {
+   "osm": "node/11739052104",
+   "pos": [
+    25.719614,
+    32.657708
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Statue of Thutmose III",
+    "name:en": "Statue of Thutmose III",
+    "name:fr": "statue de Thoutmosis III",
+    "tourism": "artwork",
+    "wikidata": "Q124956364"
+   }
+  },
+  {
+   "osm": "node/11739052108",
+   "pos": [
+    25.719493,
+    32.659759
+   ],
+   "tags": {
+    "name:fr": "socle de Naos",
+    "tourism": "artwork",
+    "wikidata": "Q124956739"
+   }
+  },
+  {
+   "osm": "node/11739052109",
+   "pos": [
+    25.718139,
+    32.658819
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11750777419",
+   "pos": [
+    25.717645,
+    32.659974
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Seated Statue of Thutmose III and Amun",
+    "tourism": "artwork",
+    "wikidata": "Q125053526"
+   }
+  },
+  {
+   "osm": "node/11755377840",
+   "pos": [
+    25.718184,
+    32.65894
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/11757194582",
+   "pos": [
+    25.718022,
+    32.659665
+   ],
+   "tags": {
+    "artwork_type": "statue",
+    "name": "Statue of Thutmose III",
+    "tourism": "artwork",
+    "wikidata": "Q125091755"
+   }
+  },
+  {
+   "osm": "node/11757815057",
+   "pos": [
+    25.718166,
+    32.659224
+   ],
+   "tags": {
+    "name": "Middle kingdom courtyard",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/13349080849",
+   "pos": [
+    25.720299,
+    32.652931
+   ],
+   "tags": {
+    "access": "customers",
+    "entrance": "exit"
+   }
+  },
+  {
+   "osm": "node/13349102310",
+   "pos": [
+    25.719765,
+    32.652822
+   ],
+   "tags": {
+    "amenity": "vending_machine"
+   }
+  },
+  {
+   "osm": "node/13349344173",
+   "pos": [
+    25.720017,
+    32.652802
+   ],
+   "tags": {
+    "access": "yes",
+    "amenity": "toilets",
+    "fee": "yes",
+    "wheelchair": "no"
+   }
+  },
+  {
+   "osm": "node/13349344176",
+   "pos": [
+    25.719881,
+    32.652885
+   ],
+   "tags": {
+    "amenity": "toilets",
+    "fee": "yes"
+   }
+  },
+  {
+   "osm": "node/13375991016",
+   "pos": [
+    25.717623,
+    32.658227
+   ],
+   "tags": {
+    "man_made": "obelisk"
+   }
+  },
+  {
+   "osm": "node/13467775874",
+   "pos": [
+    25.718592,
+    32.658211
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467775880",
+   "pos": [
+    25.718394,
+    32.651716
+   ],
+   "tags": {
+    "amenity": "atm",
+    "wheelchair": "limited"
+   }
+  },
+  {
+   "osm": "node/13467775889",
+   "pos": [
+    25.716685,
+    32.655969
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/13467775900",
+   "pos": [
+    25.718365,
+    32.651669
+   ],
+   "tags": {
+    "amenity": "atm",
+    "wheelchair": "no"
+   }
+  },
+  {
+   "osm": "node/13467828613",
+   "pos": [
+    25.719403,
+    32.655572
+   ],
+   "tags": {
+    "name": "Archeological & Touristic Attractions in Luxor",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/13467828614",
+   "pos": [
+    25.716512,
+    32.655701
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/13467828622",
+   "pos": [
+    25.717796,
+    32.659641
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828625",
+   "pos": [
+    25.718857,
+    32.658387
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/13467828636",
+   "pos": [
+    25.716082,
+    32.655788
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828638",
+   "pos": [
+    25.719074,
+    32.656775
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828650",
+   "pos": [
+    25.719586,
+    32.65739
+   ],
+   "tags": {
+    "amenity": "toilets",
+    "fee": "yes"
+   }
+  },
+  {
+   "osm": "node/13467828651",
+   "pos": [
+    25.719112,
+    32.656898
+   ],
+   "tags": {
+    "name": "Great Forecourt",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/13467828660",
+   "pos": [
+    25.718784,
+    32.657556
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828671",
+   "pos": [
+    25.716473,
+    32.655831
+   ],
+   "tags": {
+    "entrance": "yes"
+   }
+  },
+  {
+   "osm": "node/13467828712",
+   "pos": [
+    25.718711,
+    32.657646
+   ],
+   "tags": {
+    "name:en": "Hypostyle Hall",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "node/13467828715",
+   "pos": [
+    25.719107,
+    32.656795
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828727",
+   "pos": [
+    25.718551,
+    32.657261
+   ],
+   "tags": {
+    "amenity": "bench"
+   }
+  },
+  {
+   "osm": "node/13467828755",
+   "pos": [
+    25.716249,
+    32.655648
+   ],
+   "tags": {
+    "name:en": "Temple of Khonsu",
+    "tourism": "information"
+   }
+  },
+  {
+   "osm": "way/26083110",
+   "pos": [
+    25.716838,
+    32.658754
+   ],
+   "tags": {
+    "name": "البحيرة المقدسة",
+    "name:ar": "البحيرة المقدسة",
+    "name:en": "Sacred Lake",
+    "name:es": "Lago Sagrado",
+    "name:fr": "Lac Sacré",
+    "name:tr": "Kutsal Göl",
+    "natural": "water"
+   }
+  },
+  {
+   "osm": "way/89659228",
+   "pos": [
+    25.719091,
+    32.653371
+   ],
+   "tags": {
+    "amenity": "parking"
+   }
+  },
+  {
+   "osm": "way/90384482",
+   "pos": [
+    25.717394,
+    32.651605
+   ],
+   "tags": {
+    "leisure": "park",
+    "name": "Karnak Park"
+   }
+  },
+  {
+   "osm": "way/90442808",
+   "pos": [
+    25.720339,
+    32.660567
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "معبد منتو",
+    "name:ar": "معبد منتو",
+    "name:en": "Temple of Montu",
+    "name:pl": "Świątynia Montu",
+    "tourism": "attraction",
+    "wikidata": "Q2665873",
+    "wikipedia": "en:Precinct of Montu"
+   }
+  },
+  {
+   "osm": "way/90442809",
+   "pos": [
+    25.71957,
+    32.659689
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "معبد بتاح",
+    "name:ar": "معبد بتاح",
+    "name:en": "Temple of Ptah",
+    "name:fr": "temple de Ptah",
+    "wikidata": "Q763599",
+    "wikipedia": "en:Temple of Ptah (Karnak)"
+   }
+  },
+  {
+   "osm": "way/115784202",
+   "pos": [
+    25.719267,
+    32.657059
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "مقاصير ستي الثاني",
+    "name:ar": "مقاصير ستي الثاني",
+    "name:en": "Temple of Sethos II",
+    "name:fr": "Reposoir de Séthi II",
+    "wikidata": "Q124889719"
+   }
+  },
+  {
+   "osm": "way/115784205",
+   "pos": [
+    25.717725,
+    32.659599
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "معبد الأخمنو",
+    "name:ar": "معبد الأخمنو",
+    "name:en": "Temple of Akhmenu",
+    "name:fr": "Akhmenou ou « salle des fêtes » de Thoutmosis III",
+    "tourism": "attraction",
+    "wikidata": "Q13218743",
+    "wikipedia": "en:Festival Hall of Thutmose III"
+   }
+  },
+  {
+   "osm": "way/115784207",
+   "pos": [
+    25.71763,
+    32.659946
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "ruins",
+    "name": "Contra Temple",
+    "name:de": "Gegenkapelle",
+    "name:en": "Contra Temple",
+    "tourism": "attraction",
+    "wikidata": "Q125053343"
+   }
+  },
+  {
+   "osm": "way/115784208",
+   "pos": [
+    25.719292,
+    32.656346
+   ],
+   "tags": {
+    "name": "Rams avenue",
+    "name:en": "Rams avenue",
+    "name:fr": "Statues de sphinx beliers",
+    "tourism": "attraction"
+   }
+  },
+  {
+   "osm": "way/115784209",
+   "pos": [
+    25.716734,
+    32.655817
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "معبد خونسو",
+    "name:ar": "معبد خونسو",
+    "name:de": "Tempel des Chons",
+    "name:en": "Temple of Khonsu",
+    "name:fa": "معبد خونسو",
+    "name:fr": "Temple de Khonsou",
+    "name:pl": "Świątynia Chonsu w Karnaku",
+    "name:tr": "Khonsu Tapınağı",
+    "wikidata": "Q746382",
+    "wikipedia": "en:Temple of Khonsu"
+   }
+  },
+  {
+   "osm": "way/115784211",
+   "pos": [
+    25.715839,
+    32.657501
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "معبد امنحتب الثانى",
+    "name:ar": "معبد امنحتب الثانى",
+    "name:en": "Temple of Amenhotep II",
+    "name:es": "Templo de Amenhotep II",
+    "name:fr": "Edifice d'Amenophis II",
+    "wikidata": "Q125099871"
+   }
+  },
+  {
+   "osm": "way/115784213",
+   "pos": [
+    25.719254,
+    32.656039
+   ],
+   "tags": {
+    "name": "Avenue of Rams",
+    "name:fr": "Statues de sphinx beliers",
+    "tourism": "attraction"
+   }
+  },
+  {
+   "osm": "way/115784217",
+   "pos": [
+    25.718879,
+    32.659226
+   ],
+   "tags": {
+    "barrier": "city_wall",
+    "name": "سور المعبد",
+    "name:ar": "سور المعبد",
+    "name:en": "Wall of the Temple"
+   }
+  },
+  {
+   "osm": "way/115784218",
+   "pos": [
+    25.718624,
+    32.657896
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "صالة الأعمدة الكبرى",
+    "name:ar": "صالة الأعمدة الكبرى",
+    "name:en": "Great Hypostyle Hall",
+    "name:fr": "Grande salle hypostyle",
+    "name:pl": "Sala hypostylowa",
+    "wikidata": "Q3775633",
+    "wikipedia": "ar:قاعة الأعمدة الكبرى"
+   }
+  },
+  {
+   "osm": "way/115784221",
+   "pos": [
+    25.717143,
+    32.655792
+   ],
+   "tags": {
+    "barrier": "city_wall",
+    "name": "سور المعبد",
+    "name:ar": "سور المعبد",
+    "name:en": "Wall of the Temple"
+   }
+  },
+  {
+   "osm": "way/115784225",
+   "pos": [
+    25.718461,
+    32.657031
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "معبد رمسيس الثالث",
+    "name:ar": "معبد رمسيس الثالث",
+    "name:en": "Temple Barque Chapel of Ramesses III",
+    "name:fr": "Temple reposoir de Ramsès III",
+    "wikidata": "Q124894323"
+   }
+  },
+  {
+   "osm": "way/115784226",
+   "pos": [
+    25.717779,
+    32.659761
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Botanical Gardens of Thutmose III",
+    "name:en": "Botanical Gardens of Thutmose III",
+    "name:fr": "Jardin botanique de Thoutmôsis III",
+    "tourism": "attraction",
+    "wikidata": "Q3162408",
+    "wikipedia": "fr:Jardin botanique de Thoutmôsis III"
+   }
+  },
+  {
+   "osm": "way/115784228",
+   "pos": [
+    25.720418,
+    32.657658
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "ruins",
+    "name": "Red Chapel of Hatshepsut",
+    "wikidata": "Q1427051",
+    "wikipedia": "en:Chapelle Rouge"
+   }
+  },
+  {
+   "osm": "way/115784229",
+   "pos": [
+    25.720178,
+    32.657549
+   ],
+   "tags": {
+    "name": "المتحف المفتوح",
+    "name:ar": "المتحف المفتوح",
+    "name:de": "Freilichtmuseum",
+    "name:en": "Open-Air Museum",
+    "tourism": "museum",
+    "wikidata": "Q13218762",
+    "wikipedia": "en:Karnak Open Air Museum"
+   }
+  },
+  {
+   "osm": "way/115784230",
+   "pos": [
+    25.720501,
+    32.657203
+   ],
+   "tags": {
+    "building": "religious",
+    "historic": "archaeological_site",
+    "name": "Alabaster Chapel of Thutmosis III",
+    "name:de": "Alabasterkapelle Thutmosis’ III.",
+    "name:en": "Alabaster Chapel of Thutmosis III",
+    "wikidata": "Q124884454"
+   }
+  },
+  {
+   "osm": "way/118155668",
+   "pos": [
+    25.719952,
+    32.653
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "Visitors Center",
+    "wikidata": "Q17166590"
+   }
+  },
+  {
+   "osm": "way/118155673",
+   "pos": [
+    25.715857,
+    32.654752
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "Sphinxes"
+   }
+  },
+  {
+   "osm": "way/118174991",
+   "pos": [
+    25.719085,
+    32.658337
+   ],
+   "tags": {
+    "historic": "archaeological_site"
+   }
+  },
+  {
+   "osm": "way/118174997",
+   "pos": [
+    25.717694,
+    32.658755
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "south exterior wall",
+    "name:de": "südliche Außenwand",
+    "name:en": "south exterior wall",
+    "name:fr": "mur extérieur sud",
+    "wikidata": "Q125102594"
+   }
+  },
+  {
+   "osm": "way/118175001",
+   "pos": [
+    25.718329,
+    32.659369
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "north exterior wall",
+    "name:de": "nördliche Außenwand",
+    "name:en": "north exterior wall",
+    "name:fr": "mur extérieur nord",
+    "wikidata": "Q125103437"
+   }
+  },
+  {
+   "osm": "way/118175004",
+   "pos": [
+    25.717649,
+    32.6585
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "Temple of Taharqa",
+    "name:en": "Temple of Taharqa",
+    "name:fr": "Edifice de Taharqa du Lac",
+    "wikidata": "Q124956023"
+   }
+  },
+  {
+   "osm": "way/325551059",
+   "pos": [
+    25.71924,
+    32.657324
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "Rams",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/325552673",
+   "pos": [
+    25.718924,
+    32.657189
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "جوسق تهرقا",
+    "name:ar": "جوسق تهرقا",
+    "name:en": "Taharqa Kiosk",
+    "name:fr": "Kiosque de Taharqa",
+    "wikidata": "Q124888169"
+   }
+  },
+  {
+   "osm": "way/325559835",
+   "pos": [
+    25.717987,
+    32.659201
+   ],
+   "tags": {
+    "historic": "archaeological_site",
+    "man_made": "courtyard",
+    "name": "فناء الدولة الوسطى",
+    "name:ar": "فناء الدولة الوسطى",
+    "name:en": "Middle Kingdom Courtyard",
+    "name:fr": "Cour du Moyen Empire",
+    "tourism": "attraction",
+    "wikidata": "Q125054663"
+   }
+  },
+  {
+   "osm": "way/325567907",
+   "pos": [
+    25.716743,
+    32.655272
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "معبد الأوبت",
+    "name:ar": "معبد الأوبت",
+    "name:en": "Opet Temple",
+    "name:fr": "Temple d'Opet",
+    "wikidata": "Q1956069"
+   }
+  },
+  {
+   "osm": "way/325569154",
+   "pos": [
+    25.718191,
+    32.658268
+   ],
+   "tags": {
+    "building": "ruins",
+    "name": "Amenhotep III Court",
+    "name:fr": "Cour d'Amenophis III"
+   }
+  },
+  {
+   "osm": "way/325570370",
+   "pos": [
+    25.718109,
+    32.658894
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "temple",
+    "name": "قدس الأقداس",
+    "name:ar": "قدس الأقداس",
+    "name:en": "Central Bark Shrine",
+    "name:fr": "Sanctuaire des barques sacrées de Philippe Arrhidée",
+    "name:pl": "Kaplica na barkę obrzędową",
+    "wikidata": "Q125055156"
+   }
+  },
+  {
+   "osm": "way/476617966",
+   "pos": [
+    25.718538,
+    32.657715
+   ],
+   "tags": {
+    "historic": "archaeological_site",
+    "name": "Temple of Ammon at Karnak",
+    "wikidata": "Q124958525"
+   }
+  },
+  {
+   "osm": "way/477192299",
+   "pos": [
+    25.714942,
+    32.652658
+   ],
+   "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "El Sayeda A'esha Mosque"
+   }
+  },
+  {
+   "osm": "way/477192300",
+   "pos": [
+    25.717996,
+    32.654657
+   ],
+   "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "El Salam Mosque"
+   }
+  },
+  {
+   "osm": "way/477192301",
+   "pos": [
+    25.71854,
+    32.652317
+   ],
+   "tags": {
+    "amenity": "cafe",
+    "building": "yes",
+    "name": "Karnak Stuff"
+   }
+  },
+  {
+   "osm": "way/477192304",
+   "pos": [
+    25.721678,
+    32.653748
+   ],
+   "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "El Karnak"
+   }
+  },
+  {
+   "osm": "way/477192308",
+   "pos": [
+    25.723755,
+    32.653971
+   ],
+   "tags": {
+    "amenity": "pharmacy",
+    "building": "yes",
+    "name": "Mostafa Hashim Pharmacy"
+   }
+  },
+  {
+   "osm": "way/477194354",
+   "pos": [
+    25.721298,
+    32.655352
+   ],
+   "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Rifai Mosque"
+   }
+  },
+  {
+   "osm": "way/477194358",
+   "pos": [
+    25.723425,
+    32.658354
+   ],
+   "tags": {
+    "amenity": "pharmacy",
+    "building": "yes",
+    "name": "Alaa Nubian New Pharmacy"
+   }
+  },
+  {
+   "osm": "way/477445840",
+   "pos": [
+    25.722107,
+    32.656423
+   ],
+   "tags": {
+    "building": "school",
+    "name": "Ahmous School"
+   }
+  },
+  {
+   "osm": "way/477445841",
+   "pos": [
+    25.722986,
+    32.657205
+   ],
+   "tags": {
+    "amenity": "community_centre",
+    "building": "yes"
+   }
+  },
+  {
+   "osm": "way/477445847",
+   "pos": [
+    25.724293,
+    32.653969
+   ],
+   "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes"
+   }
+  },
+  {
+   "osm": "way/523656247",
+   "pos": [
+    25.723271,
+    32.653175
+   ],
+   "tags": {
+    "amenity": "restaurant"
+   }
+  },
+  {
+   "osm": "way/523656252",
+   "pos": [
+    25.722555,
+    32.653777
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "Community Center"
+   }
+  },
+  {
+   "osm": "way/523656254",
+   "pos": [
+    25.72234,
+    32.654037
+   ],
+   "tags": {
+    "amenity": "cafe",
+    "building": "yes"
+   }
+  },
+  {
+   "osm": "way/702972988",
+   "pos": [
+    25.723471,
+    32.652652
+   ],
+   "tags": {
+    "man_made": "pier"
+   }
+  },
+  {
+   "osm": "way/833568145",
+   "pos": [
+    25.718834,
+    32.656026
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "temple",
+    "name": "مقصور هكر",
+    "name:ar": "مقصور هكر",
+    "name:en": "Barque Chapel of Hakoris",
+    "name:fr": "Chapelle d’Achôris",
+    "wheelchair": "no",
+    "wikidata": "Q112074532"
+   }
+  },
+  {
+   "osm": "way/949451337",
+   "pos": [
+    25.71928,
+    32.655012
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "checkpoint"
+   }
+  },
+  {
+   "osm": "way/1066243557",
+   "pos": [
+    25.719143,
+    32.661454
+   ],
+   "tags": {
+    "historic": "archaeological_site",
+    "name": "Treasury of Thutmose I"
+   }
+  },
+  {
+   "osm": "way/1232832445",
+   "pos": [
+    25.7167,
+    32.660101
+   ],
+   "tags": {
+    "access": "yes",
+    "amenity": "toilets",
+    "building": "yes",
+    "fee": "yes"
+   }
+  },
+  {
+   "osm": "way/1232832452",
+   "pos": [
+    25.718673,
+    32.656831
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "Rams",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/1232835845",
+   "pos": [
+    25.719214,
+    32.656323
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "تماثيل الكباش",
+    "name:ar": "تماثيل الكباش",
+    "name:en": "Ram Headed Statues",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/1232835846",
+   "pos": [
+    25.71934,
+    32.656405
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "تماثيل الكباش",
+    "name:ar": "تماثيل الكباش",
+    "name:en": "Ram Headed Statues",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/1232835847",
+   "pos": [
+    25.719447,
+    32.656179
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "تماثيل الكباش",
+    "name:ar": "تماثيل الكباش",
+    "name:en": "Ram Headed Statues",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/1232835848",
+   "pos": [
+    25.719318,
+    32.656091
+   ],
+   "tags": {
+    "artwork_type": "sculpture",
+    "historic": "ruins",
+    "name": "تماثيل الكباش",
+    "name:ar": "تماثيل الكباش",
+    "name:en": "Ram Headed Statues",
+    "name:fr": "Statues de sphinx beliers",
+    "name:pl": "Posąg Ramzesa II z Nefertari",
+    "tourism": "artwork"
+   }
+  },
+  {
+   "osm": "way/1246050380",
+   "pos": [
+    25.720588,
+    32.657324
+   ],
+   "tags": {
+    "building": "religious",
+    "historic": "archaeological_site",
+    "name": "مقصورة أمنحتب الأول",
+    "name:ar": "مقصورة أمنحتب الأول",
+    "name:en": "Alabaster Chapel of Amenhotep I",
+    "wikidata": "Q124831396"
+   }
+  },
+  {
+   "osm": "way/1250321215",
+   "pos": [
+    25.716124,
+    32.65548
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "city_gate",
+    "name": "Bab El Amara Gate",
+    "name:de": "Tor des Ptolemaios III. Euergetes I.",
+    "name:en": "Bab El Amara Gate",
+    "name:zh": "尤尔格提斯之门",
+    "wikidata": "Q125055904"
+   }
+  },
+  {
+   "osm": "way/1250321221",
+   "pos": [
+    25.717511,
+    32.660656
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "ruins"
+   }
+  },
+  {
+   "osm": "way/1250321222",
+   "pos": [
+    25.71786,
+    32.661129
+   ],
+   "tags": {
+    "building": "chapel",
+    "historic": "ruins",
+    "name": "Chapel of Osiris Heqadjet",
+    "wikidata": "Q124824888"
+   }
+  },
+  {
+   "osm": "way/1250321223",
+   "pos": [
+    25.717797,
+    32.660442
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "ruins"
+   }
+  },
+  {
+   "osm": "way/1250321243",
+   "pos": [
+    25.720092,
+    32.657211
+   ],
+   "tags": {
+    "building": "ruins",
+    "name": "جدار أمنحتب الرابع",
+    "name:ar": "جدار أمنحتب الرابع",
+    "name:de": "Vortor Amenhoteps IV.",
+    "name:en": "Foregate of Amenhotep IV",
+    "wikidata": "Q124831168"
+   }
+  },
+  {
+   "osm": "way/1250321244",
+   "pos": [
+    25.720358,
+    32.657187
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "archaeological_site",
+    "name": "المقصورة البيضاء للملك سنوسرت الأول",
+    "name:ar": "المقصورة البيضاء للملك سنوسرت الأول",
+    "name:de": "Weiße Kapelle",
+    "name:en": "White Chapel of Senusret (Sesostris) I",
+    "name:fr": "chapelle blanche",
+    "wikidata": "Q477282",
+    "wikipedia": "en:White Chapel"
+   }
+  },
+  {
+   "osm": "way/1250321248",
+   "pos": [
+    25.718883,
+    32.655722
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "tomb"
+   }
+  },
+  {
+   "osm": "way/1259654877",
+   "pos": [
+    25.720471,
+    32.657292
+   ],
+   "tags": {
+    "building": "religious",
+    "name": "Alabaster Chapel of Thutmosis IV",
+    "name:de": "Alabasterkapelle Thutmosis’ IV.",
+    "name:en": "Alabaster Chapel of Thutmosis IV",
+    "wikidata": "Q124884277"
+   }
+  },
+  {
+   "osm": "way/1259654878",
+   "pos": [
+    25.719137,
+    32.655951
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "ميناء المعبد",
+    "name:ar": "ميناء المعبد",
+    "name:en": "Port of the Temple",
+    "name:fr": "Rampe de Taharqa",
+    "wikidata": "Q124892101"
+   }
+  },
+  {
+   "osm": "way/1261951021",
+   "pos": [
+    25.718165,
+    32.658993
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "ruins"
+   }
+  },
+  {
+   "osm": "way/1261980131",
+   "pos": [
+    25.71906,
+    32.656539
+   ],
+   "tags": {
+    "building": "religious",
+    "historic": "ruins",
+    "name": "Imperial Cult Chapel",
+    "name:en": "Imperial Cult Chapel",
+    "name:fr": "chapelle du culte impérial",
+    "wikidata": "Q124954199"
+   }
+  },
+  {
+   "osm": "way/1262140657",
+   "pos": [
+    25.7189,
+    32.660204
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "Treasury of Shabaka",
+    "name:en": "Treasury of Shabaka",
+    "name:fr": "Trésor de Chabaka",
+    "wikidata": "Q125077135"
+   }
+  },
+  {
+   "osm": "way/1262325432",
+   "pos": [
+    25.71968,
+    32.657709
+   ],
+   "tags": {
+    "building": "religious",
+    "historic": "building",
+    "name": "Alabaster Chapel of Amenhotep II",
+    "name:de": "Alabasterkapelle Amenhoteps II.",
+    "name:en": "Alabaster Chapel of Amenhotep II",
+    "name:fr": "Chapelle de calcite d’Amenhotep II",
+    "wikidata": "Q124832708"
+   }
+  },
+  {
+   "osm": "way/1262325433",
+   "pos": [
+    25.719838,
+    32.657509
+   ],
+   "tags": {
+    "building": "religious",
+    "historic": "ruins",
+    "name": "Alabaster Chapel of Hachepsut",
+    "name:de": "Kalksteinkapelle der Hatschepsut",
+    "wikidata": "Q124822454"
+   }
+  },
+  {
+   "osm": "way/1263302544",
+   "pos": [
+    25.717743,
+    32.657803
+   ],
+   "tags": {
+    "historic": "archaeological_site",
+    "man_made": "courtyard",
+    "name": "فناء الخبيئة",
+    "name:ar": "فناء الخبيئة",
+    "name:en": "Cachette Courtyard",
+    "name:fr": "Cour de la cachette",
+    "wikidata": "Q124912908"
+   }
+  },
+  {
+   "osm": "way/1263302545",
+   "pos": [
+    25.717467,
+    32.660259
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "temple",
+    "historic": "ruins",
+    "name": "معبد رمسيس الثاني",
+    "name:ar": "معبد رمسيس الثاني",
+    "name:en": "Temple of Ramses II",
+    "name:fr": "temple de Ramsès II",
+    "wikidata": "Q124899806"
+   }
+  },
+  {
+   "osm": "way/1263494322",
+   "pos": [
+    25.717451,
+    32.659473
+   ],
+   "tags": {
+    "building": "yes",
+    "name": "Southern storerooms",
+    "name:en": "Southern storerooms",
+    "name:fr": "magasins sud"
+   }
+  },
+  {
+   "osm": "way/1263494323",
+   "pos": [
+    25.717584,
+    32.659638
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Sokarian chambers",
+    "name:en": "Sokarian chambers",
+    "name:fr": "Salles Sokariennes"
+   }
+  },
+  {
+   "osm": "way/1263494324",
+   "pos": [
+    25.717327,
+    32.660498
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Eastern colonnade of Taharqa",
+    "name:en": "Eastern colonnade of Taharqa",
+    "name:fr": "colonnade orientale de Taharqa",
+    "wikidata": "Q125074713"
+   }
+  },
+  {
+   "osm": "way/1263494325",
+   "pos": [
+    25.719075,
+    32.658643
+   ],
+   "tags": {
+    "historic": "ruins",
+    "name": "Gate of Ramses III",
+    "name:en": "Gate of Ramses III"
+   }
+  },
+  {
+   "osm": "way/1263494326",
+   "pos": [
+    25.719428,
+    32.658453
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Chapel of Osiris Wennefer",
+    "name:en": "Chapel of Osiris Wennefer",
+    "name:fr": "chapelle d’Osiris Ounnefer"
+   }
+  },
+  {
+   "osm": "way/1263494327",
+   "pos": [
+    25.719523,
+    32.658682
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Chapel of Osiris Wennefer Neb djefau",
+    "name:en": "Chapel of Osiris Wennefer Neb djefau",
+    "name:fr": "chapelle d’Osiris Ounnefer Neb-djefaou",
+    "wikidata": "Q124957252"
+   }
+  },
+  {
+   "osm": "way/1263494328",
+   "pos": [
+    25.719608,
+    32.658809
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "ruins",
+    "name": "Chapel of Osiris Neb ankh",
+    "name:en": "Chapel of Osiris Neb ankh",
+    "name:fr": "chapelle d’Osiris Neb-ânkh",
+    "wikidata": "Q124957395"
+   }
+  },
+  {
+   "osm": "way/1263494330",
+   "pos": [
+    25.718159,
+    32.658869
+   ],
+   "tags": {
+    "access": "customers",
+    "building": "religious",
+    "historic": "ruins",
+    "name": "Chapel of Kamutef",
+    "name:en": "Chapel of Kamutef",
+    "name:fr": "Chapelle de Kamoutef",
+    "wikidata": "Q124956602"
+   }
+  },
+  {
+   "osm": "way/1263526787",
+   "pos": [
+    25.718334,
+    32.657262
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "yes",
+    "name": "Bubastite Portal",
+    "name:en": "Bubastite Portal",
+    "wikidata": "Q4982146",
+    "wikipedia": "en:Bubastite Portal"
+   }
+  },
+  {
+   "osm": "way/1264833277",
+   "pos": [
+    25.719399,
+    32.656058
+   ],
+   "tags": {
+    "access": "customers",
+    "historic": "archaeological_site",
+    "name": "tribune of the quay",
+    "name:de": "Tribüne des Kais",
+    "name:en": "tribune of the quay",
+    "name:fr": "tribune du quai",
+    "wikidata": "Q125042210"
+   }
+  },
+  {
+   "osm": "way/1264868522",
+   "pos": [
+    25.718794,
+    32.657164
+   ],
+   "tags": {
+    "historic": "archaeological_site",
+    "man_made": "courtyard",
+    "name": "الفناء الكبير",
+    "name:ar": "الفناء الكبير",
+    "name:en": "Shoshenq I Court",
+    "name:fr": "cour de Sheshonq Ier",
+    "wikidata": "Q82074447"
+   }
+  },
+  {
+   "osm": "way/1265078460",
+   "pos": [
+    25.717173,
+    32.660841
+   ],
+   "tags": {
+    "building": "yes",
+    "historic": "city_gate",
+    "name": "Gateway of Nectanebo I",
+    "name:en": "Gateway of Nectanebo I",
+    "name:fr": "Porte de Nectanébo Ier",
+    "wikidata": "Q125056305"
+   }
+  },
+  {
+   "osm": "way/1265224812",
+   "pos": [
+    25.717642,
+    32.659748
+   ],
+   "tags": {
+    "building": "religious",
+    "name": "Chapel of Alexander the Great",
+    "name:en": "Chapel of Alexander the Great",
+    "wikidata": "Q125079122"
+   }
+  },
+  {
+   "osm": "way/1435709751",
+   "pos": [
+    25.716059,
+    32.644718
+   ],
+   "tags": {
+    "name": "النيل",
+    "name:de": "Nil",
+    "name:en": "Nile",
+    "name:es": "Nilo",
+    "name:fr": "Nil",
+    "name:nl": "Nijl",
+    "name:ru": "Ніл"
+   }
+  }
+ ]
+}
