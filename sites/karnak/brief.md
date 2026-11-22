@@ -18,6 +18,7 @@
   - Elizabeth Blyth, *Karnak: Evolution of a Temple* (Routledge, 2006), publisher's preview (front matter, contents and introduction), supplied 22 November 2026
   - Elaine Sullivan, *Introduction to the Temple of Karnak* (Digital Karnak, UCLA, 2008), PDF supplied 22 November 2026. Only its headings, captions and footnotes extract; the body text does not, so use the Digital Karnak website instead.
   - A geoarchaeological plan of the Karnak precincts (Amun-Re, Montu, Mut) with numbered core soundings (AS..), profiles (P..), the Saite quays, the western tribune and ramps, and the old riverbank features. Supplied 22 November 2026 with no source named; it looks like a figure from the CFEETK/Liverpool palaeo-channel studies. Source to be confirmed.
+  - Photo of the on-site board "Karnak Temples Plan & Chronology" (Ministry of Tourism and Antiquities), supplied 22 November 2026. It has 34 numbered features from the Port of the Temple (1) to the Priests' Quarter (34), colour-coded by reign, and marks the start of the visit at the quay in the west. Use it for the stop list and naming, and as the base map to place on the real one.
   - Eliot plans to supply more.
 - **Assumptions made without asking:**
   - The visit lasts about 3 hours.
