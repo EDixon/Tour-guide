@@ -27,7 +27,7 @@ Updated: 2026-11-22
 | 6. The Open Air Museum | whitechapel, redchapel | to do |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | to do |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | to do |
-| Visitors | all sights | dispatched |
+| Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
 
 ## Flags for Eliot
 - **Paths:** the network follows OpenStreetMap, which maps the temple's walkways well; it hasn't been walked. Walking times inside the temple are realistic to within about 20%. The approach from the car park crosses an open plaza OSM doesn't map as a path, so that stretch is a straight line.

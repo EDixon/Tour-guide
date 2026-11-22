@@ -1,0 +1,85 @@
+{
+  "intro": {
+    "popular": 0
+  },
+  "quay": {
+    "popular": 0
+  },
+  "rams": {
+    "popular": 4,
+    "mustSee": true
+  },
+  "pylon1": {
+    "popular": 3
+  },
+  "ramp": {
+    "popular": 1
+  },
+  "sety2": {
+    "popular": 0
+  },
+  "taharqa": {
+    "popular": 2
+  },
+  "ram3": {
+    "popular": 2
+  },
+  "bubastite": {
+    "popular": 0
+  },
+  "pylon2": {
+    "popular": 2
+  },
+  "hypostyle": {
+    "popular": 4,
+    "mustSee": true
+  },
+  "northwall": {
+    "popular": 0
+  },
+  "obelisks": {
+    "popular": 4,
+    "mustSee": true
+  },
+  "sanctuary": {
+    "popular": 2
+  },
+  "mkcourt": {
+    "popular": 0
+  },
+  "akhmenu": {
+    "popular": 3
+  },
+  "ptah": {
+    "popular": 2,
+    "wow": 3
+  },
+  "whitechapel": {
+    "popular": 2
+  },
+  "redchapel": {
+    "popular": 2
+  },
+  "cachette": {
+    "popular": 2
+  },
+  "lake": {
+    "popular": 4,
+    "mustSee": true
+  },
+  "scarab": {
+    "popular": 4
+  },
+  "lakeview": {
+    "popular": 1
+  },
+  "southpylons": {
+    "popular": 1
+  },
+  "khonsu": {
+    "popular": 3
+  },
+  "east": {
+    "popular": 0
+  }
+}
