@@ -14,12 +14,13 @@ General rules for every batch:
 ## Batch 1: Arrival, the river and the First Pylon
 - **Stops:** quay, rams, pylon1, ramp
 - **Ids:** quay, rams-avenue, first-pylon, builders-ramp, sphinx-avenue-reopening; people nectanebo-i, ramesses-ii, pinedjem-i, sety-ii
-- **Start from:** Digital Karnak (First Pylon, quay, ramp, "architectural features" PDF); Pennington and others in *Antiquity* (the shifting Nile and Karnak's origins); Ghilardi and Boraik on the western quay; Eliot's geoarchaeology plan (source unknown: identify it if possible); Arnold, *Building in Egypt* (1991) on construction ramps; PBS 2021 on the Avenue of Sphinxes.
+- **Start from:** Digital Karnak (First Pylon, quay, ramp, "architectural features" PDF); Pennington and others in *Antiquity* (the shifting Nile and Karnak's origins); Ghilardi and Boraik on the western quay; Eliot's geoarchaeology plan (source unknown; see "Identify the geoarchaeology plan" below); Arnold, *Building in Egypt* (1991) on construction ramps; PBS 2021 on the Avenue of Sphinxes.
 - **Angles:**
   - engineering: how a pylon was built (rubble core, casing blocks, ramps of mud brick), what the unfinished First Pylon shows (undressed faces, the ramp left in place), its size
   - geography and physics: the Nile has moved west since antiquity; how the quay and the rams' avenue relate to the old river; flood levels marked on the quay
   - the rams: Amun's sacred animal; whose names they carry (Ramesses II, then Pinedjem); the 2.7 km avenue to Luxor Temple and its 2021 reopening
 - **Check:** the First Pylon's date (Nectanebo I, or later), its width and height; who built the rams (moved here from elsewhere?); the Sety II obelisk and stele by the quay.
+- **Identify the geoarchaeology plan (Eliot's choice, 22 November 2026).** Eliot can't remember where he saved it. It is a black-and-white plan of the Amun-Ra, Montu and Mut precincts on a modern street map, with core soundings labelled AS01 to AS40 and DS1, profiles P1 to P15, and these labels: "Tribune of the temple of Montu", "Roman bath", "Ptolemaic bath", "Saite quay" (twice), "Western tribune", "Ramps", "Neferhotep's temple", "Double curved quay (of Montuemhat ?)", "Gate of Ptolemy XII", "Eastern quay of an island", "Dromos of Nectanebo", "Gate of Hatshepsut". Search the Karnak palaeo-channel papers (Graham, Pennington, Strutt, Ghilardi, Boraik and others, about 2012–2020; *Antiquity*, *Journal of Archaeological Science*, *Géomorphologie*, CFEETK's *Cahiers de Karnak*) for a figure that matches. If found, cite that paper (with figure number) in `sources.md` and use it for the river story. If not, don't cite the plan at all; use the published papers directly and record "plan not identified" in STATUS.
 - **Events:** -370 "Nectanebo I's walls and the First Pylon"; 2021 "Avenue of Sphinxes reopens to Luxor"
 
 ## Batch 2: The great forecourt

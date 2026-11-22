@@ -37,7 +37,7 @@ Updated: 2026-11-22
 - **Owners chronology:** a survey draft by period, from the Eleventh Dynasty to the Ministry of Tourism and Antiquities. Batch 8 checks every row.
 - **Ramadan 2027** is expected to run from about 8 February to 9 March 2027, and hours are sometimes shorter during it. The ticket price and card-only payment are from third-party sources.
 - **Visit length** (3 hours) is assumed. The 32 stops are more than 3 hours' worth, so the planner will choose.
-- **Geoarchaeology plan:** its source is unknown, so nothing from it is cited until it's identified.
+- **Geoarchaeology plan:** Eliot can't remember where it came from. Batch 1 will try to identify the paper (decided 22 November 2026); if it can't, the plan won't be cited and the river story will come from the published papers.
 
 ## Log
 - 2026-11-22: started; brief agreed (scope: Amun-Ra precinct and Open Air Museum; early March 2027, arriving 08:30; carrier).
