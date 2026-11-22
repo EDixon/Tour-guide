@@ -105,6 +105,8 @@ Start a Claude chat (Opus) with this repository connected and say **"add <site>"
 - **site-check:** a Haiku helper does mechanical fixes, and an Opus fact-checker reports on accuracy
 - **site-publish:** the site goes into the app
 
+Once published, the site appears in the app's site list: tap the site name at the top (or Settings → Change site). Sites are listed nearest first, and each keeps its own plan, so switching back carries on where you left off. A site needs signal the first time it is opened, then works offline.
+
 Progress is kept in `sites/<id>/STATUS.md`, so if a chat gets long, start a new one and say **"continue <site>"**. Each site is visited once, as the real visit, so everything is finished before the day. For corrections or more depth beforehand, say **"fix <site>"** or **"add more about <thing>"** (`site-update`).
 
 Formats: `docs/TOUR_FORMAT.md` (tour) and `docs/KNOWLEDGE_FORMAT.md` (assistant knowledge). Checks: `npm test`, `node tools/validate-tour.mjs tours/<id>.json 120`, `node tools/check-knowledge.mjs <id>`.

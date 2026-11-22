@@ -5,7 +5,7 @@ description: Last link in the Tour Guide site chain. List the new site in the ap
 
 # site-publish: put it on the phone
 
-1. **List it:** add `{ "id": "<id>", "name": "<Site>", "file": "<id>.json", "pos": [lat, lon], "operator": "<operator>" }` to `tours/index.json`. `pos` is the main entrance, used for "nearest site" sorting.
+1. **List it:** add `{ "id": "<id>", "name": "<Site>", "file": "<id>.json", "pos": [lat, lon], "operator": "<operator>" }` to `tours/index.json`. `pos` is the main entrance (or main car park). The app's site list, opened by tapping the site name in the header, sorts by distance from it.
 2. **Final checks:** `npm test`, `node tools/validate-tour.mjs tours/<id>.json 120`, `node tools/check-knowledge.mjs <id>`. All must pass.
 3. **Offline files:** add the site's tour, map layer (`tours/<id>.map.json`), photo credits and knowledge files to `FILES` in `sw.js`, so they are stored when the app is installed. The app also fetches the photos themselves when online.
 4. **App code:** only if you changed app files (`app.js`, `planner.js`, `style.css`, `index.html`, `assistant/*`), bump `VERSION` in `sw.js` so phones pick up the new code. New tour and knowledge files don't need it.

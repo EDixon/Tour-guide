@@ -6,6 +6,7 @@ import { loadKnowledge, knowledgeFiles } from './assistant/knowledge.js';
 // ---------------------------------------------------------------- state
 const LS = 'tourguide:v1';
 let tour = null, model = null, state = null, plan = null;
+let siteIndex = null; // tours/index.json
 let tab = 'now', heading = null, wakeLock = null, mapView = null, reviewMode = false;
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -1172,6 +1173,7 @@ function openSettings() {
     <div class="btn-row"><button class="btn" data-do="apply">Apply</button></div>
     <h3>Interests</h3>
     <button class="btn secondary block" data-do="interests">Edit interests…</button>
+    <button class="btn secondary block" data-do="sites" style="margin-top:8px">Change site…</button>
     <h3>Offline assistant</h3>
     <div id="as-block">${assistantSettingsHtml()}</div>
     <h3>Tools</h3>
@@ -1320,6 +1322,7 @@ function handleDo(el) {
     case 'close': return closeSheet();
     case 'ask': return openAsk(el.dataset.q || '');
     case 'pram': return togglePram();
+    case 'sites': return openSites();
     case 'ask-send': return sendAsk();
     case 'ask-new': if (ask.session) ask.session.reset(); ask.items = []; return openAsk();
     case 'ask-setup': return openSettings();
@@ -1360,6 +1363,9 @@ document.addEventListener('click', (e) => {
     if (a === 'leave') return leaveSheet();
   }
   if (e.target.closest('#btn-settings')) return openSettings();
+  if (e.target.closest('#title')) return openSites();
+  const site = e.target.closest('[data-site]');
+  if (site) return switchSite(site.dataset.site);
   if (e.target.closest('#btn-ask')) return openAsk();
   const segBtn = e.target.closest('.seg button');
   if (segBtn) { segBtn.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === segBtn)); return; }
@@ -1389,12 +1395,65 @@ setInterval(() => {
   if (state.phase === 'break' && now() > state.breakEnds && !state._breakNudged) { state._breakNudged = true; toast('Planned break time is up. Tap “Back on tour” when ready.'); }
 }, 20000);
 
+// ---------------------------------------------------------------- site picker
+// Opened from the site name in the header (or Settings). Sites are listed nearest first when the
+// phone knows where it is, otherwise by name. Each site keeps its own saved state, so switching
+// and coming back resumes a visit in progress. Switching reloads the page with ?tour=<id>.
+const distLabel = (m) => { const mi = m / 1609.344; return mi < 0.2 ? 'here' : mi < 10 ? `${mi.toFixed(1)} miles` : `${Math.round(mi)} miles`; };
+function openSites(first = false) {
+  if (!siteIndex) return;
+  const draw = (pos, note, inline = false) => {
+    const list = siteIndex.tours.map(t => ({ ...t, d: pos && t.pos ? P.haversine(pos, t.pos) : null }));
+    list.sort((a, b) => (a.d != null && b.d != null ? a.d - b.d : a.name.localeCompare(b.name)));
+    const rows = list.map(t => {
+      const saved = t.id === tour.id ? state : load(t.id);
+      const tags = [t.id === tour.id ? 'open now' : '', saved && saved.phase && saved.phase !== 'setup' ? 'visit in progress' : ''].filter(Boolean);
+      return `<li><button class="site-row${t.id === tour.id ? ' current' : ''}" data-site="${esc(t.id)}">
+        <span class="site-name">${esc(t.name)}</span>
+        <span class="small muted">${esc(t.operator || '')}${t.d != null ? ` · ${distLabel(t.d)}` : ''}</span>
+        <span class="small site-tags" data-cache="${esc(t.file)}">${tags.map(esc).join(' · ')}</span></button></li>`;
+    }).join('');
+    const html = `<p class="small muted">${note}</p><ul class="site-list">${rows}</ul>`;
+    if (inline) return html;
+    const body = $('#sheet-body .site-list-wrap');
+    if (body) { body.innerHTML = html; markOffline(); }
+  };
+  // Which sites can open with no signal (their tour file is already stored on the phone)?
+  const markOffline = () => {
+    if (!('caches' in window)) return;
+    document.querySelectorAll('#sheet-body [data-cache]').forEach(el => {
+      caches.match(`tours/${el.dataset.cache}`).then(hit => {
+        if (!hit && !el.closest('.current')) el.textContent = [el.textContent, 'needs signal the first time'].filter(Boolean).join(' · ');
+      }).catch(() => {});
+    });
+  };
+  const known = state.gps && Date.now() - state.gps.t < 30 * 60000 ? [state.gps.lat, state.gps.lon] : null;
+  openSheet(`<h2>${first ? 'Choose a site' : 'Sites'}</h2>
+    <div class="site-list-wrap">${draw(known, known ? 'Nearest first.' : 'Finding where you are…', true)}</div>
+    <p class="small muted">Each site keeps its own plan: switching back carries on where you left off.</p>
+    <div class="btn-row"><button class="btn ghost" data-do="close">Close</button></div>`);
+  markOffline();
+  if (!known && 'geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition(
+      (p) => draw([p.coords.latitude, p.coords.longitude], 'Nearest first.'),
+      () => draw(null, 'Listed by name (location not available).'),
+      { maximumAge: 10 * 60000, timeout: 8000 });
+  } else if (!known) draw(null, 'Listed by name.');
+}
+function switchSite(id) {
+  if (id === tour.id) return closeSheet();
+  save();
+  try { localStorage.setItem(LS + ':last', id); } catch (e) { /* storage blocked */ }
+  location.href = `${location.pathname}?tour=${encodeURIComponent(id)}`;
+}
+
 // ---------------------------------------------------------------- boot
 async function boot() {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
-  const idx = await (await fetch('tours/index.json')).json();
+  const idx = siteIndex = await (await fetch('tours/index.json')).json();
   const params = new URLSearchParams(location.search);
-  const id = params.get('tour') || localStorage.getItem(LS + ':last') || idx.tours[0].id;
+  const lastSite = localStorage.getItem(LS + ':last');
+  const id = params.get('tour') || lastSite || idx.tours[0].id;
   const entry = idx.tours.find(t => t.id === id) || idx.tours[0];
   tour = await (await fetch(`tours/${entry.file}`)).json();
   model = P.buildModel(tour);
@@ -1408,6 +1467,8 @@ async function boot() {
   if (state.herePos) P.setHere(model, state.herePos);
   if (state.phase !== 'setup') { replan({ keepTarget: true, quiet: true }); startGps(); requestWake(); }
   render();
+  // First time on a phone with more than one site: ask which one, instead of opening the first listed.
+  if (!params.get('tour') && !lastSite && idx.tours.length > 1) openSites(true);
 }
 boot().catch(err => { $('#view').innerHTML = `<div class="card">Couldn’t load the tour: ${esc(err.message)}</div>`; });
 
