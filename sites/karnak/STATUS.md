@@ -12,22 +12,22 @@ Updated: 2026-11-22
 - [ ] site-publish: listed in the app, pushed, report sent
 
 ## Supplied by Eliot (in `sites/karnak/inputs/`, not in the repo; ask again in a new container)
-- Photo of the on-site board "Karnak Temples Plan & Chronology"
+- Photo of the on-site board "Karnak Temples Plan & Chronology" (re-supplied 22 November 2026 in this container as `inputs/site-board-plan.jpg`)
 - Geoarchaeology plan with core soundings (source not named)
 - Blyth (2006) publisher's preview PDF; Sullivan (2008) Digital Karnak introduction PDF
 
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | to do |
-| 2. The great forecourt | sety2, taharqa, ram3, bubastite | to do |
-| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | to do |
-| 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | to do |
+| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | dispatched |
+| 2. The great forecourt | sety2, taharqa, ram3, bubastite | dispatched |
+| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | dispatched |
+| 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | dispatched |
 | 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | to do |
 | 6. The Open Air Museum | whitechapel, redchapel | to do |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | to do |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | to do |
-| Visitors | all sights | to do |
+| Visitors | all sights | dispatched |
 
 ## Flags for Eliot
 - **Paths:** the network follows OpenStreetMap, which maps the temple's walkways well; it hasn't been walked. Walking times inside the temple are realistic to within about 20%. The approach from the car park crosses an open plaza OSM doesn't map as a path, so that stretch is a straight line.
