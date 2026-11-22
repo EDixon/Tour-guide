@@ -574,7 +574,7 @@
   },
   {
    "id": "w24",
-   "name": "Path by the Temple of Khonsu",
+   "name": "Path by Southern pylons",
    "pos": [
     25.716175,
     32.65638
@@ -582,7 +582,7 @@
   },
   {
    "id": "w25",
-   "name": "Path by the Temple of Khonsu",
+   "name": "Path by Southern pylons",
    "pos": [
     25.716046,
     32.656649
@@ -590,7 +590,7 @@
   },
   {
    "id": "w26",
-   "name": "Path by the Temple of Khonsu",
+   "name": "Path by Southern pylons",
    "pos": [
     25.716122,
     32.657115
@@ -598,14 +598,22 @@
   },
   {
    "id": "w27",
-   "name": "Path by the Temple of Khonsu",
+   "name": "Path by Southern pylons",
+   "pos": [
+    25.716674,
+    32.65732
+   ]
+  },
+  {
+   "id": "w28",
+   "name": "Southern axis (Cachette Court to the Tenth Pylon)",
    "pos": [
     25.716759,
     32.657351
    ]
   },
   {
-   "id": "w28",
+   "id": "w29",
    "name": "Southern axis (Cachette Court to the Tenth Pylon)",
    "pos": [
     25.717169,
@@ -613,7 +621,7 @@
    ]
   },
   {
-   "id": "w29",
+   "id": "w30",
    "name": "Path by Cachette Court",
    "pos": [
     25.71765,
@@ -621,7 +629,7 @@
    ]
   },
   {
-   "id": "w30",
+   "id": "w31",
    "name": "Path by Cachette Court",
    "pos": [
     25.717707,
@@ -629,7 +637,7 @@
    ]
   },
   {
-   "id": "w31",
+   "id": "w32",
    "name": "Path by Cachette Court",
    "pos": [
     25.717966,
@@ -637,7 +645,7 @@
    ]
   },
   {
-   "id": "w32",
+   "id": "w33",
    "name": "Path by Obelisks",
    "pos": [
     25.718802,
@@ -645,7 +653,7 @@
    ]
   },
   {
-   "id": "w33",
+   "id": "w34",
    "name": "Path by Hypostyle Hall",
    "pos": [
     25.718112,
@@ -653,7 +661,7 @@
    ]
   },
   {
-   "id": "w34",
+   "id": "w35",
    "name": "Southern axis (Cachette Court to the Tenth Pylon)",
    "pos": [
     25.717801,
@@ -661,7 +669,7 @@
    ]
   },
   {
-   "id": "w35",
+   "id": "w36",
    "name": "Path by Cachette Court",
    "pos": [
     25.717756,
@@ -669,7 +677,7 @@
    ]
   },
   {
-   "id": "w36",
+   "id": "w37",
    "name": "Path by Cachette Court",
    "pos": [
     25.717816,
@@ -677,7 +685,7 @@
    ]
   },
   {
-   "id": "w37",
+   "id": "w38",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.717841,
@@ -685,7 +693,7 @@
    ]
   },
   {
-   "id": "w38",
+   "id": "w39",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.717847,
@@ -693,7 +701,7 @@
    ]
   },
   {
-   "id": "w39",
+   "id": "w40",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.717873,
@@ -701,7 +709,7 @@
    ]
   },
   {
-   "id": "w40",
+   "id": "w41",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.717918,
@@ -709,7 +717,7 @@
    ]
   },
   {
-   "id": "w41",
+   "id": "w42",
    "name": "Path by Ramesses III temple",
    "pos": [
     25.717943,
@@ -717,7 +725,7 @@
    ]
   },
   {
-   "id": "w42",
+   "id": "w43",
    "name": "Path by Ramesses III temple",
    "pos": [
     25.717975,
@@ -725,7 +733,7 @@
    ]
   },
   {
-   "id": "w43",
+   "id": "w44",
    "name": "Path by Ramesses III temple",
    "pos": [
     25.718008,
@@ -733,7 +741,7 @@
    ]
   },
   {
-   "id": "w44",
+   "id": "w45",
    "name": "Path by Builders' ramp",
    "pos": [
     25.718049,
@@ -741,7 +749,7 @@
    ]
   },
   {
-   "id": "w45",
+   "id": "w46",
    "name": "Path by Builders' ramp",
    "pos": [
     25.718074,
@@ -749,7 +757,7 @@
    ]
   },
   {
-   "id": "w46",
+   "id": "w47",
    "name": "Path by Builders' ramp",
    "pos": [
     25.718116,
@@ -757,7 +765,7 @@
    ]
   },
   {
-   "id": "w47",
+   "id": "w48",
    "name": "Path by Builders' ramp",
    "pos": [
     25.718207,
@@ -765,7 +773,7 @@
    ]
   },
   {
-   "id": "w48",
+   "id": "w49",
    "name": "Path by Builders' ramp",
    "pos": [
     25.718476,
@@ -773,7 +781,7 @@
    ]
   },
   {
-   "id": "w49",
+   "id": "w50",
    "name": "Path by First Pylon",
    "pos": [
     25.718611,
@@ -781,7 +789,7 @@
    ]
   },
   {
-   "id": "w50",
+   "id": "w51",
    "name": "Path by First Pylon",
    "pos": [
     25.718907,
@@ -789,7 +797,7 @@
    ]
   },
   {
-   "id": "w51",
+   "id": "w52",
    "name": "Path by Quay",
    "pos": [
     25.719562,
@@ -797,7 +805,7 @@
    ]
   },
   {
-   "id": "w52",
+   "id": "w53",
    "name": "Path by Quay",
    "pos": [
     25.719733,
@@ -805,7 +813,7 @@
    ]
   },
   {
-   "id": "w53",
+   "id": "w54",
    "name": "Sacred Lake, north side",
    "pos": [
     25.71703,
@@ -813,7 +821,7 @@
    ]
   },
   {
-   "id": "w54",
+   "id": "w55",
    "name": "Sacred Lake, north side",
    "pos": [
     25.716727,
@@ -821,7 +829,7 @@
    ]
   },
   {
-   "id": "w55",
+   "id": "w56",
    "name": "Path by Quay",
    "pos": [
     25.719611,
@@ -829,7 +837,7 @@
    ]
   },
   {
-   "id": "w56",
+   "id": "w57",
    "name": "Path by Quay",
    "pos": [
     25.71959,
@@ -837,7 +845,7 @@
    ]
   },
   {
-   "id": "w57",
+   "id": "w58",
    "name": "Path by Entrance",
    "pos": [
     25.719796,
@@ -845,7 +853,7 @@
    ]
   },
   {
-   "id": "w58",
+   "id": "w59",
    "name": "Approach from the visitor centre",
    "pos": [
     25.71931,
@@ -853,7 +861,7 @@
    ]
   },
   {
-   "id": "w59",
+   "id": "w60",
    "name": "Approach from the visitor centre",
    "pos": [
     25.71914,
@@ -861,7 +869,7 @@
    ]
   },
   {
-   "id": "w60",
+   "id": "w61",
    "name": "Approach from the visitor centre",
    "pos": [
     25.719348,
@@ -869,7 +877,7 @@
    ]
   },
   {
-   "id": "w61",
+   "id": "w62",
    "name": "Karnak Temple Square",
    "pos": [
     25.719295,
@@ -877,7 +885,7 @@
    ]
   },
   {
-   "id": "w62",
+   "id": "w63",
    "name": "Karnak Temple Square",
    "pos": [
     25.720213,
@@ -885,7 +893,7 @@
    ]
   },
   {
-   "id": "w63",
+   "id": "w64",
    "name": "Karnak Temple Square",
    "pos": [
     25.720295,
@@ -893,7 +901,7 @@
    ]
   },
   {
-   "id": "w64",
+   "id": "w65",
    "name": "Path by Entrance",
    "pos": [
     25.719521,
@@ -901,7 +909,7 @@
    ]
   },
   {
-   "id": "w65",
+   "id": "w66",
    "name": "Path by Entrance",
    "pos": [
     25.71967,
@@ -909,7 +917,7 @@
    ]
   },
   {
-   "id": "w66",
+   "id": "w67",
    "name": "Path by Quay",
    "pos": [
     25.719908,
@@ -917,7 +925,7 @@
    ]
   },
   {
-   "id": "w67",
+   "id": "w68",
    "name": "Path by Quay",
    "pos": [
     25.719767,
@@ -925,7 +933,7 @@
    ]
   },
   {
-   "id": "w68",
+   "id": "w69",
    "name": "Path by Sacred Lake",
    "pos": [
     25.717545,
@@ -933,7 +941,7 @@
    ]
   },
   {
-   "id": "w69",
+   "id": "w70",
    "name": "Path by Sacred Lake",
    "pos": [
     25.7174,
@@ -941,7 +949,7 @@
    ]
   },
   {
-   "id": "w70",
+   "id": "w71",
    "name": "Path by Sacred Lake",
    "pos": [
     25.716996,
@@ -949,7 +957,7 @@
    ]
   },
   {
-   "id": "w71",
+   "id": "w72",
    "name": "Path by East temple",
    "pos": [
     25.718536,
@@ -957,7 +965,7 @@
    ]
   },
   {
-   "id": "w72",
+   "id": "w73",
    "name": "Path by East temple",
    "pos": [
     25.718137,
@@ -965,7 +973,7 @@
    ]
   },
   {
-   "id": "w73",
+   "id": "w74",
    "name": "Path by East temple",
    "pos": [
     25.717599,
@@ -973,7 +981,7 @@
    ]
   },
   {
-   "id": "w74",
+   "id": "w75",
    "name": "Path by East temple",
    "pos": [
     25.7173,
@@ -981,7 +989,7 @@
    ]
   },
   {
-   "id": "w75",
+   "id": "w76",
    "name": "Path by the Akhmenu",
    "pos": [
     25.717129,
@@ -989,23 +997,23 @@
    ]
   },
   {
-   "id": "w76",
-   "name": "Path by the Sacred Lake",
+   "id": "w77",
+   "name": "Sacred Lake, north side",
    "pos": [
     25.716934,
     32.659491
    ]
   },
   {
-   "id": "w77",
-   "name": "Path by the Sacred Lake",
+   "id": "w78",
+   "name": "Path by Café",
    "pos": [
     25.717411,
     32.658637
    ]
   },
   {
-   "id": "w78",
+   "id": "w79",
    "name": "Path by Scarab",
    "pos": [
     25.717449,
@@ -1013,7 +1021,7 @@
    ]
   },
   {
-   "id": "w79",
+   "id": "w80",
    "name": "Path by Scarab",
    "pos": [
     25.717798,
@@ -1021,7 +1029,7 @@
    ]
   },
   {
-   "id": "w80",
+   "id": "w81",
    "name": "Path by Visitor centre",
    "pos": [
     25.719661,
@@ -1029,7 +1037,7 @@
    ]
   },
   {
-   "id": "w81",
+   "id": "w82",
    "name": "Path by Visitor centre",
    "pos": [
     25.719967,
@@ -1037,7 +1045,7 @@
    ]
   },
   {
-   "id": "w82",
+   "id": "w83",
    "name": "Path by East temple",
    "pos": [
     25.716826,
@@ -1045,7 +1053,7 @@
    ]
   },
   {
-   "id": "w83",
+   "id": "w84",
    "name": "Path by East temple",
    "pos": [
     25.717122,
@@ -1053,7 +1061,7 @@
    ]
   },
   {
-   "id": "w84",
+   "id": "w85",
    "name": "Path by the Temple of Ptah",
    "pos": [
     25.71977,
@@ -1061,7 +1069,7 @@
    ]
   },
   {
-   "id": "w85",
+   "id": "w86",
    "name": "Path by the Temple of Ptah",
    "pos": [
     25.719922,
@@ -1069,7 +1077,7 @@
    ]
   },
   {
-   "id": "w86",
+   "id": "w87",
    "name": "Path by the Temple of Ptah",
    "pos": [
     25.719773,
@@ -1077,7 +1085,7 @@
    ]
   },
   {
-   "id": "w87",
+   "id": "w88",
    "name": "Path by Red Chapel",
    "pos": [
     25.720298,
@@ -1085,7 +1093,7 @@
    ]
   },
   {
-   "id": "w88",
+   "id": "w89",
    "name": "Path by Red Chapel",
    "pos": [
     25.72006,
@@ -1093,7 +1101,7 @@
    ]
   },
   {
-   "id": "w89",
+   "id": "w90",
    "name": "Path by Toilets (north)",
    "pos": [
     25.719516,
@@ -1101,7 +1109,7 @@
    ]
   },
   {
-   "id": "w90",
+   "id": "w91",
    "name": "Open Air Museum paths",
    "pos": [
     25.720271,
@@ -1109,7 +1117,7 @@
    ]
   },
   {
-   "id": "w91",
+   "id": "w92",
    "name": "Open Air Museum paths",
    "pos": [
     25.720384,
@@ -1117,7 +1125,7 @@
    ]
   },
   {
-   "id": "w92",
+   "id": "w93",
    "name": "Open Air Museum paths",
    "pos": [
     25.720651,
@@ -1125,7 +1133,7 @@
    ]
   },
   {
-   "id": "w93",
+   "id": "w94",
    "name": "Open Air Museum paths",
    "pos": [
     25.72079,
@@ -1133,7 +1141,7 @@
    ]
   },
   {
-   "id": "w94",
+   "id": "w95",
    "name": "Open Air Museum paths",
    "pos": [
     25.720466,
@@ -1141,7 +1149,7 @@
    ]
   },
   {
-   "id": "w95",
+   "id": "w96",
    "name": "Open Air Museum paths",
    "pos": [
     25.720382,
@@ -1149,7 +1157,7 @@
    ]
   },
   {
-   "id": "w96",
+   "id": "w97",
    "name": "Open Air Museum paths",
    "pos": [
     25.720308,
@@ -1157,7 +1165,7 @@
    ]
   },
   {
-   "id": "w97",
+   "id": "w98",
    "name": "Open Air Museum paths",
    "pos": [
     25.720182,
@@ -1165,7 +1173,7 @@
    ]
   },
   {
-   "id": "w98",
+   "id": "w99",
    "name": "Open Air Museum paths",
    "pos": [
     25.720199,
@@ -1173,7 +1181,7 @@
    ]
   },
   {
-   "id": "w99",
+   "id": "w100",
    "name": "Open Air Museum paths",
    "pos": [
     25.720282,
@@ -1181,7 +1189,7 @@
    ]
   },
   {
-   "id": "w100",
+   "id": "w101",
    "name": "Open Air Museum paths",
    "pos": [
     25.719855,
@@ -1189,7 +1197,7 @@
    ]
   },
   {
-   "id": "w101",
+   "id": "w102",
    "name": "Open Air Museum paths",
    "pos": [
     25.719619,
@@ -1197,7 +1205,7 @@
    ]
   },
   {
-   "id": "w102",
+   "id": "w103",
    "name": "Open Air Museum paths",
    "pos": [
     25.719593,
@@ -1205,7 +1213,7 @@
    ]
   },
   {
-   "id": "w103",
+   "id": "w104",
    "name": "Open Air Museum paths",
    "pos": [
     25.719324,
@@ -1213,7 +1221,7 @@
    ]
   },
   {
-   "id": "w104",
+   "id": "w105",
    "name": "Path by Sety I battles",
    "pos": [
     25.719077,
@@ -1221,7 +1229,7 @@
    ]
   },
   {
-   "id": "w105",
+   "id": "w106",
    "name": "Path along the north wall",
    "pos": [
     25.719003,
@@ -1229,7 +1237,7 @@
    ]
   },
   {
-   "id": "w106",
+   "id": "w107",
    "name": "Path by Sety I battles",
    "pos": [
     25.718868,
@@ -1237,7 +1245,7 @@
    ]
   },
   {
-   "id": "w107",
+   "id": "w108",
    "name": "Path by Obelisks",
    "pos": [
     25.718802,
@@ -1245,7 +1253,7 @@
    ]
   },
   {
-   "id": "w108",
+   "id": "w109",
    "name": "Path by Sety I battles",
    "pos": [
     25.719175,
@@ -1253,7 +1261,7 @@
    ]
   },
   {
-   "id": "w109",
+   "id": "w110",
    "name": "Path by Sety I battles",
    "pos": [
     25.719611,
@@ -1261,7 +1269,7 @@
    ]
   },
   {
-   "id": "w110",
+   "id": "w111",
    "name": "Path by Entrance",
    "pos": [
     25.720273,
@@ -1269,7 +1277,7 @@
    ]
   },
   {
-   "id": "w111",
+   "id": "w112",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.718279,
@@ -1277,7 +1285,7 @@
    ]
   },
   {
-   "id": "w112",
+   "id": "w113",
    "name": "Path by Bubastite Portal",
    "pos": [
     25.718336,
@@ -1285,7 +1293,7 @@
    ]
   },
   {
-   "id": "w113",
+   "id": "w114",
    "name": "Path by Taharqa column",
    "pos": [
     25.718574,
@@ -1293,7 +1301,7 @@
    ]
   },
   {
-   "id": "w114",
+   "id": "w115",
    "name": "Path by Taharqa column",
    "pos": [
     25.718637,
@@ -1301,7 +1309,7 @@
    ]
   },
   {
-   "id": "w115",
+   "id": "w116",
    "name": "Path by Obelisks",
    "pos": [
     25.71905,
@@ -1309,7 +1317,7 @@
    ]
   },
   {
-   "id": "w116",
+   "id": "w117",
    "name": "Path by Obelisks",
    "pos": [
     25.718918,
@@ -1317,7 +1325,7 @@
    ]
   },
   {
-   "id": "w117",
+   "id": "w118",
    "name": "Path by Obelisks",
    "pos": [
     25.719027,
@@ -1325,7 +1333,7 @@
    ]
   },
   {
-   "id": "w118",
+   "id": "w119",
    "name": "Path by Middle Kingdom court",
    "pos": [
     25.718666,
@@ -1333,7 +1341,7 @@
    ]
   },
   {
-   "id": "w119",
+   "id": "w120",
    "name": "Path by Middle Kingdom court",
    "pos": [
     25.717637,
@@ -1341,7 +1349,7 @@
    ]
   },
   {
-   "id": "w120",
+   "id": "w121",
    "name": "Path by Middle Kingdom court",
    "pos": [
     25.717774,
@@ -1349,7 +1357,7 @@
    ]
   },
   {
-   "id": "w121",
+   "id": "w122",
    "name": "Path by Middle Kingdom court",
    "pos": [
     25.717905,
@@ -1357,7 +1365,7 @@
    ]
   },
   {
-   "id": "w122",
+   "id": "w123",
    "name": "Path by Middle Kingdom court",
    "pos": [
     25.717997,
@@ -1365,7 +1373,7 @@
    ]
   },
   {
-   "id": "w123",
+   "id": "w124",
    "name": "Path by the Akhmenu",
    "pos": [
     25.71765,
@@ -1373,7 +1381,7 @@
    ]
   },
   {
-   "id": "w124",
+   "id": "w125",
    "name": "Path by the Akhmenu",
    "pos": [
     25.717626,
@@ -1381,15 +1389,15 @@
    ]
   },
   {
-   "id": "w125",
-   "name": "Path by Sacred Lake",
+   "id": "w126",
+   "name": "Path by Southern pylons",
    "pos": [
     25.716658,
     32.657759
    ]
   },
   {
-   "id": "w126",
+   "id": "w127",
    "name": "Path by Taharqa column",
    "pos": [
     25.718757,
@@ -1397,7 +1405,7 @@
    ]
   },
   {
-   "id": "w127",
+   "id": "w128",
    "name": "Main east–west axis",
    "pos": [
     25.719083,
@@ -1405,7 +1413,7 @@
    ]
   },
   {
-   "id": "w128",
+   "id": "w129",
    "name": "Path by First Pylon",
    "pos": [
     25.718658,
@@ -1413,7 +1421,7 @@
    ]
   },
   {
-   "id": "w129",
+   "id": "w130",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717002,
@@ -1421,7 +1429,7 @@
    ]
   },
   {
-   "id": "w130",
+   "id": "w131",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717051,
@@ -1429,7 +1437,7 @@
    ]
   },
   {
-   "id": "w131",
+   "id": "w132",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717103,
@@ -1437,7 +1445,7 @@
    ]
   },
   {
-   "id": "w132",
+   "id": "w133",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717178,
@@ -1445,7 +1453,7 @@
    ]
   },
   {
-   "id": "w133",
+   "id": "w134",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717261,
@@ -1453,7 +1461,23 @@
    ]
   },
   {
-   "id": "w134",
+   "id": "w135",
+   "name": "Sacred Lake, north side",
+   "pos": [
+    25.716867,
+    32.659614
+   ]
+  },
+  {
+   "id": "w136",
+   "name": "Sacred Lake, north side",
+   "pos": [
+    25.716839,
+    32.659666
+   ]
+  },
+  {
+   "id": "w137",
    "name": "Path by First Pylon",
    "pos": [
     25.718847,
@@ -1461,7 +1485,7 @@
    ]
   },
   {
-   "id": "w135",
+   "id": "w138",
    "name": "Open Air Museum paths",
    "pos": [
     25.720272,
@@ -1469,7 +1493,7 @@
    ]
   },
   {
-   "id": "w136",
+   "id": "w139",
    "name": "Open Air Museum paths",
    "pos": [
     25.720346,
@@ -1477,7 +1501,7 @@
    ]
   },
   {
-   "id": "w137",
+   "id": "w140",
    "name": "Open Air Museum paths",
    "pos": [
     25.720542,
@@ -1485,7 +1509,7 @@
    ]
   },
   {
-   "id": "w138",
+   "id": "w141",
    "name": "Path by Red Chapel",
    "pos": [
     25.72017,
@@ -1493,7 +1517,7 @@
    ]
   },
   {
-   "id": "w139",
+   "id": "w142",
    "name": "Path by the Temple of Ptah",
    "pos": [
     25.719228,
@@ -1501,7 +1525,7 @@
    ]
   },
   {
-   "id": "w140",
+   "id": "w143",
    "name": "Path by East temple",
    "pos": [
     25.717562,
@@ -1509,7 +1533,7 @@
    ]
   },
   {
-   "id": "w141",
+   "id": "w144",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716545,
@@ -1517,7 +1541,7 @@
    ]
   },
   {
-   "id": "w142",
+   "id": "w145",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.7164,
@@ -1525,7 +1549,7 @@
    ]
   },
   {
-   "id": "w143",
+   "id": "w146",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716292,
@@ -1533,7 +1557,7 @@
    ]
   },
   {
-   "id": "w144",
+   "id": "w147",
    "name": "Open Air Museum paths",
    "pos": [
     25.719931,
@@ -1541,7 +1565,7 @@
    ]
   },
   {
-   "id": "w145",
+   "id": "w148",
    "name": "Open Air Museum paths",
    "pos": [
     25.719952,
@@ -1549,7 +1573,7 @@
    ]
   },
   {
-   "id": "w146",
+   "id": "w149",
    "name": "Path by the Akhmenu",
    "pos": [
     25.717782,
@@ -1557,7 +1581,7 @@
    ]
   },
   {
-   "id": "w147",
+   "id": "w150",
    "name": "Path by East temple",
    "pos": [
     25.717514,
@@ -1565,7 +1589,7 @@
    ]
   },
   {
-   "id": "w148",
+   "id": "w151",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716787,
@@ -1573,7 +1597,7 @@
    ]
   },
   {
-   "id": "w149",
+   "id": "w152",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716768,
@@ -1581,7 +1605,7 @@
    ]
   },
   {
-   "id": "w150",
+   "id": "w153",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.717208,
@@ -1589,7 +1613,7 @@
    ]
   },
   {
-   "id": "w151",
+   "id": "w154",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716655,
@@ -1597,7 +1621,7 @@
    ]
   },
   {
-   "id": "w152",
+   "id": "w155",
    "name": "Path by Visitor centre",
    "pos": [
     25.719741,
@@ -1605,7 +1629,7 @@
    ]
   },
   {
-   "id": "w153",
+   "id": "w156",
    "name": "Path by Visitor centre",
    "pos": [
     25.719483,
@@ -1613,7 +1637,7 @@
    ]
   },
   {
-   "id": "w154",
+   "id": "w157",
    "name": "Path by Ramesses III temple",
    "pos": [
     25.718449,
@@ -1621,7 +1645,7 @@
    ]
   },
   {
-   "id": "w155",
+   "id": "w158",
    "name": "Path by the Temple of Khonsu",
    "pos": [
     25.716685,
@@ -1629,7 +1653,7 @@
    ]
   },
   {
-   "id": "w156",
+   "id": "w159",
    "name": "Approach from the visitor centre",
    "pos": [
     25.719091,
@@ -1637,7 +1661,7 @@
    ]
   },
   {
-   "id": "w157",
+   "id": "w160",
    "name": "Path by Visitor centre",
    "pos": [
     25.719945,
@@ -1645,7 +1669,7 @@
    ]
   },
   {
-   "id": "w158",
+   "id": "w161",
    "name": "",
    "pos": [
     25.718488,
@@ -1798,21 +1822,21 @@
    "w24",
    "w25",
    0.4,
-   "Path past the Temple of Khonsu",
+   "Path past Southern pylons",
    null
   ],
   [
    "w25",
    "w26",
    0.4,
-   "Path past the Temple of Khonsu",
+   "Path past Southern pylons",
    null
   ],
   [
    "w26",
    "w27",
    0.4,
-   "Path past the Temple of Khonsu",
+   "Path past Southern pylons",
    null
   ],
   [
@@ -1825,8 +1849,8 @@
   [
    "w28",
    "w29",
-   0.4,
-   "Path past Cachette Court",
+   0.6,
+   "Southern axis (Cachette Court to the Tenth Pylon)",
    null
   ],
   [
@@ -1845,6 +1869,13 @@
   ],
   [
    "w31",
+   "w32",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w32",
    "w14",
    0.4,
    "Path past Cachette Court",
@@ -1852,33 +1883,26 @@
   ],
   [
    "w14",
-   "w32",
+   "w33",
    0.4,
    "Path past Obelisks",
    null
   ],
   [
    "w13",
-   "w33",
+   "w34",
    0.4,
    "Path past Hypostyle Hall",
    null
   ],
   [
-   "w33",
    "w34",
+   "w35",
    0.6,
    "Southern axis (Cachette Court to the Tenth Pylon)",
    null
   ],
   [
-   "w34",
-   "w35",
-   0.4,
-   "Path past Cachette Court",
-   null
-  ],
-  [
    "w35",
    "w36",
    0.4,
@@ -1889,7 +1913,7 @@
    "w36",
    "w37",
    0.4,
-   "Path past Bubastite Portal",
+   "Path past Cachette Court",
    null
   ],
   [
@@ -1917,7 +1941,7 @@
    "w40",
    "w41",
    0.4,
-   "Path past Ramesses III temple",
+   "Path past Bubastite Portal",
    null
   ],
   [
@@ -1938,7 +1962,7 @@
    "w43",
    "w44",
    0.4,
-   "Path past Builders' ramp",
+   "Path past Ramesses III temple",
    null
   ],
   [
@@ -1973,7 +1997,7 @@
    "w48",
    "w49",
    0.4,
-   "Path past First Pylon",
+   "Path past Builders' ramp",
    null
   ],
   [
@@ -1985,6 +2009,13 @@
   ],
   [
    "w50",
+   "w51",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w51",
    "w5",
    0.4,
    "Path past Ram avenue",
@@ -1992,54 +2023,47 @@
   ],
   [
    "w5",
-   "w51",
-   0.4,
-   "Path past Quay",
-   null
-  ],
-  [
-   "w51",
    "w52",
    0.4,
    "Path past Quay",
    null
   ],
   [
+   "w52",
    "w53",
-   "w54",
-   0.9,
-   "Sacred Lake, north side",
-   null
-  ],
-  [
-   "w55",
-   "w56",
    0.4,
    "Path past Quay",
    null
   ],
   [
+   "w54",
+   "w55",
+   0.9,
+   "Sacred Lake, north side",
+   null
+  ],
+  [
    "w56",
+   "w57",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w57",
    "w3",
    0.35,
    "Approach from the visitor centre",
    null
   ],
   [
-   "w55",
-   "w57",
+   "w56",
+   "w58",
    0.4,
    "Path past Entrance",
    null
   ],
   [
-   "w58",
-   "w59",
-   0.35,
-   "Approach from the visitor centre",
-   null
-  ],
-  [
    "w59",
    "w60",
    0.35,
@@ -2048,16 +2072,16 @@
   ],
   [
    "w60",
-   "w55",
+   "w61",
    0.35,
    "Approach from the visitor centre",
    null
   ],
   [
    "w61",
-   "w62",
-   0.4,
-   "Karnak Temple Square",
+   "w56",
+   0.35,
+   "Approach from the visitor centre",
    null
   ],
   [
@@ -2068,21 +2092,21 @@
    null
   ],
   [
-   "w56",
-   "w60",
+   "w63",
+   "w64",
+   0.4,
+   "Karnak Temple Square",
+   null
+  ],
+  [
+   "w57",
+   "w61",
    0.35,
    "Approach from the visitor centre",
    null
   ],
   [
-   "w60",
-   "w64",
-   0.4,
-   "Path past Entrance",
-   null
-  ],
-  [
-   "w64",
+   "w61",
    "w65",
    0.4,
    "Path past Entrance",
@@ -2090,47 +2114,47 @@
   ],
   [
    "w65",
-   "w57",
+   "w66",
    0.4,
    "Path past Entrance",
    null
   ],
   [
+   "w66",
+   "w58",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w58",
+   "w67",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w67",
+   "w68",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w68",
    "w57",
-   "w66",
    0.4,
    "Path past Quay",
    null
   ],
   [
-   "w66",
-   "w67",
-   0.4,
-   "Path past Quay",
-   null
-  ],
-  [
-   "w67",
-   "w56",
-   0.4,
-   "Path past Quay",
-   null
-  ],
-  [
-   "w34",
-   "w29",
+   "w35",
+   "w30",
    0.4,
    "Path past Cachette Court",
    null
   ],
   [
-   "w68",
-   "w69",
-   0.9,
-   "Path past Sacred Lake",
-   null
-  ],
-  [
    "w69",
    "w70",
    0.9,
@@ -2139,16 +2163,16 @@
   ],
   [
    "w70",
-   "w28",
-   0.4,
+   "w71",
+   0.9,
    "Path past Sacred Lake",
    null
   ],
   [
    "w71",
-   "w72",
+   "w29",
    0.4,
-   "Path past East temple",
+   "Path past Southern pylons",
    null
   ],
   [
@@ -2168,85 +2192,85 @@
   [
    "w74",
    "w75",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w75",
+   "w76",
    0.4,
    "Path past the Akhmenu",
    null
   ],
   [
-   "w75",
-   "w53",
+   "w76",
+   "w54",
    0.4,
    "Path past Toilets (lake)",
    null
   ],
   [
-   "w53",
-   "w76",
-   0.9,
-   "Path past the Sacred Lake",
-   null
-  ],
-  [
-   "w76",
+   "w54",
    "w77",
    0.9,
-   "Path past the Sacred Lake",
+   "Sacred Lake, north side",
    null
   ],
   [
    "w77",
    "w78",
    0.9,
-   "Path past Scarab",
+   "Path past Café",
    null
   ],
   [
    "w78",
-   "w68",
+   "w79",
    0.9,
    "Path past Scarab",
    null
   ],
   [
-   "w68",
    "w79",
-   0.4,
+   "w69",
+   0.9,
    "Path past Scarab",
    null
   ],
   [
-   "w79",
-   "w31",
+   "w69",
+   "w80",
    0.4,
    "Path past Scarab",
    null
   ],
   [
    "w80",
+   "w32",
+   0.4,
+   "Path past Scarab",
+   null
+  ],
+  [
    "w81",
+   "w82",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w82",
    "w83",
-   0.4,
-   "Path past East temple",
-   null
-  ],
-  [
-   "w83",
-   "w74",
+   "w84",
    0.4,
    "Path past East temple",
    null
   ],
   [
    "w84",
-   "w85",
+   "w75",
    0.4,
-   "Path past the Temple of Ptah",
+   "Path past East temple",
    null
   ],
   [
@@ -2257,35 +2281,35 @@
    null
   ],
   [
+   "w86",
    "w87",
-   "w88",
    0.4,
-   "Path past Red Chapel",
+   "Path past the Temple of Ptah",
    null
   ],
   [
    "w88",
    "w89",
    0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w89",
+   "w90",
+   0.4,
    "Path past Toilets (north)",
    null
   ],
   [
-   "w90",
-   "w87",
+   "w91",
+   "w88",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
-   "w87",
-   "w91",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w91",
+   "w88",
    "w92",
    0.5,
    "Open Air Museum paths",
@@ -2306,21 +2330,14 @@
    null
   ],
   [
+   "w94",
    "w95",
-   "w96",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
    "w96",
-   "w90",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w90",
    "w97",
    0.5,
    "Open Air Museum paths",
@@ -2328,6 +2345,13 @@
   ],
   [
    "w97",
+   "w91",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w91",
    "w98",
    0.5,
    "Open Air Museum paths",
@@ -2341,14 +2365,14 @@
    null
   ],
   [
-   "w97",
+   "w99",
    "w100",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
-   "w100",
+   "w98",
    "w101",
    0.5,
    "Open Air Museum paths",
@@ -2371,103 +2395,103 @@
   [
    "w103",
    "w104",
-   0.4,
-   "Path past Sety I battles",
-   null
-  ],
-  [
-   "w104",
-   "w105",
-   0.45,
-   "Path along the north wall",
-   null
-  ],
-  [
-   "w105",
-   "w106",
-   0.4,
-   "Path past Sety I battles",
-   null
-  ],
-  [
-   "w106",
-   "w32",
-   0.4,
-   "Path past Obelisks",
-   null
-  ],
-  [
-   "w32",
-   "w107",
-   0.4,
-   "Path past Obelisks",
-   null
-  ],
-  [
-   "w107",
-   "w71",
-   0.45,
-   "Path along the north wall",
-   null
-  ],
-  [
-   "w108",
-   "w89",
-   0.4,
-   "Path past Sety I battles",
-   null
-  ],
-  [
-   "w89",
-   "w101",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
+   "w104",
    "w105",
-   "w108",
-   0.45,
-   "Path along the north wall",
-   null
-  ],
-  [
-   "w108",
-   "w109",
    0.4,
    "Path past Sety I battles",
    null
   ],
   [
+   "w105",
+   "w106",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
+   "w106",
+   "w107",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w107",
+   "w33",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w33",
+   "w108",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w108",
+   "w72",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
    "w109",
-   "w84",
+   "w90",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w90",
+   "w102",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w106",
+   "w109",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
+   "w109",
+   "w110",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w110",
+   "w85",
    0.4,
    "Path past the Temple of Ptah",
    null
   ],
   [
-   "w58",
-   "w110",
+   "w59",
+   "w111",
    0.4,
    "Path past Entrance",
    null
   ],
   [
-   "w110",
-   "w63",
+   "w111",
+   "w64",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w38",
-   "w111",
-   0.4,
-   "Path past Bubastite Portal",
-   null
-  ],
-  [
-   "w111",
+   "w39",
    "w112",
    0.4,
    "Path past Bubastite Portal",
@@ -2477,7 +2501,7 @@
    "w112",
    "w113",
    0.4,
-   "Path past Taharqa column",
+   "Path past Bubastite Portal",
    null
   ],
   [
@@ -2488,21 +2512,21 @@
    null
   ],
   [
-   "w111",
-   "w33",
+   "w114",
+   "w115",
+   0.4,
+   "Path past Taharqa column",
+   null
+  ],
+  [
+   "w112",
+   "w34",
    0.4,
    "Path past Bubastite Portal",
    null
   ],
   [
-   "w106",
-   "w115",
-   0.4,
-   "Path past Obelisks",
-   null
-  ],
-  [
-   "w115",
+   "w107",
    "w116",
    0.4,
    "Path past Obelisks",
@@ -2519,38 +2543,38 @@
    "w117",
    "w118",
    0.4,
-   "Path past Middle Kingdom court",
+   "Path past Obelisks",
    null
   ],
   [
    "w118",
-   "w71",
+   "w119",
    0.4,
    "Path past Middle Kingdom court",
    null
   ],
   [
-   "w98",
-   "w96",
+   "w119",
+   "w72",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w99",
+   "w97",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
    "w3",
-   "w52",
+   "w53",
    0.4,
    "Path past Quay",
    null
   ],
   [
-   "w119",
-   "w120",
-   0.4,
-   "Path past Middle Kingdom court",
-   null
-  ],
-  [
    "w120",
    "w121",
    0.4,
@@ -2566,21 +2590,28 @@
   ],
   [
    "w122",
-   "w107",
+   "w123",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w123",
+   "w108",
    0.4,
    "Path past Sanctuary",
    null
   ],
   [
-   "w123",
-   "w119",
+   "w124",
+   "w120",
    0.4,
    "Path past the Akhmenu",
    null
   ],
   [
+   "w125",
    "w124",
-   "w123",
    0.4,
    "Path past the Akhmenu",
    null,
@@ -2589,35 +2620,35 @@
    }
   ],
   [
-   "w119",
-   "w124",
+   "w120",
+   "w125",
    0.4,
    "Path past the Akhmenu",
    null
   ],
   [
-   "w27",
-   "w125",
-   0.4,
-   "Path past Sacred Lake",
-   null
-  ],
-  [
-   "w125",
-   "w70",
-   0.4,
-   "Path past Sacred Lake",
-   null
-  ],
-  [
-   "w114",
+   "w28",
    "w126",
+   0.4,
+   "Path past Southern pylons",
+   null
+  ],
+  [
+   "w126",
+   "w71",
+   0.4,
+   "Path past Southern pylons",
+   null
+  ],
+  [
+   "w115",
+   "w127",
    0.4,
    "Path past Taharqa column",
    null
   ],
   [
-   "w126",
+   "w127",
    "w9",
    0.9,
    "Main east–west axis",
@@ -2625,217 +2656,234 @@
   ],
   [
    "w10",
-   "w103",
+   "w104",
    0.4,
    "Path past Toilets (north)",
    null
   ],
   [
    "w7",
-   "w127",
+   "w128",
    0.9,
    "Main east–west axis",
    null
   ],
   [
-   "w127",
    "w128",
+   "w129",
    0.4,
    "Path past First Pylon",
    null
   ],
   [
-   "w128",
+   "w129",
+   "w49",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
    "w48",
-   0.4,
-   "Path past First Pylon",
-   null
-  ],
-  [
-   "w47",
    "w23",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
+   "w130",
+   "w131",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w131",
+   "w132",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w132",
+   "w133",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w133",
+   "w134",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w134",
+   "w46",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w135",
+   "w136",
+   0.9,
+   "Sacred Lake, north side",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w77",
+   "w135",
+   0.9,
+   "Sacred Lake, north side",
+   null
+  ],
+  [
+   "w51",
+   "w137",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w137",
    "w129",
-   "w130",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w130",
-   "w131",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w131",
-   "w132",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w132",
-   "w133",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w133",
-   "w45",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w50",
-   "w134",
    0.4,
    "Path past First Pylon",
    null
   ],
   [
-   "w134",
-   "w128",
-   0.4,
-   "Path past First Pylon",
-   null
-  ],
-  [
-   "w52",
-   "w67",
+   "w53",
+   "w68",
    0.4,
    "Path past Quay",
    null
   ],
   [
-   "w67",
-   "w55",
+   "w68",
+   "w56",
    0.4,
    "Path past Quay",
    null
   ],
   [
-   "w95",
-   "w99",
+   "w96",
+   "w100",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
-   "w99",
-   "w135",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w135",
-   "w136",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w136",
-   "w137",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w137",
-   "w94",
-   0.5,
-   "Open Air Museum paths",
-   null
-  ],
-  [
-   "w84",
+   "w100",
    "w138",
-   0.4,
-   "Path past Red Chapel",
+   0.5,
+   "Open Air Museum paths",
    null
   ],
   [
    "w138",
-   "w88",
-   0.4,
-   "Path past Red Chapel",
-   null
-  ],
-  [
-   "w94",
-   "w95",
+   "w139",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
-   "w109",
    "w139",
-   0.4,
-   "Path past the Temple of Ptah",
-   null
-  ],
-  [
-   "w139",
-   "w117",
-   0.4,
-   "Path past the Temple of Ptah",
+   "w140",
+   0.5,
+   "Open Air Museum paths",
    null
   ],
   [
    "w140",
-   "w83",
+   "w95",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w85",
+   "w141",
+   0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w141",
+   "w89",
+   0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w95",
+   "w96",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w110",
+   "w142",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w142",
+   "w118",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w143",
+   "w84",
    0.4,
    "Path past East temple",
    null
   ],
   [
-   "w82",
-   "w75",
+   "w83",
+   "w76",
    0.4,
    "Path past Toilets (lake)",
    null
   ],
   [
-   "w54",
-   "w82",
+   "w55",
+   "w83",
    0.4,
    "Path past Toilets (lake)",
-   null
-  ],
-  [
-   "w141",
-   "w142",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w142",
-   "w143",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w100",
-   "w144",
-   0.5,
-   "Open Air Museum paths",
    null
   ],
   [
    "w144",
    "w145",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w145",
+   "w146",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w101",
+   "w147",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w147",
+   "w148",
    0.5,
    "Open Air Museum paths",
    null,
@@ -2844,52 +2892,45 @@
    }
   ],
   [
-   "w145",
-   "w98",
+   "w148",
+   "w99",
    0.5,
    "Open Air Museum paths",
    null
   ],
   [
    "w16",
-   "w121",
+   "w122",
    0.4,
    "Path past Sanctuary",
    null
   ],
   [
-   "w121",
-   "w146",
+   "w122",
+   "w149",
    0.4,
    "Path past the Akhmenu",
    null
   ],
   [
-   "w146",
-   "w73",
+   "w149",
+   "w74",
    0.4,
    "Path past the Akhmenu",
    null
   ],
   [
-   "w73",
-   "w140",
+   "w74",
+   "w143",
    0.4,
    "Path past East temple",
    null
   ],
   [
-   "w140",
-   "w147",
+   "w143",
+   "w150",
    0.4,
    "Path past East temple",
-   null
-  ],
-  [
-   "w130",
-   "w41",
-   0.4,
-   "Path past the Temple of Khonsu",
    null
   ],
   [
@@ -2900,84 +2941,84 @@
    null
   ],
   [
-   "w43",
    "w132",
+   "w43",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w133",
    "w44",
+   "w133",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w134",
+   "w45",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
    "w23",
-   "w46",
+   "w47",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w148",
-   "w149",
+   "w151",
+   "w152",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w149",
-   "w39",
+   "w152",
+   "w40",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w142",
-   "w150",
+   "w145",
+   "w153",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w150",
-   "w36",
+   "w153",
+   "w37",
    0.4,
    "Path past Cachette Court",
    null
   ],
   [
-   "w150",
-   "w37",
+   "w153",
+   "w38",
    0.4,
-   "Path past the Temple of Khonsu",
+   "Path past Southern pylons",
    null
   ],
   [
    "w24",
-   "w35",
+   "w36",
+   0.4,
+   "Path past Southern pylons",
+   null
+  ],
+  [
+   "w41",
+   "w130",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w40",
-   "w129",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w129",
-   "w148",
-   0.4,
-   "Path past the Temple of Khonsu",
-   null
-  ],
-  [
-   "w148",
+   "w130",
    "w151",
    0.4,
    "Path past the Temple of Khonsu",
@@ -2985,90 +3026,97 @@
   ],
   [
    "w151",
-   "w141",
+   "w154",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w141",
+   "w154",
+   "w144",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w144",
    "w18",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w62",
-   "w110",
-   0.4,
-   "Path past Visitor centre",
-   null
-  ],
-  [
    "w63",
-   "w152",
+   "w111",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w152",
-   "w80",
+   "w64",
+   "w155",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w80",
-   "w153",
+   "w155",
+   "w81",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w153",
+   "w81",
+   "w156",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w156",
    "w1",
    0.4,
    "Path past Car park",
    null
   ],
   [
-   "w81",
-   "w62",
+   "w82",
+   "w63",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
    "w24",
-   "w143",
+   "w146",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w143",
+   "w146",
    "w18",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w114",
-   "w154",
+   "w115",
+   "w157",
    0.4,
    "Path past Ramesses III temple",
    null
   ],
   [
-   "w155",
-   "w151",
+   "w158",
+   "w154",
    0.4,
    "Path past the Temple of Khonsu",
    null
   ],
   [
-   "w156",
+   "w159",
    "w2",
    0.35,
    "Approach from the visitor centre",
@@ -3076,56 +3124,56 @@
   ],
   [
    "w2",
-   "w61",
+   "w62",
    0.35,
    "Approach from the visitor centre",
    null
   ],
   [
-   "w61",
-   "w58",
+   "w62",
+   "w59",
    0.35,
    "Approach from the visitor centre",
    null
   ],
   [
+   "w159",
    "w156",
-   "w153",
    0.4,
    "Path past Car park",
    null
   ],
   [
-   "w153",
-   "w157",
+   "w156",
+   "w160",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
-   "w157",
-   "w81",
+   "w160",
+   "w82",
    0.4,
    "Path past Visitor centre",
    null
   ],
   [
    "carpark",
-   "w156",
+   "w159",
    0.3,
    "",
    null
   ],
   [
    "vc",
-   "w157",
+   "w160",
    0.3,
    "",
    null
   ],
   [
    "entrance",
-   "w58",
+   "w59",
    0.3,
    "",
    null
@@ -3153,21 +3201,21 @@
   ],
   [
    "pylon1",
-   "w127",
+   "w128",
    0.3,
    "",
    null
   ],
   [
    "ramp",
-   "w158",
+   "w161",
    0.3,
    "",
    null
   ],
   [
-   "w158",
-   "w154",
+   "w161",
+   "w157",
    0.3,
    "",
    null
@@ -3181,21 +3229,21 @@
   ],
   [
    "taharqa",
-   "w126",
+   "w127",
    0.3,
    "",
    null
   ],
   [
    "ram3",
-   "w158",
+   "w161",
    0.3,
    "",
    null
   ],
   [
    "bubastite",
-   "w112",
+   "w113",
    0.3,
    "",
    null
@@ -3216,7 +3264,7 @@
   ],
   [
    "northwall",
-   "w104",
+   "w105",
    0.3,
    "",
    null
@@ -3237,91 +3285,105 @@
   ],
   [
    "mkcourt",
-   "w122",
+   "w123",
    0.3,
    "",
    null
   ],
   [
    "akhmenu",
-   "w146",
+   "w149",
    0.3,
    "",
    null
   ],
   [
    "ptah",
-   "w86",
+   "w87",
    0.3,
    "",
    null
   ],
   [
    "whitechapel",
-   "w135",
+   "w138",
    0.3,
    "",
    null
   ],
   [
    "redchapel",
-   "w91",
+   "w92",
    0.3,
    "",
    null
   ],
   [
    "cachette",
-   "w30",
+   "w31",
    0.3,
    "",
    null
   ],
   [
    "lake",
-   "w69",
+   "w70",
    0.3,
    "",
    null
   ],
   [
    "scarab",
-   "w78",
+   "w79",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "lakeview",
+   "w136",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "southpylons",
+   "w27",
    0.3,
    "",
    null
   ],
   [
    "khonsu",
-   "w155",
+   "w158",
    0.3,
    "",
    null
   ],
   [
    "east",
-   "w147",
+   "w150",
    0.3,
    "",
    null
   ],
   [
    "toilets-oam",
-   "w102",
+   "w103",
    0.3,
    "",
    null
   ],
   [
    "cafe",
-   "w77",
+   "w78",
    0.3,
    "",
    null
   ],
   [
    "toilets-lake",
-   "w54",
+   "w55",
    0.3,
    "",
    null
@@ -3826,6 +3888,45 @@
    "note": "Visitors walk round the scarab for luck; a modern custom.",
    "kids": [],
    "bullets": []
+  },
+  {
+   "kind": "sight",
+   "kids": [],
+   "bullets": [],
+   "id": "lakeview",
+   "name": "View across the Sacred Lake",
+   "short": "Lake view",
+   "pos": [
+    25.716442,
+    32.659406
+   ],
+   "photoSpot": true,
+   "date": -1450,
+   "dateLabel": "New Kingdom onwards",
+   "era": "thutmosid",
+   "dwell": 90,
+   "wow": 4,
+   "look": "From the south-east corner of the lake, point the camera north-west: the water in front, with the obelisks and the Hypostyle Hall behind.",
+   "note": "Little shade."
+  },
+  {
+   "kind": "sight",
+   "kids": [],
+   "bullets": [],
+   "id": "southpylons",
+   "name": "Southern pylons (Eighth to Tenth)",
+   "short": "Southern pylons",
+   "pos": [
+    25.716668,
+    32.657339
+   ],
+   "date": -1470,
+   "dateLabel": "about 1473 BC (Eighth Pylon) to about 1323–1295 BC (Ninth and Tenth)",
+   "era": "thutmosid",
+   "dwell": 180,
+   "wow": 3,
+   "look": "The line of gateways running south from the Cachette Court towards the Temple of Mut; the Eighth, built for Hatshepsut, is the oldest pylon still standing at Karnak.",
+   "note": "Access to the southern axis has varied; visitors photographed the Eighth and Ninth Pylons in 2025."
   },
   {
    "id": "khonsu",

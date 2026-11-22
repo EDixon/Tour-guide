@@ -104,3 +104,16 @@ Only the following were obtained, all from Wikipedia text and not from Wikidata 
 | Great Hypostyle Hall | 25°43′07″N 32°39′28″E (25.7186, 32.6579) | Wikipedia, Great Hypostyle Hall (fetched) |
 
 Not found: Sacred Lake, Hatshepsut's obelisk, Temple of Khonsu, Open Air Museum, visitor centre. These will need Wikidata, OpenStreetMap or georeferencing from a site plan. Note that the CLAUDE.md network rules mean OSM data must come via the GitHub Actions request route.
+
+## 9. Supplied by Eliot (in `sites/karnak/inputs/`, not in the repo)
+
+- On-site board "Karnak Temples Plan & Chronology" (Ministry of Tourism and Antiquities), photo supplied 22 November 2026. 34 numbered features, colour-coded by reign. Used for the stop list and names. Differences from scholarship: it calls feature 5 the "Chapels of Sety I", but the scholarly sources give Sety II's triple bark shrine; it calls 21 the "Gateway of Nekhtnebo" (Nectanebo I).
+- Geoarchaeology plan of the Karnak precincts with core soundings (AS) and profiles (P), supplied 22 November 2026, source not named. Probably from the Liverpool/CFEETK studies of the Nile channels (Graham, Pennington and others): to be confirmed before citing.
+- Elizabeth Blyth, *Karnak: Evolution of a Temple* (Routledge, 2006): publisher's preview only (front matter, contents, introduction).
+- Elaine Sullivan, *Introduction to the Temple of Karnak* (Digital Karnak, 2008): PDF; only headings, captions and footnotes extract.
+
+## 10. Map
+
+- OpenStreetMap layer fetched 22 November 2026 (`tours/karnak.map.json`, `sites/karnak/osm-pois.json`). Inside the precinct OpenStreetMap maps almost every monument by name, so stop positions come from it rather than from georeferencing the site board (the board was not georeferenced: it adds no feature OSM lacks).
+- Positions estimated (`approx`): the builders' ramp (behind the south tower of the First Pylon), the Sety I battle reliefs (north wall of the Hypostyle Hall), the Sacred Lake viewpoint, the First Pylon viewpoint, the security check and the visitor centre stop.
+- The path network follows the OSM footpaths inside an outline drawn round the visitor centre, approach plaza and the Amun-Ra enclosure (`sites/karnak/network.json`). Two links were added where OSM has none: car park to visitor centre, and car park to the security check across the plaza.
