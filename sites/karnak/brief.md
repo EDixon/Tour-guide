@@ -1,0 +1,24 @@
+# Karnak Temple: brief
+
+- **Site id:** karnak
+- **Operator:** Egyptian Ministry of Tourism and Antiquities (Supreme Council of Antiquities). The Franco-Egyptian Centre for the Study of the Temples of Karnak (CFEETK) carries out research and restoration.
+- **Address / centre point:** Karnak, Luxor, Egypt; about 25.7188, 32.6573 (to be confirmed in the survey)
+- **Opening on the visit date:** daily 06:00–17:00 (egymonuments.gov.eg, checked 22 November 2026). Some third-party guides give 17:30. The standard ticket covers the Precinct of Amun-Re and the Open Air Museum; foreign adult price about EGP 600 (third-party, 2026); reported to be card-only at the gate. The Mut precinct and the sound and light show are ticketed separately. The visit falls near the end of Ramadan 2027 (expected about 8 February to 9 March 2027), when opening hours are sometimes shortened.
+- **Planned visit:** early March 2027, arriving about 08:30, staying about 3 hours (length assumed)
+- **Party:** Eliot, his wife, their daughter (2), with a **carrier, no pushchair**. Steps and rough ground are fine.
+- **Scope:** Precinct of Amun-Re and the Open Air Museum (everything on the main ticket, including the Temple of Khonsu and the Sacred Lake). Not the Mut precinct, the Montu precinct or Luxor Temple.
+- **Special angles for this site:**
+  - engineering and building methods: pylon construction (the mud-brick ramp still behind the First Pylon), the Great Hypostyle Hall's columns and clerestory lighting, quarrying, moving and raising obelisks (Hatshepsut's and Thutmose III's), the 1899 collapse of eleven Hypostyle columns and their re-erection, and modern conservation
+  - astronomy and space: the main east-west axis and its alignment with the winter solstice sunrise, and the solar sanctuary in the Akhmenu
+  - how the temple grew over about 2,000 years, king by king (Blyth's book is organised this way)
+  - computing: the UCLA Digital Karnak 3D model as a way to show lost phases
+  - Habsburgs: no obvious link; only include one if a source supports it
+  - full chronology of who controlled the site, from the Middle Kingdom to today
+- **Maps, guides, photos or tracks supplied:** in `sites/karnak/inputs/` (not in the repo):
+  - Elizabeth Blyth, *Karnak: Evolution of a Temple* (Routledge, 2006), publisher's preview (front matter, contents and introduction), supplied 22 November 2026
+  - Elaine Sullivan, *Introduction to the Temple of Karnak* (Digital Karnak, UCLA, 2008), PDF supplied 22 November 2026. Only its headings, captions and footnotes extract; the body text does not, so use the Digital Karnak website instead.
+  - Eliot plans to supply more.
+- **Assumptions made without asking:**
+  - The visit lasts about 3 hours.
+  - The default family interests in `CLAUDE.md` apply.
+  - The arrival time is local time (Egypt, UTC+2 in March).
