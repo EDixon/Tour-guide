@@ -19,12 +19,12 @@ Updated: 2026-11-22
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | dispatched |
+| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | reviewed (string source keys; at merge set quay date about 945 BC, rams dateLabel "inscribed", pylon1 "about 380 to 362 BC"; key 8 is Pennington et al. 2025, Antiquity 99(408)) |
 | 2. The great forecourt | sety2, taharqa, ram3, bubastite | reviewed (sources numbered 17-22: renumber at merge) |
 | 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | dispatched |
 | 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | dispatched |
 | 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | dispatched |
-| 6. The Open Air Museum | whitechapel, redchapel | to do |
+| 6. The Open Air Museum | whitechapel, redchapel | dispatched |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | to do |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | to do |
 | Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
@@ -37,7 +37,7 @@ Updated: 2026-11-22
 - **Owners chronology:** a survey draft by period, from the Eleventh Dynasty to the Ministry of Tourism and Antiquities. Batch 8 checks every row.
 - **Ramadan 2027** is expected to run from about 8 February to 9 March 2027, and hours are sometimes shorter during it. The ticket price and card-only payment are from third-party sources.
 - **Visit length** (3 hours) is assumed. The 32 stops are more than 3 hours' worth, so the planner will choose.
-- **Geoarchaeology plan:** Eliot can't remember where it came from. Batch 1 will try to identify the paper (decided 22 November 2026); if it can't, the plan won't be cited and the river story will come from the published papers.
+- **Geoarchaeology plan: not identified.** The likeliest source is Boraik, Gabolde and Graham, "Karnak's Quaysides" in Willems and Dahms (eds), *The Nile* (2017), pp. 97–144, which could not be opened. Pennington et al. 2025 does not match. The plan is not cited; the river story uses Charloux et al. 2021, Ghilardi 2015 and Pennington et al. 2025.
 
 ## Log
 - 2026-11-22: started; brief agreed (scope: Amun-Ra precinct and Open Air Museum; early March 2027, arriving 08:30; carrier).

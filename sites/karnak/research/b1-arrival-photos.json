@@ -1,0 +1,15 @@
+[
+  {"id": "sety-ii-obelisk", "file": "File:Obelisk of Seti II in Karnak 03.jpg", "width": 900, "for": "quay.2"},
+  {"id": "sety-ii-obelisk-kids", "file": "File:Obelisk of Seti II in Karnak 03.jpg", "width": 900, "for": "quay.kids"},
+  {"id": "quay-landing-stage", "file": "File:Karnak Kaianlage 01.JPG", "width": 900, "for": "quay.look"},
+  {"id": "ram-chin-statuette", "file": "File:Ram Sphinx at Precinct of Amun-Re in Karnak Temple Complex - Luxor, Egypt (4058749444).jpg", "width": 900, "for": "rams.2"},
+  {"id": "ram-chin-statuette-kids", "file": "File:Ram Sphinx at Precinct of Amun-Re in Karnak Temple Complex - Luxor, Egypt (4058749444).jpg", "width": 900, "for": "rams.kids"},
+  {"id": "ram-avenue-view", "file": "File:Dromos and pylon Karnak.jpg", "width": 900, "for": "rams.look"},
+  {"id": "pylon-flagstaff-slots", "file": "File:Dromos and pylon Karnak.jpg", "width": 900, "for": "pylon1.6"},
+  {"id": "pylon-square-holes", "file": "File:Dromos and pylon Karnak.jpg", "width": 900, "for": "pylon1.kids"},
+  {"id": "first-pylon-facade", "file": "File:Karnak First Pylon R01.jpg", "width": 900, "for": "pylon1.look"},
+  {"id": "brick-ramp", "file": "File:Tempio di Karnak Gran cortile, i mattoni serviti per compiere i lavori al 1° pilone ancora accatastati.jpg", "width": 900, "for": "ramp.1"},
+  {"id": "brick-ramp-kids", "file": "File:Tempio di Karnak Gran cortile, i mattoni serviti per compiere i lavori al 1° pilone ancora accatastati.jpg", "width": 900, "for": "ramp.kids"},
+  {"id": "brick-ramp-look", "file": "File:Tempio di Karnak Gran cortile, i mattoni serviti per compiere i lavori al 1° pilone ancora accatastati.jpg", "width": 900, "for": "ramp.look"},
+  {"id": "court-rams", "file": "File:Karnak Tempel Vorhof 08.jpg", "width": 900, "for": "ramp.kids"}
+]

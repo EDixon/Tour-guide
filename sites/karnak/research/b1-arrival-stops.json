@@ -1,0 +1,74 @@
+{
+  "quay": {
+    "bullets": [
+      {"id": 1, "t": "This stone platform was the temple's harbour front. Boats carrying Amun's statue once tied up here, and the Nile flowed right up to the quay. Today the river is far away.", "imp": 5, "tags": {"physics": 0.5, "history": 0.4, "views": 0.3}, "src": [4, "ghilardi-2015"]},
+      {"id": 2, "t": "Look for the little stone obelisk on the platform. It was carved for Sety II about 1200 BC, is only about 3.5 metres tall, and was probably one of a pair.", "imp": 3, "tags": {"history": 0.3, "architecture": 0.3, "art": 0.2}, "src": ["wikidata-sety-ii-obelisk", "gk"], "verify": true, "photo": "sety-ii-obelisk"},
+      {"id": 3, "t": "The stone wall that held back the river here was begun about 945 BC, under Shoshenq I, and repaired into the fourth century BC. A stretch 3.5 metres high lies south of this quay.", "imp": 4, "tags": {"engineering": 0.9, "history": 0.4}, "src": [4]},
+      {"id": 4, "t": "Karnak began on a river island. Over centuries the channels beside it silted up and the main Nile moved west, and each strip of new dry land let the temple grow outwards.", "imp": 4, "tags": {"physics": 0.8, "history": 0.3, "engineering": 0.3}, "src": [8, 4, "charloux-2021"]},
+      {"id": 5, "t": "Scientists drilled a 25 metre borehole in front of the First Pylon. About 18 metres of it is Nile mud, sand and pottery, laid down from about 1450 BC onwards.", "imp": 3, "tags": {"physics": 0.6, "engineering": 0.4}, "src": ["ghilardi-2015"], "needs": 4},
+      {"id": 6, "t": "Kings of the Libyan age and later carved the height of each year's Nile flood into the quay, dated by reign. Many are worn away, but they are valuable records of past floods.", "imp": 3, "tags": {"physics": 0.7, "history": 0.4}, "src": ["nile-level-texts"], "verify": true},
+      {"id": 7, "t": "South of the quay, the Kushite king Taharqa built a paved stone ramp that ran down into the river. Texts inside it show it was used for water rituals at the New Year.", "imp": 3, "tags": {"engineering": 0.4, "gods": 0.3, "history": 0.3}, "src": [4]},
+      {"id": 8, "t": "Where the First Pylon now stands, the king Hakoris built a small boat chapel with an extra wide west door, so the god's boat could be lifted from the river and carried straight in.", "imp": 2, "tags": {"gods": 0.4, "engineering": 0.4}, "src": [4]}
+    ],
+    "kids": [
+      {"t": "Find the little pointed stone tower (an obelisk) standing on the old quay. Can you point to the top?", "photo": "sety-ii-obelisk-kids"}
+    ],
+    "look": "The stone landing platform (the tribune) at the western end of the temple, with Sety II's small obelisk on it. The ram avenue runs east from here to the First Pylon.",
+    "photo": "quay-landing-stage",
+    "note": "Open ground, no shade. Recent photographs (March 2024, December 2025) show the obelisk and platform reachable from the avenue, but it may be roped off; if so, see the obelisk and platform from the start of the ram avenue."
+  },
+  "rams": {
+    "bullets": [
+      {"id": 1, "t": "Forty ram-headed sphinxes line this avenue to the First Pylon. The ram was Amun's sacred animal, so each statue is a ram's head on a lion's body, guarding the way to his temple.", "imp": 5, "tags": {"gods": 0.6, "art": 0.3, "history": 0.2}, "src": ["dk-processional", "dk-other-ways"]},
+      {"id": 2, "t": "Look under a ram's chin: the tiny standing figure is Ramesses II, shown as Osiris, with his titles carved on it. The ram shelters the king, as Amun protects him.", "imp": 4, "tags": {"gods": 0.4, "art": 0.4, "people": 0.3}, "src": [4, "dk-processional", "gk"], "verify": true, "photo": "ram-chin-statuette"},
+      {"id": 3, "t": "Whose rams are they? Tradition says Ramesses II. But their style looks older, Thutmose IV or Amenhotep III. One theory says Ramesses II took them over at Luxor and Pinedjem I moved them here.", "imp": 4, "tags": {"history": 0.5, "people": 0.4}, "src": [4], "needs": 2},
+      {"id": 4, "t": "They have been shuffled several times. Pinedjem is thought to have set out a hundred or more, Shoshenq I moved some inside his great court, and the Romans put those outside in today's positions.", "imp": 3, "tags": {"history": 0.4}, "src": [4, "dk-processional"], "needs": 3},
+      {"id": 5, "t": "This was a landing road. The avenue ran from the old temple gate, the Second Pylon, down to the quay, so a procession from a boat could walk between the rams straight to the temple.", "imp": 3, "tags": {"history": 0.3, "gods": 0.4, "views": 0.2}, "src": ["dk-processional", 4]},
+      {"id": 6, "t": "Do not confuse this with the long Avenue of Sphinxes to Luxor Temple, about 2.7 kilometres, with human-headed sphinxes of Nectanebo I along most of it. It reopened on 25 November 2021.", "imp": 3, "tags": {"history": 0.5, "views": 0.2}, "src": [14, "dk-other-ways", "artnews-2021"]},
+      {"id": 7, "t": "Each sphinx is carved from sandstone and is about 3.7 metres long. A few still keep traces of their original paint.", "imp": 1, "tags": {"art": 0.3, "engineering": 0.2}, "src": ["dk-processional"]}
+    ],
+    "kids": [
+      {"t": "Find a ram with a tiny king standing under its chin!", "photo": "ram-chin-statuette-kids"},
+      {"t": "Count the rams along one side of the path, pointing to each one: one, two, three..."}
+    ],
+    "look": "The double row of ram-headed sphinxes leading to the First Pylon; each has a small figure of the king under its chin.",
+    "photo": "ram-avenue-view",
+    "note": "Usually busy with groups between 09:00 and 11:00. The avenue is the normal walk in and is open; ropes keep visitors off the pedestals."
+  },
+  "pylon1": {
+    "bullets": [
+      {"id": 1, "t": "The First Pylon is the largest pylon in Egypt: about 113 metres wide, and never finished. Nectanebo I began it around 380 BC as the grand new western entrance to the whole temple.", "imp": 5, "tags": {"architecture": 0.6, "engineering": 0.6, "history": 0.3, "views": 0.5}, "src": ["dk-1st-pylon", 4]},
+      {"id": 2, "t": "The towers show how far the work got. The south tower has 45 courses of stone, about 31.7 metres; the north tower only 32, about 21.7 metres. Finished, they would reach 38 to 40.", "imp": 5, "tags": {"engineering": 1.0, "architecture": 0.3}, "src": ["dk-1st-pylon"], "needs": 1},
+      {"id": 3, "t": "The top is ragged and the front is bare because builders raised a pylon first, using ramps, and dressed and carved it afterwards from the top down. This job stopped before that stage.", "imp": 4, "tags": {"engineering": 0.9, "art": 0.2}, "src": ["memphis-building", "dk-1st-pylon", "gk"], "verify": true, "needs": 1},
+      {"id": 4, "t": "Nectanebo also ringed the Amun-Ra temple with a mud-brick wall about 21 metres high and 12 thick. Digital Karnak suggests the new gate and wall may also have been meant to guard against foreign invaders.", "imp": 3, "tags": {"history": 0.6, "engineering": 0.5}, "src": ["dk-enclosures", "dk-1st-pylon"]},
+      {"id": 5, "t": "Nectanebo pulled down the west wall of Shoshenq I's court, from about 945 BC, but kept its unfinished central gateway, probably Shoshenq's, 27.5 metres high, and built the pylon around it.", "imp": 3, "tags": {"history": 0.4, "architecture": 0.4, "engineering": 0.3}, "src": [4, "dk-1st-pylon"], "needs": 1},
+      {"id": 6, "t": "Look for the tall vertical slots in the front of each tower. Huge wooden flagstaffs with cloth banners stood in notches like these, held to the stone with clamps.", "imp": 3, "tags": {"architecture": 0.5, "engineering": 0.4, "gods": 0.2}, "src": ["dk-1st-pylon"], "photo": "pylon-flagstaff-slots"},
+      {"id": 7, "t": "At about 08:30 the front of the pylon faces away from the sun, so expect it in shade and flat light. The sun lights the front in the afternoon.", "imp": 2, "tags": {"space": 0.5, "physics": 0.4, "views": 0.5}, "src": ["gk"], "verify": true},
+      {"id": 8, "t": "The central doorway is 7.4 metres wide. A smaller doorway, 10.85 metres high, was fitted into it later, with wooden doors to control who entered the temple.", "imp": 2, "tags": {"architecture": 0.5, "engineering": 0.2}, "src": ["dk-1st-pylon"]}
+    ],
+    "kids": [
+      {"t": "Find the square holes high up in the big wall, much higher than you can reach!", "photo": "pylon-square-holes"},
+      {"t": "Find the giant doorway between the two towers and wave hello to the temple!"}
+    ],
+    "look": "The great gateway, about 113 m wide, seen from the ram avenue. Its stone front was never decorated, and the top edge is still unfinished.",
+    "photo": "first-pylon-facade",
+    "note": "Open, and part of the walk in. The front faces west, so it is in shade in the morning; the best light on it is in the afternoon."
+  },
+  "ramp": {
+    "bullets": [
+      {"id": 1, "t": "That sloping heap of mud brick against the pylon is a builders' ramp, left when work stopped. It shows how Egyptians lifted heavy stone, and proves this gateway was never finished.", "imp": 5, "tags": {"engineering": 1.0, "history": 0.2}, "src": ["dk-1st-pylon", "dk-arch-features", "memphis-building"], "photo": "brick-ramp"},
+      {"id": 2, "t": "The method was simple: lay a course of stone, then raise the ramp and the earth packing to match. Blocks were hauled up the slope, layer by layer, to the top.", "imp": 5, "tags": {"engineering": 1.0, "physics": 0.4}, "src": ["memphis-building"], "needs": 1},
+      {"id": 3, "t": "Normally the ramps came down once the building was finished, and masons smoothed the walls on the way down. Here they were never cleared, so the method is frozen in time.", "imp": 4, "tags": {"engineering": 0.9}, "src": ["memphis-building", "dk-1st-pylon"], "needs": 2},
+      {"id": 4, "t": "To make room for ramps like this, Nectanebo pulled down part of the court's side walls and columns at the west end. Some column drums were rebuilt and left rough, undressed.", "imp": 3, "tags": {"engineering": 0.5, "history": 0.3}, "src": ["dk-shoshenq-court"]},
+      {"id": 5, "t": "Mud brick was Egypt's everyday building material. The great wall Nectanebo built around the whole temple, 21 metres high, was made of mud brick and sandstone too.", "imp": 2, "tags": {"engineering": 0.5, "history": 0.2}, "src": ["dk-enclosures"]},
+      {"id": 6, "t": "Digital Karnak's 3D model shows the unfinished upper parts of this pylon as ghostly transparent blocks, so you can compare what stands with what was planned.", "imp": 1, "tags": {"computing": 0.9, "engineering": 0.3}, "src": ["dk-1st-pylon"]}
+    ],
+    "kids": [
+      {"t": "Find the big heap of mud bricks leaning on the wall. What colour is it?", "photo": "brick-ramp-kids"},
+      {"t": "Spot the little rams lined up along the court wall.", "photo": "court-rams"}
+    ],
+    "look": "Once through the pylon, turn right: the mud-brick slope against the inside of the south tower is what is left of the builders' ramp.",
+    "photo": "brick-ramp-look",
+    "note": "In the first court, free to enter on the main ticket. Look from the path: the ramp is a fragile heap and is usually fenced, so it may not be possible to walk up to it; it is large enough to see well from a few metres away."
+  }
+}
