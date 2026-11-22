@@ -1,0 +1,4020 @@
+{
+ "format": 1,
+ "id": "karnak",
+ "name": "Karnak Temple",
+ "subtitle": "Precinct of Amun-Ra and Open Air Museum, Luxor",
+ "operator": "Ministry of Tourism and Antiquities (Egypt)",
+ "significance": 0.95,
+ "hours": {
+  "open": "06:00",
+  "close": "17:00",
+  "note": "Daily 06:00–17:00 (Ministry of Tourism and Antiquities, checked November 2026). Ramadan 2027 is expected to end about 9 March 2027; hours are sometimes shorter during Ramadan."
+ },
+ "start": "carpark",
+ "exit": "carpark",
+ "introStop": "intro",
+ "walk": {
+  "detour": 1.2,
+  "indoorFactor": 1.3
+ },
+ "buildings": {},
+ "breaks": {
+  "cafe": {
+   "label": "Café by the Sacred Lake",
+   "minutes": 20,
+   "restore": 1,
+   "at": "cafe"
+  },
+  "loo": {
+   "label": "Loo stop",
+   "minutes": 6,
+   "restore": 0.08
+  }
+ },
+ "topics": {
+  "engineering": "Building methods & engineering",
+  "physics": "Physics",
+  "space": "Space & astronomy",
+  "computing": "Computing & automation",
+  "history": "Links to wider history",
+  "views": "Views & nice walks",
+  "people": "People & stories",
+  "architecture": "Architecture & style",
+  "gods": "Gods, rituals & festivals",
+  "art": "Art, reliefs & sculpture"
+ },
+ "defaultWeights": {
+  "engineering": 0.9,
+  "physics": 0.9,
+  "space": 0.9,
+  "computing": 0.9,
+  "history": 0.6,
+  "views": 0.8,
+  "people": 0.55,
+  "architecture": 0.5,
+  "gods": 0.45,
+  "art": 0.35
+ },
+ "eras": [
+  {
+   "id": "mk",
+   "name": "Middle Kingdom beginnings",
+   "from": -2100,
+   "to": -1650,
+   "colour": "#c9a227",
+   "summary": "A local god, Amun, gets his first stone temple under Senusret I."
+  },
+  {
+   "id": "early-nk",
+   "name": "Early New Kingdom",
+   "from": -1550,
+   "to": -1480,
+   "colour": "#d87a3a",
+   "summary": "Theban kings drive out the Hyksos; Thutmose I builds pylons and obelisks."
+  },
+  {
+   "id": "thutmosid",
+   "name": "Hatshepsut and Thutmose III",
+   "from": -1479,
+   "to": -1400,
+   "colour": "#b5462c",
+   "summary": "Obelisks, the Red Chapel, the Akhmenu: Karnak becomes the empire's great temple."
+  },
+  {
+   "id": "amarna",
+   "name": "Amenhotep III to Horemheb",
+   "from": -1390,
+   "to": -1295,
+   "colour": "#7a5ca8",
+   "summary": "Amenhotep III builds big; Akhenaten turns against Amun; Tutankhamun and Horemheb restore him."
+  },
+  {
+   "id": "ramesside",
+   "name": "Ramesside kings",
+   "from": -1295,
+   "to": -1069,
+   "colour": "#3a7fb5",
+   "summary": "The Great Hypostyle Hall, battle reliefs, and the temples of Ramesses III and Khonsu."
+  },
+  {
+   "id": "tip",
+   "name": "Priest-kings and Libyan pharaohs",
+   "from": -1069,
+   "to": -715,
+   "colour": "#4a9a6e",
+   "summary": "The High Priests of Amun rule Thebes; Shoshenq I records his campaign."
+  },
+  {
+   "id": "late",
+   "name": "Kushites, Saites and the last native kings",
+   "from": -715,
+   "to": -332,
+   "colour": "#8a6d3b",
+   "summary": "Taharqa's kiosk, the Assyrian sack of Thebes, Nectanebo's walls and the unfinished First Pylon."
+  },
+  {
+   "id": "ptolemaic",
+   "name": "Greek and Roman Egypt",
+   "from": -332,
+   "to": 400,
+   "colour": "#5c6f7a",
+   "summary": "Alexander's successors rebuild the sanctuary; Rome takes an obelisk; the temple closes."
+  },
+  {
+   "id": "modern",
+   "name": "Rediscovery and conservation",
+   "from": 400,
+   "to": 2026,
+   "colour": "#777777",
+   "summary": "Churches and a village in the ruins, then travellers, excavation, collapse and restoration."
+  }
+ ],
+ "events": [
+  {
+   "year": -2100,
+   "label": "Intef II's column names Amun-Ra at Karnak",
+   "src": [
+    4,
+    13
+   ]
+  },
+  {
+   "year": -1950,
+   "label": "Senusret I builds the first stone temple",
+   "src": [
+    4,
+    6
+   ],
+   "stop": "mkcourt"
+  },
+  {
+   "year": -1940,
+   "label": "Senusret I's White Chapel",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "whitechapel"
+  },
+  {
+   "year": -1500,
+   "label": "Thutmose I's pylons and obelisks",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "obelisks"
+  },
+  {
+   "year": -1457,
+   "label": "Hatshepsut's obelisks raised",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "obelisks"
+  },
+  {
+   "year": -1470,
+   "label": "Hatshepsut's Red Chapel",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "redchapel"
+  },
+  {
+   "year": -1456,
+   "label": "Thutmose III begins the Akhmenu",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "akhmenu"
+  },
+  {
+   "year": -1370,
+   "label": "Amenhotep III's Third Pylon and the scarab",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "scarab"
+  },
+  {
+   "year": -1350,
+   "label": "Akhenaten turns against Amun",
+   "src": [
+    4,
+    6
+   ]
+  },
+  {
+   "year": -1330,
+   "label": "Tutankhamun restores the temples",
+   "src": [
+    4,
+    6
+   ]
+  },
+  {
+   "year": -1294,
+   "label": "Sety I builds the Hypostyle Hall",
+   "src": [
+    5,
+    12
+   ],
+   "stop": "hypostyle"
+  },
+  {
+   "year": -1290,
+   "label": "Sety I's battle reliefs",
+   "src": [
+    5
+   ],
+   "stop": "northwall"
+  },
+  {
+   "year": -1259,
+   "label": "Peace treaty with the Hittites recorded",
+   "src": [
+    4,
+    6
+   ],
+   "stop": "cachette"
+  },
+  {
+   "year": -1184,
+   "label": "Ramesses III's temple in the forecourt",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "ram3"
+  },
+  {
+   "year": -1170,
+   "label": "Temple of Khonsu begun",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "khonsu"
+  },
+  {
+   "year": -925,
+   "label": "Shoshenq I's campaign relief",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "bubastite"
+  },
+  {
+   "year": -690,
+   "label": "Taharqa's kiosk",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "taharqa"
+  },
+  {
+   "year": -664,
+   "label": "Assyrians sack Thebes",
+   "src": [
+    4,
+    6
+   ]
+  },
+  {
+   "year": -370,
+   "label": "Nectanebo I's walls and the First Pylon",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "pylon1"
+  },
+  {
+   "year": -323,
+   "label": "Granite sanctuary for Philip Arrhidaeus",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "sanctuary"
+  },
+  {
+   "year": 357,
+   "label": "Lateran obelisk shipped to Rome",
+   "src": [
+    6,
+    7
+   ],
+   "stop": "east"
+  },
+  {
+   "year": 400,
+   "label": "Temple closed; churches in the ruins",
+   "src": [
+    4,
+    6
+   ],
+   "stop": "akhmenu"
+  },
+  {
+   "year": 1799,
+   "label": "Napoleon's scholars record Karnak",
+   "src": [
+    11
+   ]
+  },
+  {
+   "year": 1858,
+   "label": "Mariette's Antiquities Service takes charge",
+   "src": [
+    11
+   ]
+  },
+  {
+   "year": 1899,
+   "label": "Eleven Hypostyle columns collapse",
+   "src": [
+    5,
+    12
+   ],
+   "stop": "hypostyle"
+  },
+  {
+   "year": 1903,
+   "label": "Cachette of statues found (to 1905)",
+   "src": [
+    11,
+    6
+   ],
+   "stop": "cachette"
+  },
+  {
+   "year": 1927,
+   "label": "White Chapel found in the Third Pylon",
+   "src": [
+    3,
+    6
+   ],
+   "stop": "whitechapel"
+  },
+  {
+   "year": 1967,
+   "label": "Franco-Egyptian centre (CFEETK) founded",
+   "src": [
+    2
+   ]
+  },
+  {
+   "year": 1979,
+   "label": "Ancient Thebes made a World Heritage Site",
+   "src": [
+    15
+   ]
+  },
+  {
+   "year": 2021,
+   "label": "Avenue of Sphinxes reopens to Luxor",
+   "src": [
+    14
+   ],
+   "stop": "rams"
+  }
+ ],
+ "waypoints": [
+  {
+   "id": "w1",
+   "name": "Path by Car park",
+   "pos": [
+    25.719472,
+    32.653185
+   ]
+  },
+  {
+   "id": "w2",
+   "name": "Path by Car park",
+   "pos": [
+    25.719185,
+    32.653859
+   ]
+  },
+  {
+   "id": "w3",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.719553,
+    32.655763
+   ]
+  },
+  {
+   "id": "w4",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.719414,
+    32.656066
+   ]
+  },
+  {
+   "id": "w5",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.719338,
+    32.656233
+   ]
+  },
+  {
+   "id": "w6",
+   "name": "Main east–west axis",
+   "pos": [
+    25.719296,
+    32.656325
+   ]
+  },
+  {
+   "id": "w7",
+   "name": "Main east–west axis",
+   "pos": [
+    25.719199,
+    32.656537
+   ]
+  },
+  {
+   "id": "w8",
+   "name": "Main east–west axis",
+   "pos": [
+    25.719023,
+    32.656921
+   ]
+  },
+  {
+   "id": "w9",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718825,
+    32.657346
+   ]
+  },
+  {
+   "id": "w10",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718807,
+    32.657383
+   ]
+  },
+  {
+   "id": "w11",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718782,
+    32.657437
+   ]
+  },
+  {
+   "id": "w12",
+   "name": "Main east–west axis",
+   "pos": [
+    25.71858,
+    32.657871
+   ]
+  },
+  {
+   "id": "w13",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718572,
+    32.65789
+   ]
+  },
+  {
+   "id": "w14",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718375,
+    32.658312
+   ]
+  },
+  {
+   "id": "w15",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718315,
+    32.658441
+   ]
+  },
+  {
+   "id": "w16",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718144,
+    32.658808
+   ]
+  },
+  {
+   "id": "w17",
+   "name": "Main east–west axis",
+   "pos": [
+    25.718098,
+    32.658907
+   ]
+  },
+  {
+   "id": "w18",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716441,
+    32.65589
+   ]
+  },
+  {
+   "id": "w19",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716221,
+    32.655643
+   ]
+  },
+  {
+   "id": "w20",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716633,
+    32.654953
+   ]
+  },
+  {
+   "id": "w21",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716876,
+    32.655092
+   ]
+  },
+  {
+   "id": "w22",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716865,
+    32.655321
+   ]
+  },
+  {
+   "id": "w23",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717661,
+    32.655783
+   ]
+  },
+  {
+   "id": "w24",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716175,
+    32.65638
+   ]
+  },
+  {
+   "id": "w25",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716046,
+    32.656649
+   ]
+  },
+  {
+   "id": "w26",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716122,
+    32.657115
+   ]
+  },
+  {
+   "id": "w27",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716759,
+    32.657351
+   ]
+  },
+  {
+   "id": "w28",
+   "name": "Southern axis (Cachette Court to the Tenth Pylon)",
+   "pos": [
+    25.717169,
+    32.65753
+   ]
+  },
+  {
+   "id": "w29",
+   "name": "Path by Cachette Court",
+   "pos": [
+    25.71765,
+    32.657817
+   ]
+  },
+  {
+   "id": "w30",
+   "name": "Path by Cachette Court",
+   "pos": [
+    25.717707,
+    32.657861
+   ]
+  },
+  {
+   "id": "w31",
+   "name": "Path by Cachette Court",
+   "pos": [
+    25.717966,
+    32.658057
+   ]
+  },
+  {
+   "id": "w32",
+   "name": "Path by Obelisks",
+   "pos": [
+    25.718802,
+    32.658552
+   ]
+  },
+  {
+   "id": "w33",
+   "name": "Path by Hypostyle Hall",
+   "pos": [
+    25.718112,
+    32.657633
+   ]
+  },
+  {
+   "id": "w34",
+   "name": "Southern axis (Cachette Court to the Tenth Pylon)",
+   "pos": [
+    25.717801,
+    32.65746
+   ]
+  },
+  {
+   "id": "w35",
+   "name": "Path by Cachette Court",
+   "pos": [
+    25.717756,
+    32.657377
+   ]
+  },
+  {
+   "id": "w36",
+   "name": "Path by Cachette Court",
+   "pos": [
+    25.717816,
+    32.657158
+   ]
+  },
+  {
+   "id": "w37",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.717841,
+    32.657079
+   ]
+  },
+  {
+   "id": "w38",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.717847,
+    32.657061
+   ]
+  },
+  {
+   "id": "w39",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.717873,
+    32.656969
+   ]
+  },
+  {
+   "id": "w40",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.717918,
+    32.656813
+   ]
+  },
+  {
+   "id": "w41",
+   "name": "Path by Ramesses III temple",
+   "pos": [
+    25.717943,
+    32.656725
+   ]
+  },
+  {
+   "id": "w42",
+   "name": "Path by Ramesses III temple",
+   "pos": [
+    25.717975,
+    32.656614
+   ]
+  },
+  {
+   "id": "w43",
+   "name": "Path by Ramesses III temple",
+   "pos": [
+    25.718008,
+    32.656499
+   ]
+  },
+  {
+   "id": "w44",
+   "name": "Path by Builders' ramp",
+   "pos": [
+    25.718049,
+    32.656353
+   ]
+  },
+  {
+   "id": "w45",
+   "name": "Path by Builders' ramp",
+   "pos": [
+    25.718074,
+    32.656266
+   ]
+  },
+  {
+   "id": "w46",
+   "name": "Path by Builders' ramp",
+   "pos": [
+    25.718116,
+    32.656119
+   ]
+  },
+  {
+   "id": "w47",
+   "name": "Path by Builders' ramp",
+   "pos": [
+    25.718207,
+    32.65605
+   ]
+  },
+  {
+   "id": "w48",
+   "name": "Path by Builders' ramp",
+   "pos": [
+    25.718476,
+    32.656036
+   ]
+  },
+  {
+   "id": "w49",
+   "name": "Path by First Pylon",
+   "pos": [
+    25.718611,
+    32.655882
+   ]
+  },
+  {
+   "id": "w50",
+   "name": "Path by First Pylon",
+   "pos": [
+    25.718907,
+    32.655976
+   ]
+  },
+  {
+   "id": "w51",
+   "name": "Path by Quay",
+   "pos": [
+    25.719562,
+    32.656337
+   ]
+  },
+  {
+   "id": "w52",
+   "name": "Path by Quay",
+   "pos": [
+    25.719733,
+    32.655866
+   ]
+  },
+  {
+   "id": "w53",
+   "name": "Sacred Lake, north side",
+   "pos": [
+    25.71703,
+    32.659562
+   ]
+  },
+  {
+   "id": "w54",
+   "name": "Sacred Lake, north side",
+   "pos": [
+    25.716727,
+    32.660086
+   ]
+  },
+  {
+   "id": "w55",
+   "name": "Path by Quay",
+   "pos": [
+    25.719611,
+    32.655637
+   ]
+  },
+  {
+   "id": "w56",
+   "name": "Path by Quay",
+   "pos": [
+    25.71959,
+    32.655682
+   ]
+  },
+  {
+   "id": "w57",
+   "name": "Path by Entrance",
+   "pos": [
+    25.719796,
+    32.655256
+   ]
+  },
+  {
+   "id": "w58",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.71931,
+    32.654971
+   ]
+  },
+  {
+   "id": "w59",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.71914,
+    32.655313
+   ]
+  },
+  {
+   "id": "w60",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.719348,
+    32.655481
+   ]
+  },
+  {
+   "id": "w61",
+   "name": "Karnak Temple Square",
+   "pos": [
+    25.719295,
+    32.654781
+   ]
+  },
+  {
+   "id": "w62",
+   "name": "Karnak Temple Square",
+   "pos": [
+    25.720213,
+    32.653106
+   ]
+  },
+  {
+   "id": "w63",
+   "name": "Karnak Temple Square",
+   "pos": [
+    25.720295,
+    32.652929
+   ]
+  },
+  {
+   "id": "w64",
+   "name": "Path by Entrance",
+   "pos": [
+    25.719521,
+    32.655526
+   ]
+  },
+  {
+   "id": "w65",
+   "name": "Path by Entrance",
+   "pos": [
+    25.71967,
+    32.655182
+   ]
+  },
+  {
+   "id": "w66",
+   "name": "Path by Quay",
+   "pos": [
+    25.719908,
+    32.655321
+   ]
+  },
+  {
+   "id": "w67",
+   "name": "Path by Quay",
+   "pos": [
+    25.719767,
+    32.655789
+   ]
+  },
+  {
+   "id": "w68",
+   "name": "Path by Sacred Lake",
+   "pos": [
+    25.717545,
+    32.658277
+   ]
+  },
+  {
+   "id": "w69",
+   "name": "Path by Sacred Lake",
+   "pos": [
+    25.7174,
+    32.658194
+   ]
+  },
+  {
+   "id": "w70",
+   "name": "Path by Sacred Lake",
+   "pos": [
+    25.716996,
+    32.657916
+   ]
+  },
+  {
+   "id": "w71",
+   "name": "Path by East temple",
+   "pos": [
+    25.718536,
+    32.659455
+   ]
+  },
+  {
+   "id": "w72",
+   "name": "Path by East temple",
+   "pos": [
+    25.718137,
+    32.660235
+   ]
+  },
+  {
+   "id": "w73",
+   "name": "Path by East temple",
+   "pos": [
+    25.717599,
+    32.659991
+   ]
+  },
+  {
+   "id": "w74",
+   "name": "Path by East temple",
+   "pos": [
+    25.7173,
+    32.659765
+   ]
+  },
+  {
+   "id": "w75",
+   "name": "Path by the Akhmenu",
+   "pos": [
+    25.717129,
+    32.659634
+   ]
+  },
+  {
+   "id": "w76",
+   "name": "Path by the Sacred Lake",
+   "pos": [
+    25.716934,
+    32.659491
+   ]
+  },
+  {
+   "id": "w77",
+   "name": "Path by the Sacred Lake",
+   "pos": [
+    25.717411,
+    32.658637
+   ]
+  },
+  {
+   "id": "w78",
+   "name": "Path by Scarab",
+   "pos": [
+    25.717449,
+    32.658479
+   ]
+  },
+  {
+   "id": "w79",
+   "name": "Path by Scarab",
+   "pos": [
+    25.717798,
+    32.658416
+   ]
+  },
+  {
+   "id": "w80",
+   "name": "Path by Visitor centre",
+   "pos": [
+    25.719661,
+    32.652794
+   ]
+  },
+  {
+   "id": "w81",
+   "name": "Path by Visitor centre",
+   "pos": [
+    25.719967,
+    32.652967
+   ]
+  },
+  {
+   "id": "w82",
+   "name": "Path by East temple",
+   "pos": [
+    25.716826,
+    32.660165
+   ]
+  },
+  {
+   "id": "w83",
+   "name": "Path by East temple",
+   "pos": [
+    25.717122,
+    32.660213
+   ]
+  },
+  {
+   "id": "w84",
+   "name": "Path by the Temple of Ptah",
+   "pos": [
+    25.71977,
+    32.65943
+   ]
+  },
+  {
+   "id": "w85",
+   "name": "Path by the Temple of Ptah",
+   "pos": [
+    25.719922,
+    32.659549
+   ]
+  },
+  {
+   "id": "w86",
+   "name": "Path by the Temple of Ptah",
+   "pos": [
+    25.719773,
+    32.659824
+   ]
+  },
+  {
+   "id": "w87",
+   "name": "Path by Red Chapel",
+   "pos": [
+    25.720298,
+    32.657686
+   ]
+  },
+  {
+   "id": "w88",
+   "name": "Path by Red Chapel",
+   "pos": [
+    25.72006,
+    32.658005
+   ]
+  },
+  {
+   "id": "w89",
+   "name": "Path by Toilets (north)",
+   "pos": [
+    25.719516,
+    32.657753
+   ]
+  },
+  {
+   "id": "w90",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720271,
+    32.657671
+   ]
+  },
+  {
+   "id": "w91",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720384,
+    32.657733
+   ]
+  },
+  {
+   "id": "w92",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720651,
+    32.657762
+   ]
+  },
+  {
+   "id": "w93",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.72079,
+    32.65757
+   ]
+  },
+  {
+   "id": "w94",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720466,
+    32.657436
+   ]
+  },
+  {
+   "id": "w95",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720382,
+    32.657408
+   ]
+  },
+  {
+   "id": "w96",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720308,
+    32.657584
+   ]
+  },
+  {
+   "id": "w97",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720182,
+    32.657687
+   ]
+  },
+  {
+   "id": "w98",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720199,
+    32.657531
+   ]
+  },
+  {
+   "id": "w99",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720282,
+    32.657327
+   ]
+  },
+  {
+   "id": "w100",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719855,
+    32.65766
+   ]
+  },
+  {
+   "id": "w101",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719619,
+    32.657578
+   ]
+  },
+  {
+   "id": "w102",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719593,
+    32.657574
+   ]
+  },
+  {
+   "id": "w103",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719324,
+    32.657626
+   ]
+  },
+  {
+   "id": "w104",
+   "name": "Path by Sety I battles",
+   "pos": [
+    25.719077,
+    32.658017
+   ]
+  },
+  {
+   "id": "w105",
+   "name": "Path along the north wall",
+   "pos": [
+    25.719003,
+    32.658163
+   ]
+  },
+  {
+   "id": "w106",
+   "name": "Path by Sety I battles",
+   "pos": [
+    25.718868,
+    32.65844
+   ]
+  },
+  {
+   "id": "w107",
+   "name": "Path by Obelisks",
+   "pos": [
+    25.718802,
+    32.658626
+   ]
+  },
+  {
+   "id": "w108",
+   "name": "Path by Sety I battles",
+   "pos": [
+    25.719175,
+    32.658338
+   ]
+  },
+  {
+   "id": "w109",
+   "name": "Path by Sety I battles",
+   "pos": [
+    25.719611,
+    32.659207
+   ]
+  },
+  {
+   "id": "w110",
+   "name": "Path by Entrance",
+   "pos": [
+    25.720273,
+    32.653142
+   ]
+  },
+  {
+   "id": "w111",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.718279,
+    32.657232
+   ]
+  },
+  {
+   "id": "w112",
+   "name": "Path by Bubastite Portal",
+   "pos": [
+    25.718336,
+    32.657253
+   ]
+  },
+  {
+   "id": "w113",
+   "name": "Path by Taharqa column",
+   "pos": [
+    25.718574,
+    32.657386
+   ]
+  },
+  {
+   "id": "w114",
+   "name": "Path by Taharqa column",
+   "pos": [
+    25.718637,
+    32.657235
+   ]
+  },
+  {
+   "id": "w115",
+   "name": "Path by Obelisks",
+   "pos": [
+    25.71905,
+    32.658543
+   ]
+  },
+  {
+   "id": "w116",
+   "name": "Path by Obelisks",
+   "pos": [
+    25.718918,
+    32.658946
+   ]
+  },
+  {
+   "id": "w117",
+   "name": "Path by Obelisks",
+   "pos": [
+    25.719027,
+    32.659099
+   ]
+  },
+  {
+   "id": "w118",
+   "name": "Path by Middle Kingdom court",
+   "pos": [
+    25.718666,
+    32.659576
+   ]
+  },
+  {
+   "id": "w119",
+   "name": "Path by Middle Kingdom court",
+   "pos": [
+    25.717637,
+    32.659271
+   ]
+  },
+  {
+   "id": "w120",
+   "name": "Path by Middle Kingdom court",
+   "pos": [
+    25.717774,
+    32.658978
+   ]
+  },
+  {
+   "id": "w121",
+   "name": "Path by Middle Kingdom court",
+   "pos": [
+    25.717905,
+    32.659129
+   ]
+  },
+  {
+   "id": "w122",
+   "name": "Path by Middle Kingdom court",
+   "pos": [
+    25.717997,
+    32.659176
+   ]
+  },
+  {
+   "id": "w123",
+   "name": "Path by the Akhmenu",
+   "pos": [
+    25.71765,
+    32.659278
+   ]
+  },
+  {
+   "id": "w124",
+   "name": "Path by the Akhmenu",
+   "pos": [
+    25.717626,
+    32.659331
+   ]
+  },
+  {
+   "id": "w125",
+   "name": "Path by Sacred Lake",
+   "pos": [
+    25.716658,
+    32.657759
+   ]
+  },
+  {
+   "id": "w126",
+   "name": "Path by Taharqa column",
+   "pos": [
+    25.718757,
+    32.657306
+   ]
+  },
+  {
+   "id": "w127",
+   "name": "Main east–west axis",
+   "pos": [
+    25.719083,
+    32.656458
+   ]
+  },
+  {
+   "id": "w128",
+   "name": "Path by First Pylon",
+   "pos": [
+    25.718658,
+    32.656168
+   ]
+  },
+  {
+   "id": "w129",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717002,
+    32.656241
+   ]
+  },
+  {
+   "id": "w130",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717051,
+    32.65617
+   ]
+  },
+  {
+   "id": "w131",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717103,
+    32.656096
+   ]
+  },
+  {
+   "id": "w132",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717178,
+    32.655988
+   ]
+  },
+  {
+   "id": "w133",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717261,
+    32.655868
+   ]
+  },
+  {
+   "id": "w134",
+   "name": "Path by First Pylon",
+   "pos": [
+    25.718847,
+    32.656154
+   ]
+  },
+  {
+   "id": "w135",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720272,
+    32.657144
+   ]
+  },
+  {
+   "id": "w136",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720346,
+    32.657043
+   ]
+  },
+  {
+   "id": "w137",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.720542,
+    32.657179
+   ]
+  },
+  {
+   "id": "w138",
+   "name": "Path by Red Chapel",
+   "pos": [
+    25.72017,
+    32.658696
+   ]
+  },
+  {
+   "id": "w139",
+   "name": "Path by the Temple of Ptah",
+   "pos": [
+    25.719228,
+    32.658918
+   ]
+  },
+  {
+   "id": "w140",
+   "name": "Path by East temple",
+   "pos": [
+    25.717562,
+    32.660062
+   ]
+  },
+  {
+   "id": "w141",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716545,
+    32.655955
+   ]
+  },
+  {
+   "id": "w142",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.7164,
+    32.656221
+   ]
+  },
+  {
+   "id": "w143",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716292,
+    32.656164
+   ]
+  },
+  {
+   "id": "w144",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719931,
+    32.657422
+   ]
+  },
+  {
+   "id": "w145",
+   "name": "Open Air Museum paths",
+   "pos": [
+    25.719952,
+    32.65743
+   ]
+  },
+  {
+   "id": "w146",
+   "name": "Path by the Akhmenu",
+   "pos": [
+    25.717782,
+    32.659635
+   ]
+  },
+  {
+   "id": "w147",
+   "name": "Path by East temple",
+   "pos": [
+    25.717514,
+    32.660156
+   ]
+  },
+  {
+   "id": "w148",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716787,
+    32.656107
+   ]
+  },
+  {
+   "id": "w149",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716768,
+    32.656261
+   ]
+  },
+  {
+   "id": "w150",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.717208,
+    32.65677
+   ]
+  },
+  {
+   "id": "w151",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716655,
+    32.656024
+   ]
+  },
+  {
+   "id": "w152",
+   "name": "Path by Visitor centre",
+   "pos": [
+    25.719741,
+    32.652629
+   ]
+  },
+  {
+   "id": "w153",
+   "name": "Path by Visitor centre",
+   "pos": [
+    25.719483,
+    32.653162
+   ]
+  },
+  {
+   "id": "w154",
+   "name": "Path by Ramesses III temple",
+   "pos": [
+    25.718449,
+    32.657131
+   ]
+  },
+  {
+   "id": "w155",
+   "name": "Path by the Temple of Khonsu",
+   "pos": [
+    25.716685,
+    32.655969
+   ]
+  },
+  {
+   "id": "w156",
+   "name": "Approach from the visitor centre",
+   "pos": [
+    25.719091,
+    32.653371
+   ]
+  },
+  {
+   "id": "w157",
+   "name": "Path by Visitor centre",
+   "pos": [
+    25.719945,
+    32.652975
+   ]
+  },
+  {
+   "id": "w158",
+   "name": "",
+   "pos": [
+    25.718488,
+    32.657046
+   ]
+  }
+ ],
+ "paths": [
+  [
+   "w1",
+   "w2",
+   0.2,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w3",
+   "w4",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w4",
+   "w5",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w5",
+   "w6",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w6",
+   "w7",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w7",
+   "w8",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w8",
+   "w9",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w9",
+   "w10",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w10",
+   "w11",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w11",
+   "w12",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w12",
+   "w13",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w13",
+   "w14",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w14",
+   "w15",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w15",
+   "w16",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w16",
+   "w17",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w18",
+   "w19",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w19",
+   "w20",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w20",
+   "w21",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w21",
+   "w22",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w22",
+   "w23",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w24",
+   "w25",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w25",
+   "w26",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w26",
+   "w27",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w27",
+   "w28",
+   0.6,
+   "Southern axis (Cachette Court to the Tenth Pylon)",
+   null
+  ],
+  [
+   "w28",
+   "w29",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w29",
+   "w30",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w30",
+   "w31",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w31",
+   "w14",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w14",
+   "w32",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w13",
+   "w33",
+   0.4,
+   "Path past Hypostyle Hall",
+   null
+  ],
+  [
+   "w33",
+   "w34",
+   0.6,
+   "Southern axis (Cachette Court to the Tenth Pylon)",
+   null
+  ],
+  [
+   "w34",
+   "w35",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w35",
+   "w36",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w36",
+   "w37",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w37",
+   "w38",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w38",
+   "w39",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w39",
+   "w40",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w40",
+   "w41",
+   0.4,
+   "Path past Ramesses III temple",
+   null
+  ],
+  [
+   "w41",
+   "w42",
+   0.4,
+   "Path past Ramesses III temple",
+   null
+  ],
+  [
+   "w42",
+   "w43",
+   0.4,
+   "Path past Ramesses III temple",
+   null
+  ],
+  [
+   "w43",
+   "w44",
+   0.4,
+   "Path past Builders' ramp",
+   null
+  ],
+  [
+   "w44",
+   "w45",
+   0.4,
+   "Path past Builders' ramp",
+   null
+  ],
+  [
+   "w45",
+   "w46",
+   0.4,
+   "Path past Builders' ramp",
+   null
+  ],
+  [
+   "w46",
+   "w47",
+   0.4,
+   "Path past Builders' ramp",
+   null
+  ],
+  [
+   "w47",
+   "w48",
+   0.4,
+   "Path past Builders' ramp",
+   null
+  ],
+  [
+   "w48",
+   "w49",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w49",
+   "w50",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w50",
+   "w5",
+   0.4,
+   "Path past Ram avenue",
+   null
+  ],
+  [
+   "w5",
+   "w51",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w51",
+   "w52",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w53",
+   "w54",
+   0.9,
+   "Sacred Lake, north side",
+   null
+  ],
+  [
+   "w55",
+   "w56",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w56",
+   "w3",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w55",
+   "w57",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w58",
+   "w59",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w59",
+   "w60",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w60",
+   "w55",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w61",
+   "w62",
+   0.4,
+   "Karnak Temple Square",
+   null
+  ],
+  [
+   "w62",
+   "w63",
+   0.4,
+   "Karnak Temple Square",
+   null
+  ],
+  [
+   "w56",
+   "w60",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w60",
+   "w64",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w64",
+   "w65",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w65",
+   "w57",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w57",
+   "w66",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w66",
+   "w67",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w67",
+   "w56",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w34",
+   "w29",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w68",
+   "w69",
+   0.9,
+   "Path past Sacred Lake",
+   null
+  ],
+  [
+   "w69",
+   "w70",
+   0.9,
+   "Path past Sacred Lake",
+   null
+  ],
+  [
+   "w70",
+   "w28",
+   0.4,
+   "Path past Sacred Lake",
+   null
+  ],
+  [
+   "w71",
+   "w72",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w72",
+   "w73",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w73",
+   "w74",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w74",
+   "w75",
+   0.4,
+   "Path past the Akhmenu",
+   null
+  ],
+  [
+   "w75",
+   "w53",
+   0.4,
+   "Path past Toilets (lake)",
+   null
+  ],
+  [
+   "w53",
+   "w76",
+   0.9,
+   "Path past the Sacred Lake",
+   null
+  ],
+  [
+   "w76",
+   "w77",
+   0.9,
+   "Path past the Sacred Lake",
+   null
+  ],
+  [
+   "w77",
+   "w78",
+   0.9,
+   "Path past Scarab",
+   null
+  ],
+  [
+   "w78",
+   "w68",
+   0.9,
+   "Path past Scarab",
+   null
+  ],
+  [
+   "w68",
+   "w79",
+   0.4,
+   "Path past Scarab",
+   null
+  ],
+  [
+   "w79",
+   "w31",
+   0.4,
+   "Path past Scarab",
+   null
+  ],
+  [
+   "w80",
+   "w81",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w82",
+   "w83",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w83",
+   "w74",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w84",
+   "w85",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w85",
+   "w86",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w87",
+   "w88",
+   0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w88",
+   "w89",
+   0.4,
+   "Path past Toilets (north)",
+   null
+  ],
+  [
+   "w90",
+   "w87",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w87",
+   "w91",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w91",
+   "w92",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w92",
+   "w93",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w93",
+   "w94",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w95",
+   "w96",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w96",
+   "w90",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w90",
+   "w97",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w97",
+   "w98",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w98",
+   "w99",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w97",
+   "w100",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w100",
+   "w101",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w101",
+   "w102",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w102",
+   "w103",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w103",
+   "w104",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w104",
+   "w105",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
+   "w105",
+   "w106",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w106",
+   "w32",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w32",
+   "w107",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w107",
+   "w71",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
+   "w108",
+   "w89",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w89",
+   "w101",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w105",
+   "w108",
+   0.45,
+   "Path along the north wall",
+   null
+  ],
+  [
+   "w108",
+   "w109",
+   0.4,
+   "Path past Sety I battles",
+   null
+  ],
+  [
+   "w109",
+   "w84",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w58",
+   "w110",
+   0.4,
+   "Path past Entrance",
+   null
+  ],
+  [
+   "w110",
+   "w63",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w38",
+   "w111",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w111",
+   "w112",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w112",
+   "w113",
+   0.4,
+   "Path past Taharqa column",
+   null
+  ],
+  [
+   "w113",
+   "w114",
+   0.4,
+   "Path past Taharqa column",
+   null
+  ],
+  [
+   "w111",
+   "w33",
+   0.4,
+   "Path past Bubastite Portal",
+   null
+  ],
+  [
+   "w106",
+   "w115",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w115",
+   "w116",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w116",
+   "w117",
+   0.4,
+   "Path past Obelisks",
+   null
+  ],
+  [
+   "w117",
+   "w118",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w118",
+   "w71",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w98",
+   "w96",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w3",
+   "w52",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w119",
+   "w120",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w120",
+   "w121",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w121",
+   "w122",
+   0.4,
+   "Path past Middle Kingdom court",
+   null
+  ],
+  [
+   "w122",
+   "w107",
+   0.4,
+   "Path past Sanctuary",
+   null
+  ],
+  [
+   "w123",
+   "w119",
+   0.4,
+   "Path past the Akhmenu",
+   null
+  ],
+  [
+   "w124",
+   "w123",
+   0.4,
+   "Path past the Akhmenu",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w119",
+   "w124",
+   0.4,
+   "Path past the Akhmenu",
+   null
+  ],
+  [
+   "w27",
+   "w125",
+   0.4,
+   "Path past Sacred Lake",
+   null
+  ],
+  [
+   "w125",
+   "w70",
+   0.4,
+   "Path past Sacred Lake",
+   null
+  ],
+  [
+   "w114",
+   "w126",
+   0.4,
+   "Path past Taharqa column",
+   null
+  ],
+  [
+   "w126",
+   "w9",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w10",
+   "w103",
+   0.4,
+   "Path past Toilets (north)",
+   null
+  ],
+  [
+   "w7",
+   "w127",
+   0.9,
+   "Main east–west axis",
+   null
+  ],
+  [
+   "w127",
+   "w128",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w128",
+   "w48",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w47",
+   "w23",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w129",
+   "w130",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w130",
+   "w131",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w131",
+   "w132",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w132",
+   "w133",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w133",
+   "w45",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w50",
+   "w134",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w134",
+   "w128",
+   0.4,
+   "Path past First Pylon",
+   null
+  ],
+  [
+   "w52",
+   "w67",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w67",
+   "w55",
+   0.4,
+   "Path past Quay",
+   null
+  ],
+  [
+   "w95",
+   "w99",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w99",
+   "w135",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w135",
+   "w136",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w136",
+   "w137",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w137",
+   "w94",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w84",
+   "w138",
+   0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w138",
+   "w88",
+   0.4,
+   "Path past Red Chapel",
+   null
+  ],
+  [
+   "w94",
+   "w95",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w109",
+   "w139",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w139",
+   "w117",
+   0.4,
+   "Path past the Temple of Ptah",
+   null
+  ],
+  [
+   "w140",
+   "w83",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w82",
+   "w75",
+   0.4,
+   "Path past Toilets (lake)",
+   null
+  ],
+  [
+   "w54",
+   "w82",
+   0.4,
+   "Path past Toilets (lake)",
+   null
+  ],
+  [
+   "w141",
+   "w142",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w142",
+   "w143",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w100",
+   "w144",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w144",
+   "w145",
+   0.5,
+   "Open Air Museum paths",
+   null,
+   {
+    "steps": true
+   }
+  ],
+  [
+   "w145",
+   "w98",
+   0.5,
+   "Open Air Museum paths",
+   null
+  ],
+  [
+   "w16",
+   "w121",
+   0.4,
+   "Path past Sanctuary",
+   null
+  ],
+  [
+   "w121",
+   "w146",
+   0.4,
+   "Path past the Akhmenu",
+   null
+  ],
+  [
+   "w146",
+   "w73",
+   0.4,
+   "Path past the Akhmenu",
+   null
+  ],
+  [
+   "w73",
+   "w140",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w140",
+   "w147",
+   0.4,
+   "Path past East temple",
+   null
+  ],
+  [
+   "w130",
+   "w41",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w131",
+   "w42",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w43",
+   "w132",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w133",
+   "w44",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w23",
+   "w46",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w148",
+   "w149",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w149",
+   "w39",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w142",
+   "w150",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w150",
+   "w36",
+   0.4,
+   "Path past Cachette Court",
+   null
+  ],
+  [
+   "w150",
+   "w37",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w24",
+   "w35",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w40",
+   "w129",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w129",
+   "w148",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w148",
+   "w151",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w151",
+   "w141",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w141",
+   "w18",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w62",
+   "w110",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w63",
+   "w152",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w152",
+   "w80",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w80",
+   "w153",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w153",
+   "w1",
+   0.4,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w81",
+   "w62",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w24",
+   "w143",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w143",
+   "w18",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w114",
+   "w154",
+   0.4,
+   "Path past Ramesses III temple",
+   null
+  ],
+  [
+   "w155",
+   "w151",
+   0.4,
+   "Path past the Temple of Khonsu",
+   null
+  ],
+  [
+   "w156",
+   "w2",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w2",
+   "w61",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w61",
+   "w58",
+   0.35,
+   "Approach from the visitor centre",
+   null
+  ],
+  [
+   "w156",
+   "w153",
+   0.4,
+   "Path past Car park",
+   null
+  ],
+  [
+   "w153",
+   "w157",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "w157",
+   "w81",
+   0.4,
+   "Path past Visitor centre",
+   null
+  ],
+  [
+   "carpark",
+   "w156",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "vc",
+   "w157",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "entrance",
+   "w58",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "intro",
+   "vc",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "quay",
+   "w4",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "rams",
+   "w6",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "pylon1",
+   "w127",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "ramp",
+   "w158",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "w158",
+   "w154",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "sety2",
+   "w8",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "taharqa",
+   "w126",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "ram3",
+   "w158",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "bubastite",
+   "w112",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "pylon2",
+   "w11",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "hypostyle",
+   "w12",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "northwall",
+   "w104",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "obelisks",
+   "w15",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "sanctuary",
+   "w17",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "mkcourt",
+   "w122",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "akhmenu",
+   "w146",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "ptah",
+   "w86",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "whitechapel",
+   "w135",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "redchapel",
+   "w91",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "cachette",
+   "w30",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "lake",
+   "w69",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "scarab",
+   "w78",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "khonsu",
+   "w155",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "east",
+   "w147",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "toilets-oam",
+   "w102",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "cafe",
+   "w77",
+   0.3,
+   "",
+   null
+  ],
+  [
+   "toilets-lake",
+   "w54",
+   0.3,
+   "",
+   null
+  ]
+ ],
+ "stops": [
+  {
+   "id": "carpark",
+   "name": "Car and coach park",
+   "short": "Car park",
+   "kind": "facility",
+   "pos": [
+    25.719091,
+    32.653371
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 0,
+   "wow": 0,
+   "kids": [],
+   "facilities": [
+    "parking"
+   ],
+   "look": "The car, taxi and coach park on the north side of the visitor centre, off the Corniche road.",
+   "note": "Taxis and tour coaches drop off here. Agree a pick-up point with the driver before you go in.",
+   "bullets": []
+  },
+  {
+   "id": "vc",
+   "name": "Visitor centre",
+   "short": "Visitor centre",
+   "kind": "facility",
+   "pos": [
+    25.719952,
+    32.653
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 60,
+   "wow": 0,
+   "kids": [],
+   "approx": true,
+   "facilities": [
+    "toilet",
+    "shop"
+   ],
+   "look": "The visitor centre, with a large model of the temple and toilets (a small fee is usual).",
+   "note": "Last proper toilets until the ones by the Open Air Museum and the Sacred Lake. Fill water bottles before going on.",
+   "bullets": []
+  },
+  {
+   "id": "entrance",
+   "name": "Security check and entrance",
+   "short": "Entrance",
+   "kind": "facility",
+   "pos": [
+    25.71931,
+    32.654971
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 0,
+   "wow": 0,
+   "kids": [],
+   "approx": true,
+   "facilities": [
+    "entrance"
+   ],
+   "look": "Security and ticket check on the walk from the visitor centre to the temple, about 200 m before the quay.",
+   "note": "Tickets are reported to be card-only. Keep the ticket: it is checked again at the Open Air Museum.",
+   "bullets": []
+  },
+  {
+   "id": "intro",
+   "name": "Karnak in brief",
+   "short": "Introduction",
+   "kind": "intro",
+   "pos": [
+    25.719952,
+    32.653
+   ],
+   "approx": true,
+   "date": -2000,
+   "dateLabel": "about 2000 BC to today",
+   "era": "mk",
+   "dwell": 15,
+   "wow": 0,
+   "attnBoost": 0.15,
+   "look": "The whole story in a few points, to put every stop in context. Also on the Timeline tab any time.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "quay",
+   "name": "Quay and tribune",
+   "short": "Quay",
+   "kind": "sight",
+   "pos": [
+    25.719399,
+    32.656058
+   ],
+   "date": -1200,
+   "dateLabel": "Ramesside (the obelisk of Sety II, about 1200–1194 BC)",
+   "era": "ramesside",
+   "dwell": 150,
+   "wow": 2,
+   "look": "The stone platform at the western end of the temple, where boats once moored; the small obelisk is Sety II's.",
+   "note": "Open ground, no shade.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "rams",
+   "name": "Avenue of ram-headed sphinxes",
+   "short": "Ram avenue",
+   "kind": "sight",
+   "pos": [
+    25.71925,
+    32.6563
+   ],
+   "date": -1279,
+   "dateLabel": "set out about 1279–1213 BC, rams re-inscribed later",
+   "era": "ramesside",
+   "dwell": 180,
+   "wow": 4,
+   "mustSee": true,
+   "look": "The double row of ram-headed sphinxes leading to the First Pylon; each holds a small figure of the king between its front paws.",
+   "note": "Usually busy with groups between 09:00 and 11:00.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "pylon1",
+   "name": "The First Pylon",
+   "short": "First Pylon",
+   "kind": "sight",
+   "pos": [
+    25.71905,
+    32.6565
+   ],
+   "approx": true,
+   "date": -360,
+   "dateLabel": "about 380–343 BC (Thirtieth Dynasty), never finished",
+   "era": "late",
+   "dwell": 150,
+   "wow": 5,
+   "photoSpot": true,
+   "look": "The great gateway, 113 m wide, seen from the rams. Its stone faces were never dressed smooth.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "ramp",
+   "name": "Builders' ramp behind the First Pylon",
+   "short": "Builders' ramp",
+   "kind": "sight",
+   "pos": [
+    25.7186,
+    32.6568
+   ],
+   "approx": true,
+   "date": -360,
+   "dateLabel": "about 380–343 BC",
+   "era": "late",
+   "dwell": 150,
+   "wow": 2,
+   "look": "Once through the pylon, turn right: the mud-brick slope against the back of the south tower is what is left of the builders' ramp.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "sety2",
+   "name": "Triple shrine of Sety II",
+   "short": "Sety II shrine",
+   "kind": "sight",
+   "pos": [
+    25.719267,
+    32.657059
+   ],
+   "date": -1200,
+   "dateLabel": "about 1200–1194 BC",
+   "era": "ramesside",
+   "dwell": 90,
+   "wow": 2,
+   "look": "The small three-roomed shrine on the left (north) side of the forecourt, for the boats of Amun, Mut and Khonsu.",
+   "note": "The site board calls these the \"Chapels of Sety I\"; the scholarly sources give Sety II.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "taharqa",
+   "name": "Kiosk of Taharqa",
+   "short": "Taharqa column",
+   "kind": "sight",
+   "pos": [
+    25.718761,
+    32.657299
+   ],
+   "date": -690,
+   "dateLabel": "about 690–664 BC",
+   "era": "late",
+   "dwell": 120,
+   "wow": 4,
+   "look": "The single tall papyrus column standing alone in the middle of the forecourt, the last of ten.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "ram3",
+   "name": "Temple of Ramesses III",
+   "short": "Ramesses III temple",
+   "kind": "sight",
+   "pos": [
+    25.718461,
+    32.657031
+   ],
+   "date": -1184,
+   "dateLabel": "about 1184–1153 BC",
+   "era": "ramesside",
+   "dwell": 240,
+   "wow": 4,
+   "look": "The complete small temple cutting into the right (south) side of the forecourt, with statues of the king as Osiris lining its court.",
+   "note": "Partly shaded inside.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "bubastite",
+   "name": "Bubastite Portal",
+   "short": "Bubastite Portal",
+   "kind": "sight",
+   "pos": [
+    25.71833,
+    32.657265
+   ],
+   "date": -925,
+   "dateLabel": "about 925 BC",
+   "era": "tip",
+   "dwell": 120,
+   "wow": 2,
+   "look": "The gateway in the south-east corner of the forecourt; on the wall beside it Shoshenq I smites his enemies above rows of name-rings for captured towns.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "pylon2",
+   "name": "Second Pylon and colossus",
+   "short": "Second Pylon",
+   "kind": "sight",
+   "pos": [
+    25.718824,
+    32.65746
+   ],
+   "date": -1295,
+   "dateLabel": "about 1323–1279 BC, colossus later re-inscribed",
+   "era": "ramesside",
+   "dwell": 120,
+   "wow": 4,
+   "look": "The pink granite colossus of a king with a small princess at his feet, beside the doorway into the Hypostyle Hall.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "hypostyle",
+   "name": "Great Hypostyle Hall",
+   "short": "Hypostyle Hall",
+   "kind": "sight",
+   "pos": [
+    25.718624,
+    32.657896
+   ],
+   "date": -1294,
+   "dateLabel": "about 1294–1213 BC",
+   "era": "ramesside",
+   "dwell": 600,
+   "wow": 5,
+   "mustSee": true,
+   "photoSpot": true,
+   "look": "134 giant columns; walk the central aisle first, then look up at the stone window grilles high on the sides.",
+   "note": "Good shade. Busiest place on the site.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "northwall",
+   "name": "Battle reliefs of Sety I",
+   "short": "Sety I battles",
+   "kind": "sight",
+   "pos": [
+    25.71905,
+    32.658
+   ],
+   "approx": true,
+   "date": -1290,
+   "dateLabel": "about 1294–1279 BC",
+   "era": "ramesside",
+   "dwell": 180,
+   "wow": 3,
+   "look": "Outside the north wall of the Hypostyle Hall: Sety I in his chariot charging through his enemies, carved across the whole wall.",
+   "note": "Leave the hall by the north door. Morning light rakes across the carving.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "obelisks",
+   "name": "Obelisks of Thutmose I and Hatshepsut",
+   "short": "Obelisks",
+   "kind": "sight",
+   "pos": [
+    25.71833,
+    32.65845
+   ],
+   "date": -1457,
+   "dateLabel": "about 1504–1492 BC and about 1457 BC",
+   "era": "thutmosid",
+   "dwell": 300,
+   "wow": 5,
+   "mustSee": true,
+   "photoSpot": true,
+   "look": "Two standing obelisks: Thutmose I's just beyond the Third Pylon, and his daughter Hatshepsut's, the taller, rising out of the hall behind the Fourth Pylon.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "sanctuary",
+   "name": "Granite sanctuary",
+   "short": "Sanctuary",
+   "kind": "sight",
+   "pos": [
+    25.718099,
+    32.658908
+   ],
+   "date": -323,
+   "dateLabel": "about 323–317 BC, on a site used since the Middle Kingdom",
+   "era": "ptolemaic",
+   "dwell": 180,
+   "wow": 3,
+   "look": "The granite shrine where Amun's boat was kept, built in the name of Philip Arrhidaeus; in front stand two granite pillars carved with the lotus and the papyrus.",
+   "note": "",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "mkcourt",
+   "name": "Middle Kingdom court",
+   "short": "Middle Kingdom court",
+   "kind": "sight",
+   "pos": [
+    25.717987,
+    32.659201
+   ],
+   "date": -1950,
+   "dateLabel": "about 1950 BC",
+   "era": "mk",
+   "dwell": 90,
+   "wow": 1,
+   "look": "The open, empty-looking court behind the sanctuary; only the granite door sills of Senusret I's temple remain, at the heart of the oldest part of Karnak.",
+   "note": "Easy to walk straight past.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "akhmenu",
+   "name": "Festival Hall of Thutmose III (Akhmenu)",
+   "short": "Akhmenu",
+   "kind": "sight",
+   "pos": [
+    25.717725,
+    32.659599
+   ],
+   "date": -1456,
+   "dateLabel": "about 1456 BC onwards",
+   "era": "thutmosid",
+   "dwell": 360,
+   "wow": 4,
+   "look": "The hall with tent-pole columns, then the small \"botanical garden\" room carved with plants and animals from the Syrian campaign.",
+   "note": "Some rooms may be roped off.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "ptah",
+   "name": "Temple of Ptah",
+   "short": "Ptah temple",
+   "kind": "sight",
+   "pos": [
+    25.71957,
+    32.659689
+   ],
+   "date": -1450,
+   "dateLabel": "about 1479–1425 BC, gates added up to the Ptolemies",
+   "era": "thutmosid",
+   "dwell": 240,
+   "wow": 4,
+   "look": "The small temple against the north wall, entered through a series of gates; in the dark right-hand room a black statue of the lioness goddess Sekhmet is lit only from a hole in the roof.",
+   "note": "A guardian may open the door for a tip.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "whitechapel",
+   "name": "White Chapel of Senusret I (Open Air Museum)",
+   "short": "White Chapel",
+   "kind": "sight",
+   "pos": [
+    25.720358,
+    32.657187
+   ],
+   "date": -1940,
+   "dateLabel": "about 1940 BC, rebuilt 1927–1938",
+   "era": "mk",
+   "dwell": 240,
+   "wow": 4,
+   "look": "The small white limestone pavilion on a raised base, rebuilt from blocks found inside the Third Pylon. Steps on both sides.",
+   "note": "In the Open Air Museum, north of the forecourt; the ticket is checked again at its gate.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "redchapel",
+   "name": "Red Chapel of Hatshepsut (Open Air Museum)",
+   "short": "Red Chapel",
+   "kind": "sight",
+   "pos": [
+    25.720418,
+    32.657658
+   ],
+   "date": -1470,
+   "dateLabel": "about 1473–1458 BC, rebuilt 1997–2000",
+   "era": "thutmosid",
+   "dwell": 180,
+   "wow": 3,
+   "look": "The long red quartzite and black granite shrine rebuilt from blocks; look for Hatshepsut's chiselled-out figures.",
+   "note": "In the Open Air Museum.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "cachette",
+   "name": "Cachette Court and Seventh Pylon",
+   "short": "Cachette Court",
+   "kind": "sight",
+   "pos": [
+    25.717743,
+    32.657803
+   ],
+   "date": -1450,
+   "dateLabel": "about 1479–1425 BC (Seventh Pylon); cache found 1903–1905",
+   "era": "thutmosid",
+   "dwell": 150,
+   "wow": 2,
+   "look": "The court south of the Hypostyle Hall where about 750 statues were found buried; beyond it the Seventh Pylon with Thutmose III smiting his enemies.",
+   "note": "Access to the southern pylons varies; the court is reached from the south side of the Hypostyle Hall.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "lake",
+   "name": "Sacred Lake",
+   "short": "Sacred Lake",
+   "kind": "sight",
+   "pos": [
+    25.71735,
+    32.6583
+   ],
+   "approx": true,
+   "date": -1450,
+   "dateLabel": "New Kingdom, lined in its present form later",
+   "era": "thutmosid",
+   "dwell": 150,
+   "wow": 4,
+   "photoSpot": true,
+   "look": "The great stone-lined pool, about 120 by 77 m, where the priests took water for the rituals and purified themselves.",
+   "note": "Café on its north-west side.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "scarab",
+   "name": "Giant scarab and fallen obelisk",
+   "short": "Scarab",
+   "kind": "sight",
+   "pos": [
+    25.717464,
+    32.658488
+   ],
+   "date": -1370,
+   "dateLabel": "about 1390–1352 BC",
+   "era": "amarna",
+   "dwell": 120,
+   "wow": 3,
+   "look": "The big stone scarab beetle on a pedestal at the corner of the lake; near it lies the broken top of Hatshepsut's second obelisk.",
+   "note": "Visitors walk round the scarab for luck; a modern custom.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "khonsu",
+   "name": "Temple of Khonsu",
+   "short": "Khonsu temple",
+   "kind": "sight",
+   "pos": [
+    25.716837,
+    32.655866
+   ],
+   "date": -1184,
+   "dateLabel": "about 1184–1070 BC",
+   "era": "ramesside",
+   "dwell": 240,
+   "wow": 3,
+   "look": "The complete temple of the moon god in the south-west corner, entered through a pylon; the Temple of Opet is beside it.",
+   "note": "Quieter than the main axis. Steps at the entrance; may be closed or partly closed.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "east",
+   "name": "Temple of the Hearing Ear and the eastern gate",
+   "short": "East temple",
+   "kind": "sight",
+   "pos": [
+    25.717468,
+    32.660257
+   ],
+   "date": -1250,
+   "dateLabel": "about 1279–1213 BC; the obelisk stood here from about 1400 BC to AD 357",
+   "era": "ramesside",
+   "dwell": 120,
+   "wow": 2,
+   "look": "Behind the Akhmenu: the small temple where ordinary people could pray to Amun, on the spot where the obelisk now in Rome (the Lateran obelisk) once stood; the Nectanebo gate is beyond.",
+   "note": "At the far eastern end; usually very quiet.",
+   "kids": [],
+   "bullets": []
+  },
+  {
+   "id": "toilets-oam",
+   "name": "Toilets by the Open Air Museum",
+   "short": "Toilets (north)",
+   "kind": "facility",
+   "pos": [
+    25.719586,
+    32.65739
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 0,
+   "wow": 0,
+   "kids": [],
+   "facilities": [
+    "toilet"
+   ],
+   "look": "Toilets on the north side of the forecourt, on the way to the Open Air Museum.",
+   "note": "Small fee usual.",
+   "bullets": []
+  },
+  {
+   "id": "cafe",
+   "name": "Café by the Sacred Lake",
+   "short": "Café",
+   "kind": "facility",
+   "pos": [
+    25.71744,
+    32.658641
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 0,
+   "wow": 0,
+   "kids": [],
+   "approx": true,
+   "facilities": [
+    "cafe"
+   ],
+   "look": "Small café with seats in the shade on the north-west side of the Sacred Lake.",
+   "note": "",
+   "bullets": []
+  },
+  {
+   "id": "toilets-lake",
+   "name": "Toilets east of the Sacred Lake",
+   "short": "Toilets (lake)",
+   "kind": "facility",
+   "pos": [
+    25.7167,
+    32.660101
+   ],
+   "date": 2010,
+   "dateLabel": "today",
+   "era": "modern",
+   "dwell": 0,
+   "wow": 0,
+   "kids": [],
+   "facilities": [
+    "toilet"
+   ],
+   "look": "Toilet block east of the Sacred Lake.",
+   "note": "Small fee usual.",
+   "bullets": []
+  }
+ ],
+ "map": {
+  "osm": "tours/karnak.map.json",
+  "osmNote": "Paths from OpenStreetMap (fetched 22 November 2026), unwalked; stop positions from OpenStreetMap and the site board.",
+  "features": []
+ },
+ "knowledge": {
+  "site": "knowledge/karnak",
+  "reference": [
+   "rulers",
+   "egyptian-temples",
+   "egyptian-gods",
+   "ancient-building"
+  ]
+ },
+ "sources": {
+  "1": [
+   "Ministry of Tourism and Antiquities, Karnak (egymonuments.gov.eg)",
+   "https://egymonuments.gov.eg/archaeological-sites/karnak/"
+  ],
+  "2": [
+   "Centre Franco-Égyptien d'Étude des Temples de Karnak (CFEETK)",
+   "https://www.cfeetk.cnrs.fr/"
+  ],
+  "3": [
+   "Digital Karnak (Sullivan and others)",
+   "https://digitalkarnak.ucsc.edu/"
+  ],
+  "4": [
+   "Sullivan, E., \"Karnak: Development of the Temple of Amun-Ra\", UCLA Encyclopedia of Egyptology (2010)",
+   "https://escholarship.org/uc/item/1f28q08h"
+  ],
+  "5": [
+   "Karnak Great Hypostyle Hall Project (University of Memphis)",
+   "https://www.memphis.edu/hypostyle/"
+  ],
+  "6": [
+   "Blyth, E., Karnak: Evolution of a Temple (Routledge, 2006)",
+   ""
+  ],
+  "7": [
+   "Porter and Moss, Topographical Bibliography II: Theban Temples (2nd edition, 1972)",
+   "http://www.griffith.ox.ac.uk/gri/3pm.html"
+  ],
+  "8": [
+   "Pennington and others, \"Conceptual origins and geomorphic evolution of the temple of Amun-Ra at Karnak\", Antiquity",
+   "https://www.cambridge.org/core/journals/antiquity"
+  ],
+  "9": [
+   "On-site board \"Karnak Temples Plan & Chronology\" (Ministry of Tourism and Antiquities), photographed by Eliot",
+   ""
+  ],
+  "10": [
+   "OpenStreetMap contributors",
+   "https://www.openstreetmap.org/"
+  ],
+  "11": [
+   "Wikipedia, Karnak",
+   "https://en.wikipedia.org/wiki/Karnak"
+  ],
+  "12": [
+   "Wikipedia, Great Hypostyle Hall",
+   "https://en.wikipedia.org/wiki/Great_Hypostyle_Hall"
+  ],
+  "13": [
+   "Sullivan, E., Introduction to the Temple of Karnak, Digital Karnak (2008)",
+   "https://digitalkarnak.ucsc.edu/"
+  ],
+  "14": [
+   "PBS NewsHour, \"Egypt unveils renovated Avenue of the Sphinxes in Luxor\" (25 November 2021)",
+   "https://www.pbs.org/newshour/arts/egypt-unveils-renovated-avenue-of-the-sphinxes-in-luxor"
+  ],
+  "15": [
+   "UNESCO World Heritage List, Ancient Thebes with its Necropolis (87)",
+   "https://whc.unesco.org/en/list/87"
+  ],
+  "16": [
+   "Shaw, I. (ed.), The Oxford History of Ancient Egypt (2000): chronology used for reign dates",
+   ""
+  ],
+  "gk": [
+   "General knowledge",
+   ""
+  ]
+ }
+}

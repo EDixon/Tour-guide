@@ -1,0 +1,212 @@
+{
+ "note": "Karnak path network extras. Lines are paths missing from OpenStreetMap, estimated from the OSM layer and the site board.",
+ "lines": [
+  {
+   "line": [
+    [
+     25.719091,
+     32.653371
+    ],
+    [
+     25.71925,
+     32.6542
+    ],
+    [
+     25.71931,
+     32.654971
+    ]
+   ],
+   "note": "car park across the forecourt plaza to the security check (open paved plaza; OSM has no path)"
+  },
+  {
+   "line": [
+    [
+     25.719091,
+     32.653371
+    ],
+    [
+     25.7196,
+     32.6531
+    ],
+    [
+     25.719952,
+     32.653
+    ]
+   ],
+   "note": "car park to the visitor centre"
+  }
+ ],
+ "corridors": [
+  {
+   "name": "Approach from the visitor centre",
+   "line": [
+    [
+     25.719091,
+     32.653371
+    ],
+    [
+     25.71931,
+     32.654971
+    ],
+    [
+     25.7194,
+     32.656
+    ]
+   ],
+   "within": 25,
+   "scenic": 0.35
+  },
+  {
+   "name": "Main east–west axis",
+   "line": [
+    [
+     25.7194,
+     32.656
+    ],
+    [
+     25.7184,
+     32.6584
+    ],
+    [
+     25.71775,
+     32.66
+    ]
+   ],
+   "within": 14,
+   "scenic": 0.9
+  },
+  {
+   "name": "Open Air Museum paths",
+   "line": [
+    [
+     25.7196,
+     32.65735
+    ],
+    [
+     25.72045,
+     32.6574
+    ]
+   ],
+   "within": 45,
+   "scenic": 0.5
+  },
+  {
+   "name": "Sacred Lake, north side",
+   "line": [
+    [
+     25.71745,
+     32.65785
+    ],
+    [
+     25.71665,
+     32.66005
+    ]
+   ],
+   "within": 20,
+   "scenic": 0.9
+  },
+  {
+   "name": "Southern axis (Cachette Court to the Tenth Pylon)",
+   "line": [
+    [
+     25.7183,
+     32.6578
+    ],
+    [
+     25.7156,
+     32.6568
+    ]
+   ],
+   "within": 18,
+   "scenic": 0.6
+  },
+  {
+   "name": "Path along the north wall",
+   "line": [
+    [
+     25.71925,
+     32.6578
+    ],
+    [
+     25.7186,
+     32.6596
+    ]
+   ],
+   "within": 15,
+   "scenic": 0.45
+  }
+ ],
+ "landmarks": [
+  {
+   "name": "the Temple of Khonsu",
+   "pos": [
+    25.716837,
+    32.655866
+   ]
+  },
+  {
+   "name": "the Temple of Ptah",
+   "pos": [
+    25.71957,
+    32.659689
+   ]
+  },
+  {
+   "name": "the Sacred Lake",
+   "pos": [
+    25.71683,
+    32.65879
+   ]
+  },
+  {
+   "name": "the Akhmenu",
+   "pos": [
+    25.717725,
+    32.659599
+   ]
+  }
+ ],
+ "outline": [
+  [
+   25.72037,
+   32.65259
+  ],
+  [
+   25.71981,
+   32.65581
+  ],
+  [
+   25.72122,
+   32.65738
+  ],
+  [
+   25.72054,
+   32.66175
+  ],
+  [
+   25.71514,
+   32.6595
+  ],
+  [
+   25.71643,
+   32.65463
+  ],
+  [
+   25.71835,
+   32.6555
+  ],
+  [
+   25.71913,
+   32.65525
+  ],
+  [
+   25.71885,
+   32.65338
+  ],
+  [
+   25.71835,
+   32.652
+  ]
+ ],
+ "outlineNote": "Visitor centre, car park and approach plaza, plus the Amun-Ra enclosure wall; drawn from the OSM layer to leave out the town streets."
+}
