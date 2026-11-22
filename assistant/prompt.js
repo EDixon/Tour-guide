@@ -66,7 +66,11 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   const hereNote = here ? (here.section || here.tourText) : null;
   const ranked = rank(sections, query, { boost }).filter(s => s.score > 0 && s.title !== hereNote?.title);
   const namesSomething = asked.things.length || asked.named.length;
-  const order = namesSomething && ranked.length ? [ranked[0], hereNote, ...ranked.slice(1)] : [hereNote, ...ranked];
+  // If the section for where we are is also the best match for the question on its own (without the
+  // boost for being here), it leads: "Who are the de Grey family?" at the introduction.
+  const qBoost = new Map([...boost].filter(([id]) => !(hereM && hereM.things.includes(id)) || m.things.includes(id) || m.named.includes(id)));
+  const hereIsBest = namesSomething && hereNote && rank(sections, query, { boost: qBoost })[0]?.title === hereNote.title;
+  const order = namesSomething && ranked.length && !hereIsBest ? [ranked[0], hereNote, ...ranked.slice(1)] : [hereNote, ...ranked];
   const picked = order.filter(Boolean).slice(0, topK);
   // Facts: what the question is about, plus the things where we are (so "was this built before the house?" works).
   const uniq = (a) => [...new Set(a)];

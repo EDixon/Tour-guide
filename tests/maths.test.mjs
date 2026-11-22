@@ -25,9 +25,11 @@ ok('mentions', () => {
 });
 ok('facts block', () => { const f = calculatedFacts(dates, { things: ['orangery', 'house'], people: ['earl-de-grey'], nowYear: 2026 }); assert.ok(f.length >= 5); });
 ok('long spans: rulers at start and end, and no claims the pack can\'t back', () => {
-  const r = rulersDuring({ name: 'the family\'s time here', from: 1284, to: 1917, verb: 'happened' }, dates.rulers);
-  assert.match(r, /no ruler data for 1284/); assert.match(r, /at the end \(1917\) George V \(1910–1936\)/);
-  assert.equal(rulersDuring({ name: 'x', from: 1300, to: 1310, verb: 'built' }, dates.rulers), '');
+  // Use years before the pack's first ruler, so the test still holds when the pack is extended.
+  const first = Math.min(...Object.values(dates.rulers).flat().map(r => r[1]));
+  const r = rulersDuring({ name: 'the family\'s time here', from: first - 100, to: 1917, verb: 'happened' }, dates.rulers);
+  assert.match(r, new RegExp(`no ruler data for ${first - 100}`)); assert.match(r, /at the end \(1917\) George V \(1910–1936\)/);
+  assert.equal(rulersDuring({ name: 'x', from: first - 60, to: first - 50, verb: 'built' }, dates.rulers), '');
 });
 ok('owners timeline', () => {
   const owners = [[1284, 1308, 'Reginald de Grey'], [1833, 1859, 'Thomas, 2nd Earl de Grey'], [2006, null, 'English Heritage']];
