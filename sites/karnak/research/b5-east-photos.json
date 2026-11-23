@@ -1,0 +1,12 @@
+[
+{"id": "middle-kingdom-court-slabs", "file": "File:Middle Kingdom Courtyard in Karnak 02.jpg", "width": 900, "for": "mkcourt.2|mkcourt.look"},
+{"id": "mk-court-obelisk", "file": "File:Middle Kingdom Courtyard in Karnak 03.jpg", "width": 900, "for": "mkcourt.kids"},
+{"id": "akhmenu-front", "file": "File:Karnak Tempel Thutmosis III. 03.jpg", "width": 900, "for": "akhmenu.look"},
+{"id": "akhmenu-column", "file": "File:Column of Akhmenu Hall (Luxor).jpg", "width": 900, "for": "akhmenu.2|akhmenu.kids"},
+{"id": "akhmenu-saint-column", "file": "File:ISJesusbild Karnak.JPG", "width": 900, "for": "akhmenu.3"},
+{"id": "botanical-garden-reliefs", "file": "File:Karnak Ajmenu Tutmosis III Sala Jardín Botánico 1.JPG", "width": 900, "for": "akhmenu.4|akhmenu.kids"},
+{"id": "ptah-sekhmet", "file": "File:PtahTemple-Karnak-Sekhmet statue chapel-2.jpg", "width": 900, "for": "ptah.2|ptah.kids"},
+{"id": "ptah-gates", "file": "File:Temple of Ptah in Karnak 33.jpg", "width": 900, "for": "ptah.4|ptah.kids|ptah.look"},
+{"id": "hearing-ear-columns", "file": "File:Eastern Temple of Ramses II in Karnak 04.jpg", "width": 900, "for": "east.look"},
+{"id": "nectanebo-east-gate", "file": "File:Karnak Tempel Osttor 01.JPG", "width": 900, "for": "east.7|east.kids"}
+]
