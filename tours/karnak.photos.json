@@ -510,5 +510,13 @@
   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Karnak_Tempel_Chons_09.jpg",
   "title": "File:Karnak Tempel Chons 09.jpg"
+ },
+ "khonsu-court": {
+  "file": "tours/karnak/img/khonsu-court.jpg",
+  "credit": "Olaf Tausch",
+  "licence": "CC BY 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Karnak_Tempel_Chons_05.jpg",
+  "title": "File:Karnak Tempel Chons 05.jpg"
  }
 }
