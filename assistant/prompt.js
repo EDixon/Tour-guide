@@ -3,13 +3,15 @@
 import { calculatedFacts, mentions, expand } from './maths.js';
 import { rank } from './retrieve.js';
 
-export const RULES = `You are a friendly guide for a family visiting Wrest Park. Answer the QUESTION in under 80 words of plain British English prose (no lists).
+export const rules = (site) => `You are a friendly guide for a family visiting ${site}. Answer the QUESTION in under 80 words of plain British English prose (no lists).
 - Answer the question itself first, in a sentence or two. Then, only if the NOTES have a detail that adds to the answer, give it. Don't pad: no "It is interesting to know", no restating where we are.
 - WHERE WE ARE says where the family is standing. "This", "here" or "it" usually means that place.
 - For any date, number of years, age, ruler, or who made or designed something, use the FACTS. They are exact. Never calculate anything yourself. Only give dates that help the answer.
 - Write years and numbers as digits, for example 1716.
-- For anything else about Wrest Park, use the NOTES. Read the question carefully: "first", "last", "who owned" and "who built" are different questions.
+- For anything else about ${site}, use the NOTES. Read the question carefully: "first", "last", "who owned" and "who built" are different questions.
+- NEAREST, when given, lists the nearest toilets, café and other facilities from where the family is. Use it for practical questions.
 - If the FACTS and NOTES don't answer it, say you don't know. You may add one sentence of general background if it helps.`;
+export const RULES = rules('this site');
 
 // Questions about dates, order, ages or rulers get the full date facts; others get only who-made-it and life spans.
 const OWNERSHIP_QUESTION = /\b(own|owned|owner|owners|ownership|family|families|inherit|inherited|heir|heirs|sold|bought|sale|lived here|lived in)\b/i;
@@ -24,6 +26,21 @@ export function plainDates(text) {
 
 // Where the family is: a tour stop, the dated things there, and the text about it: the knowledge
 // section most about this place, or the tour's own points where the knowledge base doesn't cover it yet.
+// The nearest facility of each type (toilet, café, baby change...) from a stop, by straight-line distance.
+const FACILITY_WORDS = { toilet: 'toilets', cafe: 'café', babychange: 'baby change', play: 'play area', shop: 'shop', parking: 'car park', entrance: 'entrance' };
+export function nearestFacilities(tour, stop) {
+  if (!stop?.pos) return [];
+  const d = (a, b) => { const k = Math.PI / 180, x = (b[1] - a[1]) * k * Math.cos((a[0] + b[0]) / 2 * k), y = (b[0] - a[0]) * k; return 6371000 * Math.hypot(x, y); };
+  const best = {};
+  for (const s of tour.stops) for (const f of s.facilities || []) {
+    if (!s.pos) continue;
+    const m = d(stop.pos, s.pos);
+    if (!best[f] || m < best[f].m) best[f] = { m, s };
+  }
+  return Object.entries(best).map(([f, { m, s }]) => `${FACILITY_WORDS[f] || f}: ${s.name}, about ${Math.max(10, Math.round(m / 10) * 10)} metres away in a straight line`);
+}
+const PRACTICAL_QUESTION = /\b(toilets?|loos?|wc|lavatory|bathroom|nappy|nappies|baby change|changing|caf[eé]s?|coffee|tea|eat|food|lunch|snack|drinks?|water|thirsty|hungry|shop|gift|car park|parking|exit|way out|entrance)\b/i;
+
 export function hereContext({ tour, dates, sections, stopId }) {
   const stop = tour.stops.find(s => s.id === stopId);
   if (!stop) return null;
@@ -32,7 +49,7 @@ export function hereContext({ tour, dates, sections, stopId }) {
     .map(s => ({ s, n: (s.about || []).filter(id => things.includes(id)).length + (s.kind === 'site' ? 0.5 : 0) }))
     .filter(x => x.n >= 1).sort((a, b) => b.n - a.n)[0];
   const tourText = { title: `${stop.name}${stop.dateLabel ? ` (${stop.dateLabel})` : ''}`, text: [stop.look, ...(stop.bullets || []).map(b => b.t)].filter(Boolean).join(' ') };
-  return { id: stopId, name: stop.name, things, section: best ? best.s : null, tourText };
+  return { id: stopId, name: stop.name, site: tour.name, things, section: best ? best.s : null, tourText, nearest: nearestFacilities(tour, stop) };
 }
 
 const PERSON_PRONOUN = /\b(he|she|him|her|his|hers|they|them|their)\b/i;
@@ -41,7 +58,8 @@ const PLACE_WORD = /\b(this|it|here|these|this place|this building)\b/i;
 // previous: earlier questions (createSession supplies the latest one that named something). Only questions
 // are carried forward, never the model's answers, so a mistake in one answer can't feed the next.
 // here: hereContext(...) for where the family is, or null.
-export function buildPrompt({ question, sections, dates, nowYear = new Date().getFullYear(), topK = 3, previous = [], here = null }) {
+export function buildPrompt({ question, sections, dates, nowYear = new Date().getFullYear(), topK = 3, previous = [], here = null, site = null }) {
+  const siteName = site || here?.site || dates.site || 'this site';
   const last = previous[previous.length - 1];
   const asked = mentions(dates, question);
   const lastM0 = last ? mentions(dates, last) : null;
@@ -86,10 +104,11 @@ export function buildPrompt({ question, sections, dates, nowYear = new Date().ge
   });
   const nameOf = (id) => (dates.things.find(t => t.id === id) || dates.people.find(p => p.id === id))?.name;
   const where = here ? `WHERE WE ARE: ${here.name}\n\n` : '';
+  const nearest = here && here.nearest?.length && PRACTICAL_QUESTION.test(question) ? `NEAREST:\n${here.nearest.map(n => '- ' + n).join('\n')}\n\n` : '';
   // Only what the earlier question itself named, not everything linked to it.
   const lastNamed = lastM ? [...lastM.things, ...lastM.named] : [];
   const prev = last ? `EARLIER QUESTION: ${last}` + (lastNamed.length ? ` (about ${lastNamed.map(nameOf).filter(Boolean).join('; ')})` : '') + '\n\n' : '';
-  const text = `${RULES}\n\nQUESTION: ${question}\n\n${where}${prev}` +
+  const text = `${rules(siteName)}\n\nQUESTION: ${question}\n\n${where}${nearest}${prev}` +
     `FACTS:\n${facts.length ? facts.map(f => '- ' + plainDates(f)).join('\n') : '- (none for this question)'}\n\n` +
     `NOTES:\n${picked.map(s => `## ${s.title}\n${plainDates(s.text)}`).join('\n\n')}\n\nQUESTION: ${question}`;
   return { text, picked: picked.map(s => s.title), facts, about };
@@ -106,7 +125,7 @@ export function createSession({ sections, dates, tour, nowYear }) {
     get subject() { return subject; },
     prompt(question, { stopId = null } = {}) {
       const here = stopId && tour ? hereContext({ tour, dates, sections, stopId }) : null;
-      const r = buildPrompt({ question, sections, dates, nowYear, here, previous: subject ? [subject] : [] });
+      const r = buildPrompt({ question, sections, dates, nowYear, here, site: tour?.name, previous: subject ? [subject] : [] });
       const m = mentions(dates, question);
       if (m.things.length || m.named.length) subject = question;
       asked.push(question);

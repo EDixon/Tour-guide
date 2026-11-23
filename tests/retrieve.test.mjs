@@ -84,4 +84,12 @@ ok('family questions get the family, not just the Earl who built the house', () 
   assert.ok(['The de Grey family and Wrest', 'The medieval Greys (1280s–1490)'].includes(b.picked[0]), b.picked[0]);
   assert.ok(!b.facts.some(f => /\(1284–1917\), the rulers were/.test(f)), 'no ruler list over 600 years');
 });
+ok('the prompt names the site being visited, and practical questions get the nearest facilities', () => {
+  const k = JSON.parse(fs.readFileSync(new URL('../tours/karnak.json', import.meta.url)));
+  const p = buildPrompt({ question: 'Is there a toilet near here?', sections: secs, dates, nowYear: 2026, here: hereContext({ tour: k, dates, sections: secs, stopId: 'lake' }) });
+  assert.match(p.text, /visiting Karnak Temple/); assert.doesNotMatch(p.text, /Wrest/);
+  assert.match(p.text, /NEAREST:[\s\S]*toilets: Toilets east of the Sacred Lake/);
+  const q = buildPrompt({ question: 'Who built this?', sections: secs, dates, nowYear: 2026, here: hereContext({ tour: k, dates, sections: secs, stopId: 'lake' }) });
+  assert.doesNotMatch(q.text, /NEAREST:/);
+});
 console.log(`\n${n} passed`);
