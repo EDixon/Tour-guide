@@ -332,6 +332,7 @@ export function evaluate(route, ctx, detail = false) {
     }
     const c = ctx.curves[id];
     let m = M(t);
+    if (ctx.quiet?.[id] != null && t - ctx.midnight > ctx.quiet[id]) m *= ctx.crowdMult;
     if (ctx.chrono) {
       if (c.date < chronoMax - 10) m *= 0.7;
       chronoMax = Math.max(chronoMax, c.date);
@@ -373,10 +374,18 @@ export function buildContext(model, state, settings, nowS) {
   const tour = model.tour;
   const curves = {};
   for (const s of tour.stops) if (s.kind !== 'facility') curves[s.id] = stopCurve(s, settings.weights, settings);
+  // Crowds: a stop with quietBefore "HH:MM" is worth less once the coach groups arrive.
+  // nowS is epoch seconds in the app and seconds since midnight in tests; work out local midnight.
+  const quiet = {};
+  for (const s of tour.stops) if (s.quietBefore) { const [h, m] = s.quietBefore.split(':').map(Number); quiet[s.id] = h * 3600 + m * 60; }
+  let midnight = 0;
+  if (nowS > 2 * 86400) { const d = new Date(nowS * 1000); midnight = nowS - (d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds()); }
   const brk = tour.breaks?.cafe || { minutes: 20, restore: 1, at: tour.exit };
   const visitedDates = Object.keys(state.visited || {}).map(id => model.stopsById.get(id)?.date ?? 0);
   return {
     t0: nowS,
+    quiet, midnight,
+    crowdMult: 1 - (tour.crowdPenalty ?? 0.3),
     from: state.from || tour.start,
     deadline: state.deadlineS,
     exit: tour.exit,

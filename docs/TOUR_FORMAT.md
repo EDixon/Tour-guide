@@ -39,6 +39,7 @@ One JSON file per site in `tours/`. Example: `wrest-park.json`.
   "wow": 5,                        // 0–5 how visually impressive it is, story aside (see below)
   "popular": 4,                    // 0–5 how often visitors single it out in reviews and guides (see below)
   "mustSee": true,                 // planner includes it whenever feasible
+  "quietBefore": "09:30",          // optional: crowded after this local time, so the planner prefers it earlier
   "steps": true,                   // optional: the stop itself needs steps (pushchair mode leaves it out)
   "photoSpot": true,               // a viewpoint people stop to photograph (camera on the map); "look" says where to point
   "photo": "pavilion-vista",       // optional photo beside the "look" line
@@ -91,3 +92,7 @@ Rules:
 - Bullets are always **shown in file order**. The planner only drops some.
 - `imp` 5 = core story, 1 = nice-to-know. Tag strengths 0–1.
 - Keep bullets to 15–35 words, written to be read aloud.
+
+## Crowds (`quietBefore`, `crowdPenalty`)
+Where visitor evidence (recorded in `sites/<id>/visitor-scores.md`) shows that a stop fills up with groups at a known time, give it `quietBefore: "HH:MM"` in local time. Arriving after that time multiplies the stop's value by `1 - crowdPenalty`. `crowdPenalty` is set at tour level and defaults to 0.3. The planner then puts such stops early when the family arrives in time, and otherwise just values them a little less.
+

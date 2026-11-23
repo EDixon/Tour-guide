@@ -4324,6 +4324,7 @@
   },
   {
    "id": "taharqa",
+   "quietBefore": "09:30",
    "name": "Kiosk of Taharqa",
    "short": "Taharqa column",
    "kind": "sight",
@@ -4873,6 +4874,7 @@
   },
   {
    "id": "hypostyle",
+   "quietBefore": "09:30",
    "name": "Great Hypostyle Hall",
    "short": "Hypostyle Hall",
    "kind": "sight",
@@ -5145,6 +5147,7 @@
   },
   {
    "id": "obelisks",
+   "quietBefore": "09:30",
    "name": "Obelisks of Thutmose I and Hatshepsut",
    "short": "Obelisks",
    "kind": "sight",

@@ -21,6 +21,15 @@ function show(p) {
   return p.steps.map(s => s.type === 'break' ? `[café ${fmt(s.arrive)}]` : `${s.id}(${s.bullets.length}/${s.total})${s.leg.scenic ? '~' : ''}`).join(' → ') + ` → exit ${fmt(p.finish)}`;
 }
 
+test('quietBefore pulls a crowded stop earlier', () => {
+  const k = JSON.parse(readFileSync(new URL('../tours/karnak.json', import.meta.url)));
+  const at = (t) => { const m = buildModel(t); const p = plan(m, { from: t.start, deadlineS: 8.5 * 3600 + 180 * 60, E0: 1, visited: {}, skipped: {}, pinned: {} }, defaultSettings(t), 8.5 * 3600); return p.steps.find(s => s.id === 'hypostyle')?.arrive ?? Infinity; };
+  const plain = structuredClone(k); for (const s of plain.stops) delete s.quietBefore;
+  const withQ = at(k), without = at(plain);
+  assert.ok(withQ <= 9.5 * 3600, `hall reached at ${fmt(withQ)}, expected before 09:30`);
+  assert.ok(withQ <= without, `quietBefore should not make the hall later (${fmt(withQ)} vs ${fmt(without)})`);
+});
+
 test('tour file integrity', () => {
   const ids = new Set(tour.stops.map(s => s.id));
   for (const s of tour.stops) {
