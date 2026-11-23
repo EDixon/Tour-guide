@@ -181,7 +181,7 @@
     77
    ],
    "stop": "redchapel",
-   "more": "Hatshepsut's two-roomed shrine of red quartzite for Amun-Ra's sacred boat, begun or finished about her year 17 (about 1457 BC; sources differ). Thutmose III took it down. Her figures were erased after his year 42, and Amenhotep III buried the blocks in the Third Pylon."
+   "more": "Hatshepsut's two-roomed shrine of red quartzite for Amun-Ra's sacred boat, begun or finished about her year 17 (about 1463 BC; sources differ). Thutmose III took it down. Her figures were erased after his year 42, and Amenhotep III buried the blocks in the Third Pylon."
   },
   {
    "year": -1464,
@@ -235,7 +235,7 @@
     4,
     16
    ],
-   "more": "After Akhenaten's death Tutankhamun reopened the temples. His Restoration Stela, found at Karnak in 1905, says they had fallen into ruin. It is dated year 4 by some scholars and year 1 by others, so about 1335 to 1332 BC."
+   "more": "After Akhenaten's death Tutankhamun reopened the temples. His Restoration Stela, found at Karnak in 1905, says they had fallen into ruin. It is dated year 4 by some scholars and year 1 by others, so about 1336 to 1333 BC."
   },
   {
    "year": -1294,
@@ -324,7 +324,7 @@
     4,
     16
    ],
-   "more": "Ashurbanipal's Assyrian army sacked Thebes and ended Kushite rule. Temples were reportedly plundered, but little damage has been found at the Amun-Ra temple itself. Shaw's chronology gives 664 BC; some books say 663."
+   "more": "Ashurbanipal's Assyrian army sacked Thebes and ended Kushite rule. Temples were reportedly plundered, but little damage has been found at the Amun-Ra temple itself. The sack is dated 664 or 663 BC."
   },
   {
    "year": -370,
@@ -387,7 +387,8 @@
    "label": "Mariette's Antiquities Service takes charge",
    "src": [
     110,
-    107
+    107,
+    112
    ],
    "more": "The viceroy Said Pasha appointed the French Egyptologist Auguste Mariette to head a new antiquities service. It began Egypt's state control of digging and sites, including Karnak. It was renamed in 1971, 1994, 2011 and 2019."
   },
@@ -3618,7 +3619,7 @@
     },
     {
      "id": 5,
-     "t": "The god was rich. Papyrus Harris I, written for Ramesses III, lists Amun's gifts, and summaries say his temples held most of Egypt's temple land. The priests grew powerful.",
+     "t": "The god was rich. Papyrus Harris I, written for Ramesses III, lists Amun's gifts and suggests his temples held most of the temple land it lists; scholars debate what that covers. The priests grew powerful.",
      "imp": 3,
      "tags": {
       "history": 0.8,
@@ -3645,7 +3646,7 @@
     },
     {
      "id": 7,
-     "t": "Later came Libyan, Kushite and Assyrian rulers, who sacked Thebes in 664 BC. Then Persians, Ptolemies and Romans. Building stopped, and Christians later used the Akhmenu as a church.",
+     "t": "Later came Libyan, Kushite and Assyrian rulers, who sacked Thebes in 664 or 663 BC. Then Persians, Ptolemies and Romans. Building stopped, and Christians later used the Akhmenu as a church.",
      "imp": 3,
      "tags": {
       "history": 0.9
@@ -4090,8 +4091,8 @@
     32.6568
    ],
    "approx": true,
-   "date": -360,
-   "dateLabel": "about 380–343 BC",
+   "date": -371,
+   "dateLabel": "about 380–362 BC",
    "era": "late",
    "dwell": 150,
    "wow": 2,
@@ -6052,7 +6053,7 @@
     32.657658
    ],
    "date": -1470,
-   "dateLabel": "about 1473–1458 BC, rebuilt 1997–2000",
+   "dateLabel": "about 1470–1463 BC, reassembled about 1997–2002",
    "era": "thutmosid",
    "dwell": 180,
    "wow": 3,
@@ -6065,7 +6066,7 @@
    "bullets": [
     {
      "id": 1,
-     "t": "Hatshepsut ordered the Red Chapel, begun or finished about her seventeenth year, about 1457 BC, as a home for Amun-Ra's sacred boat. It is red quartzite on a grey diorite platform.",
+     "t": "Hatshepsut ordered the Red Chapel, begun or finished about her seventeenth year, about 1463 BC, as a home for Amun-Ra's sacred boat. It is red quartzite on a grey diorite platform.",
      "imp": 5,
      "tags": {
       "history": 0.5,
@@ -6095,7 +6096,7 @@
     },
     {
      "id": 3,
-     "t": "Rebuilding it was a huge 3D jigsaw. Chevrier laid the blocks out on plinths in 1947 and 1948; French and Egyptian teams reassembled the chapel at the turn of the millennium, around 1999 to 2002.",
+     "t": "Rebuilding it was a huge 3D jigsaw. Chevrier laid the blocks out on plinths in 1947 and 1948; French and Egyptian teams reassembled the chapel about 1997 to 2002 (sources differ).",
      "imp": 5,
      "tags": {
       "engineering": 0.9,
@@ -6191,7 +6192,7 @@
     32.657803
    ],
    "date": -1450,
-   "dateLabel": "about 1479–1425 BC (Seventh Pylon); cache found 1903–1905",
+   "dateLabel": "about 1479–1425 BC (Seventh Pylon); cache found 1903–1907",
    "era": "thutmosid",
    "dwell": 150,
    "wow": 2,
@@ -6303,14 +6304,15 @@
     },
     {
      "id": 8,
-     "t": "The Hittite side survives on clay tablets in Akkadian, found at Hattusa in Turkey from 1906. Two are in Istanbul and one in Berlin. A copy is said to hang at the United Nations, unconfirmed.",
+     "t": "The Hittite side survives on clay tablets in Akkadian, found at Hattusa in Turkey from 1906. Two are in Istanbul and one in Berlin. A copy, given by Turkey in 1970, hangs at the United Nations in New York.",
      "imp": 4,
      "tags": {
       "history": 0.8
      },
      "needs": 7,
      "src": [
-      96
+      96,
+      111
      ],
      "verify": true
     },
@@ -6957,7 +6959,7 @@
     32.660257
    ],
    "date": -1250,
-   "dateLabel": "about 1279–1213 BC; the obelisk stood here from about 1400 BC to AD 357",
+   "dateLabel": "about 1279–1213 BC; the obelisk stood here from about 1400 BC to the fourth century AD",
    "era": "ramesside",
    "dwell": 120,
    "wow": 2,
@@ -7587,7 +7589,7 @@
    "https://www.weroad.com/blog/karnak-temple-guide"
   ],
   "106": [
-   "Papyrus Harris I (British Museum EA 9999), via Wikipedia summary; edition Grandet 1994",
+   "Papyrus Harris I (British Museum EA 9999), via Wikipedia, citing Breasted (1906); edition Grandet 1994",
    "https://en.wikipedia.org/wiki/Papyrus_Harris_I"
   ],
   "107": [
@@ -7605,6 +7607,14 @@
   "110": [
    "Wikipedia, Supreme Council of Antiquities (pointer only)",
    "https://en.wikipedia.org/wiki/Supreme_Council_of_Antiquities"
+  ],
+  "111": [
+   "United Nations Gifts, Replica of Peace Treaty between Hattusilis and Ramses II (UNNY067G, Turkey, 1970)",
+   "https://www.un.org/ungifts/node/615"
+  ],
+  "112": [
+   "Al Jazeera, \"Egypt reinstates information ministry in cabinet reshuffle\" (22 December 2019)",
+   "https://www.aljazeera.com/news/2019/12/22/egypt-reinstates-information-ministry-in-cabinet-reshuffle"
   ],
   "gk": [
    "General knowledge",

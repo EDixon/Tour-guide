@@ -1,6 +1,6 @@
 # Karnak Temple: status
 
-Stage: check
+Stage: publish
 Updated: 2026-11-23
 
 ## Stages
@@ -8,7 +8,7 @@ Updated: 2026-11-23
 - [x] site-survey: sources, stops, paths, timeline, research plan
 - [x] site-research: bullets, notes and dates for every stop
 - [x] reference-packs: shared background reused or written
-- [ ] site-check: validator, knowledge checks, fact-check
+- [x] site-check: validator, knowledge checks, fact-check
 - [ ] site-publish: listed in the app, pushed, report sent
 
 ## Supplied by Eliot (in `sites/karnak/inputs/`, not in the repo; ask again in a new container)
@@ -30,6 +30,21 @@ Updated: 2026-11-23
 | Visitors | all sights | merged (must-sees: rams, hypostyle, obelisks, lake) |
 
 ## Flags for Eliot
+- **Fact-check (23 November 2026, `factcheck.md`): 97 rows.** 25 were wrong and are all fixed: the Red Chapel's year 17 is about 1463 BC, not 1457; the Cachette was dug 1903–1907; Amenhotep II is 1427–1400 BC; the UN treaty replica is confirmed (Turkey, 1970); the ministry merger was on 22 December 2019; there were several Shaw corrections in the king list; plus smaller items. 14 rows where sources disagree now say so in the text. 18 unsupported claims are hedged or removed.
+- **Still uncertain, and said so in the app:**
+  - the century of the Akhmenu church
+  - the temple's closing date
+  - the Red Chapel's reassembly date (about 1997 to 2002)
+  - the Estate of Amun's share of temple land
+  - Hatshepsut's obelisk weight (320 to 375 tonnes)
+  - the Lateran obelisk weight
+  - the Restoration Stela's year
+  - the Bentresh Stela's date
+- **App changes made during this check:**
+  - The assistant prompt was hard-coded to "Wrest Park" for every site. It now uses the site's own name.
+  - Practical questions ("toilet?", "café?") now get the nearest facilities, by straight-line distance.
+  - The planner has a new `quietBefore` time, so the Hypostyle Hall, the forecourt and the obelisks come before 09:30, when the coach groups arrive. With an 08:30 arrival, the 2 to 4-hour plans reach the hall by about 09:30.
+- **The 1-hour plan** still leaves out the Hypostyle Hall (it keeps the cheaper Sacred Lake instead). This is not a problem at 3 hours.
 - **Senusret I's dates were wrong** in the research. They were given as "Shaw 1965–1920 BC", but Shaw has him as sole king 1956–1911 BC, after about ten years as co-ruler from about 1965 BC. Corrected in the notes, dates, tour text and the rulers pack.
 - **Reference packs: what the fact-check should look at:**
   - The Egyptian king list in `rulers` was written partly from memory, so it needs checking against Shaw's table. I corrected the Twelfth Dynasty and Takelot II/Shoshenq III by hand.
@@ -66,3 +81,4 @@ Updated: 2026-11-23
 - 2026-11-23: batches 1–8 and visitors researched (batches 5–8 resumed after a spend-limit stop) and merged. 94 new sources numbered 17–110. Duplicate people records joined. Photo download started via workflow_dispatch on the session branch.
 - 2026-11-23: photos downloaded (64) and checked by eye; validator and knowledge checks pass (0 errors). Stage set to reference.
 - 2026-11-23: reference packs. `rulers` extended (Egypt, Rome, Egypt after Rome); `egyptian-temples`, `egyptian-gods` and `ancient-building` written and source-checked, then merged. Senusret I corrected to Shaw 1956–1911 BC. One maths test made BC-aware. Checks pass (0 errors) and `npm test` is green. Stage set to check.
+- 2026-11-23: site-check. Mechanical checks clean; fact-check by a separate agent (97 rows); all wrong items fixed and disagreements stated in the text. Planner `quietBefore`; assistant prompt site name; nearest facilities. Stage set to publish.
