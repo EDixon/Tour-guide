@@ -1,0 +1,265 @@
+{
+  "whitechapel": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "This small limestone pavilion was made for Senusret I about 1940 BC, one of the oldest structures at Karnak. It is rebuilt from pieces found buried inside a later pylon.",
+        "imp": 5,
+        "tags": {
+          "history": 0.6,
+          "architecture": 0.5
+        },
+        "src": [
+          3,
+          4,
+          78
+        ]
+      },
+      {
+        "id": 2,
+        "t": "More than five centuries later, Amenhotep III dismantled it and packed the blocks into the core of his Third Pylon as fill. Excavators found them there, often in good condition.",
+        "imp": 5,
+        "tags": {
+          "engineering": 0.8,
+          "history": 0.4
+        },
+        "src": [
+          3,
+          4
+        ],
+        "needs": 1
+      },
+      {
+        "id": 3,
+        "t": "The French architect Henri Chevrier found the first piece, a limestone lintel crushed under a huge alabaster slab, on 16 November 1927. Rebuilding took about ten years.",
+        "imp": 4,
+        "tags": {
+          "engineering": 0.8,
+          "people": 0.5
+        },
+        "src": [
+          78,
+          79
+        ],
+        "needs": 2
+      },
+      {
+        "id": 4,
+        "t": "The broken stones were rebuilt in winter 1937 to 1938, with concrete cores inside the pillars, steel bars in the beams and bolts through cracked stone. Gaps were filled with painted plaster.",
+        "imp": 4,
+        "tags": {
+          "engineering": 1,
+          "computing": 0.2
+        },
+        "src": [
+          79
+        ],
+        "needs": 3
+      },
+      {
+        "id": 5,
+        "t": "Look for the base: its north and south sides list Egypt's provinces, 22 in Upper Egypt and 16 in Lower, with their gods. It is the oldest known list of local gods.",
+        "imp": 4,
+        "tags": {
+          "history": 0.5,
+          "physics": 0.2,
+          "gods": 0.5
+        },
+        "src": [
+          81,
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "t": "Each province also has figures: its extent, and how many cubits and palms to subtract from the 100-cubit land measure, the aroura, to get the local one. Chevrier did not know their meaning in 1938.",
+        "imp": 3,
+        "tags": {
+          "physics": 0.7,
+          "history": 0.3
+        },
+        "src": [
+          81,
+          79
+        ],
+        "needs": 5
+      },
+      {
+        "id": 7,
+        "t": "The reliefs record Senusret I's jubilee festival. Look for the kneeling figure of Heh, the sign for eternity, and traces of red, blue and yellow paint.",
+        "imp": 3,
+        "tags": {
+          "art": 0.7,
+          "gods": 0.4
+        },
+        "src": [
+          3,
+          85
+        ],
+        "photo": "heh-figure-white-chapel"
+      },
+      {
+        "id": 8,
+        "t": "Close by stands the calcite bark shrine of Amenhotep I, who reigned about 1525 to 1504 BC. Its inner walls hold the oldest surviving pictures of Amun-Ra's sacred boat.",
+        "imp": 3,
+        "tags": {
+          "gods": 0.7,
+          "history": 0.3
+        },
+        "src": [
+          3,
+          10
+        ]
+      },
+      {
+        "id": 9,
+        "t": "Do not mix it up with the calcite shrine of Amenhotep II, rebuilt in 2005 between copies of Thutmose I's obelisks near the entrance. Amenhotep I's was first rebuilt about 1947.",
+        "imp": 2,
+        "tags": {
+          "history": 0.3,
+          "architecture": 0.3
+        },
+        "src": [
+          82,
+          80
+        ],
+        "needs": 8
+      }
+    ],
+    "kids": [
+      {
+        "t": "Find the little kneeling figure carved on the stone, and then count the square pillars around the outside: twelve!",
+        "photo": "heh-figure-white-chapel"
+      },
+      "Climb the ramp steps with Daddy or Mummy, and find the smooth white stone that was once buried underground."
+    ],
+    "look": "A small, bright limestone pavilion on a low platform, with square pillars all round and a stepped ramp at each end.",
+    "photo": "white-chapel-view",
+    "note": "In the Open Air Museum, reached from the north side of the forecourt. The museum is reported as included in the main ticket (600 EGP foreign adult, ministry list 2024), open 06:00 to 17:00 with last entry about 16:00; Ramadan hours may be shorter. A French-Egyptian project (2024 to 2026) is re-laying the museum route and adding Amenhotep I monuments, so parts may be fenced off. It may be closed; if so, look at it from the path or go on to the Red Chapel."
+  },
+  "redchapel": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "Hatshepsut ordered the Red Chapel, begun or finished about her seventeenth year, about 1457 BC, as a home for Amun-Ra's sacred boat. It is red quartzite on a grey diorite platform.",
+        "imp": 5,
+        "tags": {
+          "history": 0.5,
+          "gods": 0.6,
+          "architecture": 0.4
+        },
+        "src": [
+          3,
+          4,
+          16
+        ],
+        "verify": true
+      },
+      {
+        "id": 2,
+        "t": "Thutmose III dismantled it, and Amenhotep III later buried the blocks as filling inside the Third Pylon. By 1928 the excavator Henri Chevrier had pulled out 241 of them.",
+        "imp": 5,
+        "tags": {
+          "engineering": 0.8,
+          "history": 0.5
+        },
+        "src": [
+          4,
+          78
+        ],
+        "needs": 1
+      },
+      {
+        "id": 3,
+        "t": "Rebuilding it was a huge 3D jigsaw. Chevrier laid the blocks out on plinths in 1947 and 1948; French and Egyptian teams reassembled the chapel at the turn of the millennium, around 1999 to 2002.",
+        "imp": 5,
+        "tags": {
+          "engineering": 0.9,
+          "computing": 0.5
+        },
+        "src": [
+          80,
+          83,
+          84
+        ],
+        "needs": 2,
+        "verify": true
+      },
+      {
+        "id": 4,
+        "t": "Burgos and Larché published every block as a drawn facsimile in 2006 and 2008, and later electronically. Digital Karnak's 3D model of the chapel rests on Carlotti's 1995 plans.",
+        "imp": 3,
+        "tags": {
+          "computing": 1,
+          "engineering": 0.3
+        },
+        "src": [
+          3,
+          82
+        ]
+      },
+      {
+        "id": 5,
+        "t": "Look for figures of Hatshepsut with the stone smoothed away, and her names erased. This came late in Thutmose III's reign, after his year 42, over twenty years after she died.",
+        "imp": 4,
+        "tags": {
+          "people": 0.8,
+          "history": 0.7,
+          "art": 0.4
+        },
+        "src": [
+          4,
+          3
+        ],
+        "needs": 2
+      },
+      {
+        "id": 6,
+        "t": "The erasing was not why the chapel came down: the dismantling came first, and the defacing was done on blocks left lying about. Some blocks were missed, perhaps the less exposed ones.",
+        "imp": 3,
+        "tags": {
+          "history": 0.7,
+          "people": 0.5
+        },
+        "src": [
+          4,
+          3
+        ],
+        "needs": 5
+      },
+      {
+        "id": 7,
+        "t": "On the outside, Digital Karnak says, are scenes of her obelisks being raised and of the Opet and Beautiful Feast of the Valley processions, above a frieze of kneeling Nile gods.",
+        "imp": 3,
+        "tags": {
+          "engineering": 0.4,
+          "gods": 0.6,
+          "art": 0.5
+        },
+        "src": [
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "t": "The museum also holds Thutmose IV's painted double colonnade, rebuilt from about a thousand blocks, Amenhotep II's calcite shrine, and a rebuilt wall of Akhenaten's small blocks from the Third Pylon.",
+        "imp": 2,
+        "tags": {
+          "engineering": 0.5,
+          "history": 0.4
+        },
+        "src": [
+          4,
+          3
+        ]
+      }
+    ],
+    "kids": [
+      "Find the reddest wall, and the dark stone it sits on.",
+      "Find a smooth patch where a person was once carved and then chiselled out."
+    ],
+    "look": "A long, low shrine of red stone on a dark base, with ramps at each end. Look for smooth patches where figures were chiselled away.",
+    "photo": "red-chapel-view",
+    "note": "In the Open Air Museum, a short walk east of the White Chapel; same ticket as the main site. It may be closed or fenced off during the 2024 to 2026 museum works; if so, see it from the museum path."
+  }
+}

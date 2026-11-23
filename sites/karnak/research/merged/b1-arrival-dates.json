@@ -1,0 +1,300 @@
+{
+  "things": [
+    {
+      "id": "quay",
+      "name": "the quay and its stone embankment",
+      "names": [
+        "quay",
+        "tribune",
+        "harbour",
+        "port",
+        "landing stage",
+        "embankment"
+      ],
+      "from": -945,
+      "to": -945,
+      "approx": true,
+      "verb": "begun",
+      "who": "begun about the time of Shoshenq I and repaired until the fourth century BC; the tribune platform itself is harder to date",
+      "people": [
+        "shoshenq-i"
+      ],
+      "related": [
+        "sety-ii-obelisk",
+        "nile-level-texts",
+        "taharqa-quay-ramp",
+        "hakoris-bark-chapel"
+      ],
+      "stops": [
+        "quay"
+      ]
+    },
+    {
+      "id": "sety-ii-obelisk",
+      "name": "Sety II's small obelisk on the quay",
+      "names": [
+        "sety ii obelisk",
+        "seti ii obelisk",
+        "small obelisk",
+        "quay obelisk"
+      ],
+      "from": -1200,
+      "to": -1194,
+      "approx": true,
+      "verb": "carved",
+      "who": "carved in quartzite for Sety II, about 3.5 metres high",
+      "people": [
+        "sety-ii"
+      ],
+      "related": [
+        "quay"
+      ],
+      "stops": [
+        "quay"
+      ]
+    },
+    {
+      "id": "nile-level-texts",
+      "name": "the Nile level records on the quay",
+      "names": [
+        "nile level",
+        "nile levels",
+        "flood records",
+        "nilometer",
+        "nile quay texts"
+      ],
+      "from": -945,
+      "to": -525,
+      "approx": true,
+      "verb": "carved",
+      "plural": true,
+      "who": "carved by kings of the Twenty-second to Twenty-sixth Dynasties to record the height of each year's flood",
+      "related": [
+        "quay"
+      ],
+      "stops": [
+        "quay"
+      ]
+    },
+    {
+      "id": "taharqa-quay-ramp",
+      "name": "Taharqa's ramp into the river",
+      "names": [
+        "taharqa ramp",
+        "taharqa's ramp",
+        "water ramp"
+      ],
+      "from": -690,
+      "to": -664,
+      "approx": true,
+      "verb": "built",
+      "who": "built by the Kushite king Taharqa as a paved stone ramp down to the Nile, used for water rituals",
+      "people": [
+        "taharqa"
+      ],
+      "related": [
+        "quay"
+      ],
+      "stops": [
+        "quay"
+      ]
+    },
+    {
+      "id": "hakoris-bark-chapel",
+      "name": "Hakoris's boat chapel",
+      "names": [
+        "hakoris chapel",
+        "hakor chapel",
+        "boat chapel",
+        "bark chapel"
+      ],
+      "from": -393,
+      "to": -380,
+      "approx": true,
+      "verb": "built",
+      "who": "built by Hakoris outside the old west gate, with an extra wide west door so the god's boat could be carried in from the river",
+      "related": [
+        "quay",
+        "first-pylon"
+      ],
+      "stops": [
+        "quay",
+        "pylon1"
+      ]
+    },
+    {
+      "id": "rams-avenue",
+      "name": "the avenue of ram-headed sphinxes",
+      "names": [
+        "ram avenue",
+        "ram-headed sphinxes",
+        "rams",
+        "criosphinx",
+        "criosphinxes",
+        "ram sphinxes"
+      ],
+      "from": -1279,
+      "to": -1213,
+      "approx": true,
+      "verb": "inscribed",
+      "who": "inscribed with the titles of Ramesses II, though their style looks older (Thutmose IV or Amenhotep III), and moved to Karnak by Pinedjem I on one theory; rearranged under Shoshenq I, Taharqa and the Romans",
+      "people": [
+        "ramesses-ii",
+        "pinedjem-i"
+      ],
+      "related": [
+        "luxor-sphinx-avenue",
+        "quay"
+      ],
+      "stops": [
+        "rams"
+      ]
+    },
+    {
+      "id": "first-pylon",
+      "name": "the First Pylon",
+      "names": [
+        "first pylon",
+        "1st pylon",
+        "entrance gate",
+        "main gate",
+        "great pylon"
+      ],
+      "from": -380,
+      "to": -362,
+      "approx": true,
+      "verb": "begun",
+      "who": "begun by Nectanebo I as the monumental western gate of the temple, and never finished",
+      "people": [
+        "nectanebo-i"
+      ],
+      "related": [
+        "builders-ramp",
+        "nectanebo-enclosure",
+        "hakoris-bark-chapel"
+      ],
+      "stops": [
+        "pylon1"
+      ]
+    },
+    {
+      "id": "builders-ramp",
+      "name": "the builders' ramp behind the First Pylon",
+      "names": [
+        "ramp",
+        "mud brick ramp",
+        "builders ramp",
+        "construction ramp"
+      ],
+      "from": -380,
+      "to": -362,
+      "approx": true,
+      "verb": "built",
+      "who": "built of mud brick by Nectanebo I's workmen to raise stone for the First Pylon, and left in place when work stopped",
+      "people": [
+        "nectanebo-i"
+      ],
+      "related": [
+        "first-pylon"
+      ],
+      "stops": [
+        "ramp"
+      ]
+    },
+    {
+      "id": "nectanebo-enclosure",
+      "name": "Nectanebo I's great enclosure wall",
+      "names": [
+        "enclosure wall",
+        "great wall",
+        "precinct wall",
+        "mud brick wall"
+      ],
+      "from": -380,
+      "to": -362,
+      "approx": true,
+      "verb": "built",
+      "who": "built of mud brick and sandstone, about 21 metres high and 12 metres thick, around the temple of Amun-Ra",
+      "people": [
+        "nectanebo-i"
+      ],
+      "related": [
+        "first-pylon"
+      ],
+      "stops": [
+        "pylon1"
+      ]
+    },
+    {
+      "id": "luxor-sphinx-avenue",
+      "name": "the Avenue of Sphinxes between Karnak and Luxor Temple",
+      "names": [
+        "luxor avenue",
+        "avenue to luxor",
+        "human-headed sphinxes",
+        "processional way to luxor"
+      ],
+      "from": -380,
+      "to": -362,
+      "approx": true,
+      "verb": "paved and lined with sphinxes",
+      "who": "begun under Amenhotep III, according to Mansour Boraik, and given its sandstone paving and most of its sphinxes by Nectanebo I",
+      "people": [
+        "nectanebo-i",
+        "amenhotep-iii"
+      ],
+      "related": [
+        "sphinx-avenue-reopening",
+        "rams-avenue"
+      ],
+      "stops": [
+        "rams"
+      ]
+    },
+    {
+      "id": "sphinx-avenue-reopening",
+      "name": "the reopening of the Avenue of Sphinxes",
+      "names": [
+        "avenue of sphinxes",
+        "sphinx avenue",
+        "reopening of the avenue"
+      ],
+      "from": 2021,
+      "to": 2021,
+      "verb": "happened",
+      "who": "marked by a televised ceremony in Luxor on 25 November 2021",
+      "related": [
+        "luxor-sphinx-avenue"
+      ],
+      "stops": [
+        "rams"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "nectanebo-i",
+      "name": "Nectanebo I",
+      "names": [
+        "nectanebo",
+        "nakhtnebef",
+        "nectanebo i"
+      ],
+      "who": "a Thirtieth Dynasty king, one of the last native pharaohs, who began the First Pylon and the great enclosure wall",
+      "events": [
+        [
+          -380,
+          "became king (Shaw)"
+        ],
+        [
+          -380,
+          "began the First Pylon and the great enclosure wall (about)"
+        ],
+        [
+          -362,
+          "ceased to reign (Shaw)"
+        ]
+      ]
+    }
+  ]
+}

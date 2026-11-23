@@ -1,7 +1,7 @@
 ## The Middle Kingdom court (Senusret I's temple)
 Kind: site
 About: senusret-temple, senusret-i
-The Middle Kingdom court is the open, empty-looking space between the granite sanctuary and the Akhmenu. It is the oldest part of Karnak that visitors can stand on. The temple of Amun-Ra that stood here was built by Senusret I, who reigned from 1971 to 1926 BC in Shaw's chronology.
+The Middle Kingdom court is the open, empty-looking space between the granite sanctuary and the Akhmenu. It is the oldest part of Karnak that visitors can stand on. The temple of Amun-Ra that stood here was built by Senusret I, who reigned from about 1965 to 1920 BC in Shaw's chronology (1971 to 1926 BC in some others).
 
 What it looked like depends on the reconstruction. Luc Gabolde of the Franco-Egyptian centre (CFEETK) rebuilt it on paper from blocks found at Karnak since the early 1900s and from his excavations in this court. His version is a limestone temple about 38 metres square and about 6 metres high, with four doorways whose thresholds were red granite. In front was a portico 3 metres deep with twelve square pillars, each carrying a statue of the king as Osiris. Some of those pillars are now in the Cairo Museum. The sanctuary was off the central line, so a priest had to turn ninety degrees left to reach it. A calcite altar held the shrine of the Amun-Ra statue. A mud-brick wall enclosed the whole.
 
@@ -129,7 +129,7 @@ Sources: Sparavigna, "The sunrise amplitude equation applied to an Egyptian temp
 ## Senusret I
 Kind: person
 About: senusret-i, senusret-temple
-Senusret I (also spelled Senwosret, or Sesostris in Greek) was the second king of the Twelfth Dynasty and reigned from 1971 to 1926 BC (Shaw). At Karnak he turned a small earlier temple of Amun-Ra into a large limestone building about 38 metres square, with a portico of Osiris pillars, four granite-sill doorways and a calcite altar for the god's shrine. He also built the White Chapel, now rebuilt in the Open Air Museum, and a number of small shrines along processional routes.
+Senusret I (also spelled Senwosret, or Sesostris in Greek) was the second king of the Twelfth Dynasty and reigned from about 1965 to 1920 BC (Shaw; some chronologies give 1971 to 1926 BC). At Karnak he turned a small earlier temple of Amun-Ra into a large limestone building about 38 metres square, with a portico of Osiris pillars, four granite-sill doorways and a calcite altar for the god's shrine. He also built the White Chapel, now rebuilt in the Open Air Museum, and a number of small shrines along processional routes.
 
 Almost nothing of his temple stands where it was. Hatshepsut removed its portico, and the rest was dismantled, though scholars disagree about when. Its blocks were reused in later buildings, which is how Gabolde and others have been able to rebuild it on paper. Larché also identified parts of a sandstone colonnade of Senusret I among the blocks found in the Fifth Pylon, though where it stood is unknown.
 

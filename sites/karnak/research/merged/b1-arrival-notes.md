@@ -92,18 +92,6 @@ About: nectanebo-i, nectanebo-enclosure
 Nectanebo I (Nakhtnebef) was the first king of the Thirtieth Dynasty and reigned from 380 to 362 BC in Shaw's chronology. He was one of the last native Egyptian kings before the Persians returned in 343 BC, after the reign of Nectanebo II (360 to 343 BC). He launched a huge building programme across greater Karnak: he enclosed the temples of Amun-Ra, Mut and Montu in mud-brick walls, began the First Pylon, laid a sandstone pavement and rows of human-headed sphinxes along the avenue to Luxor, and added a gateway to the temple of Opet.
 Sources: Sullivan, UEE (2010), p. 21; Digital Karnak, "1st Pylon" and "Enclosures and Gates"; Shaw (ed.), Oxford History of Ancient Egypt (2000), chronology; general knowledge for the return of the Persians in 343 BC.
 
-## Ramesses II
-Kind: person
-About: ramesses-ii, rams-avenue
-Ramesses II reigned from 1279 to 1213 BC (Shaw). At Karnak the small statuettes between the ram sphinxes' paws carry his titles. Whether he commissioned the sphinxes or took over older ones, such as those of Thutmose IV and Amenhotep III, is debated. Other Karnak works include completing and altering Sety I's Hypostyle Hall and the small Temple of Amun-Ra Who Hears Prayers on the east side, a chapel open to the public for oracles. Some accounts credit him with the quay terrace, but the excavators date the quay wall later. He reigned for about 66 years, which is why his name appears across so many Egyptian monuments, and why later kings so often took over his statues, as Pinedjem may have taken over his ram sphinxes.
-Sources: Sullivan, UEE (2010), p. 17; Digital Karnak, "Western Processional Way".
-
-## Pinedjem I
-Kind: person
-About: pinedjem-i, rams-avenue
-Pinedjem I was High Priest of Amun and de facto ruler of Thebes in the Twenty-first Dynasty, from about 1070 BC. On Cabrol's theory he moved Amenhotep III's ram sphinxes (which Ramesses II had usurped) to Karnak and added his own name to their pedestals. He also added decoration to the entrance of the Temple of Khonsu. After the Twentieth Dynasty collapsed, Egypt was split: kings ruled the north from Tanis while the High Priests of Amun governed the south from Thebes, so Pinedjem was effectively the king of Upper Egypt in all but name. The dates of his later royal titles vary between scholars and are not given in the sources used here, so the guide says only "from about 1070 BC".
-Sources: Sullivan, UEE (2010), p. 17; Digital Karnak, "Western Processional Way"; Shaw (2000) for the starting date.
-
 ## Sety II
 Kind: person
 About: sety-ii, sety-ii-obelisk

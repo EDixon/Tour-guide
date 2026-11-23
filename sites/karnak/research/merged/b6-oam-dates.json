@@ -1,0 +1,333 @@
+{
+  "things": [
+    {
+      "id": "white-chapel",
+      "name": "the White Chapel",
+      "names": [
+        "white chapel",
+        "kiosk of senusret",
+        "chapelle blanche",
+        "jubilee chapel"
+      ],
+      "from": -1940,
+      "to": -1940,
+      "approx": true,
+      "verb": "built",
+      "people": [
+        "senusret-i"
+      ],
+      "who": "made for Senusret I, probably for his jubilee festival; Amenhotep III later dismantled it and used the blocks as fill in the Third Pylon",
+      "related": [
+        "white-chapel-rebuilt",
+        "third-pylon",
+        "amenhotep-i-chapel"
+      ],
+      "stops": [
+        "whitechapel"
+      ]
+    },
+    {
+      "id": "white-chapel-rebuilt",
+      "name": "the White Chapel's recovery and rebuilding",
+      "names": [
+        "white chapel rebuilding",
+        "rebuilding of the white chapel"
+      ],
+      "from": 1927,
+      "to": 1938,
+      "verb": "carried out",
+      "people": [
+        "henri-chevrier"
+      ],
+      "who": "carried out by Henri Chevrier: the first block was found on 16 November 1927 in the Third Pylon, and the chapel was rebuilt in the winter of 1937 to 1938",
+      "related": [
+        "white-chapel",
+        "third-pylon"
+      ],
+      "stops": [
+        "whitechapel"
+      ]
+    },
+    {
+      "id": "red-chapel",
+      "name": "the Red Chapel",
+      "names": [
+        "red chapel",
+        "chapelle rouge",
+        "hatshepsut's chapel",
+        "hatshepsut chapel"
+      ],
+      "from": -1470,
+      "to": -1457,
+      "approx": true,
+      "verb": "built",
+      "people": [
+        "hatshepsut"
+      ],
+      "who": "made for Hatshepsut as a bark shrine for Amun-Ra, begun or finished about her year 17; Thutmose III dismantled it and Amenhotep III buried the blocks in the Third Pylon",
+      "related": [
+        "red-chapel-rebuilt",
+        "hatshepsut-proscription",
+        "third-pylon"
+      ],
+      "stops": [
+        "redchapel"
+      ]
+    },
+    {
+      "id": "red-chapel-rebuilt",
+      "name": "the Red Chapel's reassembly in the Open Air Museum",
+      "names": [
+        "red chapel rebuilding",
+        "red chapel reconstruction"
+      ],
+      "from": 1997,
+      "to": 2002,
+      "approx": true,
+      "verb": "carried out",
+      "who": "carried out by the Franco-Egyptian centre (CFEETK); the decision dates to 1997 and sources give the work as about 1999 to 2002",
+      "related": [
+        "red-chapel"
+      ],
+      "stops": [
+        "redchapel"
+      ]
+    },
+    {
+      "id": "hatshepsut-proscription",
+      "name": "the erasure of Hatshepsut's name and images",
+      "names": [
+        "erasure of hatshepsut",
+        "proscription",
+        "hatshepsut erased",
+        "damnatio memoriae"
+      ],
+      "from": -1438,
+      "to": -1425,
+      "approx": true,
+      "verb": "carried out",
+      "people": [
+        "thutmose-iii"
+      ],
+      "who": "carried out late in Thutmose III's reign, after his year 42; the reason is debated",
+      "related": [
+        "red-chapel"
+      ],
+      "stops": [
+        "redchapel"
+      ]
+    },
+    {
+      "id": "amenhotep-i-chapel",
+      "name": "the calcite bark shrine of Amenhotep I",
+      "names": [
+        "amenhotep i chapel",
+        "alabaster chapel of amenhotep i",
+        "calcite shrine of amenhotep i",
+        "alabaster shrine of amenhotep i"
+      ],
+      "from": -1525,
+      "to": -1504,
+      "approx": true,
+      "verb": "built",
+      "people": [
+        "amenhotep-i"
+      ],
+      "who": "built by Amenhotep I and left unfinished; Thutmose I finished the decoration of the south wall",
+      "related": [
+        "amenhotep-i-chapel-rebuilt",
+        "amenhotep-ii-chapel",
+        "third-pylon"
+      ],
+      "stops": [
+        "whitechapel"
+      ]
+    },
+    {
+      "id": "amenhotep-i-chapel-rebuilt",
+      "name": "the rebuilding of the Amenhotep I shrine in the Open Air Museum",
+      "from": 1947,
+      "to": 1947,
+      "approx": true,
+      "verb": "carried out",
+      "people": [
+        "henri-chevrier"
+      ],
+      "who": "carried out by Henri Chevrier, reported 'last year' in his report for 1947 to 1948",
+      "related": [
+        "amenhotep-i-chapel"
+      ],
+      "stops": [
+        "whitechapel"
+      ]
+    },
+    {
+      "id": "amenhotep-ii-chapel",
+      "name": "the calcite shrine of Amenhotep II",
+      "names": [
+        "amenhotep ii chapel",
+        "alabaster chapel of amenhotep ii",
+        "calcite shrine of amenhotep ii"
+      ],
+      "from": -1427,
+      "to": -1401,
+      "approx": true,
+      "verb": "built",
+      "who": "inscribed for Amenhotep II; rebuilt in 2005 in the Open Air Museum between copies of Thutmose I's obelisks, and not the same as the Amenhotep I shrine",
+      "related": [
+        "amenhotep-i-chapel"
+      ],
+      "stops": [
+        "whitechapel"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "henri-chevrier",
+      "name": "Henri Chevrier",
+      "names": [
+        "chevrier",
+        "henri chevrier"
+      ],
+      "born": [
+        1897
+      ],
+      "died": [
+        1974
+      ],
+      "who": "the French architect who directed the works at Karnak from 1926 to 1954, apart from the Second World War",
+      "events": [
+        [
+          1926,
+          "took charge of works at Karnak, succeeding Maurice Pillet"
+        ],
+        [
+          1927,
+          "found the first White Chapel block in the Third Pylon (16 November)"
+        ],
+        [
+          1938,
+          "finished rebuilding the White Chapel (March)"
+        ],
+        [
+          1947,
+          "rebuilt the Amenhotep I shrine in the Open Air Museum (about)"
+        ],
+        [
+          1954,
+          "ended his direction of the works"
+        ]
+      ]
+    },
+    {
+      "id": "amenhotep-i",
+      "name": "Amenhotep I",
+      "names": [
+        "amenhotep i",
+        "amenophis i"
+      ],
+      "died": [
+        -1504
+      ],
+      "who": "the second king of the Eighteenth Dynasty, builder of the calcite bark shrine",
+      "events": [
+        [
+          -1525,
+          "became king (Shaw)"
+        ]
+      ]
+    },
+    {
+      "id": "pierre-lacau",
+      "name": "Pierre Lacau",
+      "names": [
+        "lacau",
+        "pierre lacau"
+      ],
+      "born": [
+        1873
+      ],
+      "died": [
+        1963
+      ],
+      "who": "the Director General of the Egyptian Antiquities Service who ordered the emptying of the Third Pylon and later co-authored the Red and White Chapel publications",
+      "events": [
+        [
+          1956,
+          "published the White Chapel with Chevrier (first volume)"
+        ],
+        [
+          1977,
+          "the first Red Chapel volume appeared posthumously with Chevrier"
+        ]
+      ]
+    },
+    {
+      "id": "hatshepsut",
+      "name": "Hatshepsut",
+      "names": [
+        "hatshepsut",
+        "hatchepsout"
+      ],
+      "who": "the queen who ruled as pharaoh, Thutmose I's daughter, who raised the tallest standing obelisk in Egypt",
+      "events": [
+        [
+          -1479,
+          "became regent for the child Thutmose III (Shaw gives 1479 as his accession)"
+        ],
+        [
+          -1473,
+          "became king (Shaw)"
+        ],
+        [
+          -1464,
+          "had her obelisks raised in her year 16 (about, counted from 1479)"
+        ],
+        [
+          -1458,
+          "died (Shaw)"
+        ],
+        [
+          -1457,
+          "had the Red Chapel begun or finished (about her year 17)"
+        ]
+      ],
+      "died": [
+        -1458
+      ]
+    },
+    {
+      "id": "senusret-i",
+      "name": "Senusret I",
+      "names": [
+        "senusret",
+        "sesostris",
+        "senwosret",
+        "senusret i"
+      ],
+      "died": [
+        -1920
+      ],
+      "who": "the Twelfth Dynasty king (reigned about 1965 to 1920 BC in Shaw's chronology; 1971 to 1926 BC in others) who built the first large stone temple of Amun-Ra at Karnak",
+      "events": [
+        [
+          -1965,
+          "became king (Shaw)"
+        ],
+        [
+          -1950,
+          "built a limestone temple to Amun-Ra at Karnak (about)"
+        ],
+        [
+          -1940,
+          "had the White Chapel made (about)"
+        ],
+        [
+          -1920,
+          "died (Shaw)"
+        ]
+      ]
+    }
+  ]
+}

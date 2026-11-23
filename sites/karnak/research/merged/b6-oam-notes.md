@@ -48,24 +48,6 @@ The Open Air Museum is in the north-west corner of the precinct. It holds monume
 Access: the ministry announced finished works in August 2023 (sandstone paving, benches, signs, visitor paths). A French-Egyptian project of 2024 to 2026 is renewing the route and adding Amenhotep I monuments, so parts may be fenced off. The 2024 price list gives Karnak at 600 EGP (foreign adult) from 06:00 to 17:00, and recent visitors say the museum is included; older guides charged extra. It was quiet in recent reviews.
 Sources: Sullivan, UEE 2010; Digital Karnak; Ministry of Tourism and Antiquities ticket list 2024; Archaeological Paths, 8 August 2023; Wikipedia, Karnak Open Air Museum (pointer); visitor-scores.md.
 
-## Senusret I
-Kind: person
-About: senusret-i, white-chapel
-Senusret I (also Senwosret, Sesostris) was a king of the Twelfth Dynasty, who ruled about 1965 to 1920 BC (Shaw). Digital Karnak uses 1971 to 1926 BC, a different chronology. Sullivan places him among the first kings to build in stone for Amun-Ra at Karnak. His works include the Middle Kingdom temple, a black granite naos, a limestone bark shrine with side windows, a sandstone colonnade, and the White Chapel. Grimal calls him the essential reference: later kings copied his monuments. Amenhotep I built a copy of the White Chapel, and fragments of that copy were found in the Third Pylon and elsewhere. A source of weak quality says the White Chapel marks a thirtieth-year jubilee; Digital Karnak says only that it records his heb-sed festival.
-Sources: Sullivan, UEE 2010; Digital Karnak; Grimal, Collège de France course summary (2011); Shaw (ed.) 2000.
-
-## Hatshepsut
-Kind: person
-About: hatshepsut, red-chapel
-Hatshepsut was the daughter of Thutmose I and ruled as king from about 1473 to 1458 BC, first beside her nephew Thutmose III, who was a child. At Karnak she raised obelisks (one still stands), built the Eighth Pylon, the Wadjet Hall and her Palace of Maat, removed much of Amenhotep I's forecourt, and commissioned the Red Chapel. Her obelisks were dedicated for her jubilee in her year 16. Her image was attacked late in Thutmose III's reign; see "Why Hatshepsut's figures were erased".
-Sources: Sullivan, UEE 2010; Digital Karnak, Red Chapel page; Shaw (ed.) 2000.
-
-## Thutmose III
-Kind: person
-About: thutmose-iii, red-chapel
-Thutmose III became king about 1479 BC as a child, ruled with Hatshepsut until she died in about 1458 BC, then alone to about 1425 BC. At Karnak he finished part of the Red Chapel's decoration, then dismantled it and set a red granite shrine, dated to his year 45 (about 1435 BC), in the Palace of Maat. He reused its two black granite doorways. His annals, covering campaigns from his year 22 to 42, were carved on new walls there, and figures of Hatshepsut under the walls were chiselled out. The attack on her image came after year 42. He also built the Akhmenu and walled in her obelisks (possibly an idea of hers, says Larché).
-Sources: Sullivan, UEE 2010; Digital Karnak; Shaw (ed.) 2000.
-
 ## Henri Chevrier
 Kind: person
 About: henri-chevrier, white-chapel-rebuilt, red-chapel

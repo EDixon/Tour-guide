@@ -134,257 +134,339 @@
    "year": -2100,
    "label": "Intef II's column names Amun-Ra at Karnak",
    "src": [
-    4,
-    13
-   ]
+    4
+   ],
+   "more": "An eight-sided sandstone column inscribed by Intef II, found reused at Karnak, is the earliest firm evidence of a temple of Amun-Ra here. It suggests a small mud-brick shrine with a columned portico. Intef II reigned about 2112 to 2063 BC."
   },
   {
    "year": -1950,
-   "label": "Senusret I builds the first stone temple",
+   "label": "Senusret I builds the first large stone temple",
    "src": [
     4,
-    6
+    58,
+    17
    ],
-   "stop": "mkcourt"
+   "stop": "mkcourt",
+   "more": "Senusret I (reigned about 1965 to 1920 BC) built a limestone temple for Amun-Ra, about 38 metres square, with a portico of Osiris pillars and red granite doorsills. It replaced smaller Eleventh Dynasty buildings, so it was the first large stone temple, not the first."
   },
   {
    "year": -1940,
    "label": "Senusret I's White Chapel",
    "src": [
     3,
-    6
+    4,
+    81
    ],
-   "stop": "whitechapel"
+   "stop": "whitechapel",
+   "more": "A small limestone pavilion for Senusret I, tied to his jubilee festival; its base lists Egypt's provinces. More than five centuries later Amenhotep III pulled it down and packed the blocks into the Third Pylon, where they were found in 1927."
   },
   {
    "year": -1500,
    "label": "Thutmose I's pylons and obelisks",
    "src": [
-    3,
-    6
+    43,
+    45,
+    34,
+    16
    ],
-   "stop": "obelisks"
-  },
-  {
-   "year": -1457,
-   "label": "Hatshepsut's obelisks raised",
-   "src": [
-    3,
-    6
-   ],
-   "stop": "obelisks"
+   "stop": "obelisks",
+   "more": "Thutmose I (reigned about 1504 to 1492 BC) built the Fourth and Fifth Pylons and a hall between them, and raised a pair of red granite obelisks before the Fourth Pylon, then the temple's west gate. One, about 21 metres tall, still stands. He was Hatshepsut's father."
   },
   {
    "year": -1470,
    "label": "Hatshepsut's Red Chapel",
    "src": [
     3,
-    6
+    4,
+    77
    ],
-   "stop": "redchapel"
+   "stop": "redchapel",
+   "more": "Hatshepsut's two-roomed shrine of red quartzite for Amun-Ra's sacred boat, begun or finished about her year 17 (about 1457 BC; sources differ). Thutmose III took it down. Her figures were erased after his year 42, and Amenhotep III buried the blocks in the Third Pylon."
+  },
+  {
+   "year": -1464,
+   "label": "Hatshepsut's obelisks raised",
+   "src": [
+    42,
+    44,
+    49,
+    16
+   ],
+   "stop": "obelisks",
+   "more": "Hatshepsut raised two rose granite obelisks in Thutmose I's hall, in her year 16, about 1464 BC by Shaw's count (popular sources say about 1457 BC). Hers still stands, nearly 30 metres tall. Its pair fell, and its top was set upright by the lake in 2022."
   },
   {
    "year": -1456,
    "label": "Thutmose III begins the Akhmenu",
    "src": [
-    3,
-    6
+    4,
+    59,
+    16
    ],
-   "stop": "akhmenu"
+   "stop": "akhmenu",
+   "more": "Thutmose III began the Akhmenu, 'the most glorious of monuments', after his twenty-third year, behind what was then Karnak's east wall. It took about seven years and probably marks his jubilee. It holds the tent-pole hall, Sokar rooms, a sun court and the botanical room."
   },
   {
    "year": -1370,
    "label": "Amenhotep III's Third Pylon and the scarab",
    "src": [
-    3,
-    6
+    46,
+    48,
+    17,
+    16
    ],
-   "stop": "scarab"
+   "stop": "scarab",
+   "more": "Amenhotep III (reigned about 1390 to 1352 BC) tore down earlier monuments west of the Fourth Pylon and built the Third Pylon from their stones. His scarab stood at his temple across the Nile and was probably moved here by Taharqa, about 690 to 664 BC."
   },
   {
    "year": -1350,
    "label": "Akhenaten turns against Amun",
    "src": [
     4,
-    6
-   ]
+    17
+   ],
+   "more": "In his fifth year, about 1348 BC, Akhenaten took his new name and attacked Amun. Amun's name was cut out of temples, wealth went to his new city Amarna, and the Amun temple was closed. He built the Gempaaten in east Karnak."
   },
   {
-   "year": -1330,
+   "year": -1333,
    "label": "Tutankhamun restores the temples",
    "src": [
+    109,
     4,
-    6
-   ]
+    16
+   ],
+   "more": "After Akhenaten's death Tutankhamun reopened the temples. His Restoration Stela, found at Karnak in 1905, says they had fallen into ruin. It is dated year 4 by some scholars and year 1 by others, so about 1335 to 1332 BC."
   },
   {
    "year": -1294,
    "label": "Sety I builds the Hypostyle Hall",
    "src": [
+    3,
+    4,
     5,
-    12
+    16
    ],
-   "stop": "hypostyle"
+   "stop": "hypostyle",
+   "more": "Sety I began the hall soon after taking the throne, setting 134 sandstone columns between Horemheb's Second Pylon and Amenhotep III's Third. Ramesses II finished the decoration. Carvings on the clerestory, made while the building ramps stood, bear Sety's name, so he, not Horemheb or Ramesses I, built it."
   },
   {
    "year": -1290,
    "label": "Sety I's battle reliefs",
    "src": [
-    5
+    5,
+    3,
+    40
    ],
-   "stop": "northwall"
+   "stop": "northwall",
+   "more": "On the hall's north outer wall Sety I's sculptors carved his wars in Canaan, Lebanon, Syria and Libya, with the king charging alone in his chariot. The east half shows his first-year campaign; the west half later wars, including Kadesh and the Hittites. The date is about 1290 BC, within his reign."
   },
   {
    "year": -1259,
    "label": "Peace treaty with the Hittites recorded",
    "src": [
-    4,
-    6
+    94,
+    95,
+    96,
+    16
    ],
-   "stop": "cachette"
+   "stop": "cachette",
+   "more": "In Ramesses II's Year 21 (about 1259 BC, Shaw) Egypt and the Hittite king Hattusili III agreed not to attack each other and to help each other against a third power. The Egyptian text is carved on the Cachette Court wall and at the Ramesseum; Hittite tablets were found at Hattusa."
   },
   {
    "year": -1184,
    "label": "Ramesses III's temple in the forecourt",
    "src": [
     3,
-    6
+    17,
+    16
    ],
-   "stop": "ram3"
+   "stop": "ram3",
+   "more": "Ramesses III (reigned about 1184 to 1153 BC) built a complete small temple as a bark shrine, a station for the portable boats of Amun, Mut and Khonsu on festival days. Shoshenq I's court later enclosed its front part."
   },
   {
    "year": -1170,
    "label": "Temple of Khonsu begun",
    "src": [
-    3,
-    6
+    99,
+    97,
+    16
    ],
-   "stop": "khonsu"
+   "stop": "khonsu",
+   "more": "Ramesses III (reigned 1184 to 1153 BC) began the temple of the moon god Khonsu, reusing older blocks. The exact year is unknown, so 1170 is only a mid-reign marker. Ramesses XI and Herihor built the front, and Taharqa and the Ptolemies added to it."
   },
   {
    "year": -925,
    "label": "Shoshenq I's campaign relief",
    "src": [
     3,
-    6
+    17,
+    21,
+    20
    ],
-   "stop": "bubastite"
+   "stop": "bubastite",
+   "more": "Shoshenq I carved his campaign into Canaan beside the south-east doorway of his court: the king smiting enemies above rings naming about 156 towns. He is usually identified with the Bible's Shishak, though Jerusalem is missing from the surviving list."
   },
   {
    "year": -690,
    "label": "Taharqa's kiosk",
    "src": [
     3,
-    6
+    17,
+    22
    ],
-   "stop": "taharqa"
+   "stop": "taharqa",
+   "more": "Taharqa, a Kushite king from Nubia, raised a kiosk of ten papyrus columns, each about 21 metres tall, in Shoshenq I's court. Only one column stands. Its purpose is unclear, and it was probably never roofed."
   },
   {
    "year": -664,
    "label": "Assyrians sack Thebes",
    "src": [
     4,
-    6
-   ]
+    16
+   ],
+   "more": "Ashurbanipal's Assyrian army sacked Thebes and ended Kushite rule. Temples were reportedly plundered, but little damage has been found at the Amun-Ra temple itself. Shaw's chronology gives 664 BC; some books say 663."
   },
   {
    "year": -370,
    "label": "Nectanebo I's walls and the First Pylon",
    "src": [
-    3,
-    6
+    25,
+    29,
+    4
    ],
-   "stop": "pylon1"
+   "stop": "pylon1",
+   "more": "Nectanebo I (reigned 380 to 362 BC) ringed the Amun-Ra temple with a mud-brick wall about 21 metres high and began the First Pylon as its grand western gate. He never finished it, and the builders' mud-brick ramp still stands behind it."
   },
   {
    "year": -323,
    "label": "Granite sanctuary for Philip Arrhidaeus",
    "src": [
-    3,
-    6
+    47,
+    17,
+    16
    ],
-   "stop": "sanctuary"
+   "stop": "sanctuary",
+   "more": "After Alexander the Great died, his half-brother Philip Arrhidaeus was king in name. His name is on the granite shrine for Amun's boat, a copy of Thutmose III's, dated about 323 to 317 BC. One scholar suggests Nectanebo II made it and Philip only had it carved."
   },
   {
    "year": 357,
    "label": "Lateran obelisk shipped to Rome",
    "src": [
-    6,
-    7
+    4,
+    68,
+    69,
+    "gk"
    ],
-   "stop": "east"
+   "stop": "east",
+   "more": "The lone obelisk of east Karnak, begun by Thutmose III and raised by Thutmose IV, was taken to Alexandria in the fourth century. Constantius II had it set up in Rome's Circus Maximus in 357. It was re-erected at the Lateran in 1588."
   },
   {
    "year": 400,
    "label": "Temple closed; churches in the ruins",
    "src": [
     4,
-    6
+    6,
+    71,
+    73,
+    "gk"
    ],
-   "stop": "akhmenu"
+   "stop": "akhmenu",
+   "more": "Pagan worship was banned across the Roman empire in the late fourth century and Karnak was largely abandoned. Christians built churches among the ruins, the best known in the Akhmenu's central hall, where painted saints survive. Exact dates are uncertain."
   },
   {
    "year": 1799,
    "label": "Napoleon's scholars record Karnak",
    "src": [
-    11
-   ]
+    108,
+    17
+   ],
+   "more": "Napoleon's invasion of Egypt in 1798 brought scholars and artists. Denon reached Upper Egypt with the French army in winter 1798 to 1799, and his drawings of Karnak were among the first accurate European records. The Description de l'Égypte followed from 1809."
   },
   {
    "year": 1858,
    "label": "Mariette's Antiquities Service takes charge",
    "src": [
-    11
-   ]
+    110,
+    107
+   ],
+   "more": "The viceroy Said Pasha appointed the French Egyptologist Auguste Mariette to head a new antiquities service. It began Egypt's state control of digging and sites, including Karnak. It was renamed in 1971, 1994, 2011 and 2019."
   },
   {
    "year": 1899,
    "label": "Eleven Hypostyle columns collapse",
    "src": [
     5,
-    12
+    38
+   ],
+   "stop": "hypostyle",
+   "more": "On 3 October 1899 eleven columns of the northern wing fell in a chain reaction, and two struck the Second Pylon. Foundations of small reused blocks, crumbling in salty groundwater, could not carry the weight. Georges Legrain took the damaged columns apart and rebuilt the northern half on new foundations, finishing in May 1902."
+  },
+  {
+   "year": 1902,
+   "label": "Legrain finishes rebuilding the northern Hypostyle columns",
+   "more": "Georges Legrain recorded the rebuilding of the northern half as complete on 15 May 1902, about two and a half years after the collapse. The columns stand on new foundations, and the southern wing was underpinned with brick while it stood.",
+   "src": [
+    41,
+    5
    ],
    "stop": "hypostyle"
   },
   {
    "year": 1903,
-   "label": "Cachette of statues found (to 1905)",
+   "label": "Cachette of statues found (1903 to 1907)",
    "src": [
-    11,
-    6
+    93,
+    89
    ],
-   "stop": "cachette"
+   "stop": "cachette",
+   "more": "In December 1903 Georges Legrain began finding hundreds of statues buried in a water-filled pit in the Cachette Court, probably in Greek times. His team lifted the water out by shaduf. The IFAO's study dates the work to four seasons ending in July 1907."
   },
   {
    "year": 1927,
    "label": "White Chapel found in the Third Pylon",
    "src": [
-    3,
-    6
+    78,
+    79
    ],
-   "stop": "whitechapel"
+   "stop": "whitechapel",
+   "more": "Henri Chevrier, emptying the Third Pylon, found the first piece, a limestone lintel, on 16 November 1927. More blocks followed over the next ten years. He rebuilt the chapel in the winter of 1937 to 1938, and it now stands in the Open Air Museum."
   },
   {
    "year": 1967,
    "label": "Franco-Egyptian centre (CFEETK) founded",
    "src": [
+    4,
     2
-   ]
+   ],
+   "more": "France's CNRS and Egypt's antiquities authority set up the Centre Franco-Égyptien d'Étude des Temples de Karnak to study, record and restore the temples. It publishes the Cahiers de Karnak."
   },
   {
    "year": 1979,
    "label": "Ancient Thebes made a World Heritage Site",
    "src": [
     15
-   ]
+   ],
+   "more": "UNESCO inscribed Ancient Thebes with its Necropolis (number 87) in 1979, under criteria (i), (iii) and (vi). It covers Karnak and Luxor on the east bank and the necropolis on the west."
   },
   {
    "year": 2021,
    "label": "Avenue of Sphinxes reopens to Luxor",
    "src": [
-    14
+    14,
+    35,
+    27
    ],
-   "stop": "rams"
+   "stop": "rams",
+   "more": "On 25 November 2021 Egypt held a televised ceremony to reopen the restored avenue of about 2.7 kilometres linking Karnak and Luxor Temple, after decades of excavation. Most of its sphinxes belong to Nectanebo I. It was the processional road of the Opet festival."
+  },
+  {
+   "year": 2021,
+   "label": "Cleaning of the Hypostyle columns begins",
+   "more": "In July 2021 Egyptian conservators began cleaning the hall's 134 columns, starting with the twelve central ones. Removing sand, dust and bird debris revealed colours and carved detail. In January 2024 the Supreme Council of Antiquities said 95 per cent were done.",
+   "src": [
+    39
+   ],
+   "stop": "hypostyle"
   }
  ],
  "waypoints": [
@@ -3477,7 +3559,119 @@
    "attnBoost": 0.15,
    "look": "The whole story in a few points, to put every stop in context. Also on the Timeline tab any time.",
    "kids": [],
-   "bullets": []
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Karnak is the temple of Amun-Ra, king of the gods, in Thebes, modern Luxor. Kings kept building it for about two thousand years, which is why it is a maze rather than one design.",
+     "imp": 5,
+     "tags": {
+      "history": 0.8,
+      "architecture": 0.5
+     },
+     "src": [
+      4,
+      3,
+      16
+     ]
+    },
+    {
+     "id": 2,
+     "t": "The first firm evidence is a sandstone column of King Intef II, about 2100 BC, naming Amun-Ra. Before that, no temple of Amun seems to have stood here.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.3
+     },
+     "src": [
+      4
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "Karnak began on a sandy island between Nile channels, and it grew westward as the river moved west. The First Pylon now stands on ground the river gave up.",
+     "imp": 4,
+     "tags": {
+      "physics": 0.7,
+      "views": 0.3,
+      "history": 0.4
+     },
+     "src": [
+      8,
+      23
+     ],
+     "needs": 1
+    },
+    {
+     "id": 4,
+     "t": "Most of what you see was added in the New Kingdom, from about 1500 to 1100 BC: obelisks, the Great Hypostyle Hall, pylons. Kings each added to the axis, from the Fourth Pylon outward.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.6,
+      "architecture": 0.6
+     },
+     "src": [
+      4,
+      3
+     ],
+     "verify": true
+    },
+    {
+     "id": 5,
+     "t": "The god was rich. Papyrus Harris I, written for Ramesses III, lists Amun's gifts, and summaries say his temples held most of Egypt's temple land. The priests grew powerful.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "people": 0.4
+     },
+     "src": [
+      106
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "About 1348 BC Akhenaten cut Amun's name out of temples and moved to Amarna. His successor Tutankhamun restored the temples, and Horemheb took Akhenaten's temple at Karnak down for fill.",
+     "imp": 4,
+     "tags": {
+      "history": 0.9,
+      "people": 0.7
+     },
+     "src": [
+      4,
+      17,
+      109
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Later came Libyan, Kushite and Assyrian rulers, who sacked Thebes in 664 BC. Then Persians, Ptolemies and Romans. Building stopped, and Christians later used the Akhmenu as a church.",
+     "imp": 3,
+     "tags": {
+      "history": 0.9
+     },
+     "src": [
+      4,
+      17
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Mariette's Antiquities Service took charge in 1858. Since 1967 French and Egyptian teams, the CFEETK, have studied and restored Karnak. UNESCO listed ancient Thebes in 1979.",
+     "imp": 3,
+     "tags": {
+      "history": 0.6,
+      "engineering": 0.3
+     },
+     "src": [
+      110,
+      15,
+      4
+     ]
+    }
+   ],
+   "note": "The end of worship at Karnak is undated in the sources, so the guide says only that it ended in the fourth or fifth century AD.",
+   "popular": 0
   },
   {
    "id": "quay",
@@ -3488,15 +3682,131 @@
     25.719399,
     32.656058
    ],
-   "date": -1200,
-   "dateLabel": "Ramesside (the obelisk of Sety II, about 1200–1194 BC)",
+   "date": -945,
+   "dateLabel": "about 945 BC (quay begun under Shoshenq I); Sety II's obelisk about 1200–1194 BC",
    "era": "ramesside",
    "dwell": 150,
    "wow": 2,
-   "look": "The stone platform at the western end of the temple, where boats once moored; the small obelisk is Sety II's.",
-   "note": "Open ground, no shade.",
-   "kids": [],
-   "bullets": []
+   "look": "The stone landing platform (the tribune) at the western end of the temple, with Sety II's small obelisk on it. The ram avenue runs east from here to the First Pylon.",
+   "note": "Open ground, no shade. Recent photographs (March 2024, December 2025) show the obelisk and platform reachable from the avenue, but it may be roped off; if so, see the obelisk and platform from the start of the ram avenue.",
+   "kids": [
+    {
+     "t": "Find the little pointed stone tower (an obelisk) standing on the old quay. Can you point to the top?",
+     "photo": "sety-ii-obelisk-kids"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This stone platform was the temple's harbour front. Boats carrying Amun's statue once tied up here, and the Nile flowed right up to the quay. Today the river is far away.",
+     "imp": 5,
+     "tags": {
+      "physics": 0.5,
+      "history": 0.4,
+      "views": 0.3
+     },
+     "src": [
+      4,
+      24
+     ]
+    },
+    {
+     "id": 2,
+     "t": "Look for the little stone obelisk on the platform. It was carved for Sety II about 1200 BC, is only about 3.5 metres tall, and was probably one of a pair.",
+     "imp": 3,
+     "tags": {
+      "history": 0.3,
+      "architecture": 0.3,
+      "art": 0.2
+     },
+     "src": [
+      37,
+      "gk"
+     ],
+     "verify": true,
+     "photo": "sety-ii-obelisk"
+    },
+    {
+     "id": 3,
+     "t": "The stone wall that held back the river here was begun about 945 BC, under Shoshenq I, and repaired into the fourth century BC. A stretch 3.5 metres high lies south of this quay.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.9,
+      "history": 0.4
+     },
+     "src": [
+      4
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Karnak began on a river island. Over centuries the channels beside it silted up and the main Nile moved west, and each strip of new dry land let the temple grow outwards.",
+     "imp": 4,
+     "tags": {
+      "physics": 0.8,
+      "history": 0.3,
+      "engineering": 0.3
+     },
+     "src": [
+      8,
+      4,
+      23
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Scientists drilled a 25 metre borehole in front of the First Pylon. About 18 metres of it is Nile mud, sand and pottery, laid down from about 1450 BC onwards.",
+     "imp": 3,
+     "tags": {
+      "physics": 0.6,
+      "engineering": 0.4
+     },
+     "src": [
+      24
+     ],
+     "needs": 4
+    },
+    {
+     "id": 6,
+     "t": "Kings of the Libyan age and later carved the height of each year's Nile flood into the quay, dated by reign. Many are worn away, but they are valuable records of past floods.",
+     "imp": 3,
+     "tags": {
+      "physics": 0.7,
+      "history": 0.4
+     },
+     "src": [
+      36
+     ],
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "South of the quay, the Kushite king Taharqa built a paved stone ramp that ran down into the river. Texts inside it show it was used for water rituals at the New Year.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.4,
+      "gods": 0.3,
+      "history": 0.3
+     },
+     "src": [
+      4
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Where the First Pylon now stands, the king Hakoris built a small boat chapel with an extra wide west door, so the god's boat could be lifted from the river and carried straight in.",
+     "imp": 2,
+     "tags": {
+      "gods": 0.4,
+      "engineering": 0.4
+     },
+     "src": [
+      4
+     ]
+    }
+   ],
+   "photo": "quay-landing-stage",
+   "popular": 0
   },
   {
    "id": "rams",
@@ -3508,15 +3818,123 @@
     32.6563
    ],
    "date": -1279,
-   "dateLabel": "set out about 1279–1213 BC, rams re-inscribed later",
+   "dateLabel": "probably carved about 1400–1352 BC; inscribed for Ramesses II (1279–1213 BC) and later Pinedjem I, who may have moved them here",
    "era": "ramesside",
    "dwell": 180,
    "wow": 4,
    "mustSee": true,
-   "look": "The double row of ram-headed sphinxes leading to the First Pylon; each holds a small figure of the king between its front paws.",
-   "note": "Usually busy with groups between 09:00 and 11:00.",
-   "kids": [],
-   "bullets": []
+   "look": "The double row of ram-headed sphinxes leading to the First Pylon; each has a small figure of the king under its chin.",
+   "note": "Usually busy with groups between 09:00 and 11:00. The avenue is the normal walk in and is open; ropes keep visitors off the pedestals.",
+   "kids": [
+    {
+     "t": "Find a ram with a tiny king standing under its chin!",
+     "photo": "ram-chin-statuette-kids"
+    },
+    {
+     "t": "Count the rams along one side of the path, pointing to each one: one, two, three..."
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Forty ram-headed sphinxes line this avenue to the First Pylon. The ram was Amun's sacred animal, so each statue is a ram's head on a lion's body, guarding the way to his temple.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.6,
+      "art": 0.3,
+      "history": 0.2
+     },
+     "src": [
+      26,
+      27
+     ]
+    },
+    {
+     "id": 2,
+     "t": "Look under a ram's chin: the tiny standing figure is Ramesses II, shown as Osiris, with his titles carved on it. The ram shelters the king, as Amun protects him.",
+     "imp": 4,
+     "tags": {
+      "gods": 0.4,
+      "art": 0.4,
+      "people": 0.3
+     },
+     "src": [
+      4,
+      26,
+      "gk"
+     ],
+     "verify": true,
+     "photo": "ram-chin-statuette"
+    },
+    {
+     "id": 3,
+     "t": "Whose rams are they? Tradition says Ramesses II. But their style looks older, Thutmose IV or Amenhotep III. One theory says Ramesses II took them over at Luxor and Pinedjem I moved them here.",
+     "imp": 4,
+     "tags": {
+      "history": 0.5,
+      "people": 0.4
+     },
+     "src": [
+      4
+     ],
+     "needs": 2
+    },
+    {
+     "id": 4,
+     "t": "They have been shuffled several times. Pinedjem is thought to have set out a hundred or more, Shoshenq I moved some inside his great court, and the Romans put those outside in today's positions.",
+     "imp": 3,
+     "tags": {
+      "history": 0.4
+     },
+     "src": [
+      4,
+      26
+     ],
+     "needs": 3
+    },
+    {
+     "id": 5,
+     "t": "This was a landing road. The avenue ran from the old temple gate, the Second Pylon, down to the quay, so a procession from a boat could walk between the rams straight to the temple.",
+     "imp": 3,
+     "tags": {
+      "history": 0.3,
+      "gods": 0.4,
+      "views": 0.2
+     },
+     "src": [
+      26,
+      4
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Do not confuse this with the long Avenue of Sphinxes to Luxor Temple, about 2.7 kilometres, with human-headed sphinxes of Nectanebo I along most of it. It reopened on 25 November 2021.",
+     "imp": 3,
+     "tags": {
+      "history": 0.5,
+      "views": 0.2
+     },
+     "src": [
+      14,
+      27,
+      35
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Each sphinx is carved from sandstone and is about 3.7 metres long. A few still keep traces of their original paint.",
+     "imp": 1,
+     "tags": {
+      "art": 0.3,
+      "engineering": 0.2
+     },
+     "src": [
+      26
+     ]
+    }
+   ],
+   "photo": "ram-avenue-view",
+   "popular": 4
   },
   {
    "id": "pylon1",
@@ -3528,16 +3946,139 @@
     32.6565
    ],
    "approx": true,
-   "date": -360,
-   "dateLabel": "about 380–343 BC (Thirtieth Dynasty), never finished",
+   "date": -371,
+   "dateLabel": "about 380–362 BC (Nectanebo I, Thirtieth Dynasty), never finished",
    "era": "late",
    "dwell": 150,
    "wow": 5,
    "photoSpot": true,
-   "look": "The great gateway, 113 m wide, seen from the rams. Its stone faces were never dressed smooth.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "The great gateway, about 113 m wide, seen from the ram avenue. Its stone front was never decorated, and the top edge is still unfinished.",
+   "note": "Open, and part of the walk in. The front faces west, so it is in shade in the morning; the best light on it is in the afternoon.",
+   "kids": [
+    {
+     "t": "Find the square holes high up in the big wall, much higher than you can reach!",
+     "photo": "pylon-square-holes"
+    },
+    {
+     "t": "Find the giant doorway between the two towers and wave hello to the temple!"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "The First Pylon is the largest pylon in Egypt: about 113 metres wide, and never finished. Nectanebo I began it around 380 BC as the grand new western entrance to the whole temple.",
+     "imp": 5,
+     "tags": {
+      "architecture": 0.6,
+      "engineering": 0.6,
+      "history": 0.3,
+      "views": 0.5
+     },
+     "src": [
+      25,
+      4
+     ]
+    },
+    {
+     "id": 2,
+     "t": "The towers show how far the work got. The south tower has 45 courses of stone, about 31.7 metres; the north tower only 32, about 21.7 metres. Finished, they would reach 38 to 40.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "architecture": 0.3
+     },
+     "src": [
+      25
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "The top is ragged and the front is bare because builders raised a pylon first, using ramps, and dressed and carved it afterwards from the top down. This job stopped before that stage.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.9,
+      "art": 0.2
+     },
+     "src": [
+      32,
+      25,
+      "gk"
+     ],
+     "verify": true,
+     "needs": 1
+    },
+    {
+     "id": 4,
+     "t": "Nectanebo also ringed the Amun-Ra temple with a mud-brick wall about 21 metres high and 12 thick. Digital Karnak suggests the new gate and wall may also have been meant to guard against foreign invaders.",
+     "imp": 3,
+     "tags": {
+      "history": 0.6,
+      "engineering": 0.5
+     },
+     "src": [
+      29,
+      25
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Nectanebo pulled down the west wall of Shoshenq I's court, from about 945 BC, but kept its unfinished central gateway, probably Shoshenq's, 27.5 metres high, and built the pylon around it.",
+     "imp": 3,
+     "tags": {
+      "history": 0.4,
+      "architecture": 0.4,
+      "engineering": 0.3
+     },
+     "src": [
+      4,
+      25
+     ],
+     "needs": 1
+    },
+    {
+     "id": 6,
+     "t": "Look for the tall vertical slots in the front of each tower. Huge wooden flagstaffs with cloth banners stood in notches like these, held to the stone with clamps.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.5,
+      "engineering": 0.4,
+      "gods": 0.2
+     },
+     "src": [
+      25
+     ],
+     "photo": "pylon-flagstaff-slots"
+    },
+    {
+     "id": 7,
+     "t": "At about 08:30 the front of the pylon faces away from the sun, so expect it in shade and flat light. The sun lights the front in the afternoon.",
+     "imp": 2,
+     "tags": {
+      "space": 0.5,
+      "physics": 0.4,
+      "views": 0.5
+     },
+     "src": [
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 8,
+     "t": "The central doorway is 7.4 metres wide. A smaller doorway, 10.85 metres high, was fitted into it later, with wooden doors to control who entered the temple.",
+     "imp": 2,
+     "tags": {
+      "architecture": 0.5,
+      "engineering": 0.2
+     },
+     "src": [
+      25
+     ]
+    }
+   ],
+   "photo": "first-pylon-facade",
+   "popular": 3
   },
   {
    "id": "ramp",
@@ -3554,10 +4095,99 @@
    "era": "late",
    "dwell": 150,
    "wow": 2,
-   "look": "Once through the pylon, turn right: the mud-brick slope against the back of the south tower is what is left of the builders' ramp.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "Once through the pylon, turn right: the mud-brick slope against the inside of the south tower is what is left of the builders' ramp.",
+   "note": "In the first court, free to enter on the main ticket. Look from the path: the ramp is a fragile heap and is usually fenced, so it may not be possible to walk up to it; it is large enough to see well from a few metres away.",
+   "kids": [
+    {
+     "t": "Find the big heap of mud bricks leaning on the wall. What colour is it?",
+     "photo": "brick-ramp-kids"
+    },
+    {
+     "t": "Spot the little rams lined up along the court wall.",
+     "photo": "court-rams"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "That sloping heap of mud brick against the pylon is a builders' ramp, left when work stopped. It shows how Egyptians lifted heavy stone, and proves this gateway was never finished.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "history": 0.2
+     },
+     "src": [
+      25,
+      30,
+      32
+     ],
+     "photo": "brick-ramp"
+    },
+    {
+     "id": 2,
+     "t": "The method was simple: lay a course of stone, then raise the ramp and the earth packing to match. Blocks were hauled up the slope, layer by layer, to the top.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.4
+     },
+     "src": [
+      32
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "Normally the ramps came down once the building was finished, and masons smoothed the walls on the way down. Here they were never cleared, so the method is frozen in time.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.9
+     },
+     "src": [
+      32,
+      25
+     ],
+     "needs": 2
+    },
+    {
+     "id": 4,
+     "t": "To make room for ramps like this, Nectanebo pulled down part of the court's side walls and columns at the west end. Some column drums were rebuilt and left rough, undressed.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.5,
+      "history": 0.3
+     },
+     "src": [
+      28
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Mud brick was Egypt's everyday building material. The great wall Nectanebo built around the whole temple, 21 metres high, was made of mud brick and sandstone too.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.5,
+      "history": 0.2
+     },
+     "src": [
+      29
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Digital Karnak's 3D model shows the unfinished upper parts of this pylon as ghostly transparent blocks, so you can compare what stands with what was planned.",
+     "imp": 1,
+     "tags": {
+      "computing": 0.9,
+      "engineering": 0.3
+     },
+     "src": [
+      25
+     ]
+    }
+   ],
+   "photo": "brick-ramp-look",
+   "popular": 1
   },
   {
    "id": "sety2",
@@ -3573,10 +4203,124 @@
    "era": "ramesside",
    "dwell": 90,
    "wow": 2,
-   "look": "The small three-roomed shrine on the left (north) side of the forecourt, for the boats of Amun, Mut and Khonsu.",
-   "note": "The site board calls these the \"Chapels of Sety I\"; the scholarly sources give Sety II.",
-   "kids": [],
-   "bullets": []
+   "look": "The low, flat-topped stone building with three doorways side by side on the left (north) side of the court. Stand in the middle of the court to see all three together.",
+   "note": "In the open court beside the main route. The doorways may be roped off; if so, see it from the court, where all three doors face you.",
+   "kids": [
+    {
+     "t": "Count the doorways of the little shrine: one for each god's boat. How many can you find?",
+     "photo": "sety-ii-shrine-front"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This small three-roomed shrine was built by Sety II, about 1200 to 1194 BC, as a resting place for the portable boats of Amun, Mut and Khonsu on festival days.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.8,
+      "architecture": 0.4
+     },
+     "src": [
+      3,
+      17,
+      16
+     ],
+     "photo": "sety-ii-shrine-front"
+    },
+    {
+     "id": 2,
+     "t": "The gods travelled in boat-shaped shrines called barks, carried on priests' shoulders. Digital Karnak gives the west room to Mut, the middle to Amun and the east to Khonsu.",
+     "imp": 4,
+     "tags": {
+      "gods": 1,
+      "history": 0.3
+     },
+     "src": [
+      3,
+      "gk"
+     ],
+     "needs": 1,
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "The site board calls these the Chapels of Sety I. Scholars, including Chevrier who published the shrine in 1940, give it to Sety II. Sety I built the Hypostyle Hall ahead.",
+     "imp": 3,
+     "tags": {
+      "history": 0.6,
+      "people": 0.3
+     },
+     "src": [
+      9,
+      3
+     ]
+    },
+    {
+     "id": 4,
+     "t": "It stands almost complete, which is rare here. The foundations, door sills and first course are hard quartzite, the rest sandstone. One corner and the west wall were left undressed.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "architecture": 0.4
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 5,
+     "t": "When built it stood outside the temple's west entrance, in front of the Second Pylon. About 250 years later Shoshenq I built the great court around it, so it now sits inside.",
+     "imp": 4,
+     "tags": {
+      "history": 0.7,
+      "architecture": 0.6
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Digital Karnak suggests ordinary Egyptians, kept out of the inner temple, may have gathered here to pray, close to where the gods paused on their journeys.",
+     "imp": 3,
+     "tags": {
+      "people": 0.6,
+      "gods": 0.5
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Look for Sety II himself in the reliefs on the south face and by the entrance, offering to the Theban gods.",
+     "imp": 2,
+     "tags": {
+      "art": 0.7,
+      "engineering": 0.3
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 8,
+     "t": "When Nectanebo I built the First Pylon, about 380 BC, this shrine may have been partly taken down for the work, and was then only partly rebuilt.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      3,
+      17
+     ],
+     "verify": true
+    }
+   ],
+   "photo": "sety-ii-shrine-front",
+   "popular": 0
   },
   {
    "id": "taharqa",
@@ -3592,10 +4336,126 @@
    "era": "late",
    "dwell": 120,
    "wow": 4,
-   "look": "The single tall papyrus column standing alone in the middle of the forecourt, the last of ten.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "The single tall column with a flower-shaped top, alone in the middle of the court. Low stumps and a pale calcite altar around it mark the other nine columns.",
+   "note": "In the open court, on the main route. Nothing to enter, so access is not a concern; the column is visible from anywhere in the court.",
+   "kids": [
+    {
+     "t": "Find the one very tall column standing all alone in the middle, with a flower on top. Wave to it!",
+     "photo": "taharqa-column"
+    },
+    "Find the low stumps on the ground where the other nine columns once stood. Can you hop from one to the next?"
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This lone column is all that stands of Taharqa's kiosk, built between 690 and 664 BC: two rows of five papyrus columns, each about 21 metres tall.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.8,
+      "architecture": 0.6,
+      "views": 0.4
+     },
+     "src": [
+      3,
+      17,
+      16
+     ],
+     "photo": "taharqa-column"
+    },
+    {
+     "id": 2,
+     "t": "Taharqa was a Kushite pharaoh from Nubia, in modern Sudan, of the Twenty-fifth Dynasty. He ruled both lands, and he also built a pyramid at Nuri in Sudan.",
+     "imp": 4,
+     "tags": {
+      "people": 0.9,
+      "history": 0.7
+     },
+     "src": [
+      22,
+      16
+     ],
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "Each column is almost 3 metres across. The gap between the two rows is over 16 metres, too wide for stone roof beams, so scholars think the kiosk was never roofed.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.5
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Stand at the base and look up. Twenty-one metres is roughly a seven-storey building, and the flower-shaped top is an open papyrus bloom.",
+     "imp": 3,
+     "tags": {
+      "views": 0.8,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      "gk"
+     ],
+     "photo": "taharqa-column"
+    },
+    {
+     "id": 5,
+     "t": "Nobody is sure what it was for. A calcite shrine at the centre once held the god's bark, and some scholars link it to a yearly 'union of the disc' rite for Amun-Ra's statue.",
+     "imp": 4,
+     "tags": {
+      "gods": 0.8,
+      "history": 0.4
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Excavation suggests a wooden kiosk stood on this spot first, and the calcite altar probably belonged to it. Taharqa's stone kiosk replaced it.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 7,
+     "t": "More than four centuries later, Ptolemy IV added carvings of nome-gods, the gods of Egypt's regions, to the low screen walls. The pink granite paving may date from then too.",
+     "imp": 2,
+     "tags": {
+      "art": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Taharqa is in the Bible as 'Tirhakah king of Ethiopia' (2 Kings 19:9), who marched against Assyria in 701 BC. But he became king only about 690 BC, so scholars debate how that fits.",
+     "imp": 3,
+     "tags": {
+      "history": 1,
+      "people": 0.6
+     },
+     "src": [
+      22,
+      "gk"
+     ],
+     "verify": true
+    }
+   ],
+   "photo": "taharqa-column",
+   "popular": 2
   },
   {
    "id": "ram3",
@@ -3611,10 +4471,144 @@
    "era": "ramesside",
    "dwell": 240,
    "wow": 4,
-   "look": "The complete small temple cutting into the right (south) side of the forecourt, with statues of the king as Osiris lining its court.",
-   "note": "Partly shaded inside.",
-   "kids": [],
-   "bullets": []
+   "look": "The little temple entered from the right (south) side of the court: two statues beside a small pylon doorway, then a court lined with the king's statues.",
+   "note": "Partly shaded inside. The inner rooms may be gated or roped off; if so, look in from the pylon doorway, where the statue-lined court and the sanctuary doors are in view.",
+   "kids": [
+    {
+     "t": "Count the tall statues of the king standing in rows in the court, with arms crossed on their chests.",
+     "photo": "ramesses-iii-court"
+    },
+    {
+     "t": "Find the two big standing statues beside the doorway of the little pylon.",
+     "photo": "ramesses-iii-entrance"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Ramesses III, who reigned about 1184 to 1153 BC, built this complete small temple as a bark shrine: a way station for the gods' boats on festival days.",
+     "imp": 5,
+     "tags": {
+      "architecture": 0.8,
+      "gods": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      3,
+      17,
+      16
+     ],
+     "photo": "ramesses-iii-entrance"
+    },
+    {
+     "id": 2,
+     "t": "It follows the classic temple plan in miniature: a small pylon, an open court, a little pillared hall, then three sanctuaries, all within about 60 metres.",
+     "imp": 5,
+     "tags": {
+      "architecture": 1,
+      "engineering": 0.5
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 3,
+     "t": "The little pylon is carved with the king smiting his enemies. It had a granite gateway but no flagstaffs. Two standing statues of the king flank the doorway.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      "gk"
+     ],
+     "verify": true,
+     "photo": "ramesses-iii-entrance"
+    },
+    {
+     "id": 4,
+     "t": "Inside the court, statues of the king stand against the pillars in the form of Osiris, god of death and rebirth. Digital Karnak counts sixteen; other descriptions give fewer, so count them yourselves.",
+     "imp": 4,
+     "tags": {
+      "art": 0.8,
+      "gods": 0.6
+     },
+     "src": [
+      3,
+      "gk"
+     ],
+     "verify": true,
+     "photo": "ramesses-iii-court"
+    },
+    {
+     "id": 5,
+     "t": "At the back, the holy of holies was replaced by three bark shrines, for Amun, Mut and Khonsu: the same three gods as in Sety II's shrine opposite.",
+     "imp": 4,
+     "tags": {
+      "gods": 1
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 6,
+     "t": "The temple sits at right angles to the main east-west route. It is also set opposite Sety II's shrine, so the barks of the same three gods could pause on either side.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.6,
+      "gods": 0.4
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 7,
+     "t": "The pillared hall is 21 metres wide but only 9 deep. Digital Karnak shows squat columns here, a good contrast with the giant ones in the Hypostyle Hall ahead.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.8,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 8,
+     "t": "About 240 years later, Shoshenq I built his great court around the front half of this temple, so the pylon end is inside the court and the rest reaches out to the south.",
+     "imp": 3,
+     "tags": {
+      "history": 0.6,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      17
+     ]
+    },
+    {
+     "id": 9,
+     "t": "Ramesses III also began the Temple of Khonsu in the south of the precinct, a larger and better preserved temple of the same king that the family can see later.",
+     "imp": 2,
+     "tags": {
+      "history": 0.5,
+      "architecture": 0.4
+     },
+     "src": [
+      3,
+      17
+     ]
+    }
+   ],
+   "photo": "ramesses-iii-entrance",
+   "popular": 2
   },
   {
    "id": "bubastite",
@@ -3630,10 +4624,134 @@
    "era": "tip",
    "dwell": 120,
    "wow": 2,
-   "look": "The gateway in the south-east corner of the forecourt; on the wall beside it Shoshenq I smites his enemies above rows of name-rings for captured towns.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "The doorway in the south-east corner of the court, with a tall column inside it. Go through and turn to the wall beside the door: the king strides over rows of name rings.",
+   "note": "The doorway leads out of the court, and the relief is on its outer face. It may be closed or roped off; if so, see the doorway from inside the court.",
+   "kids": [
+    {
+     "t": "Find the biggest figure on the wall: a king raising his arm over tiny enemies. Can you copy his pose?",
+     "photo": "shoshenq-smiting"
+    },
+    {
+     "t": "Look for the little ovals packed in rows. Each one has a town name inside.",
+     "photo": "bubastite-relief-wall"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "On the outer wall by this doorway Shoshenq I recorded his campaign into Canaan, about 925 BC: the king smiting enemies above rings naming about 156 captured towns.",
+     "imp": 5,
+     "tags": {
+      "history": 1,
+      "art": 0.6
+     },
+     "src": [
+      3,
+      17,
+      21
+     ],
+     "photo": "shoshenq-smiting"
+    },
+    {
+     "id": 2,
+     "t": "Each oval ring is shaped like a fort wall and holds a place name, topped by a bound captive. Amun and the goddess of Thebes hold the cords that tie them.",
+     "imp": 4,
+     "tags": {
+      "art": 1,
+      "history": 0.5
+     },
+     "src": [
+      3,
+      17
+     ],
+     "needs": 1,
+     "photo": "shoshenq-smiting"
+    },
+    {
+     "id": 3,
+     "t": "Shoshenq is usually identified with Shishak, who took treasures from Jerusalem in 1 Kings 14:25 to 26. Jerusalem is not on the surviving list, and scholars debate why, and how reliable the Bible's account is.",
+     "imp": 5,
+     "tags": {
+      "history": 1,
+      "people": 0.5
+     },
+     "src": [
+      3,
+      20,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "The relief is carved on the south face of the court wall, outside the doorway, not inside the court. Look to either side of the door as you go through.",
+     "imp": 4,
+     "tags": {
+      "views": 0.4,
+      "art": 0.4
+     },
+     "src": [
+      3,
+      17,
+      21
+     ],
+     "photo": "bubastite-relief-wall"
+    },
+    {
+     "id": 5,
+     "t": "The portal fills the gap between the Second Pylon and Ramesses III's temple. It is just under 5 metres wide and was designed as part of the court wall, marked inside by two papyrus columns.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.6,
+      "architecture": 0.6
+     },
+     "src": [
+      3,
+      18
+     ]
+    },
+    {
+     "id": 6,
+     "t": "A quarry stela from Gebel el-Silsila, dated to his year 21, records a new sandstone quarry for a pylon and festival hall at Karnak, for his 'first campaign of victory'.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.6
+     },
+     "src": [
+      20
+     ],
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "A fragment of a victory stela with Shoshenq's name was found at Megiddo in 1925. Some scholars now suggest it may be part of a building instead.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6
+     },
+     "src": [
+      20
+     ],
+     "verify": true
+    },
+    {
+     "id": 8,
+     "t": "It is called Bubastite after Bubastis, the Nile Delta city that was the home of Shoshenq's family, who were of Libyan descent.",
+     "imp": 2,
+     "tags": {
+      "history": 0.5,
+      "people": 0.4
+     },
+     "src": [
+      3,
+      "gk"
+     ],
+     "verify": true
+    }
+   ],
+   "photo": "bubastite-portal",
+   "popular": 0
   },
   {
    "id": "pylon2",
@@ -3645,14 +4763,113 @@
     32.65746
    ],
    "date": -1295,
-   "dateLabel": "about 1323–1279 BC, colossus later re-inscribed",
+   "dateLabel": "about 1323–1295 BC (Horemheb), colossus later re-inscribed",
    "era": "ramesside",
    "dwell": 120,
    "wow": 4,
-   "look": "The pink granite colossus of a king with a small princess at his feet, beside the doorway into the Hypostyle Hall.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "The sandstone colossus of Ramesses II with a small princess at his feet, standing in front of the pylon beside the doorway into the Hypostyle Hall.",
+   "note": "This doorway is the usual way into the Hypostyle Hall, and no closure was reported in visitor accounts up to December 2025. The statue is sandstone, not granite.",
+   "kids": [
+    {
+     "t": "Find the tiny princess standing between the giant king's feet!",
+     "photo": "colossus-princess"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This is the Second Pylon, the grand gateway to the Great Hypostyle Hall, built by Horemheb, who ruled from 1323 to 1295 BC. Its core is packed with blocks from Akhenaten's demolished temples.",
+     "imp": 5,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.6,
+      "architecture": 0.4
+     },
+     "src": [
+      4,
+      31,
+      16
+     ]
+    },
+    {
+     "id": 2,
+     "t": "The giant beside the doorway is Ramesses II, with his tiny daughter Bent'anta between his feet. Digital Karnak records it as Nineteenth Dynasty sandstone, not granite as some captions say.",
+     "imp": 4,
+     "tags": {
+      "art": 0.6,
+      "people": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Ramesses VI and, later, Pinedjem I, a High Priest of Amun who ruled Thebes as a king about 1054 BC, each had their names cut into this statue. Reusing monuments was common at Karnak.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8,
+      "people": 0.7
+     },
+     "src": [
+      3,
+      4
+     ],
+     "needs": 2
+    },
+    {
+     "id": 4,
+     "t": "This gateway nearly fell in 1899. Collapsing hall columns struck it, stones dropped and a wall bulged. Engineers propped it with timber, sandbags, an 11-metre buttress and cement poured into the cracks.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "history": 0.5
+     },
+     "src": [
+      38
+     ]
+    },
+    {
+     "id": 5,
+     "t": "The carved passage through the pylon was begun by Ramesses I, who reigned under two years. Ramesses II recut it in sunk relief, and faint traces of the older raised carving still show.",
+     "imp": 3,
+     "tags": {
+      "art": 0.6,
+      "history": 0.6
+     },
+     "src": [
+      5
+     ]
+    },
+    {
+     "id": 6,
+     "t": "In Horemheb's day this was the temple's front door. The shrines of Sety II and Ramesses III, and then Shoshenq I's great court, were added in front of it over the next 350 years.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "architecture": 0.5
+     },
+     "src": [
+      4
+     ]
+    },
+    {
+     "id": 7,
+     "t": "If a painting in a Theban tomb is read correctly, a T-shaped harbour basin joined to the Nile lay near here, and Horemheb's builders filled it in first. That reading is an interpretation, not proof.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.5,
+      "history": 0.5,
+      "space": 0.2
+     },
+     "src": [
+      4
+     ]
+    }
+   ],
+   "photo": "second-pylon-colossus-view",
+   "popular": 2
   },
   {
    "id": "hypostyle",
@@ -3666,14 +4883,149 @@
    "date": -1294,
    "dateLabel": "about 1294–1213 BC",
    "era": "ramesside",
-   "dwell": 600,
+   "dwell": 780,
    "wow": 5,
    "mustSee": true,
    "photoSpot": true,
    "look": "134 giant columns; walk the central aisle first, then look up at the stone window grilles high on the sides.",
-   "note": "Good shade. Busiest place on the site.",
-   "kids": [],
-   "bullets": []
+   "note": "Open on the main ticket: visitor accounts from October and December 2025 show it open, and cleaning of 95 per cent of the columns was reported complete in January 2024. Busiest from about 09:00 to 10:00 when tour buses arrive; the side aisles are partly open to the sky, so shade is patchy.",
+   "kids": [
+    {
+     "t": "Look way up high: can you spot the stone windows with bars?",
+     "photo": "hall-window-toddler"
+    },
+    {
+     "t": "Find the biggest flower-shaped tops on the tall middle columns!",
+     "photo": "hall-papyrus-capital"
+    },
+    "Find a column with a king carved on it, standing tall next to a god."
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "You are in the Great Hypostyle Hall: 134 sandstone columns in a space about 103 metres wide and 52 deep. Sety I began it about 1294 BC, and his son Ramesses II finished it.",
+     "imp": 5,
+     "tags": {
+      "architecture": 0.8,
+      "history": 0.7,
+      "engineering": 0.6
+     },
+     "src": [
+      3,
+      5,
+      16
+     ]
+    },
+    {
+     "id": 2,
+     "t": "Sources vary, but the twelve centre columns are about 20 metres high, the other 122 about 12 to 15. Each flower top is 5.4 metres across, said to hold a hundred people.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.9,
+      "architecture": 0.6
+     },
+     "src": [
+      3,
+      5
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Look up at the stone window grilles. The centre columns are taller, so the roof steps up, and the gap holds windows. Their shafts of light once lit a dim, roofed forest of columns.",
+     "imp": 5,
+     "tags": {
+      "physics": 1,
+      "architecture": 0.6,
+      "engineering": 0.4
+     },
+     "src": [
+      5,
+      31
+     ],
+     "photo": "hall-clerestory-grille"
+    },
+    {
+     "id": 4,
+     "t": "There were no cranes. Builders buried each course of stone in earth and mud-brick ramps, dragged the next stones up, and removed the earth only at the end, smoothing the walls from the top down.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1
+     },
+     "src": [
+      5
+     ],
+     "needs": 1
+    },
+    {
+     "id": 5,
+     "t": "Look for the horizontal joints on a column: each is a stack of drums or half-drums, some about five tons. The sandstone probably came by barge from Gebel el-Silsila, about 160 kilometres south.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "history": 0.3
+     },
+     "src": [
+      31,
+      38
+     ],
+     "photo": "hall-column-drums"
+    },
+    {
+     "id": 6,
+     "t": "On 3 October 1899 eleven north-wing columns fell in a chain reaction, the crash reportedly heard at Luxor Temple. Foundations of small reused blocks, crumbling in salty groundwater, could not carry the load.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "history": 0.5,
+      "physics": 0.3
+     },
+     "src": [
+      5,
+      38
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Georges Legrain rebuilt them. He banked earth round a column to lift a pulley, took it down in half-drums, rebuilt the north half on new foundations and underpinned the south with brick, finishing in 1902.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "people": 0.5
+     },
+     "src": [
+      5,
+      38,
+      41
+     ],
+     "needs": 6
+    },
+    {
+     "id": 8,
+     "t": "Since 2021 conservators have cleaned the columns of sand, dust and bird debris, revealing paint and carved detail. In January 2024 the antiquities council said 95 per cent were done.",
+     "imp": 3,
+     "tags": {
+      "art": 0.8,
+      "physics": 0.2
+     },
+     "src": [
+      39
+     ]
+    },
+    {
+     "id": 9,
+     "t": "Digital Karnak, a website with a 3D model begun at UCLA and now hosted at UC Santa Cruz, rebuilds this hall with its roof on, much darker than today. It leaves out the carvings.",
+     "imp": 3,
+     "tags": {
+      "computing": 1,
+      "physics": 0.3
+     },
+     "src": [
+      3
+     ]
+    }
+   ],
+   "photo": "hall-central-aisle",
+   "popular": 4
   },
   {
    "id": "northwall",
@@ -3691,9 +5043,105 @@
    "dwell": 180,
    "wow": 3,
    "look": "Outside the north wall of the Hypostyle Hall: Sety I in his chariot charging through his enemies, carved across the whole wall.",
-   "note": "Leave the hall by the north door. Morning light rakes across the carving.",
-   "kids": [],
-   "bullets": []
+   "note": "Reached by the path along the outside of the north wall. December 2025 photographs show the foot of the wall reachable and no closure was reported, but no review mentions it, so it may be roped off; if so, skip it and spend the time in the hall. The wall faces north, so in March it is in shade all day and the carving reads softly, not in raking light.",
+   "kids": [
+    {
+     "t": "Find the king's horses and the big round wheel of his chariot!",
+     "photo": "north-wall-horses"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "On this outer wall Sety I's sculptors carved his wars: the king charging alone in his chariot against enemies in Canaan, Lebanon, Syria and Libya. They date from about 1290 BC.",
+     "imp": 5,
+     "tags": {
+      "history": 1,
+      "people": 0.5,
+      "art": 0.5
+     },
+     "src": [
+      5,
+      3
+     ],
+     "photo": "sety-chariot-relief"
+    },
+    {
+     "id": 2,
+     "t": "The wall is a mirror image on both sides of the doorway, in three rows. East, on your left as you face it, is his first-year campaign through Sinai and Canaan; west are later wars.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8,
+      "art": 0.3
+     },
+     "src": [
+      5
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "On the west half, Kadesh is attacked at the top, Libyans are beaten in the middle and Hittites below. The Libyan scene, the best preserved, shows Sety spearing a chief from his chariot.",
+     "imp": 4,
+     "tags": {
+      "history": 0.9
+     },
+     "src": [
+      5
+     ],
+     "needs": 2
+    },
+    {
+     "id": 4,
+     "t": "The king always wins alone; no Egyptian army appears. A small figure behind him is labelled Crown Prince Ramesses, but underneath is the name of an officer, Mehy, replaced by Ramesses II, for reasons unknown.",
+     "imp": 3,
+     "tags": {
+      "people": 0.9,
+      "history": 0.7
+     },
+     "src": [
+      5
+     ]
+    },
+    {
+     "id": 5,
+     "t": "This is royal propaganda, but historians use it: the scenes show the fortified road across Sinai, the cedars of Lebanon and Egypt's war with the Hittites, before Ramesses II's peace treaty.",
+     "imp": 2,
+     "tags": {
+      "history": 1
+     },
+     "src": [
+      5
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Salt-laden groundwater is eating the lower stone. Chicago's Epigraphic Survey copied these scenes in the 1970s and 1980s, a record more valuable now, as the carving keeps decaying.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.5,
+      "physics": 0.5,
+      "art": 0.3
+     },
+     "src": [
+      5
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Out here the war scenes are in bold sunk relief. Inside the hall, Sety's carvers used finer raised relief, which took longer to cut.",
+     "imp": 2,
+     "tags": {
+      "art": 0.8,
+      "engineering": 0.3
+     },
+     "src": [
+      5
+     ]
+    }
+   ],
+   "photo": "north-wall-view",
+   "popular": 0
   },
   {
    "id": "obelisks",
@@ -3704,17 +5152,164 @@
     25.71833,
     32.65845
    ],
-   "date": -1457,
-   "dateLabel": "about 1504–1492 BC and about 1457 BC",
+   "date": -1464,
+   "dateLabel": "about 1504–1492 BC (Thutmose I) and about 1464 BC (Hatshepsut)",
    "era": "thutmosid",
    "dwell": 300,
    "wow": 5,
    "mustSee": true,
    "photoSpot": true,
-   "look": "Two standing obelisks: Thutmose I's just beyond the Third Pylon, and his daughter Hatshepsut's, the taller, rising out of the hall behind the Fourth Pylon.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "Two standing obelisks in line along the main axis: Thutmose I's just beyond the Third Pylon, and his daughter Hatshepsut's, the taller, beyond the ruined Fourth Pylon, with walls and rubble round its foot.",
+   "note": "In the open on the main route; December 2025 photographs show visitors close to both obelisks, with no sign of closure. Hatshepsut's stands inside the ruined Wadjet Hall; if you are kept back, the best view of both is along the axis from between the Third and Fourth Pylons. Weights and heights vary by source.",
+   "kids": [
+    {
+     "t": "Find the tallest, pointiest stone in the whole temple, and point at its tip.",
+     "photo": "hatshepsut-obelisk-standing"
+    },
+    {
+     "t": "Find the second, shorter obelisk. Which one is taller?",
+     "photo": "thutmose-i-obelisk-standing"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Two obelisks stand in line here: Thutmose I's, raised about 1500 BC, and the taller one beyond, his daughter Hatshepsut's. At nearly 30 metres, hers is the tallest standing obelisk in Egypt.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.5,
+      "views": 0.6
+     },
+     "src": [
+      42,
+      43,
+      49,
+      16
+     ],
+     "photo": "hatshepsut-obelisk-standing"
+    },
+    {
+     "id": 2,
+     "t": "Thutmose I's is about 21 metres tall and about 143 tons. Only the centre line on each face is his. Ramesses IV and Ramesses VI added the side lines some 350 years later.",
+     "imp": 4,
+     "tags": {
+      "history": 0.6,
+      "art": 0.4,
+      "engineering": 0.4
+     },
+     "src": [
+      43,
+      34,
+      16
+     ],
+     "photo": "thutmose-i-obelisk-standing"
+    },
+    {
+     "id": 3,
+     "t": "Each obelisk is one block of pink granite from Aswan, about 200 kilometres up the Nile. Hatshepsut's weighs roughly 340 tonnes; published estimates run from about 320 to 375.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.6
+     },
+     "src": [
+      42,
+      49,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "At Aswan the Unfinished Obelisk shows how it was done. Workers pounded trenches round the shaft with balls of harder stone, dolerite, and no iron tools. That one cracked and was abandoned.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.4
+     },
+     "src": [
+      52,
+      53,
+      "gk"
+     ],
+     "needs": 3,
+     "verify": true
+    },
+    {
+     "id": 5,
+     "t": "Hatshepsut's inscription, as translated, says the work took seven months from the start in the quarry, ordered in her year 15 and finished in year 16. It is her claim, not a measurement.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.7,
+      "people": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      54,
+      53
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "No one knows for sure how they were raised. Engelbach's 1922 theory used a ramp and a sand-filled funnel. A 1999 test with a 40-ton obelisk snapped its levers; hers weighs about eight times more.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.9
+     },
+     "src": [
+      52,
+      53
+     ]
+    },
+    {
+     "id": 7,
+     "t": "The tips were sheathed in electrum, a natural gold and silver alloy, to flash in the sun. Digital Karnak says so of Thutmose I's, and Hatshepsut's text boasts of electrum on hers.",
+     "imp": 4,
+     "tags": {
+      "physics": 0.4,
+      "art": 0.4,
+      "history": 0.4
+     },
+     "src": [
+      43,
+      54
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Thutmose III later built a stone gateway round the foot of Hatshepsut's obelisk. Her names were still intact when he did, and one new study suggests she walled them in herself.",
+     "imp": 5,
+     "tags": {
+      "history": 0.8,
+      "people": 0.7,
+      "architecture": 0.4
+     },
+     "src": [
+      44,
+      42
+     ],
+     "photo": "hatshepsut-obelisk-walls"
+    },
+    {
+     "id": 9,
+     "t": "Digital Karnak, a 3D model of the temple, shows this hall as Thutmose I built it: niches in the Fourth Pylon held seated statues of him, hidden later by a stone lining.",
+     "imp": 3,
+     "tags": {
+      "computing": 1,
+      "architecture": 0.5
+     },
+     "src": [
+      44,
+      17,
+      3
+     ]
+    }
+   ],
+   "photo": "hatshepsut-obelisk-standing",
+   "popular": 4
   },
   {
    "id": "sanctuary",
@@ -3730,10 +5325,137 @@
    "era": "ptolemaic",
    "dwell": 180,
    "wow": 3,
-   "look": "The granite shrine where Amun's boat was kept, built in the name of Philip Arrhidaeus; in front stand two granite pillars carved with the lotus and the papyrus.",
-   "note": "",
-   "kids": [],
-   "bullets": []
+   "look": "The granite shrine of Philip Arrhidaeus behind the Sixth Pylon, with its doorway and, in front of it, the two granite pillars carved with the lotus and the papyrus.",
+   "note": "On the main route behind the Sixth Pylon. Photographs from 10 March 2024 show the shrine's chambers open to visitors and people walking round its outer walls. Gates here have been closed at times; if so, see the doorway and the two pillars from the Sixth Pylon court, and the painted stars will not be visible.",
+   "kids": [
+    {
+     "t": "Find the two tall pillars with flowers carved on top. One is a lotus and one a papyrus.",
+     "photo": "heraldic-lotus-pillar"
+    },
+    {
+     "t": "Look through the doorway of the shrine and find the daylight at the far end.",
+     "photo": "sanctuary-interior"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This granite shrine at Karnak's heart held Amun's portable boat. It carries the name of Philip Arrhidaeus, Alexander the Great's half-brother, and dates from about 323 to 317 BC.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.8,
+      "history": 0.7,
+      "architecture": 0.4
+     },
+     "src": [
+      47,
+      16
+     ],
+     "photo": "sanctuary-doorway"
+    },
+    {
+     "id": 2,
+     "t": "Philip's inscription says it is a faithful copy of Thutmose III's shrine. That replaced Hatshepsut's Red Chapel, which has been rebuilt as a puzzle of blocks in the Open Air Museum.",
+     "imp": 4,
+     "tags": {
+      "history": 0.7,
+      "engineering": 0.4,
+      "people": 0.4
+     },
+     "src": [
+      47,
+      17,
+      33
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "It is cut from rose granite, about 6.3 metres wide, 17.8 metres deep and 6.9 metres high, with two rooms. Granite this hard came from Aswan, like the obelisks.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.9,
+      "architecture": 0.5
+     },
+     "src": [
+      47,
+      "gk"
+     ],
+     "needs": 1,
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "On festival days priests carried Amun's gilded boat out on poles on their shoulders. Between processions it rested here, in the holiest room of the temple.",
+     "imp": 4,
+     "tags": {
+      "gods": 1,
+      "history": 0.3
+     },
+     "src": [
+      47,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 5,
+     "t": "In front stand two granite pillars of Thutmose III: papyrus on the left for Lower Egypt, lotus on the right for Upper Egypt. Together they show a king ruling both lands.",
+     "imp": 4,
+     "tags": {
+      "architecture": 0.5,
+      "history": 0.6,
+      "art": 0.5
+     },
+     "src": [
+      34,
+      57
+     ],
+     "photo": "heraldic-lotus-pillar"
+    },
+    {
+     "id": 6,
+     "t": "Inside, the ceiling is painted with red, white and blue stars. Outside, the south wall shows Amun's boat setting out and returning on its processions.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "space": 0.3,
+      "gods": 0.5
+     },
+     "src": [
+      47
+     ]
+    },
+    {
+     "id": 7,
+     "t": "One scholar asks whether Nectanebo II, about 360 to 343 BC, renewed the shrine and left it blank until Philip's reign. The usual view is that Philip's shrine is his.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "engineering": 0.3
+     },
+     "src": [
+      17
+     ],
+     "needs": 1,
+     "verify": true
+    },
+    {
+     "id": 8,
+     "t": "Thutmose III's earlier shrine had Amun's images cut out in the Amarna period, then repaired under Sety I. It may have been damaged again in the Assyrian or Persian invasions.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "gods": 0.4
+     },
+     "src": [
+      47
+     ],
+     "needs": 2
+    }
+   ],
+   "photo": "sanctuary-doorway",
+   "popular": 2
   },
   {
    "id": "mkcourt",
@@ -3749,10 +5471,126 @@
    "era": "mk",
    "dwell": 90,
    "wow": 1,
-   "look": "The open, empty-looking court behind the sanctuary; only the granite door sills of Senusret I's temple remain, at the heart of the oldest part of Karnak.",
-   "note": "Easy to walk straight past.",
-   "kids": [],
-   "bullets": []
+   "look": "A sunken area of large flat stone slabs inside a low mud-brick wall, with an information board nearby, and Hatshepsut's obelisk rising beyond to the west.",
+   "note": "An open court with no shade, easy to walk past. The slabs may be fenced or roped off; if so, look over the rail from the path.",
+   "kids": [
+    {
+     "t": "Spot the tall pointed obelisk standing up over the ruins to the west. Can you point at it?",
+     "photo": "mk-court-obelisk"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "You are standing on the oldest part of Karnak. About 1950 BC Senusret I built a limestone temple to Amun-Ra here, about 38 metres square. Later kings built over it.",
+     "imp": 5,
+     "tags": {
+      "history": 0.7,
+      "architecture": 0.5,
+      "engineering": 0.3
+     },
+     "src": [
+      58,
+      4,
+      16
+     ]
+    },
+    {
+     "id": 2,
+     "t": "Look for the large flat slabs inside the low mud-brick wall. The temple had four doorways with red granite thresholds in a line, and only its sills and foundations survive.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.6,
+      "architecture": 0.5
+     },
+     "src": [
+      58,
+      4
+     ],
+     "photo": "middle-kingdom-court-slabs"
+    },
+    {
+     "id": 3,
+     "t": "The front had a portico of twelve square pillars, each with a statue of the king as Osiris. Some pillars are now in the Cairo Museum. Hatshepsut later removed the portico.",
+     "imp": 4,
+     "tags": {
+      "architecture": 0.6,
+      "art": 0.5,
+      "history": 0.3
+     },
+     "src": [
+      58,
+      4
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Many scholars say the temple's axis was aimed at the winter solstice sunrise. That is argued, not proved, and some doubt it for a date this early. More at the Akhmenu.",
+     "imp": 4,
+     "tags": {
+      "space": 1,
+      "physics": 0.4,
+      "history": 0.3
+     },
+     "src": [
+      62,
+      64
+     ]
+    },
+    {
+     "id": 5,
+     "t": "It was not the first. Under the sills, excavators found Eleventh Dynasty sandstone platforms, probably the temple of Intef II from about 2100 BC. Senusret I enlarged an older cult.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "architecture": 0.3
+     },
+     "src": [
+      4
+     ]
+    },
+    {
+     "id": 6,
+     "t": "The sanctuary was off the central line, so priests turned ninety degrees left to reach it. Thutmose III's Akhmenu, just ahead, echoes this layout nearly five hundred years later.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.8,
+      "history": 0.3
+     },
+     "src": [
+      4
+     ]
+    },
+    {
+     "id": 7,
+     "t": "How big, and which way did it face? One reconstruction faces west. François Larché argues for a smaller temple facing east, towards a Nile channel that has since vanished.",
+     "imp": 3,
+     "tags": {
+      "physics": 0.3,
+      "history": 0.5,
+      "architecture": 0.4
+     },
+     "src": [
+      58,
+      4
+     ]
+    },
+    {
+     "id": 8,
+     "t": "When was it pulled down? Sullivan's account says about 323 BC, to raise the ground for the granite shrine nearby. Larché says Amenhotep I did it. Sources disagree.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6,
+      "engineering": 0.4
+     },
+     "src": [
+      4,
+      58
+     ]
+    }
+   ],
+   "photo": "middle-kingdom-court-slabs",
+   "popular": 0
   },
   {
    "id": "akhmenu",
@@ -3768,10 +5606,154 @@
    "era": "thutmosid",
    "dwell": 360,
    "wow": 4,
-   "look": "The hall with tent-pole columns, then the small \"botanical garden\" room carved with plants and animals from the Syrian campaign.",
-   "note": "Some rooms may be roped off.",
-   "kids": [],
-   "bullets": []
+   "look": "The hall of tent-pole columns inside the long building, then the botanical room's carved wall in the north-east.",
+   "note": "Visitor reports say few inner rooms are open, but the Southern Chapels were restored and reported open in June 2025. The roof sun shrine and the botanical room may be closed; if so, see the columns from the main door and look for the carved wall from outside the room (photographs show it over a rope).",
+   "kids": [
+    {
+     "t": "Find the birds and flowers carved on the wall of the botanical room. How many can you spot?",
+     "photo": "botanical-garden-reliefs"
+    },
+    {
+     "t": "Find a big column with red, blue and yellow stripes, and give it a wave.",
+     "photo": "akhmenu-column"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "The Akhmenu, 'the most glorious of monuments', was begun by Thutmose III after his twenty-third year, about 1456 BC. It is about 77 metres wide, and its great hall is a festival tent in stone.",
+     "imp": 5,
+     "tags": {
+      "architecture": 0.6,
+      "engineering": 0.5,
+      "history": 0.4
+     },
+     "src": [
+      59,
+      4,
+      16
+     ]
+    },
+    {
+     "id": 2,
+     "t": "The columns are the tent poles. Two rows of painted columns stand for the poles of a portable tent, under a ceiling painted blue with yellow stars.",
+     "imp": 5,
+     "tags": {
+      "architecture": 0.8,
+      "engineering": 0.6,
+      "space": 0.3
+     },
+     "src": [
+      59,
+      17
+     ],
+     "photo": "akhmenu-column"
+    },
+    {
+     "id": 3,
+     "t": "Centuries later the hall became a church. Look for faint painted saints with halos on some columns, put there by Christians over the pharaoh's decoration.",
+     "imp": 4,
+     "tags": {
+      "history": 0.6,
+      "art": 0.5,
+      "people": 0.3
+     },
+     "src": [
+      71,
+      6,
+      73,
+      76
+     ],
+     "verify": true,
+     "photo": "akhmenu-saint-column"
+    },
+    {
+     "id": 4,
+     "t": "In the north-east, the botanical room is carved with plants and animals the king's men saw on his campaigns abroad. Wikipedia counts about 275 plants.",
+     "imp": 4,
+     "tags": {
+      "art": 0.8,
+      "history": 0.5
+     },
+     "src": [
+      59,
+      4,
+      72
+     ],
+     "verify": true,
+     "photo": "botanical-garden-reliefs"
+    },
+    {
+     "id": 5,
+     "t": "In a small room by the entrance, Thutmose III honoured sixty-one earlier kings back to the Fourth Dynasty. The stone list was taken to the Louvre in 1843.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "people": 0.3
+     },
+     "src": [
+      59,
+      4
+     ]
+    },
+    {
+     "id": 6,
+     "t": "A stair from the north-east corner of the hall climbs to a sun shrine on the roof, open to the sky, with an altar shaped like a row of hetep signs.",
+     "imp": 3,
+     "tags": {
+      "space": 0.8,
+      "gods": 0.5,
+      "architecture": 0.3
+     },
+     "src": [
+      59
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Some astronomers think an opening in the high sun room faced the winter solstice sunrise, the direction of Karnak's main axis. Others read it as a niche, not a window.",
+     "imp": 4,
+     "tags": {
+      "space": 1,
+      "physics": 0.5
+     },
+     "needs": 6,
+     "src": [
+      62
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Karnak's axis from the river to here lines up with the winter solstice sunrise to within about a degree. In early March the sun rises well north of that line.",
+     "imp": 4,
+     "tags": {
+      "space": 1,
+      "physics": 1,
+      "views": 0.2
+     },
+     "src": [
+      63,
+      62,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 9,
+     "t": "Right of the main door, the Southern Chapels, seven shrines and two columned rooms, were restored and reported finished in June 2025, with new signs and ramps.",
+     "imp": 3,
+     "tags": {
+      "art": 0.3,
+      "history": 0.3
+     },
+     "src": [
+      75,
+      74
+     ]
+    }
+   ],
+   "photo": "akhmenu-front",
+   "popular": 3
   },
   {
    "id": "ptah",
@@ -3786,11 +5768,124 @@
    "dateLabel": "about 1479–1425 BC, gates added up to the Ptolemies",
    "era": "thutmosid",
    "dwell": 240,
-   "wow": 4,
-   "look": "The small temple against the north wall, entered through a series of gates; in the dark right-hand room a black statue of the lioness goddess Sekhmet is lit only from a hole in the roof.",
-   "note": "A guardian may open the door for a tip.",
-   "kids": [],
-   "bullets": []
+   "wow": 3,
+   "look": "A row of small gateways leads east into the temple. In the southern side chapel, on the right, the black Sekhmet statue stands lit from above.",
+   "note": "May be closed or locked. A 2020 report (updated 2024) says a guard opened a locked room for a tip, so carry small change. If it stays shut, see the row of gateways and the carved outer wall from outside.",
+   "kids": [
+    {
+     "t": "Find the lady with a lion's head, and say hello quietly.",
+     "photo": "ptah-sekhmet"
+    },
+    {
+     "t": "Walk through the little doorways in a row. How many can you count?",
+     "photo": "ptah-gates"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Thutmose III built this small sandstone temple of Ptah, the craftsmen's god, about 1457 BC. His foundation stele says he found an older brick temple here falling into ruin.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.6,
+      "history": 0.4,
+      "architecture": 0.3
+     },
+     "src": [
+      4,
+      65,
+      61
+     ],
+     "verify": true
+    },
+    {
+     "id": 2,
+     "t": "Look for Sekhmet, Ptah's lioness-headed wife, in the right-hand chapel. About two metres tall, she stands lit by a single hole in the roof, and seems to appear from the dark.",
+     "imp": 5,
+     "tags": {
+      "art": 0.7,
+      "physics": 0.4,
+      "gods": 0.6
+     },
+     "src": [
+      67,
+      65
+     ],
+     "photo": "ptah-sekhmet"
+    },
+    {
+     "id": 3,
+     "t": "The roof opening is modern. A report in Egyptian Archaeology says Georges Legrain had roof slabs removed to let light in, and the statue was re-erected here.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.6,
+      "physics": 0.6,
+      "history": 0.3
+     },
+     "needs": 2,
+     "src": [
+      65
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "Walk the row of gateways. They were added over about 700 years, from the Kushite king Shabaqo about 700 BC, through the Ptolemies, to the Roman emperor Tiberius.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.6,
+      "history": 0.5
+     },
+     "src": [
+      4
+     ],
+     "photo": "ptah-gates"
+    },
+    {
+     "id": 5,
+     "t": "Ptah was patron of builders and craftsmen. Sekhmet, the lioness of war and plague, was his fierce partner, and their son was Nefertem, the lotus god.",
+     "imp": 3,
+     "tags": {
+      "gods": 1,
+      "engineering": 0.2
+     },
+     "src": [
+      "gk",
+      65
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "Nectanebo I's huge wall, begun about 380 BC, enclosed this temple, with a gate in the north wall right beside it.",
+     "imp": 2,
+     "tags": {
+      "history": 0.5,
+      "engineering": 0.4
+     },
+     "src": [
+      4,
+      17
+     ]
+    },
+    {
+     "id": 7,
+     "t": "French and Egyptian teams have excavated and recorded the temple since 2008. The north chapel still has its original roof. A 2016 survey records the carved scenes.",
+     "imp": 2,
+     "tags": {
+      "history": 0.3,
+      "engineering": 0.3,
+      "computing": 0.1
+     },
+     "src": [
+      65,
+      66
+     ],
+     "verify": true
+    }
+   ],
+   "photo": "ptah-gates",
+   "popular": 2
   },
   {
    "id": "whitechapel",
@@ -3806,10 +5901,143 @@
    "era": "mk",
    "dwell": 240,
    "wow": 4,
-   "look": "The small white limestone pavilion on a raised base, rebuilt from blocks found inside the Third Pylon. Steps on both sides.",
-   "note": "In the Open Air Museum, north of the forecourt; the ticket is checked again at its gate.",
-   "kids": [],
-   "bullets": []
+   "look": "A small, bright limestone pavilion on a low platform, with square pillars all round and a stepped ramp at each end.",
+   "note": "In the Open Air Museum, reached from the north side of the forecourt. The museum is reported as included in the main ticket (600 EGP foreign adult, ministry list 2024), open 06:00 to 17:00 with last entry about 16:00; Ramadan hours may be shorter. A French-Egyptian project (2024 to 2026) is re-laying the museum route and adding Amenhotep I monuments, so parts may be fenced off. It may be closed; if so, look at it from the path or go on to the Red Chapel.",
+   "kids": [
+    {
+     "t": "Find the little kneeling figure carved on the stone, and then count the square pillars around the outside: twelve!",
+     "photo": "heh-figure-white-chapel"
+    },
+    "Climb the ramp steps with Daddy or Mummy, and find the smooth white stone that was once buried underground."
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This small limestone pavilion was made for Senusret I about 1940 BC, one of the oldest structures at Karnak. It is rebuilt from pieces found buried inside a later pylon.",
+     "imp": 5,
+     "tags": {
+      "history": 0.6,
+      "architecture": 0.5
+     },
+     "src": [
+      3,
+      4,
+      78
+     ]
+    },
+    {
+     "id": 2,
+     "t": "More than five centuries later, Amenhotep III dismantled it and packed the blocks into the core of his Third Pylon as fill. Excavators found them there, often in good condition.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.4
+     },
+     "src": [
+      3,
+      4
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "The French architect Henri Chevrier found the first piece, a limestone lintel crushed under a huge alabaster slab, on 16 November 1927. Rebuilding took about ten years.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.8,
+      "people": 0.5
+     },
+     "src": [
+      78,
+      79
+     ],
+     "needs": 2
+    },
+    {
+     "id": 4,
+     "t": "The broken stones were rebuilt in winter 1937 to 1938, with concrete cores inside the pillars, steel bars in the beams and bolts through cracked stone. Gaps were filled with painted plaster.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "computing": 0.2
+     },
+     "src": [
+      79
+     ],
+     "needs": 3
+    },
+    {
+     "id": 5,
+     "t": "Look for the base: its north and south sides list Egypt's provinces, 22 in Upper Egypt and 16 in Lower, with their gods. It is the oldest known list of local gods.",
+     "imp": 4,
+     "tags": {
+      "history": 0.5,
+      "physics": 0.2,
+      "gods": 0.5
+     },
+     "src": [
+      81,
+      3
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Each province also has figures: its extent, and how many cubits and palms to subtract from the 100-cubit land measure, the aroura, to get the local one. Chevrier did not know their meaning in 1938.",
+     "imp": 3,
+     "tags": {
+      "physics": 0.7,
+      "history": 0.3
+     },
+     "src": [
+      81,
+      79
+     ],
+     "needs": 5
+    },
+    {
+     "id": 7,
+     "t": "The reliefs record Senusret I's jubilee festival. Look for the kneeling figure of Heh, the sign for eternity, and traces of red, blue and yellow paint.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "gods": 0.4
+     },
+     "src": [
+      3,
+      85
+     ],
+     "photo": "heh-figure-white-chapel"
+    },
+    {
+     "id": 8,
+     "t": "Close by stands the calcite bark shrine of Amenhotep I, who reigned about 1525 to 1504 BC. Its inner walls hold the oldest surviving pictures of Amun-Ra's sacred boat.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.7,
+      "history": 0.3
+     },
+     "src": [
+      3,
+      10
+     ]
+    },
+    {
+     "id": 9,
+     "t": "Do not mix it up with the calcite shrine of Amenhotep II, rebuilt in 2005 between copies of Thutmose I's obelisks near the entrance. Amenhotep I's was first rebuilt about 1947.",
+     "imp": 2,
+     "tags": {
+      "history": 0.3,
+      "architecture": 0.3
+     },
+     "src": [
+      82,
+      80
+     ],
+     "needs": 8
+    }
+   ],
+   "photo": "white-chapel-view",
+   "popular": 2
   },
   {
    "id": "redchapel",
@@ -3825,10 +6053,130 @@
    "era": "thutmosid",
    "dwell": 180,
    "wow": 3,
-   "look": "The long red quartzite and black granite shrine rebuilt from blocks; look for Hatshepsut's chiselled-out figures.",
-   "note": "In the Open Air Museum.",
-   "kids": [],
-   "bullets": []
+   "look": "A long, low shrine of red stone on a dark base, with ramps at each end. Look for smooth patches where figures were chiselled away.",
+   "note": "In the Open Air Museum, a short walk east of the White Chapel; same ticket as the main site. It may be closed or fenced off during the 2024 to 2026 museum works; if so, see it from the museum path.",
+   "kids": [
+    "Find the reddest wall, and the dark stone it sits on.",
+    "Find a smooth patch where a person was once carved and then chiselled out."
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Hatshepsut ordered the Red Chapel, begun or finished about her seventeenth year, about 1457 BC, as a home for Amun-Ra's sacred boat. It is red quartzite on a grey diorite platform.",
+     "imp": 5,
+     "tags": {
+      "history": 0.5,
+      "gods": 0.6,
+      "architecture": 0.4
+     },
+     "src": [
+      3,
+      4,
+      16
+     ],
+     "verify": true
+    },
+    {
+     "id": 2,
+     "t": "Thutmose III dismantled it, and Amenhotep III later buried the blocks as filling inside the Third Pylon. By 1928 the excavator Henri Chevrier had pulled out 241 of them.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.5
+     },
+     "src": [
+      4,
+      78
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "Rebuilding it was a huge 3D jigsaw. Chevrier laid the blocks out on plinths in 1947 and 1948; French and Egyptian teams reassembled the chapel at the turn of the millennium, around 1999 to 2002.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.9,
+      "computing": 0.5
+     },
+     "src": [
+      80,
+      83,
+      84
+     ],
+     "needs": 2,
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "Burgos and Larché published every block as a drawn facsimile in 2006 and 2008, and later electronically. Digital Karnak's 3D model of the chapel rests on Carlotti's 1995 plans.",
+     "imp": 3,
+     "tags": {
+      "computing": 1,
+      "engineering": 0.3
+     },
+     "src": [
+      3,
+      82
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Look for figures of Hatshepsut with the stone smoothed away, and her names erased. This came late in Thutmose III's reign, after his year 42, over twenty years after she died.",
+     "imp": 4,
+     "tags": {
+      "people": 0.8,
+      "history": 0.7,
+      "art": 0.4
+     },
+     "src": [
+      4,
+      3
+     ],
+     "needs": 2
+    },
+    {
+     "id": 6,
+     "t": "The erasing was not why the chapel came down: the dismantling came first, and the defacing was done on blocks left lying about. Some blocks were missed, perhaps the less exposed ones.",
+     "imp": 3,
+     "tags": {
+      "history": 0.7,
+      "people": 0.5
+     },
+     "src": [
+      4,
+      3
+     ],
+     "needs": 5
+    },
+    {
+     "id": 7,
+     "t": "On the outside, Digital Karnak says, are scenes of her obelisks being raised and of the Opet and Beautiful Feast of the Valley processions, above a frieze of kneeling Nile gods.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.4,
+      "gods": 0.6,
+      "art": 0.5
+     },
+     "src": [
+      3
+     ]
+    },
+    {
+     "id": 8,
+     "t": "The museum also holds Thutmose IV's painted double colonnade, rebuilt from about a thousand blocks, Amenhotep II's calcite shrine, and a rebuilt wall of Akhenaten's small blocks from the Third Pylon.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.5,
+      "history": 0.4
+     },
+     "src": [
+      4,
+      3
+     ]
+    }
+   ],
+   "photo": "red-chapel-view",
+   "popular": 2
   },
   {
    "id": "cachette",
@@ -3844,10 +6192,141 @@
    "era": "thutmosid",
    "dwell": 150,
    "wow": 2,
-   "look": "The court south of the Hypostyle Hall where about 750 statues were found buried; beyond it the Seventh Pylon with Thutmose III smiting his enemies.",
-   "note": "Access to the southern pylons varies; the court is reached from the south side of the Hypostyle Hall.",
-   "kids": [],
-   "bullets": []
+   "look": "The open court south of the Hypostyle Hall, with the Seventh Pylon at its south end. The long wall of hieroglyphs on the west side is the treaty.",
+   "note": "Reached from the south side of the Hypostyle Hall. The way on beyond the Seventh Pylon may be closed; if so, see the pylon's north face from the court and the treaty wall from the court's west side.",
+   "kids": [
+    "Spot the little birds and snakes carved in the long wall of hieroglyphs."
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This is the Cachette Court. From December 1903 Georges Legrain dug a deep pit here and found hundreds of buried statues. The work ran in four seasons, to July 1907.",
+     "imp": 5,
+     "tags": {
+      "history": 0.7,
+      "engineering": 0.4,
+      "people": 0.6
+     },
+     "src": [
+      93,
+      89
+     ],
+     "photo": "cachette-court"
+    },
+    {
+     "id": 2,
+     "t": "Counts vary. Legrain's first season gave 457 statues. By 1905 Maspero reported seven hundred, and popular totals say 750 to 800, with 17,000 or more small bronzes.",
+     "imp": 4,
+     "tags": {
+      "history": 0.4
+     },
+     "needs": 1,
+     "src": [
+      93,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "They date from the Middle Kingdom to the Ptolemies. Legrain thought the pit was filled in one go, in the Greek period. Nobody recorded why. Retiring old sacred statues is the usual guess.",
+     "imp": 4,
+     "tags": {
+      "history": 0.7,
+      "gods": 0.4
+     },
+     "needs": 1,
+     "src": [
+      93,
+      89,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "Water was the enemy. The pit lay below the water table, so workers lifted it out with shadufs, hand-swung bucket levers, to about ten metres, later nearly fourteen. Maspero called it fishing for statues.",
+     "imp": 5,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.7
+     },
+     "needs": 1,
+     "src": [
+      93
+     ]
+    },
+    {
+     "id": 5,
+     "t": "The bronzes are a mystery. Legrain counted about 17,000, yet they seem to have vanished from the records since. Maspero cut the bronzes from his own account when he reprinted it in 1914.",
+     "imp": 3,
+     "tags": {
+      "history": 0.5,
+      "people": 0.4
+     },
+     "needs": 2,
+     "src": [
+      93
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Behind the court is the Seventh Pylon, 26 metres high, built for Thutmose III. The scene of him smiting captives is on its south face, so you need to pass through to see it.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.4,
+      "art": 0.5,
+      "history": 0.4
+     },
+     "src": [
+      89
+     ],
+     "photo": "thutmose-smiting"
+    },
+    {
+     "id": 7,
+     "t": "On the court's west wall is Ramesses II's treaty with the Hittite king Hattusili III, from about 1259 BC. Neither would attack the other, and each would help if a third power did.",
+     "imp": 5,
+     "tags": {
+      "history": 1,
+      "people": 0.6
+     },
+     "src": [
+      94,
+      95,
+      16
+     ],
+     "verify": true
+    },
+    {
+     "id": 8,
+     "t": "The Hittite side survives on clay tablets in Akkadian, found at Hattusa in Turkey from 1906. Two are in Istanbul and one in Berlin. A copy is said to hang at the United Nations, unconfirmed.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8
+     },
+     "needs": 7,
+     "src": [
+      96
+     ],
+     "verify": true
+    },
+    {
+     "id": 9,
+     "t": "Four carved battle scenes flank the treaty. They were once given to Ramesses II, but are now identified as episodes from his son Merneptah's Canaanite campaign.",
+     "imp": 2,
+     "tags": {
+      "history": 0.6,
+      "art": 0.3
+     },
+     "needs": 7,
+     "src": [
+      94
+     ]
+    }
+   ],
+   "photo": "cachette-court",
+   "popular": 2
   },
   {
    "id": "lake",
@@ -3865,10 +6344,112 @@
    "dwell": 150,
    "wow": 4,
    "photoSpot": true,
-   "look": "The great stone-lined pool, about 120 by 77 m, where the priests took water for the rituals and purified themselves.",
-   "note": "Café on its north-west side.",
-   "kids": [],
-   "bullets": []
+   "look": "The big rectangular stone-lined pool, about 128 by 83 metres (Digital Karnak), with palm trees beside it.",
+   "note": "Open to visitors; the café is on its north-west side. Little shade, and the light is best early. Keep a firm hold of your daughter near the edge: the sides are stone steps.",
+   "kids": [
+    {
+     "t": "Find the tall palm trees beside the water and count them.",
+     "photo": "lake-palms"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This is the Sacred Lake, a stone-lined pool dug for Thutmose III, about 128 metres by 83. Priests drew water here for ritual, and festival boats and the geese of Amun used it.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.6,
+      "views": 0.6,
+      "history": 0.3
+     },
+     "src": [
+      86
+     ],
+     "photo": "sacred-lake-pool"
+    },
+    {
+     "id": 2,
+     "t": "The water is groundwater, not a channel from the Nile. The lake is a pit cut into the water table, so it filled as the table rose with the yearly flood.",
+     "imp": 5,
+     "tags": {
+      "physics": 0.9,
+      "engineering": 0.8
+     },
+     "src": [
+      88
+     ]
+    },
+    {
+     "id": 3,
+     "t": "One engineers' study says it was fullest in November and almost dry by July, so the water was renewed every year. Since the High Dam levelled the groundwater, it has stagnated.",
+     "imp": 4,
+     "tags": {
+      "physics": 1,
+      "engineering": 0.6
+     },
+     "needs": 2,
+     "src": [
+      88,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "It is deep as well as wide: about four metres in the engineers' survey. Its sides are faced with stone, and stairs down to the water survive on the west, south and north sides.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.8,
+      "architecture": 0.4
+     },
+     "src": [
+      88
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Tradition says priests washed in it daily before ritual. Herodotus says Egyptian priests washed twice by day and twice by night, though he is describing priests in general, not this lake.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.7,
+      "history": 0.4
+     },
+     "src": [
+      88,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "On the north side stood a building of Taharqa, about 690 BC, with a deep well. It looks like a Nilometer, but it seems to have been ritual, linking the temple to the primeval waters.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.6,
+      "engineering": 0.4,
+      "history": 0.4
+     },
+     "src": [
+      87
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Sizes differ by source: Digital Karnak says 128 by 83 metres, the engineers' survey about 130 by 80. Either way it is larger than a football pitch.",
+     "imp": 2,
+     "tags": {
+      "engineering": 0.3
+     },
+     "src": [
+      86,
+      88,
+      "gk"
+     ]
+    }
+   ],
+   "photo": "sacred-lake-pool",
+   "popular": 4,
+   "mustSee": true
   },
   {
    "id": "scarab",
@@ -3884,15 +6465,221 @@
    "era": "amarna",
    "dwell": 120,
    "wow": 3,
-   "look": "The big stone scarab beetle on a pedestal at the corner of the lake; near it lies the broken top of Hatshepsut's second obelisk.",
-   "note": "Visitors walk round the scarab for luck; a modern custom.",
-   "kids": [],
-   "bullets": []
+   "look": "The big granite scarab on a round plinth at the north-west corner of the Sacred Lake, with the pointed top of Hatshepsut's second obelisk standing upright beside it.",
+   "note": "In the open at the lake's north-west corner. December 2025 photographs show visitors close to it behind a low barrier, so it should be reachable; if it is roped off, walk round the barrier. The obelisk top beside it was stood upright in April 2022, so older photos and guidebooks showing it lying down are out of date. The walk-round custom is modern and the number of circuits varies.",
+   "kids": [
+    {
+     "t": "Find the giant stone beetle on its round pedestal. Can you wave to it?",
+     "photo": "scarab-and-plinth"
+    },
+    {
+     "t": "Walk round the beetle holding hands, the way visitors do for luck.",
+     "photo": "scarab-closeup"
+    },
+    {
+     "t": "Find the pointed stone top standing right beside the beetle.",
+     "photo": "obelisk-top-and-scarab"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This granite scarab beetle was carved in Amenhotep III's reign, about 1390 to 1352 BC. The plinth shows the king kneeling before Khepri, the rising-sun god, whose sign was the beetle.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.8,
+      "space": 0.4,
+      "art": 0.4
+     },
+     "src": [
+      48,
+      "gk"
+     ],
+     "photo": "scarab-and-plinth"
+    },
+    {
+     "id": 2,
+     "t": "It did not start here. It first stood at Amenhotep III's temple across the Nile, and was probably moved to this corner of the lake by the Kushite king Taharqa, about 700 years later.",
+     "imp": 4,
+     "tags": {
+      "history": 0.7,
+      "people": 0.4
+     },
+     "src": [
+      48
+     ],
+     "needs": 1
+    },
+    {
+     "id": 3,
+     "t": "Egyptians likened the dung beetle rolling its ball to the sun being pushed across the sky each day. So the beetle stood for the sunrise.",
+     "imp": 4,
+     "tags": {
+      "space": 0.7,
+      "gods": 0.7,
+      "physics": 0.3
+     },
+     "src": [
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "Visitors walk round it for luck, usually said to be seven times. That is a modern custom, not an ancient rite, and accounts differ on the number of circuits.",
+     "imp": 3,
+     "tags": {
+      "people": 0.5,
+      "gods": 0.3
+     },
+     "src": [
+      55,
+      "gk"
+     ],
+     "verify": true,
+     "photo": "scarab-closeup"
+    },
+    {
+     "id": 5,
+     "t": "Beside it stands the top of Hatshepsut's fallen second obelisk, 11 metres and 90 tonnes. Egypt's antiquities ministry stood it upright on 9 April 2022; it had lain down for over a century.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.9,
+      "history": 0.6,
+      "views": 0.4
+     },
+     "src": [
+      49,
+      50,
+      51
+     ],
+     "photo": "obelisk-top-and-scarab",
+     "verify": true
+    },
+    {
+     "id": 6,
+     "t": "The rest of the shaft was never found, so the top stands on a modern base. If the pair matched the standing one, about 30 metres, roughly a third survives.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.6
+     },
+     "src": [
+      50,
+      42
+     ],
+     "needs": 5,
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "Its fall is usually put down to an ancient earthquake. Some writers suspect deliberate toppling after Hatshepsut's memory was attacked, but no source shows that.",
+     "imp": 3,
+     "tags": {
+      "physics": 0.4,
+      "history": 0.6,
+      "people": 0.4
+     },
+     "src": [
+      53,
+      51
+     ],
+     "needs": 5
+    },
+    {
+     "id": 8,
+     "t": "On the pointed tip, Hatshepsut kneels before the god Amun. Thutmose III added his own lines of text beside hers on the obelisks of this hall.",
+     "imp": 3,
+     "tags": {
+      "art": 0.7,
+      "people": 0.5
+     },
+     "src": [
+      42,
+      56
+     ],
+     "needs": 5,
+     "photo": "hatshepsut-pyramidion-relief"
+    },
+    {
+     "id": 9,
+     "t": "Pieces of this obelisk are in foreign museums, including the Museum of Fine Arts in Boston and the Nicholson Museum in Sydney.",
+     "imp": 2,
+     "tags": {
+      "history": 0.4
+     },
+     "src": [
+      49
+     ],
+     "needs": 5
+    }
+   ],
+   "photo": "obelisk-top-and-scarab",
+   "popular": 4
   },
   {
    "kind": "sight",
-   "kids": [],
-   "bullets": [],
+   "kids": [
+    {
+     "t": "Wave to the palm trees in the water: find their reflection.",
+     "photo": "lake-palms"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Look back across the water from here. The lake is in front, the temple rises beyond it to the north-west, and the still surface doubles the view. Reviewers call this the most atmospheric corner.",
+     "imp": 4,
+     "tags": {
+      "views": 1,
+      "gods": 0.2
+     },
+     "src": [
+      105,
+      86
+     ],
+     "verify": true,
+     "photo": "lake-from-southeast"
+    },
+    {
+     "id": 2,
+     "t": "The Egyptians saw a temple lake as the primeval water from which the world rose. The well on the far bank, next to Taharqa's building, was thought to reach down to it.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.9,
+      "history": 0.3
+     },
+     "src": [
+      87,
+      "gk"
+     ],
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "On the far bank stood Taharqa's building, 25 metres wide and 29 deep. Only 1 to 2.5 metres of wall survive, so you see low foundations rather than a temple.",
+     "imp": 3,
+     "tags": {
+      "history": 0.5,
+      "architecture": 0.4
+     },
+     "src": [
+      87
+     ]
+    },
+    {
+     "id": 4,
+     "t": "The lake needed no pump. It sits in the water table, which the study says rose and fell about 0.8 metres a year with the Nile flood, and so refilled it.",
+     "imp": 3,
+     "tags": {
+      "physics": 1,
+      "engineering": 0.5
+     },
+     "src": [
+      88
+     ],
+     "verify": true
+    }
+   ],
    "id": "lakeview",
    "name": "View across the Sacred Lake",
    "short": "Lake view",
@@ -3906,13 +6693,90 @@
    "era": "thutmosid",
    "dwell": 90,
    "wow": 4,
-   "look": "From the south-east corner of the lake, point the camera north-west: the water in front, with the obelisks and the Hypostyle Hall behind.",
-   "note": "Little shade."
+   "look": "From the south-east corner, point the camera north-west: the water in front, the temple behind.",
+   "note": "Little shade. If the corner is crowded, any bank of the lake gives a similar view.",
+   "photo": "lake-from-southeast",
+   "popular": 1
   },
   {
    "kind": "sight",
-   "kids": [],
-   "bullets": [],
+   "kids": [
+    {
+     "t": "Count the giant gateways in a row. How many can you see?",
+     "photo": "southern-pylons-line"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "South of the Seventh Pylon, Karnak's southern road runs through three more gateways, the Eighth, Ninth and Tenth Pylons, towards the Temple of Mut and on to Luxor.",
+     "imp": 4,
+     "tags": {
+      "architecture": 0.5,
+      "history": 0.4,
+      "views": 0.4
+     },
+     "src": [
+      92,
+      90
+     ],
+     "photo": "southern-pylons-line"
+    },
+    {
+     "id": 2,
+     "t": "The Eighth was begun under Hatshepsut: 21 metres high, 47.7 long, sandstone. Later kings recarved most of her work. It is the oldest on this road, but Thutmose I's Fourth Pylon is older.",
+     "imp": 4,
+     "tags": {
+      "history": 0.6,
+      "people": 0.5
+     },
+     "src": [
+      90,
+      16
+     ],
+     "photo": "eighth-pylon"
+    },
+    {
+     "id": 3,
+     "t": "Horemheb built the Ninth, 26 metres high, and finished the Tenth that Amenhotep III left at its lowest courses. Both pylons are partly filled with blocks from Akhenaten's dismantled temples.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.6
+     },
+     "src": [
+      91,
+      92
+     ]
+    },
+    {
+     "id": 4,
+     "t": "The Tenth Pylon has a rose granite doorway 15.6 metres high. Its court shows Horemheb's voyage to Punt, and the treasure he brought back.",
+     "imp": 3,
+     "tags": {
+      "art": 0.5,
+      "history": 0.5
+     },
+     "needs": 3,
+     "src": [
+      92
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Reliefs between the Eighth and Ninth show the Opet festival: the god's boat carried by priests, setting out on its journey south to Luxor.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.8,
+      "history": 0.4
+     },
+     "src": [
+      91,
+      90
+     ],
+     "verify": true
+    }
+   ],
    "id": "southpylons",
    "name": "Southern pylons (Eighth to Tenth)",
    "short": "Southern pylons",
@@ -3925,8 +6789,10 @@
    "era": "thutmosid",
    "dwell": 180,
    "wow": 3,
-   "look": "The line of gateways running south from the Cachette Court towards the Temple of Mut; the Eighth, built for Hatshepsut, is the oldest pylon still standing at Karnak.",
-   "note": "Access to the southern axis has varied; visitors photographed the Eighth and Ninth Pylons in 2025."
+   "look": "The line of gateways south of the Cachette Court: the Eighth nearest, then the Ninth, with the Tenth behind.",
+   "note": "May be closed; if so, see the Seventh Pylon from the Cachette Court and look south through its gate. Two older accounts say most of the area beyond the Eighth Pylon was closed, but photographers recorded all three pylons on 10 March 2024 and 4 December 2025.",
+   "photo": "southern-pylons-line",
+   "popular": 1
   },
   {
    "id": "khonsu",
@@ -3942,10 +6808,143 @@
    "era": "ramesside",
    "dwell": 240,
    "wow": 3,
-   "look": "The complete temple of the moon god in the south-west corner, entered through a pylon; the Temple of Opet is beside it.",
-   "note": "Quieter than the main axis. Steps at the entrance; may be closed or partly closed.",
-   "kids": [],
-   "bullets": []
+   "look": "The pylon and the open court with its 28 papyrus-bud columns, then the dim columned hall behind.",
+   "note": "Steps at the entrance. The interior may be partly closed: one account found much of it roped off, others walked in and saw the ceiling and painted reliefs. If so, see the pylon, court and colonnade from the doorway. The Opet temple may be locked; if so, see it from the side.",
+   "kids": [
+    {
+     "t": "Find the monkey: the moon god Khonsu is carved as a baboon in the columned hall.",
+     "photo": "khonsu-baboon"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "This is the Temple of Khonsu, the moon god, son of Amun and Mut. It is a small but complete New Kingdom temple: pylon, open court, columned hall, bark chamber and sanctuary.",
+     "imp": 5,
+     "tags": {
+      "gods": 0.8,
+      "architecture": 0.7,
+      "history": 0.3
+     },
+     "src": [
+      102,
+      97
+     ],
+     "photo": "khonsu-court"
+    },
+    {
+     "id": 2,
+     "t": "Khonsu's name means traveller, for the moon crossing the night sky. He was also a healer. One Egyptian story has him as the reborn sun, son of Amun.",
+     "imp": 3,
+     "tags": {
+      "gods": 1,
+      "space": 0.5
+     },
+     "src": [
+      "gk",
+      100
+     ],
+     "verify": true
+    },
+    {
+     "id": 3,
+     "t": "Ramesses III (reigned 1184 to 1153 BC) began it, using fresh stone and old blocks from Eighteenth Dynasty buildings. A column drum in the court still carries Horemheb's cartouche.",
+     "imp": 4,
+     "tags": {
+      "history": 0.6,
+      "engineering": 0.7
+     },
+     "needs": 1,
+     "src": [
+      99,
+      97
+     ]
+    },
+    {
+     "id": 4,
+     "t": "Ramesses XI and the High Priest Herihor built the front. Herihor later took royal titles, and the family procession on the portico wall is his, as the Epigraphic Survey records.",
+     "imp": 3,
+     "tags": {
+      "people": 0.8,
+      "history": 0.7
+     },
+     "src": [
+      98,
+      99
+     ]
+    },
+    {
+     "id": 5,
+     "t": "Unlike much of Karnak, the hall and rooms still carry their stone roof, so it is dim. A stair leads up to the roof, where a solar chapel was cut.",
+     "imp": 4,
+     "tags": {
+      "engineering": 0.9,
+      "physics": 0.4,
+      "space": 0.3
+     },
+     "src": [
+      103,
+      98,
+      102
+     ],
+     "verify": true,
+     "photo": "khonsu-hall-roof"
+    },
+    {
+     "id": 6,
+     "t": "Taharqa added a porch of twenty papyrus columns in front of the pylon, about 690 BC. Stone beams joined them; stone slabs would have been too heavy, so the roof was probably timber.",
+     "imp": 3,
+     "tags": {
+      "engineering": 1,
+      "architecture": 0.5
+     },
+     "src": [
+      97
+     ],
+     "verify": true
+    },
+    {
+     "id": 7,
+     "t": "Next door, to the west, is the little Temple of Opet. In the myth, Amun dies as Osiris and is reborn through the goddess Opet. Her temple faces a door of this one.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.9
+     },
+     "src": [
+      100
+     ]
+    },
+    {
+     "id": 8,
+     "t": "Opet's temple has crypts sunk into its platform, including a tomb of Osiris and a birth chamber. It stands on a podium 19.6 by 22.7 metres, and is often locked.",
+     "imp": 3,
+     "tags": {
+      "gods": 0.7,
+      "architecture": 0.5
+     },
+     "needs": 7,
+     "src": [
+      100,
+      104
+     ],
+     "photo": "opet-temple"
+    },
+    {
+     "id": 9,
+     "t": "South of the temple stands the Bab el-Amara, a 21-metre stone gateway of Ptolemy III. The pylon towers beside it were begun by Nectanebo I and never finished.",
+     "imp": 3,
+     "tags": {
+      "architecture": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      101
+     ],
+     "photo": "bab-el-amara"
+    }
+   ],
+   "photo": "khonsu-court",
+   "popular": 3
   },
   {
    "id": "east",
@@ -3961,10 +6960,127 @@
    "era": "ramesside",
    "dwell": 120,
    "wow": 2,
-   "look": "Behind the Akhmenu: the small temple where ordinary people could pray to Amun, on the spot where the obelisk now in Rome (the Lateran obelisk) once stood; the Nectanebo gate is beyond.",
-   "note": "At the far eastern end; usually very quiet.",
-   "kids": [],
-   "bullets": []
+   "look": "Behind the Akhmenu: the low columns and carved square pillars of the small temple where ordinary people could pray, with Nectanebo I's tall gate further east.",
+   "note": "At the far east end, usually very quiet. The eastern gate was locked in one report (2020, updated 2024), so it may be closed; if so, see it from the temple side. The Lateran obelisk itself is in Rome, so there is nothing of it to find here.",
+   "kids": [
+    {
+     "t": "Find the huge stone gateway at the east end. Can you walk up to it?",
+     "photo": "nectanebo-east-gate"
+    }
+   ],
+   "bullets": [
+    {
+     "id": 1,
+     "t": "Ramesses II built this small temple for 'Amun-Ra who hears prayers'. Ordinary people, kept out of the inner temple, could come here to petition the god. It is called the Temple of the Hearing Ear.",
+     "imp": 4,
+     "tags": {
+      "people": 0.5,
+      "gods": 0.6,
+      "history": 0.4
+     },
+     "src": [
+      60,
+      4
+     ]
+    },
+    {
+     "id": 2,
+     "t": "At its back stood a lone red granite obelisk, begun by Thutmose III and raised by his grandson Thutmose IV about 1400 BC. It now stands in Rome, the tallest ancient obelisk still standing.",
+     "imp": 5,
+     "tags": {
+      "engineering": 0.8,
+      "history": 0.6
+     },
+     "src": [
+      4,
+      68,
+      69
+     ]
+    },
+    {
+     "id": 3,
+     "t": "Thutmose IV's text says the obelisk lay on its side for thirty-five years before he raised it. About 32 metres tall, it weighs roughly 300 to 410 tonnes, by different estimates.",
+     "imp": 4,
+     "tags": {
+      "engineering": 1,
+      "physics": 0.4
+     },
+     "needs": 2,
+     "src": [
+      68,
+      70
+     ],
+     "verify": true
+    },
+    {
+     "id": 4,
+     "t": "In the fourth century AD it went to Alexandria, then Rome, where Constantius II set it up in 357. Dug up in three pieces in 1587, it was raised again in 1588 by Domenico Fontana.",
+     "imp": 4,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.5,
+      "people": 0.4
+     },
+     "needs": 2,
+     "src": [
+      4,
+      68,
+      69
+     ]
+    },
+    {
+     "id": 5,
+     "t": "A theory says this obelisk stood on Karnak's main axis, so its tip would have shown the winter solstice sunrise from the quay. Its authors call it speculation.",
+     "imp": 3,
+     "tags": {
+      "space": 1,
+      "physics": 0.3
+     },
+     "needs": 2,
+     "src": [
+      62
+     ]
+    },
+    {
+     "id": 6,
+     "t": "Taharqa added a porch of twenty papyrus columns in front, each about 9.5 metres tall. It has since fallen.",
+     "imp": 2,
+     "tags": {
+      "architecture": 0.5,
+      "history": 0.3
+     },
+     "src": [
+      60
+     ]
+    },
+    {
+     "id": 7,
+     "t": "Beyond is Nectanebo I's eastern gate, begun about 380 BC and about 20 metres high, in a wall 12 metres thick and 21 metres high. He planned twelve gates and finished four.",
+     "imp": 3,
+     "tags": {
+      "engineering": 0.8,
+      "architecture": 0.5
+     },
+     "src": [
+      29
+     ],
+     "photo": "nectanebo-east-gate"
+    },
+    {
+     "id": 8,
+     "t": "Beyond the gate stood Akhenaten's temples to the Aten, built about 1350 BC. Horemheb later pulled them apart block by block and reused the stones as fill in his own pylons.",
+     "imp": 3,
+     "tags": {
+      "history": 0.8,
+      "engineering": 0.3
+     },
+     "src": [
+      4
+     ]
+    }
+   ],
+   "photo": "hearing-ear-columns",
+   "popular": 0
   },
   {
    "id": "toilets-oam",
@@ -4078,8 +7194,8 @@
    "http://www.griffith.ox.ac.uk/gri/3pm.html"
   ],
   "8": [
-   "Pennington and others, \"Conceptual origins and geomorphic evolution of the temple of Amun-Ra at Karnak\", Antiquity",
-   "https://www.cambridge.org/core/journals/antiquity"
+   "Pennington, B. T. and others, \"Conceptual origins and geomorphic evolution of the temple of Amun-Ra at Karnak (Luxor, Egypt)\", Antiquity 99 (408) (2025), 1535 to 1549",
+   "https://doi.org/10.15184/aqy.2025.10185"
   ],
   "9": [
    "On-site board \"Karnak Temples Plan & Chronology\" (Ministry of Tourism and Antiquities), photographed by Eliot",
@@ -4112,6 +7228,382 @@
   "16": [
    "Shaw, I. (ed.), The Oxford History of Ancient Egypt (2000): chronology used for reign dates",
    ""
+  ],
+  "17": [
+   "Sullivan, E., \"The Development of the Temple of Karnak\", Digital Karnak (PDF, 2010)",
+   "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/10/developement-of-karnak-pdf_compressed.pdf"
+  ],
+  "18": [
+   "Epigraphic Survey, Reliefs and Inscriptions at Karnak III: The Bubastite Portal (OIP 74, 1954)",
+   "https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/oip74.pdf"
+  ],
+  "19": [
+   "Epigraphic Survey, Reliefs and Inscriptions at Karnak I: Ramses III's Temple (OIP 25, 1936)",
+   "https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/oip25.pdf"
+  ],
+  "20": [
+   "Wikipedia, Shoshenq I (pointer only)",
+   "https://en.wikipedia.org/wiki/Shoshenq_I"
+  ],
+  "21": [
+   "Wikipedia, Bubastite Portal (pointer only)",
+   "https://en.wikipedia.org/wiki/Bubastite_Portal"
+  ],
+  "22": [
+   "Wikipedia, Taharqa (pointer only)",
+   "https://en.wikipedia.org/wiki/Taharqa"
+  ],
+  "23": [
+   "Charloux, G. and others, \"Shifting Nile and the origins and development of ancient Karnak\", Antiquity 95 (382) (2021), 919 to 939",
+   "https://doi.org/10.15184/aqy.2021.73"
+  ],
+  "24": [
+   "Ghilardi, M., \"The Nile Valley in Upper Egypt during the Dynastic period (ancient Karnak area)\", in Carcaud and Arnaud-Fassetta (eds), La géoarchéologie française au XXIe siècle (CNRS Éditions), 173 to 182",
+   "https://doi.org/10.4000/books.editionscnrs.22113"
+  ],
+  "25": [
+   "Digital Karnak, 1st Pylon",
+   "https://digitalkarnak.ucsc.edu/1st-pylon"
+  ],
+  "26": [
+   "Digital Karnak, Western Processional Way",
+   "https://digitalkarnak.ucsc.edu/?p=4300"
+  ],
+  "27": [
+   "Digital Karnak, Other Processional Ways",
+   "https://digitalkarnak.ucsc.edu/?p=4531"
+  ],
+  "28": [
+   "Digital Karnak, Shoshenq I Court",
+   "https://digitalkarnak.ucsc.edu/?p=4245"
+  ],
+  "29": [
+   "Digital Karnak, Enclosures and Gates",
+   "https://digitalkarnak.ucsc.edu/?p=730"
+  ],
+  "30": [
+   "Sullivan, E., \"Architectural Features\", Digital Karnak (PDF, 2008)",
+   "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/11/architecturalfeatures.pdf"
+  ],
+  "31": [
+   "Sullivan, E., \"Construction Methods and Building Materials\", Digital Karnak (PDF, 2008)",
+   "https://digitalkarnak.ucsc.edu/wp-content/uploads/2020/11/Construction.pdf"
+  ],
+  "32": [
+   "Great Hypostyle Hall Project, Constructing the Hall",
+   "https://www.memphis.edu/hypostyle/tour_hall/constructing_hall.php"
+  ],
+  "33": [
+   "Great Hypostyle Hall Project, Third Pylon",
+   "https://www.memphis.edu/hypostyle/tour_hall/third_pylon.php"
+  ],
+  "34": [
+   "Institute of Egyptian Art and Archaeology, University of Memphis, Karnak colour tour",
+   "https://www.memphis.edu/egypt/resources/colortour/luxor5.php"
+  ],
+  "35": [
+   "The Art Newspaper, \"Egypt's ancient road of 1,000 sphinxes unveiled\" (25 November 2021)",
+   "https://www.theartnewspaper.com/2021/11/25/egypts-ancient-road-of-1000-sphinxes-unveiled-in-spectacular-ceremony"
+  ],
+  "36": [
+   "Wikipedia, Nile Level Texts (pointer to Legrain 1896, von Beckerath 1966, Broekman 2002)",
+   "https://en.wikipedia.org/wiki/Nile_Level_Texts"
+  ],
+  "37": [
+   "Wikidata, obelisk of Sety II at Karnak (Q115511928)",
+   "https://www.wikidata.org/wiki/Q115511928"
+  ],
+  "38": [
+   "Egypt Exploration Fund, Archaeological Report 1899 to 1900 (quoting Maspero's report on the collapse)",
+   "https://archive.org/details/dli.ministry.27742"
+  ],
+  "39": [
+   "Archaeology magazine (10 August 2021; 19 January 2023) and Egyptian Streets (21 January 2024) on cleaning the Hypostyle columns",
+   "https://egyptianstreets.com/2024/01/21/karnak-temples-great-hypostyle-hall-returns-to-glory-after-restoration-of-95-of-its-columns/"
+  ],
+  "40": [
+   "Epigraphic Survey, Reliefs and Inscriptions at Karnak IV: The Battle Reliefs of King Sety I (OIP 107, 1986)",
+   "https://isac.uchicago.edu/node/3136"
+  ],
+  "41": [
+   "Wikipedia, Georges Legrain (pointer only)",
+   "https://en.wikipedia.org/wiki/Georges_Legrain"
+  ],
+  "42": [
+   "Digital Karnak, Obelisks of Wadjet Hall",
+   "https://digitalkarnak.ucsc.edu/?p=3882"
+  ],
+  "43": [
+   "Digital Karnak, Obelisks of Thutmose I",
+   "https://digitalkarnak.ucsc.edu/?p=3858"
+  ],
+  "44": [
+   "Digital Karnak, Wadjet Hall",
+   "https://digitalkarnak.ucsc.edu/?p=4295"
+  ],
+  "45": [
+   "Digital Karnak, 4th Pylon and Enclosure",
+   "https://digitalkarnak.ucsc.edu/?p=4174"
+  ],
+  "46": [
+   "Digital Karnak, 3rd Pylon",
+   "https://digitalkarnak.ucsc.edu/?p=4169"
+  ],
+  "47": [
+   "Digital Karnak, Central Bark Shrine",
+   "https://digitalkarnak.ucsc.edu/?p=3921"
+  ],
+  "48": [
+   "Digital Karnak, Scarab of Amenhotep III",
+   "https://digitalkarnak.ucsc.edu/?p=6390"
+  ],
+  "49": [
+   "The National, \"Ancient obelisk re-erected at Luxor's Karnak temple\" (10 April 2022)",
+   "https://www.thenationalnews.com/mena/egypt/2022/04/10/ancient-obelisk-re-erected-in-original-location-at-luxors-karnak-temple/"
+  ],
+  "50": [
+   "Ancient Origins, Karnak obelisk re-erected (2022)",
+   "https://www.ancient-origins.net/news-history-archaeology/karnak-obelisk-0016634"
+  ],
+  "51": [
+   "Daily News Egypt, \"Egypt restores, re-erects obelisk of Queen Hatshepsut at Karnak\" (11 April 2022)",
+   "https://www.dailynewsegypt.com/2022/04/11/egypt-restores-re-erects-obelisk-of-queen-hatshepsut-at-karnak/"
+  ],
+  "52": [
+   "Engelbach, R., The Aswan Obelisk (Cairo, 1922)",
+   "https://www.gutenberg.org/ebooks/59320"
+  ],
+  "53": [
+   "NOVA Online, \"Raising the Obelisk\" questions and answers (2000)",
+   "https://www.pbs.org/wgbh/nova/obelisk/qanda/"
+  ],
+  "54": [
+   "Hatshepsut's obelisk inscription, web translation by Amir Hussein (weak; not checked against Breasted)",
+   "https://timetrips.co.uk/TKH-obelisk%20inscription.htm"
+  ],
+  "55": [
+   "Egypt Museum, \"Colossal Khepri\" (for the modern walk-round custom only)",
+   "https://egypt-museum.com/colossal-khepri/"
+  ],
+  "56": [
+   "Wikimedia Commons, File:Hatshepsut before Amun.jpg (description)",
+   "https://commons.wikimedia.org/wiki/File:Hatshepsut_before_Amun.jpg"
+  ],
+  "57": [
+   "Wikimedia Commons, File:Karnak 34.jpg (description)",
+   "https://commons.wikimedia.org/wiki/File:Karnak_34.jpg"
+  ],
+  "58": [
+   "Digital Karnak, Middle Kingdom Court",
+   "https://digitalkarnak.ucsc.edu/middle-kingdom-court"
+  ],
+  "59": [
+   "Digital Karnak, Akhmenu",
+   "https://digitalkarnak.ucsc.edu/akhmenu/"
+  ],
+  "60": [
+   "Digital Karnak, Ramesses II Eastern Temple",
+   "https://digitalkarnak.ucsc.edu/ramesses-ii-eastern-temple"
+  ],
+  "61": [
+   "Digital Karnak, Ptah Temple",
+   "https://digitalkarnak.ucsc.edu/archive/Ptah-Temple"
+  ],
+  "62": [
+   "Shaltout, M. and Belmonte, J. A., \"On the orientation of ancient Egyptian temples: (1) Upper Egypt and Lower Nubia\", Journal for the History of Astronomy 36 (2005)",
+   "https://webs.um.es/bussons/arqueoastronomia.pdf"
+  ],
+  "63": [
+   "Sparavigna, A. C., \"The sunrise amplitude equation applied to an Egyptian temple\" (preprint, 2012, not peer reviewed)",
+   "https://arxiv.org/abs/1207.6942"
+  ],
+  "64": [
+   "UNESCO and IAU Portal to the Heritage of Astronomy, The Temple of Amun at Karnak",
+   "https://web.astronomicalheritage.net/show-entity?identity=22&idsubentity=1"
+  ],
+  "65": [
+   "Thiers, C. and Zignani, P., \"The Temple of Ptah at Karnak\", Egyptian Archaeology 38 (2011), 20 to 24",
+   ""
+  ],
+  "66": [
+   "Biston-Moulin, S. and Thiers, C., Le temple de Ptah à Karnak I and II (IFAO, 2016)",
+   ""
+  ],
+  "67": [
+   "Wikimedia Commons, File:PtahTemple-Karnak-Sekhmet statue chapel-2.jpg (description)",
+   "https://commons.wikimedia.org/wiki/File:PtahTemple-Karnak-Sekhmet_statue_chapel-2.jpg"
+  ],
+  "68": [
+   "NOVA, \"A World of Obelisks: Rome\"",
+   "https://www.pbs.org/wgbh/nova/egypt/raising/rome.html"
+  ],
+  "69": [
+   "Turismo Roma, The Lateran Obelisk",
+   "https://turismoroma.it/en/places/lateran-obelisk"
+  ],
+  "70": [
+   "Wikipedia, Lateran Obelisk (pointer only)",
+   "https://en.wikipedia.org/wiki/Lateran_Obelisk"
+  ],
+  "71": [
+   "Wikipedia, History of the Karnak Temple complex (pointer only, citing Blyth 2006)",
+   "https://en.wikipedia.org/wiki/History_of_the_Karnak_Temple_complex"
+  ],
+  "72": [
+   "Wikipedia, Botanical garden of Thutmosis III (pointer to Beaux 1990)",
+   "https://en.wikipedia.org/wiki/Botanical_garden_of_Thutmosis_III"
+  ],
+  "73": [
+   "Luxor Living Lab, Layers of Heritage (heritage website, not scholarly)",
+   "https://www.luxorlivinglab.com/heritage/layers-of-heritage"
+  ],
+  "74": [
+   "The Past, \"Karnak developments\" (21 August 2025)",
+   "https://the-past.com/news/karnak-developments/"
+  ],
+  "75": [
+   "Ancient Pages, Southern chapels of the Akhmenu restored (17 June 2025, citing Ahram Online)",
+   "https://www.ancientpages.com/2025/06/17/luxors-heritage-in-focus-southern-chapels-of-the-akh-menu-temple-restored"
+  ],
+  "76": [
+   "Visitor blog, Carrie Reed Travels, Visiting Karnak Temple (2018)",
+   "https://carriereedtravels.com/2018/12/06/visiting-karnak-temple-in-luxor-egypt/"
+  ],
+  "77": [
+   "Chevrier, H., \"Rapport sur les travaux de Karnak (1926 to 1927)\", ASAE 27 (1927)",
+   "https://archive.org/details/ASAE-27-1927"
+  ],
+  "78": [
+   "Chevrier, H., \"Rapport sur les travaux de Karnak (1927 to 1928)\", ASAE 28 (1928)",
+   "https://archive.org/details/ASAE-28-1928"
+  ],
+  "79": [
+   "Chevrier, H., \"Rapport sur les travaux de Karnak (1937 to 1938)\", ASAE 38 (1938)",
+   "https://archive.org/details/ASAE-38-1938"
+  ],
+  "80": [
+   "Chevrier, H., \"Rapport sur les travaux de Karnak (1947 to 1948)\", ASAE 49 (1949)",
+   "https://archive.org/details/ASAE-49-1949"
+  ],
+  "81": [
+   "Medini, L., \"Âha et Ounout dans la Chapelle blanche de Sésostris Ier\", BIFAO 122 (2022), 401 to 422",
+   "https://www.ifao.egnet.net/bifao/122/12/"
+  ],
+  "82": [
+   "Larché, F., Journal of Ancient Egyptian Architecture 1 (2016), 71 to 80",
+   "https://web.ujaen.es/investiga/egiptologia/journalarchitecture/downloads/JAEA1_Larche.pdf"
+  ],
+  "83": [
+   "ISIDA project, Red Chapel (weak source)",
+   "https://isida-project.org/egypt_april_2018/red_chapel_en.htm"
+  ],
+  "84": [
+   "Lonely Planet, Open-Air Museum, Karnak",
+   "https://www.lonelyplanet.com/points-of-interest/open-air-museum/437478"
+  ],
+  "85": [
+   "Wikimedia Commons, Hieroglyph representing the infinite, White Chapel of Senusret I (description)",
+   "https://commons.wikimedia.org/wiki/File:Hieroglyph_representing_the_infinite._Karnak,_White_Chapel_of_Senusret_I.jpg"
+  ],
+  "86": [
+   "Digital Karnak, Sacred Lake",
+   "https://digitalkarnak.ucsc.edu/sacred-lake"
+  ],
+  "87": [
+   "Digital Karnak, Taharqo Edifice and Nilometer",
+   "https://digitalkarnak.ucsc.edu/taharqo-edifice"
+  ],
+  "88": [
+   "Elfiky and Elsaeed, \"Hydraulic study for the Sacred Lake pollution at Elkarnak Temple, Egypt\" (Benha University; year not found)",
+   "https://feng.stafpu.bu.edu.eg/Civil%20Engineering/3672/publications/Gamal%20Helmy%20Mohamed%20Elsaeed_Microsoft%20Word%20-%20Hydraulic%20Study%20For%20The%20Sacred%20Lake%20Pollution%20At%20ElKarnak%20Temple,%20Egypt.pdf"
+  ],
+  "89": [
+   "Digital Karnak, 7th Pylon",
+   "https://digitalkarnak.ucsc.edu/7th-pylon"
+  ],
+  "90": [
+   "Digital Karnak, 8th Pylon",
+   "https://digitalkarnak.ucsc.edu/8th-pylon"
+  ],
+  "91": [
+   "Digital Karnak, 9th Pylon",
+   "https://digitalkarnak.ucsc.edu/9th-pylon"
+  ],
+  "92": [
+   "Digital Karnak, 10th Pylon",
+   "https://digitalkarnak.ucsc.edu/10th-pylon"
+  ],
+  "93": [
+   "Jambon, E., \"Les fouilles de Georges Legrain dans la Cachette de Karnak (1903 to 1907)\", BIFAO 109 (2010), 239 to 279",
+   "https://www.ifao.egnet.net/bifao/109/13/"
+  ],
+  "94": [
+   "Biblical Archaeology Society, \"Understanding the Wall of Reliefs\"",
+   "https://library.biblicalarchaeology.org/sidebar/understanding-the-wall-of-reliefs/"
+  ],
+  "95": [
+   "Biblical Archaeology Society, \"A Good Peace: the Hittite-Egyptian Treaty\"",
+   "https://library.biblicalarchaeology.org/sidebar/good-peace-the-hittite-egyptian-treaty/"
+  ],
+  "96": [
+   "Wikipedia, Egyptian-Hittite peace treaty (pointer only)",
+   "https://en.wikipedia.org/wiki/Treaty_of_Kadesh"
+  ],
+  "97": [
+   "Digital Karnak, Khonsu Temple",
+   "https://digitalkarnak.ucsc.edu/khonsu-temple"
+  ],
+  "98": [
+   "Epigraphic Survey, The Temple of Khonsu I (OIP 100, 1979)",
+   "https://isac-assets.s3.amazonaws.com/isac-publications/oip100.pdf"
+  ],
+  "99": [
+   "Epigraphic Survey, The Temple of Khonsu II (OIP 103, 1981)",
+   "https://isac-assets.s3.amazonaws.com/isac-publications/oip103.pdf"
+  ],
+  "100": [
+   "Digital Karnak, Opet Temple",
+   "https://digitalkarnak.ucsc.edu/opet-temple/"
+  ],
+  "101": [
+   "Digital Karnak, Bab el-Amara Gate",
+   "https://digitalkarnak.ucsc.edu/bab-el-amara-gate/"
+  ],
+  "102": [
+   "American Research Center in Egypt, Khonsu Temple",
+   "https://arce.org/?p=3600"
+  ],
+  "103": [
+   "Visitor blog, The Discoveries Of, Karnak Temple",
+   "https://www.thediscoveriesof.com/karnak-temple-egypt/"
+  ],
+  "104": [
+   "Visitor blog, Sailing Stone Travel, A guide to Karnak Temple (2020, updated 2024)",
+   "https://sailingstonetravel.com/a-guide-to-karnak-temple/"
+  ],
+  "105": [
+   "WeRoad, Karnak Temple guide",
+   "https://www.weroad.com/blog/karnak-temple-guide"
+  ],
+  "106": [
+   "Papyrus Harris I (British Museum EA 9999), via Wikipedia summary; edition Grandet 1994",
+   "https://en.wikipedia.org/wiki/Papyrus_Harris_I"
+  ],
+  "107": [
+   "Egyptian Museum Cairo, History of the Egyptian Museum",
+   "https://egyptianmuseumcairo.eg/history-of-the-egyptian-museum/"
+  ],
+  "108": [
+   "Linda Hall Library, Napoleon and the Scientific Expedition to Egypt",
+   "https://www.lindahall.org/experience/digital-exhibitions/napoleon-and-the-scientific-expedition-to-egypt/10-denon-discovers-ancient-egypt/"
+  ],
+  "109": [
+   "Digital Karnak, Restoration Stela of Tutankhamun",
+   "https://digitalkarnak.ucsc.edu/?p=6414"
+  ],
+  "110": [
+   "Wikipedia, Supreme Council of Antiquities (pointer only)",
+   "https://en.wikipedia.org/wiki/Supreme_Council_of_Antiquities"
   ],
   "gk": [
    "General knowledge",

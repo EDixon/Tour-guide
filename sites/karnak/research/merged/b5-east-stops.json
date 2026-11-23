@@ -1,0 +1,512 @@
+{
+  "mkcourt": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "You are standing on the oldest part of Karnak. About 1950 BC Senusret I built a limestone temple to Amun-Ra here, about 38 metres square. Later kings built over it.",
+        "imp": 5,
+        "tags": {
+          "history": 0.7,
+          "architecture": 0.5,
+          "engineering": 0.3
+        },
+        "src": [
+          58,
+          4,
+          16
+        ]
+      },
+      {
+        "id": 2,
+        "t": "Look for the large flat slabs inside the low mud-brick wall. The temple had four doorways with red granite thresholds in a line, and only its sills and foundations survive.",
+        "imp": 4,
+        "tags": {
+          "engineering": 0.6,
+          "architecture": 0.5
+        },
+        "src": [
+          58,
+          4
+        ],
+        "photo": "middle-kingdom-court-slabs"
+      },
+      {
+        "id": 3,
+        "t": "The front had a portico of twelve square pillars, each with a statue of the king as Osiris. Some pillars are now in the Cairo Museum. Hatshepsut later removed the portico.",
+        "imp": 4,
+        "tags": {
+          "architecture": 0.6,
+          "art": 0.5,
+          "history": 0.3
+        },
+        "src": [
+          58,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "t": "Many scholars say the temple's axis was aimed at the winter solstice sunrise. That is argued, not proved, and some doubt it for a date this early. More at the Akhmenu.",
+        "imp": 4,
+        "tags": {
+          "space": 1,
+          "physics": 0.4,
+          "history": 0.3
+        },
+        "src": [
+          62,
+          64
+        ]
+      },
+      {
+        "id": 5,
+        "t": "It was not the first. Under the sills, excavators found Eleventh Dynasty sandstone platforms, probably the temple of Intef II from about 2100 BC. Senusret I enlarged an older cult.",
+        "imp": 3,
+        "tags": {
+          "history": 0.7,
+          "architecture": 0.3
+        },
+        "src": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "t": "The sanctuary was off the central line, so priests turned ninety degrees left to reach it. Thutmose III's Akhmenu, just ahead, echoes this layout nearly five hundred years later.",
+        "imp": 3,
+        "tags": {
+          "architecture": 0.8,
+          "history": 0.3
+        },
+        "src": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "t": "How big, and which way did it face? One reconstruction faces west. François Larché argues for a smaller temple facing east, towards a Nile channel that has since vanished.",
+        "imp": 3,
+        "tags": {
+          "physics": 0.3,
+          "history": 0.5,
+          "architecture": 0.4
+        },
+        "src": [
+          58,
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "t": "When was it pulled down? Sullivan's account says about 323 BC, to raise the ground for the granite shrine nearby. Larché says Amenhotep I did it. Sources disagree.",
+        "imp": 2,
+        "tags": {
+          "history": 0.6,
+          "engineering": 0.4
+        },
+        "src": [
+          4,
+          58
+        ]
+      }
+    ],
+    "kids": [
+      {
+        "t": "Spot the tall pointed obelisk standing up over the ruins to the west. Can you point at it?",
+        "photo": "mk-court-obelisk"
+      }
+    ],
+    "look": "A sunken area of large flat stone slabs inside a low mud-brick wall, with an information board nearby, and Hatshepsut's obelisk rising beyond to the west.",
+    "photo": "middle-kingdom-court-slabs",
+    "note": "An open court with no shade, easy to walk past. The slabs may be fenced or roped off; if so, look over the rail from the path."
+  },
+  "akhmenu": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "The Akhmenu, 'the most glorious of monuments', was begun by Thutmose III after his twenty-third year, about 1456 BC. It is about 77 metres wide, and its great hall is a festival tent in stone.",
+        "imp": 5,
+        "tags": {
+          "architecture": 0.6,
+          "engineering": 0.5,
+          "history": 0.4
+        },
+        "src": [
+          59,
+          4,
+          16
+        ]
+      },
+      {
+        "id": 2,
+        "t": "The columns are the tent poles. Two rows of painted columns stand for the poles of a portable tent, under a ceiling painted blue with yellow stars.",
+        "imp": 5,
+        "tags": {
+          "architecture": 0.8,
+          "engineering": 0.6,
+          "space": 0.3
+        },
+        "src": [
+          59,
+          17
+        ],
+        "photo": "akhmenu-column"
+      },
+      {
+        "id": 3,
+        "t": "Centuries later the hall became a church. Look for faint painted saints with halos on some columns, put there by Christians over the pharaoh's decoration.",
+        "imp": 4,
+        "tags": {
+          "history": 0.6,
+          "art": 0.5,
+          "people": 0.3
+        },
+        "src": [
+          71,
+          6,
+          73,
+          76
+        ],
+        "verify": true,
+        "photo": "akhmenu-saint-column"
+      },
+      {
+        "id": 4,
+        "t": "In the north-east, the botanical room is carved with plants and animals the king's men saw on his campaigns abroad. Wikipedia counts about 275 plants.",
+        "imp": 4,
+        "tags": {
+          "art": 0.8,
+          "history": 0.5
+        },
+        "src": [
+          59,
+          4,
+          72
+        ],
+        "verify": true,
+        "photo": "botanical-garden-reliefs"
+      },
+      {
+        "id": 5,
+        "t": "In a small room by the entrance, Thutmose III honoured sixty-one earlier kings back to the Fourth Dynasty. The stone list was taken to the Louvre in 1843.",
+        "imp": 3,
+        "tags": {
+          "history": 0.8,
+          "people": 0.3
+        },
+        "src": [
+          59,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "t": "A stair from the north-east corner of the hall climbs to a sun shrine on the roof, open to the sky, with an altar shaped like a row of hetep signs.",
+        "imp": 3,
+        "tags": {
+          "space": 0.8,
+          "gods": 0.5,
+          "architecture": 0.3
+        },
+        "src": [
+          59
+        ]
+      },
+      {
+        "id": 7,
+        "t": "Some astronomers think an opening in the high sun room faced the winter solstice sunrise, the direction of Karnak's main axis. Others read it as a niche, not a window.",
+        "imp": 4,
+        "tags": {
+          "space": 1,
+          "physics": 0.5
+        },
+        "needs": 6,
+        "src": [
+          62
+        ]
+      },
+      {
+        "id": 8,
+        "t": "Karnak's axis from the river to here lines up with the winter solstice sunrise to within about a degree. In early March the sun rises well north of that line.",
+        "imp": 4,
+        "tags": {
+          "space": 1,
+          "physics": 1,
+          "views": 0.2
+        },
+        "src": [
+          63,
+          62,
+          "gk"
+        ],
+        "verify": true
+      },
+      {
+        "id": 9,
+        "t": "Right of the main door, the Southern Chapels, seven shrines and two columned rooms, were restored and reported finished in June 2025, with new signs and ramps.",
+        "imp": 3,
+        "tags": {
+          "art": 0.3,
+          "history": 0.3
+        },
+        "src": [
+          75,
+          74
+        ]
+      }
+    ],
+    "kids": [
+      {
+        "t": "Find the birds and flowers carved on the wall of the botanical room. How many can you spot?",
+        "photo": "botanical-garden-reliefs"
+      },
+      {
+        "t": "Find a big column with red, blue and yellow stripes, and give it a wave.",
+        "photo": "akhmenu-column"
+      }
+    ],
+    "look": "The hall of tent-pole columns inside the long building, then the botanical room's carved wall in the north-east.",
+    "photo": "akhmenu-front",
+    "note": "Visitor reports say few inner rooms are open, but the Southern Chapels were restored and reported open in June 2025. The roof sun shrine and the botanical room may be closed; if so, see the columns from the main door and look for the carved wall from outside the room (photographs show it over a rope)."
+  },
+  "ptah": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "Thutmose III built this small sandstone temple of Ptah, the craftsmen's god, about 1457 BC. His foundation stele says he found an older brick temple here falling into ruin.",
+        "imp": 5,
+        "tags": {
+          "gods": 0.6,
+          "history": 0.4,
+          "architecture": 0.3
+        },
+        "src": [
+          4,
+          65,
+          61
+        ],
+        "verify": true
+      },
+      {
+        "id": 2,
+        "t": "Look for Sekhmet, Ptah's lioness-headed wife, in the right-hand chapel. About two metres tall, she stands lit by a single hole in the roof, and seems to appear from the dark.",
+        "imp": 5,
+        "tags": {
+          "art": 0.7,
+          "physics": 0.4,
+          "gods": 0.6
+        },
+        "src": [
+          67,
+          65
+        ],
+        "photo": "ptah-sekhmet"
+      },
+      {
+        "id": 3,
+        "t": "The roof opening is modern. A report in Egyptian Archaeology says Georges Legrain had roof slabs removed to let light in, and the statue was re-erected here.",
+        "imp": 4,
+        "tags": {
+          "engineering": 0.6,
+          "physics": 0.6,
+          "history": 0.3
+        },
+        "needs": 2,
+        "src": [
+          65
+        ],
+        "verify": true
+      },
+      {
+        "id": 4,
+        "t": "Walk the row of gateways. They were added over about 700 years, from the Kushite king Shabaqo about 700 BC, through the Ptolemies, to the Roman emperor Tiberius.",
+        "imp": 3,
+        "tags": {
+          "architecture": 0.6,
+          "history": 0.5
+        },
+        "src": [
+          4
+        ],
+        "photo": "ptah-gates"
+      },
+      {
+        "id": 5,
+        "t": "Ptah was patron of builders and craftsmen. Sekhmet, the lioness of war and plague, was his fierce partner, and their son was Nefertem, the lotus god.",
+        "imp": 3,
+        "tags": {
+          "gods": 1,
+          "engineering": 0.2
+        },
+        "src": [
+          "gk",
+          65
+        ],
+        "verify": true
+      },
+      {
+        "id": 6,
+        "t": "Nectanebo I's huge wall, begun about 380 BC, enclosed this temple, with a gate in the north wall right beside it.",
+        "imp": 2,
+        "tags": {
+          "history": 0.5,
+          "engineering": 0.4
+        },
+        "src": [
+          4,
+          17
+        ]
+      },
+      {
+        "id": 7,
+        "t": "French and Egyptian teams have excavated and recorded the temple since 2008. The north chapel still has its original roof. A 2016 survey records the carved scenes.",
+        "imp": 2,
+        "tags": {
+          "history": 0.3,
+          "engineering": 0.3,
+          "computing": 0.1
+        },
+        "src": [
+          65,
+          66
+        ],
+        "verify": true
+      }
+    ],
+    "kids": [
+      {
+        "t": "Find the lady with a lion's head, and say hello quietly.",
+        "photo": "ptah-sekhmet"
+      },
+      {
+        "t": "Walk through the little doorways in a row. How many can you count?",
+        "photo": "ptah-gates"
+      }
+    ],
+    "look": "A row of small gateways leads east into the temple. In the southern side chapel, on the right, the black Sekhmet statue stands lit from above.",
+    "photo": "ptah-gates",
+    "note": "May be closed or locked. A 2020 report (updated 2024) says a guard opened a locked room for a tip, so carry small change. If it stays shut, see the row of gateways and the carved outer wall from outside."
+  },
+  "east": {
+    "bullets": [
+      {
+        "id": 1,
+        "t": "Ramesses II built this small temple for 'Amun-Ra who hears prayers'. Ordinary people, kept out of the inner temple, could come here to petition the god. It is called the Temple of the Hearing Ear.",
+        "imp": 4,
+        "tags": {
+          "people": 0.5,
+          "gods": 0.6,
+          "history": 0.4
+        },
+        "src": [
+          60,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "t": "At its back stood a lone red granite obelisk, begun by Thutmose III and raised by his grandson Thutmose IV about 1400 BC. It now stands in Rome, the tallest ancient obelisk still standing.",
+        "imp": 5,
+        "tags": {
+          "engineering": 0.8,
+          "history": 0.6
+        },
+        "src": [
+          4,
+          68,
+          69
+        ]
+      },
+      {
+        "id": 3,
+        "t": "Thutmose IV's text says the obelisk lay on its side for thirty-five years before he raised it. About 32 metres tall, it weighs roughly 300 to 410 tonnes, by different estimates.",
+        "imp": 4,
+        "tags": {
+          "engineering": 1,
+          "physics": 0.4
+        },
+        "needs": 2,
+        "src": [
+          68,
+          70
+        ],
+        "verify": true
+      },
+      {
+        "id": 4,
+        "t": "In the fourth century AD it went to Alexandria, then Rome, where Constantius II set it up in 357. Dug up in three pieces in 1587, it was raised again in 1588 by Domenico Fontana.",
+        "imp": 4,
+        "tags": {
+          "history": 0.8,
+          "engineering": 0.5,
+          "people": 0.4
+        },
+        "needs": 2,
+        "src": [
+          4,
+          68,
+          69
+        ]
+      },
+      {
+        "id": 5,
+        "t": "A theory says this obelisk stood on Karnak's main axis, so its tip would have shown the winter solstice sunrise from the quay. Its authors call it speculation.",
+        "imp": 3,
+        "tags": {
+          "space": 1,
+          "physics": 0.3
+        },
+        "needs": 2,
+        "src": [
+          62
+        ]
+      },
+      {
+        "id": 6,
+        "t": "Taharqa added a porch of twenty papyrus columns in front, each about 9.5 metres tall. It has since fallen.",
+        "imp": 2,
+        "tags": {
+          "architecture": 0.5,
+          "history": 0.3
+        },
+        "src": [
+          60
+        ]
+      },
+      {
+        "id": 7,
+        "t": "Beyond is Nectanebo I's eastern gate, begun about 380 BC and about 20 metres high, in a wall 12 metres thick and 21 metres high. He planned twelve gates and finished four.",
+        "imp": 3,
+        "tags": {
+          "engineering": 0.8,
+          "architecture": 0.5
+        },
+        "src": [
+          29
+        ],
+        "photo": "nectanebo-east-gate"
+      },
+      {
+        "id": 8,
+        "t": "Beyond the gate stood Akhenaten's temples to the Aten, built about 1350 BC. Horemheb later pulled them apart block by block and reused the stones as fill in his own pylons.",
+        "imp": 3,
+        "tags": {
+          "history": 0.8,
+          "engineering": 0.3
+        },
+        "src": [
+          4
+        ]
+      }
+    ],
+    "kids": [
+      {
+        "t": "Find the huge stone gateway at the east end. Can you walk up to it?",
+        "photo": "nectanebo-east-gate"
+      }
+    ],
+    "look": "Behind the Akhmenu: the low columns and carved square pillars of the small temple where ordinary people could pray, with Nectanebo I's tall gate further east.",
+    "photo": "hearing-ear-columns",
+    "note": "At the far east end, usually very quiet. The eastern gate was locked in one report (2020, updated 2024), so it may be closed; if so, see it from the temple side. The Lateran obelisk itself is in Rome, so there is nothing of it to find here."
+  }
+}

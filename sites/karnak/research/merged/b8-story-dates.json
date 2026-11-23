@@ -1,0 +1,500 @@
+{
+  "note": "b8-story additions and corrections. owners checked row by row; see report. Years BC negative; Shaw (2000) chronology.",
+  "site": "Karnak",
+  "owners": [
+    [
+      -2112,
+      -1986,
+      "the Eleventh Dynasty kings of Thebes, from Intef II (about 2112 to 2063 BC), whose column naming Amun-Ra is the earliest firm evidence of a temple here"
+    ],
+    [
+      -1985,
+      -1651,
+      "the Twelfth and Thirteenth Dynasty kings, with the temple served by Amun's priests (Senusret I built the Middle Kingdom temple)"
+    ],
+    [
+      -1650,
+      -1551,
+      "the Theban kings of the Sixteenth and Seventeenth Dynasties, while the Hyksos ruled the north (little building is known at Karnak in this period)"
+    ],
+    [
+      -1550,
+      -1353,
+      "the New Kingdom pharaohs from Ahmose, with the temple's lands and workers (the Estate of Amun) under the High Priest of Amun"
+    ],
+    [
+      -1352,
+      -1337,
+      "Akhenaten, who built temples to the Aten in east Karnak, had Amun's name cut out and closed the Amun temple"
+    ],
+    [
+      -1336,
+      -1070,
+      "the restored cult under Tutankhamun, Horemheb and the Ramesside kings, with the High Priests of Amun growing ever more powerful"
+    ],
+    [
+      -1069,
+      -946,
+      "the High Priests of Amun, who ruled Upper Egypt from Thebes while the Twenty-first Dynasty kings ruled the north"
+    ],
+    [
+      -945,
+      -751,
+      "the Libyan kings of the Twenty-second and Twenty-third Dynasties, who made their sons High Priests of Amun"
+    ],
+    [
+      -750,
+      -657,
+      "the Kushite kings of the Twenty-fifth Dynasty (control of Thebes from about 750 BC, through the God's Wife of Amun), with the Assyrian sack of Thebes in 664 BC"
+    ],
+    [
+      -656,
+      -526,
+      "the Saite kings of the Twenty-sixth Dynasty, who took Thebes in 656 BC when Psamtik I's daughter Nitocris was adopted as God's Wife of Amun"
+    ],
+    [
+      -525,
+      -405,
+      "the Persian kings (the Twenty-seventh Dynasty)"
+    ],
+    [
+      -404,
+      -333,
+      "the last native kings, the Twenty-eighth to Thirtieth Dynasties, then briefly the Persians again"
+    ],
+    [
+      -332,
+      -31,
+      "Alexander the Great and then the Ptolemies, the Macedonian kings of Egypt"
+    ],
+    [
+      -30,
+      394,
+      "the Roman emperors; building stopped, and by the fourth century monuments were being taken down; the end of worship is undated"
+    ],
+    [
+      395,
+      640,
+      "the Byzantine (Eastern Roman) emperors; Christians used parts of the temple as churches"
+    ],
+    [
+      641,
+      1516,
+      "the Islamic rulers of Egypt, from the Arab conquest to the Mamluks; the village of Karnak grew among the ruins"
+    ],
+    [
+      1517,
+      1857,
+      "Ottoman Egypt (with the French occupation of 1798 to 1801, and Muhammad Ali's dynasty from 1805), when travellers, collectors and early scholars visited and removed objects"
+    ],
+    [
+      1858,
+      1970,
+      "the Egyptian Antiquities Service, founded by Auguste Mariette, with a dedicated Karnak works commission from 1895; French directors led the service until 1952; the Franco-Egyptian Centre (CFEETK) joined from 1967"
+    ],
+    [
+      1971,
+      1993,
+      "the Egyptian Antiquities Organisation"
+    ],
+    [
+      1994,
+      2010,
+      "the Supreme Council of Antiquities, under the Ministry of Culture"
+    ],
+    [
+      2011,
+      2018,
+      "the Ministry of State for Antiquities (later the Ministry of Antiquities), through the Supreme Council of Antiquities"
+    ],
+    [
+      2019,
+      null,
+      "the Ministry of Tourism and Antiquities, through the Supreme Council of Antiquities, with the CFEETK for research and restoration"
+    ]
+  ],
+  "things": [
+    {
+      "id": "intef-column",
+      "name": "the column of Intef II",
+      "names": [
+        "intef",
+        "intef column",
+        "intef ii column"
+      ],
+      "from": -2100,
+      "to": -2050,
+      "approx": true,
+      "verb": "made",
+      "who": "an eight-sided sandstone column inscribed by Intef II, the earliest firm evidence of a temple of Amun-Ra at Karnak",
+      "people": [
+        "intef-ii"
+      ],
+      "related": [
+        "senusret-temple"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "papyrus-harris",
+      "name": "Papyrus Harris I",
+      "names": [
+        "papyrus harris",
+        "harris papyrus",
+        "estate of amun"
+      ],
+      "from": -1153,
+      "to": -1153,
+      "approx": true,
+      "verb": "written",
+      "who": "a list of temple gifts and property written for Ramesses III, our best account of how much the temple of Amun owned",
+      "people": [
+        "ramesses-iii"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "akhenaten-turn",
+      "name": "Akhenaten's attack on Amun",
+      "names": [
+        "akhenaten turns against amun",
+        "amun erased",
+        "hacking out amun"
+      ],
+      "from": -1348,
+      "to": -1348,
+      "approx": true,
+      "verb": "happened",
+      "who": "Akhenaten's fifth-year change of name and his attack on Amun, whose name was cut out of temples including Karnak",
+      "people": [
+        "akhenaten"
+      ],
+      "related": [
+        "gempaaten",
+        "restoration-stela"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "gempaaten",
+      "name": "the Gempaaten temple",
+      "names": [
+        "gempaaten",
+        "gem-pa-aten",
+        "aten temple",
+        "talatat"
+      ],
+      "from": -1350,
+      "to": -1340,
+      "approx": true,
+      "verb": "built",
+      "who": "Akhenaten, in east Karnak, from small talatat blocks",
+      "people": [
+        "akhenaten"
+      ],
+      "related": [
+        "akhenaten-turn"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "restoration-stela",
+      "name": "Tutankhamun's Restoration Stela",
+      "names": [
+        "restoration stela",
+        "tutankhamun stela",
+        "tutankhamun restoration"
+      ],
+      "from": -1333,
+      "to": -1330,
+      "approx": true,
+      "verb": "set up",
+      "who": "Tutankhamun, to record the restoring of the temples after Akhenaten (dated year 4 by some, year 1 by others)",
+      "people": [
+        "tutankhamun"
+      ],
+      "related": [
+        "akhenaten-turn"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "assyrian-sack",
+      "name": "the Assyrian sack of Thebes",
+      "names": [
+        "assyrian sack",
+        "sack of thebes",
+        "ashurbanipal",
+        "assurbanipal"
+      ],
+      "from": -664,
+      "to": -664,
+      "approx": true,
+      "verb": "happened",
+      "who": "the Assyrian king Ashurbanipal's sacking of Thebes, which ended Kushite rule (some books give 663 BC)",
+      "people": [
+        "taharqa"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "adoption-of-nitocris",
+      "name": "the adoption of Nitocris as God's Wife of Amun",
+      "names": [
+        "adoption stela",
+        "nitocris",
+        "adoption of nitocris"
+      ],
+      "from": -656,
+      "to": -656,
+      "verb": "arranged",
+      "who": "Psamtik I, to put his daughter into the office of God's Wife of Amun and so control Thebes",
+      "people": [
+        "gods-wives-of-amun"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "temple-closure",
+      "name": "the end of worship at Karnak",
+      "names": [
+        "closure",
+        "closed",
+        "end of the temple",
+        "pagan ban"
+      ],
+      "from": 391,
+      "to": 450,
+      "approx": true,
+      "verb": "happened",
+      "who": "a gradual end, not a single event: imperial bans came in the fourth century but no source gives a date for Karnak itself",
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "christian-karnak",
+      "name": "the Christian use of Karnak",
+      "names": [
+        "church",
+        "churches",
+        "coptic",
+        "saints",
+        "village"
+      ],
+      "from": 400,
+      "to": 700,
+      "approx": true,
+      "verb": "begun",
+      "who": "Christians who founded churches among the ruins, most famously in the Akhmenu (the century is uncertain)",
+      "related": [
+        "akhmenu"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "commission-des-sciences",
+      "name": "Napoleon's Commission des Sciences et des Arts",
+      "names": [
+        "napoleon",
+        "commission des sciences",
+        "denon",
+        "description de l'egypte",
+        "french expedition"
+      ],
+      "from": 1798,
+      "to": 1801,
+      "verb": "in Egypt",
+      "plural": false,
+      "who": "the French scholars and artists who accompanied Napoleon's invasion of Egypt and recorded Karnak (their results appeared as the Description de l'Égypte from 1809)",
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "antiquities-service",
+      "name": "the Egyptian Antiquities Service",
+      "names": [
+        "antiquities service",
+        "antiquities organisation",
+        "supreme council of antiquities",
+        "ministry of antiquities"
+      ],
+      "from": 1858,
+      "to": 1858,
+      "verb": "founded",
+      "who": "Auguste Mariette, for the viceroy Said Pasha",
+      "people": [
+        "auguste-mariette"
+      ],
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "cfeetk",
+      "name": "the Franco-Egyptian Centre (CFEETK)",
+      "names": [
+        "cfeetk",
+        "franco-egyptian centre",
+        "centre franco-egyptien"
+      ],
+      "from": 1967,
+      "to": 1967,
+      "verb": "founded",
+      "who": "France's CNRS and Egypt's antiquities authority, to study and restore the Karnak temples",
+      "stops": [
+        "intro"
+      ]
+    },
+    {
+      "id": "unesco-listing",
+      "name": "the World Heritage listing of Ancient Thebes",
+      "names": [
+        "unesco",
+        "world heritage"
+      ],
+      "from": 1979,
+      "to": 1979,
+      "verb": "made",
+      "who": "UNESCO, as 'Ancient Thebes with its Necropolis' (number 87; criteria i, iii and vi)",
+      "stops": [
+        "intro"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "intef-ii",
+      "name": "Intef II",
+      "names": [
+        "intef",
+        "intef ii"
+      ],
+      "who": "a Theban king of the Eleventh Dynasty, whose reign of about 2112 to 2063 BC gives the earliest firm evidence for Amun-Ra's temple at Karnak",
+      "events": [
+        [
+          -2112,
+          "became king (Shaw, about)"
+        ],
+        [
+          -2100,
+          "is thought to have raised a small temple with a columned portico for Amun-Ra at Karnak (about)"
+        ],
+        [
+          -2063,
+          "died after reigning nearly fifty years (about)"
+        ]
+      ]
+    },
+    {
+      "id": "akhenaten",
+      "name": "Akhenaten",
+      "names": [
+        "akhenaten",
+        "amenhotep iv"
+      ],
+      "who": "the king who turned against Amun in favour of the Aten",
+      "events": [
+        [
+          -1352,
+          "became king as Amenhotep IV (Shaw)"
+        ],
+        [
+          -1348,
+          "changed his name to Akhenaten and attacked Amun (his fifth year, about)"
+        ],
+        [
+          -1346,
+          "moved the court to Akhetaten (Amarna) (about, uncertain)"
+        ],
+        [
+          -1336,
+          "died (Shaw)"
+        ]
+      ]
+    },
+    {
+      "id": "tutankhamun",
+      "name": "Tutankhamun",
+      "names": [
+        "tutankhamun",
+        "tutankhamen"
+      ],
+      "who": "the boy king who restored Amun's cult",
+      "events": [
+        [
+          -1336,
+          "became king (Shaw)"
+        ],
+        [
+          -1333,
+          "had the Restoration Stela made, in year 4 by one reading (about)"
+        ],
+        [
+          -1327,
+          "died (Shaw)"
+        ]
+      ]
+    },
+    {
+      "id": "gods-wives-of-amun",
+      "name": "the God's Wives of Amun",
+      "names": [
+        "god's wife of amun",
+        "gods wife",
+        "divine adoratrice",
+        "shepenupet",
+        "amenirdis",
+        "nitocris"
+      ],
+      "who": "the royal priestesses who served Amun and, from the Kushite period, held Thebes for their families",
+      "events": [
+        [
+          -750,
+          "Kushite kings begin to put their daughters in the office (about)"
+        ],
+        [
+          -656,
+          "Nitocris, daughter of Psamtik I, adopted as God's Wife"
+        ]
+      ]
+    },
+    {
+      "id": "auguste-mariette",
+      "name": "Auguste Mariette",
+      "names": [
+        "mariette"
+      ],
+      "born": [
+        1821
+      ],
+      "died": [
+        1881
+      ],
+      "who": "the French Egyptologist who founded Egypt's Antiquities Service",
+      "events": [
+        [
+          1858,
+          "appointed head of the new Egyptian Antiquities Service"
+        ]
+      ]
+    }
+  ]
+}
