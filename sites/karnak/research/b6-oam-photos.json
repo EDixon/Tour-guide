@@ -1,0 +1,20 @@
+[
+ {
+  "id": "white-chapel-view",
+  "file": "File:White Chapel of Senusret I in Karnak Open Air Museum 01.jpg",
+  "width": 900,
+  "for": "whitechapel.look"
+ },
+ {
+  "id": "heh-figure-white-chapel",
+  "file": "File:Hieroglyph representing the infinite. Karnak, White Chapel of Senusret I.jpg",
+  "width": 900,
+  "for": "whitechapel.7|kids"
+ },
+ {
+  "id": "red-chapel-view",
+  "file": "File:Red Chapel of Hatshepsut in Karnak Open Air Museum 01.jpg",
+  "width": 900,
+  "for": "redchapel.look"
+ }
+]

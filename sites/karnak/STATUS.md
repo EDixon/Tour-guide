@@ -26,7 +26,7 @@ Updated: 2026-11-22
 | 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | reviewed (b5- source keys; at merge: event -1950 label "Senusret I builds the first large stone temple"; drop duplicate people sections; akhmenu mustSee candidate) |
 | 6. The Open Air Museum | whitechapel, redchapel | interrupted by spend limit (no files written) |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | interrupted by spend limit (no files written) |
-| 8. The story of Karnak and who ran it | intro (notes and owners) | interrupted by spend limit (no files written) |
+| 8. The story of Karnak and who ran it | intro (notes and owners) | reviewed (b8- source keys; owners replaced (22 rows); at merge: reconcile christian-karnak / karnak-churches; event -1330 to -1333; b8-sullivan-uee = source 4; closure undated, 4th to 5th century) |
 | Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
 
 ## Flags for Eliot

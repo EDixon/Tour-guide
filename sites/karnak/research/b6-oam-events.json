@@ -1,0 +1,31 @@
+[
+ {
+  "year": -1940,
+  "label": "Senusret I's White Chapel",
+  "more": "A small limestone pavilion for Senusret I, tied to his jubilee festival; its base lists Egypt's provinces. More than five centuries later Amenhotep III pulled it down and packed the blocks into the Third Pylon, where they were found in 1927.",
+  "src": [
+   3,
+   4,
+   "b6-medini"
+  ]
+ },
+ {
+  "year": -1470,
+  "label": "Hatshepsut's Red Chapel",
+  "more": "Hatshepsut's two-roomed shrine of red quartzite for Amun-Ra's sacred boat, begun or finished about her year 17 (about 1457 BC; sources differ). Thutmose III took it down. Her figures were erased after his year 42, and Amenhotep III buried the blocks in the Third Pylon.",
+  "src": [
+   3,
+   4,
+   "b6-chevrier-1927"
+  ]
+ },
+ {
+  "year": 1927,
+  "label": "White Chapel found in the Third Pylon",
+  "more": "Henri Chevrier, emptying the Third Pylon, found the first piece, a limestone lintel, on 16 November 1927. More blocks followed over the next ten years. He rebuilt the chapel in the winter of 1937 to 1938, and it now stands in the Open Air Museum.",
+  "src": [
+   "b6-chevrier-1928",
+   "b6-chevrier-1938"
+  ]
+ }
+]

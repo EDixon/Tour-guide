@@ -1,0 +1,73 @@
+## The White Chapel of Senusret I (Open Air Museum)
+Kind: site
+About: white-chapel, white-chapel-rebuilt
+The White Chapel is a small limestone pavilion made for Senusret I (reigned about 1965 to 1920 BC in Shaw's chronology) and is one of the oldest structures at Karnak. It stands on a platform about 1.2 metres high and roughly 6.8 by 6.5 metres, with a stepped ramp at each end (it is aligned north to south). Four pillars stand inside, ringed by twelve square pillars joined by low parapet walls. The pillars are about 2.6 metres high. Digital Karnak dates it to Senusret I's reign; if it marks his thirtieth-year jubilee (an inference some sources make) it would date to about 1936 BC. The reliefs record his jubilee festival (heb-sed): the king is crowned and embraced by gods, and traces of red, blue, white and yellow paint survive. Sullivan thinks it was a bark shrine built for the festival; Digital Karnak adds that it may first have been a kiosk where the king sat on a double throne, and that Amenemhat III or IV converted it into a bark shrine.
+
+The base carries a geographical list. Medini (2022), following Lacau and Chevrier, reports that its north and south sides list the provinces of Egypt, 22 for Upper Egypt and 16 for Lower Egypt. Each entry gives the province's name, its main gods, the extent of its territory, and the number of cubits and palms to subtract from an aroura (100 cubits) to give the local aroura. It is the oldest known list of gods tied to places. These are land and distance measures, not Nile flood heights. Sources disagree on which side holds which list: Wikipedia puts Upper Egypt on the west and Lower Egypt on the east, while Digital Karnak and Medini place the lists on the north and south sides and put Nile figures and lakes on the east and west sides.
+
+Where it first stood is debated; it may have been outside the Middle Kingdom temple's inner wall. Amenhotep III pulled it down and used the blocks as fill in the Third Pylon (about 28 metres high). Henri Chevrier, emptying that pylon, found the first piece, a limestone lintel crushed under a huge alabaster slab, on 16 November 1927. Pillars, beams and base slabs followed over several seasons. He rebuilt it in the winter of 1937 to 1938: the first base block went in on 9 December 1937, the pillars between 5 and 25 January 1938, the beams by 15 February and the roof by 11 March 1938. Reinforced concrete cores went into the pillars, steel bars and bolts held broken beams, broken faces were trimmed so fragments met in a mortar joint, and gaps were filled with plaster painted to match the limestone. Modern studies are by Lacau and Chevrier (1956 and 1969) and Arnaudiès, Beaux and Chéné (2015).
+
+Access: the Open Air Museum is reported as included in the main ticket (about EGP 600 for foreign adults on the ministry list of 2024) and open 06:00 to 17:00, with last entry about 16:00. Ramadan hours may be shorter. Works from 2024 to 2026 may fence parts off.
+Sources: Digital Karnak, White Chapel page and Sullivan 2010 development PDF; Sullivan, UEE 2010; Medini, BIFAO 122 (2022), p. 401, notes 1 and 2; Chevrier, ASAE 28 (1928) and ASAE 38 (1938); Ministry ticket list 2024; Wikipedia (pointer only).
+
+## The Red Chapel of Hatshepsut (Open Air Museum)
+Kind: site
+About: red-chapel, red-chapel-rebuilt
+The Red Chapel was a two-roomed bark shrine, a vestibule and a sanctuary, made for Hatshepsut to hold the sacred boat of Amun-Ra. It is red quartzite (hence the name), on a grey diorite platform, with black granite exterior doorways. Digital Karnak gives about 15 metres long, 6.5 wide and 7.2 high; other accounts give about 18 by 6 by 5.5 metres, so treat sizes as approximate. Digital Karnak says work began in her seventeenth year; Sullivan says the chapel was finished about her year 17. Her year 17 is about 1457 BC (she became king about 1473 BC). It stood in the sanctuary, in her "Palace of Maat", reworked to fit it. The outside shows her obelisks being raised and the Opet and Beautiful Feast of the Valley processions, over a frieze of kneeling Nile gods.
+
+Thutmose III completed some decoration, then dismantled it and replaced it with a red granite shrine, dated to his year 45 (about 1435 BC). Two black granite doorways were reused nearby and the other blocks were left lying about. Her figures were chiselled out only after that, late in his reign (after his year 42, about 1438 BC); some blocks, perhaps less exposed, escaped. Amenhotep III then buried the blocks as fill in the Third Pylon.
+
+Chevrier's team lifted them out from 1926. His report of 1926 to 1927 lists 88 blocks of red quartzite and black granite from the pylon, and his report of 1927 to 1928 counts 241 in all, plus 20 already in a museum. The pylon facing sat on some of them, so he propped the wall and replaced each block with a masonry pillar as it came out. In 1947 and 1948 the blocks were laid out course by course on brick and sand plinths tracing the plan, while Lacau studied them. The chapel was rebuilt by the Franco-Egyptian centre at the turn of the millennium: the decision dates to 1997, work on the stones was under way by 1999 and 2000, and one visitor project says it finished in early 2002 (sources disagree; Lonely Planet says 2000). Over 300 original blocks are displayed, with modern stone for gaps (reported, not confirmed). Burgos and Larché published every block as a drawn facsimile (2006 and 2008).
+Sources: Digital Karnak, Red Chapel page; Sullivan, UEE 2010; Chevrier, ASAE 27 (1927) and ASAE 28 (1928) and ASAE 49 (1949); Lacau and Chevrier 1977 and 1979; Larché, JAEA 1 (2016); ISIDA project page (weak); Wikipedia and Lonely Planet (pointers only).
+
+## Why Hatshepsut's figures were erased
+Kind: reference
+About: hatshepsut, red-chapel, hatshepsut-proscription
+Hatshepsut ruled as king from about 1473 to 1458 BC, first beside her young nephew Thutmose III. Sullivan places the "proscription", the attack on her name and image, after year 42 of Thutmose III's reign, about 1438 BC and more than twenty years after her death. At Karnak her name was erased (the names of Thutmose I or II were often carved instead), images of her were carefully altered, and only now and then was a monument or figure violently destroyed. Her standing obelisks, already walled in by Thutmose III, were left intact. Erased figures on the Eighth Pylon were recarved under Amenhotep II.
+
+The Red Chapel shows the order of events. Its scenes were defaced after it had been taken down and its blocks left unused for an unknown time, according to Sullivan (citing Dorman and Van Siclen 1989). Digital Karnak says some blocks, perhaps less exposed, were left intact. Sullivan notes that the changes to her sanctuary came before the erasure and so were not caused by it. No source read for this batch states a motive. Older accounts blame personal revenge, but a delay of twenty years sits badly with that. The reasons are debated, and the guide should say so.
+
+Where to look: on the Red Chapel, find smooth patches where a figure and cartouche were chiselled away, and blocks where her image was left.
+Sources: Sullivan, UEE 2010 (section "The Proscription of Hatshepsut"); Digital Karnak, Red Chapel page; Shaw (ed.) 2000 for dates.
+
+## The calcite bark shrine of Amenhotep I (Open Air Museum)
+Kind: site
+About: amenhotep-i-chapel, amenhotep-ii-chapel
+The white calcite ("Egyptian alabaster") bark shrine of Amenhotep I stands near the White Chapel; OpenStreetMap places it about 30 metres to the north-north-east (approximate). Amenhotep I reigned about 1525 to 1504 BC. Digital Karnak gives it as about 3.6 metres across, 6.75 deep and 4.5 high, a roofed rectangle of large calcite blocks with wooden doors in the short ends. Each outer side has a single festival scene, and the inner walls hold the oldest surviving pictures of Amun-Ra's sacred boat. Amenhotep I left it unfinished, and Thutmose I finished the decoration of the south wall. The Chevrier reports and the CFEETK call it "of Amenhotep I and Thutmose I".
+
+Where it stood is debated. Traditionally it was the main bark shrine in the Middle Kingdom court until Hatshepsut's time. Graindorge argues the main shrine was wooden and the calcite chapel stood further west. Sullivan says Hatshepsut may have moved it north of her Eighth Pylon. Thutmose III built a calcite shrine of the same name near the Seventh or Eighth Pylon, perhaps replacing it. Amenhotep III finally dismantled it for fill in the Third Pylon, where Chevrier found its blocks in 1926 to 1928 (six pieces in the 1927 to 1928 season). Chevrier's 1949 report says it was rebuilt in the museum "last year", so about 1947; the CFEETK also dates its rebuilding to 1947. A French-Egyptian project (2024 to 2026) plans to add a much larger Amenhotep I complex of about 30 by 50 metres (search summary of CFEETK page; page not opened).
+
+Do not confuse it with the calcite shrine of Amenhotep II (reigned about 1427 to 1401 BC), rebuilt in 2005 between copies of Thutmose I's obelisks at the museum entrance (Larché 2016). Amenhotep II's shrine is inscribed for him and may have stood in Thutmose II's festival court.
+Sources: Digital Karnak, Amenhotep I Calcite Chapel page; Sullivan, UEE 2010; Chevrier, ASAE 28 (1928) and ASAE 49 (1949); Grimal, Collège de France course summary (2011); Larché, JAEA 1 (2016); OpenStreetMap; CFEETK project page (search summary only).
+
+## The Open Air Museum (what else it holds)
+Kind: site
+About: white-chapel, red-chapel, amenhotep-i-chapel
+The Open Air Museum is in the north-west corner of the precinct. It holds monuments that earlier kings took down and buried in pylons and walls, rebuilt from the blocks. Besides the White Chapel, the Red Chapel and the Amenhotep I shrine it has: the double peristyle of Thutmose IV, a painted sandstone colonnade rebuilt from about a thousand blocks; the calcite shrine of Amenhotep II; a calcite shrine of Thutmose III (listed in OpenStreetMap and Wikipedia only); a reconstructed wall of Akhenaten's small blocks from the Third Pylon (Digital Karnak, Third Pylon page); and statues and relief blocks. Most of it is Third Pylon fill.
+
+Access: the ministry announced finished works in August 2023 (sandstone paving, benches, signs, visitor paths). A French-Egyptian project of 2024 to 2026 is renewing the route and adding Amenhotep I monuments, so parts may be fenced off. The 2024 price list gives Karnak at 600 EGP (foreign adult) from 06:00 to 17:00, and recent visitors say the museum is included; older guides charged extra. It was quiet in recent reviews.
+Sources: Sullivan, UEE 2010; Digital Karnak; Ministry of Tourism and Antiquities ticket list 2024; Archaeological Paths, 8 August 2023; Wikipedia, Karnak Open Air Museum (pointer); visitor-scores.md.
+
+## Senusret I
+Kind: person
+About: senusret-i, white-chapel
+Senusret I (also Senwosret, Sesostris) was a king of the Twelfth Dynasty, who ruled about 1965 to 1920 BC (Shaw). Digital Karnak uses 1971 to 1926 BC, a different chronology. Sullivan places him among the first kings to build in stone for Amun-Ra at Karnak. His works include the Middle Kingdom temple, a black granite naos, a limestone bark shrine with side windows, a sandstone colonnade, and the White Chapel. Grimal calls him the essential reference: later kings copied his monuments. Amenhotep I built a copy of the White Chapel, and fragments of that copy were found in the Third Pylon and elsewhere. A source of weak quality says the White Chapel marks a thirtieth-year jubilee; Digital Karnak says only that it records his heb-sed festival.
+Sources: Sullivan, UEE 2010; Digital Karnak; Grimal, Collège de France course summary (2011); Shaw (ed.) 2000.
+
+## Hatshepsut
+Kind: person
+About: hatshepsut, red-chapel
+Hatshepsut was the daughter of Thutmose I and ruled as king from about 1473 to 1458 BC, first beside her nephew Thutmose III, who was a child. At Karnak she raised obelisks (one still stands), built the Eighth Pylon, the Wadjet Hall and her Palace of Maat, removed much of Amenhotep I's forecourt, and commissioned the Red Chapel. Her obelisks were dedicated for her jubilee in her year 16. Her image was attacked late in Thutmose III's reign; see "Why Hatshepsut's figures were erased".
+Sources: Sullivan, UEE 2010; Digital Karnak, Red Chapel page; Shaw (ed.) 2000.
+
+## Thutmose III
+Kind: person
+About: thutmose-iii, red-chapel
+Thutmose III became king about 1479 BC as a child, ruled with Hatshepsut until she died in about 1458 BC, then alone to about 1425 BC. At Karnak he finished part of the Red Chapel's decoration, then dismantled it and set a red granite shrine, dated to his year 45 (about 1435 BC), in the Palace of Maat. He reused its two black granite doorways. His annals, covering campaigns from his year 22 to 42, were carved on new walls there, and figures of Hatshepsut under the walls were chiselled out. The attack on her image came after year 42. He also built the Akhmenu and walled in her obelisks (possibly an idea of hers, says Larché).
+Sources: Sullivan, UEE 2010; Digital Karnak; Shaw (ed.) 2000.
+
+## Henri Chevrier
+Kind: person
+About: henri-chevrier, white-chapel-rebuilt, red-chapel
+Henri Chevrier (1897 to 1974) was the French architect who directed the works at Karnak from 1926 to 1954, apart from the Second World War, succeeding Maurice Pillet (a bookseller's biography; his own reports confirm he followed Pillet). He emptied the Third Pylon from 1926 onwards, using suspended supports under the standing wall faces, and took out the Red Chapel, White Chapel, Amenhotep I and Thutmose IV blocks. He dismantled and rebuilt Taharqa's column (taken down 1926 to 1927, rebuilding begun in 1928), rebuilt the White Chapel in 1937 to 1938, rebuilt the Amenhotep I shrine about 1947, and laid out the Red Chapel blocks on plinths in 1947 to 1948. He worked under Pierre Lacau, Director General of the Antiquities Service. With Lacau he published the Red Chapel (1977 and 1979) and the White Chapel (1956 and 1969).
+Sources: Chevrier, ASAE 27 (1927), 28 (1928), 38 (1938), 49 (1949); Lacau and Chevrier volumes; bookseller listing for Chevrier's 1933 Ramesses III book.

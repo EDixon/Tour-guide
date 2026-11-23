@@ -1,0 +1,118 @@
+{
+ "intro": {
+  "bullets": [
+   {
+    "id": 1,
+    "t": "Karnak is the temple of Amun-Ra, king of the gods, in Thebes, modern Luxor. Kings kept building it for about two thousand years, which is why it is a maze rather than one design.",
+    "imp": 5,
+    "tags": {
+     "history": 0.8,
+     "architecture": 0.5
+    },
+    "src": [
+     4,
+     3,
+     16
+    ]
+   },
+   {
+    "id": 2,
+    "t": "The first firm evidence is a sandstone column of King Intef II, about 2100 BC, naming Amun-Ra. Before that, no temple of Amun seems to have stood here.",
+    "imp": 4,
+    "tags": {
+     "history": 0.8,
+     "engineering": 0.3
+    },
+    "src": [
+     4
+    ],
+    "needs": 1
+   },
+   {
+    "id": 3,
+    "t": "Karnak began on a sandy island between Nile channels, and it grew westward as the river moved west. The First Pylon now stands on ground the river gave up.",
+    "imp": 4,
+    "tags": {
+     "physics": 0.7,
+     "views": 0.3,
+     "history": 0.4
+    },
+    "src": [
+     "b8-pennington-2025",
+     "b8-charloux-2021"
+    ],
+    "needs": 1
+   },
+   {
+    "id": 4,
+    "t": "Most of what you see was added in the New Kingdom, from about 1500 to 1100 BC: obelisks, the Great Hypostyle Hall, pylons. Kings each added to the axis, from the Fourth Pylon outward.",
+    "imp": 4,
+    "tags": {
+     "engineering": 0.6,
+     "architecture": 0.6
+    },
+    "src": [
+     4,
+     3
+    ],
+    "verify": true
+   },
+   {
+    "id": 5,
+    "t": "The god was rich. Papyrus Harris I, written for Ramesses III, lists Amun's gifts, and summaries say his temples held most of Egypt's temple land. The priests grew powerful.",
+    "imp": 3,
+    "tags": {
+     "history": 0.8,
+     "people": 0.4
+    },
+    "src": [
+     "b8-harris"
+    ],
+    "verify": true
+   },
+   {
+    "id": 6,
+    "t": "About 1348 BC Akhenaten cut Amun's name out of temples and moved to Amarna. His successor Tutankhamun restored the temples, and Horemheb took Akhenaten's temple at Karnak down for fill.",
+    "imp": 4,
+    "tags": {
+     "history": 0.9,
+     "people": 0.7
+    },
+    "src": [
+     4,
+     "b8-dk-development",
+     "b8-restoration-stela"
+    ]
+   },
+   {
+    "id": 7,
+    "t": "Later came Libyan, Kushite and Assyrian rulers, who sacked Thebes in 664 BC. Then Persians, Ptolemies and Romans. Building stopped, and Christians later used the Akhmenu as a church.",
+    "imp": 3,
+    "tags": {
+     "history": 0.9
+    },
+    "src": [
+     4,
+     "b8-dk-development"
+    ]
+   },
+   {
+    "id": 8,
+    "t": "Mariette's Antiquities Service took charge in 1858. Since 1967 French and Egyptian teams, the CFEETK, have studied and restored Karnak. UNESCO listed ancient Thebes in 1979.",
+    "imp": 3,
+    "tags": {
+     "history": 0.6,
+     "engineering": 0.3
+    },
+    "src": [
+     "b8-wiki-sca",
+     15,
+     "b8-sullivan-uee"
+    ]
+   }
+  ],
+  "kids": [],
+  "look": "The whole story in a few points, to put every stop in context. Also on the Timeline tab any time.",
+  "note": "The end of worship at Karnak is undated in the sources, so the guide says only that it ended in the fourth or fifth century AD."
+ }
+}
