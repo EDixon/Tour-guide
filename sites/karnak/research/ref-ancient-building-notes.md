@@ -10,7 +10,7 @@ Sources: Klemm and Klemm, Stones and Quarries in Ancient Egypt (2008); Nicholson
 
 ## How Egyptian quarrymen cut stone
 Kind: reference
-About: egyptian-quarrying, gebel-silsila-quarries
+About: gebel-silsila-quarries, unfinished-obelisk
 Soft stone (limestone, sandstone, alabaster) was cut with copper chisels, picks and wooden mallets. At Gebel el-Silsila and similar quarries the workmen first cut narrow trenches round the block, wide enough for a crouching man, then undercut it from the side and levered or wedged it free. They left blocks roughly dressed at the quarry, often with only the top and bottom faces smoothed, so the outside could be finished once the stone was in place. Visitors can spot the marks: parallel diagonal chisel strokes on quarry walls, rows of rectangular scars where blocks were removed, and sometimes the roughed-out shapes of blocks still part-attached.
 
 Hard stone (granite, granodiorite, quartzite, basalt) was beyond copper and bronze tools. Workers pounded it with balls of harder rock, usually dolerite, a dark, tough stone. This crushed the granite surface into powder bit by bit. Engelbach, who studied Aswan in the early twentieth century, described the pounding trenches round the Unfinished Obelisk. It was slow, noisy work and the dust was heavy.
@@ -42,17 +42,17 @@ Sources: Arnold (1991), chapter on ramps; Lehner, The Complete Pyramids (1997); 
 
 ## Foundations: why temples fall down
 Kind: reference
-About: nile-silt-foundations, hypostyle-collapse
+About: hypostyle-collapse
 Egyptian temples sit on the Nile floodplain. The ground is silt and sand over a water table that rises and falls with the river. Where the builders could, they cut to bedrock. In many temples they did not: they dug a trench, packed it with sand or rubble and laid shallow courses of stone on top. Sand spreads the load and absorbs shocks, so it is a reasonable foundation for a moderately heavy building, but it needs to stay put.
 
 Trouble starts with water. Groundwater carries salt up through the lowest stones. As it evaporates, salt crystals grow in the pores and split the stone, a process called salt weathering. This is the main reason many temple bases crumble. Reused small blocks, packed in as filler, are weak. Over time the foundation sinks unevenly and columns lean. In 1899 eleven columns of the Great Hypostyle Hall at Karnak fell in a chain reaction. Explanations combine weak reused blocks, salt-laden groundwater and, in one view, disturbance from earlier trenches. The detail is disputed; site sections cover it.
 
-The modern cure is to control water. Karnak's temple has had a drainage and dewatering scheme since the 1990s. It uses pumps and drains to lower and manage the water table, with studies by Egyptian and French teams. The Aswan High Dam (completed 1970) ended the annual flood, so the water table now stays high all year round, which worsens the salt problem.
-Sources: Nicholson and Shaw (2000); Arnold (1991), chapter on foundations; UCLA Encyclopedia of Egyptology, "Temple Foundations"; Nature and ICOMOS papers on Karnak groundwater (general reading); knowledge/karnak/notes.md for the 1899 collapse.
+The modern cure is to control water. Karnak and other Theban temples have had drainage and dewatering schemes in recent decades, using pumps and drains to lower and manage the water table (exact dates and layouts are not given here). The Aswan High Dam (completed 1970) ended the annual flood, so the water table now stays high all year round, which worsens the salt problem.
+Sources: Nicholson and Shaw (2000); Arnold (1991), chapter on foundations; UCLA Encyclopedia of Egyptology, "Temple Foundations"; general knowledge for the Aswan High Dam; knowledge/karnak/notes.md for the 1899 collapse.
 
 ## Columns, architraves and roofs: why stone limits spans
 Kind: reference
-About: column-and-lintel, clerestory-lighting
+About: dieter-arnold
 Egyptian temples are post-and-lintel buildings: columns carry horizontal beams (architraves), and roof slabs rest across the beams. There are no true arches in stone temples. The reason is that stone is strong when squeezed but weak when pulled. A beam on two supports sags slightly, which puts the underside in tension. Stone fails there, and cracks begin from the underside.
 
 Bending stress grows with the square of the span, and falls with the depth of the beam. Double the span and the stress quadruples. For sandstone, with a tensile strength of only a few megapascals, a span of about 4 to 6 metres is comfortable. The largest monolithic stone beams, mostly granite, run a little longer, such as the ceiling beams of the King's Chamber in the Great Pyramid, which span about 5.2 metres. This is why Egyptian halls are packed with columns: the "forest" at Karnak is structural, not decorative. Where the nave needed more width, builders used several blocks side by side, even stacked in two layers.
@@ -62,7 +62,7 @@ Sources: Arnold (1991), chapters on columns and roofs; Clarke and Engelbach (193
 
 ## Walls and pylons: stone skin, rubble heart
 Kind: reference
-About: pylon-construction, talatat-reuse
+About: dieter-arnold
 A temple pylon, the great gateway of two sloping towers, looks like a solid mass of stone. It is mostly not. The outer faces were built of dressed blocks with carefully bonded courses, but the interior was often filled with rubble, sand, chips or reused blocks. This saved quarrying and carving, and the heavy core held the thinner face in place.
 
 The faces were battered, meaning they lean inward as they rise, usually by a few degrees. A battered face is much more stable than a vertical one, and it lowers the centre of gravity of the whole tower. It also gives the Egyptian look, with a torus roll at the corners and a cavetto cornice at the top. The pylon faces carried deep recesses for flagpoles, held by timber masts. Joints were often tied with wooden dovetail cramps set across them, though their holes are all that survive in most places.
@@ -82,7 +82,7 @@ Sources: Engelbach, The Aswan Obelisk (1922); Klemm and Klemm (2008); Arnold (19
 
 ## Mud brick: the everyday building material
 Kind: reference
-About: mud-brick-making, nectanebo-wavy-walls, rekhmire-brickmaking
+About: rekhmire-brickmaking
 Most ancient Egyptian buildings were mud brick. Houses, palaces, town walls, fortresses and the huge enclosure walls of temples were brick; only temples and tombs were stone. Bricks were made from Nile silt mixed with water and often chopped straw or sand, pressed in a wooden mould and left to dry in the sun for several days. A tomb painting of the vizier Rekhmire (about 1450 BC) shows the whole process: men carrying water, mixing the mud, moulding bricks and stacking them.
 
 Sizes changed with time and place. Typical bricks were about 35 to 40 centimetres long and 15 to 20 centimetres wide, with a thickness of 10 to 15 centimetres. On my estimate a brick this size weighs 15 to 20 kilograms, a good load for one worker. Many New Kingdom bricks were stamped with a royal name, especially those from temples; the stamp helped record who ordered them.
@@ -94,7 +94,7 @@ Sources: Nicholson and Shaw (2000), chapter on mud brick (Spencer); Arnold (1991
 
 ## Surveying and setting out
 Kind: reference
-About: royal-cubit, merkhet-and-bay, turin-plan-ramesses-iv
+About: turin-plan-ramesses-iv, flinders-petrie
 Egyptians measured in cubits. The royal cubit was about 52.3 centimetres, divided into 7 palms, each of 4 fingers (28 fingers in all). A shorter common cubit was about 45 centimetres (6 palms). Rods of wood and stone marked with these units survive.
 
 The foundation ceremony was called "stretching the cord". A king and the goddess Seshat are shown driving pegs and stretching a cord to mark the corners, as in reliefs at Edfu and Dendera. Cords and set squares laid out right angles. A popular idea is that rope stretchers made right angles with a 3, 4, 5 triangle. No Egyptian text says so, so it is a modern theory.
@@ -106,7 +106,7 @@ Sources: Arnold (1991); Clarke and Engelbach (1930); Lehner, The Complete Pyrami
 
 ## Egyptian building tools: copper, bronze and sand
 Kind: reference
-About: egyptian-tools, iron-in-egypt
+About: iron-in-egypt, flinders-petrie
 Egyptian masons were limited to a short list of metals. Copper, often with a little arsenic, was the working metal for chisels, adzes, axes and saws from early times. Bronze (copper with tin) became common in the Middle and New Kingdoms and gave a harder edge. Iron was known, mostly as a rarity, such as a meteoric-iron dagger from Tutankhamun's tomb, but working iron tools became common only in the Late Period, from about 650 BC. Most great temples, including nearly all at Karnak, were built with copper and bronze.
 
 None of these can cut granite. Granite was pounded with dolerite balls (about the size of a fist or larger) and ground. For sawing and drilling, workers used abrasive sand. A copper saw or tubular drill is pressed against the stone with a slurry of quartz sand; the sand does the cutting, as the copper holds the grains. Petrie proposed jewelled teeth in the blade. Experiments by Denys Stocks in the 1980s and 1990s showed sand and copper alone work, though slowly.
