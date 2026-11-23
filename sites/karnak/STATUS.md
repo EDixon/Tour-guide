@@ -23,10 +23,10 @@ Updated: 2026-11-22
 | 2. The great forecourt | sety2, taharqa, ram3, bubastite | reviewed (sources numbered 17-22: renumber at merge) |
 | 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | reviewed (string source keys; at merge: pylon2 look is sandstone not granite, pylon2 dateLabel per report, northwall note: in shade all day, raise hypostyle dwell; two added events 1902 and 2021) |
 | 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | reviewed (string source keys; at merge: Hatshepsut obelisks date -1464 (year 16 from 1479 BC) in stop and timeline event; fallen top re-erected upright beside the scarab, 9 April 2022) |
-| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | dispatched |
-| 6. The Open Air Museum | whitechapel, redchapel | dispatched |
-| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | dispatched |
-| 8. The story of Karnak and who ran it | intro (notes and owners) | dispatched |
+| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | interrupted by spend limit (notes and stops partly written; dates, photos, events missing) |
+| 6. The Open Air Museum | whitechapel, redchapel | interrupted by spend limit (no files written) |
+| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | interrupted by spend limit (no files written) |
+| 8. The story of Karnak and who ran it | intro (notes and owners) | interrupted by spend limit (no files written) |
 | Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
 
 ## Flags for Eliot
