@@ -1,6 +1,6 @@
 # Karnak Temple: status
 
-Stage: research
+Stage: research (merged; photos downloading, then reference)
 Updated: 2026-11-22
 
 ## Stages
@@ -19,17 +19,22 @@ Updated: 2026-11-22
 ## Research batches
 | Batch | Stops | State |
 |---|---|---|
-| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | reviewed (string source keys; at merge set quay date about 945 BC, rams dateLabel "inscribed", pylon1 "about 380 to 362 BC"; key 8 is Pennington et al. 2025, Antiquity 99(408)) |
-| 2. The great forecourt | sety2, taharqa, ram3, bubastite | reviewed (sources numbered 17-22: renumber at merge) |
-| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | reviewed (string source keys; at merge: pylon2 look is sandstone not granite, pylon2 dateLabel per report, northwall note: in shade all day, raise hypostyle dwell; two added events 1902 and 2021) |
-| 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | reviewed (string source keys; at merge: Hatshepsut obelisks date -1464 (year 16 from 1479 BC) in stop and timeline event; fallen top re-erected upright beside the scarab, 9 April 2022) |
-| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | reviewed (b5- source keys; at merge: event -1950 label "Senusret I builds the first large stone temple"; drop duplicate people sections; akhmenu mustSee candidate) |
-| 6. The Open Air Museum | whitechapel, redchapel | reviewed (b6- source keys; White Chapel lists land measures, not flood heights (Medini 2022); found 16 November 1927, rebuilt 1937 to 1938 (Chevrier); 3 photos chosen unseen: check at merge; Hatshepsut erasure bullet needs a photo) |
-| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | interrupted by spend limit (no files written) |
-| 8. The story of Karnak and who ran it | intro (notes and owners) | reviewed (b8- source keys; owners replaced (22 rows); at merge: reconcile christian-karnak / karnak-churches; event -1330 to -1333; b8-sullivan-uee = source 4; closure undated, 4th to 5th century) |
-| Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
+| 1. Arrival, the river and the First Pylon | quay, rams, pylon1, ramp | merged |
+| 2. The great forecourt | sety2, taharqa, ram3, bubastite | merged |
+| 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | merged |
+| 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | merged |
+| 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | merged |
+| 6. The Open Air Museum | whitechapel, redchapel | merged |
+| 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | merged |
+| 8. The story of Karnak and who ran it | intro (notes and owners) | merged |
+| Visitors | all sights | merged (must-sees: rams, hypostyle, obelisks, lake) |
 
 ## Flags for Eliot
+- **Corrections made at merge (from the research):** quay dated about 945 BC (Shoshenq I), not 1200 BC; First Pylon about 380–362 BC; Hatshepsut's obelisks about 1464 BC (her year 16 counted from 1479 BC), not the popular 1457 BC; the Second Pylon colossus is sandstone, not granite; the fallen obelisk top was stood upright beside the scarab in April 2022; Senusret I uses Shaw's 1965–1920 BC; the White Chapel lists land measures, not flood heights; Sacred Lake 128 by 83 m; Cachette dug 1903–1907.
+- **Weak points the fact-check should look at:** Hatshepsut's "seven months" and electrum (only a web translation), the Estate of Amun percentages (Wikipedia summary of Papyrus Harris I), the century of the Akhmenu church, the Red Chapel rebuilding dates (1997–2002 by source), the 2019 ministry merger date, the treaty replica at the UN (marked unconfirmed).
+- **Temple closure:** no source gives a date; the app says fourth century, fifth at the latest.
+- **Access still uncertain:** Khonsu interior, Opet (probably locked), southern pylons beyond the Eighth, Akhmenu inner rooms and roof, Ptah inner room, eastern gate. Each stop's note says what to see if closed.
+- **Hittite treaty wall** and Hatshepsut's erased figures have no photo.
 - **Paths:** the network follows OpenStreetMap, which maps the temple's walkways well; it hasn't been walked. Walking times inside the temple are realistic to within about 20%. The approach from the car park crosses an open plaza OSM doesn't map as a path, so that stretch is a straight line.
 - **Carrier, not pushchair:** steps are only marked where OSM marks them (three links). Pushchair mode isn't reliable for this site.
 - **Access:** the Khonsu and Opet temples, the southern pylons, the Akhmenu's inner rooms and the Ptah temple have each been closed at times. Research will use the most recent evidence. Where it stays uncertain, the app will say "may be closed" and name what can be seen from outside.
@@ -42,3 +47,4 @@ Updated: 2026-11-22
 ## Log
 - 2026-11-22: started; brief agreed (scope: Amun-Ra precinct and Open Air Museum; early March 2027, arriving 08:30; carrier).
 - 2026-11-22: survey. OSM layer and Commons photo list fetched (via workflow_dispatch on the session branch). 32 stops, 30 timeline events, 9 eras, owners chronology drafted. `osm-network.mjs` gained an `outline` option (OSM's "site" areas here are single monuments). `check-knowledge.mjs` no longer crashes when notes.md is missing. Research plan: 8 batches plus visitors; 4 reference packs to write or extend.
+- 2026-11-23: batches 1–8 and visitors researched (batches 5–8 resumed after a spend-limit stop) and merged. 94 new sources numbered 17–110. Duplicate people records joined. Photo download started via workflow_dispatch on the session branch.
