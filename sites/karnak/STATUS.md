@@ -24,7 +24,7 @@ Updated: 2026-11-22
 | 3. The Great Hypostyle Hall | pylon2, hypostyle, northwall | reviewed (string source keys; at merge: pylon2 look is sandstone not granite, pylon2 dateLabel per report, northwall note: in shade all day, raise hypostyle dwell; two added events 1902 and 2021) |
 | 4. Obelisks and the sanctuary | obelisks, scarab, sanctuary | reviewed (string source keys; at merge: Hatshepsut obelisks date -1464 (year 16 from 1479 BC) in stop and timeline event; fallen top re-erected upright beside the scarab, 9 April 2022) |
 | 5. Thutmose III's east end, the oldest core and Ptah | mkcourt, akhmenu, ptah, east | reviewed (b5- source keys; at merge: event -1950 label "Senusret I builds the first large stone temple"; drop duplicate people sections; akhmenu mustSee candidate) |
-| 6. The Open Air Museum | whitechapel, redchapel | interrupted by spend limit (no files written) |
+| 6. The Open Air Museum | whitechapel, redchapel | reviewed (b6- source keys; White Chapel lists land measures, not flood heights (Medini 2022); found 16 November 1927, rebuilt 1937 to 1938 (Chevrier); 3 photos chosen unseen: check at merge; Hatshepsut erasure bullet needs a photo) |
 | 7. The Sacred Lake and the south | lake, lakeview, cachette, southpylons, khonsu | interrupted by spend limit (no files written) |
 | 8. The story of Karnak and who ran it | intro (notes and owners) | reviewed (b8- source keys; owners replaced (22 rows); at merge: reconcile christian-karnak / karnak-churches; event -1330 to -1333; b8-sullivan-uee = source 4; closure undated, 4th to 5th century) |
 | Visitors | all sights | reviewed (23 accounts, thin on off-route stops; lake added to must-sees) |
