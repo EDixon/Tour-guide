@@ -7,3 +7,5 @@ Coverage (October 2026): England/Britain 1066–2026, Scotland 1058–1707, Fran
 Sources: standard reign dates as given by the Royal Family's official site (royal.uk, "Kings and Queens of England and Britain"), the Oxford Dictionary of National Biography and Encyclopaedia Britannica. Disputed reigns are labelled in the list: Stephen (disputed with Matilda), Lady Jane Grey (1553), the 1470–1471 restoration of Henry VI, and Scottish interregnums (1290–1292, 1296–1306).
 
 Austria before 1804: the Habsburg rulers of the Austrian lands are not listed separately; for 1438–1806 use the Holy Roman Empire list (Habsburg emperors except Charles VII, 1742–1745, when Maria Theresa ruled the Austrian lands).
+
+

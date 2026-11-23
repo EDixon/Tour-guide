@@ -28,7 +28,7 @@ ok('long spans: rulers at start and end, and no claims the pack can\'t back', ()
   // Use years before the pack's first ruler, so the test still holds when the pack is extended.
   const first = Math.min(...Object.values(dates.rulers).flat().map(r => r[1]));
   const r = rulersDuring({ name: 'the family\'s time here', from: first - 100, to: 1917, verb: 'happened' }, dates.rulers);
-  assert.match(r, new RegExp(`no ruler data for ${first - 100}`)); assert.match(r, /at the end \(1917\) George V \(1910–1936\)/);
+  assert.match(r, new RegExp(`no ruler data for ${Y(first - 100)}`)); assert.match(r, /at the end \(1917\) George V \(1910–1936\)/);
   assert.equal(rulersDuring({ name: 'x', from: first - 60, to: first - 50, verb: 'built' }, dates.rulers), '');
 });
 ok('owners timeline', () => {
