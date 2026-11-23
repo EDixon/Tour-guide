@@ -6829,8 +6829,7 @@
      "src": [
       102,
       97
-     ],
-     "photo": "khonsu-court"
+     ]
     },
     {
      "id": 2,
@@ -6943,7 +6942,6 @@
      "photo": "bab-el-amara"
     }
    ],
-   "photo": "khonsu-court",
    "popular": 3
   },
   {
@@ -7609,5 +7607,6 @@
    "General knowledge",
    ""
   ]
- }
+ },
+ "photos": "tours/karnak.photos.json"
 }

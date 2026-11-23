@@ -1,12 +1,12 @@
 # Karnak Temple: status
 
-Stage: research (merged; photos downloading, then reference)
+Stage: reference
 Updated: 2026-11-22
 
 ## Stages
 - [x] new-site: brief
 - [x] site-survey: sources, stops, paths, timeline, research plan
-- [ ] site-research: bullets, notes and dates for every stop
+- [x] site-research: bullets, notes and dates for every stop
 - [ ] reference-packs: shared background reused or written
 - [ ] site-check: validator, knowledge checks, fact-check
 - [ ] site-publish: listed in the app, pushed, report sent
@@ -34,7 +34,8 @@ Updated: 2026-11-22
 - **Weak points the fact-check should look at:** Hatshepsut's "seven months" and electrum (only a web translation), the Estate of Amun percentages (Wikipedia summary of Papyrus Harris I), the century of the Akhmenu church, the Red Chapel rebuilding dates (1997–2002 by source), the 2019 ministry merger date, the treaty replica at the UN (marked unconfirmed).
 - **Temple closure:** no source gives a date; the app says fourth century, fifth at the latest.
 - **Access still uncertain:** Khonsu interior, Opet (probably locked), southern pylons beyond the Eighth, Akhmenu inner rooms and roof, Ptah inner room, eastern gate. Each stop's note says what to see if closed.
-- **Hittite treaty wall** and Hatshepsut's erased figures have no photo.
+- **Photos:** 64 downloaded. Missing: the Hittite treaty wall, Hatshepsut's erased figures, the Khonsu court (Commons file not found). The Sacred Lake photo shows it partly drained during works and the lakeview photo is a night shot; usable but not ideal.
+- **Sample plan order:** the planner's sample 2-hour route reaches the Hypostyle Hall late and the rams last. Visitors advise doing the hall and forecourt first, before the coach groups (about 09:00 to 10:00). Review in site-check.
 - **Paths:** the network follows OpenStreetMap, which maps the temple's walkways well; it hasn't been walked. Walking times inside the temple are realistic to within about 20%. The approach from the car park crosses an open plaza OSM doesn't map as a path, so that stretch is a straight line.
 - **Carrier, not pushchair:** steps are only marked where OSM marks them (three links). Pushchair mode isn't reliable for this site.
 - **Access:** the Khonsu and Opet temples, the southern pylons, the Akhmenu's inner rooms and the Ptah temple have each been closed at times. Research will use the most recent evidence. Where it stays uncertain, the app will say "may be closed" and name what can be seen from outside.
@@ -48,3 +49,4 @@ Updated: 2026-11-22
 - 2026-11-22: started; brief agreed (scope: Amun-Ra precinct and Open Air Museum; early March 2027, arriving 08:30; carrier).
 - 2026-11-22: survey. OSM layer and Commons photo list fetched (via workflow_dispatch on the session branch). 32 stops, 30 timeline events, 9 eras, owners chronology drafted. `osm-network.mjs` gained an `outline` option (OSM's "site" areas here are single monuments). `check-knowledge.mjs` no longer crashes when notes.md is missing. Research plan: 8 batches plus visitors; 4 reference packs to write or extend.
 - 2026-11-23: batches 1–8 and visitors researched (batches 5–8 resumed after a spend-limit stop) and merged. 94 new sources numbered 17–110. Duplicate people records joined. Photo download started via workflow_dispatch on the session branch.
+- 2026-11-23: photos downloaded (64) and checked by eye; validator and knowledge checks pass (0 errors). Stage set to reference.
