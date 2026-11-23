@@ -1,0 +1,14 @@
+[
+ {"id": "sacred-lake-pool", "file": "File:Karnak Heiliger See 01.JPG", "width": 900, "for": "lake.1|lake.look"},
+ {"id": "lake-palms", "file": "File:Palmiers Domaine Amon Rê Karnak - Louxor (EG) - 2025-12-04 - 3.jpg", "width": 900, "for": "lake.kids|lakeview.kids"},
+ {"id": "lake-from-southeast", "file": "File:The Sacred Lake at Karnak, Egypt - panoramio.jpg", "width": 900, "for": "lakeview.1|lakeview.look"},
+ {"id": "cachette-court", "file": "File:Karnak Tempel Cachette 01.jpg", "width": 900, "for": "cachette.1|cachette.look"},
+ {"id": "thutmose-smiting", "file": "File:Thutmose III at Karnak.jpg", "width": 900, "for": "cachette.6"},
+ {"id": "southern-pylons-line", "file": "File:Karnak Tempel 9. Pylon 01.jpg", "width": 900, "for": "southpylons.1|southpylons.kids|southpylons.look"},
+ {"id": "eighth-pylon", "file": "File:Karnak 8th Pylon from the south.jpg", "width": 900, "for": "southpylons.2"},
+ {"id": "khonsu-court", "file": "File:Karnak Tempel Chons 05.jpg", "width": 900, "for": "khonsu.1|khonsu.look"},
+ {"id": "khonsu-hall-roof", "file": "File:Karnak Tempel Chons 08.jpg", "width": 900, "for": "khonsu.5"},
+ {"id": "opet-temple", "file": "File:Opet Temple in Karnak - interior 01.jpg", "width": 900, "for": "khonsu.8"},
+ {"id": "bab-el-amara", "file": "File:Karnak Tor Ptolemaios III. 01.JPG", "width": 900, "for": "khonsu.9"},
+ {"id": "khonsu-baboon", "file": "File:Karnak Tempel Chons 09.jpg", "width": 900, "for": "khonsu.kids"}
+]
