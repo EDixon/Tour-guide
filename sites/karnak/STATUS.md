@@ -1,6 +1,6 @@
 # Karnak Temple: status
 
-Stage: publish
+Stage: done
 Updated: 2026-11-23
 
 ## Stages
@@ -9,7 +9,7 @@ Updated: 2026-11-23
 - [x] site-research: bullets, notes and dates for every stop
 - [x] reference-packs: shared background reused or written
 - [x] site-check: validator, knowledge checks, fact-check
-- [ ] site-publish: listed in the app, pushed, report sent
+- [x] site-publish: listed in the app, pushed, report sent
 
 ## Supplied by Eliot (in `sites/karnak/inputs/`, not in the repo; ask again in a new container)
 - Photo of the on-site board "Karnak Temples Plan & Chronology" (re-supplied 22 November 2026 in this container as `inputs/site-board-plan.jpg`)
@@ -82,3 +82,4 @@ Updated: 2026-11-23
 - 2026-11-23: photos downloaded (64) and checked by eye; validator and knowledge checks pass (0 errors). Stage set to reference.
 - 2026-11-23: reference packs. `rulers` extended (Egypt, Rome, Egypt after Rome); `egyptian-temples`, `egyptian-gods` and `ancient-building` written and source-checked, then merged. Senusret I corrected to Shaw 1956–1911 BC. One maths test made BC-aware. Checks pass (0 errors) and `npm test` is green. Stage set to check.
 - 2026-11-23: site-check. Mechanical checks clean; fact-check by a separate agent (97 rows); all wrong items fixed and disagreements stated in the text. Planner `quietBefore`; assistant prompt site name; nearest facilities. Stage set to publish.
+- 2026-11-23: published. Listed in tours/index.json; offline files added to sw.js (VERSION tg-v18, because planner and assistant code changed). Tests, validator and knowledge checks pass; the app loads Karnak in a headless browser with no errors.

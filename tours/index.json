@@ -9,6 +9,16 @@
     -0.4157
    ],
    "operator": "English Heritage"
+  },
+  {
+   "id": "karnak",
+   "name": "Karnak Temple",
+   "file": "karnak.json",
+   "pos": [
+    25.71931,
+    32.654971
+   ],
+   "operator": "Egyptian Ministry of Tourism and Antiquities"
   }
  ]
 }
